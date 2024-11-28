@@ -1,0 +1,11 @@
+1. Zero-Shot: LLaVA-Next (7B) modeloa WorldMedQA-V datasetaren (ES -> EN split-a soilik) aurka ebaluatu inolako entrenamendurik gabe eta modeloa LangChain bidez kargatuta.
+
+2. RAG (vs LLaVA-Med)
+
+    2.1. RAG Q: IR (Information Retrieval) sistema baten bitartez WikiMed-etik dokumentu esanguratsuenak eskuratu (query bezala galdera pasata) eta galderari erantsi. Behin hori eginda ebaluaketa egin.
+
+    2.2. RAG Q+As: Galdera + erantzuna hartuta, erantzun bakoitza luzatu IR WikiMed-en aurka erabilita (galdera bakoitzak 4 erantzun dituenez, 4 aldiz erabiliko da IR galdera bakoitzeko)
+
+    2.3. RAG IMG: Erantzun aukera bakoitzari irudi bat gehitu IR erabilita. (Ez daukat garbi galdera erantzun aukera bakoitzarekin ere pasatzea beharrezkoa den edo aukera soilik pasatzearekin nahikoa den)
+
+    2.4. RAG DB, RERANKER, ...: Proposamen hau ez dut guztiz ulertzen. Ez nago ziur zer dagoen zehazki DB-an eta irakurri dudanaren arabera, hala Embedding Model-ak nola Reranker-ak prozesu antzekoa burutzen dute (gutxienez Reranker-a embedding-en bidez erabiltzen bada). Amaieran lortzen den edukia ez dakit prompt osoari erantsi behar zaion edo prozesua hau ere erantzun posible bakoitzeko egin behar den.
