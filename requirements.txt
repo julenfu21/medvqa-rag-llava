@@ -1,7 +1,10 @@
 datasets
 ipyform
 ipykernel
+langchain
+langchain-ollama
 nbformat
+ollama
 pandas
 pillow
 plotly
