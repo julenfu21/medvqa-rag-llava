@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from datasets import Dataset, load_dataset
+from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
@@ -20,6 +20,7 @@ class ZeroShotVQAModel:
 
 
     def __load_ollama_model(self, model_name: str) -> BaseChatModel:
+
         def prompt_template(data: dict) -> list:
             question = data["question"]
             image = data["image"]
@@ -102,28 +103,3 @@ class ZeroShotVQAModel:
             },
             save_path=save_path
         )
-
-if __name__ == "__main__":
-    DATASET_DIR = Path("data/WorldMedQA-V")
-    COUNTRY = "spain"
-    FILE_TYPE = "english"
-
-    # Set dataset file path
-    dataset_filename = f"{COUNTRY}_{FILE_TYPE}_processed.tsv"
-    data_filepath = str(DATASET_DIR / dataset_filename)
-
-
-    world_med_qa_v_dataset = load_dataset(
-        "csv",
-        data_files=[data_filepath],
-        sep="\t"
-    )['train']
-    llava_model = ZeroShotVQAModel(
-        model_name="llava",
-        country=COUNTRY,
-        file_type=FILE_TYPE
-    )
-    llava_model.evaluate(
-        dataset=world_med_qa_v_dataset.take(5),
-        save_path=Path('evaluation_results')
-    )
