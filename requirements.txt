@@ -1,7 +1,10 @@
 datasets
+faiss-cpu
 ipyform
 ipykernel
 langchain
+langchain-community
+langchain_huggingface
 langchain-ollama
 nbformat
 ollama
