@@ -1,0 +1,7 @@
+datasets
+ipyform
+ipykernel
+nbformat
+pandas
+pillow
+plotly
