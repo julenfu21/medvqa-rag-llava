@@ -41,7 +41,10 @@ class ZeroShotVQAModel:
                             "type": "image_url",
                             "image_url": f"data:image/jpeg;base64,{image}",
                         },
-                        {"type": "text", "text": question},
+                        {
+                            "type": "text",
+                            "text": question
+                        },
                     ]
                 ),
             ]
