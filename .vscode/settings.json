@@ -1,5 +1,8 @@
 {
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.notebookFileRoot": "${workspaceFolder}/src",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src"
+    ],
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/src"
     ],

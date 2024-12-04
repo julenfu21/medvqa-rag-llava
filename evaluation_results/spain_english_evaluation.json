@@ -1,5 +1,5 @@
 {
-    "accuracy": 0.6,
+    "accuracy": 0.2,
     "predictions": [
         {
             "question_id": 1,
@@ -8,12 +8,12 @@
         },
         {
             "question_id": 2,
-            "predicted_answer": "C",
+            "predicted_answer": "A",
             "gold_answer": "C"
         },
         {
             "question_id": 3,
-            "predicted_answer": "D",
+            "predicted_answer": "A",
             "gold_answer": "B"
         },
         {
@@ -23,7 +23,7 @@
         },
         {
             "question_id": 5,
-            "predicted_answer": "A",
+            "predicted_answer": "D",
             "gold_answer": "A"
         }
     ]
