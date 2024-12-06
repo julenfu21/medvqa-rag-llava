@@ -44,7 +44,15 @@ class VisualQAModel:
         self.__model = self.__load_ollama_model()
 
 
-    def generate_answer_from_row(self, row: dict, possible_options: list[str]) -> str:
+    def generate_answer_from_row(
+        self,
+        row: dict,
+        possible_options: list[str],
+        verbose: bool = False
+    ) -> str:
+        if verbose:
+            print(f"Generating Answer for Question (ID: {row['index']}) ...")
+
         return self.__visual_qa_strategy.generate_answer_from_row(
             model=self.__model,
             question=row['question'],
