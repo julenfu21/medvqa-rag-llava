@@ -12,7 +12,7 @@ class BaseVQAStrategy(ABC):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         print(f"- Loading {self.strategy_type.value} Strategy ...")
         self._init_strategy(*args, **kwargs)
-        print(f"+ {self.strategy_type.value} Strategy loaded.")
+        print(f"+ {self.strategy_type.value} Strategy Loaded.")
 
     @abstractmethod
     def _init_strategy(self, *args: Any, **kwargs: Any) -> None:
