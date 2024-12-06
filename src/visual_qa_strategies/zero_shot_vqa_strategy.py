@@ -4,10 +4,20 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
-from visual_qa_strategies.visual_qa_strategy import VisualQAStrategy
+from utils.enums import VQAStrategyType
+from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
-class ZeroShotVQAStrategy(VisualQAStrategy):
+class ZeroShotVQAStrategy(BaseVQAStrategy):
+
+    @property
+    def strategy_type(self) -> VQAStrategyType:
+        return VQAStrategyType.ZERO_SHOT
+
+
+    def _init_strategy(self) -> None:
+        pass
+
 
     def load_ollama_model(self, model_name: str) -> BaseChatModel:
 
@@ -61,7 +71,3 @@ class ZeroShotVQAStrategy(VisualQAStrategy):
             "image": image
         })
         return output.strip()
-
-
-    def generate_results_filename(self, country: str, file_type: str) -> str:
-        return f"{country}_{file_type}_evaluation.json"

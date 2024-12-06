@@ -2,36 +2,46 @@ import json
 from pathlib import Path
 
 from datasets import Dataset
+from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from visual_qa_strategies.visual_qa_strategy import VisualQAStrategy
+from utils.string_formatting_helpers import format_vqa_strategy_name
+from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
 class VisualQAModel:
 
     def __init__(
         self,
-        strategy: VisualQAStrategy,
+        visual_qa_strategy: BaseVQAStrategy,
         model_name: str,
         country: str = "spain",
         file_type: str = "english"
     ) -> None:
-        self.__visual_qa_strategy = strategy
+        self.__visual_qa_strategy = visual_qa_strategy
         self.__model_name = model_name
-        self.__model = self.__visual_qa_strategy.load_ollama_model(self.__model_name)
+        self.__model = self.__load_ollama_model()
         self.__country = country
         self.__file_type = file_type
 
 
+    def __load_ollama_model(self) -> BaseChatModel:
+        capitalized_model_name = self.__model_name.capitalize()
+        print(f"- Loading {capitalized_model_name} Model ...")
+        ollama_model = self.__visual_qa_strategy.load_ollama_model(self.__model_name)
+        print(f"+ {capitalized_model_name} Model Loaded.")
+        return ollama_model
+
+
     @property
-    def strategy(self) -> VisualQAStrategy:
+    def visual_qa_strategy(self) -> BaseVQAStrategy:
         return self.__visual_qa_strategy
 
 
-    @strategy.setter
-    def strategy(self, visual_qa_strategy: VisualQAStrategy) -> None:
+    @visual_qa_strategy.setter
+    def visual_qa_strategy(self, visual_qa_strategy: BaseVQAStrategy) -> None:
         self.__visual_qa_strategy = visual_qa_strategy
-        self.__model = self.__visual_qa_strategy.load_ollama_model(self.__model_name)
+        self.__model = self.__load_ollama_model()
 
 
     def generate_answer_from_row(self, row: dict, possible_options: list[str]) -> str:
@@ -56,6 +66,13 @@ class VisualQAModel:
             json.dump(data, file, indent=4)
 
 
+    def __generate_results_filename(self) -> str:
+        processed_strategy_name = format_vqa_strategy_name(
+            strategy_name=self.__visual_qa_strategy.strategy_type.value
+        )
+        return f'{self.__country}_{self.__file_type}_{processed_strategy_name}_evaluation.json'
+
+
     def evaluate(self, dataset: Dataset, save_path: Path) -> None:
         gold_options = {}
         predicted_options = {}
@@ -76,20 +93,16 @@ class VisualQAModel:
         self.__save_evaluation_results(
             data={
                 "accuracy": accuracy,
-                "predictions": [
-                    {
-                        "question_id": id_gold,
+                "predictions": {
+                    id_gold: {
                         "predicted_answer": pred_option,
                         "gold_answer": gold_option,
                     }
                     for (id_gold, gold_option), (id_pred, pred_option) in zip(
                         gold_options.items(), predicted_options.items()
                     )
-                ],
+                },
             },
             save_path=save_path,
-            results_filename=self.__visual_qa_strategy.generate_results_filename(
-                country=self.__country,
-                file_type=self.__file_type
-            )
+            results_filename=self.__generate_results_filename()
         )

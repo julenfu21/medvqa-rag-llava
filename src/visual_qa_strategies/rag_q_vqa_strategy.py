@@ -9,12 +9,13 @@ from langchain_core.retrievers import BaseRetriever
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
 
-from visual_qa_strategies.visual_qa_strategy import VisualQAStrategy
+from utils.enums import VQAStrategyType
+from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
-class RagQVQAStrategy(VisualQAStrategy):
+class RagQVQAStrategy(BaseVQAStrategy):
 
-    def __init__(
+    def _init_strategy(
         self,
         index_dir: Path,
         index_name: str,
@@ -29,6 +30,11 @@ class RagQVQAStrategy(VisualQAStrategy):
         )
 
 
+    @property
+    def strategy_type(self) -> VQAStrategyType:
+        return VQAStrategyType.RAG_Q
+
+
     def __load_wikimed_retriever(
         self,
         index_dir: Path,
@@ -37,28 +43,31 @@ class RagQVQAStrategy(VisualQAStrategy):
         relevant_docs_count: int
     ) -> BaseRetriever:
         # Load embeddings
+        print("\t- Loading Embeddings ...")
         embeddings = HuggingFaceEmbeddings(
             model_name=embedding_model_name,
             # model_kwargs={'device': 'cuda'},
             encode_kwargs={'normalize_embeddings': False}
         )
-        print("Embeddings loaded!")
+        print("\t+ Embeddings Loaded.")
 
         # Load FAISS index
+        print("\t- Loading Index ...")
         index = FAISS.load_local(
             folder_path=index_dir,
             index_name=index_name,
             embeddings=embeddings,
             allow_dangerous_deserialization=True
         )
-        print("Index loaded!")
+        print("\t+ Index Loaded.")
 
         # Load retriever from index
+        print("\t- Loading Retriever ...")
         retriever = index.as_retriever(
             search_type="similarity",
             search_kwargs={"k": relevant_docs_count}
         )
-        print("Retriever loaded!")
+        print("\t+ Retriever Loaded.")
         return retriever
 
 
@@ -124,6 +133,3 @@ class RagQVQAStrategy(VisualQAStrategy):
             "relevant_docs": format_docs(self.__retriever.invoke(question))
         })
         return output.strip()
-
-    def generate_results_filename(self, country: str, file_type: str) -> str:
-        return f"{country}_{file_type}_RAG_V1_evaluation.json"

@@ -1,30 +1,25 @@
 {
     "accuracy": 0.2,
-    "predictions": [
-        {
-            "question_id": 1,
+    "predictions": {
+        "1": {
             "predicted_answer": "A",
             "gold_answer": "A"
         },
-        {
-            "question_id": 2,
+        "2": {
             "predicted_answer": "A",
             "gold_answer": "C"
         },
-        {
-            "question_id": 3,
+        "3": {
             "predicted_answer": "A",
             "gold_answer": "B"
         },
-        {
-            "question_id": 4,
+        "4": {
             "predicted_answer": "A",
             "gold_answer": "D"
         },
-        {
-            "question_id": 5,
+        "5": {
             "predicted_answer": "D",
             "gold_answer": "A"
         }
-    ]
+    }
 }
