@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any
 
-from PIL import Image
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from utils.enums import VQAStrategyType
@@ -33,6 +32,6 @@ class BaseVQAStrategy(ABC):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        image: Image.Image
+        base64_image: str
     ) -> str:
         pass

@@ -1,4 +1,3 @@
-from PIL import Image
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
@@ -59,7 +58,7 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        image: Image.Image
+        base64_image: str
     ) -> str:
         possible_answers = " ".join(
             [f"{letter} - {answer}" for letter, answer in possible_answers.items()]
@@ -68,6 +67,6 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
 
         output = model.invoke({
             "question": question_with_possible_answers,
-            "image": image
+            "image": base64_image
         })
         return output.strip()

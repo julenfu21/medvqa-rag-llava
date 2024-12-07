@@ -1,6 +1,5 @@
 from pathlib import Path
 
-from PIL import Image
 from langchain_community.vectorstores import FAISS
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -116,7 +115,7 @@ class RagQVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        image: Image.Image
+        base64_image: str
     ) -> str:
 
         def format_docs(docs) -> str:
@@ -129,7 +128,7 @@ class RagQVQAStrategy(BaseVQAStrategy):
 
         output = model.invoke({
             "question": question_with_possible_answers,
-            "image": image,
+            "image": base64_image,
             "relevant_docs": format_docs(self.__retriever.invoke(question))
         })
         return output.strip()

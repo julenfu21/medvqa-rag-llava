@@ -57,7 +57,7 @@ class VisualQAModel:
             model=self.__model,
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
-            image=row['image']
+            base64_image=row['image']
         )
 
 

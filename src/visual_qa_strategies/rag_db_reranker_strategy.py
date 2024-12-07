@@ -1,4 +1,3 @@
-from PIL import Image
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from utils.enums import VQAStrategyType
@@ -25,6 +24,6 @@ class RagDBRerankerVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        image: Image.Image
+        base64_image: str
     ) -> str:
         raise NotImplementedError
