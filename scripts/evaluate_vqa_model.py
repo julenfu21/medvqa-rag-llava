@@ -1,8 +1,7 @@
 import argparse
 from pathlib import Path
 
-from datasets import Dataset, load_dataset
-
+from utils.dataset_helpers import load_vqa_dataset
 from utils.enums import VQAStrategyType
 from visual_qa_model import VisualQAModel
 from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -14,20 +13,6 @@ from visual_qa_strategies.zero_shot_vqa_strategy import ZeroShotVQAStrategy
 
 
 OLLAMA_MODEL_NAME = "llava"
-
-
-def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
-    dataset_filename = f"{country}_{file_type}_processed.tsv"
-    dataset_filepath = str(data_path / dataset_filename)
-
-    print(f"- Loading WorldMedQA-V dataset (filename: {dataset_filename}) ...")
-    dataset = load_dataset(
-        "csv", 
-        data_files=[dataset_filepath],
-        sep="\t"
-    )['train']
-    print(f"+ WorldMedQA-V dataset (filename: {dataset_filename}) loaded.")
-    return dataset
 
 
 def get_strategy(
@@ -98,10 +83,6 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-
-    for arg in vars(args):
-        print(f'{arg}: {getattr(args, arg)}')
-    print()
 
     world_med_qa_v_dataset = load_vqa_dataset(
         data_path=args.dataset_dir,

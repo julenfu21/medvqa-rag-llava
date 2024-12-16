@@ -6,7 +6,6 @@ from typing import Optional
 
 from IPython.display import HTML, display
 from PIL import Image
-from datasets import Dataset
 
 
 def resize_image(
@@ -49,16 +48,6 @@ def display_formatted_section(
     </div>
     """
     display(HTML(section_text))
-
-
-def get_dataset_row_by_id(
-    dataset: Dataset,
-    question_id: int
-) -> dict:
-    filtered_dataset = dataset.filter(lambda row: row['index'] == question_id)
-    if len(filtered_dataset) == 0:
-        raise ValueError(f"No row found with index {question_id}")
-    return filtered_dataset[0]
 
 
 def visualize_qa_pair_row(

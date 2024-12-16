@@ -2,23 +2,9 @@ import argparse
 import json
 from pathlib import Path
 
-from datasets import Dataset, disable_progress_bars, load_dataset
+from datasets import Dataset, disable_progress_bars
 
-from utils.notebook_helpers import get_dataset_row_by_id
-
-
-def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
-    dataset_filename = f"{country}_{file_type}_processed.tsv"
-    dataset_filepath = str(data_path / dataset_filename)
-
-    print(f"- Loading WorldMedQA-V dataset (filename: {dataset_filename}) ...")
-    dataset = load_dataset(
-        "csv", 
-        data_files=[dataset_filepath],
-        sep="\t"
-    )['train']
-    print(f"+ WorldMedQA-V dataset (filename: {dataset_filename}) loaded.")
-    return dataset
+from utils.dataset_helpers import get_dataset_row_by_id, load_vqa_dataset
 
 
 def get_qa_pair_in_json(dataset: Dataset, question_id: int) -> None:
