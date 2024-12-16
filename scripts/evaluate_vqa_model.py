@@ -114,10 +114,10 @@ def main() -> None:
         country=args.country,
         file_type=args.file_type
     )
-    # llava_model.evaluate(
-    #     dataset=world_med_qa_v_dataset,
-    #     save_path=args.results_dir
-    # )
+    llava_model.evaluate(
+        dataset=world_med_qa_v_dataset,
+        save_path=args.results_dir
+    )
 
 
 if __name__ == "__main__":
