@@ -4,14 +4,16 @@ from typing import Any
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from utils.enums import VQAStrategyType
+from utils.string_formatting_helpers import prettify_strategy_name
 
 
 class BaseVQAStrategy(ABC):
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
-        print(f"- Loading {self.strategy_type.value} Strategy ...")
+        formatted_strategy_name = prettify_strategy_name(strategy_name=self.strategy_type.value)
+        print(f"- Loading {formatted_strategy_name} Strategy ...")
         self._init_strategy(*args, **kwargs)
-        print(f"+ {self.strategy_type.value} Strategy Loaded.")
+        print(f"+ {formatted_strategy_name} Strategy Loaded.")
 
     @abstractmethod
     def _init_strategy(self, *args: Any, **kwargs: Any) -> None:

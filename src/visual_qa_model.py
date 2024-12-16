@@ -5,7 +5,6 @@ from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from utils.string_formatting_helpers import format_vqa_strategy_name
 from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -51,14 +50,19 @@ class VisualQAModel:
         verbose: bool = False
     ) -> str:
         if verbose:
-            print(f"Generating Answer for Question (ID: {row['index']}) ...")
+            print(f"- Generating Answer for Question (ID: {row['index']}) ...")
 
-        return self.__visual_qa_strategy.generate_answer_from_row(
+        model_answer = self.__visual_qa_strategy.generate_answer_from_row(
             model=self.__model,
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
             base64_image=row['image']
         )
+
+        if verbose:
+            print(f"+ Answer for Question (ID: {row['index']}) generated.")
+
+        return model_answer
 
 
     def __save_evaluation_results(
@@ -75,10 +79,8 @@ class VisualQAModel:
 
 
     def __generate_results_filename(self) -> str:
-        processed_strategy_name = format_vqa_strategy_name(
-            strategy_name=self.__visual_qa_strategy.strategy_type.value
-        )
-        return f'{self.__country}_{self.__file_type}_{processed_strategy_name}_evaluation.json'
+        strategy_name = self.__visual_qa_strategy.strategy_type.value
+        return f'{self.__country}_{self.__file_type}_{strategy_name}_evaluation.json'
 
 
     def evaluate(self, dataset: Dataset, save_path: Path) -> None:
