@@ -1,0 +1,124 @@
+import argparse
+from pathlib import Path
+
+from datasets import Dataset, load_dataset
+
+from utils.enums import VQAStrategyType
+from visual_qa_model import VisualQAModel
+from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from visual_qa_strategies.rag_db_reranker_strategy import RagDBRerankerVQAStrategy
+from visual_qa_strategies.rag_img_strategy import RagImgVQAStrategy
+from visual_qa_strategies.rag_q_as_vqa_strategy import RagQAsVQAStrategy
+from visual_qa_strategies.rag_q_vqa_strategy import RagQVQAStrategy
+from visual_qa_strategies.zero_shot_vqa_strategy import ZeroShotVQAStrategy
+
+
+OLLAMA_MODEL_NAME = "llava"
+
+
+def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
+    dataset_filename = f"{country}_{file_type}_processed.tsv"
+    dataset_filepath = str(data_path / dataset_filename)
+
+    print(f"- Loading WorldMedQA-V dataset (filename: {dataset_filename}) ...")
+    dataset = load_dataset(
+        "csv", 
+        data_files=[dataset_filepath],
+        sep="\t"
+    )['train']
+    print(f"+ WorldMedQA-V dataset (filename: {dataset_filename}) loaded.")
+    return dataset
+
+
+def get_strategy(
+    arguments: argparse.Namespace
+) -> BaseVQAStrategy:
+    match arguments.vqa_strategy:
+        case VQAStrategyType.ZERO_SHOT:
+            return ZeroShotVQAStrategy()
+        case VQAStrategyType.RAG_Q:
+            return RagQVQAStrategy(
+                index_dir=arguments.index_dir,
+                index_name=arguments.index_name,
+                embedding_model_name=arguments.embedding_model_name,
+                relevant_docs_count=arguments.relevant_docs_count
+            )
+        case VQAStrategyType.RAG_Q_AS:
+            return RagQAsVQAStrategy()
+        case VQAStrategyType.RAG_IMG:
+            return RagImgVQAStrategy()
+        case VQAStrategyType.RAG_DB_RERANKER:
+            return RagDBRerankerVQAStrategy()
+
+    raise ValueError(f"Unhandled VQA strategy type: {arguments.vqa_strategy}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Script to run evaluation of the Llava model over the WorldMedQA-V "
+            "leveraging the RAG strategy chosen."
+        ))
+    parser.add_argument("--dataset_dir",
+                        type=Path, default=Path("data/WorldMedQA-V"),
+                        help="Directory containing the dataset")
+    parser.add_argument("--country",
+                        type=str, default="spain",
+                        choices=["brazil", "israel", "japan", "spain"],
+                        help="Origin country of the dataset")
+    parser.add_argument("--file_type",
+                        type=str, default="english",
+                        choices=["english", "local"],
+                        help="Language of the questions (original or English translation)")
+    parser.add_argument("--results_dir",
+                        type=Path, default=Path("evaluation_results"),
+                        help="Directory that contains the evaluation results")
+    parser.add_argument("--vqa_strategy",
+                        type=VQAStrategyType, default=VQAStrategyType.ZERO_SHOT,
+                        choices=list(VQAStrategyType),
+                        help="VQA strategy used to modify the input of the model")
+
+    parser.add_argument("--index_dir",
+                        type=Path, default=Path("data/WikiMed/indexed_db"),
+                        help="Directory that stores the indexed dataset leveraged to apply RAG")
+    parser.add_argument("--index_name",
+                        type=str, default="Wikimed+S-PubMedBert-MS-MARCO-FullTexts",
+                        help="Name of the index")
+    parser.add_argument("--embedding_model_name",
+                        type=str, default="pritamdeka/S-PubMedBert-MS-MARCO",
+                        help="Name of the embedding model")
+    parser.add_argument("--relevant_docs_count",
+                        type=int, default=1,
+                        help=(
+                            "Amount or documents to be added to the input of the model when "
+                            "applying RAG"
+                        ))
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+
+    for arg in vars(args):
+        print(f'{arg}: {getattr(args, arg)}')
+    print()
+
+    world_med_qa_v_dataset = load_vqa_dataset(
+        data_path=args.dataset_dir,
+        country=args.country,
+        file_type=args.file_type
+    )
+    llava_model = VisualQAModel(
+        visual_qa_strategy=get_strategy(arguments=args),
+        model_name=OLLAMA_MODEL_NAME,
+        country=args.country,
+        file_type=args.file_type
+    )
+    # llava_model.evaluate(
+    #     dataset=world_med_qa_v_dataset,
+    #     save_path=args.results_dir
+    # )
+
+
+if __name__ == "__main__":
+    main()
