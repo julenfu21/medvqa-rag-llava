@@ -1,7 +1,7 @@
 from langchain_core.language_models.chat_models import BaseChatModel
 
-from utils.enums import VQAStrategyType
-from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.enums import VQAStrategyType
+from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
 class RagDBRerankerVQAStrategy(BaseVQAStrategy):

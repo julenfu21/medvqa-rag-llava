@@ -1,10 +1,10 @@
 {
-    "jupyter.notebookFileRoot": "${workspaceFolder}/src",
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
     "python.analysis.extraPaths": [
-        "${workspaceFolder}/src"
+        "${workspaceFolder}"
     ],
     "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/src"
+        "${workspaceFolder}"
     ],
     "pylint.args": [
         "--disable=missing-module-docstring",

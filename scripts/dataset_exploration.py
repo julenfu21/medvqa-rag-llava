@@ -4,7 +4,7 @@ from pathlib import Path
 
 from datasets import Dataset, disable_progress_bars
 
-from utils.dataset_helpers import get_dataset_row_by_id, load_vqa_dataset
+from src.utils.dataset_helpers import get_dataset_row_by_id, load_vqa_dataset
 
 
 def get_qa_pair_in_json(dataset: Dataset, question_id: int) -> None:
@@ -22,7 +22,7 @@ def get_qa_pair_in_json(dataset: Dataset, question_id: int) -> None:
         'correct_option': row['correct_option']
     }
 
-    print(json.dumps(qa_pair_data, indent=4))
+    print(f"\n{json.dumps(qa_pair_data, indent=4)}")
 
 
 def parse_args() -> argparse.Namespace:

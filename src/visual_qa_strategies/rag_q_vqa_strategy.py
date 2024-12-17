@@ -8,8 +8,8 @@ from langchain_core.retrievers import BaseRetriever
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
 
-from utils.enums import VQAStrategyType
-from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.enums import VQAStrategyType
+from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
 class RagQVQAStrategy(BaseVQAStrategy):

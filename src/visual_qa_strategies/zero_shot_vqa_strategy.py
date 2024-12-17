@@ -3,8 +3,8 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
-from utils.enums import VQAStrategyType
-from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.enums import VQAStrategyType
+from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
 class ZeroShotVQAStrategy(BaseVQAStrategy):

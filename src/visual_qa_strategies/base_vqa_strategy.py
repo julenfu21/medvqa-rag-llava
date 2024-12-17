@@ -3,8 +3,8 @@ from typing import Any
 
 from langchain_core.language_models.chat_models import BaseChatModel
 
-from utils.enums import VQAStrategyType
-from utils.string_formatting_helpers import prettify_strategy_name
+from src.utils.enums import VQAStrategyType
+from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
 class BaseVQAStrategy(ABC):

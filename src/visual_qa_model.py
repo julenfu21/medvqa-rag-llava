@@ -5,7 +5,7 @@ from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
 class VisualQAModel:
