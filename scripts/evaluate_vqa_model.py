@@ -5,8 +5,8 @@ from src.utils.dataset_helpers import load_vqa_dataset
 from src.utils.enums import VQAStrategyType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
-from src.visual_qa_strategies.rag_db_reranker_strategy import RagDBRerankerVQAStrategy
-from src.visual_qa_strategies.rag_img_strategy import RagImgVQAStrategy
+from src.visual_qa_strategies.rag_db_reranker_vqa_strategy import RagDBRerankerVQAStrategy
+from src.visual_qa_strategies.rag_img_vqa_strategy import RagImgVQAStrategy
 from src.visual_qa_strategies.rag_q_as_vqa_strategy import RagQAsVQAStrategy
 from src.visual_qa_strategies.rag_q_vqa_strategy import RagQVQAStrategy
 from src.visual_qa_strategies.zero_shot_vqa_strategy import ZeroShotVQAStrategy
