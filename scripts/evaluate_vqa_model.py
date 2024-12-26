@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from src.utils.dataset_helpers import load_vqa_dataset
+from src.utils.dataset_helpers.world_med_qa_v_helpers import load_vqa_dataset
 from src.utils.enums import VQAStrategyType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
