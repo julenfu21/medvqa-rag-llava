@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from src.utils.dataset_helpers.world_med_qa_v_helpers import load_vqa_dataset
+import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
 from src.utils.enums import VQAStrategyType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -84,7 +84,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    world_med_qa_v_dataset = load_vqa_dataset(
+    world_med_qa_v_dataset = world_med_qa_v_dataset_management.load_vqa_dataset(
         data_path=args.dataset_dir,
         country=args.country,
         file_type=args.file_type

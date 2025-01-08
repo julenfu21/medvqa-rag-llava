@@ -4,11 +4,14 @@ from pathlib import Path
 
 from datasets import Dataset, disable_progress_bars
 
-from src.utils.dataset_helpers.world_med_qa_v_helpers import get_dataset_row_by_id, load_vqa_dataset
+import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
 
 
 def get_qa_pair_in_json(dataset: Dataset, question_id: int) -> None:
-    row = get_dataset_row_by_id(dataset=dataset, question_id=question_id)
+    row = world_med_qa_v_dataset_management.get_dataset_row_by_id(
+        dataset=dataset,
+        question_id=question_id
+    )
     possible_options = ['A', 'B', 'C', 'D']
 
     qa_pair_data = {
@@ -51,7 +54,7 @@ def main() -> None:
     disable_progress_bars()
     args = parse_args()
 
-    world_med_qa_v_dataset = load_vqa_dataset(
+    world_med_qa_v_dataset = world_med_qa_v_dataset_management.load_vqa_dataset(
         data_path=args.dataset_dir,
         country=args.country,
         file_type=args.file_type
