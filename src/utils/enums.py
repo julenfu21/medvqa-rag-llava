@@ -10,3 +10,8 @@ class VQAStrategyType(Enum):
 
     def __str__(self):
         return self.value
+
+
+class WikiMedRepresentationMode(Enum):
+    SENTENCE = 'sentence'
+    WORD = 'word'
