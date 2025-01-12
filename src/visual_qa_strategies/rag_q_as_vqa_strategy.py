@@ -2,6 +2,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 
 from src.utils.enums import VQAStrategyType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class RagQAsVQAStrategy(BaseVQAStrategy):
@@ -25,5 +26,5 @@ class RagQAsVQAStrategy(BaseVQAStrategy):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str
-    ) -> str:
+    ) -> ModelAnswerResult:
         raise NotImplementedError

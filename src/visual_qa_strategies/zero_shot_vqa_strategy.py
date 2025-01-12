@@ -5,6 +5,7 @@ from langchain_ollama import ChatOllama
 
 from src.utils.enums import VQAStrategyType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class ZeroShotVQAStrategy(BaseVQAStrategy):
@@ -58,8 +59,8 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        base64_image: str
-    ) -> str:
+        base64_image: str,
+    ) -> ModelAnswerResult:
         possible_answers = " ".join(
             [f"{letter} - {answer}" for letter, answer in possible_answers.items()]
         )
@@ -69,4 +70,4 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
             "question": question_with_possible_answers,
             "image": base64_image
         })
-        return output.strip()
+        return ModelAnswerResult(answer=output.strip())

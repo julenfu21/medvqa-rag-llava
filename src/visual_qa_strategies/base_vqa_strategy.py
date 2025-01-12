@@ -5,6 +5,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 
 from src.utils.enums import VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
+from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class BaseVQAStrategy(ABC):
@@ -35,5 +36,5 @@ class BaseVQAStrategy(ABC):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str
-    ) -> str:
+    ) -> ModelAnswerResult:
         pass

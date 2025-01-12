@@ -6,6 +6,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class VisualQAModel:
@@ -48,11 +49,11 @@ class VisualQAModel:
         row: dict,
         possible_options: list[str],
         verbose: bool = False
-    ) -> str:
+    ) -> ModelAnswerResult:
         if verbose:
             print(f"- Generating Answer for Question (ID: {row['index']}) ...")
 
-        model_answer = self.__visual_qa_strategy.generate_answer_from_row(
+        model_answer_result = self.__visual_qa_strategy.generate_answer_from_row(
             model=self.__model,
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
@@ -62,7 +63,70 @@ class VisualQAModel:
         if verbose:
             print(f"+ Answer for Question (ID: {row['index']}) generated.")
 
-        return model_answer
+        return model_answer_result
+
+
+    def __is_answer_well_formatted(
+        self,
+        answer: str,
+        possible_options: list[str]
+    ) -> bool:
+        return answer in possible_options
+
+
+    def __compute_evaluation_metrics(
+        self,
+        gold_options: dict[str, str],
+        predicted_options: dict[str, str],
+        possible_options: list[str],
+        relevant_documents: dict
+    ) -> dict:
+        accuracy = [
+            gold == prediction
+            for gold, prediction in zip(gold_options.values(), predicted_options.values())
+        ].count(True) / len(gold_options)
+
+        predictions = {}
+        well_formatted_count = 0
+        total_docs_used = 0
+        total_mean_docs_length = 0
+
+        for (id_gold, gold_option), pred_option, relevant_docs in zip(
+            gold_options.items(),
+            predicted_options.values(),
+            relevant_documents.values()
+        ):
+            is_answer_well_formatted = self.__is_answer_well_formatted(
+                answer=pred_option, possible_options=possible_options
+            )
+            well_formatted_count += 1 if is_answer_well_formatted else 0
+
+            predictions[id_gold] = {
+                "predicted_answer": pred_option,
+                "gold_answer": gold_option,
+                "is_well_formatted": is_answer_well_formatted,
+            }
+            if relevant_docs:
+                mean_docs_length = sum(doc["length"] for doc in relevant_docs) / len(relevant_docs)
+                total_mean_docs_length += mean_docs_length
+                total_docs_used += len(relevant_docs)
+
+                predictions[id_gold].update({
+                    "relevant_docs": relevant_docs,
+                    "mean_relevant_docs_length": mean_docs_length
+                })
+
+        return {
+            "accuracy": accuracy,
+            "percentage_well_formatted": well_formatted_count / len(predictions),
+            **(
+                {
+                    "mean_relevant_docs_used": total_docs_used / len(predictions),
+                    "mean_relevant_docs_length": total_mean_docs_length / len(predictions),
+                } if total_docs_used != 0 else {}
+            ),
+            "predictions": predictions
+        }
 
 
     def __save_evaluation_results(
@@ -84,35 +148,36 @@ class VisualQAModel:
 
 
     def evaluate(self, dataset: Dataset, save_path: Path) -> None:
+        possible_options = ["A", "B", "C", "D"]
         gold_options = {}
         predicted_options = {}
-        possible_options = ["A", "B", "C", "D"]
+        relevant_documents = {}
 
+        # Obtain gold and predicted options, and relevant documents if any
         for row in tqdm(
             dataset,
-            desc=f"Evaluating model ({self.__country}_{self.__file_type} subset) ...",
+            desc=f"- Evaluating model ({self.__country}_{self.__file_type} subset) ...",
         ):
             row_index = row["index"]
             gold_options[row_index] = row["correct_option"]
-            predicted_options[row_index] = self.generate_answer_from_row(row, possible_options)
 
-        accuracy = [
-            gold == prediction
-            for gold, prediction in zip(gold_options.values(), predicted_options.values())
-        ].count(True) / len(gold_options)
+            model_answer_result = self.generate_answer_from_row(row, possible_options)
+            predicted_options[row_index] = model_answer_result.answer
+            current_relevant_documents = []
+            for document in model_answer_result.relevant_documents:
+                current_relevant_documents.append({
+                    "doc_title": document.metadata['title'],
+                    "length": len(document.page_content)
+                })
+            relevant_documents[row_index] = current_relevant_documents
+
+        evaluation_metrics = self.__compute_evaluation_metrics(
+            gold_options, predicted_options, possible_options, relevant_documents
+        )
+
         self.__save_evaluation_results(
-            data={
-                "accuracy": accuracy,
-                "predictions": {
-                    id_gold: {
-                        "predicted_answer": pred_option,
-                        "gold_answer": gold_option,
-                    }
-                    for (id_gold, gold_option), (id_pred, pred_option) in zip(
-                        gold_options.items(), predicted_options.items()
-                    )
-                },
-            },
+            data=evaluation_metrics,
             save_path=save_path,
             results_filename=self.__generate_results_filename()
         )
+        print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) complete.")
