@@ -1,38 +1,47 @@
 from pathlib import Path
+from typing import Any
 
 from langchain_community.vectorstores import FAISS
 from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.retrievers import BaseRetriever
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
 
-from src.utils.enums import VQAStrategyType
+from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
+from src.utils.enums import RagQPromptType, VQAStrategyType
+from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
-from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class RagQVQAStrategy(BaseVQAStrategy):
 
-    def _init_strategy(
-        self,
-        index_dir: Path,
-        index_name: str,
-        embedding_model_name: str,
-        relevant_docs_count: int
-    ) -> None:
-        self.__retriever = self.__load_wikimed_retriever(
-            index_dir,
-            index_name,
-            embedding_model_name,
-            relevant_docs_count
-        )
-
-
     @property
     def strategy_type(self) -> VQAStrategyType:
         return VQAStrategyType.RAG_Q
+
+
+    def _init_strategy(
+        self,
+        prompt_type: RagQPromptType,
+        *args: Any,
+        **kwargs: dict[str, Any]
+    ) -> None:
+        expected_arguments = [
+            ArgumentSpec(name="index_dir", expected_type=Path),
+            ArgumentSpec(name="index_name", expected_type=str),
+            ArgumentSpec(name="embedding_model_name", expected_type=str),
+            ArgumentSpec(name="relevant_docs_count", expected_type=int)
+        ]
+        super()._validate_kwargs(expected_arguments, **kwargs)
+
+        self.prompt_template = RAG_Q_PROMPTS[prompt_type]
+        self.__retriever = self.__load_wikimed_retriever(
+            index_dir=kwargs["index_dir"],
+            index_name=kwargs["index_name"],
+            embedding_model_name=kwargs["embedding_model_name"],
+            relevant_docs_count=kwargs["relevant_docs_count"]
+        )
 
 
     def __load_wikimed_retriever(
@@ -72,42 +81,8 @@ class RagQVQAStrategy(BaseVQAStrategy):
 
 
     def load_ollama_model(self, model_name: str) -> BaseChatModel:
-
-        def prompt_template(data: dict) -> list:
-            question = data["question"]
-            image = data["image"]
-            relevant_docs = data["relevant_docs"]
-
-            return [
-                SystemMessage(
-                    content=(
-                        "You are an assistant that only responds with a single letter: A, B, C, or "
-                        "D. For each question, you should consider the provided options and the"
-                        "image, and answer with exactly one letter that best matches the correct "
-                        "choice. Answer with a single letter only, without any explanations or "
-                        "additional information."
-                    )
-                ),
-                HumanMessage(
-                    content=[
-                        {
-                            "type": "image_url",
-                            "image_url": f"data:image/jpeg;base64,{image}",
-                        },
-                        {
-                            "type": "text",
-                            "text": question
-                        },
-                        {
-                            "type": "text",
-                            "text": relevant_docs
-                        }
-                    ]
-                ),
-            ]
-
         llm = ChatOllama(model=model_name, temperature=0, num_predict=1)
-        chain = prompt_template | llm | StrOutputParser()
+        chain = self.prompt_template | llm | StrOutputParser()
         return chain
 
 

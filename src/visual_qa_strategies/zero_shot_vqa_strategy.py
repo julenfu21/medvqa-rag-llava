@@ -1,11 +1,13 @@
+from typing import Any
+
 from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
-from src.utils.enums import VQAStrategyType
+from src.utils.data_definitions import ModelAnswerResult
+from src.utils.enums import VQAStrategyType, ZeroShotPromptType
+from src.utils.prompts.zero_shot_prompts import ZERO_SHOT_PROMPTS
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
-from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class ZeroShotVQAStrategy(BaseVQAStrategy):
@@ -15,42 +17,18 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         return VQAStrategyType.ZERO_SHOT
 
 
-    def _init_strategy(self) -> None:
-        pass
+    def _init_strategy(
+        self,
+        prompt_type: ZeroShotPromptType,
+        *args: Any,
+        **kwargs: dict[str, Any]
+    ) -> None:
+        self.prompt_template = ZERO_SHOT_PROMPTS[prompt_type]
 
 
     def load_ollama_model(self, model_name: str) -> BaseChatModel:
-
-        def prompt_template(data: dict) -> list:
-            question = data["question"]
-            image = data["image"]
-
-            return [
-                SystemMessage(
-                    content=(
-                        "You are an assistant that only responds with a single letter: A, B, C, or "
-                        "D. For each question, you should consider the provided options and the"
-                        "image, and answer with exactly one letter that best matches the correct "
-                        "choice. Answer with a single letter only, without any explanations or "
-                        "additional information."
-                    )
-                ),
-                HumanMessage(
-                    content=[
-                        {
-                            "type": "image_url",
-                            "image_url": f"data:image/jpeg;base64,{image}",
-                        },
-                        {
-                            "type": "text",
-                            "text": question
-                        },
-                    ]
-                ),
-            ]
-
         llm = ChatOllama(model=model_name, temperature=0, num_predict=1)
-        chain = prompt_template | llm | StrOutputParser()
+        chain = self.prompt_template | llm | StrOutputParser()
         return chain
 
 

@@ -8,6 +8,8 @@ import plotly.express as px
 from IPython.display import HTML, display
 from PIL import Image
 
+from src.utils.data_definitions import ModelAnswerResult
+
 
 def display_pie_chart_on_correct_answer_distribution(
     data_frame: pd.DataFrame,
@@ -72,7 +74,7 @@ def visualize_qa_pair_row(
     row: dict,
     image_width: Optional[int] = None,
     image_height: Optional[int] = None,
-    model_answer: str = None,
+    model_answer: ModelAnswerResult = None,
 ) -> None:
     # Display row id
     _display_formatted_section(
@@ -108,7 +110,7 @@ def visualize_qa_pair_row(
             formatted_options.append(
                 f"<p style='color: rgb(0, 255, 0);'><b>{option}) {row[option]}</b>"
             )
-        elif option == model_answer:
+        elif option == model_answer.answer:
             formatted_options.append(
                 f"<p style='color: rgb(255, 0, 0);'><b>{option}) {row[option]}</b>"
             )
@@ -126,7 +128,7 @@ def visualize_qa_pair_row(
         _display_formatted_section(
             section_name="Model Answer",
             section_style="margin: 30px 0;",
-            section_content=model_answer
+            section_content=model_answer.answer
         )
 
 

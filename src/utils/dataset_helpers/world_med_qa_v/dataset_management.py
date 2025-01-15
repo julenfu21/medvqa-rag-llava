@@ -30,11 +30,19 @@ def get_dataset_row_by_id(
 
 def fetch_model_answer_from_json(
     evaluation_results_folder: Path,
+    vqa_strategy_name: str,
+    country: str,
+    file_type: str,
+    prompt_type_name: str,
     question_id: int,
-    vqa_strategy_name: str
 ) -> str:
-    evaluation_results_filename = f'spain_english_{vqa_strategy_name}_evaluation.json'
-    evaluation_results_path = evaluation_results_folder / evaluation_results_filename
+    evaluation_results_filename = f'{country}_{file_type}_{prompt_type_name}_evaluation.json'
+    evaluation_results_path_elements = [
+        evaluation_results_folder,
+        vqa_strategy_name,
+        evaluation_results_filename
+    ]
+    evaluation_results_path = Path(*evaluation_results_path_elements)
     with open(evaluation_results_path, mode='r', encoding='utf-8') as evaluation_file:
         evaluation_data = json.load(evaluation_file)
 

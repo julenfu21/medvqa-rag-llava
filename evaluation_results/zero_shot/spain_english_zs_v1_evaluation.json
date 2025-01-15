@@ -1,0 +1,11 @@
+{
+    "accuracy": 1.0,
+    "percentage_well_formatted": 1.0,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        }
+    }
+}

@@ -5,8 +5,8 @@ from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
+from src.utils.data_definitions import ModelAnswerResult
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
-from src.utils.visual_qa_types import ModelAnswerResult
 
 
 class VisualQAModel:
@@ -27,9 +27,14 @@ class VisualQAModel:
 
     def __load_ollama_model(self) -> BaseChatModel:
         capitalized_model_name = self.__model_name.capitalize()
-        print(f"- Loading {capitalized_model_name} Model ...")
+        print(
+            f"- Loading {capitalized_model_name} model (prompt template: "
+            f"{self.__visual_qa_strategy.prompt_type}) ..."
+        )
         ollama_model = self.__visual_qa_strategy.load_ollama_model(self.__model_name)
-        print(f"+ {capitalized_model_name} Model Loaded.")
+        print(
+            f"+ {capitalized_model_name} model "
+            f"(prompt template: {self.__visual_qa_strategy.prompt_type}) loaded.")
         return ollama_model
 
 
@@ -135,16 +140,18 @@ class VisualQAModel:
         save_path: Path,
         results_filename: str
     ) -> None:
-        Path.mkdir(save_path, exist_ok=True)
-        file_path = save_path / results_filename
+        strategy_name = self.__visual_qa_strategy.strategy_type.value
+        save_path = save_path / strategy_name
+        save_path.mkdir(parents=True, exist_ok=True)
 
-        with open(file_path, mode="w", encoding="utf-8") as file:
+        results_filepath = save_path / results_filename
+        with open(results_filepath, mode="w", encoding="utf-8") as file:
             json.dump(data, file, indent=4)
 
 
     def __generate_results_filename(self) -> str:
-        strategy_name = self.__visual_qa_strategy.strategy_type.value
-        return f'{self.__country}_{self.__file_type}_{strategy_name}_evaluation.json'
+        prompt_type_name = self.__visual_qa_strategy.prompt_type.value
+        return f'{self.__country}_{self.__file_type}_{prompt_type_name}_evaluation.json'
 
 
     def evaluate(self, dataset: Dataset, save_path: Path) -> None:
@@ -180,4 +187,4 @@ class VisualQAModel:
             save_path=save_path,
             results_filename=self.__generate_results_filename()
         )
-        print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) complete.")
+        print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) completed.")
