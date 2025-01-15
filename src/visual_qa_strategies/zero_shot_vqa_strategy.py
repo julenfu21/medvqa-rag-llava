@@ -4,9 +4,10 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
-from src.utils.data_definitions import ModelAnswerResult
+from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType, ZeroShotPromptType
 from src.utils.prompts.zero_shot_prompts import ZERO_SHOT_PROMPTS
+from src.utils.types import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -19,10 +20,15 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        prompt_type: ZeroShotPromptType,
+        prompt_type: PromptType,
         *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
+        arguments = [
+            ArgumentSpec(name="prompt_type", expected_type=ZeroShotPromptType, value=prompt_type)
+        ]
+        super()._validate_arguments(arguments, **kwargs)
+
         self.prompt_template = ZERO_SHOT_PROMPTS[prompt_type]
 
 

@@ -14,5 +14,4 @@ class ModelAnswerResult:
 class ArgumentSpec:
     name: str
     expected_type: Type
-    default_value: Any = None
-    description: str = ""
+    value: Any = None

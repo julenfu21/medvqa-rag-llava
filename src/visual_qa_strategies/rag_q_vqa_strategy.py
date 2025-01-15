@@ -11,6 +11,7 @@ from langchain_ollama import ChatOllama
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
+from src.utils.types import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -23,17 +24,18 @@ class RagQVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        prompt_type: RagQPromptType,
+        prompt_type: PromptType,
         *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
-        expected_arguments = [
+        arguments = [
+            ArgumentSpec(name="prompt_type", expected_type=RagQPromptType, value=prompt_type),
             ArgumentSpec(name="index_dir", expected_type=Path),
             ArgumentSpec(name="index_name", expected_type=str),
             ArgumentSpec(name="embedding_model_name", expected_type=str),
             ArgumentSpec(name="relevant_docs_count", expected_type=int)
         ]
-        super()._validate_kwargs(expected_arguments, **kwargs)
+        super()._validate_arguments(arguments, **kwargs)
 
         self.prompt_template = RAG_Q_PROMPTS[prompt_type]
         self.__retriever = self.__load_wikimed_retriever(

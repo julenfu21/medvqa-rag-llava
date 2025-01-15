@@ -35,15 +35,15 @@ class BaseVQAStrategy(ABC):
         pass
 
 
-    def _validate_kwargs(
+    def _validate_arguments(
         self,
-        expected_arguments: list[ArgumentSpec],
+        arguments: list[ArgumentSpec],
         **kwargs: dict[str, Any]
     ) -> None:
-        for argument in expected_arguments:
+        for argument in arguments:
             self.__validate_argument(
                 argument_name=argument.name,
-                argument_value=kwargs.get(argument.name),
+                argument_value=argument.value if argument.value else kwargs.get(argument.name),
                 expected_type=argument.expected_type
             )
 
