@@ -11,7 +11,7 @@ from langchain_ollama import ChatOllama
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
-from src.utils.types import PromptType
+from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 

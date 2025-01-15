@@ -6,7 +6,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
-from src.utils.types import PromptType
+from src.utils.types_aliases import PromptType
 
 
 class BaseVQAStrategy(ABC):
@@ -59,7 +59,7 @@ class BaseVQAStrategy(ABC):
         if not isinstance(argument_value, expected_type):
             raise TypeError(
                 f"Expected '{argument_name}' to be of type '{expected_type.__name__}', "
-                f"got {type(argument_value).__name__}"
+                f"got '{type(argument_value).__name__}'"
             )
 
     @property

@@ -7,7 +7,7 @@ from langchain_ollama import ChatOllama
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType, ZeroShotPromptType
 from src.utils.prompts.zero_shot_prompts import ZERO_SHOT_PROMPTS
-from src.utils.types import PromptType
+from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 

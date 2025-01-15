@@ -3,7 +3,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 
 from src.utils.data_definitions import ModelAnswerResult
 from src.utils.enums import VQAStrategyType
-from src.utils.types import PromptType
+from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 

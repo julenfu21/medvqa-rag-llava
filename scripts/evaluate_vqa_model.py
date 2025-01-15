@@ -5,7 +5,7 @@ from typing import get_args
 
 import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
 from src.utils.enums import RagQPromptType, VQAStrategyType, ZeroShotPromptType
-from src.utils.types import PromptType
+from src.utils.types_aliases import PromptType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 from src.visual_qa_strategies.rag_db_reranker_vqa_strategy import RagDBRerankerVQAStrategy
