@@ -3,7 +3,6 @@ from langchain_core.language_models.chat_models import BaseChatModel
 
 from src.utils.data_definitions import ModelAnswerResult
 from src.utils.enums import VQAStrategyType
-from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -16,7 +15,6 @@ class RagImgVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        prompt_type: PromptType,  # Change to specific PromptType
         *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:

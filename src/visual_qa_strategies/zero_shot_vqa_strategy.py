@@ -7,7 +7,6 @@ from langchain_ollama import ChatOllama
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType, ZeroShotPromptType
 from src.utils.prompts.zero_shot_prompts import ZERO_SHOT_PROMPTS
-from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -18,23 +17,30 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         return VQAStrategyType.ZERO_SHOT
 
 
+    def _set_prompt_template(self) -> None:
+        super()._validate_arguments(
+            required_arguments=[
+                ArgumentSpec(
+                    name="prompt_type", expected_type=ZeroShotPromptType, value=self._prompt_type
+                )
+            ]
+        )
+
+        self._prompt_template = ZERO_SHOT_PROMPTS[self._prompt_type]
+
+
     def _init_strategy(
         self,
-        prompt_type: PromptType,
         *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
-        arguments = [
-            ArgumentSpec(name="prompt_type", expected_type=ZeroShotPromptType, value=prompt_type)
-        ]
+        arguments = []
         super()._validate_arguments(arguments, **kwargs)
-
-        self.prompt_template = ZERO_SHOT_PROMPTS[prompt_type]
 
 
     def load_ollama_model(self, model_name: str) -> BaseChatModel:
         llm = ChatOllama(model=model_name, temperature=0, num_predict=1)
-        chain = self.prompt_template | llm | StrOutputParser()
+        chain = self._prompt_template | llm | StrOutputParser()
         return chain
 
 

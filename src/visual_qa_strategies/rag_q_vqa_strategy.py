@@ -11,7 +11,6 @@ from langchain_ollama import ChatOllama
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
-from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -24,12 +23,10 @@ class RagQVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        prompt_type: PromptType,
         *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
         arguments = [
-            ArgumentSpec(name="prompt_type", expected_type=RagQPromptType, value=prompt_type),
             ArgumentSpec(name="index_dir", expected_type=Path),
             ArgumentSpec(name="index_name", expected_type=str),
             ArgumentSpec(name="embedding_model_name", expected_type=str),
@@ -37,13 +34,24 @@ class RagQVQAStrategy(BaseVQAStrategy):
         ]
         super()._validate_arguments(arguments, **kwargs)
 
-        self.prompt_template = RAG_Q_PROMPTS[prompt_type]
         self.__retriever = self.__load_wikimed_retriever(
             index_dir=kwargs["index_dir"],
             index_name=kwargs["index_name"],
             embedding_model_name=kwargs["embedding_model_name"],
             relevant_docs_count=kwargs["relevant_docs_count"]
         )
+
+
+    def _set_prompt_template(self) -> None:
+        super()._validate_arguments(
+            required_arguments=[
+                ArgumentSpec(
+                    name="prompt_type", expected_type=RagQPromptType, value=self._prompt_type
+                )
+            ]
+        )
+
+        self._prompt_template = RAG_Q_PROMPTS[self._prompt_type]
 
 
     def __load_wikimed_retriever(
@@ -84,7 +92,7 @@ class RagQVQAStrategy(BaseVQAStrategy):
 
     def load_ollama_model(self, model_name: str) -> BaseChatModel:
         llm = ChatOllama(model=model_name, temperature=0, num_predict=1)
-        chain = self.prompt_template | llm | StrOutputParser()
+        chain = self._prompt_template | llm | StrOutputParser()
         return chain
 
 
