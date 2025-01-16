@@ -32,6 +32,7 @@ def v1_prompt_template(data: dict) -> list:
     ]
 
 
+# Explicitly guide the model to focus on the image and the question
 def v2_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
@@ -39,7 +40,11 @@ def v2_prompt_template(data: dict) -> list:
     return [
         SystemMessage(
             content=(
-                "-"
+                "You are an assistant that only responds with a single letter: A, B, C, or D. "
+                "For each question, you should carefully consider the image and the question. "
+                "Focus on identifying the correct answer based solely on the image and the "
+                "question. Ignore any irrelevant details or assumptions that are not directly "
+                "visible in the image."
             )
         ),
         HumanMessage(
@@ -57,6 +62,8 @@ def v2_prompt_template(data: dict) -> list:
     ]
 
 
+# Clarify the task + 
+# Ensure the model fully understands the importance of focusing on the image and question
 def v3_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
@@ -64,7 +71,21 @@ def v3_prompt_template(data: dict) -> list:
     return [
         SystemMessage(
             content=(
-                "-"
+                "You are an assistant that only responds with a single letter: A, B, C, or D. "
+                "Your task is to carefully analyze the provided image and question."
+            )
+        ),
+        SystemMessage(
+            content=(
+                "Pay close attention to details in the image that relate to the question. "
+                "Do not make assumptions or consider anything outside of what is visible in the "
+                "image."
+            )
+        ),
+        SystemMessage(
+            content=(
+                "Answer with a single letter (A, B, C, or D) that best matches the correct choice. "
+                "Provide no explanations or additional information."
             )
         ),
         HumanMessage(
