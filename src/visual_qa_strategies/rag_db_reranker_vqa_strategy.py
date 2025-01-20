@@ -15,7 +15,6 @@ class RagDBRerankerVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
         raise NotImplementedError

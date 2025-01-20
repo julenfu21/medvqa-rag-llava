@@ -31,7 +31,6 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
 
     def _init_strategy(
         self,
-        *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
         arguments = []

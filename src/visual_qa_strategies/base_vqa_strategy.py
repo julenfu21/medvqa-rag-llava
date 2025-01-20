@@ -14,7 +14,6 @@ class BaseVQAStrategy(ABC):
     def __init__(
         self,
         prompt_type: PromptType,
-        *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
         self._prompt_type = prompt_type
@@ -23,14 +22,13 @@ class BaseVQAStrategy(ABC):
         formatted_strategy_name = prettify_strategy_name(strategy_name=self.strategy_type.value)
         print(f"- Loading {formatted_strategy_name} strategy ...")
         self._set_prompt_template()
-        self._init_strategy(*args, **kwargs)
+        self._init_strategy(**kwargs)
         print(f"+ {formatted_strategy_name} strategy loaded.")
 
 
     @abstractmethod
     def _init_strategy(
         self,
-        *args: Any,
         **kwargs: dict[str, Any]
     ) -> None:
         pass
