@@ -50,14 +50,27 @@ class BaseVQAStrategy(ABC):
         required_arguments_names = {argument.name for argument in required_arguments}
         extra_arguments = set(kwargs.keys()) - required_arguments_names
         if extra_arguments:
-            raise ValueError(f"Unexpected keyword arguments: {extra_arguments}")
-
-        for argument in required_arguments:
-            self.__validate_argument(
-                argument_name=argument.name,
-                argument_value=argument.value if argument.value else kwargs.get(argument.name),
-                expected_type=argument.expected_type
+            raise ValueError(
+                f"Unexpected keyword arguments: {", ".join(extra_arguments)}"
             )
+
+        missing_arguments = []
+        for argument in required_arguments:
+            argument_value = argument.value if argument.value else kwargs.get(argument.name)
+            if argument_value:
+                self.__validate_argument(
+                    argument_name=argument.name,
+                    argument_value=argument_value,
+                    expected_type=argument.expected_type
+                )
+            else:
+                missing_arguments.append(argument)
+
+        if missing_arguments:
+            error_message = "Missing required arguments: \n"
+            for argument in missing_arguments:
+                error_message += f"\t- {argument.name}: {argument.expected_type.__name__} \n"
+            raise ValueError(error_message)
 
 
     def __validate_argument(
@@ -66,8 +79,8 @@ class BaseVQAStrategy(ABC):
         argument_value: Any,
         expected_type: Any
     ) -> None:
-        if argument_value is None:
-            raise ValueError(f"Missing required argument: '{argument_name}'")
+        # if argument_value is None:
+        #     raise ValueError(f"Missing required argument: '{argument_name}'")
 
         if not isinstance(argument_value, expected_type):
             raise TypeError(
