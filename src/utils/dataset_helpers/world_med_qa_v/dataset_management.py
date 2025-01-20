@@ -3,6 +3,8 @@ from pathlib import Path
 
 from datasets import Dataset, load_dataset
 
+from src.utils.data_definitions import ModelAnswerResult
+
 
 def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
     dataset_filename = f"{country}_{file_type}_processed.tsv"
@@ -35,7 +37,7 @@ def fetch_model_answer_from_json(
     file_type: str,
     prompt_type_name: str,
     question_id: int,
-) -> str:
+) -> ModelAnswerResult:
     evaluation_results_filename = f'{country}_{file_type}_{prompt_type_name}_evaluation.json'
     evaluation_results_path_elements = [
         evaluation_results_folder,
@@ -46,4 +48,6 @@ def fetch_model_answer_from_json(
     with open(evaluation_results_path, mode='r', encoding='utf-8') as evaluation_file:
         evaluation_data = json.load(evaluation_file)
 
-    return evaluation_data['predictions'][str(question_id)]['predicted_answer']
+    return ModelAnswerResult(
+        answer=evaluation_data['predictions'][str(question_id)]['predicted_answer']
+    )
