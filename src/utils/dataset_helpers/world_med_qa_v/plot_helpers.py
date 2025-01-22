@@ -75,7 +75,7 @@ def visualize_qa_pair_row(
     row: dict,
     image_width: Optional[int] = None,
     image_height: Optional[int] = None,
-    model_answer: ModelAnswerResult = None,
+    model_answer: ModelAnswerResult = None
 ) -> None:
     # Display row id
     _display_formatted_section(
@@ -111,7 +111,7 @@ def visualize_qa_pair_row(
             formatted_options.append(
                 f"<p style='color: rgb(0, 255, 0);'><b>{option}) {row[option]}</b>"
             )
-        elif option == model_answer.answer:
+        elif model_answer and option == model_answer.answer:
             formatted_options.append(
                 f"<p style='color: rgb(255, 0, 0);'><b>{option}) {row[option]}</b>"
             )
