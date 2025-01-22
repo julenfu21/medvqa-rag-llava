@@ -15,3 +15,11 @@ class ArgumentSpec:
     name: str
     expected_type: Type
     value: Any = None
+    is_optional: bool = False
+
+
+@dataclass
+class DocSplitOptions:
+    chunk_size: int
+    chunk_overlap: int
+    short_docs_count: int

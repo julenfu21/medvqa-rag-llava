@@ -29,6 +29,7 @@ class RagQAsVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        base64_image: str
+        base64_image: str,
+        **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         raise NotImplementedError

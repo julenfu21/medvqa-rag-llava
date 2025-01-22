@@ -2,13 +2,15 @@ from pathlib import Path
 from typing import Any
 
 from langchain_community.vectorstores import FAISS
+from langchain_core.documents import Document
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.retrievers import BaseRetriever
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
+from src.utils.data_definitions import ArgumentSpec, DocSplitOptions, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -100,10 +102,28 @@ class RagQVQAStrategy(BaseVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        base64_image: str
+        base64_image: str,
+        **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
+        super()._validate_arguments(
+            required_arguments=[
+                ArgumentSpec(
+                    name="doc_split_options",
+                    expected_type=DocSplitOptions,
+                    is_optional=True
+                )
+            ],
+            **kwargs
+        )
 
-        def format_docs(docs) -> str:
+        def split_docs(docs: list[Document], split_options: DocSplitOptions) -> list[Document]:
+            text_splitter = RecursiveCharacterTextSplitter(
+                chunk_size=split_options.chunk_size,
+                chunk_overlap=split_options.chunk_overlap
+            )
+            return text_splitter.split_documents(docs)[:split_options.short_docs_count]
+
+        def format_docs(docs: list[Document]) -> str:
             return "\n\n".join(doc.page_content for doc in docs)
 
         possible_answers = " ".join(
@@ -112,10 +132,19 @@ class RagQVQAStrategy(BaseVQAStrategy):
         question_with_possible_answers = f"{question} {possible_answers}"
 
         relevant_documents = self.__retriever.invoke(question)
+        doc_split_options = kwargs.get("doc_split_options")
+        if doc_split_options:
+            split_documents = split_docs(docs=relevant_documents, split_options=doc_split_options)
+            formatted_docs = format_docs(docs=split_documents)
+        else:
+            formatted_docs = format_docs(docs=relevant_documents)
+
         output = model.invoke({
             "question": question_with_possible_answers,
             "image": base64_image,
-            "relevant_docs": format_docs(relevant_documents)
+            "relevant_docs": formatted_docs
         })
-
-        return ModelAnswerResult(answer=output.strip(), relevant_documents=relevant_documents)
+        return ModelAnswerResult(
+            answer=output.strip(),
+            relevant_documents=split_documents if doc_split_options else relevant_documents
+        )

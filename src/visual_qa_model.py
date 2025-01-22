@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from typing import Any
 
 from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
@@ -53,7 +54,8 @@ class VisualQAModel:
         self,
         row: dict,
         possible_options: list[str],
-        verbose: bool = False
+        verbose: bool = False,
+        **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         if verbose:
             print(f"- Generating Answer for Question (ID: {row['index']}) ...")
@@ -62,7 +64,8 @@ class VisualQAModel:
             model=self.__model,
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
-            base64_image=row['image']
+            base64_image=row['image'],
+            **kwargs
         )
 
         if verbose:
@@ -154,7 +157,12 @@ class VisualQAModel:
         return f'{self.__country}_{self.__file_type}_{prompt_type_name}_evaluation.json'
 
 
-    def evaluate(self, dataset: Dataset, save_path: Path) -> None:
+    def evaluate(
+        self,
+        dataset: Dataset,
+        save_path: Path,
+        **kwargs: dict[str, Any]
+    ) -> None:
         possible_options = ["A", "B", "C", "D"]
         gold_options = {}
         predicted_options = {}
@@ -168,7 +176,7 @@ class VisualQAModel:
             row_index = row["index"]
             gold_options[row_index] = row["correct_option"]
 
-            model_answer_result = self.generate_answer_from_row(row, possible_options)
+            model_answer_result = self.generate_answer_from_row(row, possible_options, **kwargs)
             predicted_options[row_index] = model_answer_result.answer
             current_relevant_documents = []
             for document in model_answer_result.relevant_documents:

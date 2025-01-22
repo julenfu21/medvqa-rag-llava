@@ -54,14 +54,17 @@ class BaseVQAStrategy(ABC):
 
         missing_arguments = []
         for argument in required_arguments:
-            argument_value = argument.value if argument.value else kwargs.get(argument.name)
-            if argument_value:
+            argument_value = (
+                argument.value if argument.value is not None
+                else kwargs.get(argument.name)
+            )
+            if argument_value is not None:
                 self.__validate_argument(
                     argument_name=argument.name,
                     argument_value=argument_value,
                     expected_type=argument.expected_type
                 )
-            else:
+            elif not argument.is_optional:
                 missing_arguments.append(argument)
 
         if missing_arguments:
@@ -77,9 +80,6 @@ class BaseVQAStrategy(ABC):
         argument_value: Any,
         expected_type: Any
     ) -> None:
-        # if argument_value is None:
-        #     raise ValueError(f"Missing required argument: '{argument_name}'")
-
         if not isinstance(argument_value, expected_type):
             raise TypeError(
                 f"Expected '{argument_name}' to be of type '{expected_type.__name__}', "
@@ -116,6 +116,7 @@ class BaseVQAStrategy(ABC):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        base64_image: str
+        base64_image: str,
+        **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         pass

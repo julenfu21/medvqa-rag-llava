@@ -49,7 +49,10 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str,
+        **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
+        super()._validate_arguments(required_arguments=[], **kwargs)
+
         possible_answers = " ".join(
             [f"{letter} - {answer}" for letter, answer in possible_answers.items()]
         )
