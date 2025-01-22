@@ -24,10 +24,12 @@ def load_wikimed_dataset_metadata(data_path: Path) -> pd.DataFrame:
             for line in wikimed_file:
                 line_content = json.loads(line)
                 line_id = line_content['_id']
+                line_title = line_content['title']
                 line_text = line_content['text']
 
                 wikimed_dataset_metadata.append({
                     "id": int(line_id),
+                    "title": line_title,
                     "word_count": len(line_text),
                     "sentence_count": len(line_text.split('.'))
                 })
@@ -51,15 +53,15 @@ def calculate_summary_statistics(column: pd.Series) -> dict[str, float]:
     }
 
 
-def get_dataset_row_by_id(
+def get_dataset_row_by_doc_title(
     dataset_path: Path,
     dataset_metadata: pd.DataFrame,
-    row_id: int
+    doc_title: int
 ) -> dict[str, Any]:
     try:
-        row_index = dataset_metadata[dataset_metadata['id'] == row_id].index.item()
+        row_index = dataset_metadata[dataset_metadata['title'] == doc_title].index.item()
     except Exception as e:
-        raise ValueError(f"No row found with index {row_id}") from e
+        raise ValueError(f"No document found with the title '{doc_title}'") from e
 
     row = json.loads(linecache.getline(filename=str(dataset_path), lineno=row_index + 1))
     return row
