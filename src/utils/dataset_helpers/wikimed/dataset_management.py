@@ -1,5 +1,7 @@
 import json
+import linecache
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 from tqdm import tqdm
@@ -47,6 +49,20 @@ def calculate_summary_statistics(column: pd.Series) -> dict[str, float]:
         "Q3": column.quantile(0.75),
         "Max": column.max()
     }
+
+
+def get_dataset_row_by_id(
+    dataset_path: Path,
+    dataset_metadata: pd.DataFrame,
+    row_id: int
+) -> dict[str, Any]:
+    try:
+        row_index = dataset_metadata[dataset_metadata['id'] == row_id].index.item()
+    except Exception as e:
+        raise ValueError(f"No row found with index {row_id}") from e
+
+    row = json.loads(linecache.getline(filename=str(dataset_path), lineno=row_index + 1))
+    return row
 
 
 # ====================

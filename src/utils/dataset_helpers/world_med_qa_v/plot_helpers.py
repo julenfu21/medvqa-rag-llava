@@ -5,10 +5,11 @@ from typing import Optional
 
 import pandas as pd
 import plotly.express as px
-from IPython.display import HTML, display
+from IPython.display import display
 from PIL import Image
 
 from src.utils.data_definitions import ModelAnswerResult
+from src.utils.dataset_helpers.shared_plot_helpers import _display_formatted_section
 
 
 def display_pie_chart_on_correct_answer_distribution(
@@ -80,7 +81,7 @@ def visualize_qa_pair_row(
     _display_formatted_section(
         section_name="ID",
         section_style="margin: 20px 0;",
-        section_content=row['index']
+        section_content=str(row['index'])
     )
 
     # Display question
@@ -135,19 +136,6 @@ def visualize_qa_pair_row(
 # ====================
 # Private Functions
 # ====================
-
-
-def _display_formatted_section(
-    section_name: str,
-    section_style: str,
-    section_content: str | int
-) -> None:
-    section_text = f"""
-    <div style='{section_style}'>
-        <b>{section_name}:</b> {section_content}
-    </div>
-    """
-    display(HTML(section_text))
 
 
 def _display_base64_image(

@@ -11,3 +11,4 @@ ollama
 pandas
 pillow
 plotly
+pyperclip
