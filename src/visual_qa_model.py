@@ -1,12 +1,12 @@
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from src.utils.data_definitions import ModelAnswerResult
+from src.utils.data_definitions import DocSplitOptions, ModelAnswerResult
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -141,10 +141,19 @@ class VisualQAModel:
         self,
         data: dict,
         save_path: Path,
-        results_filename: str
+        results_filename: str,
+        doc_split_options: Optional[DocSplitOptions]
     ) -> None:
         strategy_name = self.__visual_qa_strategy.strategy_type.value
         save_path = save_path / strategy_name
+        if doc_split_options:
+            shortened_split_options = (
+                f"cs{doc_split_options.chunk_size}_co{doc_split_options.chunk_overlap}"
+                f"_cdc{doc_split_options.short_docs_count}"
+            )
+            save_path = save_path / shortened_split_options
+        else:
+            save_path = save_path / "no_doc_split"
         save_path.mkdir(parents=True, exist_ok=True)
 
         results_filepath = save_path / results_filename
@@ -164,6 +173,7 @@ class VisualQAModel:
         **kwargs: dict[str, Any]
     ) -> None:
         possible_options = ["A", "B", "C", "D"]
+        doc_split_options = kwargs.get("doc_split_options")
         gold_options = {}
         predicted_options = {}
         relevant_documents = {}
@@ -186,7 +196,7 @@ class VisualQAModel:
                     **(
                         {
                             "short_doc_content": document.page_content
-                        } if kwargs.get("doc_split_options") else {}
+                        } if doc_split_options else {}
                     )
                 })
             relevant_documents[row_index] = current_relevant_documents
@@ -198,6 +208,7 @@ class VisualQAModel:
         self.__save_evaluation_results(
             data=evaluation_metrics,
             save_path=save_path,
-            results_filename=self.__generate_results_filename()
+            results_filename=self.__generate_results_filename(),
+            doc_split_options=doc_split_options
         )
         print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) completed.")
