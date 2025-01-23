@@ -146,5 +146,6 @@ class RagQVQAStrategy(BaseVQAStrategy):
         })
         return ModelAnswerResult(
             answer=output.strip(),
-            relevant_documents=split_documents if doc_split_options else relevant_documents
+            relevant_documents=split_documents if doc_split_options else relevant_documents,
+            are_short_documents=True if doc_split_options else False
         )

@@ -182,7 +182,12 @@ class VisualQAModel:
             for document in model_answer_result.relevant_documents:
                 current_relevant_documents.append({
                     "doc_title": document.metadata['title'],
-                    "length": len(document.page_content)
+                    "length": len(document.page_content),
+                    **(
+                        {
+                            "short_doc_content": document.page_content
+                        } if kwargs.get("doc_split_options") else {}
+                    )
                 })
             relevant_documents[row_index] = current_relevant_documents
 
