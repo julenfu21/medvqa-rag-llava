@@ -226,6 +226,8 @@ def _display_text_with_mentions(
         )
         current_index = end_offset
 
+    highlighted_text += row_text[current_index:]
+
     _display_formatted_section(
         section_name="Text",
         section_style="margin-bottom: 20px;",
