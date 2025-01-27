@@ -7,8 +7,8 @@ from langchain_core.documents import Document
 @dataclass
 class ModelAnswerResult:
     answer: str
-    relevant_documents: list[Document] = field(default_factory=list)
-    are_short_documents: bool = False
+    original_relevant_documents: list[Document] = field(default_factory=list)
+    shortened_relevant_documents: list[str] = field(default_factory=list)
 
 
 @dataclass

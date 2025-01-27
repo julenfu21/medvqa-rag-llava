@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any
+from typing import Any, Union
 
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
@@ -8,11 +8,11 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.retrievers import BaseRetriever
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_ollama import ChatOllama
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from src.utils.data_definitions import ArgumentSpec, DocSplitOptions, ModelAnswerResult
+from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
+from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -108,23 +108,32 @@ class RagQVQAStrategy(BaseVQAStrategy):
         super()._validate_arguments(
             required_arguments=[
                 ArgumentSpec(
-                    name="doc_split_options",
-                    expected_type=DocSplitOptions,
+                    name="doc_splitter",
+                    expected_type=BaseSplitter,
                     is_optional=True
                 )
             ],
             **kwargs
         )
 
-        def split_docs(docs: list[Document], split_options: DocSplitOptions) -> list[Document]:
-            text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=split_options.chunk_size,
-                chunk_overlap=split_options.chunk_overlap
-            )
-            return text_splitter.split_documents(docs)[:split_options.short_docs_count]
+        # def split_docs(docs: list[Document], split_options: DocSplitOptions) -> list[Document]:
+        #     text_splitter = RecursiveCharacterTextSplitter(
+        #         chunk_size=split_options.chunk_size,
+        #         chunk_overlap=split_options.chunk_overlap
+        #     )
+        #     return text_splitter.split_documents(docs)[:split_options.short_docs_count]
 
-        def format_docs(docs: list[Document]) -> str:
-            return "\n\n".join(doc.page_content for doc in docs)
+        def format_docs(docs: Union[list[str], list[Document]]) -> str:
+            if isinstance(docs[0], str):
+                return "\n\n".join(docs)
+
+            if isinstance(docs[0], Document):
+                return "\n\n".join(doc.page_content for doc in docs)
+
+            raise TypeError(
+                f"Expected elements within 'docs' to be of type '{str.__name__}' "
+                f"or '{Document.__name__}', got '{type(docs[0].__name__)}'"
+            )
 
         possible_answers = " ".join(
             [f"{letter} - {answer}" for letter, answer in possible_answers.items()]
@@ -132,9 +141,9 @@ class RagQVQAStrategy(BaseVQAStrategy):
         question_with_possible_answers = f"{question} {possible_answers}"
 
         relevant_documents = self.__retriever.invoke(question)
-        doc_split_options = kwargs.get("doc_split_options")
-        if doc_split_options:
-            split_documents = split_docs(docs=relevant_documents, split_options=doc_split_options)
+        doc_splitter = kwargs.get("doc_splitter")
+        if doc_splitter:
+            split_documents = doc_splitter.split_documents(documents=relevant_documents)
             formatted_docs = format_docs(docs=split_documents)
         else:
             formatted_docs = format_docs(docs=relevant_documents)
@@ -146,6 +155,6 @@ class RagQVQAStrategy(BaseVQAStrategy):
         })
         return ModelAnswerResult(
             answer=output.strip(),
-            relevant_documents=split_documents if doc_split_options else relevant_documents,
-            are_short_documents=True if doc_split_options else False
+            original_relevant_documents=relevant_documents,
+            shortened_relevant_documents=split_documents if doc_splitter else []
         )

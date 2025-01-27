@@ -6,7 +6,9 @@ from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from src.utils.data_definitions import DocSplitOptions, ModelAnswerResult
+from src.utils.data_definitions import ModelAnswerResult
+from src.utils.enums import DocumentSplitterType
+from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
 
@@ -87,7 +89,8 @@ class VisualQAModel:
         gold_options: dict[str, str],
         predicted_options: dict[str, str],
         possible_options: list[str],
-        relevant_documents: dict
+        relevant_documents: dict,
+        are_shortened_documents: bool
     ) -> dict:
         accuracy = [
             gold == prediction
@@ -98,6 +101,8 @@ class VisualQAModel:
         well_formatted_count = 0
         total_docs_used = 0
         total_mean_docs_length = 0
+        total_mean_original_docs_length = 0
+        total_mean_shortened_docs_length = 0
 
         for (id_gold, gold_option), pred_option, relevant_docs in zip(
             gold_options.items(),
@@ -115,26 +120,59 @@ class VisualQAModel:
                 "is_well_formatted": is_answer_well_formatted,
             }
             if relevant_docs:
-                mean_docs_length = sum(doc["length"] for doc in relevant_docs) / len(relevant_docs)
-                total_mean_docs_length += mean_docs_length
+                if are_shortened_documents:
+                    total_shortened_docs_length = sum(
+                        doc['shortened_doc_length'] for doc in relevant_docs
+                    )
+                    mean_shortened_docs_length = total_shortened_docs_length / len(relevant_docs)
+                    total_mean_shortened_docs_length += mean_shortened_docs_length
+
+                    total_original_docs_length = sum(
+                        doc['original_doc_length'] for doc in relevant_docs
+                    )
+                    mean_original_docs_length = total_original_docs_length / len(relevant_docs)
+                    total_mean_original_docs_length += mean_original_docs_length
+
+                    predictions[id_gold].update({
+                        "relevant_docs": relevant_docs,
+                        "mean_original_docs_length": mean_original_docs_length,
+                        "mean_shortened_docs_length": mean_shortened_docs_length
+                    })
+                else:
+                    total_docs_length = sum(doc['doc_length'] for doc in relevant_docs)
+                    mean_docs_length = total_docs_length / len(relevant_docs)
+                    total_mean_docs_length += mean_docs_length
+
+                    predictions[id_gold].update({
+                        "relevant_docs": relevant_docs,
+                        "mean_relevant_docs_length": mean_docs_length
+                    })
+
                 total_docs_used += len(relevant_docs)
 
-                predictions[id_gold].update({
-                    "relevant_docs": relevant_docs,
-                    "mean_relevant_docs_length": mean_docs_length
+        evaluation_metrics = {
+            "accuracy": accuracy,
+            "percentage_well_formatted": well_formatted_count / len(predictions)
+        }
+
+        if total_docs_used != 0:
+            other_metrics = {
+                "mean_relevant_docs_used": total_docs_used / len(predictions)
+            }
+            if are_shortened_documents:
+                other_metrics.update({
+                    "mean_original_docs_length": total_mean_original_docs_length / len(predictions),
+                    "mean_shortened_docs_length": total_mean_shortened_docs_length / len(predictions)
+                })
+            else:
+                other_metrics.update({
+                    "mean_relevant_docs_length": total_mean_docs_length / len(predictions)
                 })
 
-        return {
-            "accuracy": accuracy,
-            "percentage_well_formatted": well_formatted_count / len(predictions),
-            **(
-                {
-                    "mean_relevant_docs_used": total_docs_used / len(predictions),
-                    "mean_relevant_docs_length": total_mean_docs_length / len(predictions),
-                } if total_docs_used != 0 else {}
-            ),
-            "predictions": predictions
-        }
+        evaluation_metrics.update(other_metrics)
+        evaluation_metrics["predicitions"] = predictions
+
+        return evaluation_metrics
 
 
     def __save_evaluation_results(
@@ -142,16 +180,33 @@ class VisualQAModel:
         data: dict,
         save_path: Path,
         results_filename: str,
-        doc_split_options: Optional[DocSplitOptions]
+        doc_splitter: Optional[BaseSplitter]
     ) -> None:
         strategy_name = self.__visual_qa_strategy.strategy_type.value
         save_path = save_path / strategy_name
-        if doc_split_options:
-            shortened_split_options = (
-                f"cs{doc_split_options.chunk_size}_co{doc_split_options.chunk_overlap}"
-                f"_cdc{doc_split_options.short_docs_count}"
+        if doc_splitter:
+            splitter_name_to_folder_name = {
+                DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: 'rec_char_splitting',
+                DocumentSplitterType.SPACY_SENTENCE_SPLITTER: 'spacy_sent_splitting',
+                DocumentSplitterType.PARAGRAPH_SPLITTER: 'par_splitting'
+            }
+            splitter_folder_name = splitter_name_to_folder_name[
+                doc_splitter.document_splitter_type
+            ]
+            if doc_splitter.add_title:
+                token_count = doc_splitter.token_count - 1
+                title = "with_title"
+            else:
+                token_count = doc_splitter.token_count
+                title = "no_title"
+            shortened_splitter_options = (
+                f"{title}_tc{token_count}"
             )
-            save_path = save_path / shortened_split_options
+            # shortened_splitter_options = (
+            #     f"cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
+            #     f"_cdc{doc_splitter.short_docs_count}"
+            # )
+            save_path = save_path / splitter_folder_name / shortened_splitter_options
         else:
             save_path = save_path / "no_doc_split"
         save_path.mkdir(parents=True, exist_ok=True)
@@ -173,7 +228,7 @@ class VisualQAModel:
         **kwargs: dict[str, Any]
     ) -> None:
         possible_options = ["A", "B", "C", "D"]
-        doc_split_options = kwargs.get("doc_split_options")
+        doc_splitter = kwargs.get("doc_splitter")
         gold_options = {}
         predicted_options = {}
         relevant_documents = {}
@@ -185,30 +240,43 @@ class VisualQAModel:
         ):
             row_index = row["index"]
             gold_options[row_index] = row["correct_option"]
-
             model_answer_result = self.generate_answer_from_row(row, possible_options, **kwargs)
             predicted_options[row_index] = model_answer_result.answer
+
             current_relevant_documents = []
-            for document in model_answer_result.relevant_documents:
-                current_relevant_documents.append({
-                    "doc_title": document.metadata['title'],
-                    "length": len(document.page_content),
-                    **(
-                        {
-                            "short_doc_content": document.page_content
-                        } if doc_split_options else {}
-                    )
-                })
+            are_shortened_documents = False
+            if model_answer_result.shortened_relevant_documents:
+                are_shortened_documents = True
+                for original_doc, shortened_doc in zip(
+                    model_answer_result.original_relevant_documents,
+                    model_answer_result.shortened_relevant_documents
+                ):
+                    current_relevant_documents.append({
+                        "doc_title": original_doc.metadata['title'],
+                        "original_doc_length": len(original_doc.page_content),
+                        "shortened_doc_length": len(shortened_doc),
+                        "shortened_doc_content": shortened_doc
+                    })
+            else:
+                for document in model_answer_result.original_relevant_documents:
+                    current_relevant_documents.append({
+                        "doc_title": document.metadata['title'],
+                        "doc_length": len(document.page_content)
+                    })
             relevant_documents[row_index] = current_relevant_documents
 
         evaluation_metrics = self.__compute_evaluation_metrics(
-            gold_options, predicted_options, possible_options, relevant_documents
+            gold_options,
+            predicted_options,
+            possible_options,
+            relevant_documents,
+            are_shortened_documents
         )
 
         self.__save_evaluation_results(
             data=evaluation_metrics,
             save_path=save_path,
             results_filename=self.__generate_results_filename(),
-            doc_split_options=doc_split_options
+            doc_splitter=doc_splitter
         )
         print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) completed.")
