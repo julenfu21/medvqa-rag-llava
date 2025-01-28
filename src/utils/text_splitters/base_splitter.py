@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from typing import Union
 
 from langchain_core.documents import Document
 
@@ -26,13 +25,13 @@ class BaseSplitter(ABC):
         return self._token_count
 
     @abstractmethod
-    def split_documents(self, documents: list[Document]) -> Union[list[str], list[Document]]:
+    def split_documents(self, documents: list[Document]) -> list[str]:
         pass
 
     def _add_title_if_needed(
         self,
-        split_document: Union[list[str], list[Document]]
-    ) -> Union[list[str], list[Document]]:
+        split_document: list[str]
+    ) -> list[str]:
         if self._add_title:
             return split_document
 

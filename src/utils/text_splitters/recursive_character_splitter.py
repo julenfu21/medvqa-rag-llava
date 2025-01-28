@@ -1,5 +1,3 @@
-from typing import Union
-
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
@@ -28,7 +26,7 @@ class RecursiveCharacterSplitter(BaseSplitter):
     def document_splitter_type(self) -> DocumentSplitterType:
         return DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
 
-    def split_documents(self, documents: list[Document]) -> Union[list[str], list[Document]]:
+    def split_documents(self, documents: list[Document]) -> list[str]:
         shortened_documents = []
 
         for document in documents:

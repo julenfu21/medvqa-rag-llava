@@ -1,5 +1,3 @@
-from typing import Union
-
 import spacy
 from langchain_core.documents import Document
 
@@ -23,7 +21,7 @@ class SpacySentenceSplitter(BaseSplitter):
     def document_splitter_type(self) -> DocumentSplitterType:
         return DocumentSplitterType.SPACY_SENTENCE_SPLITTER
 
-    def split_documents(self, documents: list[Document]) -> Union[list[str], list[Document]]:
+    def split_documents(self, documents: list[Document]) -> list[str]:
         shortened_documents = []
 
         for document in documents:
