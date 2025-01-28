@@ -8,9 +8,9 @@ from src.utils.enums import DocumentSplitterType
 
 class BaseSplitter(ABC):
 
-    def __init__(self, token_count: int, add_title: bool = False):
-        self.__add_title = add_title
-        self._token_count = token_count + 1 if self.__add_title else token_count
+    def __init__(self, token_count: int, add_title: bool = False) -> None:
+        self._add_title = add_title
+        self._token_count = token_count
 
     @property
     @abstractmethod
@@ -19,7 +19,7 @@ class BaseSplitter(ABC):
 
     @property
     def add_title(self) -> bool:
-        return self.__add_title
+        return self._add_title
 
     @property
     def token_count(self) -> int:
@@ -33,14 +33,7 @@ class BaseSplitter(ABC):
         self,
         split_document: Union[list[str], list[Document]]
     ) -> Union[list[str], list[Document]]:
-        if self.__add_title:
+        if self._add_title:
             return split_document
 
         return split_document[1:]
-
-    @abstractmethod
-    def _join_paragraphs(
-        self,
-        paragraphs: Union[list[str], list[Document]]
-    ) -> str:
-        pass
