@@ -1,7 +1,9 @@
 from dataclasses import dataclass, field
-from typing import Any, Type
+from typing import Any, Callable, Type
 
 from langchain_core.documents import Document
+
+from src.utils.text_splitters.base_splitter import BaseSplitter
 
 
 @dataclass
@@ -24,3 +26,9 @@ class DocSplitOptions:
     chunk_size: int
     chunk_overlap: int
     short_docs_count: int
+
+
+@dataclass
+class EvaluationFolderHierarchy:
+    second_level: str
+    third_level: Callable[[BaseSplitter], str]

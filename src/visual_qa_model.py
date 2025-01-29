@@ -6,7 +6,7 @@ from datasets import Dataset
 from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
-from src.utils.data_definitions import ModelAnswerResult
+from src.utils.data_definitions import EvaluationFolderHierarchy, ModelAnswerResult
 from src.utils.enums import DocumentSplitterType
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -185,28 +185,36 @@ class VisualQAModel:
         strategy_name = self.__visual_qa_strategy.strategy_type.value
         save_path = save_path / strategy_name
         if doc_splitter:
-            splitter_name_to_folder_name = {
-                DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: 'rec_char_splitting',
-                DocumentSplitterType.SPACY_SENTENCE_SPLITTER: 'spacy_sent_splitting',
-                DocumentSplitterType.PARAGRAPH_SPLITTER: 'par_splitting'
+            splitter_name_to_folder_hierarchy = {
+                DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: EvaluationFolderHierarchy(
+                    second_level="rec_char_splitting",
+                    third_level=lambda doc_splitter: (
+                        f"_cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
+                    )
+                ),
+                DocumentSplitterType.SPACY_SENTENCE_SPLITTER: EvaluationFolderHierarchy(
+                    second_level="spacy_sent_splitting",
+                    third_level=lambda doc_splitter: f"_{doc_splitter.model_name}"
+                ),
+                DocumentSplitterType.PARAGRAPH_SPLITTER: EvaluationFolderHierarchy(
+                    second_level="par_splitting",
+                    third_level=lambda doc_splitter: ""
+                )
             }
-            splitter_folder_name = splitter_name_to_folder_name[
+            extra_options = splitter_name_to_folder_hierarchy[
                 doc_splitter.document_splitter_type
             ]
+            token_count = doc_splitter.token_count
             if doc_splitter.add_title:
-                token_count = doc_splitter.token_count - 1
                 title = "with_title"
+                if doc_splitter.document_splitter_type == DocumentSplitterType.PARAGRAPH_SPLITTER:
+                    token_count -= 1
             else:
-                token_count = doc_splitter.token_count
                 title = "no_title"
             shortened_splitter_options = (
-                f"{title}_tc{token_count}"
+                f"{title}_tc{token_count}{extra_options.third_level(doc_splitter)}"
             )
-            # shortened_splitter_options = (
-            #     f"cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
-            #     f"_cdc{doc_splitter.short_docs_count}"
-            # )
-            save_path = save_path / splitter_folder_name / shortened_splitter_options
+            save_path = save_path / extra_options.second_level / shortened_splitter_options
         else:
             save_path = save_path / "no_doc_split"
         save_path.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,51 @@
+{
+    "accuracy": 0.5,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 2.0,
+    "mean_original_docs_length": 9396.75,
+    "mean_shortened_docs_length": 373.25,
+    "predicitions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bariatric surgery",
+                    "original_doc_length": 22760,
+                    "shortened_doc_length": 419,
+                    "shortened_doc_content": "Bariatric surgery\n\nBariatric surgery (or weight loss surgery) includes a variety of procedures performed on people who are obese. Long term weight loss through Standard of Care procedures (Roux en Y Bypass, Sleeve Gastrectomy, and Biliopancreatic Diversion with Duodenal Switch) is largely achieved by altering gut hormone levels that are responsible for hunger and satiety, leading to a new hormonal weight set point ."
+                },
+                {
+                    "doc_title": "Bariatrics",
+                    "original_doc_length": 2931,
+                    "shortened_doc_length": 299,
+                    "shortened_doc_content": "Bariatrics\n\nBariatrics is the branch of medicine that deals with the causes, prevention, and treatment of obesity. The term \"bariatrics\" was coined around 1965, from the Greek root \"bar\"- (\"weight\" as in barometer), suffix -\"iatr\" (\"treatment,\" as in pediatrics), and suffix -\"ic\" (\"pertaining to\")."
+                }
+            ],
+            "mean_original_docs_length": 12845.5,
+            "mean_shortened_docs_length": 359.0
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "original_doc_length": 7128,
+                    "shortened_doc_length": 454,
+                    "shortened_doc_content": "Esophagogastroduodenoscopy\n\nEsophagogastroduodenoscopy (EGD; ), also called by various other names, is a diagnostic endoscopic procedure that visualizes the upper part of the gastrointestinal tract down to the duodenum. It is considered a minimally invasive procedure since it does not require an incision into one of the major body cavities and does not require any significant recovery after the procedure (unless sedation or anesthesia has been used)."
+                },
+                {
+                    "doc_title": "Eosinophilic esophagitis",
+                    "original_doc_length": 4768,
+                    "shortened_doc_length": 321,
+                    "shortened_doc_content": "Eosinophilic esophagitis\n\nEosinophilic esophagitis (EoE, also spelled eosinophilic oesophagitis), also known as allergic oesophagitis, is an allergic inflammatory condition of the esophagus that involves eosinophils, a type of white blood cell. Symptoms are swallowing difficulty, food impaction, vomiting, and heartburn."
+                }
+            ],
+            "mean_original_docs_length": 5948.0,
+            "mean_shortened_docs_length": 387.5
+        }
+    }
+}

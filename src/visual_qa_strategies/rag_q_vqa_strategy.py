@@ -116,13 +116,6 @@ class RagQVQAStrategy(BaseVQAStrategy):
             **kwargs
         )
 
-        # def split_docs(docs: list[Document], split_options: DocSplitOptions) -> list[Document]:
-        #     text_splitter = RecursiveCharacterTextSplitter(
-        #         chunk_size=split_options.chunk_size,
-        #         chunk_overlap=split_options.chunk_overlap
-        #     )
-        #     return text_splitter.split_documents(docs)[:split_options.short_docs_count]
-
         def format_docs(docs: Union[list[str], list[Document]]) -> str:
             if isinstance(docs[0], str):
                 return "\n\n".join(docs)

@@ -21,6 +21,10 @@ class SpacySentenceSplitter(BaseSplitter):
     def document_splitter_type(self) -> DocumentSplitterType:
         return DocumentSplitterType.SPACY_SENTENCE_SPLITTER
 
+    @property
+    def model_name(self) -> str:
+        return self.__model_name
+
     def split_documents(self, documents: list[Document]) -> list[str]:
         shortened_documents = []
 

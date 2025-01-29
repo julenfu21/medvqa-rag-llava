@@ -26,6 +26,14 @@ class RecursiveCharacterSplitter(BaseSplitter):
     def document_splitter_type(self) -> DocumentSplitterType:
         return DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
 
+    @property
+    def chunk_size(self) -> int:
+        return self.__chunk_size
+
+    @property
+    def chunk_overlap(self) -> int:
+        return self.__chunk_overlap
+
     def split_documents(self, documents: list[Document]) -> list[str]:
         shortened_documents = []
 
