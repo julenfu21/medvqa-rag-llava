@@ -32,3 +32,14 @@ class DocSplitOptions:
 class EvaluationFolderHierarchy:
     second_level: str
     third_level: Callable[[BaseSplitter], str]
+
+
+@dataclass
+class ScriptArgument:
+    name: str
+    value: Any
+    default_value: Any
+    dependency_name: str
+    dependency_value: Any
+    valid_arg_condition: bool
+    error_condition_message: str

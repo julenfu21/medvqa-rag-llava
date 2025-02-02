@@ -40,3 +40,6 @@ class DocumentSplitterType(Enum):
     RECURSIVE_CHARACTER_SPLITTER = "recursive_character_splitter"
     SPACY_SENTENCE_SPLITTER = "spacy_sentence_splitter"
     PARAGRAPH_SPLITTER = "paragraph_splitter"
+
+    def __str__(self):
+        return self.value
