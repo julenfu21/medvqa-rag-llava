@@ -7,7 +7,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
 from src.utils.data_definitions import EvaluationFolderHierarchy, ModelAnswerResult
-from src.utils.enums import DocumentSplitterType
+from src.utils.enums import DocumentSplitterType, VQAStrategyType
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
@@ -168,9 +168,9 @@ class VisualQAModel:
                 other_metrics.update({
                     "mean_relevant_docs_length": total_mean_docs_length / len(predictions)
                 })
+            evaluation_metrics.update(other_metrics)
 
-        evaluation_metrics.update(other_metrics)
-        evaluation_metrics["predicitions"] = predictions
+        evaluation_metrics["predictions"] = predictions
 
         return evaluation_metrics
 
@@ -182,43 +182,46 @@ class VisualQAModel:
         results_filename: str,
         doc_splitter: Optional[BaseSplitter]
     ) -> None:
-        strategy_name = self.__visual_qa_strategy.strategy_type.value
+        vqa_strategy = self.__visual_qa_strategy.strategy_type
+        strategy_name = vqa_strategy.value
         save_path = save_path / strategy_name
-        if doc_splitter:
-            splitter_name_to_folder_hierarchy = {
-                DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: EvaluationFolderHierarchy(
-                    second_level="rec_char_splitting",
-                    third_level=lambda doc_splitter: (
-                        f"_cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
-                    )
-                ),
-                DocumentSplitterType.SPACY_SENTENCE_SPLITTER: EvaluationFolderHierarchy(
-                    second_level="spacy_sent_splitting",
-                    third_level=lambda doc_splitter: f"_{doc_splitter.model_name}"
-                ),
-                DocumentSplitterType.PARAGRAPH_SPLITTER: EvaluationFolderHierarchy(
-                    second_level="par_splitting",
-                    third_level=lambda doc_splitter: ""
-                )
-            }
-            extra_options = splitter_name_to_folder_hierarchy[
-                doc_splitter.document_splitter_type
-            ]
-            token_count = doc_splitter.token_count
-            if doc_splitter.add_title:
-                title = "with_title"
-                if doc_splitter.document_splitter_type == DocumentSplitterType.PARAGRAPH_SPLITTER:
-                    token_count -= 1
-            else:
-                title = "no_title"
-            shortened_splitter_options = (
-                f"{title}_tc{token_count}{extra_options.third_level(doc_splitter)}"
-            )
-            save_path = save_path / extra_options.second_level / shortened_splitter_options
-        else:
-            save_path = save_path / "no_doc_split"
-        save_path.mkdir(parents=True, exist_ok=True)
 
+        if vqa_strategy == VQAStrategyType.RAG_Q:
+            if doc_splitter:
+                splitter_name_to_folder_hierarchy = {
+                    DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: EvaluationFolderHierarchy(
+                        second_level="rec_char_splitting",
+                        third_level=lambda doc_splitter: (
+                            f"_cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
+                        )
+                    ),
+                    DocumentSplitterType.SPACY_SENTENCE_SPLITTER: EvaluationFolderHierarchy(
+                        second_level="spacy_sent_splitting",
+                        third_level=lambda doc_splitter: f"_{doc_splitter.model_name}"
+                    ),
+                    DocumentSplitterType.PARAGRAPH_SPLITTER: EvaluationFolderHierarchy(
+                        second_level="par_splitting",
+                        third_level=lambda doc_splitter: ""
+                    )
+                }
+                extra_options = splitter_name_to_folder_hierarchy[
+                    doc_splitter.document_splitter_type
+                ]
+                token_count = doc_splitter.token_count
+                if doc_splitter.add_title:
+                    title = "with_title"
+                    if doc_splitter.document_splitter_type == DocumentSplitterType.PARAGRAPH_SPLITTER:
+                        token_count -= 1
+                else:
+                    title = "no_title"
+                shortened_splitter_options = (
+                    f"{title}_tc{token_count}{extra_options.third_level(doc_splitter)}"
+                )
+                save_path = save_path / extra_options.second_level / shortened_splitter_options
+            else:
+                save_path = save_path / "no_doc_split"
+
+        save_path.mkdir(parents=True, exist_ok=True)
         results_filepath = save_path / results_filename
         with open(results_filepath, mode="w", encoding="utf-8") as file:
             json.dump(data, file, indent=4)
