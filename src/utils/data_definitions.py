@@ -1,9 +1,11 @@
 from dataclasses import dataclass, field
-from typing import Any, Callable, Type
+from typing import Any, Callable, Optional, Type
 
 from langchain_core.documents import Document
 
+from src.utils.enums import DocumentSplitterType, VQAStrategyType
 from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.types_aliases import PromptType
 
 
 @dataclass
@@ -22,13 +24,6 @@ class ArgumentSpec:
 
 
 @dataclass
-class DocSplitOptions:
-    chunk_size: int
-    chunk_overlap: int
-    short_docs_count: int
-
-
-@dataclass
 class EvaluationFolderHierarchy:
     second_level: str
     third_level: Callable[[BaseSplitter], str]
@@ -43,3 +38,21 @@ class ScriptArgument:
     dependency_value: Any
     valid_arg_condition: bool
     error_condition_message: str
+
+
+@dataclass
+class DocSplitterOptions:
+    doc_splitter_type: DocumentSplitterType
+    add_title: bool
+    token_count: int
+    chunk_size: Optional[int] = None
+    chunk_overlap: Optional[int] = None
+
+
+@dataclass
+class VQAStrategyDetail:
+    country: str
+    file_type: str
+    vqa_strategy_type: VQAStrategyType
+    prompt_type: PromptType
+    doc_splitter_options: Optional[DocSplitterOptions] = None
