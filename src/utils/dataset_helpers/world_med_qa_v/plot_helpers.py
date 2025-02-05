@@ -5,6 +5,7 @@ from typing import Optional
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 from IPython.display import display
 from PIL import Image
 
@@ -131,6 +132,95 @@ def visualize_qa_pair_row(
             section_style="margin: 30px 0;",
             section_content=model_answer.answer
         )
+
+
+def display_bar_chart_on_evaluation_results(
+    evaluation_results: pd.DataFrame,
+    title: str
+) -> None:
+    columns_metadata = [
+        {
+            'name': 'Accuracy',
+            'data_column': 'accuracy',
+            'color': 'royalblue'
+        },
+        {
+            'name': 'Well-Formatted Answers',
+            'data_column': 'well_formatted_answers', 
+            'color': 'darkorange'
+        }
+    ]
+    bar_chart = go.Figure(
+        data=[
+            go.Bar(
+                name=column['name'],
+                x=evaluation_results.index,
+                y=evaluation_results[column['data_column']],
+                marker={
+                    'color': column['color'],
+                    'opacity': 0.8
+                },
+                width=0.4,
+                text=evaluation_results[column['data_column']],
+                texttemplate="%{y:.1%}",
+                textposition="outside",
+                cliponaxis=False
+            )
+            for column in columns_metadata
+        ]
+    )
+
+    bar_chart.update_layout(
+        barmode='group',
+        title={
+            'text': title,
+            'x': 0.5,
+            'xanchor': 'center',
+            'font': {
+                'size': 22,
+                'color': 'black',
+                'family': 'Arial, sans-serif'
+            }
+        },
+        xaxis_title="Model Evaluations",
+        yaxis={
+            'title': 'Accuracy',
+            'tickvals': [i / 100 for i in range(0, 110, 10)],
+            'ticktext': [f"{i}%" for i in range(0, 110, 10)],
+            'range': [0, 1.1],
+        },
+        font={
+            'family': "Arial, sans-serif",
+            'size': 14,
+            'color': "black"
+        },
+        barcornerradius=15,
+        height=500
+    )
+
+    hover_columns = [
+        "vqa_strategy_type",
+        "prompt_type",
+        "doc_splitter",
+        "add_title",
+        "token_count",
+        "chunk_size",
+        "chunk_overlap"
+    ]
+    bar_chart.update_traces(
+        customdata=evaluation_results[hover_columns].values,
+        hovertemplate=(
+            "VQA Strategy Type: %{customdata[0]}<br>"
+            "Prompt Type: %{customdata[1]}<br>"
+            "Document Splitter: %{customdata[2]}<br>"
+            "Add Title: %{customdata[3]}<br>"
+            "Token Count: %{customdata[4]}<br>"
+            "Chunk Size: %{customdata[5]}<br>"
+            "Chunk Overlap: %{customdata[6]}<br>"
+        )
+    )
+
+    display(bar_chart)
 
 
 # ====================
