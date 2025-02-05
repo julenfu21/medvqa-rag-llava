@@ -9,6 +9,10 @@ from src.utils.enums import (
     VQAStrategyType,
     ZeroShotPromptType
 )
+from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
+from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
+from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
 from src.utils.types_aliases import PromptType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -327,6 +331,31 @@ def get_strategy(
     raise TypeError("Unhandled VQA strategy type")
 
 
+def get_document_splitter(
+    arguments: argparse.Namespace
+) -> BaseSplitter:
+    match arguments.doc_splitter:
+        case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
+            return RecursiveCharacterSplitter(
+                token_count=arguments.token_count,
+                chunk_size=arguments.chunk_size,
+                chunk_overlap=arguments.chunk_overlap,
+                add_title=arguments.add_title
+            )
+        case DocumentSplitterType.SPACY_SENTENCE_SPLITTER:
+            return SpacySentenceSplitter(
+                token_count=arguments.token_count,
+                add_title=arguments.add_title
+            )
+        case DocumentSplitterType.PARAGRAPH_SPLITTER:
+            return ParagraphSplitter(
+                token_count=arguments.token_count,
+                add_title=arguments.add_title
+            )
+
+    return None
+
+
 def main() -> None:
     args = parse_args()
 
@@ -350,7 +379,8 @@ def main() -> None:
     )
     llava_model.evaluate(
         dataset=world_med_qa_v_dataset,
-        save_path=args.results_dir
+        save_path=args.results_dir,
+        doc_splitter=get_document_splitter(arguments=args)
     )
 
 
