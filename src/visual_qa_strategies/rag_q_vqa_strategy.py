@@ -35,12 +35,18 @@ class RagQVQAStrategy(BaseVQAStrategy):
         ]
         super()._validate_arguments(arguments, **kwargs)
 
+        self.__relevant_docs_count = kwargs["relevant_docs_count"]
+
         self.__retriever = self.__load_wikimed_retriever(
             index_dir=kwargs["index_dir"],
             index_name=kwargs["index_name"],
             embedding_model_name=kwargs["embedding_model_name"],
-            relevant_docs_count=kwargs["relevant_docs_count"]
+            relevant_docs_count=self.__relevant_docs_count
         )
+
+    @property
+    def relevant_docs_count(self) -> int:
+        return self.__relevant_docs_count
 
 
     def _set_prompt_template(self) -> None:

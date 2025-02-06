@@ -25,8 +25,8 @@ class ArgumentSpec:
 
 @dataclass
 class EvaluationFolderHierarchy:
-    second_level: str
-    third_level: Callable[[BaseSplitter], str]
+    third_level: str
+    fourth_level: Callable[[BaseSplitter], str]
 
 
 @dataclass

@@ -187,21 +187,23 @@ class VisualQAModel:
         save_path = save_path / strategy_name
 
         if vqa_strategy == VQAStrategyType.RAG_Q:
+            save_path = save_path / f"rdc{self.__visual_qa_strategy.relevant_docs_count}"
+
             if doc_splitter:
                 splitter_name_to_folder_hierarchy = {
                     DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: EvaluationFolderHierarchy(
-                        second_level="rec_char_splitting",
-                        third_level=lambda doc_splitter: (
+                        third_level="rec_char_splitting",
+                        fourth_level=lambda doc_splitter: (
                             f"_cs{doc_splitter.chunk_size}_co{doc_splitter.chunk_overlap}"
                         )
                     ),
                     DocumentSplitterType.SPACY_SENTENCE_SPLITTER: EvaluationFolderHierarchy(
-                        second_level="spacy_sent_splitting",
-                        third_level=lambda doc_splitter: f"_{doc_splitter.model_name}"
+                        third_level="spacy_sent_splitting",
+                        fourth_level=lambda doc_splitter: f"_{doc_splitter.model_name}"
                     ),
                     DocumentSplitterType.PARAGRAPH_SPLITTER: EvaluationFolderHierarchy(
-                        second_level="par_splitting",
-                        third_level=lambda doc_splitter: ""
+                        third_level="par_splitting",
+                        fourth_level=lambda doc_splitter: ""
                     )
                 }
                 extra_options = splitter_name_to_folder_hierarchy[
@@ -215,9 +217,9 @@ class VisualQAModel:
                 else:
                     title = "no_title"
                 shortened_splitter_options = (
-                    f"{title}_tc{token_count}{extra_options.third_level(doc_splitter)}"
+                    f"{title}_tc{token_count}{extra_options.fourth_level(doc_splitter)}"
                 )
-                save_path = save_path / extra_options.second_level / shortened_splitter_options
+                save_path = save_path / extra_options.third_level / shortened_splitter_options
             else:
                 save_path = save_path / "no_doc_split"
 
