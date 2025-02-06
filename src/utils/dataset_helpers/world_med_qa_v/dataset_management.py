@@ -73,6 +73,7 @@ def load_evaluation_results(
         )
         extra_path_elements = []
         document_splitting_details = []
+        evaluation_results_path_elements = []
 
         if detail.vqa_strategy_type == VQAStrategyType.RAG_Q:
             if detail.doc_splitter_options:
@@ -101,13 +102,19 @@ def load_evaluation_results(
                 doc_splitter_folder_name,
                 "_".join(document_splitting_details)
             ]
-
-        evaluation_results_path_elements = [
-            evaluation_results_folder,
-            detail.vqa_strategy_type.value,
-            *extra_path_elements,
-            evaluation_results_filename
-        ]
+            evaluation_results_path_elements = [
+                evaluation_results_folder,
+                detail.vqa_strategy_type.value,
+                f"rdc{detail.relevant_docs_count}",
+                *extra_path_elements,
+                evaluation_results_filename
+            ]
+        else:
+            evaluation_results_path_elements = [
+                evaluation_results_folder,
+                detail.vqa_strategy_type.value,
+                evaluation_results_filename
+            ]
         evaluation_results_filepath = Path(*evaluation_results_path_elements)
 
         evaluation_metrics = __load_evaluation_result_from_filepath(evaluation_results_filepath)

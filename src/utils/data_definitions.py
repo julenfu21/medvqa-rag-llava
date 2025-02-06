@@ -55,4 +55,5 @@ class VQAStrategyDetail:
     file_type: str
     vqa_strategy_type: VQAStrategyType
     prompt_type: PromptType
+    relevant_docs_count: Optional[int] = None
     doc_splitter_options: Optional[DocSplitterOptions] = None
