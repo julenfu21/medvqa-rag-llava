@@ -31,6 +31,8 @@ class RagQPromptType(Enum):
     V2 = "rq_v2"
     V3 = "rq_v3"
     V4 = "rq_v4"
+    V5 = "rq_v5"
+    V6 = "rq_v6"
 
     def __str__(self):
         return self.value

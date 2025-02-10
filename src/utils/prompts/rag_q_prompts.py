@@ -155,11 +155,103 @@ def v4_prompt_template(data: dict) -> list:
     ]
 
 
+def v5_prompt_template(data: dict) -> list:
+    question = data["question"]
+    image = data["image"]
+    relevant_docs = data["relevant_docs"]
+
+    return [
+        SystemMessage(
+            content=(
+                "You are an assistant that only responds with a single letter: A, B, C or D. "
+                "For each question, you must consider the image and the possible options provided "
+                "and answer with exactly one letter corresponding to the option that best matches "
+                "the correct choice. Additionally, you must also leverage the context below to "
+                "provide a suitable answer."
+            )
+        ),
+        HumanMessage(
+            content=[
+                {
+                    "type": "text",
+                    "text": f"Context:\n\n{relevant_docs}"
+                }
+            ]
+        ),
+        SystemMessage(
+            content=(
+                "Remember that your answer must be just a single letter: A, B, C, or D."
+                "Do not provide any explanations, nor include any additional text."
+            )
+        ),
+        HumanMessage(
+            content=[
+                {
+                    "type": "image_url",
+                    "image_url": f"data:image/jpeg;base64,{image}",
+                },
+                {
+                    "type": "text",
+                    "text": f"Question:\n\n{question}"
+                }
+            ]
+        )
+    ]
+
+
+def v6_prompt_template(data: dict) -> list:
+    question = data["question"]
+    image = data["image"]
+    relevant_docs = data["relevant_docs"]
+
+    return [
+        SystemMessage(
+            content=(
+                "You are an AI assistant that answers multiple-choice questions by selecting "
+                "exactly one letter: A, B, C, or D. Each question consists of BOTH an image and "
+                "a text-based question. Carefully analyze them together to determine the correct "
+                "answer. Additionally, relevant context is provided below inside <rag_docs>. "
+                "This context should only be used if you cannot determine the answer directly "
+                "from the image and question. Do not use any external knowledge beyond what is "
+                "explicitly provided."
+            )
+        ),
+        HumanMessage(
+            content=[
+                {
+                    "type": "text",
+                    "text": f"<rag_docs>\n\n{relevant_docs}\n\n</rag_docs>"
+                }
+            ]
+        ),
+        SystemMessage(
+            content=(
+                "Your response must be strictly one of the following: A, B, C, or D."
+                "Do NOT provide explanations, additional text, punctuation, or extra characters. "
+                "Your answer must be a single uppercase letter without any formatting."
+            )
+        ),
+        HumanMessage(
+            content=[
+                {
+                    "type": "image_url",
+                    "image_url": f"data:image/jpeg;base64,{image}",
+                },
+                {
+                    "type": "text",
+                    "text": f"Question:\n\n{question}"
+                }
+            ]
+        )
+    ]
+
 
 
 RAG_Q_PROMPTS = {
     RagQPromptType.V1: v1_prompt_template,
     RagQPromptType.V2: v2_prompt_template,
     RagQPromptType.V3: v3_prompt_template,
-    RagQPromptType.V4: v4_prompt_template
+    RagQPromptType.V4: v4_prompt_template,
+    RagQPromptType.V5: v5_prompt_template,
+    RagQPromptType.V6: v6_prompt_template
 }
