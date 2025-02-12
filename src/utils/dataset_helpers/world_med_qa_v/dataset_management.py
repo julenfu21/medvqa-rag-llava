@@ -123,6 +123,7 @@ def load_evaluation_results(
             "file_type": detail.file_type,
             "vqa_strategy_type": detail.vqa_strategy_type.value,
             "prompt_type": detail.prompt_type.value,
+            "relevant_docs_count": detail.relevant_docs_count,
             "doc_splitter": doc_splitter_type_to_folder_name[
                 detail.doc_splitter_options.doc_splitter_type
                 if detail.doc_splitter_options else None

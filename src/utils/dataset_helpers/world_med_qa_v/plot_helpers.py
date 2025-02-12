@@ -8,6 +8,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from IPython.display import display
 from PIL import Image
+from plotly.subplots import make_subplots
 
 from src.utils.data_definitions import ModelAnswerResult
 from src.utils.dataset_helpers.shared_plot_helpers import _display_formatted_section
@@ -221,6 +222,121 @@ def display_bar_chart_on_evaluation_results(
     )
 
     display(bar_chart)
+
+
+def plot_rag_q_evaluation_results_by_groups(
+    title: str,
+    evaluation_results: pd.DataFrame,
+    row_variable: str,
+    column_variable: str,
+    bar_graph_variable: str
+) -> None:
+
+    def prettify_variable_name(variable: str) -> str:
+        return variable.replace('_', ' ').capitalize()
+
+    column_name_to_short_str = {
+        "relevant_docs_count": "rdc",
+        "token_count": "tc",
+        "prompt_type": "pt"
+    }
+    row_names = evaluation_results[row_variable].unique()
+    column_names = evaluation_results[column_variable].unique()
+    subplot_titles = [
+        (
+            f"{column_name_to_short_str[row_variable]}{row_name}_"
+            f"{column_name_to_short_str[column_variable]}{column_name}"
+        )
+        for row_name in row_names
+        for column_name in column_names
+    ]
+    rows = len(row_names)
+    columns = len(column_names)
+    evaluation_metrics_figure = make_subplots(
+        rows=rows,
+        cols=columns,
+        subplot_titles=subplot_titles,
+        vertical_spacing=0.1,
+        horizontal_spacing=0.1
+    )
+    for annotation in evaluation_metrics_figure.layout.annotations:
+        annotation['yshift'] = 10
+
+    columns_metadata = [
+        {'name': 'Accuracy', 'data_column': 'accuracy'},
+        {'name': 'Well-Formatted Answers', 'data_column': 'well_formatted_answers'}
+    ]
+    grouped_evaluation_results = evaluation_results.groupby([row_variable, column_variable])
+    for row_index, row_name in enumerate(row_names):
+        for column_index, column_name in enumerate(column_names):
+            bar_graph_data = grouped_evaluation_results.get_group((row_name, column_name))
+            for column in columns_metadata:
+                evaluation_metrics_figure.add_trace(
+                    trace=go.Bar(
+                        x=bar_graph_data[bar_graph_variable],
+                        y=bar_graph_data[column['data_column']],
+                        name=subplot_titles[row_index * columns + column_index],
+                        hovertemplate=(
+                            column['name'] + ": %{y:.1%}<br>" +
+                            prettify_variable_name(bar_graph_variable) + ": %{x}"
+                        ),
+                        marker={
+                            'color': bar_graph_data[column['data_column']],
+                            'colorscale': "Thermal",
+                            'cmin': 0,
+                            'cmax': 1,
+                            'colorbar': {
+                                'title': "Accuracy",
+                                'tickvals': [i / 5 for i in range(6)],
+                                'tickformat': ".0%",
+                                'thickness': 20
+                            }
+                        }
+                    ),
+                    row=row_index + 1,
+                    col=column_index + 1
+                )
+
+            evaluation_metrics_figure.update_xaxes(
+                title_text=prettify_variable_name(bar_graph_variable),
+                row=row_index + 1,
+                col=column_index + 1
+            )
+            evaluation_metrics_figure.update_yaxes(
+                title_text="Accuracy",
+                row=row_index + 1,
+                col=column_index + 1,
+                range=[0, 1],
+                tickvals=[i / 10 for i in range(11)],
+                tickformat=".0%"
+            )
+
+    base_height_per_row = 400
+    evaluation_metrics_figure.update_layout(
+        title={
+            'text': title,
+            'x': 0.5,
+            'xanchor': 'center',
+            'font': {
+                'size': 22,
+                'color': 'black',
+                'family': 'Arial, sans-serif'
+            },
+            'pad': {'b': 30}
+        },
+        font={
+            'family': "Arial, sans-serif",
+            'size': 14,
+            'color': "black"
+        },
+        showlegend=False,
+        barmode="group",
+        margin={'l': 50, 'r': 100, 't': 120, 'b': 50},
+        width=1450,
+        height=base_height_per_row * rows
+    )
+
+    display(evaluation_metrics_figure)
 
 
 # ====================
