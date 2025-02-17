@@ -17,10 +17,11 @@ class ParagraphSplitter(BaseSplitter):
             page_content = document.page_content
             split_paragraphs = [par.strip() for par in page_content.split('\n\n')]
             split_paragraphs = self._add_title_if_needed(split_document=split_paragraphs)
+            token_count = self._token_count
             if self._add_title:
-                self._token_count += 1
+                token_count += 1
 
-            shortened_paragraphs = split_paragraphs[:self._token_count]
+            shortened_paragraphs = split_paragraphs[:token_count]
             shortened_text = "\n\n".join(shortened_paragraphs)
             shortened_documents.append(shortened_text)
 
