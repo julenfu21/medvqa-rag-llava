@@ -52,33 +52,13 @@ class InvalidDocSplitterOptions(Exception):
 
 @dataclass(frozen=True)
 class DocSplitterOptions:
-    doc_splitter_type: Optional[DocumentSplitterType] = None
-    add_title: Optional[bool] = None
-    token_count: Optional[int] = None
+    doc_splitter_type: DocumentSplitterType
+    token_count: int
+    add_title: bool = False
     chunk_size: Optional[int] = None
     chunk_overlap: Optional[int] = None
 
     def validate(self) -> None:
-        if not self.doc_splitter_type:
-            rest_of_attributes = [
-                getattr(self, attribute.name) for attribute in fields(self)
-                if attribute.name != 'doc_splitter_type'
-            ]
-            if any(attr is not None for attr in rest_of_attributes):
-                raise InvalidDocSplitterOptions(
-                    "If 'doc_splitter_type' is None, the rest of the fields must also be None"
-                )
-        else:
-            if self.add_title is None:
-                raise InvalidDocSplitterOptions(
-                    self.__missing_field_message(field_name="add_title")
-                )
-
-            if not self.token_count:
-                raise InvalidDocSplitterOptions(
-                    self.__missing_field_message(field_name="token_count")
-                )
-
         requires_chunks = (
             self.doc_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
         )
@@ -104,9 +84,6 @@ class DocSplitterOptions:
             f"{type(self.doc_splitter_type).__name__}.{self.doc_splitter_type.name}, "
             f"'chunk_size' and 'chunk_overlap' {action}"
         )
-
-    def __missing_field_message(self, field_name: str) -> str:
-        return f"If 'doc_splitter_type' is not None, {field_name} cannot be None."
 
 
 class InvalidVQAStrategyDetailError(Exception):
@@ -196,13 +173,11 @@ class VQAStrategyDetail:
                 "doc_splitter_type": {
                     DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: "rec_char_splitting",
                     DocumentSplitterType.PARAGRAPH_SPLITTER: "par_splitting",
-                    DocumentSplitterType.SPACY_SENTENCE_SPLITTER: "spacy_sent_splitting",
-                    None: "no_doc_split",
+                    DocumentSplitterType.SPACY_SENTENCE_SPLITTER: "spacy_sent_splitting"
                 },
                 "add_title": {
                     False: "no_title",
-                    True: "with_title",
-                    None: "",
+                    True: "with_title"
                 }
             }
 
@@ -217,7 +192,11 @@ class VQAStrategyDetail:
 
             raise ValueError(f"Attribute '{attribute_name}' not recognized")
 
-        doc_splitter_filepath = ""
+        relevant_docs_count_filepath = ""
+        if self.relevant_docs_count:
+            relevant_docs_count_filepath = f"rdc{self.relevant_docs_count}"
+
+        doc_splitter_filepath = "no_doc_split"
         if self.doc_splitter_options:
             doc_splitter_attributes = {
                 attribute.name: getattr(self.doc_splitter_options, attribute.name)
@@ -228,13 +207,13 @@ class VQAStrategyDetail:
                 for attribute_name, attribute_value in doc_splitter_attributes.items()
             ]
             doc_splitter_filepath = Path(
-                f"rdc{self.relevant_docs_count}",
                 doc_splitter_path_elements[0],
                 "_".join([element for element in doc_splitter_path_elements[1:] if element])
             )
 
         return Path(
             evaluation_results_filepath,
+            relevant_docs_count_filepath,
             doc_splitter_filepath,
             evaluation_results_filename
         )
@@ -242,27 +221,43 @@ class VQAStrategyDetail:
 
 @dataclass
 class GeneralDocSplitterOptions:
-    doc_splitter_types: list[Optional[DocumentSplitterType]] = field(default_factory=list)
-    add_titles: list[bool] = field(default_factory=list)
-    token_counts: list[int] = field(default_factory=list)
+    doc_splitter_types: list[DocumentSplitterType]
+    token_counts: list[int]
+    add_titles: list[bool]
     chunk_sizes: list[Optional[int]] = field(default_factory=list)
     chunk_overlaps: list[Optional[int]] = field(default_factory=list)
 
 
 @dataclass
 class GeneralVQAStrategiesDetails:
-    countries: list[str] = field(default_factory=list)
-    file_types: list[str] = field(default_factory=list)
-    vqa_strategy_types: list[VQAStrategyType] = field(default_factory=list)
-    prompt_types: list[PromptType] = field(default_factory=list)
+    countries: list[str]
+    file_types: list[str]
+    vqa_strategy_types: list[VQAStrategyType]
+    prompt_types: list[PromptType]
     relevant_docs_count: list[Optional[int]] = field(default_factory=list)
-    doc_splitter_options: GeneralDocSplitterOptions = (
-        field(default_factory=GeneralDocSplitterOptions)
-    )
+    doc_splitter_options: list[Optional[GeneralDocSplitterOptions]] = field(default_factory=list)
 
     def __post_init__(self):
+        self.__validate()
         # self.__add_default_values()
-        pass
+
+    def __validate(self) -> None:
+        if len(self.doc_splitter_options) > 2:
+            raise ValueError("'doc_splitter_options' can contain at most two elements")
+
+        none_count = 0
+        doc_splitter_options_count = 0
+        for option in self.doc_splitter_options:
+            if not option:
+                none_count += 1
+            elif isinstance(option, GeneralDocSplitterOptions):
+                doc_splitter_options_count += 1
+
+        if none_count > 1 or doc_splitter_options_count > 1:
+            raise ValueError((
+                "'doc_splitter_options' can contain at most one 'None' and one "
+                "'GeneralDocSplitterOptions'."
+            ))
 
     # def __add_default_values(self) -> None:
     #     if not self.vqa_strategy_types:
@@ -298,17 +293,17 @@ class GeneralVQAStrategiesDetails:
         #     self.doc_splitter_options.doc_splitter_types += [None]
 
     def get_possible_vqa_strategy_details(self) -> list[VQAStrategyDetail]:
-        flat_doc_splitter_attributes = [
-            getattr(self.doc_splitter_options, attribute.name)
-            for attribute in fields(self.doc_splitter_options)
-        ]
-        rest_of_the_attributes = [getattr(self, attribute.name) for attribute in fields(self)[:-1]]
-        all_attributes = rest_of_the_attributes + flat_doc_splitter_attributes
-        for attribute in all_attributes:
-            print(f"{attribute=}")
-        all_combinations = list(product(*all_attributes))
-        # for combination_id, combination in enumerate(all_combinations, start=1):
-        #     print(f"{combination_id} --> {combination}")
+        doc_splitter_combinations = []
+        for option in self.doc_splitter_options:
+            if not option:
+                doc_splitter_combinations.append(None)
+            else:
+                doc_splitter_combinations += list(product(
+                    *[getattr(option, attribute.name) for attribute in fields(option)]
+                ))
+
+        all_attributes = [getattr(self, attribute.name) for attribute in fields(self)[:-1]]
+        all_combinations = list(product(*all_attributes, doc_splitter_combinations))
 
         possible_combinations = []
         for combination in all_combinations:
@@ -320,16 +315,16 @@ class GeneralVQAStrategiesDetails:
                     prompt_type=combination[3],
                     relevant_docs_count=combination[4],
                     doc_splitter_options=DocSplitterOptions(
-                        doc_splitter_type=combination[5],
-                        add_title=combination[6],
-                        token_count=combination[7],
-                        chunk_size=combination[8],
-                        chunk_overlap=combination[9]
-                    ) if combination[2] != VQAStrategyType.ZERO_SHOT else None
+                        doc_splitter_type=combination[5][0],
+                        token_count=combination[5][1],
+                        add_title=combination[5][2],
+                        chunk_size=combination[5][3],
+                        chunk_overlap=combination[5][4]
+                    ) if combination[5] else None
                 )
                 possible_combinations.append(vqa_strategy_detail)
             except InvalidVQAStrategyDetailError as e:
-                print(f"Invalid VQAStrategyDetail: {e}. Skipping...") # ADD LOG
+                print(f"Invalid VQAStrategyDetail: {e}. Skipping...")
                 continue
 
         unique_combinations = list(dict.fromkeys(possible_combinations))
