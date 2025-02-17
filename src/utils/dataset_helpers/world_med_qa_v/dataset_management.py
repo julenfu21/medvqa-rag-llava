@@ -5,7 +5,6 @@ import pandas as pd
 from datasets import Dataset, load_dataset
 
 from src.utils.data_definitions import ModelAnswerResult, VQAStrategyDetail
-from src.utils.enums import DocumentSplitterType, VQAStrategyType
 
 
 def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
@@ -60,63 +59,11 @@ def load_evaluation_results(
     vqa_strategy_details: list[VQAStrategyDetail]
 ) -> pd.DataFrame:
     evaluation_results = []
-    doc_splitter_type_to_folder_name = {
-        DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: 'rec_char_splitting',
-        DocumentSplitterType.PARAGRAPH_SPLITTER: 'par_splitting',
-        DocumentSplitterType.SPACY_SENTENCE_SPLITTER: 'spacy_sent_splitting',
-        None: 'no_doc_split'
-    }
 
     for detail in vqa_strategy_details:
-        evaluation_results_filename = (
-            f'{detail.country}_{detail.file_type}_{detail.prompt_type.value}_evaluation.json'
+        evaluation_results_filepath = detail.generate_evaluation_results_filepath(
+            evaluation_results_folder=evaluation_results_folder
         )
-        extra_path_elements = []
-        document_splitting_details = []
-        evaluation_results_path_elements = []
-
-        if detail.vqa_strategy_type == VQAStrategyType.RAG_Q:
-            if detail.doc_splitter_options:
-                doc_splitter_folder_name = doc_splitter_type_to_folder_name[
-                    detail.doc_splitter_options.doc_splitter_type
-                ]
-
-                if detail.doc_splitter_options.doc_splitter_type is not None:
-                    add_title = (
-                        'with_title' if detail.doc_splitter_options.add_title else 'no_title'
-                    )
-                    token_count = f"tc{detail.doc_splitter_options.token_count}"
-                    document_splitting_details = [add_title, token_count]
-
-                    if detail.doc_splitter_options.doc_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
-                        chunk_size = f"cs{detail.doc_splitter_options.chunk_size}"
-                        chunk_overlap = f"co{detail.doc_splitter_options.chunk_overlap}"
-                        document_splitting_details.extend([chunk_size, chunk_overlap])
-                    elif detail.doc_splitter_options.doc_splitter_type == DocumentSplitterType.SPACY_SENTENCE_SPLITTER:
-                        model_name = 'en_core_web_sm'
-                        document_splitting_details.extend([model_name])
-            else:
-                doc_splitter_folder_name = doc_splitter_type_to_folder_name[None]
-
-            extra_path_elements = [
-                doc_splitter_folder_name,
-                "_".join(document_splitting_details)
-            ]
-            evaluation_results_path_elements = [
-                evaluation_results_folder,
-                detail.vqa_strategy_type.value,
-                f"rdc{detail.relevant_docs_count}",
-                *extra_path_elements,
-                evaluation_results_filename
-            ]
-        else:
-            evaluation_results_path_elements = [
-                evaluation_results_folder,
-                detail.vqa_strategy_type.value,
-                evaluation_results_filename
-            ]
-        evaluation_results_filepath = Path(*evaluation_results_path_elements)
-
         evaluation_metrics = __load_evaluation_result_from_filepath(evaluation_results_filepath)
         evaluation_results.append({
             "country": detail.country,
@@ -124,10 +71,10 @@ def load_evaluation_results(
             "vqa_strategy_type": detail.vqa_strategy_type.value,
             "prompt_type": detail.prompt_type.value,
             "relevant_docs_count": detail.relevant_docs_count,
-            "doc_splitter": doc_splitter_type_to_folder_name[
+            "doc_splitter": (
                 detail.doc_splitter_options.doc_splitter_type
                 if detail.doc_splitter_options else None
-            ],
+            ),
             "add_title": (
                 detail.doc_splitter_options.add_title if detail.doc_splitter_options else None
             ),
