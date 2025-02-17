@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field, fields
 from itertools import product
 from pathlib import Path
-from typing import Any, Callable, Optional, Type
+from typing import Any, Optional, Type
 
 from langchain_core.documents import Document
 
@@ -11,7 +11,6 @@ from src.utils.enums import (
     VQAStrategyType,
     ZeroShotPromptType
 )
-from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.utils.types_aliases import PromptType
 
 
@@ -28,12 +27,6 @@ class ArgumentSpec:
     expected_type: Type
     value: Any = None
     is_optional: bool = False
-
-
-@dataclass
-class EvaluationFolderHierarchy:
-    third_level: str
-    fourth_level: Callable[[BaseSplitter], str]
 
 
 @dataclass
@@ -160,10 +153,6 @@ class VQAStrategyDetail:
         )
 
     def generate_evaluation_results_filepath(self, evaluation_results_folder: Path) -> Path:
-        evaluation_results_filepath = evaluation_results_folder / self.vqa_strategy_type.value
-        evaluation_results_filename = (
-            f"{self.country}_{self.file_type}_{self.prompt_type.value}_evaluation.json"
-        )
 
         def doc_splitter_attribute_to_path_elements(
             attribute_name: str,
@@ -192,11 +181,19 @@ class VQAStrategyDetail:
 
             raise ValueError(f"Attribute '{attribute_name}' not recognized")
 
+        evaluation_results_filepath = evaluation_results_folder / self.vqa_strategy_type.value
+        evaluation_results_filename = (
+            f"{self.country}_{self.file_type}_{self.prompt_type.value}_evaluation.json"
+        )
+
         relevant_docs_count_filepath = ""
         if self.relevant_docs_count:
             relevant_docs_count_filepath = f"rdc{self.relevant_docs_count}"
 
-        doc_splitter_filepath = "no_doc_split"
+        doc_splitter_filepath = ""
+        if self.vqa_strategy_type == VQAStrategyType.RAG_Q:
+            doc_splitter_filepath = "no_doc_split"
+
         if self.doc_splitter_options:
             doc_splitter_attributes = {
                 attribute.name: getattr(self.doc_splitter_options, attribute.name)

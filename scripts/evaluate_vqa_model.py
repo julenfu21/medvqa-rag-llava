@@ -379,7 +379,7 @@ def main() -> None:
     )
     llava_model.evaluate(
         dataset=world_med_qa_v_dataset,
-        save_path=args.results_dir,
+        results_path=args.results_dir,
         doc_splitter=get_document_splitter(arguments=args)
     )
 

@@ -10,27 +10,21 @@ class SpacySentenceSplitter(BaseSplitter):
     def __init__(
         self,
         token_count: int,
-        add_title: bool = False,
-        model_name: str = "en_core_web_sm"
+        add_title: bool = False
     ) -> None:
         super().__init__(token_count, add_title)
-        self.__model_name = model_name
-        self.__nlp = spacy.load(self.__model_name)
+        self.__nlp = spacy.load("en_core_web_sm")
 
     @property
     def document_splitter_type(self) -> DocumentSplitterType:
         return DocumentSplitterType.SPACY_SENTENCE_SPLITTER
-
-    @property
-    def model_name(self) -> str:
-        return self.__model_name
 
     def split_documents(self, documents: list[Document]) -> list[str]:
         shortened_documents = []
 
         for document in documents:
             page_content = document.page_content
-            split_paragraphs = [par.strip() for par in page_content.split('\n\n')]            
+            split_paragraphs = [par.strip() for par in page_content.split('\n\n')]
             split_paragraphs = self._add_title_if_needed(split_document=split_paragraphs)
             document_text = "\n\n".join(split_paragraphs)
 

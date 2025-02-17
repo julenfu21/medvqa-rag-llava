@@ -1,0 +1,40 @@
+{
+    "accuracy": 0.0,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 2.0,
+    "mean_relevant_docs_length": 9396.75,
+    "predictions": {
+        "1": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bariatric surgery",
+                    "doc_length": 22760
+                },
+                {
+                    "doc_title": "Bariatrics",
+                    "doc_length": 2931
+                }
+            ],
+            "mean_relevant_docs_length": 12845.5
+        },
+        "2": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "doc_length": 7128
+                },
+                {
+                    "doc_title": "Eosinophilic esophagitis",
+                    "doc_length": 4768
+                }
+            ],
+            "mean_relevant_docs_length": 5948.0
+        }
+    }
+}
