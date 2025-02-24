@@ -102,14 +102,14 @@ class VQAStrategyDetail:
                 )
 
             if self.relevant_docs_count:
-                raise InvalidVQAStrategyDetailError((
+                raise InvalidVQAStrategyDetailError(
                     self.__invalid_field_message(field_name="relevant_docs_count")
-                ))
+                )
 
             if self.doc_splitter_options:
-                raise InvalidVQAStrategyDetailError((
+                raise InvalidVQAStrategyDetailError(
                     self.__invalid_field_message(field_name="doc_splitter_options")
-                ))
+                )
 
         elif self.vqa_strategy_type == VQAStrategyType.RAG_Q:
             if not isinstance(self.prompt_type, RagQPromptType):
