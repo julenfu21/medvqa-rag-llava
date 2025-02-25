@@ -40,6 +40,19 @@ class ScriptArgument:
     error_condition_message: str
 
 
+@dataclass
+class LoggerConfig:
+    console_handler_enabled: bool
+    file_handler_enabled: bool
+
+    def __post_init__(self):
+        self.__validate()
+
+    def __validate(self) -> None:
+        if not any(getattr(self, attribute.name) for attribute in fields(self)):
+            raise ValueError("At least one option must be True")
+
+
 class InvalidDocSplitterOptions(Exception):
     pass
 

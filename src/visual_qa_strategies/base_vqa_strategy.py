@@ -1,10 +1,11 @@
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, Optional
 
 from langchain_core.language_models.chat_models import BaseChatModel
 
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType
+from src.utils.logger import LoggerManager
 from src.utils.string_formatting_helpers import prettify_strategy_name
 from src.utils.types_aliases import PromptType
 
@@ -117,6 +118,7 @@ class BaseVQAStrategy(ABC):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str,
+        logger_manager: Optional[LoggerManager],
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         pass

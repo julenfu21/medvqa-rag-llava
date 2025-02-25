@@ -1,11 +1,14 @@
-from typing import Any
+from typing import Any, Optional
 
+from langchain_core.messages import AIMessage
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import VQAStrategyType, ZeroShotPromptType
+from src.utils.logger import LoggerManager
+from src.utils.prompts.prompts_helpers import log_conversation_messages
 from src.utils.prompts.zero_shot_prompts import ZERO_SHOT_PROMPTS
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
@@ -49,6 +52,7 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str,
+        logger_manager: Optional[LoggerManager],
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         super()._validate_arguments(required_arguments=[], **kwargs)
@@ -60,6 +64,13 @@ class ZeroShotVQAStrategy(BaseVQAStrategy):
 
         output = model.invoke({
             "question": question_with_possible_answers,
-            "image": base64_image
+            "image": base64_image,
+            "logger_manager": logger_manager
         })
-        return ModelAnswerResult(answer=output.strip())
+        model_answer = output.strip()
+        if logger_manager:
+            log_conversation_messages(
+                logger_manager=logger_manager,
+                messages=[AIMessage(content=model_answer)]
+            )
+        return ModelAnswerResult(answer=model_answer)

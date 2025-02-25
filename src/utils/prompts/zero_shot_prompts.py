@@ -1,17 +1,19 @@
 from langchain_core.messages import HumanMessage, SystemMessage
 
 from src.utils.enums import ZeroShotPromptType
+from src.utils.prompts.prompts_helpers import log_conversation_messages
 
 
 def v1_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or "
-                "D. For each question, you should consider the provided options and the"
+                "D. For each question, you should consider the provided options and the "
                 "image, and answer with exactly one letter that best matches the correct "
                 "choice. Answer with a single letter only, without any explanations or "
                 "additional information."
@@ -31,13 +33,19 @@ def v1_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 # Explicitly guide the model to focus on the image and the question
 def v2_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or D. "
@@ -61,14 +69,20 @@ def v2_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
 
-# Clarify the task + 
+    return messages
+
+
+# Clarify the task +
 # Ensure the model fully understands the importance of focusing on the image and question
 def v3_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or D. "
@@ -101,6 +115,11 @@ def v3_prompt_template(data: dict) -> list:
             ]
         ),
     ]
+
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
 
 
 ZERO_SHOT_PROMPTS = {

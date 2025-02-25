@@ -1,3 +1,4 @@
+import logging
 from enum import Enum
 
 
@@ -45,3 +46,12 @@ class DocumentSplitterType(Enum):
 
     def __str__(self):
         return self.value
+
+
+class LogLevel(Enum):
+    CRITICAL = logging.CRITICAL
+    ERROR = logging.ERROR
+    WARNING = logging.WARNING
+    INFO = logging.INFO
+    DEBUG = logging.DEBUG
+    NOTSET = logging.NOTSET

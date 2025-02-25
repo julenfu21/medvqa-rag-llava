@@ -1,14 +1,16 @@
 from langchain_core.messages import HumanMessage, SystemMessage
 
 from src.utils.enums import RagQPromptType
+from src.utils.prompts.prompts_helpers import log_conversation_messages
 
 
 def v1_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or "
@@ -36,14 +38,20 @@ def v1_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 # Guide the model to prioritize specific parts of the documents that are more relevant
 def v2_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or D. "
@@ -71,14 +79,20 @@ def v2_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 # Secondary system message to reinforce the priority of focusing on relevant information
 def v3_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         # Defines the task broadly.
         SystemMessage(
             content=(
@@ -119,14 +133,20 @@ def v3_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 # Document Wrapping and Explicit Instructions
 def v4_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C, or D. "
@@ -154,13 +174,19 @@ def v4_prompt_template(data: dict) -> list:
         ),
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 def v5_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an assistant that only responds with a single letter: A, B, C or D. "
@@ -180,7 +206,7 @@ def v5_prompt_template(data: dict) -> list:
         ),
         SystemMessage(
             content=(
-                "Remember that your answer must be just a single letter: A, B, C, or D."
+                "Remember that your answer must be just a single letter: A, B, C, or D. "
                 "Do not provide any explanations, nor include any additional text."
             )
         ),
@@ -198,13 +224,19 @@ def v5_prompt_template(data: dict) -> list:
         )
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
+
 
 def v6_prompt_template(data: dict) -> list:
     question = data["question"]
     image = data["image"]
     relevant_docs = data["relevant_docs"]
+    logger_manager = data["logger_manager"]
 
-    return [
+    messages = [
         SystemMessage(
             content=(
                 "You are an AI assistant that answers multiple-choice questions by selecting "
@@ -226,7 +258,7 @@ def v6_prompt_template(data: dict) -> list:
         ),
         SystemMessage(
             content=(
-                "Your response must be strictly one of the following: A, B, C, or D."
+                "Your response must be strictly one of the following: A, B, C, or D. "
                 "Do NOT provide explanations, additional text, punctuation, or extra characters. "
                 "Your answer must be a single uppercase letter without any formatting."
             )
@@ -245,6 +277,10 @@ def v6_prompt_template(data: dict) -> list:
         )
     ]
 
+    if logger_manager:
+        log_conversation_messages(logger_manager=logger_manager, messages=messages)
+
+    return messages
 
 
 RAG_Q_PROMPTS = {

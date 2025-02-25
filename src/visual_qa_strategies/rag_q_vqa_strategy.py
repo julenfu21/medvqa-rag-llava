@@ -1,8 +1,9 @@
 from pathlib import Path
-from typing import Any, Union
+from typing import Any, Optional, Union
 
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
+from langchain_core.messages import AIMessage
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.retrievers import BaseRetriever
@@ -11,6 +12,8 @@ from langchain_ollama import ChatOllama
 
 from src.utils.data_definitions import ArgumentSpec, ModelAnswerResult
 from src.utils.enums import RagQPromptType, VQAStrategyType
+from src.utils.logger import LoggerManager
+from src.utils.prompts.prompts_helpers import log_conversation_messages
 from src.utils.prompts.rag_q_prompts import RAG_Q_PROMPTS
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -109,6 +112,7 @@ class RagQVQAStrategy(BaseVQAStrategy):
         question: str,
         possible_answers: dict[str, str],
         base64_image: str,
+        logger_manager: Optional[LoggerManager],
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         super()._validate_arguments(
@@ -150,10 +154,17 @@ class RagQVQAStrategy(BaseVQAStrategy):
         output = model.invoke({
             "question": question_with_possible_answers,
             "image": base64_image,
-            "relevant_docs": formatted_docs
+            "relevant_docs": formatted_docs,
+            "logger_manager": logger_manager
         })
+        model_answer = output.strip()
+        if logger_manager:
+            log_conversation_messages(
+                logger_manager=logger_manager,
+                messages=[AIMessage(content=model_answer)]
+            )
         return ModelAnswerResult(
-            answer=output.strip(),
+            answer=model_answer,
             original_relevant_documents=relevant_documents,
             shortened_relevant_documents=split_documents if doc_splitter else []
         )

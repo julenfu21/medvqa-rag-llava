@@ -8,6 +8,7 @@ from tqdm import tqdm
 
 from src.utils.data_definitions import DocSplitterOptions, ModelAnswerResult, VQAStrategyDetail
 from src.utils.enums import DocumentSplitterType, VQAStrategyType
+from src.utils.logger import LoggerManager
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 
@@ -57,6 +58,7 @@ class VisualQAModel:
         row: dict,
         possible_options: list[str],
         verbose: bool = False,
+        logger_manager: Optional[LoggerManager] = None,
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
         if verbose:
@@ -67,6 +69,7 @@ class VisualQAModel:
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
             base64_image=row['image'],
+            logger_manager=logger_manager,
             **kwargs
         )
 
