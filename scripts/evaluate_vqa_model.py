@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from src.utils.data_definitions import ScriptArgument
+from src.utils.data_definitions import LoggerConfig, ScriptArgument
 from src.utils.dataset_helpers.world_med_qa_v.dataset_management import load_vqa_dataset
 from src.utils.enums import (
     DocumentSplitterType,
@@ -16,8 +16,10 @@ from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitt
 from src.utils.types_aliases import PromptType
 from src.visual_qa_model import VisualQAModel
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.visual_qa_strategies.rag_q_as_vqa_strategy import RagQAsVQAStrategy
 from src.visual_qa_strategies.rag_q_vqa_strategy import RagQVQAStrategy
 from src.visual_qa_strategies.zero_shot_vqa_strategy import ZeroShotVQAStrategy
+from src.utils.logger import LoggerManager
 
 
 OLLAMA_MODEL_NAME = "llava"
@@ -41,7 +43,7 @@ def vqa_strategy_type_to_prompt_type(vqa_strategy: VQAStrategyType, prompt_name:
     if vqa_strategy == VQAStrategyType.ZERO_SHOT:
         return ZeroShotPromptType(prompt_name)
 
-    if vqa_strategy == VQAStrategyType.RAG_Q:
+    if vqa_strategy == VQAStrategyType.RAG_Q or vqa_strategy == VQAStrategyType.RAG_Q_AS:
         return RagQPromptType(prompt_name)
 
     raise TypeError("Unhandled VQA strategy type")
@@ -115,12 +117,12 @@ def parse_args() -> argparse.Namespace:
                             f"{[prompt_name.value for prompt_name in RagQPromptType]}"
                         ))
 
-    # Arguments used when '--vqa_strategy' == 'rag_q'
+    # Arguments used when '--vqa_strategy' != 'zero_shot'
     parser.add_argument("--index_dir",
                         type=Path, default=None,
                         help=(
                             "Directory that stores the indexed dataset leveraged to apply RAG\n"
-                            "    * It can only be used if --vqa_strategy is 'rag_q'\n"
+                            "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
                             "    * If not provided, the default value will be "
                             f"'{DEFAULT_INDEX_DIR}'"
                         ))
@@ -128,7 +130,7 @@ def parse_args() -> argparse.Namespace:
                         type=str, default=None,
                         help=(
                             "Name of the index\n"
-                            "    * It can only be used if --vqa_strategy is 'rag_q'\n"
+                            "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
                             "    * If not provided, the default value will be "
                             f"'{DEFAULT_INDEX_NAME}'"
                         ))
@@ -136,7 +138,7 @@ def parse_args() -> argparse.Namespace:
                         type=str, default=None,
                         help=(
                             "Name of the embedding model\n"
-                            "    * It can only be used if --vqa_strategy is 'rag_q'\n"
+                            "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
                             "    * If not provided, the default value will be "
                             f"'{DEFAULT_EMBEDDING_MODEL_NAME}'"
                         ))
@@ -145,9 +147,16 @@ def parse_args() -> argparse.Namespace:
                         help=(
                             "Amount or documents to be added to the input of the model when "
                             "applying RAG\n"
-                            "    * It can only be used if --vqa_strategy is 'rag_q'\n"
+                            "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
                             "    * If not provided, the default value will be "
                             f"'{DEFAULT_RELEVANT_DOCS_COUNT}'"
+                        ))
+    parser.add_argument("--should_apply_rag_to_question",
+                        action='store_true', default=None,
+                        help=(
+                            "Apply RAG also to the question apart from the answer.\n"
+                            "    * It can only be used if --vqa_strategy is 'rag_q_as'\n"
+                            "    * If not provided, the default value will be 'None'"
                         ))
     parser.add_argument("--doc_splitter",
                         type=DocumentSplitterType, default=None,
@@ -155,7 +164,7 @@ def parse_args() -> argparse.Namespace:
                         help=(
                             "Document splitter used to split the documents used for RAG into "
                             "smaller chunks\n"
-                            "    * It can only be used if --vqa_strategy is 'rag_q'\n"
+                            "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
                             "    * If not provided, the default value will be 'None'"
                         ))
 
@@ -217,8 +226,8 @@ def parse_args() -> argparse.Namespace:
             default_value=DEFAULT_INDEX_DIR,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
-            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q,
-            error_condition_message="--vqa_strategy is not 'rag_q'"
+            valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
+            error_condition_message="--vqa_strategy is 'zero_shot'"
         ),
         ScriptArgument(
             name="index_name",
@@ -226,8 +235,8 @@ def parse_args() -> argparse.Namespace:
             default_value=DEFAULT_INDEX_NAME,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
-            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q,
-            error_condition_message="--vqa_strategy is not 'rag_q'"
+            valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
+            error_condition_message="--vqa_strategy is 'zero_shot'"
         ),
         ScriptArgument(
             name="embedding_model_name",
@@ -235,8 +244,8 @@ def parse_args() -> argparse.Namespace:
             default_value=DEFAULT_EMBEDDING_MODEL_NAME,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
-            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q,
-            error_condition_message="--vqa_strategy is not 'rag_q'"
+            valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
+            error_condition_message="--vqa_strategy is 'zero_shot'"
         ),
         ScriptArgument(
             name="relevant_docs_count",
@@ -244,8 +253,8 @@ def parse_args() -> argparse.Namespace:
             default_value=DEFAULT_RELEVANT_DOCS_COUNT,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
-            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q,
-            error_condition_message="--vqa_strategy is not 'rag_q'"
+            valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
+            error_condition_message="--vqa_strategy is 'zero_shot'"
         ),
         ScriptArgument(
             name="doc_splitter",
@@ -253,8 +262,17 @@ def parse_args() -> argparse.Namespace:
             default_value=None,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
-            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q,
-            error_condition_message="--vqa_strategy is not 'rag_q'"
+            valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
+            error_condition_message="--vqa_strategy is 'zero_shot'"
+        ),
+        ScriptArgument(
+            name="should_apply_rag_to_question",
+            value=args.should_apply_rag_to_question,
+            default_value=None,
+            dependency_name="vqa_strategy",
+            dependency_value=args.vqa_strategy,
+            valid_arg_condition=args.vqa_strategy == VQAStrategyType.RAG_Q_AS,
+            error_condition_message="--vqa_strategy is not 'rag_q_as'"
         ),
         ScriptArgument(
             name="token_count",
@@ -321,6 +339,14 @@ def get_strategy(
                 embedding_model_name=arguments.embedding_model_name,
                 relevant_docs_count=arguments.relevant_docs_count
             )
+        case VQAStrategyType.RAG_Q_AS:
+            return RagQAsVQAStrategy(
+                prompt_type=arguments.prompt_type,
+                index_dir=arguments.index_dir,
+                index_name=arguments.index_name,
+                embedding_model_name=arguments.embedding_model_name,
+                relevant_docs_count=arguments.relevant_docs_count
+            )
         # case VQAStrategyType.RAG_Q_AS:
         #     return RagQAsVQAStrategy(prompt_type=None)
         # case VQAStrategyType.RAG_IMG:
@@ -377,10 +403,21 @@ def main() -> None:
         country=args.country,
         file_type=args.file_type
     )
+
+    logger_manager = LoggerManager(
+        log_save_directory=Path('logs'),
+        logger_config=LoggerConfig(
+            console_handler_enabled=False,
+            file_handler_enabled=True
+        )
+    )
+    logger_manager.create_new_log_file()
     llava_model.evaluate(
-        dataset=world_med_qa_v_dataset,
+        dataset=world_med_qa_v_dataset.take(1),
         results_path=args.results_dir,
-        doc_splitter=get_document_splitter(arguments=args)
+        doc_splitter=get_document_splitter(arguments=args),
+        logger_manager=logger_manager,
+        should_apply_rag_to_question=args.should_apply_rag_to_question
     )
 
 

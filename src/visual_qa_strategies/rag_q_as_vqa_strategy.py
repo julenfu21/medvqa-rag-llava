@@ -70,7 +70,7 @@ class RagQAsVQAStrategy(BaseRagVQAStrategy):
                 formatted_docs = super()._format_docs(docs=split_documents)
             else:
                 formatted_docs = super()._format_docs(docs=answer_relevant_documents)
-                formatter_answer_rag_docs.append(f"{letter} answer context:\n\n{formatted_docs}")
+            formatter_answer_rag_docs.append(f"{letter} answer context:\n\n{formatted_docs}")
         relevant_docs += "\n\n".join(formatter_answer_rag_docs)
 
         output = model.invoke({
