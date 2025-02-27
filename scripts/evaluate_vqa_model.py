@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from src.utils.data_definitions import LoggerConfig, ScriptArgument
+from src.utils.data_definitions import ScriptArgument
 from src.utils.dataset_helpers.world_med_qa_v.dataset_management import load_vqa_dataset
 from src.utils.enums import (
     DocumentSplitterType,
@@ -19,7 +19,6 @@ from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 from src.visual_qa_strategies.rag_q_as_vqa_strategy import RagQAsVQAStrategy
 from src.visual_qa_strategies.rag_q_vqa_strategy import RagQVQAStrategy
 from src.visual_qa_strategies.zero_shot_vqa_strategy import ZeroShotVQAStrategy
-from src.utils.logger import LoggerManager
 
 
 OLLAMA_MODEL_NAME = "llava"
@@ -43,7 +42,7 @@ def vqa_strategy_type_to_prompt_type(vqa_strategy: VQAStrategyType, prompt_name:
     if vqa_strategy == VQAStrategyType.ZERO_SHOT:
         return ZeroShotPromptType(prompt_name)
 
-    if vqa_strategy == VQAStrategyType.RAG_Q or vqa_strategy == VQAStrategyType.RAG_Q_AS:
+    if vqa_strategy in{VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS}:
         return RagQPromptType(prompt_name)
 
     raise TypeError("Unhandled VQA strategy type")
@@ -403,20 +402,10 @@ def main() -> None:
         country=args.country,
         file_type=args.file_type
     )
-
-    logger_manager = LoggerManager(
-        log_save_directory=Path('logs'),
-        logger_config=LoggerConfig(
-            console_handler_enabled=False,
-            file_handler_enabled=True
-        )
-    )
-    logger_manager.create_new_log_file()
     llava_model.evaluate(
-        dataset=world_med_qa_v_dataset.take(1),
+        dataset=world_med_qa_v_dataset,
         results_path=args.results_dir,
         doc_splitter=get_document_splitter(arguments=args),
-        logger_manager=logger_manager,
         should_apply_rag_to_question=args.should_apply_rag_to_question
     )
 
