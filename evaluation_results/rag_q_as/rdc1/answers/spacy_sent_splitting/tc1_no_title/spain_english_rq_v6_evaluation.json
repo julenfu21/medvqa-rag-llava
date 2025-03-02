@@ -1,0 +1,1884 @@
+{
+    "accuracy": 0.28,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 1.0,
+    "mean_original_docs_length": 11560.152,
+    "mean_shortened_docs_length": 140.16,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatitis",
+                    "original_doc_length": 68076,
+                    "shortened_doc_length": 46,
+                    "shortened_doc_content": "Hepatitis is inflammation of the liver tissue."
+                }
+            ],
+            "mean_original_docs_length": 68076.0,
+            "mean_shortened_docs_length": 46.0
+        },
+        "2": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophageal candidiasis",
+                    "original_doc_length": 2091,
+                    "shortened_doc_length": 92,
+                    "shortened_doc_content": "Esophageal candidiasis is an opportunistic infection of the esophagus by \"Candida albicans\"."
+                }
+            ],
+            "mean_original_docs_length": 2091.0,
+            "mean_shortened_docs_length": 92.0
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myopathy",
+                    "original_doc_length": 7208,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Myopathy is a disease of the muscle in which the muscle fibers do not function properly."
+                }
+            ],
+            "mean_original_docs_length": 7208.0,
+            "mean_shortened_docs_length": 88.0
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cholangiocarcinoma",
+                    "original_doc_length": 3924,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Cholangiocarcinoma, also known as bile duct cancer, is a type of cancer that forms in the bile ducts."
+                }
+            ],
+            "mean_original_docs_length": 3924.0,
+            "mean_shortened_docs_length": 101.0
+        },
+        "5": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Desmoglein-2",
+                    "original_doc_length": 4253,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Desmoglein-2 is a protein that in humans is encoded by the \"DSG2\" gene."
+                }
+            ],
+            "mean_original_docs_length": 4253.0,
+            "mean_shortened_docs_length": 71.0
+        },
+        "6": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Angioedema",
+                    "original_doc_length": 13261,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "Angioedema is an area of swelling of the lower layer of skin and tissue just under the skin or mucous membranes."
+                }
+            ],
+            "mean_original_docs_length": 13261.0,
+            "mean_shortened_docs_length": 112.0
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Multicystic dysplastic kidney",
+                    "original_doc_length": 3095,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "Multicystic dysplastic kidney (MCDK) is a condition that results from the malformation of the kidney during fetal development."
+                }
+            ],
+            "mean_original_docs_length": 3095.0,
+            "mean_shortened_docs_length": 126.0
+        },
+        "8": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lymphoproliferative disorders",
+                    "original_doc_length": 4687,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Lymphoproliferative disorders (LPDs) refer to several conditions in which lymphocytes are produced in excessive quantities."
+                }
+            ],
+            "mean_original_docs_length": 4687.0,
+            "mean_shortened_docs_length": 123.0
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Misoprostol",
+                    "original_doc_length": 13098,
+                    "shortened_doc_length": 218,
+                    "shortened_doc_content": "Misoprostol, sold under the brandname Cytotec among others, is a medication used to prevent and treat stomach ulcers, start labor, cause an abortion, and treat postpartum bleeding due to poor contraction of the uterus."
+                }
+            ],
+            "mean_original_docs_length": 13098.0,
+            "mean_shortened_docs_length": 218.0
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyperparathyroidism",
+                    "original_doc_length": 11172,
+                    "shortened_doc_length": 84,
+                    "shortened_doc_content": "Hyperparathyroidism is an increase in parathyroid hormone (PTH) levels in the blood."
+                }
+            ],
+            "mean_original_docs_length": 11172.0,
+            "mean_shortened_docs_length": 84.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vertebral hemangioma",
+                    "original_doc_length": 2568,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "A vertebral hemangioma (VH) is a vascular lesion within a vertebral body."
+                }
+            ],
+            "mean_original_docs_length": 2568.0,
+            "mean_shortened_docs_length": 73.0
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Spinal epidural hematoma",
+                    "original_doc_length": 950,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Spinal epidural hematoma is bleeding into the epidural space in the spine."
+                }
+            ],
+            "mean_original_docs_length": 950.0,
+            "mean_shortened_docs_length": 74.0
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest tube",
+                    "original_doc_length": 11988,
+                    "shortened_doc_length": 196,
+                    "shortened_doc_content": "A chest tube (chest drain, thoracic catheter, tube thoracostomy, or intercostal drain) is a flexible plastic tube that is inserted through the chest wall and into the pleural space or mediastinum."
+                }
+            ],
+            "mean_original_docs_length": 11988.0,
+            "mean_shortened_docs_length": 196.0
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sarcoidosis",
+                    "original_doc_length": 40135,
+                    "shortened_doc_length": 114,
+                    "shortened_doc_content": "Sarcoidosis is a disease involving abnormal collections of inflammatory cells that form lumps known as granulomas."
+                }
+            ],
+            "mean_original_docs_length": 40135.0,
+            "mean_shortened_docs_length": 114.0
+        },
+        "16": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesenteric ischemia",
+                    "original_doc_length": 9829,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Mesenteric ischemia is a medical condition in which injury to the small intestine occurs due to not enough blood supply."
+                }
+            ],
+            "mean_original_docs_length": 9829.0,
+            "mean_shortened_docs_length": 120.0
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Calcific tendinitis",
+                    "original_doc_length": 4674,
+                    "shortened_doc_length": 256,
+                    "shortened_doc_content": "Calcific tendinitis is a form of tendinitis, a disorder characterized by deposits of hydroxyapatite (a crystalline calcium phosphate) in any tendon of the body, but most commonly in the tendons of the rotator cuff (shoulder), causing pain and inflammation."
+                }
+            ],
+            "mean_original_docs_length": 4674.0,
+            "mean_shortened_docs_length": 256.0
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myopericarditis",
+                    "original_doc_length": 468,
+                    "shortened_doc_length": 169,
+                    "shortened_doc_content": "Myopericarditis is a combination of both myocarditis and pericarditis appearing in a single individual, namely inflammation of both the pericardium and the heart muscle."
+                }
+            ],
+            "mean_original_docs_length": 468.0,
+            "mean_shortened_docs_length": 169.0
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Multiple sclerosis",
+                    "original_doc_length": 41726,
+                    "shortened_doc_length": 138,
+                    "shortened_doc_content": "Multiple sclerosis (MS) is a demyelinating disease in which the insulating covers of nerve cells in the brain and spinal cord are damaged."
+                }
+            ],
+            "mean_original_docs_length": 41726.0,
+            "mean_shortened_docs_length": 138.0
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neurofibroma",
+                    "original_doc_length": 11701,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "A neurofibroma is a benign nerve-sheath tumor in the peripheral nervous system."
+                }
+            ],
+            "mean_original_docs_length": 11701.0,
+            "mean_shortened_docs_length": 79.0
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neuromyelitis optica",
+                    "original_doc_length": 19041,
+                    "shortened_doc_length": 172,
+                    "shortened_doc_content": "Neuromyelitis optica (NMO) is a heterogeneous condition consisting of the inflammation and demyelination of the optic nerve (optic neuritis) and the spinal cord (myelitis)."
+                }
+            ],
+            "mean_original_docs_length": 19041.0,
+            "mean_shortened_docs_length": 172.0
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bowel resection",
+                    "original_doc_length": 1323,
+                    "shortened_doc_length": 183,
+                    "shortened_doc_content": "A bowel resection or enterectomy (\"enter-\" + \"-ectomy\") is a surgical procedure in which a part of an intestine (bowel) is removed, from either the small intestine or large intestine."
+                }
+            ],
+            "mean_original_docs_length": 1323.0,
+            "mean_shortened_docs_length": 183.0
+        },
+        "23": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Internal fixation",
+                    "original_doc_length": 2603,
+                    "shortened_doc_length": 266,
+                    "shortened_doc_content": "Internal fixation is an operation in orthopedics that involves the surgical implementation of implants for the purpose of repairing a bone, a concept that dates to the mid-nineteenth century and was made applicable for routine treatment in the mid-twentieth century."
+                }
+            ],
+            "mean_original_docs_length": 2603.0,
+            "mean_shortened_docs_length": 266.0
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive heart disease",
+                    "original_doc_length": 5070,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Hypertensive heart disease includes a number of complications of high blood pressure that affect the heart."
+                }
+            ],
+            "mean_original_docs_length": 5070.0,
+            "mean_shortened_docs_length": 107.0
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Glomerular basement membrane",
+                    "original_doc_length": 1808,
+                    "shortened_doc_length": 97,
+                    "shortened_doc_content": "The glomerular basement membrane (GBM) of the kidney is the basal lamina layer of the glomerulus."
+                }
+            ],
+            "mean_original_docs_length": 1808.0,
+            "mean_shortened_docs_length": 97.0
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchopneumonia",
+                    "original_doc_length": 1684,
+                    "shortened_doc_length": 43,
+                    "shortened_doc_content": "Bronchopneumonia is a subtype of pneumonia."
+                }
+            ],
+            "mean_original_docs_length": 1684.0,
+            "mean_shortened_docs_length": 43.0
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myocardial rupture",
+                    "original_doc_length": 5158,
+                    "shortened_doc_length": 151,
+                    "shortened_doc_content": "Myocardial rupture is a laceration of the ventricles or atria of the heart, of the interatrial or interventricular septum, or of the papillary muscles."
+                }
+            ],
+            "mean_original_docs_length": 5158.0,
+            "mean_shortened_docs_length": 151.0
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trabeculectomy",
+                    "original_doc_length": 7742,
+                    "shortened_doc_length": 179,
+                    "shortened_doc_content": "Trabeculectomy is a surgical procedure used in the treatment of glaucoma to relieve intraocular pressure by removing part of the eye's trabecular meshwork and adjacent structures."
+                }
+            ],
+            "mean_original_docs_length": 7742.0,
+            "mean_shortened_docs_length": 179.0
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vocal cord cyst",
+                    "original_doc_length": 12147,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Vocal fold cysts (also known as \"vocal cord cysts\") are benign masses of the membranous vocal folds."
+                }
+            ],
+            "mean_original_docs_length": 12147.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "30": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adenocarcinoma",
+                    "original_doc_length": 6786,
+                    "shortened_doc_length": 136,
+                    "shortened_doc_content": "Adenocarcinoma (; plural adenocarcinomas or adenocarcinomata ) is a type of cancerous tumor that can occur in several parts of the body."
+                }
+            ],
+            "mean_original_docs_length": 6786.0,
+            "mean_shortened_docs_length": 136.0
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Herpes simplex",
+                    "original_doc_length": 27993,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Herpes simplex is a viral infection caused by the herpes simplex virus."
+                }
+            ],
+            "mean_original_docs_length": 27993.0,
+            "mean_shortened_docs_length": 71.0
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lymphoid leukemia",
+                    "original_doc_length": 4357,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Lymphoid leukemias are a group of leukemias affecting circulating lymphocytes, a type of white blood cells."
+                }
+            ],
+            "mean_original_docs_length": 4357.0,
+            "mean_shortened_docs_length": 107.0
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Alcoholic hepatitis",
+                    "original_doc_length": 6698,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Alcoholic hepatitis is hepatitis (inflammation of the liver) due to excessive intake of alcohol."
+                }
+            ],
+            "mean_original_docs_length": 6698.0,
+            "mean_shortened_docs_length": 96.0
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thymoma",
+                    "original_doc_length": 6015,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "A thymoma is a tumor originating from the epithelial cells of the thymus that may be benign or malignant."
+                }
+            ],
+            "mean_original_docs_length": 6015.0,
+            "mean_shortened_docs_length": 105.0
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Inflammatory myopathy",
+                    "original_doc_length": 4777,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "Inflammatory myopathy is disease featuring weakness and inflammation of muscles and (in some types) muscle pain."
+                }
+            ],
+            "mean_original_docs_length": 4777.0,
+            "mean_shortened_docs_length": 112.0
+        },
+        "36": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Herpes simplex",
+                    "original_doc_length": 27993,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Herpes simplex is a viral infection caused by the herpes simplex virus."
+                }
+            ],
+            "mean_original_docs_length": 27993.0,
+            "mean_shortened_docs_length": 71.0
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rituximab",
+                    "original_doc_length": 10752,
+                    "shortened_doc_length": 137,
+                    "shortened_doc_content": "Rituximab, sold under the brand name Rituxan among others, is a medication used to treat certain autoimmune diseases and types of cancer."
+                }
+            ],
+            "mean_original_docs_length": 10752.0,
+            "mean_shortened_docs_length": 137.0
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs."
+                }
+            ],
+            "mean_original_docs_length": 1785.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Autoimmune thyroiditis",
+                    "original_doc_length": 4414,
+                    "shortened_doc_length": 239,
+                    "shortened_doc_content": "Autoimmune thyroiditis, is a chronic disease in which the body interprets the thyroid glands and its hormone products T3, T4 and TSH as threats, therefore producing special antibodies that target the thyroid's cells, thereby destroying it."
+                }
+            ],
+            "mean_original_docs_length": 4414.0,
+            "mean_shortened_docs_length": 239.0
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Penetrating atherosclerotic ulcer",
+                    "original_doc_length": 788,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "A penetrating atherosclerotic ulcer (PAU) is an atherosclerotic lesion that ulcerates, leading to a hematoma forming within the walls of the aorta."
+                }
+            ],
+            "mean_original_docs_length": 788.0,
+            "mean_shortened_docs_length": 147.0
+        },
+        "41": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermoid cyst",
+                    "original_doc_length": 5862,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "A dermoid cyst is a teratoma of a cystic nature that contains an array of developmentally mature, solid tissues."
+                }
+            ],
+            "mean_original_docs_length": 5862.0,
+            "mean_shortened_docs_length": 112.0
+        },
+        "42": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Immature teratoma",
+                    "original_doc_length": 8742,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "A teratoma is a tumor of germ cell origin, containing tissues from more than one germ cell line."
+                }
+            ],
+            "mean_original_docs_length": 8742.0,
+            "mean_shortened_docs_length": 96.0
+        },
+        "43": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sarcomatoid carcinoma of the lung",
+                    "original_doc_length": 3302,
+                    "shortened_doc_length": 250,
+                    "shortened_doc_content": "Sarcomatoid carcinoma of the lung is a term that encompasses five distinct histological subtypes of lung cancer, including (1) pleomorphic carcinoma, (2) spindle cell carcinoma, (3) giant cell carcinoma, (4) carcinosarcoma, or (5) pulmonary blastoma."
+                }
+            ],
+            "mean_original_docs_length": 3302.0,
+            "mean_shortened_docs_length": 250.0
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Renal cell carcinoma",
+                    "original_doc_length": 38292,
+                    "shortened_doc_length": 185,
+                    "shortened_doc_content": "Renal cell carcinoma (RCC) is a kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport primary urine."
+                }
+            ],
+            "mean_original_docs_length": 38292.0,
+            "mean_shortened_docs_length": 185.0
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pseudomonas infection",
+                    "original_doc_length": 1361,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "\"Pseudomonas\" infection refers to a disease caused by one of the species of the genus \"Pseudomonas\"."
+                }
+            ],
+            "mean_original_docs_length": 1361.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "46": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Legg\u2013Calv\u00e9\u2013Perthes disease",
+                    "original_doc_length": 15248,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "Legg\u2013Calv\u00e9\u2013Perthes disease (LCPD), is a childhood hip disorder initiated by a disruption of blood flow to the head of the femur."
+                }
+            ],
+            "mean_original_docs_length": 15248.0,
+            "mean_shortened_docs_length": 128.0
+        },
+        "47": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bed rest",
+                    "original_doc_length": 7552,
+                    "shortened_doc_length": 145,
+                    "shortened_doc_content": "Bed rest, also referred to as the rest-cure, is a medical treatment in which a person lies in bed for most of the time to try to cure an illness."
+                }
+            ],
+            "mean_original_docs_length": 7552.0,
+            "mean_shortened_docs_length": 145.0
+        },
+        "48": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hemispherectomy",
+                    "original_doc_length": 8721,
+                    "shortened_doc_length": 144,
+                    "shortened_doc_content": "Hemispherectomy is a very rare neurosurgical procedure in which a cerebral hemisphere (half of the brain) is removed, disconnected, or disabled."
+                }
+            ],
+            "mean_original_docs_length": 8721.0,
+            "mean_shortened_docs_length": 144.0
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Atrial fibrillation",
+                    "original_doc_length": 45002,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Atrial fibrillation (AF or A-fib) is an abnormal heart rhythm (arrhythmia) characterized by rapid and irregular beating of the atrial chambers of the heart."
+                }
+            ],
+            "mean_original_docs_length": 45002.0,
+            "mean_shortened_docs_length": 156.0
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Quinolone antibiotic",
+                    "original_doc_length": 21264,
+                    "shortened_doc_length": 159,
+                    "shortened_doc_content": "A quinolone antibiotic is a member of a large group of broad-spectrum bacteriocidals that share a bicyclic core structure related to the substance 4-quinolone."
+                }
+            ],
+            "mean_original_docs_length": 21264.0,
+            "mean_shortened_docs_length": 159.0
+        },
+        "51": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fetal monitoring",
+                    "original_doc_length": 165,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "Monitoring of a fetus may refer to:\nBULLET::::- Regular tests done as part of prenatal care during a pregnancy\nBULLET::::- Monitoring in childbirth"
+                }
+            ],
+            "mean_original_docs_length": 165.0,
+            "mean_shortened_docs_length": 147.0
+        },
+        "52": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metabolic alkalosis",
+                    "original_doc_length": 6885,
+                    "shortened_doc_length": 119,
+                    "shortened_doc_content": "Metabolic alkalosis is a metabolic condition in which the pH of tissue is elevated beyond the normal range (7.35\u20137.45)."
+                }
+            ],
+            "mean_original_docs_length": 6885.0,
+            "mean_shortened_docs_length": 119.0
+        },
+        "53": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesothelioma",
+                    "original_doc_length": 43319,
+                    "shortened_doc_length": 144,
+                    "shortened_doc_content": "Mesothelioma is a type of cancer that develops from the thin layer of tissue that covers many of the internal organs (known as the mesothelium)."
+                }
+            ],
+            "mean_original_docs_length": 43319.0,
+            "mean_shortened_docs_length": 144.0
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Familial hypertriglyceridemia",
+                    "original_doc_length": 725,
+                    "shortened_doc_length": 113,
+                    "shortened_doc_content": "Familial hypertriglyceridemia is an autosomal dominant condition occurring in approximately 1% of the population."
+                }
+            ],
+            "mean_original_docs_length": 725.0,
+            "mean_shortened_docs_length": 113.0
+        },
+        "55": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Autoimmune pancreatitis",
+                    "original_doc_length": 7666,
+                    "shortened_doc_length": 224,
+                    "shortened_doc_content": "Autoimmune pancreatitis is an increasingly recognized type of chronic pancreatitis that can be difficult to distinguish from pancreatic carcinoma but which responds to treatment with corticosteroids, particularly prednisone."
+                }
+            ],
+            "mean_original_docs_length": 7666.0,
+            "mean_shortened_docs_length": 224.0
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary fibrosis",
+                    "original_doc_length": 8225,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "Pulmonary fibrosis is a condition in which the lungs become scarred over time."
+                }
+            ],
+            "mean_original_docs_length": 8225.0,
+            "mean_shortened_docs_length": 78.0
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lupus vulgaris",
+                    "original_doc_length": 2637,
+                    "shortened_doc_length": 201,
+                    "shortened_doc_content": "Lupus vulgaris (also known as tuberculosis luposa) are painful cutaneous tuberculosis skin lesions with nodular appearance, most often on the face around the nose, eyelids, lips, cheeks, ears and neck."
+                }
+            ],
+            "mean_original_docs_length": 2637.0,
+            "mean_shortened_docs_length": 201.0
+        },
+        "58": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pustular psoriasis",
+                    "original_doc_length": 2088,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "The term pustular psoriasis is used for a heterogeneous group of diseases that share pustular skin characteristics."
+                }
+            ],
+            "mean_original_docs_length": 2088.0,
+            "mean_shortened_docs_length": 115.0
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nuchal scan",
+                    "original_doc_length": 8787,
+                    "shortened_doc_length": 259,
+                    "shortened_doc_content": "A nuchal scan or nuchal translucency (NT) scan/procedure is a sonographic prenatal screening scan (ultrasound) to detect chromosomal abnormalities in a fetus, though altered extracellular matrix composition and limited lymphatic drainage can also be detected."
+                }
+            ],
+            "mean_original_docs_length": 8787.0,
+            "mean_shortened_docs_length": 259.0
+        },
+        "60": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pericardial effusion",
+                    "original_doc_length": 3422,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Pericardial effusion (\"fluid around the heart\") is an abnormal accumulation of fluid in the pericardial cavity."
+                }
+            ],
+            "mean_original_docs_length": 3422.0,
+            "mean_shortened_docs_length": 111.0
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Positron emission tomography",
+                    "original_doc_length": 32142,
+                    "shortened_doc_length": 180,
+                    "shortened_doc_content": "Positron-emission tomography (PET) is a nuclear medicine functional imaging technique that is used to observe metabolic processes in the body as an aid to the diagnosis of disease."
+                }
+            ],
+            "mean_original_docs_length": 32142.0,
+            "mean_shortened_docs_length": 180.0
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hysterectomy",
+                    "original_doc_length": 28387,
+                    "shortened_doc_length": 51,
+                    "shortened_doc_content": "Hysterectomy is the surgical removal of the uterus."
+                }
+            ],
+            "mean_original_docs_length": 28387.0,
+            "mean_shortened_docs_length": 51.0
+        },
+        "63": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Central retinal vein",
+                    "original_doc_length": 757,
+                    "shortened_doc_length": 263,
+                    "shortened_doc_content": "The central retinal vein (retinal vein) is a short vein that runs through the optic nerve, leaves the optic nerve 10\u00a0mm from the eyeball and drains blood from the capillaries of the retina into either superior ophthalmic vein or into the cavernous sinus directly."
+                }
+            ],
+            "mean_original_docs_length": 757.0,
+            "mean_shortened_docs_length": 263.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Palatine tonsil",
+                    "original_doc_length": 8173,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Palatine tonsils, commonly called the tonsils and occasionally called the faucial tonsils, are tonsils located on the left and right sides at the back of the throat, which can often be seen as flesh-colored, pinkish lumps."
+                }
+            ],
+            "mean_original_docs_length": 8173.0,
+            "mean_shortened_docs_length": 222.0
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hiatal hernia",
+                    "original_doc_length": 7759,
+                    "shortened_doc_length": 154,
+                    "shortened_doc_content": "A hiatal hernia is a type of hernia in which abdominal organs (typically the stomach) slip through the diaphragm into the middle compartment of the chest."
+                }
+            ],
+            "mean_original_docs_length": 7759.0,
+            "mean_shortened_docs_length": 154.0
+        },
+        "66": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thoracentesis",
+                    "original_doc_length": 6901,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "Thoracentesis , also known as thoracocentesis (from the Greek \"th\u014drax\" \"chest, thorax\"\u2014 \"th\u014drakos\"\u2014and \"kent\u0113sis\" \"pricking, puncture\") or pleural tap (from the Greek \"pleura\" or \"pleuron\" \"side, rib\"), is an invasive procedure to remove fluid or air from the pleural space for diagnostic or therapeutic purposes."
+                }
+            ],
+            "mean_original_docs_length": 6901.0,
+            "mean_shortened_docs_length": 313.0
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Subdural hematoma",
+                    "original_doc_length": 11326,
+                    "shortened_doc_length": 240,
+                    "shortened_doc_content": "A subdural hematoma (SDH) is a type of bleeding in which a collection of blood\u2014usually associated with a traumatic brain injury\u2014gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain."
+                }
+            ],
+            "mean_original_docs_length": 11326.0,
+            "mean_shortened_docs_length": 240.0
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nodular fasciitis",
+                    "original_doc_length": 1515,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Nodular fasciitis, is a benign soft tissue lesion most commonly found in the superficial fascia."
+                }
+            ],
+            "mean_original_docs_length": 1515.0,
+            "mean_shortened_docs_length": 96.0
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Perforated ulcer",
+                    "original_doc_length": 3033,
+                    "shortened_doc_length": 230,
+                    "shortened_doc_content": "A perforated ulcer is a condition in which an untreated ulcer has burned through the mucosal wall in a segment of the gastrointestinal tract (e.g., the stomach or colon) allowing gastric contents to leak into the abdominal cavity."
+                }
+            ],
+            "mean_original_docs_length": 3033.0,
+            "mean_shortened_docs_length": 230.0
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermoid cyst",
+                    "original_doc_length": 5862,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "A dermoid cyst is a teratoma of a cystic nature that contains an array of developmentally mature, solid tissues."
+                }
+            ],
+            "mean_original_docs_length": 5862.0,
+            "mean_shortened_docs_length": 112.0
+        },
+        "71": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cytomegalovirus retinitis",
+                    "original_doc_length": 3011,
+                    "shortened_doc_length": 127,
+                    "shortened_doc_content": "Cytomegalovirus retinitis, also known as CMV retinitis, is an inflammation of the retina of the eye that can lead to blindness."
+                }
+            ],
+            "mean_original_docs_length": 3011.0,
+            "mean_shortened_docs_length": 127.0
+        },
+        "72": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ventriculectomy",
+                    "original_doc_length": 456,
+                    "shortened_doc_length": 171,
+                    "shortened_doc_content": "Ventriculectomy, or ventricular reduction, is a type of operation in cardiac surgery to reduce enlargement of the heart from cardiomyopathy or ischemic aneurysm formation."
+                }
+            ],
+            "mean_original_docs_length": 456.0,
+            "mean_shortened_docs_length": 171.0
+        },
+        "73": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Psoriatic arthritis",
+                    "original_doc_length": 12745,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Psoriatic arthritis is a long-term inflammatory arthritis that occurs in people affected by the autoimmune disease psoriasis."
+                }
+            ],
+            "mean_original_docs_length": 12745.0,
+            "mean_shortened_docs_length": 125.0
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vertebrobasilar insufficiency",
+                    "original_doc_length": 5248,
+                    "shortened_doc_length": 155,
+                    "shortened_doc_content": "Vertebrobasilar insufficiency (VBI) describes a temporary set of symptoms due to decreased blood flow (ischemia) in the posterior circulation of the brain."
+                }
+            ],
+            "mean_original_docs_length": 5248.0,
+            "mean_shortened_docs_length": 155.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Left ventricular hypertrophy",
+                    "original_doc_length": 3302,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Left ventricular hypertrophy (LVH) is thickening of the heart muscle of the left ventricle of the heart, that is, left-sided ventricular hypertrophy."
+                }
+            ],
+            "mean_original_docs_length": 3302.0,
+            "mean_shortened_docs_length": 149.0
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Environmental factor",
+                    "original_doc_length": 7464,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "An environmental factor, ecological factor or eco factor is any factor, abiotic or biotic, that influences living organisms."
+                }
+            ],
+            "mean_original_docs_length": 7464.0,
+            "mean_shortened_docs_length": 124.0
+        },
+        "77": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypopituitarism",
+                    "original_doc_length": 23567,
+                    "shortened_doc_length": 155,
+                    "shortened_doc_content": "Hypopituitarism is the decreased (\"hypo\") secretion of one or more of the eight hormones normally produced by the pituitary gland at the base of the brain."
+                }
+            ],
+            "mean_original_docs_length": 23567.0,
+            "mean_shortened_docs_length": 155.0
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cavernous sinus thrombosis",
+                    "original_doc_length": 6952,
+                    "shortened_doc_length": 193,
+                    "shortened_doc_content": "Cavernous sinus thrombosis (CST) is the formation of a blood clot within the cavernous sinus, a cavity at the base of the brain which drains deoxygenated blood from the brain back to the heart."
+                }
+            ],
+            "mean_original_docs_length": 6952.0,
+            "mean_shortened_docs_length": 193.0
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Intraparenchymal hemorrhage",
+                    "original_doc_length": 6273,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Intraparenchymal hemorrhage (IPH) is one form of intracerebral bleeding in which there is bleeding within brain parenchyma."
+                }
+            ],
+            "mean_original_docs_length": 6273.0,
+            "mean_shortened_docs_length": 123.0
+        },
+        "80": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shoulder joint",
+                    "original_doc_length": 7546,
+                    "shortened_doc_length": 239,
+                    "shortened_doc_content": "The shoulder joint (or glenohumeral joint from Greek \"glene\", eyeball, + -\"oid\", 'form of', + Latin \"humerus\", shoulder) is structurally classified as a synovial ball and socket joint and functionally as a diarthrosis and multiaxial joint."
+                }
+            ],
+            "mean_original_docs_length": 7546.0,
+            "mean_shortened_docs_length": 239.0
+        },
+        "81": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiology diagnostic tests and procedures",
+                    "original_doc_length": 5044,
+                    "shortened_doc_length": 144,
+                    "shortened_doc_content": "The diagnostic tests in cardiology are methods of identifying heart conditions associated with healthy vs. unhealthy, pathologic heart function."
+                }
+            ],
+            "mean_original_docs_length": 5044.0,
+            "mean_shortened_docs_length": 144.0
+        },
+        "82": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mitral insufficiency",
+                    "original_doc_length": 16937,
+                    "shortened_doc_length": 189,
+                    "shortened_doc_content": "Mitral regurgitation (MR), mitral insufficiency, or mitral incompetence is a form of valvular heart disease in which the mitral valve does not close properly when the heart pumps out blood."
+                }
+            ],
+            "mean_original_docs_length": 16937.0,
+            "mean_shortened_docs_length": 189.0
+        },
+        "83": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Niacin",
+                    "original_doc_length": 21478,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "Niacin, also known as nicotinic acid, is an organic compound and a form of vitamin B3, an essential human nutrient."
+                }
+            ],
+            "mean_original_docs_length": 21478.0,
+            "mean_shortened_docs_length": 115.0
+        },
+        "84": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchiectasis",
+                    "original_doc_length": 18114,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung."
+                }
+            ],
+            "mean_original_docs_length": 18114.0,
+            "mean_shortened_docs_length": 104.0
+        },
+        "85": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ascending cholangitis",
+                    "original_doc_length": 18085,
+                    "shortened_doc_length": 235,
+                    "shortened_doc_content": "Ascending cholangitis, also known as acute cholangitis or simply cholangitis, is inflammation of the bile duct (cholangitis), usually caused by bacteria ascending from its junction with the duodenum (first part of the small intestine)."
+                }
+            ],
+            "mean_original_docs_length": 18085.0,
+            "mean_shortened_docs_length": 235.0
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Health effects of tobacco",
+                    "original_doc_length": 59724,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "Tobacco use has predominantly negative effects on human health and concern about health effects of tobacco has a long history."
+                }
+            ],
+            "mean_original_docs_length": 59724.0,
+            "mean_shortened_docs_length": 126.0
+        },
+        "87": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thrombocytopenia",
+                    "original_doc_length": 11084,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "Thrombocytopenia is a condition characterized by abnormally low levels of thrombocytes, also known as platelets, in the blood."
+                }
+            ],
+            "mean_original_docs_length": 11084.0,
+            "mean_shortened_docs_length": 126.0
+        },
+        "88": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Primary cutaneous histoplasmosis",
+                    "original_doc_length": 208,
+                    "shortened_doc_length": 146,
+                    "shortened_doc_content": "Primary cutaneous histoplasmosis is a rare skin condition, reported on the penis, characterized by a chancre-type lesion with regional adenopathy."
+                }
+            ],
+            "mean_original_docs_length": 208.0,
+            "mean_shortened_docs_length": 146.0
+        },
+        "89": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metastatic liver disease",
+                    "original_doc_length": 2293,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "A liver metastasis is a malignant tumor in the liver that has spread from another organ affected by cancer."
+                }
+            ],
+            "mean_original_docs_length": 2293.0,
+            "mean_shortened_docs_length": 107.0
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyaline",
+                    "original_doc_length": 1103,
+                    "shortened_doc_length": 52,
+                    "shortened_doc_content": "A hyaline substance is one with a glassy appearance."
+                }
+            ],
+            "mean_original_docs_length": 1103.0,
+            "mean_shortened_docs_length": 52.0
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Monomorphic epitheliotropic intestinal T cell lymphoma",
+                    "original_doc_length": 11289,
+                    "shortened_doc_length": 302,
+                    "shortened_doc_content": "Monomorphic epitheliotropic intestinal T cell lymphoma (MEITL) (formerly termed enteropathy-associated T cell lymphoma, type II) is an extremely rare peripheral T-cell lymphoma that involves the malignant proliferation of a type of lymphocyte, the T cell, in the gastrointestinal tract (i.e. GI tract)."
+                }
+            ],
+            "mean_original_docs_length": 11289.0,
+            "mean_shortened_docs_length": 302.0
+        },
+        "93": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neisseria gonorrhoeae",
+                    "original_doc_length": 19357,
+                    "shortened_doc_length": 167,
+                    "shortened_doc_content": "Neisseria gonorrhoeae, also known as gonococcus (singular), or gonococci (plural) is a species of Gram-negative diplococci bacteria isolated by Albert Neisser in 1879."
+                }
+            ],
+            "mean_original_docs_length": 19357.0,
+            "mean_shortened_docs_length": 167.0
+        },
+        "94": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hair loss",
+                    "original_doc_length": 24448,
+                    "shortened_doc_length": 102,
+                    "shortened_doc_content": "Hair loss, also known as alopecia or baldness, refers to a loss of hair from part of the head or body."
+                }
+            ],
+            "mean_original_docs_length": 24448.0,
+            "mean_shortened_docs_length": 102.0
+        },
+        "95": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "P200",
+                    "original_doc_length": 18729,
+                    "shortened_doc_length": 139,
+                    "shortened_doc_content": "In neuroscience, the visual P200 or P2 is a waveform component or feature of the event-related potential (ERP) measured at the human scalp."
+                }
+            ],
+            "mean_original_docs_length": 18729.0,
+            "mean_shortened_docs_length": 139.0
+        },
+        "96": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Incidental imaging finding",
+                    "original_doc_length": 5632,
+                    "shortened_doc_length": 177,
+                    "shortened_doc_content": "In medical or research imaging, an incidental finding (commonly known as an \"incidentaloma\") is an unanticipated finding which is not related to the original diagnostic inquiry."
+                }
+            ],
+            "mean_original_docs_length": 5632.0,
+            "mean_shortened_docs_length": 177.0
+        },
+        "97": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metastasis",
+                    "original_doc_length": 19767,
+                    "shortened_doc_length": 208,
+                    "shortened_doc_content": "Metastasis is a pathogenic agent's spread from an initial or primary site to a different or secondary site within the host's body; the term is typically used when referring to metastasis by a cancerous tumor."
+                }
+            ],
+            "mean_original_docs_length": 19767.0,
+            "mean_shortened_docs_length": 208.0
+        },
+        "98": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Anorectal abscess",
+                    "original_doc_length": 5541,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "Anorectal abscess (also known as an anal/rectal abscess, or perianal/perirectal abscess) is an abscess adjacent to the anus."
+                }
+            ],
+            "mean_original_docs_length": 5541.0,
+            "mean_shortened_docs_length": 124.0
+        },
+        "99": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pancreatitis",
+                    "original_doc_length": 16032,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Pancreatitis is a condition characterized by inflammation of the pancreas."
+                }
+            ],
+            "mean_original_docs_length": 16032.0,
+            "mean_shortened_docs_length": 74.0
+        },
+        "100": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lung tumor",
+                    "original_doc_length": 720,
+                    "shortened_doc_length": 42,
+                    "shortened_doc_content": "\"Lung tumors\" are neoplastic lung nodules."
+                }
+            ],
+            "mean_original_docs_length": 720.0,
+            "mean_shortened_docs_length": 42.0
+        },
+        "101": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophageal food bolus obstruction",
+                    "original_doc_length": 5488,
+                    "shortened_doc_length": 131,
+                    "shortened_doc_content": "An esophageal food bolus obstruction is a medical emergency caused by the obstruction of the esophagus by an ingested foreign body."
+                }
+            ],
+            "mean_original_docs_length": 5488.0,
+            "mean_shortened_docs_length": 131.0
+        },
+        "102": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchiectasis",
+                    "original_doc_length": 18114,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung."
+                }
+            ],
+            "mean_original_docs_length": 18114.0,
+            "mean_shortened_docs_length": 104.0
+        },
+        "103": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Synovial sarcoma",
+                    "original_doc_length": 4492,
+                    "shortened_doc_length": 200,
+                    "shortened_doc_content": "A synovial sarcoma (also known as: malignant synovioma) is a rare form of cancer which occurs primarily in the extremities of the arms or legs, often in proximity to joint capsules and tendon sheaths."
+                }
+            ],
+            "mean_original_docs_length": 4492.0,
+            "mean_shortened_docs_length": 200.0
+        },
+        "104": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mandibular fracture",
+                    "original_doc_length": 22907,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Mandibular fracture, also known as fracture of the jaw, is a break through the mandibular bone."
+                }
+            ],
+            "mean_original_docs_length": 22907.0,
+            "mean_shortened_docs_length": 95.0
+        },
+        "105": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Psoriasis",
+                    "original_doc_length": 43300,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "Psoriasis is a long-lasting autoimmune disease characterized by patches of abnormal skin."
+                }
+            ],
+            "mean_original_docs_length": 43300.0,
+            "mean_shortened_docs_length": 89.0
+        },
+        "106": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lichen planus",
+                    "original_doc_length": 22085,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Lichen planus (LP) is a chronic inflammatory and immune mediated disease that affects the skin, nails, hair, and mucous membranes."
+                }
+            ],
+            "mean_original_docs_length": 22085.0,
+            "mean_shortened_docs_length": 130.0
+        },
+        "107": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Male breast cancer",
+                    "original_doc_length": 8923,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Male breast cancer (male breast neoplasm) is a rare cancer in males that originates from the breast."
+                }
+            ],
+            "mean_original_docs_length": 8923.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "108": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Betamethasone",
+                    "original_doc_length": 4325,
+                    "shortened_doc_length": 38,
+                    "shortened_doc_content": "Betamethasone is a steroid medication."
+                }
+            ],
+            "mean_original_docs_length": 4325.0,
+            "mean_shortened_docs_length": 38.0
+        },
+        "109": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vestibular schwannoma",
+                    "original_doc_length": 29037,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "A vestibular schwannoma (VS) is a benign primary intracranial tumor of the myelin-forming cells of the vestibulocochlear nerve (8th cranial nerve)."
+                }
+            ],
+            "mean_original_docs_length": 29037.0,
+            "mean_shortened_docs_length": 147.0
+        },
+        "110": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ganglioglioma",
+                    "original_doc_length": 4469,
+                    "shortened_doc_length": 161,
+                    "shortened_doc_content": "Ganglioglioma is a rare, slow-growing primary central nervous system (CNS) tumor which most frequently occurs in the temporal lobes of children and young adults."
+                }
+            ],
+            "mean_original_docs_length": 4469.0,
+            "mean_shortened_docs_length": 161.0
+        },
+        "111": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Intestinal pseudo-obstruction",
+                    "original_doc_length": 8242,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Intestinal pseudo-obstruction is a clinical syndrome caused by severe impairment in the ability of the intestines to push food through."
+                }
+            ],
+            "mean_original_docs_length": 8242.0,
+            "mean_shortened_docs_length": 135.0
+        },
+        "112": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pneumocystis jirovecii",
+                    "original_doc_length": 8325,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Pneumocystis jirovecii (previously \"P. carinii\") is a yeast-like fungus of the genus \"Pneumocystis\"."
+                }
+            ],
+            "mean_original_docs_length": 8325.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "113": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Aortic dissection",
+                    "original_doc_length": 30332,
+                    "shortened_doc_length": 166,
+                    "shortened_doc_content": "Aortic dissection (AD) occurs when an injury to the innermost layer of the aorta allows blood to flow between the layers of the aortic wall, forcing the layers apart."
+                }
+            ],
+            "mean_original_docs_length": 30332.0,
+            "mean_shortened_docs_length": 166.0
+        },
+        "114": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mitral valve stenosis",
+                    "original_doc_length": 13183,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Mitral stenosis is a valvular heart disease characterized by the narrowing of the orifice of the mitral valve of the heart."
+                }
+            ],
+            "mean_original_docs_length": 13183.0,
+            "mean_shortened_docs_length": 123.0
+        },
+        "115": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Electrocardiography in myocardial infarction",
+                    "original_doc_length": 4985,
+                    "shortened_doc_length": 209,
+                    "shortened_doc_content": "Electrocardiography in suspected myocardial infarction has the main purpose of detecting ischemia or acute coronary injury in emergency department populations coming for symptoms of myocardial infarction (MI)."
+                }
+            ],
+            "mean_original_docs_length": 4985.0,
+            "mean_shortened_docs_length": 209.0
+        },
+        "116": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cholecystectomy",
+                    "original_doc_length": 7164,
+                    "shortened_doc_length": 59,
+                    "shortened_doc_content": "Cholecystectomy is the surgical removal of the gallbladder."
+                }
+            ],
+            "mean_original_docs_length": 7164.0,
+            "mean_shortened_docs_length": 59.0
+        },
+        "117": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesenteric ischemia",
+                    "original_doc_length": 9829,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Mesenteric ischemia is a medical condition in which injury to the small intestine occurs due to not enough blood supply."
+                }
+            ],
+            "mean_original_docs_length": 9829.0,
+            "mean_shortened_docs_length": 120.0
+        },
+        "118": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acanthocyte (disambiguation)",
+                    "original_doc_length": 476,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "Acanthocyte is a form of red blood cell that has a spiked cell membrane, due to abnormal thorny projections."
+                }
+            ],
+            "mean_original_docs_length": 476.0,
+            "mean_shortened_docs_length": 108.0
+        },
+        "119": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Kidney failure",
+                    "original_doc_length": 12528,
+                    "shortened_doc_length": 143,
+                    "shortened_doc_content": "Kidney failure, also known as end-stage kidney disease, is a medical condition in which the kidneys are functioning at less than 15% of normal."
+                }
+            ],
+            "mean_original_docs_length": 12528.0,
+            "mean_shortened_docs_length": 143.0
+        },
+        "120": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Crohn's disease",
+                    "original_doc_length": 42336,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "Crohn's disease is a type of inflammatory bowel disease (IBD) that may affect any segment of the gastrointestinal tract from the mouth to the anus."
+                }
+            ],
+            "mean_original_docs_length": 42336.0,
+            "mean_shortened_docs_length": 147.0
+        },
+        "121": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lithotripsy",
+                    "original_doc_length": 2516,
+                    "shortened_doc_length": 131,
+                    "shortened_doc_content": "Lithotripsy is a medical procedure involving the physical destruction of hardened masses like kidney stones, bezoars or gallstones."
+                }
+            ],
+            "mean_original_docs_length": 2516.0,
+            "mean_shortened_docs_length": 131.0
+        },
+        "122": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Treatment of infections after exposure to ionizing radiation",
+                    "original_doc_length": 7525,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "Infections caused by exposure to ionizing radiation can be extremely dangerous, and are of public and government concern."
+                }
+            ],
+            "mean_original_docs_length": 7525.0,
+            "mean_shortened_docs_length": 121.0
+        },
+        "123": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acetabular fracture",
+                    "original_doc_length": 2515,
+                    "shortened_doc_length": 87,
+                    "shortened_doc_content": "Fractures of the acetabulum occur when the head of the femur is driven into the pelvis."
+                }
+            ],
+            "mean_original_docs_length": 2515.0,
+            "mean_shortened_docs_length": 87.0
+        },
+        "124": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Orthopedic plate",
+                    "original_doc_length": 301,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "An orthopedic plate is a form of internal fixation used in orthopaedic surgery to hold fractures in place to allow bone healing."
+                }
+            ],
+            "mean_original_docs_length": 301.0,
+            "mean_shortened_docs_length": 128.0
+        },
+        "125": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermatitis",
+                    "original_doc_length": 7249,
+                    "shortened_doc_length": 97,
+                    "shortened_doc_content": "Dermatitis, also known as eczema, is a group of diseases that result in inflammation of the skin."
+                }
+            ],
+            "mean_original_docs_length": 7249.0,
+            "mean_shortened_docs_length": 97.0
+        },
+        "126": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Oropharyngeal cancer",
+                    "original_doc_length": 5890,
+                    "shortened_doc_length": 331,
+                    "shortened_doc_content": "Oropharyngeal cancer (OPC) also known as Tonsil cancer, is a disease in which abnormal cells with the potential to both grow locally and spread to other parts of the body are found in the tissue of the part of the throat (oropharynx) that includes the base of the tongue, the tonsils, the soft palate, and the walls of the pharynx."
+                }
+            ],
+            "mean_original_docs_length": 5890.0,
+            "mean_shortened_docs_length": 331.0
+        },
+        "127": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "High-resolution computed tomography",
+                    "original_doc_length": 7376,
+                    "shortened_doc_length": 134,
+                    "shortened_doc_content": "High-resolution computed tomography (HRCT) is a type of computed tomography (CT) with specific techniques to enhance image resolution."
+                }
+            ],
+            "mean_original_docs_length": 7376.0,
+            "mean_shortened_docs_length": 134.0
+        }
+    }
+}

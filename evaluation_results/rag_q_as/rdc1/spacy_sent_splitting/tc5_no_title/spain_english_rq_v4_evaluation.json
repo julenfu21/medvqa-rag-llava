@@ -1,0 +1,1884 @@
+{
+    "accuracy": 0.208,
+    "percentage_well_formatted": 0.896,
+    "mean_relevant_docs_used": 1.0,
+    "mean_original_docs_length": 11560.152,
+    "mean_shortened_docs_length": 632.496,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatitis",
+                    "original_doc_length": 68076,
+                    "shortened_doc_length": 569,
+                    "shortened_doc_content": "Hepatitis is inflammation of the liver tissue. Some people with hepatitis have no symptoms, whereas others develop yellow discoloration of the skin and whites of the eyes (jaundice), poor appetite, vomiting, tiredness, abdominal pain, and diarrhea. Hepatitis is \"acute\" if it resolves within six months, and \"chronic\" if it lasts longer than six months. Acute hepatitis can resolve on its own, progress to chronic hepatitis, or (rarely) result in acute liver failure. Chronic hepatitis may progress to scarring of the liver (cirrhosis), liver failure, and liver cancer."
+                }
+            ],
+            "mean_original_docs_length": 68076.0,
+            "mean_shortened_docs_length": 569.0
+        },
+        "2": {
+            "predicted_answer": "Es",
+            "gold_answer": "C",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophageal candidiasis",
+                    "original_doc_length": 2091,
+                    "shortened_doc_length": 489,
+                    "shortened_doc_content": "Esophageal candidiasis is an opportunistic infection of the esophagus by \"Candida albicans\". The disease usually occurs in patients in immunocompromised states, including post-chemotherapy and in AIDS. However, it can also occur in patients with no predisposing risk factors, and is more likely to be asymptomatic in those patients. It is also known as candidal esophagitis or monilial esophagitis. People with esophageal candidiasis typically present with difficult or painful swallowing."
+                }
+            ],
+            "mean_original_docs_length": 2091.0,
+            "mean_shortened_docs_length": 489.0
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myopathy",
+                    "original_doc_length": 7208,
+                    "shortened_doc_length": 454,
+                    "shortened_doc_content": "Myopathy is a disease of the muscle in which the muscle fibers do not function properly. This results in muscular weakness. \"Myopathy\" means muscle disease (Greek : myo- \"muscle\" + patheia \"-pathy\" : \"suffering\"). This meaning implies that the primary defect is within the muscle, as opposed to the nerves (\"neuropathies\" or \"neurogenic\" disorders) or elsewhere (e.g., the brain). Muscle cramps, stiffness, and spasm can also be associated with myopathy."
+                }
+            ],
+            "mean_original_docs_length": 7208.0,
+            "mean_shortened_docs_length": 454.0
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cholangiocarcinoma",
+                    "original_doc_length": 3924,
+                    "shortened_doc_length": 616,
+                    "shortened_doc_content": "Cholangiocarcinoma, also known as bile duct cancer, is a type of cancer that forms in the bile ducts. Symptoms of cholangiocarcinoma may include abdominal pain, yellowish skin, weight loss, generalized itching, and fever. Light colored stool or dark urine may also occur. Other biliary tract cancers include gallbladder cancer and cancer of the ampulla of Vater. Risk factors for cholangiocarcinoma include primary sclerosing cholangitis (an inflammatory disease of the bile ducts), ulcerative colitis, cirrhosis, hepatitis C, hepatitis B, infection with certain liver fluke, and some congenital liver malformations."
+                }
+            ],
+            "mean_original_docs_length": 3924.0,
+            "mean_shortened_docs_length": 616.0
+        },
+        "5": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Desmoglein-2",
+                    "original_doc_length": 4253,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Desmoglein-2 is a protein that in humans is encoded by the \"DSG2\" gene. Desmoglein-2 is highly expressed in epithelial cells and cardiomyocytes. Desmoglein-2 is localized to desmosome structures at regions of cell-cell contact and functions to structurally adhere adjacent cells together. In cardiac muscle, these regions are specialized regions known as intercalated discs. Mutations in desmoglein-2 have been associated with arrhythmogenic right ventricular cardiomyopathy and familial dilated cardiomyopathy."
+                }
+            ],
+            "mean_original_docs_length": 4253.0,
+            "mean_shortened_docs_length": 511.0
+        },
+        "6": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Angioedema",
+                    "original_doc_length": 13261,
+                    "shortened_doc_length": 379,
+                    "shortened_doc_content": "Angioedema is an area of swelling of the lower layer of skin and tissue just under the skin or mucous membranes. The swelling may occur in the face, tongue, larynx, abdomen, or arms and legs. Often it is associated with hives, which are swelling within the upper skin. Onset is typically over minutes to hours. The underlying mechanism typically involves histamine or bradykinin."
+                }
+            ],
+            "mean_original_docs_length": 13261.0,
+            "mean_shortened_docs_length": 379.0
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Multicystic dysplastic kidney",
+                    "original_doc_length": 3095,
+                    "shortened_doc_length": 534,
+                    "shortened_doc_content": "Multicystic dysplastic kidney (MCDK) is a condition that results from the malformation of the kidney during fetal development. The kidney consists of irregular cysts of varying sizes. Multicystic dysplastic kidney is a common type of renal cystic disease, and it is a cause of an abdominal mass in infants. When a diagnosis of multicystic kidney is made in utero by ultrasound, the disease is found to be bilateral in many cases. Those with bilateral disease often have other severe deformities or polysystemic malformation syndromes."
+                }
+            ],
+            "mean_original_docs_length": 3095.0,
+            "mean_shortened_docs_length": 534.0
+        },
+        "8": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lymphoproliferative disorders",
+                    "original_doc_length": 4687,
+                    "shortened_doc_length": 936,
+                    "shortened_doc_content": "Lymphoproliferative disorders (LPDs) refer to several conditions in which lymphocytes are produced in excessive quantities. They typically occur in people who have a compromised immune system. They are sometimes equated with \"immunoproliferative disorders\", but technically lymphoproliferative disorders are a subset of immunoproliferative disorders, along with hypergammaglobulinemia and paraproteinemias. BULLET::::- Follicular lymphoma\nBULLET::::- chronic lymphocytic leukemia\nBULLET::::- acute lymphoblastic leukemia\nBULLET::::- hairy cell leukemia\nBULLET::::- B-cell lymphomas\nBULLET::::- T-cell lymphomas\nBULLET::::- multiple myeloma\nBULLET::::- Waldenstr\u00f6m's macroglobulinemia\nBULLET::::- Wiskott\u2013Aldrich syndrome\nBULLET::::- Lymphocyte-variant hypereosinophilia\nBULLET::::- Pityriasis Lichenoides (PL, PLC, PLVA) BULLET::::- post-transplant lymphoproliferative disorder\nBULLET::::- autoimmune lymphoproliferative syndrome (ALPS)"
+                }
+            ],
+            "mean_original_docs_length": 4687.0,
+            "mean_shortened_docs_length": 936.0
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Misoprostol",
+                    "original_doc_length": 13098,
+                    "shortened_doc_length": 550,
+                    "shortened_doc_content": "Misoprostol, sold under the brandname Cytotec among others, is a medication used to prevent and treat stomach ulcers, start labor, cause an abortion, and treat postpartum bleeding due to poor contraction of the uterus. For abortions it is used by itself and with mifepristone or methotrexate. By itself, effectiveness for abortion is between 66% and 90%. Misoprostol is taken by mouth when used to prevent gastric ulcers in persons taking NSAIDs. For labor induction or abortion, it is taken by mouth, dissolved in the mouth, or placed in the vagina."
+                }
+            ],
+            "mean_original_docs_length": 13098.0,
+            "mean_shortened_docs_length": 550.0
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyperparathyroidism",
+                    "original_doc_length": 11172,
+                    "shortened_doc_length": 455,
+                    "shortened_doc_content": "Hyperparathyroidism is an increase in parathyroid hormone (PTH) levels in the blood. This occurs from a disorder either within the parathyroid glands (primary hyperparathyroidism) or outside the parathyroid glands (secondary hyperparathyroidism). Most people with primary disease have no symptoms at the time of diagnosis. When symptoms occur, they are due to elevated blood calcium. With long-standing elevation, the most common symptom is kidney stones."
+                }
+            ],
+            "mean_original_docs_length": 11172.0,
+            "mean_shortened_docs_length": 455.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vertebral hemangioma",
+                    "original_doc_length": 2568,
+                    "shortened_doc_length": 614,
+                    "shortened_doc_content": "A vertebral hemangioma (VH) is a vascular lesion within a vertebral body. Commonly, these are benign lesions that are found incidentally during radiology studies for other indications. Vertebral hemangiomas are a common etiology estimated to be found in 10-12% of humans at autopsy. They are benign in nature and frequently asymptomatic. Symptoms, if they do occur, are usually related to large hemangiomas, trauma, the hormonal and hemodynamic changes of pregnancy (causing intra-spinal bleeding), or osseous expansion and extra-osseous extension into surround soft tissues or epidural region of the spinal canal."
+                }
+            ],
+            "mean_original_docs_length": 2568.0,
+            "mean_shortened_docs_length": 614.0
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Spinal epidural hematoma",
+                    "original_doc_length": 950,
+                    "shortened_doc_length": 574,
+                    "shortened_doc_content": "Spinal epidural hematoma is bleeding into the epidural space in the spine. These may arise spontaneously (e.g. during childbirth), or as a rare complication of epiduralanaesthesia or of surgery (such as laminectomy). Symptoms usually include back pain which radiates to the arms or the legs. They may cause pressure on the spinal cord or cauda equina, which may present as pain, muscle weakness, or dysfunction of the bladder and bowel. The anatomy of the epidural space is such that spinal epidural hematoma has a different presentation from intracranial epidural hematoma."
+                }
+            ],
+            "mean_original_docs_length": 950.0,
+            "mean_shortened_docs_length": 574.0
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest tube",
+                    "original_doc_length": 11988,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A chest tube (chest drain, thoracic catheter, tube thoracostomy, or intercostal drain) is a flexible plastic tube that is inserted through the chest wall and into the pleural space or mediastinum. It is used to remove air (pneumothorax), fluid (pleural effusion, blood, chyle), or pus (empyema) from the intrathoracic space. It is also known as a B\u00fclau drain or an intercostal catheter. The concept of chest drainage was first advocated by Hippocrates when he described the treatment of empyema by means of incision, cautery, and insertion of metal tubes. However, the technique was not widely used until the influenza epidemic of 1917 to drain post-pneumonic empyema, which was first documented by Dr. C. Pope, on \"Joel\", a 22-month-old infant."
+                }
+            ],
+            "mean_original_docs_length": 11988.0,
+            "mean_shortened_docs_length": 745.0
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sarcoidosis",
+                    "original_doc_length": 40135,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "Sarcoidosis is a disease involving abnormal collections of inflammatory cells that form lumps known as granulomas. The disease usually begins in the lungs, skin, or lymph nodes. Less commonly affected are the eyes, liver, heart, and brain. Any organ, however, can be affected. The signs and symptoms depend on the organ involved."
+                }
+            ],
+            "mean_original_docs_length": 40135.0,
+            "mean_shortened_docs_length": 329.0
+        },
+        "16": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesenteric ischemia",
+                    "original_doc_length": 9829,
+                    "shortened_doc_length": 682,
+                    "shortened_doc_content": "Mesenteric ischemia is a medical condition in which injury to the small intestine occurs due to not enough blood supply. It can come on suddenly, known as acute mesenteric ischemia, or gradually, known as chronic mesenteric ischemia. The acute form of the disease often presents with sudden severe abdominal pain and is associated with a high risk of death. The chronic form typically presents more gradually with abdominal pain after eating, unintentional weight loss, vomiting, and fear of eating. Risk factors for acute mesenteric ischemia include atrial fibrillation, heart failure, chronic kidney failure, being prone to forming blood clots, and previous myocardial infarction."
+                }
+            ],
+            "mean_original_docs_length": 9829.0,
+            "mean_shortened_docs_length": 682.0
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Calcific tendinitis",
+                    "original_doc_length": 4674,
+                    "shortened_doc_length": 735,
+                    "shortened_doc_content": "Calcific tendinitis is a form of tendinitis, a disorder characterized by deposits of hydroxyapatite (a crystalline calcium phosphate) in any tendon of the body, but most commonly in the tendons of the rotator cuff (shoulder), causing pain and inflammation. The condition is related to and may cause adhesive capsulitis (\"frozen shoulder\"). It most often occurs in females aged 30 to 60 years. Calcifications are usually located within the supraspinatus tendon (80% of cases), followed by the infraspinatus (15% of cases) and subscapularis (5% of cases) tendons; and are present in 5% or more of asymptomatic shoulders in healthy adults. Pain is often aggravated by elevation of the arm above shoulder level or by lying on the shoulder."
+                }
+            ],
+            "mean_original_docs_length": 4674.0,
+            "mean_shortened_docs_length": 735.0
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myopericarditis",
+                    "original_doc_length": 468,
+                    "shortened_doc_length": 436,
+                    "shortened_doc_content": "Myopericarditis is a combination of both myocarditis and pericarditis appearing in a single individual, namely inflammation of both the pericardium and the heart muscle. It can involve the presence of fluid in the heart. When ventricular function is normal, the term myopericarditis is used. Cases with impaired function are labeled perimyocarditis, though the two terms are often used interchangeably. Both will be reflected on an ECG."
+                }
+            ],
+            "mean_original_docs_length": 468.0,
+            "mean_shortened_docs_length": 436.0
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Multiple sclerosis",
+                    "original_doc_length": 41726,
+                    "shortened_doc_length": 756,
+                    "shortened_doc_content": "Multiple sclerosis (MS) is a demyelinating disease in which the insulating covers of nerve cells in the brain and spinal cord are damaged. This damage disrupts the ability of parts of the nervous system to transmit signals, resulting in a range of signs and symptoms, including physical, mental, and sometimes psychiatric problems. Specific symptoms can include double vision, blindness in one eye, muscle weakness and trouble with sensation or coordination. MS takes several forms, with new symptoms either occurring in isolated attacks (relapsing forms) or building up over time (progressive forms). Between attacks, symptoms may disappear completely; however, permanent neurological problems often remain, especially with the advancement of the disease."
+                }
+            ],
+            "mean_original_docs_length": 41726.0,
+            "mean_shortened_docs_length": 756.0
+        },
+        "20": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neurofibroma",
+                    "original_doc_length": 11701,
+                    "shortened_doc_length": 612,
+                    "shortened_doc_content": "A neurofibroma is a benign nerve-sheath tumor in the peripheral nervous system. In 90% of cases, they are found as stand-alone tumors, while the remainder are found in persons with neurofibromatosis type I (NF1), an autosomal-dominant genetically inherited disease. They can result in a range of symptoms from physical disfiguration and pain to cognitive disability. Neurofibromas arise from nonmyelinating-type Schwann cells that exhibit biallelic inactivation of the \"NF1\" gene that codes for the protein neurofibromin. This protein is responsible for regulating the RAS-mediated cell growth signaling pathway."
+                }
+            ],
+            "mean_original_docs_length": 11701.0,
+            "mean_shortened_docs_length": 612.0
+        },
+        "21": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neuromyelitis optica",
+                    "original_doc_length": 19041,
+                    "shortened_doc_length": 585,
+                    "shortened_doc_content": "Neuromyelitis optica (NMO) is a heterogeneous condition consisting of the inflammation and demyelination of the optic nerve (optic neuritis) and the spinal cord (myelitis). It can be monophasic or recurrent. Currently at least three different kinds are proposed based on the presence of autoantibodies thought to produce the disease: anti-AQP4, anti-MOG and anti-NF. All the cases are considered autoimmune diseases. Spinal cord lesions lead to varying degrees of weakness or paralysis in the legs or arms, loss of sensation (including blindness), and/or bladder and bowel dysfunction."
+                }
+            ],
+            "mean_original_docs_length": 19041.0,
+            "mean_shortened_docs_length": 585.0
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bowel resection",
+                    "original_doc_length": 1323,
+                    "shortened_doc_length": 997,
+                    "shortened_doc_content": "A bowel resection or enterectomy (\"enter-\" + \"-ectomy\") is a surgical procedure in which a part of an intestine (bowel) is removed, from either the small intestine or large intestine. Often the word \"enterectomy\" is reserved for the sense of small bowel resection, in distinction from colectomy, which covers the sense of large bowel resection. Bowel resection may be performed to treat gastrointestinal cancer, bowel necrosis, severe enteritis, diverticular disease, Crohn's disease, endometriosis, ulcerative colitis, or bowel obstruction due to scar tissue. Other reasons to perform bowel resection include traumatic injuries and to remove polyps when polypectomy is insufficient, either to prevent polyps from ever becoming cancerous or because they are causing or threatening bowel obstruction, such as in familial adenomatous polyposis, Peutz\u2013Jeghers syndrome, or other polyposis syndromes. Some patients require ileostomy or colostomy after this procedure as alternative means of excretion."
+                }
+            ],
+            "mean_original_docs_length": 1323.0,
+            "mean_shortened_docs_length": 997.0
+        },
+        "23": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Internal fixation",
+                    "original_doc_length": 2603,
+                    "shortened_doc_length": 886,
+                    "shortened_doc_content": "Internal fixation is an operation in orthopedics that involves the surgical implementation of implants for the purpose of repairing a bone, a concept that dates to the mid-nineteenth century and was made applicable for routine treatment in the mid-twentieth century. An internal fixator may be made of stainless steel, titanium alloy, or cobalt-chrome alloy. Types of internal fixators include:\nBULLET::::- Plate and screws\nBULLET::::- Kirschner wires\nBULLET::::- Intramedullary nails\n\nOpen Reduction Internal Fixation (ORIF) involves the implementation of implants to guide the healing process of a bone, as well as the open reduction, or setting, of the bone. \"Open reduction\" refers to open surgery to set bones, as is necessary for some fractures. \"Internal fixation\" refers to fixation of screws and/or plates, intramedullary rods and other devices to enable or facilitate healing."
+                }
+            ],
+            "mean_original_docs_length": 2603.0,
+            "mean_shortened_docs_length": 886.0
+        },
+        "24": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive heart disease",
+                    "original_doc_length": 5070,
+                    "shortened_doc_length": 966,
+                    "shortened_doc_content": "Hypertensive heart disease includes a number of complications of high blood pressure that affect the heart. While there are several definitions of hypertensive heart disease in the medical literature, the term is most widely used in the context of the International Classification of Diseases (ICD) coding categories. The definition includes heart failure and other cardiac complications of hypertension when a causal relationship between the heart disease and hypertension is stated or implied on the death certificate. In 2013 hypertensive heart disease resulted in 1.07 million deaths as compared with 630,000 deaths in 1990. According to ICD-10, hypertensive heart disease (I11), and its subcategories: hypertensive heart disease with heart failure (I11.0) and hypertensive heart disease without heart failure (I11.9) are distinguished from chronic rheumatic heart diseases (I05-I09), other forms of heart disease (I30-I52) and ischemic heart diseases (I20-I25)."
+                }
+            ],
+            "mean_original_docs_length": 5070.0,
+            "mean_shortened_docs_length": 966.0
+        },
+        "25": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Glomerular basement membrane",
+                    "original_doc_length": 1808,
+                    "shortened_doc_length": 695,
+                    "shortened_doc_content": "The glomerular basement membrane (GBM) of the kidney is the basal lamina layer of the glomerulus. The glomerular endothelial cells, the GBM and the filtration slits between the podocytes perform the filtration function of the glomerulus, separating the blood in the capillaries from the filtrate that forms in Bowman's capsule. The GBM is a fusion of the endothelial cell and podocyte basal laminas. The GBM contains three layers:\nThe glomerular membrane consists of mesangial cells, modified pericytes that in other parts of the body separate capillaries from each other. The podocytes adjoining them have filtration slits of diameter 25\u00a0nm that are formed by the pseudopodia arising from them."
+                }
+            ],
+            "mean_original_docs_length": 1808.0,
+            "mean_shortened_docs_length": 695.0
+        },
+        "26": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchopneumonia",
+                    "original_doc_length": 1684,
+                    "shortened_doc_length": 481,
+                    "shortened_doc_content": "Bronchopneumonia is a subtype of pneumonia. It is the acute inflammation of the bronchi, accompanied by inflamed patches in the nearby lobules of the lungs. It is often contrasted with lobar pneumonia but in clinical practice the types are difficult to apply, as the patterns usually overlap. Bronchopneumonia (lobular) often leads to lobar pneumonia as the infection progresses. The same organism may cause one type of pneumonia in one patient, and another in a different patient."
+                }
+            ],
+            "mean_original_docs_length": 1684.0,
+            "mean_shortened_docs_length": 481.0
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myocardial rupture",
+                    "original_doc_length": 5158,
+                    "shortened_doc_length": 474,
+                    "shortened_doc_content": "Myocardial rupture is a laceration of the ventricles or atria of the heart, of the interatrial or interventricular septum, or of the papillary muscles. It is most commonly seen as a serious sequela of an acute myocardial infarction (heart attack). It can also be caused by trauma. Symptoms of myocardial rupture are recurrent or persistent chest pain, syncope, and distension of jugular vein. Sudden death caused by a myocardial rupture is sometimes preceded by no symptoms."
+                }
+            ],
+            "mean_original_docs_length": 5158.0,
+            "mean_shortened_docs_length": 474.0
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trabeculectomy",
+                    "original_doc_length": 7742,
+                    "shortened_doc_length": 756,
+                    "shortened_doc_content": "Trabeculectomy is a surgical procedure used in the treatment of glaucoma to relieve intraocular pressure by removing part of the eye's trabecular meshwork and adjacent structures. It is the most common glaucoma surgery performed and allows drainage of aqueous humor from within the eye to underneath the conjunctiva where it is absorbed. This outpatient procedure was most commonly performed under monitored anesthesia care using a retrobulbar block or peribulbar block or a combination of topical and subtenon (Tenon's capsule) anesthesia. Due to the higher risks associated with bulbar blocks, topical analgesia with mild sedation is becoming more common. Rarely general anesthesia will be used, in patients with an inability to cooperate during surgery."
+                }
+            ],
+            "mean_original_docs_length": 7742.0,
+            "mean_shortened_docs_length": 756.0
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vocal cord cyst",
+                    "original_doc_length": 12147,
+                    "shortened_doc_length": 398,
+                    "shortened_doc_content": "Vocal fold cysts (also known as \"vocal cord cysts\") are benign masses of the membranous vocal folds. These cysts are enclosed, sac-like structures that are typically of a yellow or white colour. They occur unilaterally on the midpoint of the medial edge of the vocal folds. They can also form on the upper/superior, surface of the vocal folds. There are two types of vocal fold cysts:\n\nBULLET::::1."
+                }
+            ],
+            "mean_original_docs_length": 12147.0,
+            "mean_shortened_docs_length": 398.0
+        },
+        "30": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adenocarcinoma",
+                    "original_doc_length": 6786,
+                    "shortened_doc_length": 868,
+                    "shortened_doc_content": "Adenocarcinoma (; plural adenocarcinomas or adenocarcinomata ) is a type of cancerous tumor that can occur in several parts of the body. It is defined as neoplasia of epithelial tissue that has glandular origin, glandular characteristics, or both. Adenocarcinomas are part of the larger grouping of carcinomas, but are also sometimes called by more precise terms omitting the word, where these exist. Thus invasive ductal carcinoma, the most common form of breast cancer, is adenocarcinoma but does not use the term in its name\u2014however, esophageal adenocarcinoma does to distinguish it from the other common type of esophageal cancer, esophageal squamous cell carcinoma. Several of the most common forms of cancer are adenocarcinomas, and the various sorts of adenocarcinoma vary greatly in all their aspects, so that few useful generalizations can be made about them."
+                }
+            ],
+            "mean_original_docs_length": 6786.0,
+            "mean_shortened_docs_length": 868.0
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Herpes simplex",
+                    "original_doc_length": 27993,
+                    "shortened_doc_length": 428,
+                    "shortened_doc_content": "Herpes simplex is a viral infection caused by the herpes simplex virus. Infections are categorized based on the part of the body infected. Oral herpes involves the face or mouth. It may result in small blisters in groups often called cold sores or fever blisters or may just cause a sore throat. Genital herpes, often simply known as herpes, may have minimal symptoms or form blisters that break open and result in small ulcers."
+                }
+            ],
+            "mean_original_docs_length": 27993.0,
+            "mean_shortened_docs_length": 428.0
+        },
+        "32": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lymphoid leukemia",
+                    "original_doc_length": 4357,
+                    "shortened_doc_length": 805,
+                    "shortened_doc_content": "Lymphoid leukemias are a group of leukemias affecting circulating lymphocytes, a type of white blood cells. The lymphocytic leukemias are closely related to lymphomas of the lymphocytes, to the point that some of them are unitary disease entities that can be called by either name (for example, adult T-cell leukemia/lymphoma). Such diseases are all lymphoproliferative disorders. Most lymphoid leukemias involve a particular subtype of lymphocytes, the B cells. Historically, they have been most commonly divided by the stage of maturation at which the clonal (neoplastic) lymphoid population stopped maturing:\nBULLET::::- Acute lymphoblastic leukemia\nBULLET::::- Chronic lymphocytic leukemia\n\nHowever, the influential WHO Classification (published in 2001) emphasized a greater emphasis on cell lineage."
+                }
+            ],
+            "mean_original_docs_length": 4357.0,
+            "mean_shortened_docs_length": 805.0
+        },
+        "33": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Alcoholic hepatitis",
+                    "original_doc_length": 6698,
+                    "shortened_doc_length": 727,
+                    "shortened_doc_content": "Alcoholic hepatitis is hepatitis (inflammation of the liver) due to excessive intake of alcohol. Patients typically have a history of decades of heavy alcohol intake, typically 8-10 drinks per day. It is usually found in association with fatty liver, an early stage of alcoholic liver disease, and may contribute to the progression of fibrosis, leading to cirrhosis. Symptoms may presently acutely after a large amount of alcoholic intake in a short time period, or after years of excess alcohol intake. Signs and symptoms of alcoholic hepatitis include jaundice (yellowing of the skin and eyes), ascites (fluid accumulation in the abdominal cavity), fatigue and hepatic encephalopathy (brain dysfunction due to liver failure)."
+                }
+            ],
+            "mean_original_docs_length": 6698.0,
+            "mean_shortened_docs_length": 727.0
+        },
+        "34": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thymoma",
+                    "original_doc_length": 6015,
+                    "shortened_doc_length": 489,
+                    "shortened_doc_content": "A thymoma is a tumor originating from the epithelial cells of the thymus that may be benign or malignant. Thymomas are frequently associated with the neuromuscular disorder myasthenia gravis; thymoma is found in 20% of patients with myasthenia gravis. Once diagnosed, thymomas may be removed surgically. In the rare case of a malignant tumor, chemotherapy may be used. A third of all people with a thymoma have symptoms caused by compression of the surrounding organs by an expansive mass."
+                }
+            ],
+            "mean_original_docs_length": 6015.0,
+            "mean_shortened_docs_length": 489.0
+        },
+        "35": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Inflammatory myopathy",
+                    "original_doc_length": 4777,
+                    "shortened_doc_length": 664,
+                    "shortened_doc_content": "Inflammatory myopathy is disease featuring weakness and inflammation of muscles and (in some types) muscle pain. The cause of much inflammatory myopathy is unknown (idiopathic), and such cases are classified according to their symptoms and signs and electromyography, MRI and laboratory findings. It can also be associated with underlying cancer. The main classes of idiopathic inflammatory myopathy are polymyositis (PM), dermatomyositis (DM), and inclusion-body myositis (IBM). There are a number of known causes of myopathy, and it is only once these have been ruled out that a clinician will assign an idiopathic inflammatory myopathy (IIM) syndrome to a case."
+                }
+            ],
+            "mean_original_docs_length": 4777.0,
+            "mean_shortened_docs_length": 664.0
+        },
+        "36": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Herpes simplex",
+                    "original_doc_length": 27993,
+                    "shortened_doc_length": 428,
+                    "shortened_doc_content": "Herpes simplex is a viral infection caused by the herpes simplex virus. Infections are categorized based on the part of the body infected. Oral herpes involves the face or mouth. It may result in small blisters in groups often called cold sores or fever blisters or may just cause a sore throat. Genital herpes, often simply known as herpes, may have minimal symptoms or form blisters that break open and result in small ulcers."
+                }
+            ],
+            "mean_original_docs_length": 27993.0,
+            "mean_shortened_docs_length": 428.0
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rituximab",
+                    "original_doc_length": 10752,
+                    "shortened_doc_length": 757,
+                    "shortened_doc_content": "Rituximab, sold under the brand name Rituxan among others, is a medication used to treat certain autoimmune diseases and types of cancer. It is used for non-Hodgkin lymphoma, chronic lymphocytic leukemia, rheumatoid arthritis, granulomatosis with polyangiitis, idiopathic thrombocytopenic purpura, pemphigus vulgaris, myasthenia gravis and Epstein\u2013Barr virus-positive mucocutaneous ulcers. It is given by slow injection into a vein. Common side effects, which often occur within two hours of the medication being given, include rash, itchiness, low blood pressure, and shortness of breath. Other severe side effects include reactivation of hepatitis B in those previously infected, progressive multifocal leukoencephalopathy, and toxic epidermal necrolysis."
+                }
+            ],
+            "mean_original_docs_length": 10752.0,
+            "mean_shortened_docs_length": 757.0
+        },
+        "38": {
+            "predicted_answer": "The",
+            "gold_answer": "B",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 376,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs. This occurs in 15\u201320% of active cases, causing other kinds of TB. These are collectively denoted as \"extrapulmonary tuberculosis\". Extrapulmonary TB occurs more commonly in immunosuppressed persons and young children. In those with HIV, this occurs in more than 50% of cases."
+                }
+            ],
+            "mean_original_docs_length": 1785.0,
+            "mean_shortened_docs_length": 376.0
+        },
+        "39": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Autoimmune thyroiditis",
+                    "original_doc_length": 4414,
+                    "shortened_doc_length": 670,
+                    "shortened_doc_content": "Autoimmune thyroiditis, is a chronic disease in which the body interprets the thyroid glands and its hormone products T3, T4 and TSH as threats, therefore producing special antibodies that target the thyroid's cells, thereby destroying it. It may present with hypothyroidism or hyperthyroidism and with or without a goiter. The symptoms may vary depending on the thyroid function, i.e. hyperthyroidism or hypothyroidism. Hyperthyroidism can cause sweating, rapid heart rate, anxiety, tremors, fatigue, difficulty sleeping, sudden weight loss, and protruding eyes. Hypothyroidism can cause weight gain, fatigue, dry skin, hair loss, intolerance to cold, and constipation."
+                }
+            ],
+            "mean_original_docs_length": 4414.0,
+            "mean_shortened_docs_length": 670.0
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Penetrating atherosclerotic ulcer",
+                    "original_doc_length": 788,
+                    "shortened_doc_length": 752,
+                    "shortened_doc_content": "A penetrating atherosclerotic ulcer (PAU) is an atherosclerotic lesion that ulcerates, leading to a hematoma forming within the walls of the aorta. The condition is often associated with thickening of the aortic wall, and can be differentiated from similar conditions (atherosclerotic plaque and a thrombus) through the use of computed tomography and magnetic resonance imaging, though the latter is superior. Transesophageal echocardiography and intravascular ultrasonography may also be used in differentiation. Complications such as rupture or other life-threatening conditions are rare. Treatment may involve surgery, particularly when signs indicating worsening are present (the patient is unable to control their pain or changes in blood pressure"
+                }
+            ],
+            "mean_original_docs_length": 788.0,
+            "mean_shortened_docs_length": 752.0
+        },
+        "41": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermoid cyst",
+                    "original_doc_length": 5862,
+                    "shortened_doc_length": 712,
+                    "shortened_doc_content": "A dermoid cyst is a teratoma of a cystic nature that contains an array of developmentally mature, solid tissues. It frequently consists of skin, hair follicles, and sweat glands, while other commonly found components include clumps of long hair, pockets of sebum, blood, fat, bone, nail, teeth, eyes, cartilage, and thyroid tissue. As dermoid cysts grow slowly and contain mature tissue, this type of cystic teratoma is nearly always benign. In those rare cases wherein the dermoid cyst is malignant, a squamous cell carcinoma usually develops in adults, while infants and children usually present with an endodermal sinus tumor. Due to its classification, a dermoid cyst can occur wherever a teratoma can occur."
+                }
+            ],
+            "mean_original_docs_length": 5862.0,
+            "mean_shortened_docs_length": 712.0
+        },
+        "42": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Immature teratoma",
+                    "original_doc_length": 8742,
+                    "shortened_doc_length": 385,
+                    "shortened_doc_content": "A teratoma is a tumor of germ cell origin, containing tissues from more than one germ cell line. It can be ovarian or testicular in its origin. An ovarian teratoma is a tumor that arises from egg cells in the ovary. Histologically, it is of two types: mature cystic teratoma and immature teratoma. A mature cystic teratoma, often called a dermoid cyst, is a benign non-cancerous tumor."
+                }
+            ],
+            "mean_original_docs_length": 8742.0,
+            "mean_shortened_docs_length": 385.0
+        },
+        "43": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sarcomatoid carcinoma of the lung",
+                    "original_doc_length": 3302,
+                    "shortened_doc_length": 660,
+                    "shortened_doc_content": "Sarcomatoid carcinoma of the lung is a term that encompasses five distinct histological subtypes of lung cancer, including (1) pleomorphic carcinoma, (2) spindle cell carcinoma, (3) giant cell carcinoma, (4) carcinosarcoma, or (5) pulmonary blastoma. Abnormal duplication of the EGFR gene is a relatively infrequent phenomenon in SCL (>/= 4 copies in >/= 40% of cells in 5/22) Overexpression of the EGFR protein occurs in nearly all cases (22/22). Mutations of the EGFR gene are relatively rare (0/23). K-ras mutations found in 8/22 cases (Gly12Cys in 6 cases and Gly12Val in 2 cases)\n\nSCL show intense immune infiltration which is predominantly neutrophillic."
+                }
+            ],
+            "mean_original_docs_length": 3302.0,
+            "mean_shortened_docs_length": 660.0
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Renal cell carcinoma",
+                    "original_doc_length": 38292,
+                    "shortened_doc_length": 740,
+                    "shortened_doc_content": "Renal cell carcinoma (RCC) is a kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport primary urine. RCC is the most common type of kidney cancer in adults, responsible for approximately 90\u201395% of cases. Initial treatment is most commonly either partial or complete removal of the affected kidney(s). Where the cancer has not metastasised (spread to other organs) or burrowed deeper into the tissues of the kidney, the five-year survival rate is 65\u201390%, but this is lowered considerably when the cancer has spread. The body is remarkably good at hiding the symptoms and as a result people with RCC often have advanced disease by the time it is discovered."
+                }
+            ],
+            "mean_original_docs_length": 38292.0,
+            "mean_shortened_docs_length": 740.0
+        },
+        "45": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pseudomonas infection",
+                    "original_doc_length": 1361,
+                    "shortened_doc_length": 968,
+                    "shortened_doc_content": "\"Pseudomonas\" infection refers to a disease caused by one of the species of the genus \"Pseudomonas\". \"P. aeruginosa\" is an opportunistic human pathogen, most commonly affecting immunocompromised patients, such as those with cystic fibrosis or AIDS. Infection can affect many parts of the body, but infections typically target the respiratory tract (e.g. patients with CF or those on mechanical ventilation), causing bacterial pneumonia. In a surveillance study between 1986 and 1989, P. aeruginosa was the third leading cause of all nosocomial infections, and specifically the number one leading cause of hospital-acquired pneumonia and third leading cause of hospital-acquired UTI. Treatment of such infections can be difficult due to multiple antibiotic resistance, and in the United States, there was an increase in MDRPA (Multidrug-resistant \"Pseudomonas aeruginosa\") resistant to ceftazidime, ciprofloxacin, and aminoglycosides, from 0.9% in 1994 to 5.6% in 2002."
+                }
+            ],
+            "mean_original_docs_length": 1361.0,
+            "mean_shortened_docs_length": 968.0
+        },
+        "46": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Legg\u2013Calv\u00e9\u2013Perthes disease",
+                    "original_doc_length": 15248,
+                    "shortened_doc_length": 667,
+                    "shortened_doc_content": "Legg\u2013Calv\u00e9\u2013Perthes disease (LCPD), is a childhood hip disorder initiated by a disruption of blood flow to the head of the femur. Due to the lack of blood flow, the bone dies (osteonecrosis or avascular necrosis) and stops growing. Over time, healing occurs by new blood vessels infiltrating the dead bone and removing the necrotic bone which leads to a loss of bone mass and a weakening of the femoral head. The condition is most commonly found in children between the ages of 4 and 8, but it can occur in children between the ages of 2 and 15. It can produce a permanent deformity of the femoral head, which increases the risk of developing osteoarthritis in adults."
+                }
+            ],
+            "mean_original_docs_length": 15248.0,
+            "mean_shortened_docs_length": 667.0
+        },
+        "47": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bed rest",
+                    "original_doc_length": 7552,
+                    "shortened_doc_length": 812,
+                    "shortened_doc_content": "Bed rest, also referred to as the rest-cure, is a medical treatment in which a person lies in bed for most of the time to try to cure an illness. Bed rest refers to voluntarily lying in bed as a treatment and not being confined to bed because of a health impairment which physically prevents leaving bed. The practice is still used although a 1999 systematic review found no benefits for any of the 17 conditions studied and no proven benefit for any conditions at all, beyond that imposed by symptoms. In the United States, nearly 20% of pregnant women have some degree of restricted activity prescribed despite the growing data showing it to be dangerous, causing some experts to call its use \"unethical\". Extended bed rest has been proven to be a potentially harmful treatment needing more careful evaluation."
+                }
+            ],
+            "mean_original_docs_length": 7552.0,
+            "mean_shortened_docs_length": 812.0
+        },
+        "48": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hemispherectomy",
+                    "original_doc_length": 8721,
+                    "shortened_doc_length": 790,
+                    "shortened_doc_content": "Hemispherectomy is a very rare neurosurgical procedure in which a cerebral hemisphere (half of the brain) is removed, disconnected, or disabled. This procedure is used to treat a variety of seizure disorders where the source of the epilepsy is localized to a broad area of a single hemisphere of the brain, notably Rasmussen's encephalitis. About one in three patients with epilepsy will continue to have persistent seizures despite epileptic drug therapy. Hemispherectomy is reserved for the most extreme cases of this one-third in which the individual\u2019s seizures are irresponsive to medications or other less invasive surgeries and significantly impair functioning or put the patient at risk of further complications. The procedure successfully cures seizures in about 85\u201390% of patients."
+                }
+            ],
+            "mean_original_docs_length": 8721.0,
+            "mean_shortened_docs_length": 790.0
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Atrial fibrillation",
+                    "original_doc_length": 45002,
+                    "shortened_doc_length": 495,
+                    "shortened_doc_content": "Atrial fibrillation (AF or A-fib) is an abnormal heart rhythm (arrhythmia) characterized by rapid and irregular beating of the atrial chambers of the heart. It often begins as short periods of abnormal beating which become longer or continuous over time. It may also start as other forms of arrhythmia such as atrial flutter that then transform into AF. Often episodes have no symptoms. Occasionally there may be heart palpitations, fainting, lightheadedness, shortness of breath, or chest pain."
+                }
+            ],
+            "mean_original_docs_length": 45002.0,
+            "mean_shortened_docs_length": 495.0
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Quinolone antibiotic",
+                    "original_doc_length": 21264,
+                    "shortened_doc_length": 708,
+                    "shortened_doc_content": "A quinolone antibiotic is a member of a large group of broad-spectrum bacteriocidals that share a bicyclic core structure related to the substance 4-quinolone. They are used in human and veterinary medicine to treat bacterial infections, as well as in animal husbandry. Nearly all quinolone antibiotics in use are fluoroquinolones, which contain a fluorine atom in their chemical structure and are effective against both Gram-negative and Gram-positive bacteria. One example is ciprofloxacin, one of the most widely used antibiotics worldwide. Fluoroquinolones are often used for genitourinary infections and are widely used in the treatment of hospital-acquired infections associated with urinary catheters."
+                }
+            ],
+            "mean_original_docs_length": 21264.0,
+            "mean_shortened_docs_length": 708.0
+        },
+        "51": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fetal monitoring",
+                    "original_doc_length": 165,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "Monitoring of a fetus may refer to:\nBULLET::::- Regular tests done as part of prenatal care during a pregnancy\nBULLET::::- Monitoring in childbirth"
+                }
+            ],
+            "mean_original_docs_length": 165.0,
+            "mean_shortened_docs_length": 147.0
+        },
+        "52": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metabolic alkalosis",
+                    "original_doc_length": 6885,
+                    "shortened_doc_length": 743,
+                    "shortened_doc_content": "Metabolic alkalosis is a metabolic condition in which the pH of tissue is elevated beyond the normal range (7.35\u20137.45). This is the result of decreased hydrogen ion concentration, leading to increased bicarbonate, or alternatively a direct result of increased bicarbonate concentrations. The condition typically cannot last long if the kidneys are functioning properly. Mild cases of metabolic alkalosis often causes no symptoms. Typical manifestations of moderate to severe metabolic alkalosis include abnormal sensations, neuromuscular irritability, tetany, abnormal heart rhythms (usually due to accompanying electrolyte abnormalities such as low levels of potassium in the blood), coma, seizures, and temporary waxing and waning confusion."
+                }
+            ],
+            "mean_original_docs_length": 6885.0,
+            "mean_shortened_docs_length": 743.0
+        },
+        "53": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesothelioma",
+                    "original_doc_length": 43319,
+                    "shortened_doc_length": 563,
+                    "shortened_doc_content": "Mesothelioma is a type of cancer that develops from the thin layer of tissue that covers many of the internal organs (known as the mesothelium). The most common area affected is the lining of the lungs and chest wall. Less commonly the lining of the abdomen and rarely the sac surrounding the heart, or the sac surrounding the testis may be affected. Signs and symptoms of mesothelioma may include shortness of breath due to fluid around the lung, a swollen abdomen, chest wall pain, cough, feeling tired, and weight loss. These symptoms typically come on slowly."
+                }
+            ],
+            "mean_original_docs_length": 43319.0,
+            "mean_shortened_docs_length": 563.0
+        },
+        "54": {
+            "predicted_answer": "The",
+            "gold_answer": "C",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Familial hypertriglyceridemia",
+                    "original_doc_length": 725,
+                    "shortened_doc_length": 694,
+                    "shortened_doc_content": "Familial hypertriglyceridemia is an autosomal dominant condition occurring in approximately 1% of the population. Triglyceride levels, but not cholesterol, are elevated as a result of excess hepatic production of VLDL or heterozygous LPL deficiency. The condition is associated with premature coronary disease, though treatment sometimes differs from hypercholesterolemia. Affected individuals are at risk for chylomicronemia syndrome, characterized by elevated chylomicrons in the blood. They are also at risk of pancreatitis, especially when triglyceride levels exceed 1000mg/dL.\n\nBULLET::::- Primary hyperlipoproteinemia\nBULLET::::- Familial apoprotein CII deficiency\nBULLET::::- Skin lesion"
+                }
+            ],
+            "mean_original_docs_length": 725.0,
+            "mean_shortened_docs_length": 694.0
+        },
+        "55": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Autoimmune pancreatitis",
+                    "original_doc_length": 7666,
+                    "shortened_doc_length": 695,
+                    "shortened_doc_content": "Autoimmune pancreatitis is an increasingly recognized type of chronic pancreatitis that can be difficult to distinguish from pancreatic carcinoma but which responds to treatment with corticosteroids, particularly prednisone. There are two categories of AIP: Type 1 and Type 2, each with distinct clinical profiles. Type 1 AIP is now regarded as a manifestation of IgG4-related disease, and those affected have tended to be older and to have a high relapse rate. Type 1 is associated with pancreatitis, Sjogren syndrome, Primary sclerosing cholangitis and Inflammatory bowel disease. Patients with Type 2 AIP do not experience relapse, tend to be younger and not associated with systemic disease."
+                }
+            ],
+            "mean_original_docs_length": 7666.0,
+            "mean_shortened_docs_length": 695.0
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary fibrosis",
+                    "original_doc_length": 8225,
+                    "shortened_doc_length": 528,
+                    "shortened_doc_content": "Pulmonary fibrosis is a condition in which the lungs become scarred over time. Symptoms include shortness of breath, a dry cough, feeling tired, weight loss, and nail clubbing. Complications may include pulmonary hypertension, respiratory failure, pneumothorax, and lung cancer. Causes include environmental pollution, certain medications, connective tissue diseases, infections, and interstitial lung diseases. Idiopathic pulmonary fibrosis (IPF), a type of interstitial lung disease of unknown cause, is the most common cause."
+                }
+            ],
+            "mean_original_docs_length": 8225.0,
+            "mean_shortened_docs_length": 528.0
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lupus vulgaris",
+                    "original_doc_length": 2637,
+                    "shortened_doc_length": 540,
+                    "shortened_doc_content": "Lupus vulgaris (also known as tuberculosis luposa) are painful cutaneous tuberculosis skin lesions with nodular appearance, most often on the face around the nose, eyelids, lips, cheeks, ears and neck. It is the most common \"Mycobacterium tuberculosis\" skin infection. The lesions may ultimately develop into disfiguring skin ulcers if left untreated. It begins as painless reddish-brown nodules which slowly enlarge to form irregularly shaped red plaque. Lupus vulgaris often develops due to inadequately treated pre-existing tuberculosis."
+                }
+            ],
+            "mean_original_docs_length": 2637.0,
+            "mean_shortened_docs_length": 540.0
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pustular psoriasis",
+                    "original_doc_length": 2088,
+                    "shortened_doc_length": 703,
+                    "shortened_doc_content": "The term pustular psoriasis is used for a heterogeneous group of diseases that share pustular skin characteristics. Characteristics may vary according to the subtype of pustular psoriasis. For example, it can be localized, commonly to the hands and feet (localized pustular psoriasis), or generalized with widespread patches occurring randomly on any part of the body (generalized pustular psoriasis). However, all forms of pustular psoriasis share in common the presence of red and tender blotchy skin covered with pustules. Pustular psoriasis can be localized, commonly to the hands and feet (palmoplantar pustulosis), or generalized with widespread patches occurring randomly on any part of the body."
+                }
+            ],
+            "mean_original_docs_length": 2088.0,
+            "mean_shortened_docs_length": 703.0
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nuchal scan",
+                    "original_doc_length": 8787,
+                    "shortened_doc_length": 860,
+                    "shortened_doc_content": "A nuchal scan or nuchal translucency (NT) scan/procedure is a sonographic prenatal screening scan (ultrasound) to detect chromosomal abnormalities in a fetus, though altered extracellular matrix composition and limited lymphatic drainage can also be detected. Since chromosomal abnormalities can result in impaired cardiovascular development, a nuchal translucency scan is used as a screening, rather than diagnostic, tool for conditions such as Down syndrome, Patau\u2019s syndrome and Edwards Syndrome and non-genetic Body-stalk anomaly. There are two distinct measurements: the size of the nuchal translucency and the thickness of the nuchal fold. Nuchal translucency size is typically assessed at the end of the first trimester, between 11 weeks 3 days and 13 weeks 6 days of pregnancy. Nuchal fold thickness is measured towards the end of the second trimester."
+                }
+            ],
+            "mean_original_docs_length": 8787.0,
+            "mean_shortened_docs_length": 860.0
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pericardial effusion",
+                    "original_doc_length": 3422,
+                    "shortened_doc_length": 711,
+                    "shortened_doc_content": "Pericardial effusion (\"fluid around the heart\") is an abnormal accumulation of fluid in the pericardial cavity. Because of the limited amount of space in the pericardial cavity, fluid accumulation leads to an increased intrapericardial pressure which can negatively affect heart function. A pericardial effusion with enough pressure to adversely affect heart function is called cardiac tamponade. Pericardial effusion usually results from a disturbed equilibrium between the production and re-absorption of pericardial fluid, or from a structural abnormality that allows fluid to enter the pericardial cavity. Normal levels of pericardial fluid are from 15 to 50 ml.\n\nChest pain or pressure are common symptoms."
+                }
+            ],
+            "mean_original_docs_length": 3422.0,
+            "mean_shortened_docs_length": 711.0
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Positron emission tomography",
+                    "original_doc_length": 32142,
+                    "shortened_doc_length": 839,
+                    "shortened_doc_content": "Positron-emission tomography (PET) is a nuclear medicine functional imaging technique that is used to observe metabolic processes in the body as an aid to the diagnosis of disease. The system detects pairs of gamma rays emitted indirectly by a positron-emitting radioligand, most commonly fluorine-18, which is introduced into the body on a biologically active molecule called a radioactive tracer. Different ligands are used for different imaging purposes, depending on what the radiologist/researcher wants to detect. Three-dimensional images of tracer concentration within the body are then constructed by computer analysis. In modern PET computed tomography scanners, three-dimensional imaging is often accomplished with the aid of a computed tomography X-ray scan performed on the patient during the same session, in the same machine."
+                }
+            ],
+            "mean_original_docs_length": 32142.0,
+            "mean_shortened_docs_length": 839.0
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hysterectomy",
+                    "original_doc_length": 28387,
+                    "shortened_doc_length": 828,
+                    "shortened_doc_content": "Hysterectomy is the surgical removal of the uterus. It may also involve removal of the cervix, ovaries (oophorectomy), fallopian tubes (salpingectomy), and other surrounding structures. Usually performed by a gynecologist, a hysterectomy may be total (removing the body, fundus, and cervix of the uterus; often called \"complete\") or partial (removal of the uterine body while leaving the cervix intact; also called \"supracervical\"). Removal of the uterus renders the patient unable to bear children (as does removal of ovaries and fallopian tubes) and has surgical risks as well as long-term effects, so the surgery is normally recommended only when other treatment options are not available or have failed. It is the second most commonly performed gynecological surgical procedure, after cesarean section, in the United States."
+                }
+            ],
+            "mean_original_docs_length": 28387.0,
+            "mean_shortened_docs_length": 828.0
+        },
+        "63": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Central retinal vein",
+                    "original_doc_length": 757,
+                    "shortened_doc_length": 733,
+                    "shortened_doc_content": "The central retinal vein (retinal vein) is a short vein that runs through the optic nerve, leaves the optic nerve 10\u00a0mm from the eyeball and drains blood from the capillaries of the retina into either superior ophthalmic vein or into the cavernous sinus directly. The anatomy of the veins of the orbit of the eye varies between individuals, and in some the central retinal vein drains into the superior ophthalmic vein, and in some it drains directly into the cavernous sinus. The central retinal vein is the venous equivalent of the central retinal artery, and like that blood vessel can suffer from occlusion (central retinal vein occlusion), similar to that seen in ocular ischemic syndrome. BULLET::::- Early Signs Of Eye Defects"
+                }
+            ],
+            "mean_original_docs_length": 757.0,
+            "mean_shortened_docs_length": 733.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Palatine tonsil",
+                    "original_doc_length": 8173,
+                    "shortened_doc_length": 662,
+                    "shortened_doc_content": "Palatine tonsils, commonly called the tonsils and occasionally called the faucial tonsils, are tonsils located on the left and right sides at the back of the throat, which can often be seen as flesh-colored, pinkish lumps. Tonsils only present as \"white lumps\" if they are inflamed or infected with symptoms of exudates (pus drainage) and severe swelling. Tonsillitis is an inflammation of the tonsils and will often, but not necessarily, cause a sore throat and fever. In chronic cases tonsillectomy may be indicated. The palatine tonsils are located in the isthmus of the fauces, between the palatoglossal arch and the palatopharyngeal arch of the soft palate."
+                }
+            ],
+            "mean_original_docs_length": 8173.0,
+            "mean_shortened_docs_length": 662.0
+        },
+        "65": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hiatal hernia",
+                    "original_doc_length": 7759,
+                    "shortened_doc_length": 524,
+                    "shortened_doc_content": "A hiatal hernia is a type of hernia in which abdominal organs (typically the stomach) slip through the diaphragm into the middle compartment of the chest. This may result in gastroesophageal reflux disease (GERD) or laryngopharyngeal reflux (LPR) with symptoms such as a taste of acid in the back of the mouth or heartburn. Other symptoms may include trouble swallowing and chest pains. Complications may include iron deficiency anemia, volvulus, or bowel obstruction. The most common risk factors are obesity and older age."
+                }
+            ],
+            "mean_original_docs_length": 7759.0,
+            "mean_shortened_docs_length": 524.0
+        },
+        "66": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thoracentesis",
+                    "original_doc_length": 6901,
+                    "shortened_doc_length": 704,
+                    "shortened_doc_content": "Thoracentesis , also known as thoracocentesis (from the Greek \"th\u014drax\" \"chest, thorax\"\u2014 \"th\u014drakos\"\u2014and \"kent\u0113sis\" \"pricking, puncture\") or pleural tap (from the Greek \"pleura\" or \"pleuron\" \"side, rib\"), is an invasive procedure to remove fluid or air from the pleural space for diagnostic or therapeutic purposes. A cannula, or hollow needle, is carefully introduced into the thorax, generally after administration of local anesthesia. The procedure was first performed by Morrill Wyman in 1850 and then described by Henry Ingersoll Bowditch in 1852. The recommended location varies depending upon the source. Some sources recommend the midaxillary line, in the eighth, ninth, or tenth intercostal space."
+                }
+            ],
+            "mean_original_docs_length": 6901.0,
+            "mean_shortened_docs_length": 704.0
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Subdural hematoma",
+                    "original_doc_length": 11326,
+                    "shortened_doc_length": 595,
+                    "shortened_doc_content": "A subdural hematoma (SDH) is a type of bleeding in which a collection of blood\u2014usually associated with a traumatic brain injury\u2014gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain. It usually results from tears in bridging veins that cross the subdural space. Subdural hematomas may cause an increase in the pressure inside the skull, which in turn can cause compression of and damage to delicate brain tissue. Acute subdural hematomas are often life-threatening. Chronic subdural hematomas have a better prognosis if properly managed."
+                }
+            ],
+            "mean_original_docs_length": 11326.0,
+            "mean_shortened_docs_length": 595.0
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nodular fasciitis",
+                    "original_doc_length": 1515,
+                    "shortened_doc_length": 357,
+                    "shortened_doc_content": "Nodular fasciitis, is a benign soft tissue lesion most commonly found in the superficial fascia. The lesion commonly occurs in the first three decades of life. Upper extremities and trunk are the most common affected anatomical areas. Previous history of trauma may be present. Clinically and histologically, nodular fasciitis may be mistaken for a sarcoma."
+                }
+            ],
+            "mean_original_docs_length": 1515.0,
+            "mean_shortened_docs_length": 357.0
+        },
+        "69": {
+            "predicted_answer": "C",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Perforated ulcer",
+                    "original_doc_length": 3033,
+                    "shortened_doc_length": 613,
+                    "shortened_doc_content": "A perforated ulcer is a condition in which an untreated ulcer has burned through the mucosal wall in a segment of the gastrointestinal tract (e.g., the stomach or colon) allowing gastric contents to leak into the abdominal cavity. Treatment generally requires immediate surgery. The ulcer is known initially as a peptic ulcer before the ulcer burns through the full thickness of the stomach or duodenal wall. A diagnosis is made by taking an erect abdominal/chest X-ray (seeking air under the diaphragm). This is in fact one of the very few occasions in modern times where surgery is undertaken to treat an ulcer."
+                }
+            ],
+            "mean_original_docs_length": 3033.0,
+            "mean_shortened_docs_length": 613.0
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermoid cyst",
+                    "original_doc_length": 5862,
+                    "shortened_doc_length": 712,
+                    "shortened_doc_content": "A dermoid cyst is a teratoma of a cystic nature that contains an array of developmentally mature, solid tissues. It frequently consists of skin, hair follicles, and sweat glands, while other commonly found components include clumps of long hair, pockets of sebum, blood, fat, bone, nail, teeth, eyes, cartilage, and thyroid tissue. As dermoid cysts grow slowly and contain mature tissue, this type of cystic teratoma is nearly always benign. In those rare cases wherein the dermoid cyst is malignant, a squamous cell carcinoma usually develops in adults, while infants and children usually present with an endodermal sinus tumor. Due to its classification, a dermoid cyst can occur wherever a teratoma can occur."
+                }
+            ],
+            "mean_original_docs_length": 5862.0,
+            "mean_shortened_docs_length": 712.0
+        },
+        "71": {
+            "predicted_answer": "The",
+            "gold_answer": "B",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cytomegalovirus retinitis",
+                    "original_doc_length": 3011,
+                    "shortened_doc_length": 759,
+                    "shortened_doc_content": "Cytomegalovirus retinitis, also known as CMV retinitis, is an inflammation of the retina of the eye that can lead to blindness. Caused by human cytomegalovirus, it occurs predominantly in people whose immune system has been compromised, 15-40% of those with AIDS. There are different types of retinitis, such as retinitis pigmentosa (causes tunnel vision). The symptoms of cytomegalovirus retinitis have it usually starting in one eye (and also have the possibility of retinal detachment), presenting as:\n\nBULLET::::- Blurred vision\nBULLET::::- Blind spots\nBULLET::::- Specks in your vision\n\nCytomegalovirus (a type of herpes virus) is what causes cytomegalovirus retinitis. Other types of herpes viruses include herpes simplex viruses and Epstein-Barr virus."
+                }
+            ],
+            "mean_original_docs_length": 3011.0,
+            "mean_shortened_docs_length": 759.0
+        },
+        "72": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ventriculectomy",
+                    "original_doc_length": 456,
+                    "shortened_doc_length": 437,
+                    "shortened_doc_content": "Ventriculectomy, or ventricular reduction, is a type of operation in cardiac surgery to reduce enlargement of the heart from cardiomyopathy or ischemic aneurysm formation. In these procedures, part of the ventricular wall is resected. A Batista procedure is a partial left ventriculectomy that is used to treat advanced heart failure. This procedure is not widely used because outcomes are often unsatisfactory. BULLET::::- Dor procedure"
+                }
+            ],
+            "mean_original_docs_length": 456.0,
+            "mean_shortened_docs_length": 437.0
+        },
+        "73": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Psoriatic arthritis",
+                    "original_doc_length": 12745,
+                    "shortened_doc_length": 693,
+                    "shortened_doc_content": "Psoriatic arthritis is a long-term inflammatory arthritis that occurs in people affected by the autoimmune disease psoriasis. The classic feature of psoriatic arthritis is swelling of entire fingers and toes with a sausage-like appearance. This often happens in association with changes to the nails such as small depressions in the nail (pitting), thickening of the nails, and detachment of the nail from the nailbed. Skin changes consistent with psoriasis (e.g., red, scaly, and itchy plaques) frequently occur before the onset of psoriatic arthritis but psoriatic arthritis can precede the rash in 15% of affected individuals. It is classified as a type of seronegative spondyloarthropathy."
+                }
+            ],
+            "mean_original_docs_length": 12745.0,
+            "mean_shortened_docs_length": 693.0
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vertebrobasilar insufficiency",
+                    "original_doc_length": 5248,
+                    "shortened_doc_length": 813,
+                    "shortened_doc_content": "Vertebrobasilar insufficiency (VBI) describes a temporary set of symptoms due to decreased blood flow (ischemia) in the posterior circulation of the brain. The posterior circulation supplies the medulla, pons, midbrain, cerebellum and (in 70-80% of people) supplies the posterior cerebellar artery to the thalamus and occipital cortex. As a result, symptoms vary widely depending which brain region is predominantly affected. The term 'vertebrobasilar insufficiency' may be used to describe disease in the vertebral and basilar arteries which predisposes to acute embolic events such as transient ischemic attacks (TIAs) and stroke. Alternatively it may be used to describe recurrent symptoms which result from narrowing (stenosis) of these arteries in combination with changes of blood pressure or head position."
+                }
+            ],
+            "mean_original_docs_length": 5248.0,
+            "mean_shortened_docs_length": 813.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Left ventricular hypertrophy",
+                    "original_doc_length": 3302,
+                    "shortened_doc_length": 680,
+                    "shortened_doc_content": "Left ventricular hypertrophy (LVH) is thickening of the heart muscle of the left ventricle of the heart, that is, left-sided ventricular hypertrophy. While ventricular hypertrophy occurs naturally as a reaction to aerobic exercise and strength training, it is most frequently referred to as a pathological reaction to cardiovascular disease, or high blood pressure. It is one aspect of ventricular remodeling. While LVH itself is not a disease, it is usually a marker for disease involving the heart. Disease processes that can cause LVH include any disease that increases the afterload that the heart has to contract against, and some primary diseases of the muscle of the heart."
+                }
+            ],
+            "mean_original_docs_length": 3302.0,
+            "mean_shortened_docs_length": 680.0
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Environmental factor",
+                    "original_doc_length": 7464,
+                    "shortened_doc_length": 733,
+                    "shortened_doc_content": "An environmental factor, ecological factor or eco factor is any factor, abiotic or biotic, that influences living organisms. Abiotic factors include ambient temperature, amount of sunlight, and pH of the water soil in which an organism lives. Biotic factors would include the availability of food organisms and the presence of conspecifics, competitors, predators, and parasites. An organism's genotype (e.g., in the zygote) translated into the adult phenotype through development during an organism's ontogeny, and subject to influences by many environmental effects. In this context, a phenotype (or phenotypic trait) can be viewed as any definable and measurable characteristic of an organism, such as its body mass or skin color."
+                }
+            ],
+            "mean_original_docs_length": 7464.0,
+            "mean_shortened_docs_length": 733.0
+        },
+        "77": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypopituitarism",
+                    "original_doc_length": 23567,
+                    "shortened_doc_length": 749,
+                    "shortened_doc_content": "Hypopituitarism is the decreased (\"hypo\") secretion of one or more of the eight hormones normally produced by the pituitary gland at the base of the brain. If there is decreased secretion of one specific pituitary hormone, the condition is known as selective hypopituitarism. If there is decreased secretion of most or all pituitary hormones, the term panhypopituitarism (\"pan\" meaning \"all\") is used. The signs and symptoms of hypopituitarism vary, depending on which hormones are undersecreted and on the underlying cause of the abnormality. The diagnosis of hypopituitarism is made by blood tests, but often specific scans and other investigations are needed to find the underlying cause, such as tumors of the pituitary, and the ideal treatment."
+                }
+            ],
+            "mean_original_docs_length": 23567.0,
+            "mean_shortened_docs_length": 749.0
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cavernous sinus thrombosis",
+                    "original_doc_length": 6952,
+                    "shortened_doc_length": 532,
+                    "shortened_doc_content": "Cavernous sinus thrombosis (CST) is the formation of a blood clot within the cavernous sinus, a cavity at the base of the brain which drains deoxygenated blood from the brain back to the heart. This is a rare disorder and can be of two types\u2013septic cavernous thrombosis and aseptic cavernous thrombosis. Most commonly the form is of septic cavernous sinus thrombosis. The cause is usually from a spreading infection in the nose, sinuses, ears, or teeth. \"Staphylococcus aureus\" and \"Streptococcus\" are often the associated bacteria."
+                }
+            ],
+            "mean_original_docs_length": 6952.0,
+            "mean_shortened_docs_length": 532.0
+        },
+        "79": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Intraparenchymal hemorrhage",
+                    "original_doc_length": 6273,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "Intraparenchymal hemorrhage (IPH) is one form of intracerebral bleeding in which there is bleeding within brain parenchyma. The other form is intraventricular hemorrhage (IVH). Intraparenchymal hemorrhage accounts for approx. 8-13% of all strokes and results from a wide spectrum of disorders. It is more likely to result in death or major disability than ischemic stroke or subarachnoid hemorrhage, and therefore constitutes an immediate medical emergency."
+                }
+            ],
+            "mean_original_docs_length": 6273.0,
+            "mean_shortened_docs_length": 457.0
+        },
+        "80": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shoulder joint",
+                    "original_doc_length": 7546,
+                    "shortened_doc_length": 732,
+                    "shortened_doc_content": "The shoulder joint (or glenohumeral joint from Greek \"glene\", eyeball, + -\"oid\", 'form of', + Latin \"humerus\", shoulder) is structurally classified as a synovial ball and socket joint and functionally as a diarthrosis and multiaxial joint. It involves articulation between the glenoid cavity of the scapula (shoulder blade) and the head of the humerus (upper arm bone). Due to the very loose joint capsule that gives a limited interface of the humerus and scapula, it is the most mobile joint of the human body. The shoulder joint is a ball and socket joint between the scapula and the humerus. However the socket of the glenoid cavity of the scapula is itself quite shallow and is made deeper by the addition of the glenoid labrum."
+                }
+            ],
+            "mean_original_docs_length": 7546.0,
+            "mean_shortened_docs_length": 732.0
+        },
+        "81": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiology diagnostic tests and procedures",
+                    "original_doc_length": 5044,
+                    "shortened_doc_length": 827,
+                    "shortened_doc_content": "The diagnostic tests in cardiology are methods of identifying heart conditions associated with healthy vs. unhealthy, pathologic heart function. Obtaining a medical history is always the first \"test\", part of understanding the likelihood of significant disease, as detectable within the current limitations of clinical medicine. Yet heart problems often produce no symptoms until very advanced, and many symptoms, such as palpitations and sensations of extra or missing heart beats correlate poorly with relative heart health \"vs\" disease. Hence, a history alone is rarely sufficient to diagnose a heart condition. \"Auscultation\" employs a stethoscope to more easily hear various normal and abnormal sounds, such as normal heart beat sounds and the usual heart beat sound changes associated with breathing versus heart murmurs."
+                }
+            ],
+            "mean_original_docs_length": 5044.0,
+            "mean_shortened_docs_length": 827.0
+        },
+        "82": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mitral insufficiency",
+                    "original_doc_length": 16937,
+                    "shortened_doc_length": 881,
+                    "shortened_doc_content": "Mitral regurgitation (MR), mitral insufficiency, or mitral incompetence is a form of valvular heart disease in which the mitral valve does not close properly when the heart pumps out blood. It is the abnormal leaking of blood backwards from the left ventricle, through the mitral valve, into the left atrium, when the left ventricle contracts, i.e. there is regurgitation of blood back into the left atrium. MR is the most common form of valvular heart disease. The symptoms associated with MR are dependent on which phase of the disease process the individual is in. Individuals with acute MR are typically severely symptomatic and will have the signs and symptoms of acute decompensated congestive heart failure (i.e. shortness of breath, pulmonary edema, orthopnea, and paroxysmal nocturnal dyspnea), as well as symptoms of cardiogenic shock (i.e., shortness of breath at rest)."
+                }
+            ],
+            "mean_original_docs_length": 16937.0,
+            "mean_shortened_docs_length": 881.0
+        },
+        "83": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Niacin",
+                    "original_doc_length": 21478,
+                    "shortened_doc_length": 524,
+                    "shortened_doc_content": "Niacin, also known as nicotinic acid, is an organic compound and a form of vitamin B3, an essential human nutrient. It has the formula and belongs to the group of the pyridinecarboxylic acid. Niacin is obtained in the diet from a variety of whole and processed foods, with highest contents in fortified packaged foods, tuna, salmon, some vegetable and other animal sources. Some countries require its addition to grains. Supplemental niacin is primarily used to treat high blood cholesterol and pellagra (niacin deficiency)."
+                }
+            ],
+            "mean_original_docs_length": 21478.0,
+            "mean_shortened_docs_length": 524.0
+        },
+        "84": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchiectasis",
+                    "original_doc_length": 18114,
+                    "shortened_doc_length": 351,
+                    "shortened_doc_content": "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung. Symptoms typically include a chronic cough with mucus production. Other symptoms include shortness of breath, coughing up blood, and chest pain. Wheezing and nail clubbing may also occur. Those with the disease often get frequent lung infections."
+                }
+            ],
+            "mean_original_docs_length": 18114.0,
+            "mean_shortened_docs_length": 351.0
+        },
+        "85": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ascending cholangitis",
+                    "original_doc_length": 18085,
+                    "shortened_doc_length": 845,
+                    "shortened_doc_content": "Ascending cholangitis, also known as acute cholangitis or simply cholangitis, is inflammation of the bile duct (cholangitis), usually caused by bacteria ascending from its junction with the duodenum (first part of the small intestine). It tends to occur if the bile duct is already partially obstructed by gallstones. Cholangitis can be life-threatening, and is regarded as a medical emergency. Characteristic symptoms include yellow discoloration of the skin or whites of the eyes, fever, abdominal pain, and in severe cases, low blood pressure and confusion. Initial treatment is with intravenous fluids and antibiotics, but there is often an underlying problem (such as gallstones or narrowing in the bile duct) for which further tests and treatments may be necessary, usually in the form of endoscopy to relieve obstruction of the bile duct."
+                }
+            ],
+            "mean_original_docs_length": 18085.0,
+            "mean_shortened_docs_length": 845.0
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Health effects of tobacco",
+                    "original_doc_length": 59724,
+                    "shortened_doc_length": 410,
+                    "shortened_doc_content": "Tobacco use has predominantly negative effects on human health and concern about health effects of tobacco has a long history. Research has focused primarily on cigarette tobacco smoking. Tobacco smoke contains more than 70 chemicals that cause cancer. Tobacco also contains nicotine, which is a highly addictive psychoactive drug. When tobacco is smoked, nicotine causes physical and psychological dependency."
+                }
+            ],
+            "mean_original_docs_length": 59724.0,
+            "mean_shortened_docs_length": 410.0
+        },
+        "87": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thrombocytopenia",
+                    "original_doc_length": 11084,
+                    "shortened_doc_length": 588,
+                    "shortened_doc_content": "Thrombocytopenia is a condition characterized by abnormally low levels of thrombocytes, also known as platelets, in the blood. A normal human platelet count ranges from 150,000 to 450,000 platelets per microliter of blood. These limits are determined by the 2.5th lower and upper percentile, so values outside this range do not necessarily indicate disease. One common definition of thrombocytopenia requiring emergency treatment is a platelet count below 50,000 per microliter. Thrombocytopenia can be contrasted with thrombocytosis, an abnormally \"high\" level of platelets in the blood."
+                }
+            ],
+            "mean_original_docs_length": 11084.0,
+            "mean_shortened_docs_length": 588.0
+        },
+        "88": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Primary cutaneous histoplasmosis",
+                    "original_doc_length": 208,
+                    "shortened_doc_length": 173,
+                    "shortened_doc_content": "Primary cutaneous histoplasmosis is a rare skin condition, reported on the penis, characterized by a chancre-type lesion with regional adenopathy. BULLET::::- Histoplasmosis"
+                }
+            ],
+            "mean_original_docs_length": 208.0,
+            "mean_shortened_docs_length": 173.0
+        },
+        "89": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metastatic liver disease",
+                    "original_doc_length": 2293,
+                    "shortened_doc_length": 695,
+                    "shortened_doc_content": "A liver metastasis is a malignant tumor in the liver that has spread from another organ affected by cancer. The liver is a common site for metastatic disease because of its rich, dual blood supply (the liver receives blood via the hepatic artery and portal vein). Metastatic tumors in the liver are 20 times more common than primary tumors. In 50% of all cases the primary tumor is of the gastrointestinal tract, other common sites include the breast, ovaries, bronchus and kidney. Tumor emboli entering the sinusoids through the liver blood supply appear to be physically obstructed by the Kupffer cells, but if tumor emboli are larger, they tend to become lodged in the portal venous branches."
+                }
+            ],
+            "mean_original_docs_length": 2293.0,
+            "mean_shortened_docs_length": 695.0
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyaline",
+                    "original_doc_length": 1103,
+                    "shortened_doc_length": 479,
+                    "shortened_doc_content": "A hyaline substance is one with a glassy appearance. The word is derived from , and . In histopathological medical usage, a hyaline substance appears glassy and pink after being stained with haematoxylin and eosin\u2014usually it is an acellular, proteinaceous material. An example is hyaline cartilage, a transparent, glossy articular joint cartilage. Some mistakenly refer to all hyaline as hyaline cartilage; however, hyaline applies to other material besides the cartilage itself."
+                }
+            ],
+            "mean_original_docs_length": 1103.0,
+            "mean_shortened_docs_length": 479.0
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Monomorphic epitheliotropic intestinal T cell lymphoma",
+                    "original_doc_length": 11289,
+                    "shortened_doc_length": 1419,
+                    "shortened_doc_content": "Monomorphic epitheliotropic intestinal T cell lymphoma (MEITL) (formerly termed enteropathy-associated T cell lymphoma, type II) is an extremely rare peripheral T-cell lymphoma that involves the malignant proliferation of a type of lymphocyte, the T cell, in the gastrointestinal tract (i.e. GI tract). Over time, these T cells commonly spread throughout the mucosal lining of a portion of the GI tract (particularly the jejunum and ileum of the small intestine), lead to GI tract nodules and ulcerations, and cause symptoms such as abdominal pain, weight loss, diarrhea, obstruction, bleeding, and/or perforation. In 2008, the World Health Organization defined a specific type of lymphoma, enteropathy-associated T cell lymphoma (EATL), as having two different types: EATL type I, a lymphoma occurring in patients with the chronic, autoimmune GI tract disorder, celiac disease, and EATL type II, a similar bowel lymphoma that was not associated with celiac disease. However, subsequent studies found significant clinical, pathologic, and pathophysiological differences between these two types of lymphoma. Consequently, the World Health Organization (2016) redefined these lymphomas as separate entities, terming the celiac disease-associated lymphoma as enteropathy-associted T cell lymphoma (EATL) and the lymphoma not associated with celiac disease as monomorphic epitheliotropic intestinal T cell lymphoma (MEITL)."
+                }
+            ],
+            "mean_original_docs_length": 11289.0,
+            "mean_shortened_docs_length": 1419.0
+        },
+        "93": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neisseria gonorrhoeae",
+                    "original_doc_length": 19357,
+                    "shortened_doc_length": 704,
+                    "shortened_doc_content": "Neisseria gonorrhoeae, also known as gonococcus (singular), or gonococci (plural) is a species of Gram-negative diplococci bacteria isolated by Albert Neisser in 1879. It causes the sexually transmitted genitourinary infection gonorrhea as well as other forms of gonococcal disease including disseminated gonococcemia, septic arthritis, and gonococcal ophthalmia neonatorum. It is oxidase positive and aerobic, and it survives within neutrophils. Culturing it requires carbon dioxide supplementation and enriched agar (chocolate agar) with various antimicrobials (Thayer-Martin). It exhibits antigenic variation through recombination of its pili and surface proteins that interact with the immune system."
+                }
+            ],
+            "mean_original_docs_length": 19357.0,
+            "mean_shortened_docs_length": 704.0
+        },
+        "94": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hair loss",
+                    "original_doc_length": 24448,
+                    "shortened_doc_length": 321,
+                    "shortened_doc_content": "Hair loss, also known as alopecia or baldness, refers to a loss of hair from part of the head or body. Typically at least the head is involved. The severity of hair loss can vary from a small area to the entire body. Inflammation or scarring is not usually present. Hair loss in some people causes psychological distress."
+                }
+            ],
+            "mean_original_docs_length": 24448.0,
+            "mean_shortened_docs_length": 321.0
+        },
+        "95": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "P200",
+                    "original_doc_length": 18729,
+                    "shortened_doc_length": 829,
+                    "shortened_doc_content": "In neuroscience, the visual P200 or P2 is a waveform component or feature of the event-related potential (ERP) measured at the human scalp. Like other potential changes measurable from the scalp, this effect is believed to reflect the post-synaptic activity of a specific neural process. The P2 component, also known as the P200, is so named because it is a positive going electrical potential that peaks at about 200 milliseconds (varying between about 150 and 275 ms) after the onset of some external stimulus. This component is often distributed around the centro-frontal and the parieto-occipital areas of the scalp. It is generally found to be maximal around the vertex (frontal region) of the scalp, however there have been some topographical differences noted in ERP studies of the P2 in different experimental conditions."
+                }
+            ],
+            "mean_original_docs_length": 18729.0,
+            "mean_shortened_docs_length": 829.0
+        },
+        "96": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Incidental imaging finding",
+                    "original_doc_length": 5632,
+                    "shortened_doc_length": 645,
+                    "shortened_doc_content": "In medical or research imaging, an incidental finding (commonly known as an \"incidentaloma\") is an unanticipated finding which is not related to the original diagnostic inquiry. As with other types of incidental findings, they may represent a diagnostic, ethical, and philosophical dilemma because the significance is unclear. While some coincidental findings may lead to beneficial diagnoses (\"a lucky find\"), others may lead to overdiagnosis in the form of unnecessary testing and treatment, i.e. the \"cascade effect. \"\n\nIncidental findings are common in imaging. For instance, around 1 in every 3 cardiac MRIs result in an incidental finding."
+                }
+            ],
+            "mean_original_docs_length": 5632.0,
+            "mean_shortened_docs_length": 645.0
+        },
+        "97": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metastasis",
+                    "original_doc_length": 19767,
+                    "shortened_doc_length": 581,
+                    "shortened_doc_content": "Metastasis is a pathogenic agent's spread from an initial or primary site to a different or secondary site within the host's body; the term is typically used when referring to metastasis by a cancerous tumor. The newly pathological sites, then, are metastases (mets). It is generally distinguished from cancer invasion, which is the direct extension and penetration by cancer cells into neighboring tissues. Cancer occurs after cells are genetically altered to proliferate rapidly and indefinitely. This uncontrolled proliferation by mitosis produces a primary heterogeneic tumour."
+                }
+            ],
+            "mean_original_docs_length": 19767.0,
+            "mean_shortened_docs_length": 581.0
+        },
+        "98": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Anorectal abscess",
+                    "original_doc_length": 5541,
+                    "shortened_doc_length": 674,
+                    "shortened_doc_content": "Anorectal abscess (also known as an anal/rectal abscess, or perianal/perirectal abscess) is an abscess adjacent to the anus. Most cases of perianal abscesses are sporadic, though there are certain situations which elevate the risk for developing the disease, such as diabetes mellitus, Crohn's disease, chronic corticosteroid treatment and others. It arises as a complication of paraproctitis. Ischiorectal, inter- and intrasphincteric abscesses have been described. Anorectal abscesses are classified according to their anatomic location and the following are the most common types; Perianal abscess, Ischiorectal abscess, Intersphincteric abscess and Supralevator abscess."
+                }
+            ],
+            "mean_original_docs_length": 5541.0,
+            "mean_shortened_docs_length": 674.0
+        },
+        "99": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pancreatitis",
+                    "original_doc_length": 16032,
+                    "shortened_doc_length": 400,
+                    "shortened_doc_content": "Pancreatitis is a condition characterized by inflammation of the pancreas. The pancreas is a large organ behind the stomach that produces digestive enzymes and a number of hormones. There are two main types, acute pancreatitis and chronic pancreatitis. Signs and symptoms of pancreatitis include pain in the upper abdomen, nausea and vomiting. The pain often goes into the back and is usually severe."
+                }
+            ],
+            "mean_original_docs_length": 16032.0,
+            "mean_shortened_docs_length": 400.0
+        },
+        "100": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lung tumor",
+                    "original_doc_length": 720,
+                    "shortened_doc_length": 708,
+                    "shortened_doc_content": "\"Lung tumors\" are neoplastic lung nodules. These include:\n\nPrimary tumors of the lung/pulmonary system:\nBULLET::::- Bronchial leiomyoma, a rare, benign tumor\nBULLET::::- Lung cancer, the term commonly used to refer to \"carcinoma of the lung\"\nBULLET::::- Pulmonary carcinoid tumor\nBULLET::::- Pleuropulmonary blastoma\nBULLET::::- Neuroendocrine tumors of the lung\nBULLET::::- Lymphomas of the lung. BULLET::::- Sarcomas of the lung. BULLET::::- Some rare vascular tumors of the lung\n\nNon-lung tumors which may grow into the lungs:\nBULLET::::- Mediastinal tumors\nBULLET::::- Pleural tumors\n\nMetastasis or secondary tumors/neoplasms with other origin:\nBULLET::::- Metastasis to the lung\n\nBULLET::::- Lung nodule"
+                }
+            ],
+            "mean_original_docs_length": 720.0,
+            "mean_shortened_docs_length": 708.0
+        },
+        "101": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophageal food bolus obstruction",
+                    "original_doc_length": 5488,
+                    "shortened_doc_length": 884,
+                    "shortened_doc_content": "An esophageal food bolus obstruction is a medical emergency caused by the obstruction of the esophagus by an ingested foreign body. It is usually associated with diseases that may narrow the lumen of the esophagus, such as eosinophilic esophagitis, Schatzki rings, peptic strictures, webs, or cancers of the esophagus; rarely it can be seen in disorders of the movement of the esophagus, such as nutcracker esophagus. While some esophageal food boli can pass by themselves or with the assistance of medications, some require the use of endoscopy to push the obstructing food into the stomach, or remove it from the esophagus. The use of glucagon, while common, has not been found to be useful. Many foods can lodge themselves in the esophagus, but the most common are meats such as steak, poultry, or pork leading to the colourful description of the phenomenon as steakhouse syndrome."
+                }
+            ],
+            "mean_original_docs_length": 5488.0,
+            "mean_shortened_docs_length": 884.0
+        },
+        "102": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchiectasis",
+                    "original_doc_length": 18114,
+                    "shortened_doc_length": 351,
+                    "shortened_doc_content": "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung. Symptoms typically include a chronic cough with mucus production. Other symptoms include shortness of breath, coughing up blood, and chest pain. Wheezing and nail clubbing may also occur. Those with the disease often get frequent lung infections."
+                }
+            ],
+            "mean_original_docs_length": 18114.0,
+            "mean_shortened_docs_length": 351.0
+        },
+        "103": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Synovial sarcoma",
+                    "original_doc_length": 4492,
+                    "shortened_doc_length": 835,
+                    "shortened_doc_content": "A synovial sarcoma (also known as: malignant synovioma) is a rare form of cancer which occurs primarily in the extremities of the arms or legs, often in proximity to joint capsules and tendon sheaths. It is a type of soft tissue sarcoma. The name \"synovial sarcoma\" was coined early in the 20th century, as some researchers thought that the microscopic similarity of some tumors to synovium, and its propensity to arise adjacent to joints, indicated a synovial origin; however, the actual cells from which the tumor develops are unknown and not necessarily synovial. Primary synovial sarcomas are most common in the soft tissue near the large joints of the arm and leg but have been documented in most human tissues and organs, including the brain, prostate, and heart. Synovial sarcoma occurs in about 1-2 per 1,000,000 people a year."
+                }
+            ],
+            "mean_original_docs_length": 4492.0,
+            "mean_shortened_docs_length": 835.0
+        },
+        "104": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mandibular fracture",
+                    "original_doc_length": 22907,
+                    "shortened_doc_length": 363,
+                    "shortened_doc_content": "Mandibular fracture, also known as fracture of the jaw, is a break through the mandibular bone. In about 60% of cases the break occurs in two places. It may result in a decreased ability to fully open the mouth. Often the teeth will not feel properly aligned or there may be bleeding of the gums. Mandibular fractures occur most commonly among males in their 30s."
+                }
+            ],
+            "mean_original_docs_length": 22907.0,
+            "mean_shortened_docs_length": 363.0
+        },
+        "105": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Psoriasis",
+                    "original_doc_length": 43300,
+                    "shortened_doc_length": 485,
+                    "shortened_doc_content": "Psoriasis is a long-lasting autoimmune disease characterized by patches of abnormal skin. These skin patches are typically red, or purple on some people with darker skin , dry, itchy, and scaly. Psoriasis varies in severity from small, localized patches to complete body coverage. Injury to the skin can trigger psoriatic skin changes at that spot, which is known as the Koebner phenomenon. There are five main types of psoriasis: plaque, guttate, inverse, pustular, and erythrodermic."
+                }
+            ],
+            "mean_original_docs_length": 43300.0,
+            "mean_shortened_docs_length": 485.0
+        },
+        "106": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lichen planus",
+                    "original_doc_length": 22085,
+                    "shortened_doc_length": 741,
+                    "shortened_doc_content": "Lichen planus (LP) is a chronic inflammatory and immune mediated disease that affects the skin, nails, hair, and mucous membranes. It is characterized by polygonal, flat-topped, violaceous papules and plaques with overlying, reticulated, fine white scale (Wickham\u2019s striae), commonly affecting dorsal hands, flexural wrists and forearms, trunk, anterior lower legs and oral mucosa. Although there is a broad clinical range of LP manifestations, the skin and oral cavity remain as the major sites of involvement. The cause is unknown, but it is thought to be the result of an autoimmune process with an unknown initial trigger. There is no cure, but many different medications and procedures have been used in efforts to control the symptoms."
+                }
+            ],
+            "mean_original_docs_length": 22085.0,
+            "mean_shortened_docs_length": 741.0
+        },
+        "107": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Male breast cancer",
+                    "original_doc_length": 8923,
+                    "shortened_doc_length": 556,
+                    "shortened_doc_content": "Male breast cancer (male breast neoplasm) is a rare cancer in males that originates from the breast. Many males with breast cancer have inherited a \"BRCA\" mutation, but there are other causes, including alcohol abuse and exposure to certain hormones and ionizing radiation. As it presents a similar pathology as female breast cancer, assessment and treatment relies on experiences and guidelines that have been developed in female patients. The optimal treatment is currently not known. As in females, infiltrating ductal carcinoma is the most common type."
+                }
+            ],
+            "mean_original_docs_length": 8923.0,
+            "mean_shortened_docs_length": 556.0
+        },
+        "108": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Betamethasone",
+                    "original_doc_length": 4325,
+                    "shortened_doc_length": 743,
+                    "shortened_doc_content": "Betamethasone is a steroid medication. It is used for a number of diseases including rheumatic disorders such as rheumatoid arthritis and systemic lupus erythematosus, skin diseases such as dermatitis and psoriasis, allergic conditions such as asthma and angioedema, preterm labor to speed the development of the baby's lungs, Crohn's disease, cancers such as leukemia, and along with fludrocortisone for adrenocortical insufficiency, among others. It can be taken by mouth, injected into a muscle, or applied as a cream. When given by injection, anti-inflammatory effects begin in around two hours and last for seven days. Serious side effects include an increased risk of infection, muscle weakness, severe allergic reactions, and psychosis."
+                }
+            ],
+            "mean_original_docs_length": 4325.0,
+            "mean_shortened_docs_length": 743.0
+        },
+        "109": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vestibular schwannoma",
+                    "original_doc_length": 29037,
+                    "shortened_doc_length": 614,
+                    "shortened_doc_content": "A vestibular schwannoma (VS) is a benign primary intracranial tumor of the myelin-forming cells of the vestibulocochlear nerve (8th cranial nerve). A type of schwannoma, this tumor arises from the Schwann cells responsible for the myelin sheath that helps keep peripheral nerves insulated. Although it is also called an acoustic neuroma, this is a misnomer for two reasons. First, the tumor usually arises from the vestibular division of the vestibulocochlear nerve, rather than the cochlear division. Second, it is derived from the Schwann cells of the associated nerve, rather than the actual neurons (neuromas)."
+                }
+            ],
+            "mean_original_docs_length": 29037.0,
+            "mean_shortened_docs_length": 614.0
+        },
+        "110": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ganglioglioma",
+                    "original_doc_length": 4469,
+                    "shortened_doc_length": 639,
+                    "shortened_doc_content": "Ganglioglioma is a rare, slow-growing primary central nervous system (CNS) tumor which most frequently occurs in the temporal lobes of children and young adults. Gangliogliomas are generally benign WHO grade I tumors; the presence of anaplastic changes in the glial component is considered to represent WHO grade III (anaplastic ganglioglioma). Criteria for WHO grade II have been suggested, but are not established. Malignant transformation of spinal ganglioglioma has been seen in only a select few cases. Poor prognostic factors for adults with gangliogliomas include older age at diagnosis, male sex, and malignant histologic features."
+                }
+            ],
+            "mean_original_docs_length": 4469.0,
+            "mean_shortened_docs_length": 639.0
+        },
+        "111": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Intestinal pseudo-obstruction",
+                    "original_doc_length": 8242,
+                    "shortened_doc_length": 601,
+                    "shortened_doc_content": "Intestinal pseudo-obstruction is a clinical syndrome caused by severe impairment in the ability of the intestines to push food through. It is characterized by the signs and symptoms of intestinal obstruction without any lesion in the intestinal lumen. Clinical features can include abdominal pain, nausea, severe distension, vomiting, dysphagia, diarrhea and constipation, depending upon the part of the gastrointestinal tract involved. The condition can begin at any age and it can be a primary condition (idiopathic or inherited) or caused by another disease (secondary). It can be chronic or acute."
+                }
+            ],
+            "mean_original_docs_length": 8242.0,
+            "mean_shortened_docs_length": 601.0
+        },
+        "112": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pneumocystis jirovecii",
+                    "original_doc_length": 8325,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "Pneumocystis jirovecii (previously \"P. carinii\") is a yeast-like fungus of the genus \"Pneumocystis\". The causative organism of \"Pneumocystis\" pneumonia, it is an important human pathogen, particularly among immunocompromised hosts. Prior to its discovery as a human-specific pathogen, \"P. jirovecii\" was known as \"P. carinii\". The complete lifecycles of any of the species of \"Pneumocystis\" are not known, but presumably all resemble the others in the genus. The terminology follows zoological terms, rather than mycological terms, reflecting the initial misdetermination as a protozoan parasite."
+                }
+            ],
+            "mean_original_docs_length": 8325.0,
+            "mean_shortened_docs_length": 596.0
+        },
+        "113": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Aortic dissection",
+                    "original_doc_length": 30332,
+                    "shortened_doc_length": 578,
+                    "shortened_doc_content": "Aortic dissection (AD) occurs when an injury to the innermost layer of the aorta allows blood to flow between the layers of the aortic wall, forcing the layers apart. In most cases, this is associated with a sudden onset of severe chest or back pain, often described as \"tearing\" in character. Also, vomiting, sweating, and lightheadedness may occur. Other symptoms may result from decreased blood supply to other organs, such as stroke or mesenteric ischemia. Aortic dissection can quickly lead to death from not enough blood flow to the heart or complete rupture of the aorta."
+                }
+            ],
+            "mean_original_docs_length": 30332.0,
+            "mean_shortened_docs_length": 578.0
+        },
+        "114": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mitral valve stenosis",
+                    "original_doc_length": 13183,
+                    "shortened_doc_length": 466,
+                    "shortened_doc_content": "Mitral stenosis is a valvular heart disease characterized by the narrowing of the orifice of the mitral valve of the heart. It is almost always caused by rheumatic valvular heart disease. Normally, mitral valve is about 5 cm during diastole. Any decrease in area below 2 cm causes mitral stenosis. Early diagnosis of mitral stenosis in pregnancy is very important as the heart cannot tolerate increased cardiac output demand as in the case of exercise and pregnancy."
+                }
+            ],
+            "mean_original_docs_length": 13183.0,
+            "mean_shortened_docs_length": 466.0
+        },
+        "115": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Electrocardiography in myocardial infarction",
+                    "original_doc_length": 4985,
+                    "shortened_doc_length": 557,
+                    "shortened_doc_content": "Electrocardiography in suspected myocardial infarction has the main purpose of detecting ischemia or acute coronary injury in emergency department populations coming for symptoms of myocardial infarction (MI). Also, it can distinguish clinically different types of myocardial infarction. The standard 12 lead electrocardiogram (ECG) has several limitations. An ECG represents a brief sample in time. Because unstable ischemic syndromes have rapidly changing supply versus demand characteristics, a single ECG may not accurately represent the entire picture."
+                }
+            ],
+            "mean_original_docs_length": 4985.0,
+            "mean_shortened_docs_length": 557.0
+        },
+        "116": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cholecystectomy",
+                    "original_doc_length": 7164,
+                    "shortened_doc_length": 588,
+                    "shortened_doc_content": "Cholecystectomy is the surgical removal of the gallbladder. Cholecystectomy is a common treatment of symptomatic gallstones and other gallbladder conditions. In 2011, cholecystectomy was the 8th most common operating room procedure performed in hospitals in the United States. Cholecystectomy can be performed either laparoscopically, using a video camera, or via an open surgical technique. The surgery is usually successful in relieving symptoms, but up to 10% of people may continue to experience similar symptoms after cholecystectomy, a condition called postcholecystectomy syndrome."
+                }
+            ],
+            "mean_original_docs_length": 7164.0,
+            "mean_shortened_docs_length": 588.0
+        },
+        "117": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mesenteric ischemia",
+                    "original_doc_length": 9829,
+                    "shortened_doc_length": 682,
+                    "shortened_doc_content": "Mesenteric ischemia is a medical condition in which injury to the small intestine occurs due to not enough blood supply. It can come on suddenly, known as acute mesenteric ischemia, or gradually, known as chronic mesenteric ischemia. The acute form of the disease often presents with sudden severe abdominal pain and is associated with a high risk of death. The chronic form typically presents more gradually with abdominal pain after eating, unintentional weight loss, vomiting, and fear of eating. Risk factors for acute mesenteric ischemia include atrial fibrillation, heart failure, chronic kidney failure, being prone to forming blood clots, and previous myocardial infarction."
+                }
+            ],
+            "mean_original_docs_length": 9829.0,
+            "mean_shortened_docs_length": 682.0
+        },
+        "118": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acanthocyte (disambiguation)",
+                    "original_doc_length": 476,
+                    "shortened_doc_length": 445,
+                    "shortened_doc_content": "Acanthocyte is a form of red blood cell that has a spiked cell membrane, due to abnormal thorny projections. Acanthocyte may also refer to:\n\nBULLET::::- Acanthocyte (mycology), stellate cells found on the hyphae of fungi of the genus Stropharia\nBULLET::::- Neuroacanthocytosis, neurological conditions in which the blood contains acanthocytes\nBULLET::::- Acanthosis, thickening of the skin not connected to acanthocytes\nBULLET::::- Acanthoctenus"
+                }
+            ],
+            "mean_original_docs_length": 476.0,
+            "mean_shortened_docs_length": 445.0
+        },
+        "119": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Kidney failure",
+                    "original_doc_length": 12528,
+                    "shortened_doc_length": 584,
+                    "shortened_doc_content": "Kidney failure, also known as end-stage kidney disease, is a medical condition in which the kidneys are functioning at less than 15% of normal. Kidney failure is classified as either acute kidney failure, which develops rapidly and may resolve; and chronic kidney failure, which develops slowly. Symptoms may include leg swelling, feeling tired, vomiting, loss of appetite, and confusion. Complications of acute and chronic failure include uremia, high blood potassium, and volume overload. Complications of chronic failure also include heart disease, high blood pressure, and anemia."
+                }
+            ],
+            "mean_original_docs_length": 12528.0,
+            "mean_shortened_docs_length": 584.0
+        },
+        "120": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Crohn's disease",
+                    "original_doc_length": 42336,
+                    "shortened_doc_length": 636,
+                    "shortened_doc_content": "Crohn's disease is a type of inflammatory bowel disease (IBD) that may affect any segment of the gastrointestinal tract from the mouth to the anus. Symptoms often include abdominal pain, diarrhea (which may be bloody if inflammation is severe), fever, and weight loss. Other complications outside the gastrointestinal tract may include anemia, skin rashes, arthritis, inflammation of the eye, and tiredness. The skin rashes may be due to infections as well as pyoderma gangrenosum or erythema nodosum. Bowel obstruction may occur as a complication of chronic inflammation, and those with the disease are at greater risk of bowel cancer."
+                }
+            ],
+            "mean_original_docs_length": 42336.0,
+            "mean_shortened_docs_length": 636.0
+        },
+        "121": {
+            "predicted_answer": "The",
+            "gold_answer": "B",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lithotripsy",
+                    "original_doc_length": 2516,
+                    "shortened_doc_length": 944,
+                    "shortened_doc_content": "Lithotripsy is a medical procedure involving the physical destruction of hardened masses like kidney stones, bezoars or gallstones. The term is derived from the Greek words meaning \"breaking (or pulverizing) stones\" (litho- + \u03c4\u03c1\u03af\u03c8\u03c9 [tripso]). BULLET::::- Extracorporeal shock wave therapy\nBULLET::::- Intracorporeal (endoscopic lithotripsy):\nBULLET::::- Laser lithotripsy : effective for larger stones (> 2\u00a0cm) with good stone-free and complication rates. BULLET::::- Electrohydraulic lithotripsy\nBULLET::::- Mechanical lithotripsy\nBULLET::::- Ultrasonic lithotripsy : safer for small stones (<10\u00a0mm)\n\nSurgery was the only method to remove stones too large to pass until French surgeon and urologist Jean Civiale in 1832, invented a surgical instrument (the lithotrite) to crush stones inside the bladder without having to open the abdomen. To remove a calculus, Civiale inserted his instrument through the urethra and bored holes in the stone."
+                }
+            ],
+            "mean_original_docs_length": 2516.0,
+            "mean_shortened_docs_length": 944.0
+        },
+        "122": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Treatment of infections after exposure to ionizing radiation",
+                    "original_doc_length": 7525,
+                    "shortened_doc_length": 737,
+                    "shortened_doc_content": "Infections caused by exposure to ionizing radiation can be extremely dangerous, and are of public and government concern. Numerous studies have demonstrated that the susceptibility of organisms to systemic infection increased following exposure to ionizing radiation. The risk of systemic infection is higher when the organism has a combined injury, such as a conventional blast, thermal burn, or radiation burn. There is a direct quantitative relationship between the magnitude of the neutropenia that develops after exposure to radiation and the increased risk of developing infection. Because no controlled studies of therapeutic intervention in humans are available, almost all of the current information is based on animal research."
+                }
+            ],
+            "mean_original_docs_length": 7525.0,
+            "mean_shortened_docs_length": 737.0
+        },
+        "123": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acetabular fracture",
+                    "original_doc_length": 2515,
+                    "shortened_doc_length": 491,
+                    "shortened_doc_content": "Fractures of the acetabulum occur when the head of the femur is driven into the pelvis. This injury is caused by a blow to either the side or front of the knee and often occurs as a dashboard injury accompanied by a fracture of the femur. The acetabulum is a cavity situated on the outer surface of the hip bone, also called the coxal bone or innominate bone. It is made up of three bones, the ilium, ischium, and pubis. Together, the acetabulum and the head of the femur form the hip joint."
+                }
+            ],
+            "mean_original_docs_length": 2515.0,
+            "mean_shortened_docs_length": 491.0
+        },
+        "124": {
+            "predicted_answer": "C",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Orthopedic plate",
+                    "original_doc_length": 301,
+                    "shortened_doc_length": 282,
+                    "shortened_doc_content": "An orthopedic plate is a form of internal fixation used in orthopaedic surgery to hold fractures in place to allow bone healing. BULLET::::- Buttress\nBULLET::::- Neutralisation\nBULLET::::- Bridging\nBULLET::::- Tension\nBULLET::::- Compression\n\nBULLET::::- List of orthopedic implants"
+                }
+            ],
+            "mean_original_docs_length": 301.0,
+            "mean_shortened_docs_length": 282.0
+        },
+        "125": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermatitis",
+                    "original_doc_length": 7249,
+                    "shortened_doc_length": 498,
+                    "shortened_doc_content": "Dermatitis, also known as eczema, is a group of diseases that result in inflammation of the skin. These diseases are characterized by itchiness, red skin and a rash. In cases of short duration, there may be small blisters, while in long-term cases the skin may become thickened. The area of skin involved can vary from small to the entire body. Dermatitis is a group of skin conditions that includes atopic dermatitis, allergic contact dermatitis, irritant contact dermatitis and stasis dermatitis."
+                }
+            ],
+            "mean_original_docs_length": 7249.0,
+            "mean_shortened_docs_length": 498.0
+        },
+        "126": {
+            "predicted_answer": "The",
+            "gold_answer": "A",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Oropharyngeal cancer",
+                    "original_doc_length": 5890,
+                    "shortened_doc_length": 884,
+                    "shortened_doc_content": "Oropharyngeal cancer (OPC) also known as Tonsil cancer, is a disease in which abnormal cells with the potential to both grow locally and spread to other parts of the body are found in the tissue of the part of the throat (oropharynx) that includes the base of the tongue, the tonsils, the soft palate, and the walls of the pharynx. The two types of oropharyngeal cancers are HPV-positive oropharyngeal cancer, which is caused by an oral human papillomavirus infection; and HPV-negative oropharyngeal cancer, which is linked to use of alcohol, tobacco, or both. OPC is diagnosed by biopsy of observed abnormal tissue in the throat. OPC is staged according to the appearance of the abnormal cells on the biopsy coupled with the dimensions and the extent of the abnormal cells found. Treatment is with surgery, chemotherapy, or radiation therapy; or some combination of those treatments."
+                }
+            ],
+            "mean_original_docs_length": 5890.0,
+            "mean_shortened_docs_length": 884.0
+        },
+        "127": {
+            "predicted_answer": "The",
+            "gold_answer": "C",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "High-resolution computed tomography",
+                    "original_doc_length": 7376,
+                    "shortened_doc_length": 777,
+                    "shortened_doc_content": "High-resolution computed tomography (HRCT) is a type of computed tomography (CT) with specific techniques to enhance image resolution. It is used in the diagnosis of various health problems, though most commonly for lung disease, by assessing the lung parenchyma. HRCT is performed using a conventional CT scanner. However, imaging parameters are chosen so as to maximize spatial resolution: a narrow slice width is used (usually 1\u20132\u00a0mm), a high spatial resolution image reconstruction algorithm is used, field of view is minimized, so as to minimize the size of each pixel, and other scan factors (e.g. focal spot) may be optimized for resolution at the expense of scan speed. Depending on the suspected diagnosis, the scan may be performed in both inspiration and expiration."
+                }
+            ],
+            "mean_original_docs_length": 7376.0,
+            "mean_shortened_docs_length": 777.0
+        }
+    }
+}
