@@ -40,14 +40,16 @@ class BaseVQAStrategy(ABC):
         required_arguments: list[ArgumentSpec],
         **kwargs: dict[str, Any]
     ) -> None:
-        if not required_arguments and kwargs:
+        filtered_kwargs = {k: v for k, v in kwargs.items() if v is not None}
+
+        if not required_arguments and filtered_kwargs:
             raise ValueError(
                 f"The {self.strategy_type.value} does not accept any keyword argument, "
-                f"but received: {list(kwargs.keys())}"
+                f"but received: {list(filtered_kwargs.keys())}"
             )
 
         required_arguments_names = {argument.name for argument in required_arguments}
-        extra_arguments = set(kwargs.keys()) - required_arguments_names
+        extra_arguments = set(filtered_kwargs.keys()) - required_arguments_names
         if extra_arguments:
             raise ValueError(
                 f"Unexpected keyword arguments: {", ".join(extra_arguments)}"
@@ -57,7 +59,7 @@ class BaseVQAStrategy(ABC):
         for argument in required_arguments:
             argument_value = (
                 argument.value if argument.value is not None
-                else kwargs.get(argument.name)
+                else filtered_kwargs.get(argument.name)
             )
             if argument_value is not None:
                 self.__validate_argument(
