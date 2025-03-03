@@ -103,6 +103,7 @@ class VQAStrategyDetail:
     prompt_type: PromptType
     relevant_docs_count: Optional[int] = None
     doc_splitter_options: Optional[DocSplitterOptions] = None
+    should_apply_rag_to_question: Optional[bool] = None
 
     def __post_init__(self):
         self.__validate()
@@ -124,7 +125,7 @@ class VQAStrategyDetail:
                     self.__invalid_field_message(field_name="doc_splitter_options")
                 )
 
-        elif self.vqa_strategy_type == VQAStrategyType.RAG_Q:
+        if self.vqa_strategy_type in (VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS):
             if not isinstance(self.prompt_type, RagQPromptType):
                 raise InvalidVQAStrategyDetailError(
                     self.__invalid_prompt_message(expected_type=RagQPromptType)
@@ -142,6 +143,12 @@ class VQAStrategyDetail:
                     raise InvalidVQAStrategyDetailError(
                         f"'doc_splitter_type' has not been set up correctly. {e}"
                     ) from e
+
+        if self.vqa_strategy_type in (VQAStrategyType.ZERO_SHOT, VQAStrategyType.RAG_Q):
+            if self.should_apply_rag_to_question is not None:
+                raise InvalidVQAStrategyDetailError(
+                    self.__invalid_field_message(field_name="should_apply_rag_to_question")
+                )
 
     def __invalid_prompt_message(self, expected_type: Type) -> str:
         return (
@@ -203,8 +210,15 @@ class VQAStrategyDetail:
         if self.relevant_docs_count:
             relevant_docs_count_filepath = f"rdc{self.relevant_docs_count}"
 
+        rag_q_as_details_filepath = ""
+        if self.vqa_strategy_type == VQAStrategyType.RAG_Q_AS:
+            if self.should_apply_rag_to_question:
+                rag_q_as_details_filepath = "question_and_answers"
+            else:
+                rag_q_as_details_filepath = "answers_only"
+
         doc_splitter_filepath = ""
-        if self.vqa_strategy_type == VQAStrategyType.RAG_Q:
+        if self.vqa_strategy_type in (VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS):
             doc_splitter_filepath = "no_doc_split"
 
         if self.doc_splitter_options:
@@ -224,6 +238,7 @@ class VQAStrategyDetail:
         return Path(
             evaluation_results_filepath,
             relevant_docs_count_filepath,
+            rag_q_as_details_filepath,
             doc_splitter_filepath,
             evaluation_results_filename
         )
@@ -246,10 +261,10 @@ class GeneralVQAStrategiesDetails:
     prompt_types: list[PromptType]
     relevant_docs_count: list[Optional[int]] = field(default_factory=list)
     doc_splitter_options: list[Optional[GeneralDocSplitterOptions]] = field(default_factory=list)
+    should_apply_rag_to_questions: list[Optional[bool]] = field(default_factory=list)
 
     def __post_init__(self):
         self.__validate()
-        # self.__add_default_values()
 
     def __validate(self) -> None:
         if len(self.doc_splitter_options) > 2:
@@ -269,39 +284,6 @@ class GeneralVQAStrategiesDetails:
                 "'GeneralDocSplitterOptions'."
             ))
 
-    # def __add_default_values(self) -> None:
-    #     if not self.vqa_strategy_types:
-    #         # COGER TODOS DEL ENUM (si archivo no existe imprimir aviso de que el archivo no existe)
-    #         self.vqa_strategy_types = [VQAStrategyType.ZERO_SHOT, VQAStrategyType.RAG_Q]
-
-    #     if not self.prompt_types:
-    #         self.prompt_types = [
-    #             prompt_value
-    #             for prompt_type in get_args(PromptType)
-    #             for prompt_value in list(prompt_type)
-    #         ]
-
-    #     if not self.relevant_docs_count:
-    #         self.relevant_docs_count = [1, 2, 3]
-    #     if (
-    #         VQAStrategyType.ZERO_SHOT in self.vqa_strategy_types and
-    #         None not in self.relevant_docs_count
-    #     ):
-    #         self.relevant_docs_count += [None]
-
-        # if not self.doc_splitter_options:
-        #     self.doc_splitter_options = [
-        #         None,
-        #         # DocSplitterOptions(
-        #               AÑADIR TODOS POR DEFECTO
-        #         # )
-        #     ]
-        # if (
-        #     VQAStrategyType.RAG_Q in self.vqa_strategy_types and
-        #     None not in self.doc_splitter_options.doc_splitter_types
-        # ):
-        #     self.doc_splitter_options.doc_splitter_types += [None]
-
     def get_possible_vqa_strategy_details(self) -> list[VQAStrategyDetail]:
         doc_splitter_combinations = []
         for option in self.doc_splitter_options:
@@ -312,7 +294,10 @@ class GeneralVQAStrategiesDetails:
                     *[getattr(option, attribute.name) for attribute in fields(option)]
                 ))
 
-        all_attributes = [getattr(self, attribute.name) for attribute in fields(self)[:-1]]
+        all_attributes = [
+            getattr(self, attribute.name)
+            for attribute in fields(self) if attribute.name != 'doc_splitter_options'
+        ]
         all_combinations = list(product(*all_attributes, doc_splitter_combinations))
 
         possible_combinations = []
@@ -325,12 +310,13 @@ class GeneralVQAStrategiesDetails:
                     prompt_type=combination[3],
                     relevant_docs_count=combination[4],
                     doc_splitter_options=DocSplitterOptions(
-                        doc_splitter_type=combination[5][0],
-                        token_count=combination[5][1],
-                        add_title=combination[5][2],
-                        chunk_size=combination[5][3],
-                        chunk_overlap=combination[5][4]
-                    ) if combination[5] else None
+                        doc_splitter_type=combination[6][0],
+                        token_count=combination[6][1],
+                        add_title=combination[6][2],
+                        chunk_size=combination[6][3],
+                        chunk_overlap=combination[6][4]
+                    ) if combination[6] else None,
+                    should_apply_rag_to_question=combination[5]
                 )
                 possible_combinations.append(vqa_strategy_detail)
             except InvalidVQAStrategyDetailError as e:
@@ -338,6 +324,4 @@ class GeneralVQAStrategiesDetails:
                 continue
 
         unique_combinations = list(dict.fromkeys(possible_combinations))
-        for combination_id, combination in enumerate(unique_combinations, start=1):
-            print(f"{combination_id} --> {combination}")
         return unique_combinations

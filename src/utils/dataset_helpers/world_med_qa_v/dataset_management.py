@@ -87,6 +87,7 @@ def load_evaluation_results(
             "chunk_overlap": (
                 detail.doc_splitter_options.chunk_overlap if detail.doc_splitter_options else None
             ),
+            "should_apply_rag_to_question": detail.should_apply_rag_to_question,
             "accuracy": evaluation_metrics['accuracy'],
             "well_formatted_answers": evaluation_metrics['percentage_well_formatted']            
         })

@@ -182,7 +182,8 @@ class VisualQAModel:
         self,
         data: dict,
         results_path: Path,
-        doc_splitter: Optional[BaseSplitter]
+        doc_splitter: Optional[BaseSplitter],
+        should_apply_rag_to_question: Optional[bool]
     ) -> None:
         vqa_strategy_detail = VQAStrategyDetail(
             country=self.__country,
@@ -205,7 +206,11 @@ class VisualQAModel:
                     if doc_splitter.document_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
                     else {}
                 )
-            ) if doc_splitter else None
+            ) if doc_splitter else None,
+            should_apply_rag_to_question=(
+                should_apply_rag_to_question
+                if self.__visual_qa_strategy.strategy_type == VQAStrategyType.RAG_Q_AS else None
+            )
         )
         full_results_filepath = vqa_strategy_detail.generate_evaluation_results_filepath(
             evaluation_results_folder=results_path
@@ -224,6 +229,7 @@ class VisualQAModel:
     ) -> None:
         possible_options = ["A", "B", "C", "D"]
         doc_splitter = kwargs.get("doc_splitter")
+        should_apply_rag_to_question = kwargs.get("should_apply_rag_to_question")
         gold_options = {}
         predicted_options = {}
         relevant_documents = {}
@@ -271,6 +277,7 @@ class VisualQAModel:
         self.__save_evaluation_results(
             data=evaluation_metrics,
             results_path=results_path,
-            doc_splitter=doc_splitter
+            doc_splitter=doc_splitter,
+            should_apply_rag_to_question=should_apply_rag_to_question
         )
         print(f"+ Model evaluation ({self.__country}_{self.__file_type} subset) completed.")
