@@ -53,6 +53,13 @@ class LoggerConfig:
             raise ValueError("At least one option must be True")
 
 
+@dataclass
+class DocumentRetrievalResult:
+    relevant_documents: list[Document]
+    formatted_docs: str
+    split_documents: list[Document] = field(default_factory=list)
+
+
 class InvalidDocSplitterOptions(Exception):
     pass
 

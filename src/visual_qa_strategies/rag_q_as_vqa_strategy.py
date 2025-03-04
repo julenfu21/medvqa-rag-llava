@@ -49,34 +49,33 @@ class RagQAsVQAStrategy(BaseRagVQAStrategy):
 
         should_apply_rag_to_question = kwargs.get("should_apply_rag_to_question")
         doc_splitter = kwargs.get("doc_splitter")
-        relevant_docs = ""
-        question_relevant_documents = self._retriever.invoke(question)
+        formatted_relevant_docs = ""
         if should_apply_rag_to_question:
-            relevant_docs += "RAG block for QUESTION:\n\n"
-            if doc_splitter:
-                split_documents = doc_splitter.split_documents(
-                    documents=question_relevant_documents
-                )
-                relevant_docs += f"{super()._format_docs(docs=split_documents)}\n\n"
-            else:
-                relevant_docs += f"{super()._format_docs(docs=question_relevant_documents)}\n\n"
+            formatted_relevant_docs += "RAG block for QUESTION:\n\n"
+            question_document_retrieval_result = self._retriever.get_formatted_relevant_documents(
+                query=question,
+                doc_splitter=doc_splitter
+            )
+            formatted_relevant_docs += f"{question_document_retrieval_result.formatted_docs}\n\n"
 
-        relevant_docs += "RAG block for ANSWERS:\n\n"
-        formatter_answer_rag_docs = []
+        formatted_relevant_docs += "RAG block for ANSWERS:\n\n"
+        answers_document_retrieval_results = []
+        formatted_answer_rag_docs = []
         for letter, answer in possible_answers.items():
-            answer_relevant_documents = self._retriever.invoke(answer)
-            if doc_splitter:
-                split_documents = doc_splitter.split_documents(documents=answer_relevant_documents)
-                formatted_docs = super()._format_docs(docs=split_documents)
-            else:
-                formatted_docs = super()._format_docs(docs=answer_relevant_documents)
-            formatter_answer_rag_docs.append(f"{letter} answer context:\n\n{formatted_docs}")
-        relevant_docs += "\n\n".join(formatter_answer_rag_docs)
+            document_retrieval_result = self._retriever.get_formatted_relevant_documents(
+                query=answer,
+                doc_splitter=doc_splitter
+            )
+            formatted_answer_rag_docs.append(
+                f"{letter} answer context:\n\n{document_retrieval_result.formatted_docs}"
+            )
+            answers_document_retrieval_results.append(document_retrieval_result)
+        formatted_relevant_docs += "\n\n".join(formatted_answer_rag_docs)
 
         output = model.invoke({
             "question": question_with_possible_answers,
             "image": base64_image,
-            "relevant_docs": relevant_docs,
+            "relevant_docs": formatted_relevant_docs,
             "logger_manager": logger_manager
         })
         model_answer = output.strip()
@@ -87,6 +86,14 @@ class RagQAsVQAStrategy(BaseRagVQAStrategy):
             )
         return ModelAnswerResult(
             answer=model_answer,
-            original_relevant_documents=answer_relevant_documents,
-            shortened_relevant_documents=split_documents if doc_splitter else []
+            original_relevant_documents=[
+                document
+                for result in answers_document_retrieval_results
+                for document in result.relevant_documents
+            ],
+            shortened_relevant_documents=[
+                document
+                for result in answers_document_retrieval_results
+                for document in result.split_documents
+            ]
         )

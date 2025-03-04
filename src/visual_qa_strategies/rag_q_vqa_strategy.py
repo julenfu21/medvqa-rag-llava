@@ -42,20 +42,17 @@ class RagQVQAStrategy(BaseRagVQAStrategy):
         )
         question_with_possible_answers = f"{question} {formatted_answers}"
 
-        relevant_documents = self._retriever.invoke(question)
-        doc_splitter = kwargs.get("doc_splitter")
-        if doc_splitter:
-            split_documents = doc_splitter.split_documents(documents=relevant_documents)
-            formatted_docs = super()._format_docs(docs=split_documents)
-        else:
-            formatted_docs = super()._format_docs(docs=relevant_documents)
-
+        document_retrieval_result = self._retriever.get_formatted_relevant_documents(
+            query=question,
+            doc_splitter=kwargs.get("doc_splitter")
+        )
         output = model.invoke({
             "question": question_with_possible_answers,
             "image": base64_image,
-            "relevant_docs": formatted_docs,
+            "relevant_docs": document_retrieval_result.formatted_docs,
             "logger_manager": logger_manager
         })
+
         model_answer = output.strip()
         if logger_manager:
             log_conversation_messages(
@@ -64,6 +61,6 @@ class RagQVQAStrategy(BaseRagVQAStrategy):
             )
         return ModelAnswerResult(
             answer=model_answer,
-            original_relevant_documents=relevant_documents,
-            shortened_relevant_documents=split_documents if doc_splitter else []
+            original_relevant_documents=document_retrieval_result.relevant_documents,
+            shortened_relevant_documents=document_retrieval_result.split_documents
         )
