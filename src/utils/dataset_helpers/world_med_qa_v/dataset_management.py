@@ -95,6 +95,11 @@ def load_evaluation_results(
     return pd.DataFrame(evaluation_results)
 
 
+def get_max_accuracy_rows(evaluation_results: pd.DataFrame) -> pd.DataFrame:
+    max_accuracy = evaluation_results['accuracy'].max()
+    max_rows = evaluation_results[evaluation_results['accuracy'] == max_accuracy]
+    return max_rows
+
 # ====================
 # Private Functions
 # ====================

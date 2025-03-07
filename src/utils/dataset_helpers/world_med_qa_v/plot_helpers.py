@@ -1,7 +1,7 @@
 import base64
 from collections import Counter
 from io import BytesIO
-from typing import Optional
+from typing import Optional, Union
 
 import pandas as pd
 import plotly.express as px
@@ -12,6 +12,8 @@ from plotly.subplots import make_subplots
 
 from src.utils.data_definitions import ModelAnswerResult
 from src.utils.dataset_helpers.shared_plot_helpers import _display_formatted_section
+from src.utils.enums import VQAStrategyType
+from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
 def display_pie_chart_on_correct_answer_distribution(
@@ -137,7 +139,8 @@ def visualize_qa_pair_row(
 
 def display_bar_chart_on_evaluation_results(
     evaluation_results: pd.DataFrame,
-    title: str
+    title: str,
+    column_names: list[str] = None
 ) -> None:
     columns_metadata = [
         {
@@ -151,11 +154,22 @@ def display_bar_chart_on_evaluation_results(
             'color': 'darkorange'
         }
     ]
+
+    if column_names:
+        if len(column_names) == len(evaluation_results):
+            x_labels = column_names
+        else:
+            raise ValueError(
+                f"'column_names' (len: {len(column_names)}) must have the same length as "
+                f"'evaluation_results' (len: {len(evaluation_results)})"
+            )
+    else:
+        x_labels = evaluation_results.index
     bar_chart = go.Figure(
         data=[
             go.Bar(
                 name=column['name'],
-                x=evaluation_results.index,
+                x=x_labels,
                 y=evaluation_results[column['data_column']],
                 marker={
                     'color': column['color'],
@@ -202,6 +216,7 @@ def display_bar_chart_on_evaluation_results(
     hover_columns = [
         "vqa_strategy_type",
         "prompt_type",
+        "relevant_docs_count",
         "doc_splitter",
         "add_title",
         "token_count",
@@ -213,11 +228,12 @@ def display_bar_chart_on_evaluation_results(
         hovertemplate=(
             "VQA Strategy Type: %{customdata[0]}<br>"
             "Prompt Type: %{customdata[1]}<br>"
-            "Document Splitter: %{customdata[2]}<br>"
-            "Add Title: %{customdata[3]}<br>"
-            "Token Count: %{customdata[4]}<br>"
-            "Chunk Size: %{customdata[5]}<br>"
-            "Chunk Overlap: %{customdata[6]}<br>"
+            "Relevant Documents Count: %{customdata[2]}<br>"
+            "Document Splitter: %{customdata[3]}<br>"
+            "Add Title: %{customdata[4]}<br>"
+            "Token Count: %{customdata[5]}<br>"
+            "Chunk Size: %{customdata[6]}<br>"
+            "Chunk Overlap: %{customdata[7]}<br>"
         )
     )
 
@@ -339,6 +355,99 @@ def plot_rag_q_evaluation_results_by_groups(
     display(evaluation_metrics_figure)
 
 
+def display_evaluation_results_summary(
+    evaluation_results_list: list[pd.DataFrame],
+    separator_rows: list[int]
+) -> None:
+    results_df = pd.concat(evaluation_results_list, ignore_index=True)
+    results_df['vqa_strategy_type'] = results_df.apply(
+        lambda row: _get_pretty_strategy_representation(
+            row['vqa_strategy_type'], row['should_apply_rag_to_question']
+        ),
+        axis=1
+    )
+    results_df['add_title'] = results_df['add_title'].apply(_transform_add_title)
+    column_mapping = {
+        'country': 'Country',
+        'file_type': 'File Type',
+        'vqa_strategy_type': 'VQA Strategy',
+        'prompt_type': 'Prompt',
+        'relevant_docs_count': 'Relevant Docs. Count',
+        'doc_splitter': 'Doc. Splitter',
+        'add_title': 'Title',
+        'token_count': 'Token Count',
+        'accuracy': 'Accuracy',
+        'well_formatted_answers': 'Well Formatted Answers'
+    }
+    results_df = results_df.rename(columns=column_mapping)[column_mapping.values()]
+
+    header_style = {
+        'selector': 'thead th', 
+        'props': [
+            ('background-color', '#007BFF'),
+            ('color', 'white'),
+            ('font-weight', 'bold'),
+            ('padding', '12px'),
+            ('text-align', 'center')
+        ]
+    }
+    odd_row_style = {
+        'selector': 'tbody tr:nth-child(odd)',
+        'props': [
+            ('background-color', '#f2f2f2'),
+            ('color', 'black')
+        ]
+    }
+    even_row_style = {
+        'selector': 'tbody tr:nth-child(even)',
+        'props': [
+            ('background-color', '#ffffff'),
+            ('color', 'black')
+        ]
+    }
+    padding_and_text_alignment = {
+        'selector': 'tbody td', 
+        'props': [
+            ('padding', '10px'),
+            ('text-align', 'center')
+        ]
+    }
+    table_style = {
+        'selector': 'table', 
+        'props': [
+            ('border-collapse', 'collapse'),
+            ('width', '100%'),
+            ('margin', '0 auto')
+        ]
+    }
+    border_style = {
+        'selector': 'th, td', 
+        'props': [('border', '1px solid #ddd')]
+    }
+    separator_styles = [
+        {
+            "selector": f"tbody tr:nth-child({i})",
+            "props": [("border-bottom", "3px solid black")]
+        }
+        for i in separator_rows
+    ]
+    table_styles = [
+        header_style,
+        odd_row_style,
+        even_row_style,
+        padding_and_text_alignment,
+        table_style,
+        border_style
+    ] + separator_styles
+
+    styled_results_df = results_df.style.set_table_styles(table_styles).format({
+        'Accuracy': '{:.4f}',
+        'Well Formatted Answers': '{:.4f}'
+    }).hide(axis='index')
+
+    display(styled_results_df)
+
+
 # ====================
 # Private Functions
 # ====================
@@ -371,3 +480,24 @@ def _resize_image(
         image = image.resize((width, height), Image.Resampling.LANCZOS)
 
     return image
+
+
+def _get_pretty_strategy_representation(
+    vqa_strategy_name: str,
+    should_apply_rag_to_question: Union[bool, str]
+) -> str:
+    pretty_strategy_name = prettify_strategy_name(vqa_strategy_name)
+
+    if vqa_strategy_name == VQAStrategyType.RAG_Q_AS.value:
+        if should_apply_rag_to_question in ('-', False):
+            pretty_strategy_name += " (Answers Only)"
+        else:
+            pretty_strategy_name += " (Question and Answers)"
+
+    return pretty_strategy_name
+
+
+def _transform_add_title(add_title: Union[bool, str]) -> str:
+    if add_title == '-':
+        return add_title
+    return "Yes" if add_title else "No"
