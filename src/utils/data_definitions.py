@@ -208,7 +208,12 @@ class VQAStrategyDetail:
 
             raise ValueError(f"Attribute '{attribute_name}' not recognized")
 
-        evaluation_results_filepath = evaluation_results_folder / self.vqa_strategy_type.value
+        evaluation_results_filepath = Path(
+            evaluation_results_folder,
+            self.country,
+            self.file_type,
+            self.vqa_strategy_type.value
+        )
         evaluation_results_filename = (
             f"{self.country}_{self.file_type}_{self.prompt_type.value}_evaluation.json"
         )
