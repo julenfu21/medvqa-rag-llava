@@ -357,8 +357,14 @@ def plot_rag_q_evaluation_results_by_groups(
 
 def display_evaluation_results_summary(
     evaluation_results_list: list[pd.DataFrame],
-    separator_rows: list[int]
+    separator_rows: Optional[list[int]] = None,
+    highlighted_rows: Optional[list[int]] = None
 ) -> None:
+    if separator_rows is None:
+        separator_rows = []
+    if highlighted_rows is None:
+        highlighted_rows = []
+
     results_df = pd.concat(evaluation_results_list, ignore_index=True)
     results_df['vqa_strategy_type'] = results_df.apply(
         lambda row: _get_pretty_strategy_representation(
@@ -431,6 +437,15 @@ def display_evaluation_results_summary(
         }
         for i in separator_rows
     ]
+    highlight_styles = [
+        {
+            "selector": f"tbody tr:nth-child({i})",
+            "props": [('background-color', 'yellow')]
+        }
+        for i in highlighted_rows
+    ]
+
+
     table_styles = [
         header_style,
         odd_row_style,
@@ -438,7 +453,7 @@ def display_evaluation_results_summary(
         padding_and_text_alignment,
         table_style,
         border_style
-    ] + separator_styles
+    ] + separator_styles + highlight_styles
 
     styled_results_df = results_df.style.set_table_styles(table_styles).format({
         'Accuracy': '{:.4f}',
