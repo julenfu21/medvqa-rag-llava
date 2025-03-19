@@ -1,0 +1,1878 @@
+{
+    "accuracy": 0.33707865168539325,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 2.0,
+    "mean_original_docs_length": 17619.814606741573,
+    "mean_shortened_docs_length": 475.7752808988764,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tricyclic antidepressant overdose",
+                    "original_doc_length": 6501,
+                    "shortened_doc_length": 440,
+                    "shortened_doc_content": "Tricyclic antidepressant overdose is poisoning caused by excessive medication of the tricyclic antidepressant (TCA) type. Symptoms may include elevated body temperature, blurred vision, dilated pupils, sleepiness, confusion, seizures, rapid heart rate, and cardiac arrest. If symptoms have not occurred within six hours of exposure they are unlikely to occur. TCA overdose may occur by accident or purposefully in an attempt to cause death."
+                },
+                {
+                    "doc_title": "Antidepressants and suicide risk",
+                    "original_doc_length": 5564,
+                    "shortened_doc_length": 803,
+                    "shortened_doc_content": "The relationship between antidepressant use and suicide risk is a subject of medical research and has faced varying levels of debate. This problem was thought to be serious enough to warrant intervention by the U.S. Food and Drug Administration to label greater likelihood of suicide as a risk of using antidepressants. Some studies have shown that the use of certain antidepressants correlate with an increased risk of suicide in some patients relative to other antidepressants. However, these conclusions have faced considerable scrutiny and disagreement: A multinational European study indicated that antidepressants decrease risk of suicide at the population level, and other reviews of antidepressant use claim that there is not enough data to indicate antidepressant use increases risk of suicide."
+                }
+            ],
+            "mean_original_docs_length": 6032.5,
+            "mean_shortened_docs_length": 621.5
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Malakoplakia",
+                    "original_doc_length": 2071,
+                    "shortened_doc_length": 549,
+                    "shortened_doc_content": "Malakoplakia (from Greek \"Malako\" \"soft\" + \"Plako\" \"plaque\") is a rare inflammatory condition which makes its presence known as a papule, plaque or ulceration that usually affects the genitourinary tract. However, it may also be associated with other bodily organs. It was initially described in the early 20th century as soft yellowish plaques found on the mucosa of the urinary bladder. Microscopically it is characterized by the presence of foamy histiocytes(called von Hansemann cells) with basophilic inclusions called Michaelis\u2013Gutmann bodies."
+                },
+                {
+                    "doc_title": "Lichen sclerosus",
+                    "original_doc_length": 11491,
+                    "shortened_doc_length": 567,
+                    "shortened_doc_content": "Lichen sclerosus (LS) is a chronic, inflammatory skin disease of unknown cause, commonly appearing as whitish patches on the genitals, which can affect any body part of any person but has a strong preference for the genitals (penis, vulva) and is also known as balanitis xerotica obliterans (BXO) when it affects the penis. Lichen sclerosus is not contagious. There is a well-documented increase of skin cancer risk in LS, potentially improvable with treatment. LS in adult age is normally incurable, but improvable with treatment, and often gets progressively worse."
+                }
+            ],
+            "mean_original_docs_length": 6781.0,
+            "mean_shortened_docs_length": 558.0
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Carbimazole",
+                    "original_doc_length": 2975,
+                    "shortened_doc_length": 625,
+                    "shortened_doc_content": "Carbimazole is used to treat hyperthyroidism. Carbimazole is a pro-drug as after absorption it is converted to the active form, methimazole. Methimazole prevents thyroid peroxidase enzyme from iodinating and coupling the tyrosine residues on thyroglobulin, hence reducing the production of the thyroid hormones T and T (thyroxine). Medical therapy for hyperthyroidism typically involves either titrating the dose of Carbimazole until the patient becomes euthyroid or maintaining a high dose of Carbimazole to suppress endogenous thyroid production, and then replacing thyroid hormone with levothyroxine (\"block and replace\")."
+                },
+                {
+                    "doc_title": "Hydralazine",
+                    "original_doc_length": 4800,
+                    "shortened_doc_length": 407,
+                    "shortened_doc_content": "Hydralazine, sold under the brand name Apresoline among others, is a medication used to treat high blood pressure and heart failure. This includes high blood pressure in pregnancy and very high blood pressure resulting in symptoms. It has been found to be particularly useful in heart failure together with isosorbide dinitrate in people of African descent. It is given by mouth or by injection into a vein."
+                }
+            ],
+            "mean_original_docs_length": 3887.5,
+            "mean_shortened_docs_length": 516.0
+        },
+        "4": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Terbinafine",
+                    "original_doc_length": 7413,
+                    "shortened_doc_length": 456,
+                    "shortened_doc_content": "Terbinafine, sold under the brand name Lamisil among others, is an antifungal medication used to treat pityriasis versicolor, fungal nail infections, and ringworm including jock itch and athlete's foot. It is either taken by mouth or applied to the skin as a cream or ointment. The cream and ointment are not effective for nail infections. Common side effects when taken by mouth include nausea, diarrhea, headache, cough, rash, and elevated liver enzymes."
+                },
+                {
+                    "doc_title": "Nystatin",
+                    "original_doc_length": 9588,
+                    "shortened_doc_length": 370,
+                    "shortened_doc_content": "Nystatin, sold under the brandname Mycostatin among others, is an antifungal medication. It is used to treat \"Candida\" infections of the skin including diaper rash, thrush, esophageal candidiasis, and vaginal yeast infections. It may also be used to prevent candidiasis in those who are at high risk. Nystatin may be used by mouth, in the vagina, or applied to the skin."
+                }
+            ],
+            "mean_original_docs_length": 8500.5,
+            "mean_shortened_docs_length": 413.0
+        },
+        "5": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hematuria",
+                    "original_doc_length": 8775,
+                    "shortened_doc_length": 354,
+                    "shortened_doc_content": "Hematuria (American English) or haematuria (British English), also called erythrocyturia, is a clinical sign. It is defined by the presence of blood or red blood cells in the urine. An anatomical framework is helpful in developing a comprehensive differential diagnosis. Blood or red blood cells can enter and mix with urine at multiple anatomical sites."
+                },
+                {
+                    "doc_title": "Nephrotic syndrome",
+                    "original_doc_length": 31466,
+                    "shortened_doc_length": 323,
+                    "shortened_doc_content": "Nephrotic syndrome is a collection of symptoms due to kidney damage. This includes protein in the urine, low blood albumin levels, high blood lipids, and significant swelling. Other symptoms may include weight gain, feeling tired, and foamy urine. Complications may include blood clots, infections, and high blood pressure."
+                }
+            ],
+            "mean_original_docs_length": 20120.5,
+            "mean_shortened_docs_length": 338.5
+        },
+        "6": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                },
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                }
+            ],
+            "mean_original_docs_length": 34081.5,
+            "mean_shortened_docs_length": 553.5
+        },
+        "7": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "Mitral valve stenosis",
+                    "original_doc_length": 13183,
+                    "shortened_doc_length": 297,
+                    "shortened_doc_content": "Mitral stenosis is a valvular heart disease characterized by the narrowing of the orifice of the mitral valve of the heart. It is almost always caused by rheumatic valvular heart disease. Normally, mitral valve is about 5 cm during diastole. Any decrease in area below 2 cm causes mitral stenosis."
+                }
+            ],
+            "mean_original_docs_length": 10935.5,
+            "mean_shortened_docs_length": 521.0
+        },
+        "8": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sudden infant death syndrome",
+                    "original_doc_length": 16830,
+                    "shortened_doc_length": 366,
+                    "shortened_doc_content": "Sudden infant death syndrome (SIDS), also known as cot death or crib death, is the sudden unexplained death of a child of less than one year of age. Diagnosis requires that the death remain unexplained even after a thorough autopsy and detailed death scene investigation. SIDS usually occurs during sleep. Typically death occurs between the hours of 00:00 and 09:00."
+                },
+                {
+                    "doc_title": "Omphalitis of newborn",
+                    "original_doc_length": 5816,
+                    "shortened_doc_length": 523,
+                    "shortened_doc_content": "Omphalitis of newborn is the medical term for inflammation of the umbilical cord stump in the neonatal newborn period, most commonly attributed to a bacterial infection. Typically immediately after an infant is born, the umbilical cord is cut with a small remnant (often referred to as the stump) left behind. Normally the stump separates from the skin within 3\u201345 days after birth. A small amount of pus-like material is commonly seen at the base of the stump and can be controlled by keeping the stump open to air to dry."
+                }
+            ],
+            "mean_original_docs_length": 11323.0,
+            "mean_shortened_docs_length": 444.5
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chronic cough",
+                    "original_doc_length": 10701,
+                    "shortened_doc_length": 459,
+                    "shortened_doc_content": "Chronic cough is long-term coughing, sometimes defined as more than several weeks or months. The term can be used to describe the different causes related to coughing, the 3 main ones being; upper airway cough syndrome, asthma and gastroesophageal reflux disease. It occurs in the upper airway of the respiratory system. Generally, a cough lasts around 1\u20132 weeks, however, chronic cough can persist for an extended period of time defined as 6 weeks or longer."
+                },
+                {
+                    "doc_title": "Chronic obstructive pulmonary disease",
+                    "original_doc_length": 45200,
+                    "shortened_doc_length": 382,
+                    "shortened_doc_content": "Chronic obstructive pulmonary disease (COPD) is a type of obstructive lung disease characterized by long-term breathing problems and poor airflow. The main symptoms include shortness of breath and cough with sputum production. COPD is a progressive disease, meaning it typically worsens over time. Eventually, everyday activities such as walking or getting dressed become difficult."
+                }
+            ],
+            "mean_original_docs_length": 27950.5,
+            "mean_shortened_docs_length": 420.5
+        },
+        "10": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Angina",
+                    "original_doc_length": 20169,
+                    "shortened_doc_length": 400,
+                    "shortened_doc_content": "Angina, also known as angina pectoris, is chest pain or pressure, usually due to not enough blood flow to the heart muscle. Angina is usually due to obstruction or spasm of the arteries that supply blood to the heart muscle. Other causes include anemia, abnormal heart rhythms and heart failure. The main mechanism of coronary artery obstruction is atherosclerosis as part of coronary artery disease."
+                }
+            ],
+            "mean_original_docs_length": 19715.0,
+            "mean_shortened_docs_length": 362.5
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pregnancy",
+                    "original_doc_length": 46770,
+                    "shortened_doc_length": 377,
+                    "shortened_doc_content": "Pregnancy, also known as gestation, is the time during which one or more offspring develops inside a woman. A multiple pregnancy involves more than one offspring, such as with twins. Pregnancy can occur by sexual intercourse or assisted reproductive technology. A pregnancy may end in a live birth, abortion, or miscarriage, though access to safe abortion care varies globally."
+                },
+                {
+                    "doc_title": "Early pregnancy bleeding",
+                    "original_doc_length": 2418,
+                    "shortened_doc_length": 315,
+                    "shortened_doc_content": "Early pregnancy bleeding refers to bleeding before 24 weeks of gestational age. Complications may include hemorrhagic shock. Concerns are increased in those who have had a loss of consciousness, are short of breath, or have pain in their shoulder. Common causes include ectopic pregnancy and threatened miscarriage."
+                }
+            ],
+            "mean_original_docs_length": 24594.0,
+            "mean_shortened_docs_length": 346.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                },
+                {
+                    "doc_title": "Postpartum period",
+                    "original_doc_length": 9957,
+                    "shortened_doc_length": 705,
+                    "shortened_doc_content": "A postpartum (or postnatal) period begins immediately after the birth of a child as the mother's body, including hormone levels and uterus size, returns to a non-pregnant state. The terms puerperium or puerperal period, or immediate postpartum period are commonly used to refer to the first six weeks following childbirth. The World Health Organization (WHO) describes the postnatal period as the most critical and yet the most neglected phase in the lives of mothers and babies; most maternal and newborn deaths occur during the postnatal period. In scientific literature, the term is commonly abbreviated to P\"x, where x\" is a number; for example, \"day P5\" should be read as \"the fifth day after birth\"."
+                }
+            ],
+            "mean_original_docs_length": 37615.5,
+            "mean_shortened_docs_length": 608.0
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary embolism",
+                    "original_doc_length": 29390,
+                    "shortened_doc_length": 486,
+                    "shortened_doc_content": "Pulmonary embolism (PE) is a blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream (embolism). Symptoms of a PE may include shortness of breath, chest pain particularly upon breathing in, and coughing up blood. Symptoms of a blood clot in the leg may also be present, such as a red, warm, swollen, and painful leg. Signs of a PE include low blood oxygen levels, rapid breathing, rapid heart rate, and sometimes a mild fever."
+                },
+                {
+                    "doc_title": "Deep vein thrombosis",
+                    "original_doc_length": 38232,
+                    "shortened_doc_length": 478,
+                    "shortened_doc_content": "Deep vein thrombosis (DVT) is the formation of a blood clot in a deep vein, most commonly in the legs or pelvis. Symptoms can include pain, swelling, redness, and enlarged veins in the affected area, but some DVTs have no symptoms. The most life-threatening concern with DVT is the potential for a clot (or multiple clots) to detach, travel through the right side of the heart, and become stuck in arteries that supply blood to the lungs. This is called pulmonary embolism (PE)."
+                }
+            ],
+            "mean_original_docs_length": 33811.0,
+            "mean_shortened_docs_length": 482.0
+        },
+        "14": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thumb hypoplasia",
+                    "original_doc_length": 4502,
+                    "shortened_doc_length": 525,
+                    "shortened_doc_content": "Thumb hypoplasia is a spectrum of congenital abnormalities of the thumb varying from small defects to absolute retardation of the thumb. It can be isolated, when only the thumb is affected, and in 60% of the cases it is associated with radial dysplasia (or radial club, radius dysplasia, longitudinal radial deficiency). Radial dysplasia is the condition in which the forearm bone and the soft tissues on the thumb side are underdeveloped or absent. In an embryo the upper extremities develop from week four of the gestation."
+                },
+                {
+                    "doc_title": "Colles' fracture",
+                    "original_doc_length": 5608,
+                    "shortened_doc_length": 302,
+                    "shortened_doc_content": "A Colles' fracture is a type of fracture of the distal forearm in which the broken end of the radius is bent backwards. Symptoms may include pain, swelling, deformity, and bruising. Complications may include damage to the median nerve. It typically occurs as a result of a fall on an outstretched hand."
+                }
+            ],
+            "mean_original_docs_length": 5055.0,
+            "mean_shortened_docs_length": 413.5
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Myocardial infarction",
+                    "original_doc_length": 42059,
+                    "shortened_doc_length": 419,
+                    "shortened_doc_content": "Myocardial infarction (MI), also known as a heart attack, occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle. The most common symptom is chest pain or discomfort which may travel into the shoulder, arm, back, neck or jaw. Often it occurs in the center or left side of the chest and lasts for more than a few minutes. The discomfort may occasionally feel like heartburn."
+                }
+            ],
+            "mean_original_docs_length": 30660.0,
+            "mean_shortened_docs_length": 372.0
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bradypnea",
+                    "original_doc_length": 2052,
+                    "shortened_doc_length": 1656,
+                    "shortened_doc_content": "Bradypnea is abnormally slow breathing. The respiratory rate at which bradypnea is diagnosed depends on the age of the person. BULLET::::- Age 0\u20131 year < 30 breaths per minute\nBULLET::::- Age 1\u20133 years < 25 breaths per minute\nBULLET::::- Age 3\u201312 years < 20 breaths per minute\nBULLET::::- Age 12\u201350 years < 12 breaths per minute\nBULLET::::- Age 50 and up < 13 breaths per minute\n\nBULLET::::- Dizziness\nBULLET::::- Near-fainting or fainting\nBULLET::::- Fatigue\nBULLET::::- Weakness\nBULLET::::- Chest pains\nBULLET::::- Shortness of breath\nBULLET::::- Memory impairment or confusion\nBULLET::::- Tiring easily during any physical activity\n\nBULLET::::- Degeneration of heart tissue because of aging\nBULLET::::- Damage to tissues in the heart from heart attack or heart disease\nBULLET::::- High blood pressure or hypertension\nBULLET::::- Congenital heart defect which is disorder present at birth\nBULLET::::- Heart tissue infection also known as myocarditis -Complication of heart surgery\nBULLET::::- Hypothyroidism or underactive thyroid gland\nBULLET::::- Imbalance of electrolytes which are mineral related substances needed for conducting electrical impulses\nBULLET::::- Obstructive sleep apnea which is the repeated disruption of breathing during sleep. BULLET::::- Inflammatory disease, such as lupus or rheumatic fever\nBULLET::::- Buildup of iron in the organs known as hemochromatosis\nBULLET::::- Medications, such as drugs for other heart rhythm disorders as well as high blood pressure and narcotic pain medications may also reduce respiratory rate\nBULLET::::- Dysautonomia\n\nIf urgent treatment is needed, supplemental oxygen is given to the individual."
+                },
+                {
+                    "doc_title": "Acute decompensated heart failure",
+                    "original_doc_length": 3310,
+                    "shortened_doc_length": 564,
+                    "shortened_doc_content": "Acute decompensated heart failure (ADHF) is a sudden worsening of the signs and symptoms of heart failure, which typically includes difficulty breathing (dyspnea), leg or feet swelling, and fatigue. ADHF is a common and potentially serious cause of acute respiratory distress. The condition is caused by severe congestion of multiple organs by fluid that is inadequately circulated by the failing heart. An attack of decompensation can be caused by underlying medical illness, such as myocardial infarction, an abnormal heart rhythm, infection, or thyroid disease."
+                }
+            ],
+            "mean_original_docs_length": 2681.0,
+            "mean_shortened_docs_length": 1110.0
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                },
+                {
+                    "doc_title": "Pulmonary hypertension",
+                    "original_doc_length": 29177,
+                    "shortened_doc_length": 303,
+                    "shortened_doc_content": "Pulmonary hypertension (PH or PHTN) is a condition of increased blood pressure within the arteries of the lungs. Symptoms include shortness of breath, syncope, tiredness, chest pain, swelling of the legs, and a fast heartbeat. The condition may make it difficult to exercise. Onset is typically gradual."
+                }
+            ],
+            "mean_original_docs_length": 24100.0,
+            "mean_shortened_docs_length": 406.0
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Prenatal care",
+                    "original_doc_length": 11515,
+                    "shortened_doc_length": 591,
+                    "shortened_doc_content": "Prenatal care, also known as antenatal care, is a type of preventive healthcare. Its goal is to provide regular check-ups that allow doctors or midwives to treat and prevent potential health problems throughout the course of the pregnancy and to promote healthy lifestyles that benefit both mother and child. During check-ups, pregnant women receive medical information over maternal physiological changes in pregnancy, biological changes, and prenatal nutrition including prenatal vitamins. Recommendations on management and healthy lifestyle changes are also made during regular check-ups."
+                },
+                {
+                    "doc_title": "Prenatal care in the United States",
+                    "original_doc_length": 26495,
+                    "shortened_doc_length": 683,
+                    "shortened_doc_content": "Prenatal care in the United States is a health care preventive care protocol recommended to women with the goal to provide regular check-ups that allow obstetricians-gynecologists or midwives to detect, treat and prevent potential health problems throughout the course of pregnancy while promoting healthy lifestyles that benefit both mother and child. Patients are encouraged to attend monthly checkups during the first two trimesters and in the third trimester gradually increasing to weekly visits. Women who suspect they are pregnant can schedule pregnancy tests prior to 9 weeks gestation. Once pregnancy is confirmed an initial appointment is scheduled after 8 weeks gestation."
+                }
+            ],
+            "mean_original_docs_length": 19005.0,
+            "mean_shortened_docs_length": 637.0
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "Asthma",
+                    "original_doc_length": 43328,
+                    "shortened_doc_length": 352,
+                    "shortened_doc_content": "Asthma is a common long-term inflammatory disease of the airways of the lungs. It is characterized by variable and recurring symptoms, reversible airflow obstruction, and easily triggered bronchospasms. Symptoms include episodes of wheezing, coughing, chest tightness, and shortness of breath. These may occur a few times a day or a few times per week."
+                }
+            ],
+            "mean_original_docs_length": 26008.0,
+            "mean_shortened_docs_length": 548.5
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pregnancy",
+                    "original_doc_length": 46770,
+                    "shortened_doc_length": 377,
+                    "shortened_doc_content": "Pregnancy, also known as gestation, is the time during which one or more offspring develops inside a woman. A multiple pregnancy involves more than one offspring, such as with twins. Pregnancy can occur by sexual intercourse or assisted reproductive technology. A pregnancy may end in a live birth, abortion, or miscarriage, though access to safe abortion care varies globally."
+                },
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks. These babies are known as preemies or premmies. Symptoms of preterm labor include uterine contractions which occur more often than every ten minutes or the leaking of fluid from the vagina. Premature infants are at greater risk for cerebral palsy, delays in development, hearing problems and sight problems."
+                }
+            ],
+            "mean_original_docs_length": 46206.5,
+            "mean_shortened_docs_length": 417.0
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Measles",
+                    "original_doc_length": 31404,
+                    "shortened_doc_length": 387,
+                    "shortened_doc_content": "Measles is a highly contagious infectious disease caused by the measles virus. Symptoms usually develop 10\u201312 days after exposure to an infected person and last 7\u201310 days. Initial symptoms typically include fever, often greater than , cough, runny nose, and inflamed eyes. Small white spots known as Koplik's spots may form inside the mouth two or three days after the start of symptoms."
+                },
+                {
+                    "doc_title": "Erythema toxicum neonatorum",
+                    "original_doc_length": 1940,
+                    "shortened_doc_length": 352,
+                    "shortened_doc_content": "Erythema toxicum neonatorum is a common rash in neonates. It appears in up to half of newborns carried to term, usually between day 2\u20135 after birth; it does not occur outside the neonatal period. Erythema toxicum is characterized by blotchy red spots on the skin with overlying white or yellow papules or pustules. These lesions may be few or numerous."
+                }
+            ],
+            "mean_original_docs_length": 16672.0,
+            "mean_shortened_docs_length": 369.5
+        },
+        "23": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive encephalopathy",
+                    "original_doc_length": 8304,
+                    "shortened_doc_length": 327,
+                    "shortened_doc_content": "Hypertensive encephalopathy (HE) is general brain dysfunction due to significantly high blood pressure. Symptoms may include headache, vomiting, trouble with balance, and confusion. Onset is generally sudden. Complications can include seizures, posterior reversible encephalopathy syndrome, and bleeding in the back of the eye."
+                },
+                {
+                    "doc_title": "Hypertensive crisis",
+                    "original_doc_length": 2053,
+                    "shortened_doc_length": 754,
+                    "shortened_doc_content": "Severely elevated blood pressure (equal to or greater than a systolic 180 or diastolic of 110\u2014sometimes termed malignant or accelerated hypertension) is referred to as a hypertensive crisis, as blood pressure at this level confers a high risk of complications. People with blood pressures in this range may have no symptoms, but are more likely to report headaches (22% of cases) and dizziness than the general population. Other symptoms accompanying a hypertensive crisis may include visual deterioration due to retinopathy, breathlessness due to heart failure, or a general feeling of malaise due to kidney failure. Most people with a hypertensive crisis are known to have elevated blood pressure, but additional triggers may have led to a sudden rise."
+                }
+            ],
+            "mean_original_docs_length": 5178.5,
+            "mean_shortened_docs_length": 540.5
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dysmenorrhea",
+                    "original_doc_length": 9968,
+                    "shortened_doc_length": 256,
+                    "shortened_doc_content": "Dysmenorrhea, also known as painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins. Symptoms typically last less than three days. The pain is usually in the pelvis or lower abdomen."
+                },
+                {
+                    "doc_title": "Menstruation",
+                    "original_doc_length": 26537,
+                    "shortened_doc_length": 499,
+                    "shortened_doc_content": "Menstruation, also known as a period or monthly, is the regular discharge of blood and mucosal tissue (known as menses) from the inner lining of the uterus through the vagina. The first period usually begins between twelve and fifteen years of age, a point in time known as menarche. However, periods may occasionally start as young as eight years old and still be considered normal. The average age of the first period is generally later in the developing world, and earlier in the developed world."
+                }
+            ],
+            "mean_original_docs_length": 18252.5,
+            "mean_shortened_docs_length": 377.5
+        },
+        "25": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pre-eclampsia",
+                    "original_doc_length": 30457,
+                    "shortened_doc_length": 512,
+                    "shortened_doc_content": "Pre-eclampsia (PE) is a disorder of pregnancy characterized by the onset of high blood pressure and often a significant amount of protein in the urine. When it arises, the condition begins after 20 weeks of pregnancy. In severe disease there may be red blood cell breakdown, a low blood platelet count, impaired liver function, kidney dysfunction, swelling, shortness of breath due to fluid in the lungs, or visual disturbances. Pre-eclampsia increases the risk of poor outcomes for both the mother and the baby."
+                },
+                {
+                    "doc_title": "Hyperemesis gravidarum",
+                    "original_doc_length": 11398,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "Hyperemesis gravidarum (HG) is a pregnancy complication that is characterized by severe nausea, vomiting, weight loss, and possibly dehydration. Feeling faint may also occur. It is considered more severe than morning sickness. Symptoms often get better after the 20th week of pregnancy but may last the entire pregnancy duration."
+                }
+            ],
+            "mean_original_docs_length": 20927.5,
+            "mean_shortened_docs_length": 420.5
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fever",
+                    "original_doc_length": 19885,
+                    "shortened_doc_length": 443,
+                    "shortened_doc_content": "Fever, also known as pyrexia and febrile response, is defined as having a temperature above the normal range due to an increase in the body's temperature set point. There is not a single agreed-upon upper limit for normal temperature with sources using values between in humans. The increase in set point triggers increased muscle contractions and causes a feeling of cold. This results in greater heat production and efforts to conserve heat."
+                },
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                }
+            ],
+            "mean_original_docs_length": 14286.5,
+            "mean_shortened_docs_length": 594.0
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                },
+                {
+                    "doc_title": "Dysmenorrhea",
+                    "original_doc_length": 9968,
+                    "shortened_doc_length": 256,
+                    "shortened_doc_content": "Dysmenorrhea, also known as painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins. Symptoms typically last less than three days. The pain is usually in the pelvis or lower abdomen."
+                }
+            ],
+            "mean_original_docs_length": 37621.0,
+            "mean_shortened_docs_length": 383.5
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary hypertension",
+                    "original_doc_length": 29177,
+                    "shortened_doc_length": 303,
+                    "shortened_doc_content": "Pulmonary hypertension (PH or PHTN) is a condition of increased blood pressure within the arteries of the lungs. Symptoms include shortness of breath, syncope, tiredness, chest pain, swelling of the legs, and a fast heartbeat. The condition may make it difficult to exercise. Onset is typically gradual."
+                },
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                }
+            ],
+            "mean_original_docs_length": 24219.0,
+            "mean_shortened_docs_length": 314.0
+        },
+        "29": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Leukorrhea",
+                    "original_doc_length": 2751,
+                    "shortened_doc_length": 389,
+                    "shortened_doc_content": "Leukorrhea or (leucorrhoea British English) is a thick, whitish or yellowish vaginal discharge. There are many causes of leukorrhea, the usual one being estrogen imbalance. The amount of discharge may increase due to vaginal infection, and it may disappear and reappear from time to time. This discharge can keep occurring for years, in which case it becomes more yellow and foul-smelling."
+                },
+                {
+                    "doc_title": "Vaginitis",
+                    "original_doc_length": 6605,
+                    "shortened_doc_length": 344,
+                    "shortened_doc_content": "Vaginitis, also known as vulvovaginitis, is inflammation of the vagina and vulva. Symptoms may include itching, burning, pain, discharge, and a bad smell. Certain types of vaginitis may result in complications during pregnancy. The three main causes are infections, specifically bacterial vaginosis, vaginal yeast infection, and trichomoniasis."
+                }
+            ],
+            "mean_original_docs_length": 4678.0,
+            "mean_shortened_docs_length": 366.5
+        },
+        "30": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatomegaly",
+                    "original_doc_length": 2988,
+                    "shortened_doc_length": 326,
+                    "shortened_doc_content": "Hepatomegaly is the condition of having an enlarged liver. It is a non-specific medical sign having many causes, which can broadly be broken down into infection, hepatic tumours, or metabolic disorder. Often, hepatomegaly will present as an abdominal mass. Depending on the cause, it may sometimes present along with jaundice."
+                },
+                {
+                    "doc_title": "Alcoholic hepatitis",
+                    "original_doc_length": 6698,
+                    "shortened_doc_length": 503,
+                    "shortened_doc_content": "Alcoholic hepatitis is hepatitis (inflammation of the liver) due to excessive intake of alcohol. Patients typically have a history of decades of heavy alcohol intake, typically 8-10 drinks per day. It is usually found in association with fatty liver, an early stage of alcoholic liver disease, and may contribute to the progression of fibrosis, leading to cirrhosis. Symptoms may presently acutely after a large amount of alcoholic intake in a short time period, or after years of excess alcohol intake."
+                }
+            ],
+            "mean_original_docs_length": 4843.0,
+            "mean_shortened_docs_length": 414.5
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vulvodynia",
+                    "original_doc_length": 6461,
+                    "shortened_doc_length": 406,
+                    "shortened_doc_content": "Vulvodynia is a chronic pain syndrome that affects the vulvar area and occurs without an identifiable cause. Symptoms typically include a feeling of burning or irritation. It has been established by the ISSVD that for the diagnosis to be made symptoms must last at least 3 months. The exact cause is unknown but is believed to involve a number of factors, including genetics, immunology, and possibly diet."
+                },
+                {
+                    "doc_title": "Vulvar disease",
+                    "original_doc_length": 3261,
+                    "shortened_doc_length": 305,
+                    "shortened_doc_content": "A vulvar disease is a particular abnormal, pathological condition that affects part or all of the vulva. Several pathologies are defined. Some can be prevented by vulvovaginal health maintenance. \"Vulvar cancer\" accounts for about 5% of all gynecological cancers and typically affects women in later life."
+                }
+            ],
+            "mean_original_docs_length": 4861.0,
+            "mean_shortened_docs_length": 355.5
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bunion",
+                    "original_doc_length": 6719,
+                    "shortened_doc_length": 280,
+                    "shortened_doc_content": "A bunion, also known as hallux valgus, is a deformity of the joint connecting the big toe to the foot. The big toe often bends towards the other toes and the joint becomes red and painful. The onset of bunions is typically gradual. Complications may include bursitis or arthritis."
+                },
+                {
+                    "doc_title": "Hidradenitis suppurativa",
+                    "original_doc_length": 14530,
+                    "shortened_doc_length": 334,
+                    "shortened_doc_content": "Hidradenitis suppurativa (HS), also known as acne inversa, is a long term skin disease characterized by the occurrence of inflamed and swollen lumps. These are typically painful and break open, releasing fluid or pus. The areas most commonly affected are the underarms, under the breasts, and groin. Scar tissue remains after healing."
+                }
+            ],
+            "mean_original_docs_length": 10624.5,
+            "mean_shortened_docs_length": 307.0
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bronchiolitis",
+                    "original_doc_length": 17550,
+                    "shortened_doc_length": 351,
+                    "shortened_doc_content": "Bronchiolitis is blockage of the small airways in the lungs due to a viral infection. It usually only occurs in children less than two years of age. Symptoms may include fever, cough, runny nose, wheezing, and breathing problems. More severe cases may be associated with nasal flaring, grunting, or the skin between the ribs pulling in with breathing."
+                },
+                {
+                    "doc_title": "Pneumonia",
+                    "original_doc_length": 43029,
+                    "shortened_doc_length": 416,
+                    "shortened_doc_content": "Pneumonia is an inflammatory condition of the lung affecting primarily the small air sacs known as alveoli. Typically symptoms include some combination of productive or dry cough, chest pain, fever, and trouble breathing. Severity is variable. Pneumonia is usually caused by infection with viruses or bacteria and less commonly by other microorganisms, certain medications and conditions such as autoimmune diseases."
+                }
+            ],
+            "mean_original_docs_length": 30289.5,
+            "mean_shortened_docs_length": 383.5
+        },
+        "34": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                },
+                {
+                    "doc_title": "Tuberculosis in relation to HIV",
+                    "original_doc_length": 7413,
+                    "shortened_doc_length": 490,
+                    "shortened_doc_content": "The co-epidemic of tuberculosis (TB) and human immunodeficiency virus (HIV) is one of the major global health challenges in the present time. The World Health Organization (WHO) reports 9.2 million new cases of TB in 2006 of whom 7.7% were HIV-infected. Tuberculosis is the most common contagious infection in HIV-Immunocompromised patients leading to death. These diseases act in combination as HIV drives a decline in immunity while tuberculosis progresses due to defective immune status."
+                }
+            ],
+            "mean_original_docs_length": 13218.0,
+            "mean_shortened_docs_length": 499.5
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                },
+                {
+                    "doc_title": "Pregnancy",
+                    "original_doc_length": 46770,
+                    "shortened_doc_length": 377,
+                    "shortened_doc_content": "Pregnancy, also known as gestation, is the time during which one or more offspring develops inside a woman. A multiple pregnancy involves more than one offspring, such as with twins. Pregnancy can occur by sexual intercourse or assisted reproductive technology. A pregnancy may end in a live birth, abortion, or miscarriage, though access to safe abortion care varies globally."
+                }
+            ],
+            "mean_original_docs_length": 56022.0,
+            "mean_shortened_docs_length": 444.0
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epidemic",
+                    "original_doc_length": 8392,
+                    "shortened_doc_length": 946,
+                    "shortened_doc_content": "An epidemic (from Greek \u1f10\u03c0\u03af \"epi\" \"upon or above\" and \u03b4\u1fc6\u03bc\u03bf\u03c2 \"demos\" \"people\") is the rapid spread of infectious disease to a large number of people in a given population within a short period of time, usually two weeks or less. For example, in meningococcal infections, an attack rate in excess of 15 cases per 100,000 people for two consecutive weeks is considered an epidemic. Epidemics of infectious disease are generally caused by several factors including a change in the ecology of the host population (e.g. increased stress or increase in the density of a vector species), a genetic change in the pathogen reservoir or the introduction of an emerging pathogen to a host population (by movement of pathogen or host). Generally, an epidemic occurs when host immunity to either an established pathogen or newly emerging novel pathogen is suddenly reduced below that found in the endemic equilibrium and the transmission threshold is exceeded."
+                },
+                {
+                    "doc_title": "Disease surveillance",
+                    "original_doc_length": 8142,
+                    "shortened_doc_length": 603,
+                    "shortened_doc_content": "Disease surveillance is an epidemiological practice by which the spread of disease is monitored in order to establish patterns of progression. The main role of disease surveillance is to predict, observe, and minimize the harm caused by outbreak, epidemic, and pandemic situations, as well as increase knowledge about which factors contribute to such circumstances. A key part of modern disease surveillance is the practice of disease case reporting. In modern times, reporting incidences of disease outbreaks has been transformed from manual record keeping, to instant worldwide internet communication."
+                }
+            ],
+            "mean_original_docs_length": 8267.0,
+            "mean_shortened_docs_length": 774.5
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks. These babies are known as preemies or premmies. Symptoms of preterm labor include uterine contractions which occur more often than every ten minutes or the leaking of fluid from the vagina. Premature infants are at greater risk for cerebral palsy, delays in development, hearing problems and sight problems."
+                },
+                {
+                    "doc_title": "Transient tachypnea of the newborn",
+                    "original_doc_length": 2593,
+                    "shortened_doc_length": 366,
+                    "shortened_doc_content": "Transient tachypnea of the newborn is a respiratory problem that can be seen in the newborn shortly after delivery. It is caused by retained fetal lung fluid due to impaired clearance mechanisms. It is the most common cause of respiratory distress in term neonates. It consists of a period of rapid breathing (higher than the normal range of 30-60 times per minute)."
+                }
+            ],
+            "mean_original_docs_length": 24118.0,
+            "mean_shortened_docs_length": 411.5
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Infant mortality",
+                    "original_doc_length": 70193,
+                    "shortened_doc_length": 473,
+                    "shortened_doc_content": "Infant mortality is the death of young children under the age of 1. This death toll is measured by the infant mortality rate (IMR), which is the number of deaths of children under one year of age per 1000 live births. The under-five mortality rate, which is referred to as the \"child mortality rate\", is also an important statistic, considering the infant mortality rate focuses only on children under one year of age. Premature birth is the biggest contributor to the IMR."
+                },
+                {
+                    "doc_title": "Child mortality",
+                    "original_doc_length": 10930,
+                    "shortened_doc_length": 463,
+                    "shortened_doc_content": "Child mortality, refers to the mortality of children under the age of five. The child mortality rate, also 'under-five mortality rate', refers to the probability of dying between birth and exactly five years of age expressed per 1,000 live births. It encompasses neonatal mortality and infant mortality (the probability of death in the first year of life). Reduction of child mortality is reflected in several of the United Nations' Sustainable Development Goals."
+                }
+            ],
+            "mean_original_docs_length": 40561.5,
+            "mean_shortened_docs_length": 468.0
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                },
+                {
+                    "doc_title": "Hepatitis C",
+                    "original_doc_length": 32720,
+                    "shortened_doc_length": 338,
+                    "shortened_doc_content": "Hepatitis C is an infectious disease caused by the hepatitis C virus (HCV) that primarily affects the liver. During the initial infection people often have mild or no symptoms. Occasionally a fever, dark urine, abdominal pain, and yellow tinged skin occurs. The virus persists in the liver in about 75% to 85% of those initially infected."
+                }
+            ],
+            "mean_original_docs_length": 25871.5,
+            "mean_shortened_docs_length": 423.5
+        },
+        "41": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Short stature",
+                    "original_doc_length": 7721,
+                    "shortened_doc_length": 461,
+                    "shortened_doc_content": "Short stature refers to a height of a human which is below typical. Whether a person is considered short depends on the context. Because of the lack of preciseness, there is often disagreement about the degree of shortness that should be called \"short\". In a medical context, short stature is typically defined as an adult height that is more than two standard deviations below the mean for age and gender, which corresponds to the shortest 2.3% of individuals."
+                },
+                {
+                    "doc_title": "Small for gestational age",
+                    "original_doc_length": 5020,
+                    "shortened_doc_length": 654,
+                    "shortened_doc_content": "Small for gestational age (SGA) newborns are those who are smaller in size than normal for the gestational age, most commonly defined as a weight below the 10th percentile for the gestational age. Being small for gestational age is broadly either:\nBULLET::::- Being constitutionally small, wherein the state is basically a genetic trait of the baby. BULLET::::- Intrauterine growth restriction, also called \"pathological SGA\"\n\nThe condition is determined by birth weight and/or length. A related condition, IUGR, is generally diagnosed by measuring the mother's uterus, with the fundal height being less than it should be for that stage of the pregnancy."
+                }
+            ],
+            "mean_original_docs_length": 6370.5,
+            "mean_shortened_docs_length": 557.5
+        },
+        "42": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 337,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia. Pre-eclampsia is a disorder of pregnancy in which there is high blood pressure and either large amounts of protein in the urine or other organ dysfunction. Onset may be before, during, or after delivery. Most often it is during the second half of pregnancy."
+                },
+                {
+                    "doc_title": "Stillbirth",
+                    "original_doc_length": 18444,
+                    "shortened_doc_length": 385,
+                    "shortened_doc_content": "Stillbirth is typically defined as fetal death at or after 20 to 28 weeks of pregnancy (depending on the source). It results in a baby born without signs of life. A stillbirth can result in the feeling of guilt or grief in the mother. The term is in contrast to miscarriage, which is an early pregnancy loss, and live birth, where the baby is born alive, even if it dies shortly after."
+                }
+            ],
+            "mean_original_docs_length": 16945.0,
+            "mean_shortened_docs_length": 361.0
+        },
+        "43": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ankle fracture",
+                    "original_doc_length": 5431,
+                    "shortened_doc_length": 361,
+                    "shortened_doc_content": "An ankle fracture is a break of one or more ankle bones. Symptoms may include pain, swelling, bruising, and an inability to walk on the leg. Complications may include an associated high ankle sprain, compartment syndrome, decreased range of motion, and malunion. The cause may include excessive stress on the joint such as from rolling an ankle or blunt trauma."
+                },
+                {
+                    "doc_title": "Hand injury",
+                    "original_doc_length": 5754,
+                    "shortened_doc_length": 351,
+                    "shortened_doc_content": "The hand is a very complex organ with multiple joints, different types of ligament, tendons and nerves. Hand disease injuries are common in society and can result from excessive use, degenerative disorders or trauma. Trauma to the finger or the hand is quite common in society. In some particular cases, the entire finger may be subject to amputation."
+                }
+            ],
+            "mean_original_docs_length": 5592.5,
+            "mean_shortened_docs_length": 356.0
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Rhabdomyolysis",
+                    "original_doc_length": 23234,
+                    "shortened_doc_length": 340,
+                    "shortened_doc_content": "Rhabdomyolysis is a condition in which damaged skeletal muscle breaks down rapidly. Symptoms may include muscle pains, weakness, vomiting, and confusion. There may be tea-colored urine or an irregular heartbeat. Some of the muscle breakdown products, such as the protein myoglobin, are harmful to the kidneys and may lead to kidney failure."
+                }
+            ],
+            "mean_original_docs_length": 21247.5,
+            "mean_shortened_docs_length": 332.5
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Myocardial infarction",
+                    "original_doc_length": 42059,
+                    "shortened_doc_length": 419,
+                    "shortened_doc_content": "Myocardial infarction (MI), also known as a heart attack, occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle. The most common symptom is chest pain or discomfort which may travel into the shoulder, arm, back, neck or jaw. Often it occurs in the center or left side of the chest and lasts for more than a few minutes. The discomfort may occasionally feel like heartburn."
+                }
+            ],
+            "mean_original_docs_length": 30660.0,
+            "mean_shortened_docs_length": 372.0
+        },
+        "47": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Computed tomography of the head",
+                    "original_doc_length": 4828,
+                    "shortened_doc_length": 801,
+                    "shortened_doc_content": "Computed tomography of the head uses a series of X-rays in a CT scan of the head taken from many different directions; the resulting data is transformed into a series of cross sections of the brain using a computer program. CT images of the head are used to investigate and diagnose brain injuries and other neurological conditions, as well as other conditions involving the skull or sinuses.; it used to guide some brain surgery procedures as well. CT scans expose the person getting them to ionizing radiation which has a risk of eventually causing cancer; some people have allergic reactions to contrast agents that are used in some CT procedures. Computed tomography (CT) has become the diagnostic modality of choice for head trauma due to its accuracy, reliability, safety, and wide availability."
+                },
+                {
+                    "doc_title": "Closed-head injury",
+                    "original_doc_length": 11493,
+                    "shortened_doc_length": 641,
+                    "shortened_doc_content": "Closed-head injury is a type of traumatic brain injury in which the skull and dura mater remain intact. Closed-head injuries are the leading cause of death in children under 4 years old and the most common cause of physical disability and cognitive impairment in young people. Overall, closed-head injuries and other forms of mild traumatic brain injury account for about 75% of the estimated 1.7 million brain injuries that occur annually in the United States. Brain injuries such as closed-head injuries may result in lifelong physical, cognitive, or psychological impairment and, thus, are of utmost concern with regards to public health."
+                }
+            ],
+            "mean_original_docs_length": 8160.5,
+            "mean_shortened_docs_length": 721.0
+        },
+        "48": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Amlodipine",
+                    "original_doc_length": 3005,
+                    "shortened_doc_length": 464,
+                    "shortened_doc_content": "Amlodipine, sold under the brand name Norvasc among others, is a medication used to treat high blood pressure and coronary artery disease. While not typically recommended in heart failure, amlodipine may be used if other medications are not sufficient for treating high blood pressure or heart-related chest pain. It is taken by mouth and has an effect that lasts for at least a day. Common side effects include swelling, feeling tired, abdominal pain, and nausea."
+                },
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                }
+            ],
+            "mean_original_docs_length": 11133.0,
+            "mean_shortened_docs_length": 394.5
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Abnormal uterine bleeding",
+                    "original_doc_length": 5422,
+                    "shortened_doc_length": 414,
+                    "shortened_doc_content": "Abnormal uterine bleeding (AUB), also known as atypical vaginal bleeding, is vaginal bleeding from the uterus that is abnormally frequent, last excessively long, is more than normal, or is irregular. The term dysfunctional uterine bleeding was used when no underlying cause was present. Vaginal bleeding during pregnancy is excluded. Iron deficiency anemia may occur and quality of life may be negatively affected."
+                },
+                {
+                    "doc_title": "Ulcer (dermatology)",
+                    "original_doc_length": 7001,
+                    "shortened_doc_length": 408,
+                    "shortened_doc_content": "An ulcer is a sore on the skin or a mucous membrane, accompanied by the disintegration of tissue. Ulcers can result in complete loss of the epidermis and often portions of the dermis and even subcutaneous fat. Ulcers are most common on the skin of the lower extremities and in the gastrointestinal tract. An ulcer that appears on the skin is often visible as an inflamed tissue with an area of reddened skin."
+                }
+            ],
+            "mean_original_docs_length": 6211.5,
+            "mean_shortened_docs_length": 411.0
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epidemiology of syphilis",
+                    "original_doc_length": 18605,
+                    "shortened_doc_length": 508,
+                    "shortened_doc_content": "Syphilis is a bacterial infection caused by sexual contact and is believed to have infected people in 1999 with greater than 90% of cases in the developing world. It affects between 700,000 and 1.6\u00a0million pregnancies a year, resulting in spontaneous abortions, stillbirths, and congenital syphilis. In Sub-Saharan Africa syphilis contributes to approximately 20% of perinatal deaths. In the developed world, syphilis infections were in decline until the 1980s and 1990s due to widespread use of antibiotics."
+                },
+                {
+                    "doc_title": "Congenital syphilis",
+                    "original_doc_length": 5992,
+                    "shortened_doc_length": 613,
+                    "shortened_doc_content": "Congenital syphilis is syphilis present \"in utero\" and at birth, and occurs when a child is born to a mother with syphilis. Untreated early syphilis infections results in a high risk of poor pregnancy outcomes, including saddle nose, lower extremity abnormalities, miscarriages, premature births, stillbirths, or death in newborns. Some infants with congenital syphilis have symptoms at birth, but many develop symptoms later. Babies exposed \"in utero\" can have deformities, delays in development, or seizures along with many other problems such as rash, fever, an enlarged liver and spleen, anemia, and jaundice."
+                }
+            ],
+            "mean_original_docs_length": 12298.5,
+            "mean_shortened_docs_length": 560.5
+        },
+        "51": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Elevated transaminases",
+                    "original_doc_length": 3130,
+                    "shortened_doc_length": 799,
+                    "shortened_doc_content": "In medicine, the presence of elevated transaminases, commonly the transaminases alanine transaminase (ALT) and aspartate transaminase (AST), may be an indicator of liver damage. Other terms employed include transaminasemia, transaminitis (which some sources consider pathologically meaningless) and elevated liver enzymes (though they are not the only enzymes in the liver). Normal ranges for both ALT and AST are 8-40 U/L with mild transaminesemia noted to the upward numerical limit of 250 U/L. Drug-induced increases such as that found with the use of anti-tuberculosis agents such as isoniazid are limited typically to below 100 U/L for either ALT or AST. Cirrhosis of the liver or fulminant liver failure secondary to hepatitis commonly reach values for both ALT and AST in the >1000 U/L range."
+                },
+                {
+                    "doc_title": "Blood urea nitrogen",
+                    "original_doc_length": 2338,
+                    "shortened_doc_length": 393,
+                    "shortened_doc_content": "Blood urea nitrogen (BUN) is a medical test that measures the amount of urea nitrogen found in blood. The liver produces urea in the urea cycle as a waste product of the digestion of protein. Normal human adult blood should contain 6 to 20 mg/dL (2.1 to 7.1 mmol/L) of urea nitrogen. Individual laboratories will have different reference ranges as the assay used can vary between laboratories."
+                }
+            ],
+            "mean_original_docs_length": 2734.0,
+            "mean_shortened_docs_length": 596.0
+        },
+        "53": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "General surgery",
+                    "original_doc_length": 8562,
+                    "shortened_doc_length": 754,
+                    "shortened_doc_content": "General surgery is a surgical specialty that focuses on abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland (depending on local referral patterns). They also deal with diseases involving the skin, breast, soft tissue, trauma, [[Peripheral artery disease| and [[hernia]]s and perform endoscopic procedures such as [[gastroscopy]] and [[colonoscopy]].\n\nGeneral surgeons may sub-specialize into one or more of the following disciplines:\n\nIn many parts of the world including [[North America]], [[Australia]] and the [[UK|United Kingdom]], the overall responsibility for [[major trauma|trauma care]] falls under the auspices of general surgery."
+                },
+                {
+                    "doc_title": "Laparotomy",
+                    "original_doc_length": 6736,
+                    "shortened_doc_length": 447,
+                    "shortened_doc_content": "A laparotomy is a surgical procedure involving a large incision through the abdominal wall to gain access into the abdominal cavity. It is also known as a celiotomy. The first successful laparotomy was performed without anesthesia by Ephraim McDowell in 1809 in Danville, Kentucky. On July 13, 1881, Dr. George E. Goodfellow \ntreated a miner outside \nTombstone, Arizona Territory, who had been shot in the abdomen with a .32-caliber Colt revolver."
+                }
+            ],
+            "mean_original_docs_length": 7649.0,
+            "mean_shortened_docs_length": 600.5
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis in China",
+                    "original_doc_length": 31394,
+                    "shortened_doc_length": 451,
+                    "shortened_doc_content": "Tuberculosis is a major public health problem in China. China has the world's third largest cases of tuberculosis (after India and Indonesia), but progress in tuberculosis control was slow during the 1990s. Detection of tuberculosis had stagnated at around 30% of the estimated total of new cases, and multidrug-resistant tuberculosis was a major problem. These signs of inadequate tuberculosis control can be linked to a malfunctioning health system."
+                },
+                {
+                    "doc_title": "World Tuberculosis Day",
+                    "original_doc_length": 8155,
+                    "shortened_doc_length": 836,
+                    "shortened_doc_content": "World Tuberculosis Day, observed on 24 March each year, is designed to build public awareness about the global epidemic of tuberculosis (TB) and efforts to eliminate the disease. In 2012, 8.6\u00a0million people fell ill with TB, and 1.3\u00a0million died from the disease, mostly in low and middle-income countries. World TB Day is one of eight official global public health campaigns marked by the World Health Organization (WHO), along with World Health Day, World Blood Donor Day, World Immunization Week, World Malaria Day, World No Tobacco Day, World Hepatitis Day and World AIDS Day. 24 March commemorates the day in 1882 when Dr Robert Koch astounded the scientific community by announcing to a small group of scientists at the University of Berlin's Institute of Hygiene that he had discovered the cause of tuberculosis, the TB bacillus."
+                }
+            ],
+            "mean_original_docs_length": 19774.5,
+            "mean_shortened_docs_length": 643.5
+        },
+        "55": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                },
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks. These babies are known as preemies or premmies. Symptoms of preterm labor include uterine contractions which occur more often than every ten minutes or the leaking of fluid from the vagina. Premature infants are at greater risk for cerebral palsy, delays in development, hearing problems and sight problems."
+                }
+            ],
+            "mean_original_docs_length": 55458.5,
+            "mean_shortened_docs_length": 484.0
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 258,
+                    "shortened_doc_content": "An acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment. The differential diagnoses of acute abdomen include:\n\nBULLET::::1."
+                },
+                {
+                    "doc_title": "Epigastric hernia",
+                    "original_doc_length": 1840,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "An epigastric hernia is a type of hernia that causes fat to push through a weakened area in the walls of the abdomen. It may develop in the epigastrium (upper, central part of the abdomen). Epigastric hernias are more common in adults and usually appear above the umbilical region of the abdomen. It is a common condition that is usually asymptomatic although sometimes their unusual clinical presentation can present a diagnostic dilemma for the clinician."
+                }
+            ],
+            "mean_original_docs_length": 3104.5,
+            "mean_shortened_docs_length": 357.5
+        },
+        "57": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Postural orthostatic tachycardia syndrome",
+                    "original_doc_length": 15827,
+                    "shortened_doc_length": 490,
+                    "shortened_doc_content": "Postural orthostatic tachycardia syndrome (POTS) is a condition in which a change from lying to standing causes an abnormally large increase in heart rate. This occurs with symptoms that may include lightheadedness, trouble thinking, blurred vision or weakness. Other commonly associated conditions include Ehlers\u2013Danlos syndrome, mast cell activation syndrome, irritable bowel syndrome, insomnia, chronic headaches, chronic fatigue syndrome and fibromyalgia. The causes of POTS are varied."
+                },
+                {
+                    "doc_title": "Paroxysmal supraventricular tachycardia",
+                    "original_doc_length": 3740,
+                    "shortened_doc_length": 266,
+                    "shortened_doc_content": "Paroxysmal supraventricular tachycardia (PSVT) is a type of supraventricular tachycardia. Often people have no symptoms. Otherwise symptoms may include palpitations, feeling lightheaded, sweating, shortness of breath, and chest pain. Episodes start and end suddenly."
+                }
+            ],
+            "mean_original_docs_length": 9783.5,
+            "mean_shortened_docs_length": 378.0
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lower respiratory tract infection",
+                    "original_doc_length": 7399,
+                    "shortened_doc_length": 441,
+                    "shortened_doc_content": "Lower respiratory tract infection (LRTI) is a term often used as a synonym for pneumonia, but can also be applied to other types of infection including lung abscess and acute bronchitis. Symptoms include shortness of breath, weakness, fever, coughing and fatigue. A routine chest x-ray is not always necessary for people who have symptoms of a lower respiratory tract infection. Influenza affects both the upper and lower respiratory tracts."
+                },
+                {
+                    "doc_title": "Sepsis",
+                    "original_doc_length": 42199,
+                    "shortened_doc_length": 552,
+                    "shortened_doc_content": "Sepsis is a life-threatening condition that arises when the body's response to infection causes injury to its tissues and organs. Common signs and symptoms include fever, increased heart rate, increased breathing rate, and confusion. There may also be symptoms related to a specific infection, such as a cough with pneumonia, or painful urination with a kidney infection. The very young, old, and people with a weakened immune system may have no symptoms of a specific infection, and the body temperature may be low or normal instead of having a fever."
+                }
+            ],
+            "mean_original_docs_length": 24799.0,
+            "mean_shortened_docs_length": 496.5
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Health in Brazil",
+                    "original_doc_length": 6997,
+                    "shortened_doc_length": 465,
+                    "shortened_doc_content": "According to the Brazilian Government, the most serious health problems are:\nBULLET::::- Childhood mortality: about 1.48% of childhood mortality . BULLET::::- Motherhood mortality: about 44 deaths per 100,000 born children in 2015 . BULLET::::- Mortality by non-transmissible illness: 16.6% as of 2016 . Furthermore, 65.7 deaths per 100,000 inhabitants is caused by heart and circulatory diseases, along with 26.7 deaths per 100,000 inhabitants is caused by cancer."
+                },
+                {
+                    "doc_title": "HIV/AIDS in Brazil",
+                    "original_doc_length": 12218,
+                    "shortened_doc_length": 489,
+                    "shortened_doc_content": "The first AIDS case identified in Brazil was in 1982. Infection rates climbed exponentially throughout the 1980s, and in 1990 the World Bank famously predicted 1,200,000 cases by 2000, approximately double the actual number that was later reported by the Brazilian Ministry of Health and most international organizations. South and Southeast have 75% or more of this infection (Rio Grande do Sul, S\u00e3o Paulo and Rio de Janeiro). The Northeast has 33% of the population but only 10% of AIDS."
+                }
+            ],
+            "mean_original_docs_length": 9607.5,
+            "mean_shortened_docs_length": 477.0
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bunion",
+                    "original_doc_length": 6719,
+                    "shortened_doc_length": 280,
+                    "shortened_doc_content": "A bunion, also known as hallux valgus, is a deformity of the joint connecting the big toe to the foot. The big toe often bends towards the other toes and the joint becomes red and painful. The onset of bunions is typically gradual. Complications may include bursitis or arthritis."
+                },
+                {
+                    "doc_title": "Asphyxiating thoracic dysplasia",
+                    "original_doc_length": 3991,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Asphyxiating thoracic dysplasia (ATD), also known as Jeune syndrome, is a rare inherited bone growth disorder that primarily affects the thoracic region. It was first described in 1955 by the French pediatrician Mathis Jeune. Common signs and symptoms can include a narrow chest, short ribs, shortened bones in the arms and legs, short stature, and extra fingers and toes (polydactyly). The restricted growth and expansion of the lungs caused by this disorder results in life-threatening breathing difficulties."
+                }
+            ],
+            "mean_original_docs_length": 5355.0,
+            "mean_shortened_docs_length": 395.5
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Childhood obesity",
+                    "original_doc_length": 29902,
+                    "shortened_doc_length": 503,
+                    "shortened_doc_content": "Childhood obesity is a condition where excess body fat negatively affects a child's health or well-being. As methods to determine body fat directly are difficult, the diagnosis of obesity is often based on BMI. Due to the rising prevalence of obesity in children and its many adverse health effects it is being recognized as a serious public health concern. The term overweight rather than obese is often used when discussing childhood obesity, especially in open discussion, as it is less stigmatizing."
+                },
+                {
+                    "doc_title": "Undernutrition in children",
+                    "original_doc_length": 10446,
+                    "shortened_doc_length": 631,
+                    "shortened_doc_content": "Undernutrition in children, where an individual is not getting enough calories, protein, or micronutrients, is common globally and may result in both short and long term irreversible negative health outcomes. This is also sometimes called malnutrition, but this could also refer to getting too much food (causing childhood obesity). The World Health Organization (WHO) estimates that malnutrition accounts for 54 percent of child mortality worldwide, about 1\u00a0million children. Another estimate also by WHO states that childhood underweight is the cause for about 35% of all deaths of children under the age of five years worldwide."
+                }
+            ],
+            "mean_original_docs_length": 20174.0,
+            "mean_shortened_docs_length": 567.0
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Glimepiride",
+                    "original_doc_length": 3162,
+                    "shortened_doc_length": 226,
+                    "shortened_doc_content": "Glimepiride, sold under the trade name Amaryl among others, is a medication used to treat diabetes mellitus type 2. It is less preferred than metformin. Use is recommended together with diet and exercise. It is taken by mouth."
+                },
+                {
+                    "doc_title": "Dysglycemia",
+                    "original_doc_length": 1888,
+                    "shortened_doc_length": 401,
+                    "shortened_doc_content": "Dysglycemia is a general definition for any abnormalities in blood glucose levels. They include hyperglycemia, hypoglycemia, impaired glucose tolerance test, impaired fasting glucose, among others. If blood sugar levels remain too high the body suppresses appetite over the short term. Long-term hyperglycemia causes many health problems including heart disease, cancer, eye, kidney, and nerve damage."
+                }
+            ],
+            "mean_original_docs_length": 2525.0,
+            "mean_shortened_docs_length": 313.5
+        },
+        "63": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Health in Brazil",
+                    "original_doc_length": 6997,
+                    "shortened_doc_length": 465,
+                    "shortened_doc_content": "According to the Brazilian Government, the most serious health problems are:\nBULLET::::- Childhood mortality: about 1.48% of childhood mortality . BULLET::::- Motherhood mortality: about 44 deaths per 100,000 born children in 2015 . BULLET::::- Mortality by non-transmissible illness: 16.6% as of 2016 . Furthermore, 65.7 deaths per 100,000 inhabitants is caused by heart and circulatory diseases, along with 26.7 deaths per 100,000 inhabitants is caused by cancer."
+                },
+                {
+                    "doc_title": "Health in Bolivia",
+                    "original_doc_length": 6407,
+                    "shortened_doc_length": 293,
+                    "shortened_doc_content": "In terms of key indicators, health in Bolivia ranks nearly last among the Western Hemisphere countries. Only Haiti scores consistently lower. Bolivia's child mortality rate of 69 per 1,000 live births is the worst in South America. Proper nourishment is a constant struggle for many Bolivians."
+                }
+            ],
+            "mean_original_docs_length": 6702.0,
+            "mean_shortened_docs_length": 379.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shock (circulatory)",
+                    "original_doc_length": 21707,
+                    "shortened_doc_length": 474,
+                    "shortened_doc_content": "Shock is the state of insufficient blood flow to the tissues of the body as a result of problems with the circulatory system. Initial symptoms of shock may include weakness, fast heart rate, fast breathing, sweating, anxiety, and increased thirst. This may be followed by confusion, unconsciousness, or cardiac arrest, as complications worsen. Shock is divided into four main types based on the underlying cause: low volume, cardiogenic, obstructive, and distributive shock."
+                },
+                {
+                    "doc_title": "Hypovolemic shock",
+                    "original_doc_length": 26944,
+                    "shortened_doc_length": 528,
+                    "shortened_doc_content": "Hypovolemic shock is a medical emergency and an advanced form of hypovolemia due to insufficient amounts of blood and/or fluid inside the human body to let the heart pump enough blood to the body. More specifically, hypovolemic shock occurs when there is decreased intravascular volume to the point of cardiovascular compromise. The hypovolemic shock could be due to severe dehydration through a variety of mechanisms or from blood loss. People with hypovolemic shock have severe hypovolemia with decreased peripheral perfusion."
+                }
+            ],
+            "mean_original_docs_length": 24325.5,
+            "mean_shortened_docs_length": 501.0
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Transmediastinal gunshot wound",
+                    "original_doc_length": 4125,
+                    "shortened_doc_length": 674,
+                    "shortened_doc_content": "A transmediastinal gunshot wound (TMGSW) is a penetrating injury to a person's thorax in which a bullet enters the mediastinum, possibly damaging some of the major structures in this area. Hemodynamic instability has been reported in approximately fifty percent of cases with a mortality rate ranging from twenty to forty percent. Some studies have shown marked improvement in the mortality rate of patients who survived transfer to the operating room rather than being treated surgically in the ER.\n\nComplications caused by a TMGSW can range from mild to life-threatening depending on which structures are damaged. It can be rapidly lethal if a major structure is involved."
+                },
+                {
+                    "doc_title": "Gunshot wound",
+                    "original_doc_length": 23627,
+                    "shortened_doc_length": 427,
+                    "shortened_doc_content": "A gunshot wound (GSW) is physical trauma caused by a bullet from a firearm. Damage may include bleeding, broken bones, organ damage, infection of the wound, or loss of the ability to move part of the body. Damage depends on the part of the body hit, the path the bullet follows through the body, and the type and speed of the bullet. Long term complications can include lead poisoning and post traumatic stress disorder (PTSD)."
+                }
+            ],
+            "mean_original_docs_length": 13876.0,
+            "mean_shortened_docs_length": 550.5
+        },
+        "66": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dysmenorrhea",
+                    "original_doc_length": 9968,
+                    "shortened_doc_length": 256,
+                    "shortened_doc_content": "Dysmenorrhea, also known as painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins. Symptoms typically last less than three days. The pain is usually in the pelvis or lower abdomen."
+                },
+                {
+                    "doc_title": "Menstrual cycle",
+                    "original_doc_length": 36128,
+                    "shortened_doc_length": 462,
+                    "shortened_doc_content": "The menstrual cycle is the regular natural change that occurs in the female reproductive system (specifically the uterus and ovaries) that makes pregnancy possible. The cycle is required for the production of oocytes, and for the preparation of the uterus for pregnancy. The menstrual cycle occurs due to the rise and fall of estrogen. This cycle results in the thickening of the lining of the uterus, and the growth of an egg, (which is required for pregnancy)."
+                }
+            ],
+            "mean_original_docs_length": 23048.0,
+            "mean_shortened_docs_length": 359.0
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cervical lymphadenopathy",
+                    "original_doc_length": 4353,
+                    "shortened_doc_length": 455,
+                    "shortened_doc_content": "Cervical lymphadenopathy refers to lymphadenopathy of the cervical lymph nodes (the glands in the neck). The term \"lymphadenopathy\" strictly speaking refers to disease of the lymph nodes, though it is often used to describe the enlargement of the lymph nodes. Similarly, the term \"lymphadenitis\" refers to inflammation of a lymph node, but often it is used as a synonym of lymphadenopathy. Cervical lymphadenopathy is a sign or a symptom, not a diagnosis."
+                },
+                {
+                    "doc_title": "Lymphadenopathy",
+                    "original_doc_length": 6727,
+                    "shortened_doc_length": 443,
+                    "shortened_doc_content": "Lymphadenopathy or adenopathy is disease of the lymph nodes, in which they are abnormal in size or consistency. Lymphadenopathy of an inflammatory type (the most common type) is lymphadenitis, producing swollen or enlarged lymph nodes. In clinical practice, the distinction between lymphadenopathy and lymphadenitis is rarely made and the words are usually treated as synonymous. Inflammation of the lymphatic vessels is known as lymphangitis."
+                }
+            ],
+            "mean_original_docs_length": 5540.0,
+            "mean_shortened_docs_length": 449.0
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Elevated transaminases",
+                    "original_doc_length": 3130,
+                    "shortened_doc_length": 799,
+                    "shortened_doc_content": "In medicine, the presence of elevated transaminases, commonly the transaminases alanine transaminase (ALT) and aspartate transaminase (AST), may be an indicator of liver damage. Other terms employed include transaminasemia, transaminitis (which some sources consider pathologically meaningless) and elevated liver enzymes (though they are not the only enzymes in the liver). Normal ranges for both ALT and AST are 8-40 U/L with mild transaminesemia noted to the upward numerical limit of 250 U/L. Drug-induced increases such as that found with the use of anti-tuberculosis agents such as isoniazid are limited typically to below 100 U/L for either ALT or AST. Cirrhosis of the liver or fulminant liver failure secondary to hepatitis commonly reach values for both ALT and AST in the >1000 U/L range."
+                },
+                {
+                    "doc_title": "AST/ALT ratio",
+                    "original_doc_length": 2797,
+                    "shortened_doc_length": 848,
+                    "shortened_doc_content": "The AST/ALT ratio is the ratio between the concentrations of the enzymes aspartate transaminase (AST) and alanine transaminase, aka alanine aminotransferase (ALT) in the blood of a human or animal. It is measured with a blood test and is sometimes useful in medical diagnosis to differentiate between causes of liver damage, or hepatotoxicity. Most causes of liver cell injury are associated with a greater increase in ALT than AST; however, an AST to ALT ratio of 2:1 or greater is suggestive of alcoholic liver disease, particularly in the setting of an elevated gamma-glutamyl transferase. The AST to ALT ratio can also occasionally be elevated in a liver disease pattern in patients with nonalcoholic steatohepatitis, and it is frequently elevated in an alcoholic liver disease pattern in patients with hepatitis C who have developed cirrhosis."
+                }
+            ],
+            "mean_original_docs_length": 2963.5,
+            "mean_shortened_docs_length": 823.5
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mortality in the early modern age",
+                    "original_doc_length": 5369,
+                    "shortened_doc_length": 492,
+                    "shortened_doc_content": "The early modern age saw various economic changes as well as several significant diseases that have affected the mortality rates. Data collection during this time was not consistent or broadly recorded and there have been efforts to reconstruct plausible statistics. Mortality rates vary on geographic location, social environment, and cultural values. There were also gender differences in the mortality rates, leading to an excess mortality rate in urban areas and in the female population."
+                },
+                {
+                    "doc_title": "Gender differences in suicide",
+                    "original_doc_length": 11214,
+                    "shortened_doc_length": 303,
+                    "shortened_doc_content": "Gender differences in suicide rates have been shown to be significant. There are different rates of completed suicides and suicidal behavior between males and females. While women more often have suicidal thoughts, men commit suicide more frequently. This is also known as the gender paradox in suicide."
+                }
+            ],
+            "mean_original_docs_length": 8291.5,
+            "mean_shortened_docs_length": 397.5
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epidermodysplasia verruciformis",
+                    "original_doc_length": 7255,
+                    "shortened_doc_length": 597,
+                    "shortened_doc_content": "Epidermodysplasia verruciformis (EV), also known as treeman syndrome, is an extremely rare autosomal recessive hereditary skin disorder associated with a high risk of skin cancer. It is characterized by abnormal susceptibility to human papillomaviruses (HPVs) of the skin. The resulting uncontrolled HPV infections result in the growth of scaly macules and papules resembling tree bark, particularly on the hands and feet. It is typically associated with HPV types 5 and 8, which are found in about 80% of the normal population as asymptomatic infections, although other types may also contribute."
+                },
+                {
+                    "doc_title": "Deforestation in Brazil",
+                    "original_doc_length": 35610,
+                    "shortened_doc_length": 345,
+                    "shortened_doc_content": "Brazil once had the highest deforestation rate in the world and in 2005 still had the largest area of forest removed annually. Since 1970, over of the Amazon rainforest have been destroyed. In 2012, the Amazon was approximately , which is only 87% of the Amazon's original size. Rainforests have decreased in size primarily due to deforestation."
+                }
+            ],
+            "mean_original_docs_length": 21432.5,
+            "mean_shortened_docs_length": 471.0
+        },
+        "71": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Hypercalcaemia",
+                    "original_doc_length": 13447,
+                    "shortened_doc_length": 497,
+                    "shortened_doc_content": "Hypercalcaemia, also spelled hypercalcemia, is a high calcium (Ca) level in the blood serum. The normal range is 2.1\u20132.6\u00a0mmol/L (8.8\u201310.7\u00a0mg/dL, 4.3\u20135.2 mEq/L), with levels greater than 2.6\u00a0mmol/L defined as hypercalcemia. Those with a mild increase that has developed slowly typically have no symptoms. In those with greater levels or rapid onset, symptoms may include abdominal pain, bone pain, confusion, depression, weakness, kidney stones or an abnormal heart rhythm including cardiac arrest."
+                }
+            ],
+            "mean_original_docs_length": 16354.0,
+            "mean_shortened_docs_length": 411.0
+        },
+        "72": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Signs and symptoms of pregnancy",
+                    "original_doc_length": 4188,
+                    "shortened_doc_length": 837,
+                    "shortened_doc_content": "Symptoms and discomforts of pregnancy are those presentations and conditions that result from pregnancy but do not significantly interfere with activities of daily living or pose any significant threat to the health of the mother or baby, in contrast to pregnancy complications. Still, there is often no clear separation between symptoms versus discomforts versus complications, and in some cases the same basic feature can manifest as either a discomfort or a complication depending on the severity. For example, mild nausea may merely be a discomfort (morning sickness), but if severe and with vomiting causing water-electrolyte imbalance it can be classified as a pregnancy complication (hyperemesis gravidarum). Morning sickness occurs in about seventy percent of all pregnant women, and typically improves after the first trimester."
+                },
+                {
+                    "doc_title": "Dysmenorrhea",
+                    "original_doc_length": 9968,
+                    "shortened_doc_length": 256,
+                    "shortened_doc_content": "Dysmenorrhea, also known as painful periods or menstrual cramps, is pain during menstruation. Its usual onset occurs around the time that menstruation begins. Symptoms typically last less than three days. The pain is usually in the pelvis or lower abdomen."
+                }
+            ],
+            "mean_original_docs_length": 7078.0,
+            "mean_shortened_docs_length": 546.5
+        },
+        "73": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adams\u2013Stokes syndrome",
+                    "original_doc_length": 2466,
+                    "shortened_doc_length": 728,
+                    "shortened_doc_content": "Stokes\u2013Adams syndrome is a periodic fainting spell in which there is intermittent complete heart block or other high-grade arrhythmia that results in loss of spontaneous circulation and lack of adequate blood flow to the brain. Subsequently named after two Irish physicians, Robert Adams (1791\u20131875) and William Stokes (1804\u20131877), the first description of the syndrome is believed to have been published in 1717 by the Carniolan physician of Slovene descent Marko Gerbec. It is characterized by an abrupt decrease in cardiac output and loss of consciousness due to a transient arrhythmia; for example, bradycardia due to complete heart block. Typically an attack occurs without warning, leading to sudden loss of consciousness."
+                },
+                {
+                    "doc_title": "Syncope (medicine)",
+                    "original_doc_length": 28655,
+                    "shortened_doc_length": 474,
+                    "shortened_doc_content": "Syncope, also known as fainting, is a loss of consciousness and muscle strength characterized by a fast onset, short duration, and spontaneous recovery. It is caused by a decrease in blood flow to the brain, typically from low blood pressure. There are sometimes symptoms before the loss of consciousness such as lightheadedness, sweating, pale skin, blurred vision, nausea, vomiting, or feeling warm. Syncope may also be associated with a short episode of muscle twitching."
+                }
+            ],
+            "mean_original_docs_length": 15560.5,
+            "mean_shortened_docs_length": 601.0
+        },
+        "74": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Perforated ulcer",
+                    "original_doc_length": 3033,
+                    "shortened_doc_length": 504,
+                    "shortened_doc_content": "A perforated ulcer is a condition in which an untreated ulcer has burned through the mucosal wall in a segment of the gastrointestinal tract (e.g., the stomach or colon) allowing gastric contents to leak into the abdominal cavity. Treatment generally requires immediate surgery. The ulcer is known initially as a peptic ulcer before the ulcer burns through the full thickness of the stomach or duodenal wall. A diagnosis is made by taking an erect abdominal/chest X-ray (seeking air under the diaphragm)."
+                },
+                {
+                    "doc_title": "Peptic ulcer disease",
+                    "original_doc_length": 26491,
+                    "shortened_doc_length": 462,
+                    "shortened_doc_content": "Peptic ulcer disease (PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus. An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer. The most common symptoms of a duodenal ulcer are waking at night with upper abdominal pain and upper abdominal pain that improves with eating. With a gastric ulcer, the pain may worsen with eating."
+                }
+            ],
+            "mean_original_docs_length": 14762.0,
+            "mean_shortened_docs_length": 483.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Conjunctivitis",
+                    "original_doc_length": 15131,
+                    "shortened_doc_length": 315,
+                    "shortened_doc_content": "Conjunctivitis, also known as pink eye, is inflammation of the outermost layer of the white part of the eye and the inner surface of the eyelid. It makes the eye appear pink or reddish. Pain, burning, scratchiness, or itchiness may occur. The affected eye may have increased tears or be \"stuck shut\" in the morning."
+                },
+                {
+                    "doc_title": "Aquagenic pruritus",
+                    "original_doc_length": 2428,
+                    "shortened_doc_length": 521,
+                    "shortened_doc_content": "Aquagenic pruritus is a skin condition characterized by the development of severe, intense, prickling-like epidermal itching without observable skin lesions and evoked by contact with water. Presentation varies from person to person. Some people have discrete attacks, which can last between 10 and 120 minutes while others are symptomatic almost constantly due to atmospheric humidity levels and/or sweating. Itching most frequently occurs on the legs, arms, chest, back, and abdomen, though it can also occur elsewhere."
+                }
+            ],
+            "mean_original_docs_length": 8779.5,
+            "mean_shortened_docs_length": 418.0
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Severe acute respiratory syndrome coronavirus",
+                    "original_doc_length": 4727,
+                    "shortened_doc_length": 354,
+                    "shortened_doc_content": "Severe acute respiratory syndrome coronavirus (SARS-CoV) is the strain of virus that causes severe acute respiratory syndrome (SARS). It is an enveloped, positive-sense, single-stranded RNA virus which infects the epithelial cells within the lungs. The virus enters the host cell by binding to the ACE2 receptor. It infects humans, bats, and palm civets."
+                },
+                {
+                    "doc_title": "Severe acute respiratory syndrome",
+                    "original_doc_length": 17273,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "Severe acute respiratory syndrome (SARS) is a viral respiratory disease of zoonotic origin caused by the SARS coronavirus (SARS-CoV). Between November 2002 and July 2003, an outbreak of SARS in southern China caused an eventual 8,098 cases, resulting in 774 deaths reported in 17 countries (9.6% fatality rate), with the majority of cases in mainland China and Hong Kong. No cases of SARS have been reported worldwide since 2004. In late 2017, Chinese scientists traced the virus through the intermediary of civets to cave-dwelling horseshoe bats in Yunnan province."
+                }
+            ],
+            "mean_original_docs_length": 11000.0,
+            "mean_shortened_docs_length": 460.0
+        },
+        "77": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Celecoxib",
+                    "original_doc_length": 21151,
+                    "shortened_doc_length": 448,
+                    "shortened_doc_content": "Celecoxib, sold under the brand name Celebrex among others, is a COX-2 selective nonsteroidal anti-inflammatory drug (NSAID). It is used to treat the pain and inflammation in osteoarthritis, acute pain in adults, rheumatoid arthritis, ankylosing spondylitis, painful menstruation, and juvenile rheumatoid arthritis. It may also be used to decrease the risk of colorectal adenomas in people with familial adenomatous polyposis. It is taken by mouth."
+                },
+                {
+                    "doc_title": "Constipation",
+                    "original_doc_length": 19640,
+                    "shortened_doc_length": 319,
+                    "shortened_doc_content": "Constipation refers to bowel movements that are infrequent or hard to pass. The stool is often hard and dry. Other symptoms may include abdominal pain, bloating, and feeling as if one has not completely passed the bowel movement. Complications from constipation may include hemorrhoids, anal fissure or fecal impaction."
+                }
+            ],
+            "mean_original_docs_length": 20395.5,
+            "mean_shortened_docs_length": 383.5
+        },
+        "78": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Breech birth",
+                    "original_doc_length": 19850,
+                    "shortened_doc_length": 424,
+                    "shortened_doc_content": "A breech birth is when a baby is born bottom first instead of head first. Around 3\u20135% of pregnant women at term (37\u201340 weeks pregnant) have a breech baby. Most babies in the breech position are born by a caesarean section because it is seen as safer than being born vaginally. Doctors and midwives in the developing world often lack many of the skills required to safely assist women giving birth to a breech baby vaginally."
+                },
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                }
+            ],
+            "mean_original_docs_length": 42562.0,
+            "mean_shortened_docs_length": 467.5
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shock (circulatory)",
+                    "original_doc_length": 21707,
+                    "shortened_doc_length": 474,
+                    "shortened_doc_content": "Shock is the state of insufficient blood flow to the tissues of the body as a result of problems with the circulatory system. Initial symptoms of shock may include weakness, fast heart rate, fast breathing, sweating, anxiety, and increased thirst. This may be followed by confusion, unconsciousness, or cardiac arrest, as complications worsen. Shock is divided into four main types based on the underlying cause: low volume, cardiogenic, obstructive, and distributive shock."
+                },
+                {
+                    "doc_title": "Burn",
+                    "original_doc_length": 25964,
+                    "shortened_doc_length": 362,
+                    "shortened_doc_content": "A burn is a type of injury to skin, or other tissues, caused by heat, cold, electricity, chemicals, friction, or radiation. Most burns are due to heat from hot liquids, solids, or fire. While rates are similar for males and females the underlying causes often differ. Among women in some areas, risk is related to use of open cooking fires or unsafe cook stoves."
+                }
+            ],
+            "mean_original_docs_length": 23835.5,
+            "mean_shortened_docs_length": 418.0
+        },
+        "80": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Emergency Medicine Society of South Africa",
+                    "original_doc_length": 2322,
+                    "shortened_doc_length": 578,
+                    "shortened_doc_content": "Emergency Medicine Society of South Africa or EMSSA is a professional organisation of emergency physicians that was formed in 2007. Emergency medicine only became recognised as an independent speciality in South Africa as of 5 December 2005, when it was formally adopted by the Health Professions Council of South Africa (HPCSA). Although informally, the country always had a strong culture of emergency care rendered by other specialities. For the first time EMSSA brought pre-hospital emergency care, emergency nursing and emergency physicians under one umbrella organisation."
+                },
+                {
+                    "doc_title": "Social determinants of health",
+                    "original_doc_length": 27375,
+                    "shortened_doc_length": 816,
+                    "shortened_doc_content": "The social determinants of health are the economic and social conditions that influence individual and group differences in health status. They are the health promoting factors found in one's living and working conditions (such as the distribution of income, wealth, influence, and power), rather than individual risk factors (such as behavioral risk factors or genetics) that influence the risk for a disease, or vulnerability to disease or injury. The distributions of social determinants are often shaped by public policies that reflect prevailing political ideologies of the area. The World Health Organization says, \"This unequal distribution of health-damaging experiences is not in any sense a 'natural' phenomenon but is the result of a toxic combination of poor social policies, unfair economic arrangements"
+                }
+            ],
+            "mean_original_docs_length": 14848.5,
+            "mean_shortened_docs_length": 697.0
+        },
+        "81": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lepromatous leprosy",
+                    "original_doc_length": 2485,
+                    "shortened_doc_length": 567,
+                    "shortened_doc_content": "Lepromatous leprosy is a form of leprosy characterized by pale macules in the skin. It results from the failure of Th1 cell activation which is necessary to eradicate the mycobacteria (Th1 response is required to activate macrophages that engulf and contain the disease). In lepromatous leprosy, TH2 response is turned on, and because of reciprocal inhibition (IL-4; IL-10), the cell-mediated response (TH1) is depressed. This debilitating form of leprosy begins to spread causing the eyebrows to disappear and spongy tumor like swellings appear on the face and body."
+                },
+                {
+                    "doc_title": "Pityriasis lichenoides chronica",
+                    "original_doc_length": 1307,
+                    "shortened_doc_length": 432,
+                    "shortened_doc_content": "Pityriasis lichenoides chronica is an uncommon, idiopathic, acquired dermatosis, characterized by evolving groups of erythematous, scaly papules that may persist for months. Although other forms of the disease occur at younger ages, some individuals start having long term symptoms at thirty years of age. This disease also affects adolescents and young adults. This also affects the immune system which therefore results in rashes."
+                }
+            ],
+            "mean_original_docs_length": 1896.0,
+            "mean_shortened_docs_length": 499.5
+        },
+        "82": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Transient acantholytic dermatosis",
+                    "original_doc_length": 2577,
+                    "shortened_doc_length": 395,
+                    "shortened_doc_content": "Grover's disease (GD) is a polymorphic, pruritic, papulovesicular dermatosis characterized histologically by acantholysis with or without dyskeratosis. Once confirmed, most cases of Grover's disease last six to twelve months, which is why it was originally called \"transient\". However it may last much longer. Nevertheless, it is not to be confused with relapsing linear acantholytic dermatosis."
+                },
+                {
+                    "doc_title": "Health of Fr\u00e9d\u00e9ric Chopin",
+                    "original_doc_length": 7924,
+                    "shortened_doc_length": 535,
+                    "shortened_doc_content": "Fr\u00e9d\u00e9ric Chopin's disease and the reason for his premature death at age 39 were frequently debated for over 150 years. Although he was diagnosed with and treated for tuberculosis throughout his lifetime, a number of alternative diagnoses had been suggested since his death in 1849. A comprehensive review of the possible causes of Chopin's illness was published in 2011. A visual examination of Chopin's heart, for which permission was finally given in 2017, indicated the likely cause of death as pericarditis, caused by tuberculosis."
+                }
+            ],
+            "mean_original_docs_length": 5250.5,
+            "mean_shortened_docs_length": 465.0
+        },
+        "83": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Benign prostatic hyperplasia",
+                    "original_doc_length": 21823,
+                    "shortened_doc_length": 379,
+                    "shortened_doc_content": "Benign prostatic hyperplasia (BPH), also called prostate enlargement, is a noncancerous increase in size of the prostate gland. Symptoms may include frequent urination, trouble starting to urinate, weak stream, inability to urinate, or loss of bladder control. Complications can include urinary tract infections, bladder stones, and chronic kidney problems. The cause is unclear."
+                },
+                {
+                    "doc_title": "Prostate cancer",
+                    "original_doc_length": 53429,
+                    "shortened_doc_length": 331,
+                    "shortened_doc_content": "Prostate cancer is the development of cancer in the prostate, a gland in the male reproductive system. Most prostate cancers are slow growing; however, some grow relatively quickly. The cancer cells may spread from the prostate to other areas of the body, particularly the bones and lymph nodes. It may initially cause no symptoms."
+                }
+            ],
+            "mean_original_docs_length": 37626.0,
+            "mean_shortened_docs_length": 355.0
+        },
+        "84": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Primary health care",
+                    "original_doc_length": 12943,
+                    "shortened_doc_length": 583,
+                    "shortened_doc_content": "Primary Health Care, or PHC refers to \"essential health care\" that is based on scientifically sound and socially acceptable methods and technology. This makes universal health care accessible to all individuals and families in a community. It is through their full participation and at a cost that the community and the country can afford to maintain at every stage of their development in the spirit of self-reliance and self-determination. In other words, PHC is an approach to health beyond the traditional health care system that focuses on health equity-producing social policy."
+                },
+                {
+                    "doc_title": "Healthcare in Brazil",
+                    "original_doc_length": 10785,
+                    "shortened_doc_length": 326,
+                    "shortened_doc_content": "Healthcare in Brazil is a constitutional right. It is provided by both private and government institutions. The Health Minister administers national health policy. Primary healthcare remains the responsibility of the federal government, elements of which (such as the operation of hospitals) are overseen by individual states."
+                }
+            ],
+            "mean_original_docs_length": 11864.0,
+            "mean_shortened_docs_length": 454.5
+        },
+        "85": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Transient tachypnea of the newborn",
+                    "original_doc_length": 2593,
+                    "shortened_doc_length": 366,
+                    "shortened_doc_content": "Transient tachypnea of the newborn is a respiratory problem that can be seen in the newborn shortly after delivery. It is caused by retained fetal lung fluid due to impaired clearance mechanisms. It is the most common cause of respiratory distress in term neonates. It consists of a period of rapid breathing (higher than the normal range of 30-60 times per minute)."
+                },
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks. These babies are known as preemies or premmies. Symptoms of preterm labor include uterine contractions which occur more often than every ten minutes or the leaking of fluid from the vagina. Premature infants are at greater risk for cerebral palsy, delays in development, hearing problems and sight problems."
+                }
+            ],
+            "mean_original_docs_length": 24118.0,
+            "mean_shortened_docs_length": 411.5
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 325,
+                    "shortened_doc_content": "Chest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain."
+                },
+                {
+                    "doc_title": "Angina",
+                    "original_doc_length": 20169,
+                    "shortened_doc_length": 400,
+                    "shortened_doc_content": "Angina, also known as angina pectoris, is chest pain or pressure, usually due to not enough blood flow to the heart muscle. Angina is usually due to obstruction or spasm of the arteries that supply blood to the heart muscle. Other causes include anemia, abnormal heart rhythms and heart failure. The main mechanism of coronary artery obstruction is atherosclerosis as part of coronary artery disease."
+                }
+            ],
+            "mean_original_docs_length": 19715.0,
+            "mean_shortened_docs_length": 362.5
+        },
+        "87": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Meconium",
+                    "original_doc_length": 5067,
+                    "shortened_doc_length": 467,
+                    "shortened_doc_content": "Meconium is the earliest stool of a mammalian infant. Unlike later feces, meconium is composed of materials ingested during the time the infant spends in the uterus: intestinal epithelial cells, lanugo, mucus, amniotic fluid, bile and water. Meconium, unlike later feces, is viscous and sticky like tar, its color usually being a very dark olive green; it is almost odorless. When diluted in amniotic fluid, it may appear in various shades of green, brown, or yellow."
+                },
+                {
+                    "doc_title": "Diarrhea",
+                    "original_doc_length": 30351,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Diarrhea, also spelled diarrhoea, is the condition of having at least three loose, liquid, or watery bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss. Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable behaviour. This can progress to decreased urination, loss of skin color, a fast heart rate, and a decrease in responsiveness as it becomes more severe."
+                }
+            ],
+            "mean_original_docs_length": 17709.0,
+            "mean_shortened_docs_length": 460.0
+        },
+        "88": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fundal height",
+                    "original_doc_length": 1914,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Fundal height, or McDonald's rule, is a measure of the size of the uterus used to assess fetal growth and development during pregnancy. It is measured from the top of the mother's uterus to the top of the mother's pubic symphysis. Fundal height, when expressed in centimeters, roughly corresponds to gestational age in weeks between 16 and 36 weeks for a vertex fetus. When a tape measure is unavailable, finger widths are used to estimate centimeter (week) distances from a corresponding anatomical landmark."
+                },
+                {
+                    "doc_title": "Obstetric ultrasonography",
+                    "original_doc_length": 15225,
+                    "shortened_doc_length": 1119,
+                    "shortened_doc_content": "Obstetric ultrasonography, or prenatal ultrasound, is the use of medical ultrasonography in pregnancy, in which sound waves are used to create real-time visual images of the developing embryo or fetus in the uterus (womb). The procedure is a standard part of prenatal care in many countries, as it can provide a variety of information about the health of the mother, the timing and progress of the pregnancy, and the health and development of the embryo or fetus. The International Society of Ultrasound in Obstetrics and Gynecology (ISUOG) recommends that pregnant women have routine obstetric ultrasounds between 18 weeks' and 22 weeks' gestational age (the anatomy scan) in order to confirm pregnancy dating, to measure the fetus so that growth abnormalities can be recognized quickly later in pregnancy, and to assess for congenital malformations and multiple pregnancies (twins, etc). Additionally, the ISUOG recommends that pregnant patients who desire genetic testing have obstetric ultrasounds between 11 weeks' and 13 weeks 6 days' gestational age in countries with resources to perform them (the nuchal scan)."
+                }
+            ],
+            "mean_original_docs_length": 8569.5,
+            "mean_shortened_docs_length": 814.0
+        },
+        "89": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hospital-acquired pneumonia",
+                    "original_doc_length": 13984,
+                    "shortened_doc_length": 412,
+                    "shortened_doc_content": "Hospital-acquired pneumonia (HAP) or nosocomial pneumonia refers to any pneumonia contracted by a patient in a hospital at least 48\u201372 hours after being admitted. It is thus distinguished from community-acquired pneumonia. It is usually caused by a bacterial infection, rather than a virus. HAP is the second most common nosocomial infection (after urinary tract infections) and accounts for 15\u201320% of the total."
+                },
+                {
+                    "doc_title": "Eosinophilic pneumonia",
+                    "original_doc_length": 10264,
+                    "shortened_doc_length": 404,
+                    "shortened_doc_content": "Eosinophilic pneumonia is a disease in which an eosinophil, a type of white blood cell, accumulates in the lungs. These cells cause disruption of the normal air spaces (alveoli) where oxygen is extracted from the atmosphere. Several different kinds of eosinophilic pneumonia exist and can occur in any age group. The most common symptoms include cough, fever, difficulty breathing, and sweating at night."
+                }
+            ],
+            "mean_original_docs_length": 12124.0,
+            "mean_shortened_docs_length": 408.0
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chronic diarrhea of infancy",
+                    "original_doc_length": 1167,
+                    "shortened_doc_length": 363,
+                    "shortened_doc_content": "Chronic diarrhea of infancy, also called toddler's diarrhea, is a common condition typically affecting children between ages 6\u201330 months, usually resolving by age\u00a04. Symptoms include multiple loose bowel movements per day, sometimes with undigested food visible. There is normal growth with no evidence of malnutrition. There is no evidence of blood in the stool."
+                },
+                {
+                    "doc_title": "Diarrhea",
+                    "original_doc_length": 30351,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Diarrhea, also spelled diarrhoea, is the condition of having at least three loose, liquid, or watery bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss. Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable behaviour. This can progress to decreased urination, loss of skin color, a fast heart rate, and a decrease in responsiveness as it becomes more severe."
+                }
+            ],
+            "mean_original_docs_length": 15759.0,
+            "mean_shortened_docs_length": 408.0
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "HELLP syndrome",
+                    "original_doc_length": 11198,
+                    "shortened_doc_length": 459,
+                    "shortened_doc_content": "HELLP syndrome is a complication of pregnancy characterized by hemolysis, elevated liver enzymes, and a low platelet count. It usually begins during the last three months of pregnancy or shortly after childbirth. Symptoms may include feeling tired, retaining fluid, headache, nausea, upper right abdominal pain, blurry vision, nosebleeds, and seizures. Complications may include disseminated intravascular coagulation, placental abruption, and kidney failure."
+                },
+                {
+                    "doc_title": "Neonatal jaundice",
+                    "original_doc_length": 13732,
+                    "shortened_doc_length": 333,
+                    "shortened_doc_content": "Neonatal jaundice is a yellowish discoloration of the white part of the eyes and skin in a newborn baby due to high bilirubin levels. Other symptoms may include excess sleepiness or poor feeding. Complications may include seizures, cerebral palsy, or kernicterus. In many cases there is no specific underlying disorder (physiologic)."
+                }
+            ],
+            "mean_original_docs_length": 12465.0,
+            "mean_shortened_docs_length": 396.0
+        },
+        "92": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 661,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB). The standard \"short\" course treatment for TB is isoniazid (along with pyridoxal phosphate to obviate peripheral neuropathy caused by isoniazid), rifampicin (also known as rifampin in the United States), pyrazinamide, and ethambutol for two months, then isoniazid and rifampicin alone for a further four months. The patient is considered to be free of living bacteria after six months. For latent tuberculosis, the standard treatment is six to nine months of daily isoniazid alone or three months of weekly (12 doses total) of isoniazid/rifapentine combination."
+                }
+            ],
+            "mean_original_docs_length": 45603.5,
+            "mean_shortened_docs_length": 585.0
+        },
+        "93": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cervical dilation",
+                    "original_doc_length": 4629,
+                    "shortened_doc_length": 684,
+                    "shortened_doc_content": "Cervical dilation (or cervical dilatation) is the opening of the cervix, the entrance to the uterus, during childbirth, miscarriage, induced abortion, or gynecological surgery. Cervical dilation may occur naturally, or may be induced surgically or medically. In the later stages of pregnancy, the cervix may already have opened up to 1\u20133\u00a0cm (or more in rarer circumstances), but during labor, repeated uterine contractions lead to further widening of the cervix to about 6 centimeters. From that point, pressure from the presenting part (head in vertex births or bottom in breech births), along with uterine contractions, will dilate the cervix to 10 centimeters, which is \"complete.\""
+                },
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 511,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section. In 2015, there were about 135 million births globally. About 15 million were born before 37 weeks of gestation, while between 3 and 12 percent were born after 42 weeks. In the developed world most deliveries occur in hospitals, while in the developing world most births take place at home with the support of a traditional birth attendant."
+                }
+            ],
+            "mean_original_docs_length": 34951.5,
+            "mean_shortened_docs_length": 597.5
+        }
+    }
+}
