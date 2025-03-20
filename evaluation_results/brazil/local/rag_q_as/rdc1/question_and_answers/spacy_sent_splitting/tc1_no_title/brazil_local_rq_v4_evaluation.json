@@ -1,0 +1,2946 @@
+{
+    "accuracy": 0.34831460674157305,
+    "percentage_well_formatted": 0.9775280898876404,
+    "mean_relevant_docs_used": 4.0,
+    "mean_original_docs_length": 8547.86797752809,
+    "mean_shortened_docs_length": 148.23876404494382,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pyrovalerone",
+                    "original_doc_length": 1250,
+                    "shortened_doc_length": 324,
+                    "shortened_doc_content": "Pyrovalerone (Centroton, 4-Methyl-\u03b2-keto-prolintane, Thymergix, O-2371) is a psychoactive drug with stimulant effects via acting as a norepinephrine-dopamine reuptake inhibitor (NDRI), and is used for the clinical treatment of chronic fatigue or lethargy and as an anorectic or appetite suppressant for weight loss purposes."
+                },
+                {
+                    "doc_title": "Valve of coronary sinus",
+                    "original_doc_length": 493,
+                    "shortened_doc_length": 154,
+                    "shortened_doc_content": "The valve of the coronary sinus (Thebesian valve) is a semicircular fold of the lining membrane of the right atrium, at the orifice of the coronary sinus."
+                },
+                {
+                    "doc_title": "Cariprazine",
+                    "original_doc_length": 4392,
+                    "shortened_doc_length": 211,
+                    "shortened_doc_content": "Cariprazine (), sold under the brand names Vraylar in the United States and Reagila in Europe, is an atypical antipsychotic which is used in the treatment of schizophrenia, bipolar mania, and bipolar depression."
+                },
+                {
+                    "doc_title": "Dopamine receptor D4",
+                    "original_doc_length": 6489,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "The dopamine receptor D is a dopamine D2-like G protein-coupled receptor encoded by the gene on chromosome 11 at 11p15.5."
+                }
+            ],
+            "mean_original_docs_length": 3156.0,
+            "mean_shortened_docs_length": 202.5
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Itraconazole",
+                    "original_doc_length": 7478,
+                    "shortened_doc_length": 85,
+                    "shortened_doc_content": "Itraconazole is an antifungal medication used to treat a number of fungal infections."
+                },
+                {
+                    "doc_title": "Strophostyles helvola",
+                    "original_doc_length": 2796,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Strophostyles helvola, commonly called amberique-bean, annual sand bean, or trailing fuzzybean is a species of flowering plant in the legume family."
+                },
+                {
+                    "doc_title": "Carcinoma",
+                    "original_doc_length": 15262,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "Carcinoma is a category of types of cancer that develop from epithelial cells."
+                },
+                {
+                    "doc_title": "Ethambutol/isoniazid/pyrazinamide/rifampicin",
+                    "original_doc_length": 814,
+                    "shortened_doc_length": 142,
+                    "shortened_doc_content": "Ethambutol/isoniazid/pyrazinamide/rifampicin, also known as ethambutol/isoniazid/pyrazinamide/rifampin, is a medication used for tuberculosis."
+                }
+            ],
+            "mean_original_docs_length": 6587.5,
+            "mean_shortened_docs_length": 113.25
+        },
+        "3": {
+            "predicted_answer": "Des",
+            "gold_answer": "D",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Atrial flutter",
+                    "original_doc_length": 12075,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Atrial flutter (AFL) is a common abnormal heart rhythm that starts in the atrial chambers of the heart."
+                },
+                {
+                    "doc_title": "Procainamide",
+                    "original_doc_length": 7963,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Procainamide is a medication of the antiarrhythmic class used for the treatment of cardiac arrhythmias."
+                },
+                {
+                    "doc_title": "Wolfram",
+                    "original_doc_length": 2128,
+                    "shortened_doc_length": 2119,
+                    "shortened_doc_content": "Wolfram may refer to:\n\nBULLET::::- Tungsten, a chemical element with symbol W, called Wolfram in some languages\nBULLET::::- Wolfram Research, a software company founded by Stephen Wolfram\nBULLET::::- Wolfram Alpha, an interactive web site\nBULLET::::- Wolfram Language, the programming language used by Mathematica\nBULLET::::- Wolfram code, a naming system used for one-dimensional cellular automaton rules by Stephen Wolfram\n\nBULLET::::- Wolfram syndrome, a genetic disorder\n\nBULLET::::- Wulfram of Sens (c. 640\u2013703), Merovingian saint\nBULLET::::- Wolfram von Eschenbach (1170\u20131220), German writer\nBULLET::::- Wolfram von Richthofen, German Field Marshal General of the Luftwaffe during World War II\nBULLET::::- Wolfram Waibel Jr. (born 1970), Austrian sport shooter\nBULLET::::- Wolfram Saenger (born 1939), German biochemist and crystallographer\nBULLET::::- Wolfram Sievers (1905-1948), German Holocaust perpetrator and manager of the Ahnenerbe, executed for war crimes\n\nBULLET::::- Conrad Wolfram (born 1970), British technologist and businessman, brother of Stephen Wolfram\nBULLET::::- Donald Justin Wolfram (1919\u20132003), American religious leader\nBULLET::::- Gary L. Wolfram, American economist\nBULLET::::- Hugo Wolfram (1925\u20132015)), an English businessman and novelist\nBULLET::::- Joseph Maria Wolfram (1789\u20131839), Bohemian composer and politician\nBULLET::::- Martin Wolfram (born 1992), German diver\nBULLET::::- Ralf-Reimar Wolfram (1912\u20131945), German sailor\nBULLET::::- Stephen Wolfram (born 1959), British computer scientist and entrepreneur\n\nBULLET::::- Sybil Wolfram (1931\u20131993), a philosopher, mother of Stephen\nBULLET::::- Walt Wolfram (born 1941), American sociolinguist and former president of the Linguistic Society of America\n\nBULLET::::- Wolfram von Bielefeld, a character in \"Kyo Kara Maoh!\", a series of light novels\nBULLET::::- Wolfram & Hart, a fictional law firm in the 1999 television series \"Angel\"\n\nBULLET::::- Wolfram, Queensland, a former mining town in Australia\nBULLET::::- Wolframite, an iron manganese tungstate mineral\n\nBULLET::::- Tungsten (disambiguation)\nBULLET::::- W (disambiguation)"
+                },
+                {
+                    "doc_title": "Atrial fibrillation",
+                    "original_doc_length": 45002,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Atrial fibrillation (AF or A-fib) is an abnormal heart rhythm (arrhythmia) characterized by rapid and irregular beating of the atrial chambers of the heart."
+                }
+            ],
+            "mean_original_docs_length": 16792.0,
+            "mean_shortened_docs_length": 620.25
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Histopathologic diagnosis of dermatitis",
+                    "original_doc_length": 3486,
+                    "shortened_doc_length": 157,
+                    "shortened_doc_content": "Histopathology of dermatitis can be performed in uncertain cases of inflammatory skin condition that remain uncertain after history and physical examination."
+                },
+                {
+                    "doc_title": "Paracaria",
+                    "original_doc_length": 77,
+                    "shortened_doc_length": 66,
+                    "shortened_doc_content": "Paracaria pilosa is a species of beetles in the family Latridiidae"
+                },
+                {
+                    "doc_title": "Muscle biopsy",
+                    "original_doc_length": 2193,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "In medicine, a muscle biopsy is a procedure in which a piece of muscle tissue is removed from an organism and examined microscopically."
+                },
+                {
+                    "doc_title": "Debaryomyces hansenii",
+                    "original_doc_length": 2391,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Debaryomyces hansenii is a species of yeast in the family Saccharomycetaceae."
+                }
+            ],
+            "mean_original_docs_length": 2036.75,
+            "mean_shortened_docs_length": 108.75
+        },
+        "5": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thomsen\u2013Friedenreich antigen",
+                    "original_doc_length": 1322,
+                    "shortened_doc_length": 65,
+                    "shortened_doc_content": "Thomsen\u2013Friedenreich antigen (Gal\u03b21-3GalNAc\u03b11) is a disaccharide."
+                },
+                {
+                    "doc_title": "Membranoproliferative glomerulonephritis",
+                    "original_doc_length": 3285,
+                    "shortened_doc_length": 223,
+                    "shortened_doc_content": "Membranoproliferative glomerulonephritis (MPGN) is a type of glomerulonephritis caused by deposits in the kidney glomerular mesangium and basement membrane (GBM) thickening, activating complement and damaging the glomeruli."
+                },
+                {
+                    "doc_title": "Acronym",
+                    "original_doc_length": 62301,
+                    "shortened_doc_length": 357,
+                    "shortened_doc_content": "An acronym is a word or name formed from the initial components of a longer name or phrase, usually using individual initial letters, as in NATO (North Atlantic Treaty Organization) or EU (European Union), but sometimes using syllables, as in Benelux (Belgium, Netherlands and Luxembourg), or a mixture of the two, as in radar (RAdio Detection And Ranging)."
+                },
+                {
+                    "doc_title": "Anti-histone antibodies",
+                    "original_doc_length": 2308,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Anti-histone antibodies are autoantibodies that are a subset of the anti-nuclear antibody family, which specifically target histone protein subunits or histone complexes."
+                }
+            ],
+            "mean_original_docs_length": 17304.0,
+            "mean_shortened_docs_length": 203.75
+        },
+        "6": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Paradmete breidensis",
+                    "original_doc_length": 125,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Paradmete breidensis is a species of sea snail, a marine gastropod mollusk in the family Volutomitridae"
+                },
+                {
+                    "doc_title": "Guadalupe-Nipomo Dunes",
+                    "original_doc_length": 16023,
+                    "shortened_doc_length": 138,
+                    "shortened_doc_content": "Guadalupe-Nipomo Dunes is the largest remaining dune system south of San Francisco and the second largest in the U.S. state of California."
+                },
+                {
+                    "doc_title": "Paradmete longicauda",
+                    "original_doc_length": 125,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Paradmete longicauda is a species of sea snail, a marine gastropod mollusk in the family Volutomitridae"
+                },
+                {
+                    "doc_title": "Papo Seco Formation",
+                    "original_doc_length": 1061,
+                    "shortened_doc_length": 110,
+                    "shortened_doc_content": "The Papo Seco Formation is a geological formation in Portugal, whose strata date back to the Early Cretaceous."
+                }
+            ],
+            "mean_original_docs_length": 4333.5,
+            "mean_shortened_docs_length": 113.5
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Aortic dissection",
+                    "original_doc_length": 30332,
+                    "shortened_doc_length": 166,
+                    "shortened_doc_content": "Aortic dissection (AD) occurs when an injury to the innermost layer of the aorta allows blood to flow between the layers of the aortic wall, forcing the layers apart."
+                },
+                {
+                    "doc_title": "Pulmonology",
+                    "original_doc_length": 8895,
+                    "shortened_doc_length": 92,
+                    "shortened_doc_content": "Pulmonology is a medical specialty that deals with diseases involving the respiratory tract."
+                },
+                {
+                    "doc_title": "Lymphoepithelioma-like carcinoma",
+                    "original_doc_length": 988,
+                    "shortened_doc_length": 341,
+                    "shortened_doc_content": "Lymphoepithelioma-like carcinoma (LELC) is a medical term referring to a histological variant of malignant tumor arising from the uncontrolled mitosis of transformed cells originating in epithelial tissue (or in cells that display epithelial characteristics) that bear microscopic resemblance to lymphoepithelioma (nasopharyngeal carcinoma)."
+                },
+                {
+                    "doc_title": "Right atrial enlargement",
+                    "original_doc_length": 714,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Right atrial enlargement (RAE) is a form of cardiomegaly, or heart enlargement."
+                }
+            ],
+            "mean_original_docs_length": 10232.25,
+            "mean_shortened_docs_length": 169.5
+        },
+        "8": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sinadroma",
+                    "original_doc_length": 109,
+                    "shortened_doc_length": 98,
+                    "shortened_doc_content": "Sinadroma sherriffsi is a species of harvestmen in a monotypic genus in the family Sclerosomatidae"
+                },
+                {
+                    "doc_title": "Browneopsis disepala",
+                    "original_doc_length": 276,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Browneopsis disepala is a species of legume in the family Fabaceae."
+                },
+                {
+                    "doc_title": "Osteolathyrism",
+                    "original_doc_length": 2413,
+                    "shortened_doc_length": 201,
+                    "shortened_doc_content": "Osteolathyrism is a collagen cross-linking deficiency brought on by dietary over-reliance on the seeds of \"Lathyrus sativus\" or grass pea, a legume often grown as a famine crop in Asia and East Africa."
+                },
+                {
+                    "doc_title": "Injury",
+                    "original_doc_length": 5117,
+                    "shortened_doc_length": 86,
+                    "shortened_doc_content": "Injury, also known as physical trauma, is damage to the body caused by external force."
+                }
+            ],
+            "mean_original_docs_length": 1978.75,
+            "mean_shortened_docs_length": 113.0
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Aspergilloma",
+                    "original_doc_length": 2998,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "An aspergilloma is a clump of mold which exists in a body cavity such as a paranasal sinus or an organ such as the lung."
+                },
+                {
+                    "doc_title": "Pulmonology",
+                    "original_doc_length": 8895,
+                    "shortened_doc_length": 92,
+                    "shortened_doc_content": "Pulmonology is a medical specialty that deals with diseases involving the respiratory tract."
+                },
+                {
+                    "doc_title": "Tuberculoma",
+                    "original_doc_length": 910,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "A tuberculoma is a clinical manifestation of tuberculosis which conglomerates tubercles into a firm lump, and so can mimic cancer tumors of many types in medical imaging studies."
+                },
+                {
+                    "doc_title": "Burkholderia cepacia complex",
+                    "original_doc_length": 4063,
+                    "shortened_doc_length": 367,
+                    "shortened_doc_content": "Burkholderia cepacia\" complex (BCC), or simply Burkholderia cepacia\", is a group of catalase-producing, lactose-nonfermenting, Gram-negative bacteria composed of at least 20 different species, including \"B.\u00a0cepacia\", \"B.\u00a0multivorans\", \"B.\u00a0cenocepacia\", \"B.\u00a0vietnamiensis\", \"B.\u00a0stabilis\", \"B.\u00a0ambifaria\", \"B.\u00a0dolosa\", \"B.\u00a0anthina\", \"B.\u00a0pyrrocinia\" and \" B.\u00a0ubonensis\"."
+                }
+            ],
+            "mean_original_docs_length": 4216.5,
+            "mean_shortened_docs_length": 189.25
+        },
+        "10": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thrombolysis",
+                    "original_doc_length": 8799,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Thrombolysis, also called fibrinolytic therapy, is the breakdown (lysis) of blood clots formed in blood vessels, using medication."
+                },
+                {
+                    "doc_title": "Coronary catheterization",
+                    "original_doc_length": 15960,
+                    "shortened_doc_length": 152,
+                    "shortened_doc_content": "A coronary catheterization is a minimally invasive procedure to access the coronary circulation and blood filled chambers of the heart using a catheter."
+                },
+                {
+                    "doc_title": "Electrophysiology study",
+                    "original_doc_length": 7345,
+                    "shortened_doc_length": 194,
+                    "shortened_doc_content": "A cardiac electrophysiology study (EP test or EP study) is a minimally invasive procedure using catheters introduced through a vein or artery to record electrical activity from within the heart."
+                },
+                {
+                    "doc_title": "Thrombolysis",
+                    "original_doc_length": 8799,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Thrombolysis, also called fibrinolytic therapy, is the breakdown (lysis) of blood clots formed in blood vessels, using medication."
+                }
+            ],
+            "mean_original_docs_length": 10225.75,
+            "mean_shortened_docs_length": 151.5
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bona Dea",
+                    "original_doc_length": 22737,
+                    "shortened_doc_length": 68,
+                    "shortened_doc_content": "Bona Dea (; 'Good Goddess') was a goddess in ancient Roman religion."
+                },
+                {
+                    "doc_title": "Misoprostol",
+                    "original_doc_length": 13098,
+                    "shortened_doc_length": 218,
+                    "shortened_doc_content": "Misoprostol, sold under the brandname Cytotec among others, is a medication used to prevent and treat stomach ulcers, start labor, cause an abortion, and treat postpartum bleeding due to poor contraction of the uterus."
+                },
+                {
+                    "doc_title": "Elepogon",
+                    "original_doc_length": 140,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Elepogon, abbreviated Elp, is an intergeneric hybrid of orchids (family Orchidaceae) between the genera \"Calopogon\" and \"Eleorchis"
+                },
+                {
+                    "doc_title": "Bras d'Or Lake",
+                    "original_doc_length": 11427,
+                    "shortened_doc_length": 152,
+                    "shortened_doc_content": "Bras d'Or Lake is an inland sea, or large body of partially fresh/salt water in the centre of Cape Breton Island in the province of Nova Scotia, Canada."
+                }
+            ],
+            "mean_original_docs_length": 11850.5,
+            "mean_shortened_docs_length": 142.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Period pains",
+                    "original_doc_length": 138,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Period pains may refer to;\n\nBULLET::::- Dysmenorrhea, the pain associated with menstruation\nBULLET::::- Period Pains (band)"
+                },
+                {
+                    "doc_title": "Tar water",
+                    "original_doc_length": 2782,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Tar-water was a medieval medicine consisting of pine tar and water."
+                },
+                {
+                    "doc_title": "Princeps",
+                    "original_doc_length": 6249,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "Princeps (plural: principes) is a Latin word meaning \"first in time or order; the first, foremost, chief, the most eminent, distinguished, or noble; the first man, first person\"."
+                },
+                {
+                    "doc_title": "Antifolate",
+                    "original_doc_length": 3040,
+                    "shortened_doc_length": 86,
+                    "shortened_doc_content": "Antifolates are a class of antimetabolite medications that antagonise (that is, block)"
+                }
+            ],
+            "mean_original_docs_length": 3052.25,
+            "mean_shortened_docs_length": 113.5
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmocutaneous circulation",
+                    "original_doc_length": 443,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Pulmocutaneous circulation is part of the amphibian circulatory system."
+                },
+                {
+                    "doc_title": "Pulmocutaneous circulation",
+                    "original_doc_length": 443,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Pulmocutaneous circulation is part of the amphibian circulatory system."
+                },
+                {
+                    "doc_title": "Pulmocutaneous circulation",
+                    "original_doc_length": 443,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Pulmocutaneous circulation is part of the amphibian circulatory system."
+                },
+                {
+                    "doc_title": "Patagium",
+                    "original_doc_length": 3614,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "The patagium (plural: patagia) is a membranous structure that assists an animal in gliding or flight."
+                }
+            ],
+            "mean_original_docs_length": 1235.75,
+            "mean_shortened_docs_length": 78.5
+        },
+        "14": {
+            "predicted_answer": "Res",
+            "gold_answer": "D",
+            "is_well_formatted": false,
+            "relevant_docs": [
+                {
+                    "doc_title": "Osteopenia",
+                    "original_doc_length": 8115,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Osteopenia, preferably known as \"low bone mass\" or \"low bone density\", is a condition in which bone mineral density is low."
+                },
+                {
+                    "doc_title": "Heterotopic ossification",
+                    "original_doc_length": 6053,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Heterotopic ossification (HO) is the process by which bone tissue forms outside of the skeleton."
+                },
+                {
+                    "doc_title": "Osteomalacia",
+                    "original_doc_length": 5428,
+                    "shortened_doc_length": 224,
+                    "shortened_doc_content": "Osteomalacia is a disease characterized by the softening of the bones caused by impaired bone metabolism primarily due to inadequate levels of available phosphate, calcium, and vitamin D, or because of resorption of calcium."
+                },
+                {
+                    "doc_title": "Resheph",
+                    "original_doc_length": 5004,
+                    "shortened_doc_length": 214,
+                    "shortened_doc_content": "Resheph (also Reshef and many other variants; Canaanite ; Eblaite \"Ra\u0161ap\", Egyptian \"\") was a deity associated with plague (or a personification of plague), war, and sometimes thunder in ancient Canaanite religion."
+                }
+            ],
+            "mean_original_docs_length": 6150.0,
+            "mean_shortened_docs_length": 164.25
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Reperfusion therapy",
+                    "original_doc_length": 10095,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Reperfusion therapy is a medical treatment to restore blood flow, either through or around, blocked arteries, typically after a heart attack (myocardial infarction (MI))."
+                },
+                {
+                    "doc_title": "Myocardial stunning",
+                    "original_doc_length": 1643,
+                    "shortened_doc_length": 175,
+                    "shortened_doc_content": "In cardiology, stunned myocardium is a state when some section of the myocardium (corresponding to area of a major coronary occlusion) shows a form of contractile abnormality."
+                },
+                {
+                    "doc_title": "Situs solitus",
+                    "original_doc_length": 1700,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Situs solitus is the medical term referring to the normal position of thoracic and abdominal organs."
+                },
+                {
+                    "doc_title": "Reperfusion therapy",
+                    "original_doc_length": 10095,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Reperfusion therapy is a medical treatment to restore blood flow, either through or around, blocked arteries, typically after a heart attack (myocardial infarction (MI))."
+                }
+            ],
+            "mean_original_docs_length": 5883.25,
+            "mean_shortened_docs_length": 153.75
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Decompensation",
+                    "original_doc_length": 1505,
+                    "shortened_doc_length": 159,
+                    "shortened_doc_content": "In medicine, decompensation is the functional deterioration of a structure or system that had been previously working with the help of allostatic compensation."
+                },
+                {
+                    "doc_title": "Bathmotropic",
+                    "original_doc_length": 3920,
+                    "shortened_doc_length": 246,
+                    "shortened_doc_content": "While bathmotropic, as used herein, has been defined as pertaining to modification of the \"excitability\" of the heart, it can also refer to modification of the \"irritability\" of heart muscle, and the two terms are frequently used interchangeably."
+                },
+                {
+                    "doc_title": "Anticoagulant",
+                    "original_doc_length": 24627,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Anticoagulants, commonly known as blood thinners, are chemical substances that prevent or reduce coagulation of blood, prolonging the clotting time."
+                },
+                {
+                    "doc_title": "Digoxin",
+                    "original_doc_length": 12008,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "Digoxin, sold under the brand name Lanoxin among others, is a medication used to treat various heart conditions."
+                }
+            ],
+            "mean_original_docs_length": 10515.0,
+            "mean_shortened_docs_length": 166.25
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Metrosideros stipularis",
+                    "original_doc_length": 666,
+                    "shortened_doc_length": 99,
+                    "shortened_doc_content": "Metrosideros stipularis is a species of the myrtle family commonly known as tep\u00fa, trep\u00fa, or tepual."
+                },
+                {
+                    "doc_title": "Antiscience",
+                    "original_doc_length": 18857,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "Antiscience is a position that rejects science and the scientific method."
+                },
+                {
+                    "doc_title": "Ossicular replacement prosthesis",
+                    "original_doc_length": 684,
+                    "shortened_doc_length": 238,
+                    "shortened_doc_content": "In medicine, an ossicular replacement prosthesis is a device intended to be implanted for the functional reconstruction of segments of the ossicles and facilitates the conduction of sound waves from the tympanic membrane to the inner ear."
+                }
+            ],
+            "mean_original_docs_length": 23097.75,
+            "mean_shortened_docs_length": 127.5
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Medic (disambiguation)",
+                    "original_doc_length": 779,
+                    "shortened_doc_length": 40,
+                    "shortened_doc_content": "Medic is role or occupation in medicine."
+                },
+                {
+                    "doc_title": "Enemy",
+                    "original_doc_length": 8721,
+                    "shortened_doc_length": 102,
+                    "shortened_doc_content": "An enemy or a foe is an individual or a group that is considered as forcefully adverse or threatening."
+                },
+                {
+                    "doc_title": "Sulfanilamide",
+                    "original_doc_length": 2277,
+                    "shortened_doc_length": 75,
+                    "shortened_doc_content": "Sulfanilamide (also spelled sulphanilamide) is a sulfonamide antibacterial."
+                },
+                {
+                    "doc_title": "Auxotrophy",
+                    "original_doc_length": 6847,
+                    "shortened_doc_length": 173,
+                    "shortened_doc_content": "Auxotrophy ( \"to increase\"; \"\u03c4\u03c1\u03bf\u03c6\u03ae\" \"nourishment\") is the inability of an organism to synthesize a particular organic compound required for its growth (as defined by IUPAC)."
+                }
+            ],
+            "mean_original_docs_length": 4656.0,
+            "mean_shortened_docs_length": 97.5
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                }
+            ],
+            "mean_original_docs_length": 1316.0,
+            "mean_shortened_docs_length": 313.0
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Etomoxir",
+                    "original_doc_length": 2407,
+                    "shortened_doc_length": 189,
+                    "shortened_doc_content": "Etomoxir, or 2[6(4-chlorophenoxy)hexyl]oxirane-2-carboxylate, is an irreversible inhibitor of carnitine palmitoyltransferase-1 (CPT-1) on the inner face of the outer mitochondrial membrane."
+                },
+                {
+                    "doc_title": "Striptease",
+                    "original_doc_length": 32012,
+                    "shortened_doc_length": 161,
+                    "shortened_doc_content": "A striptease is an erotic or exotic dance in which the performer gradually undresses, either partly or completely, in a seductive and sexually suggestive manner."
+                },
+                {
+                    "doc_title": "Michel F\u00e9lix Dunal",
+                    "original_doc_length": 1277,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Michel F\u00e9lix Dunal (24 October 1789 in Montpellier \u2013 29 July 1856 in Montpellier) was a French botanist."
+                },
+                {
+                    "doc_title": "Sparteine",
+                    "original_doc_length": 2748,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Sparteine is a class 1a antiarrhythmic agent; a sodium channel blocker."
+                }
+            ],
+            "mean_original_docs_length": 9611.0,
+            "mean_shortened_docs_length": 131.25
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Idoxuridine",
+                    "original_doc_length": 1530,
+                    "shortened_doc_length": 50,
+                    "shortened_doc_content": "Idoxuridine is an anti-herpesvirus antiviral drug."
+                },
+                {
+                    "doc_title": "Idoxuridine",
+                    "original_doc_length": 1530,
+                    "shortened_doc_length": 50,
+                    "shortened_doc_content": "Idoxuridine is an anti-herpesvirus antiviral drug."
+                },
+                {
+                    "doc_title": "Etacrynic acid",
+                    "original_doc_length": 2105,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Etacrynic acid (INN) or ethacrynic acid (USAN), trade name Edecrin, is a loop diuretic used to treat high blood pressure and the swelling caused by diseases like congestive heart failure, liver failure, and kidney failure."
+                },
+                {
+                    "doc_title": "Peritoneovenous shunt",
+                    "original_doc_length": 684,
+                    "shortened_doc_length": 184,
+                    "shortened_doc_content": "A peritoneovenous shunt (also called LeVeen Shunt) is a shunt which drains peritoneal fluid from the peritoneum into veins, usually the internal jugular vein or the superior vena cava."
+                }
+            ],
+            "mean_original_docs_length": 1462.25,
+            "mean_shortened_docs_length": 126.5
+        },
+        "23": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Warfarin",
+                    "original_doc_length": 36161,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "Warfarin, sold under the brand name Coumadin among others, is a medication that is used as an anticoagulant (blood thinner)."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Ticinepomis",
+                    "original_doc_length": 459,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Ticinepomis is an extinct genus of coelacanth lobe-finned fish which lived during the Middle Triassic period in what is now Canton Ticino, Monte San Giorgio, Switzerland."
+                },
+                {
+                    "doc_title": "Atorvastatin",
+                    "original_doc_length": 18874,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "Atorvastatin, sold under the brand name Lipitor among others, is a statin medication used to prevent cardiovascular disease in those at high risk and treat abnormal lipid levels."
+                }
+            ],
+            "mean_original_docs_length": 17729.25,
+            "mean_shortened_docs_length": 159.0
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hormonal contraception",
+                    "original_doc_length": 23202,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Hormonal contraception refers to birth control methods that act on the endocrine system."
+                },
+                {
+                    "doc_title": "Cervicitis",
+                    "original_doc_length": 473,
+                    "shortened_doc_length": 49,
+                    "shortened_doc_content": "Cervicitis is inflammation of the uterine cervix."
+                },
+                {
+                    "doc_title": "Estrogen",
+                    "original_doc_length": 21937,
+                    "shortened_doc_length": 58,
+                    "shortened_doc_content": "Estrogen, or oestrogen, is the primary female sex hormone."
+                },
+                {
+                    "doc_title": "Oogenesis",
+                    "original_doc_length": 8791,
+                    "shortened_doc_length": 139,
+                    "shortened_doc_content": "Oogenesis, ovogenesis, or o\u00f6genesis is the differentiation of the ovum (egg cell) into a cell competent to further develop when fertilized."
+                }
+            ],
+            "mean_original_docs_length": 13600.75,
+            "mean_shortened_docs_length": 83.5
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Prenatal sex discernment",
+                    "original_doc_length": 2725,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Prenatal sex discernment is the prenatal testing for discerning the sex of a fetus before birth."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                }
+            ],
+            "mean_original_docs_length": 12265.75,
+            "mean_shortened_docs_length": 83.25
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cefalexin",
+                    "original_doc_length": 5606,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Cefalexin, also spelled cephalexin, is an antibiotic that can treat a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Paromomycin",
+                    "original_doc_length": 5392,
+                    "shortened_doc_length": 150,
+                    "shortened_doc_content": "Paromomycin is an antimicrobial used to treat a number of parasitic infections including amebiasis, giardiasis, leishmaniasis, and tapeworm infection."
+                },
+                {
+                    "doc_title": "Levofloxacin",
+                    "original_doc_length": 20760,
+                    "shortened_doc_length": 81,
+                    "shortened_doc_content": "Levofloxacin, sold under the trade names Levaquin among others, is an antibiotic."
+                },
+                {
+                    "doc_title": "Fosfomycin",
+                    "original_doc_length": 5142,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Fosfomycin, sold under the brand name Monurol among others, is an antibiotic primarily used to treat bladder infections."
+                }
+            ],
+            "mean_original_docs_length": 9225.0,
+            "mean_shortened_docs_length": 113.0
+        },
+        "27": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Po Valley",
+                    "original_doc_length": 19786,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "The Po Valley, Po Plain, Plain of the Po, or Padan Plain ( , or \"Val Padana\") is a major geographical feature of Northern Italy."
+                },
+                {
+                    "doc_title": "Pessary",
+                    "original_doc_length": 2917,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "A pessary is a prosthetic device inserted into the vagina to reduce the protrusion of pelvic structures into the vagina."
+                },
+                {
+                    "doc_title": "Prude",
+                    "original_doc_length": 2354,
+                    "shortened_doc_length": 218,
+                    "shortened_doc_content": "A prude (Old French \"prude\" meaning honourable woman) is a person who is described as (or would describe themselves as) being concerned with decorum or propriety, significantly in excess of normal prevailing standards."
+                },
+                {
+                    "doc_title": "Suspense",
+                    "original_doc_length": 4249,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Suspense is a state of mental uncertainty, anxiety, of being undecided, or of being doubtful."
+                }
+            ],
+            "mean_original_docs_length": 7326.5,
+            "mean_shortened_docs_length": 139.75
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary insufficiency",
+                    "original_doc_length": 2306,
+                    "shortened_doc_length": 217,
+                    "shortened_doc_content": "Pulmonary insufficiency (or incompetence, or regurgitation) is a condition in which the pulmonary valve is incompetent and allows backflow from the pulmonary artery to the right ventricle of the heart during diastole."
+                },
+                {
+                    "doc_title": "Regurgitation (circulation)",
+                    "original_doc_length": 2247,
+                    "shortened_doc_length": 141,
+                    "shortened_doc_content": "Regurgitation is blood flow in the opposite direction from normal, as the backward flowing of blood into the heart or between heart chambers."
+                },
+                {
+                    "doc_title": "Transthoracic echocardiogram",
+                    "original_doc_length": 18813,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "A transthoracic echocardiogram (TTE) is the most common type of echocardiogram, which is a still or moving image of the internal parts of the heart using ultrasound."
+                },
+                {
+                    "doc_title": "RVT",
+                    "original_doc_length": 318,
+                    "shortened_doc_length": 117,
+                    "shortened_doc_content": "RVT may refer to:\n\nBULLET::::- Regionalized variable theory, a geostatistical method used for interpolation in space."
+                }
+            ],
+            "mean_original_docs_length": 5921.0,
+            "mean_shortened_docs_length": 160.0
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trichomoniasis",
+                    "original_doc_length": 7587,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Trichomoniasis (trich) is an infectious disease caused by the parasite \"Trichomonas vaginalis\"."
+                },
+                {
+                    "doc_title": "Chlamydia (disambiguation)",
+                    "original_doc_length": 1139,
+                    "shortened_doc_length": 94,
+                    "shortened_doc_content": "Chlamydia is a sexually transmitted infection caused by the bacterium \"Chlamydia trachomatis\"."
+                },
+                {
+                    "doc_title": "Neisseriaceae",
+                    "original_doc_length": 596,
+                    "shortened_doc_length": 82,
+                    "shortened_doc_content": "The Neisseriaceae are a family of Proteobacteria, within the \"Neisseriales\" order."
+                },
+                {
+                    "doc_title": "Candida albicans",
+                    "original_doc_length": 27574,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Candida albicans is an opportunistic pathogenic yeast that is a common member of the human gut flora."
+                }
+            ],
+            "mean_original_docs_length": 9224.0,
+            "mean_shortened_docs_length": 93.0
+        },
+        "30": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Liver transplantation",
+                    "original_doc_length": 23452,
+                    "shortened_doc_length": 143,
+                    "shortened_doc_content": "Liver transplantation or hepatic transplantation is the replacement of a diseased liver with the healthy liver from another person (allograft)."
+                },
+                {
+                    "doc_title": "Peliosis hepatis",
+                    "original_doc_length": 3328,
+                    "shortened_doc_length": 143,
+                    "shortened_doc_content": "Peliosis hepatis is an uncommon vascular condition characterised by multiple, randomly distributed, blood-filled cavities throughout the liver."
+                },
+                {
+                    "doc_title": "Peliosis hepatis",
+                    "original_doc_length": 3328,
+                    "shortened_doc_length": 143,
+                    "shortened_doc_content": "Peliosis hepatis is an uncommon vascular condition characterised by multiple, randomly distributed, blood-filled cavities throughout the liver."
+                },
+                {
+                    "doc_title": "Liver abscess",
+                    "original_doc_length": 1716,
+                    "shortened_doc_length": 59,
+                    "shortened_doc_content": "A liver abscess is a mass filled with pus inside the liver."
+                }
+            ],
+            "mean_original_docs_length": 7956.0,
+            "mean_shortened_docs_length": 122.0
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Coriobacterium",
+                    "original_doc_length": 353,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Coriobacterium is a genus of Actinobacteria, in the family Coriobacteriaceae."
+                },
+                {
+                    "doc_title": "Proctocolitis",
+                    "original_doc_length": 581,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "Proctocolitis is a general term for inflammation of the rectum and colon."
+                },
+                {
+                    "doc_title": "Fresco",
+                    "original_doc_length": 20300,
+                    "shortened_doc_length": 117,
+                    "shortened_doc_content": "Fresco (plural frescos or frescoes) is a technique of mural painting executed upon freshly laid, or wet lime plaster."
+                },
+                {
+                    "doc_title": "Secrecy",
+                    "original_doc_length": 9268,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Secrecy is the practice of hiding information from certain individuals or groups who do not have the \"need to know\", perhaps while sharing it with other individuals."
+                }
+            ],
+            "mean_original_docs_length": 7625.5,
+            "mean_shortened_docs_length": 108.0
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Timeline of antibiotics",
+                    "original_doc_length": 5534,
+                    "shortened_doc_length": 63,
+                    "shortened_doc_content": "This is the timeline of antimicrobial (anti-infective) therapy."
+                },
+                {
+                    "doc_title": "Cupio dissolvi",
+                    "original_doc_length": 3640,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "Cupio dissolvi is a Latin locution used in the Vulgate translation of the Paul's epistle to Philippians ."
+                },
+                {
+                    "doc_title": "Buyer's remorse",
+                    "original_doc_length": 10743,
+                    "shortened_doc_length": 68,
+                    "shortened_doc_content": "Buyer's remorse is the sense of regret after having made a purchase."
+                },
+                {
+                    "doc_title": "A Luneta M\u00e1gica",
+                    "original_doc_length": 710,
+                    "shortened_doc_length": 97,
+                    "shortened_doc_content": "A Luneta M\u00e1gica () is a 1869 novel written by Brazilian Romantic writer Joaquim Manuel de Macedo."
+                }
+            ],
+            "mean_original_docs_length": 5156.75,
+            "mean_shortened_docs_length": 83.25
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Haemophilus",
+                    "original_doc_length": 2235,
+                    "shortened_doc_length": 116,
+                    "shortened_doc_content": "Haemophilus is a genus of Gram-negative, pleomorphic, coccobacilli bacteria belonging to the family Pasteurellaceae."
+                },
+                {
+                    "doc_title": "Streptococcus pneumoniae",
+                    "original_doc_length": 9098,
+                    "shortened_doc_length": 212,
+                    "shortened_doc_content": "Streptococcus pneumoniae, or pneumococcus, is a Gram-positive, alpha-hemolytic (under aerobic conditions) or beta-hemolytic (under anaerobic conditions), facultative anaerobic member of the genus \"Streptococcus\"."
+                },
+                {
+                    "doc_title": "Oxacillin",
+                    "original_doc_length": 5388,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Oxacillin (trade name Bactocill) is a narrow-spectrum beta-lactam antibiotic of the penicillin class developed by Beecham."
+                },
+                {
+                    "doc_title": "Macrolide",
+                    "original_doc_length": 7683,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "The macrolides are a class of natural products that consist of a large macrocyclic lactone ring to which one or more deoxy sugars, usually cladinose and desosamine, may be attached."
+                }
+            ],
+            "mean_original_docs_length": 6101.0,
+            "mean_shortened_docs_length": 157.75
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory disease",
+                    "original_doc_length": 9344,
+                    "shortened_doc_length": 159,
+                    "shortened_doc_content": "Respiratory diseases, or lung diseases, are pathological conditions affecting the organs and tissues that make gas exchange difficult in air-breathing animals."
+                },
+                {
+                    "doc_title": "Tracheobronchomegaly",
+                    "original_doc_length": 352,
+                    "shortened_doc_length": 137,
+                    "shortened_doc_content": "Tracheobronchomegaly is a very rare congenital disorder of the lung primarily characterized by an abnormal widening of the upper airways."
+                },
+                {
+                    "doc_title": "Tuberculoma",
+                    "original_doc_length": 910,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "A tuberculoma is a clinical manifestation of tuberculosis which conglomerates tubercles into a firm lump, and so can mimic cancer tumors of many types in medical imaging studies."
+                },
+                {
+                    "doc_title": "AIDS (disambiguation)",
+                    "original_doc_length": 854,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "HIV/AIDS is a spectrum of conditions caused by infection with the human immunodeficiency virus (HIV)."
+                }
+            ],
+            "mean_original_docs_length": 2865.0,
+            "mean_shortened_docs_length": 143.75
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Paradmete longicauda",
+                    "original_doc_length": 125,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Paradmete longicauda is a species of sea snail, a marine gastropod mollusk in the family Volutomitridae"
+                },
+                {
+                    "doc_title": "Papo Seco Formation",
+                    "original_doc_length": 1061,
+                    "shortened_doc_length": 110,
+                    "shortened_doc_content": "The Papo Seco Formation is a geological formation in Portugal, whose strata date back to the Early Cretaceous."
+                },
+                {
+                    "doc_title": "Symphysiotomy",
+                    "original_doc_length": 10131,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Symphysiotomy is a surgical procedure in which the cartilage of the pubic symphysis is divided to widen the pelvis allowing childbirth when there is a mechanical problem."
+                },
+                {
+                    "doc_title": "Fatty acid synthase",
+                    "original_doc_length": 6622,
+                    "shortened_doc_length": 84,
+                    "shortened_doc_content": "Fatty acid synthase (FAS) is an enzyme that in humans is encoded by the \"FASN\" gene."
+                }
+            ],
+            "mean_original_docs_length": 4484.75,
+            "mean_shortened_docs_length": 116.75
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Longevity",
+                    "original_doc_length": 17726,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "The word \"longevity\" is sometimes used as a synonym for \"life expectancy\" in demography."
+                },
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence."
+                },
+                {
+                    "doc_title": "Propagule",
+                    "original_doc_length": 1318,
+                    "shortened_doc_length": 140,
+                    "shortened_doc_content": "In biology, a propagule is any material that functions in propagating an organism to the next stage in its life cycle, such as by dispersal."
+                },
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence."
+                }
+            ],
+            "mean_original_docs_length": 12876.5,
+            "mean_shortened_docs_length": 139.5
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Gravidity and parity",
+                    "original_doc_length": 6698,
+                    "shortened_doc_length": 185,
+                    "shortened_doc_content": "In biology and human medicine, gravidity and parity are the number of times someone is or has been pregnant (gravidity) and carried the pregnancies to a viable gestational age (parity)."
+                },
+                {
+                    "doc_title": "Imipraminoxide",
+                    "original_doc_length": 1001,
+                    "shortened_doc_length": 183,
+                    "shortened_doc_content": "Imipraminoxide (brand names Imiprex, Elepsin), or imipramine \"N\"-oxide, is a tricyclic antidepressant (TCA) that was introduced in Europe in the 1960s for the treatment of depression."
+                },
+                {
+                    "doc_title": "Pentoxyverine",
+                    "original_doc_length": 4011,
+                    "shortened_doc_length": 144,
+                    "shortened_doc_content": "Pentoxyverine (rINN) or carbetapentane is an antitussive (cough suppressant) commonly used for cough associated with illnesses like common cold."
+                },
+                {
+                    "doc_title": "Religious disaffiliation",
+                    "original_doc_length": 6302,
+                    "shortened_doc_length": 90,
+                    "shortened_doc_content": "Religious disaffiliation is the act of leaving a faith, or a religious group or community."
+                }
+            ],
+            "mean_original_docs_length": 4503.0,
+            "mean_shortened_docs_length": 150.5
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Infanticide",
+                    "original_doc_length": 56123,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Infanticide (or infant homicide) is the intentional killing of infants."
+                },
+                {
+                    "doc_title": "Infanticide",
+                    "original_doc_length": 56123,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Infanticide (or infant homicide) is the intentional killing of infants."
+                },
+                {
+                    "doc_title": "Infanticide",
+                    "original_doc_length": 56123,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Infanticide (or infant homicide) is the intentional killing of infants."
+                },
+                {
+                    "doc_title": "Vesperus luridus",
+                    "original_doc_length": 1603,
+                    "shortened_doc_length": 194,
+                    "shortened_doc_content": "Vesperus luridus is a species of beetle in the Vesperidae family\n\n\"Vesperus luridus\" can reach a body length (from front to elytral apex) of about in males, while females reach a size of about ."
+                }
+            ],
+            "mean_original_docs_length": 42493.0,
+            "mean_shortened_docs_length": 101.75
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rifapentine",
+                    "original_doc_length": 2910,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "Rifapentine (RPT), sold under the brand name Priftin, is an antibiotic used in the treatment of tuberculosis."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                }
+            ],
+            "mean_original_docs_length": 54865.5,
+            "mean_shortened_docs_length": 102.25
+        },
+        "41": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nutricia North America",
+                    "original_doc_length": 1508,
+                    "shortened_doc_length": 52,
+                    "shortened_doc_content": "Nutricia is a specialized medical nutrition company."
+                },
+                {
+                    "doc_title": "Hormone",
+                    "original_doc_length": 19463,
+                    "shortened_doc_length": 264,
+                    "shortened_doc_content": "A hormone (from the Greek participle , \"setting in motion\") is any member of a class of signaling molecules, produced by glands in multicellular organisms, that are transported by the circulatory system to target distant organs to regulate physiology and behavior."
+                },
+                {
+                    "doc_title": "Religion in Cuba",
+                    "original_doc_length": 20149,
+                    "shortened_doc_length": 160,
+                    "shortened_doc_content": "Cuba's prevailing religion is Christianity, primarily Roman Catholicism, although in some instances it is profoundly modified and influenced through syncretism."
+                },
+                {
+                    "doc_title": "Geneticist",
+                    "original_doc_length": 2232,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "A geneticist is a biologist who studies genetics, the science of genes, heredity, and variation of organisms."
+                }
+            ],
+            "mean_original_docs_length": 10838.0,
+            "mean_shortened_docs_length": 146.25
+        },
+        "42": {
+            "predicted_answer": "B",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Parthenope (fungus)",
+                    "original_doc_length": 231,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Parthenope is a genus of fungi in the Helotiales order."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                },
+                {
+                    "doc_title": "Systole",
+                    "original_doc_length": 14937,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "The systole is the part of the cardiac cycle during which some chambers of the heart muscle contract after refilling with blood."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                }
+            ],
+            "mean_original_docs_length": 11515.0,
+            "mean_shortened_docs_length": 85.25
+        },
+        "43": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Colorectal surgery",
+                    "original_doc_length": 2972,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Colorectal surgery is a field in medicine dealing with disorders of the rectum, anus, and colon."
+                },
+                {
+                    "doc_title": "Hospital de Base",
+                    "original_doc_length": 1032,
+                    "shortened_doc_length": 113,
+                    "shortened_doc_content": "The Base Hospital of the Federal District () is a hospital in Bras\u00edlia, and is part of the Unified Health System."
+                },
+                {
+                    "doc_title": "Diclofenac",
+                    "original_doc_length": 19005,
+                    "shortened_doc_length": 168,
+                    "shortened_doc_content": "Diclofenac, sold under the brand name Voltaren among others, is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain and inflammatory diseases such as gout."
+                },
+                {
+                    "doc_title": "Relugolix",
+                    "original_doc_length": 5632,
+                    "shortened_doc_length": 183,
+                    "shortened_doc_content": "Relugolix, sold under the brand name Relumina, is a gonadotropin-releasing hormone antagonist (GnRH antagonist) medication which is used in the treatment of uterine fibroids in Japan."
+                }
+            ],
+            "mean_original_docs_length": 7160.25,
+            "mean_shortened_docs_length": 140.0
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Leptospira",
+                    "original_doc_length": 2570,
+                    "shortened_doc_length": 167,
+                    "shortened_doc_content": "Leptospira (Greek \"leptos\", \"fine, thin\" and Latin \"spira\", \"coil\") is a genus of spirochaete bacteria, including a small number of pathogenic and saprophytic species."
+                },
+                {
+                    "doc_title": "Tedizolid",
+                    "original_doc_length": 2658,
+                    "shortened_doc_length": 90,
+                    "shortened_doc_content": "Tedizolid (formerly torezolid, trade name Sivextro), is an oxazolidinone-class antibiotic."
+                },
+                {
+                    "doc_title": "Quinolone antibiotic",
+                    "original_doc_length": 21264,
+                    "shortened_doc_length": 159,
+                    "shortened_doc_content": "A quinolone antibiotic is a member of a large group of broad-spectrum bacteriocidals that share a bicyclic core structure related to the substance 4-quinolone."
+                },
+                {
+                    "doc_title": "Proctocolitis",
+                    "original_doc_length": 581,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "Proctocolitis is a general term for inflammation of the rectum and colon."
+                }
+            ],
+            "mean_original_docs_length": 6768.25,
+            "mean_shortened_docs_length": 122.25
+        },
+        "45": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thienopyridine",
+                    "original_doc_length": 497,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Thienopyridines are a class of selective, irreversible ADP receptor/P2Y12 inhibitors used for their anti-platelet activity."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Retapamulin",
+                    "original_doc_length": 857,
+                    "shortened_doc_length": 65,
+                    "shortened_doc_content": "Retapamulin is a topical antibiotic developed by GlaxoSmithKline."
+                },
+                {
+                    "doc_title": "Heparin",
+                    "original_doc_length": 12557,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Heparin, also known as unfractionated heparin (UFH), is a medication and naturally occurring glycosaminoglycan."
+                }
+            ],
+            "mean_original_docs_length": 7333.5,
+            "mean_shortened_docs_length": 115.75
+        },
+        "47": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Spinal epidural hematoma",
+                    "original_doc_length": 950,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Spinal epidural hematoma is bleeding into the epidural space in the spine."
+                },
+                {
+                    "doc_title": "Subdural hematoma",
+                    "original_doc_length": 11326,
+                    "shortened_doc_length": 240,
+                    "shortened_doc_content": "A subdural hematoma (SDH) is a type of bleeding in which a collection of blood\u2014usually associated with a traumatic brain injury\u2014gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain."
+                },
+                {
+                    "doc_title": "Gynecologic hemorrhage",
+                    "original_doc_length": 4142,
+                    "shortened_doc_length": 87,
+                    "shortened_doc_content": "Gynecologic hemorrhage represents excessive bleeding of the female reproductive system."
+                },
+                {
+                    "doc_title": "Scarlet-rumped cacique",
+                    "original_doc_length": 4687,
+                    "shortened_doc_length": 113,
+                    "shortened_doc_content": "The scarlet-rumped cacique (\"Cacicus uropygialis\") is a passerine bird species in the New World family Icteridae."
+                }
+            ],
+            "mean_original_docs_length": 5276.25,
+            "mean_shortened_docs_length": 128.5
+        },
+        "48": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Losartan",
+                    "original_doc_length": 8458,
+                    "shortened_doc_length": 114,
+                    "shortened_doc_content": "Losartan, sold under the trade name Cozaar among others, is a medication mainly used to treat high blood pressure."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Metoprolol",
+                    "original_doc_length": 10310,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Metoprolol, marketed under the tradename Lopressor among others, is a medication of the selective \u03b2 receptor blocker type."
+                },
+                {
+                    "doc_title": "Ornidazole",
+                    "original_doc_length": 562,
+                    "shortened_doc_length": 63,
+                    "shortened_doc_content": "Ornidazole is an antibiotic used to treat protozoan infections."
+                }
+            ],
+            "mean_original_docs_length": 8688.25,
+            "mean_shortened_docs_length": 115.75
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "De Medicina",
+                    "original_doc_length": 2528,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "De Medicina is a 1st-century medical treatise by Aulus Cornelius Celsus, a Roman encyclopedist and possibly (but not likely) a practicing physician."
+                },
+                {
+                    "doc_title": "Polypoid melanoma",
+                    "original_doc_length": 1035,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Polypoid melanoma is a rare cutaneous condition, a virulent variant of nodular melanoma."
+                },
+                {
+                    "doc_title": "Biopsy",
+                    "original_doc_length": 9390,
+                    "shortened_doc_length": 235,
+                    "shortened_doc_content": "A biopsy is a medical test commonly performed by a surgeon, interventional radiologist, or an interventional cardiologist involving extraction of sample cells or tissues for examination to determine the presence or extent of a disease."
+                },
+                {
+                    "doc_title": "Dermatoscopy",
+                    "original_doc_length": 6147,
+                    "shortened_doc_length": 68,
+                    "shortened_doc_content": "Dermatoscopy is the examination of skin lesions with a dermatoscope."
+                }
+            ],
+            "mean_original_docs_length": 4775.0,
+            "mean_shortened_docs_length": 134.75
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dysgenesis (embryology)",
+                    "original_doc_length": 838,
+                    "shortened_doc_length": 84,
+                    "shortened_doc_content": "Dysgenesis is an abnormal organ development during embryonic growth and development."
+                },
+                {
+                    "doc_title": "-bacter",
+                    "original_doc_length": 1612,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "The suffix -bacter is in microbiology for many genera and is intended to mean \"bacteria\"."
+                },
+                {
+                    "doc_title": "-bacter",
+                    "original_doc_length": 1612,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "The suffix -bacter is in microbiology for many genera and is intended to mean \"bacteria\"."
+                },
+                {
+                    "doc_title": "Epidemiology",
+                    "original_doc_length": 36313,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Epidemiology is the study and analysis of the distribution (who, when, and where), patterns and determinants of health and disease conditions in defined populations."
+                }
+            ],
+            "mean_original_docs_length": 10093.75,
+            "mean_shortened_docs_length": 106.75
+        },
+        "51": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lymphovascular invasion",
+                    "original_doc_length": 1727,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Lymphovascular invasion (LVI or lymphovascular space invasion) is the invasion of a cancer to the blood vessels and/or lymphatics."
+                },
+                {
+                    "doc_title": "Lymphovascular invasion",
+                    "original_doc_length": 1727,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Lymphovascular invasion (LVI or lymphovascular space invasion) is the invasion of a cancer to the blood vessels and/or lymphatics."
+                },
+                {
+                    "doc_title": "Pancreatic cancer",
+                    "original_doc_length": 46319,
+                    "shortened_doc_length": 140,
+                    "shortened_doc_content": "Pancreatic cancer arises when cells in the pancreas, a glandular organ behind the stomach, begin to multiply out of control and form a mass."
+                },
+                {
+                    "doc_title": "Pancreatectomy",
+                    "original_doc_length": 2940,
+                    "shortened_doc_length": 85,
+                    "shortened_doc_content": "In medicine, a pancreatectomy is the surgical removal of all or part of the pancreas."
+                }
+            ],
+            "mean_original_docs_length": 13178.25,
+            "mean_shortened_docs_length": 121.25
+        },
+        "53": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pocito Department",
+                    "original_doc_length": 6359,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Pocito is a department in San Juan Province, Argentina."
+                },
+                {
+                    "doc_title": "Felix Aderca",
+                    "original_doc_length": 81174,
+                    "shortened_doc_length": 33,
+                    "shortened_doc_content": "Felix Aderca or F. Aderca (; born"
+                },
+                {
+                    "doc_title": "POS",
+                    "original_doc_length": 2084,
+                    "shortened_doc_length": 2079,
+                    "shortened_doc_content": "POS, Pos or PoS may refer to:\n\nBULLET::::- Part of speech, the role that a word or phrase plays in a sentence\nBULLET::::- Sayula Popoluca (ISO 639-3), an indigenous language spoken in Veracruz, Mexico\nBULLET::::- Poverty of the stimulus, a linguistic term used in language acquisition and development\nBULLET::::- Piece of shit, a phrase usually considered vulgar and profane in Modern English\n\nBULLET::::- P.O.S (rapper) (born 1981), or Stefon Alexander, American hip hop artist\nBULLET::::- Pain of Salvation, Swedish progressive metal band\nBULLET::::- Posdnuos (born 1969), or Kelvin Mercer, New York hip-hop artist\n\nBULLET::::- Port of Spain, Trinidad and Tobago\nBULLET::::- Piarco International Airport (IATA code), Piarco, Trinidad and Tobago\nBULLET::::- Pomona (Amtrak station) (Amtrak station code), California, US\n\nBULLET::::- Polycystic ovary syndrome, a disease of the ovaries\nBULLET::::- Probability of success, in statistics\nBULLET::::- Product of sums, a canonical form in Boolean algebra\n\nBULLET::::- P/OS, operating system of DEC Professional PCs from Digital Equipment Corporation\nBULLET::::- Packet over SONET/SDH, a communications protocol for transferring packets over fiber networks\nBULLET::::- PERQ Operating System, operating system for PERQ workstations\nBULLET::::- Proof-of-stake, a cryptocurrency blockchain distributed consensus method\n\nBULLET::::- Post Office Sorting Van, a type of rail vehicle used in a Travelling Post Office train\nBULLET::::- SNCF TGV POS, a French high-speed train\n\nBULLET::::- Point of sale, location where payment is accepted\nBULLET::::- Point of service plan, a type of managed care health insurance plan in the US\nBULLET::::- Phi Omega Sigma (disambiguation), a Greek name for any of five different student organizations\nBULLET::::- Polytechnic Secondary School (\"Polytechnische Oberschule\"), the 10-year general educational system in East Germany\nBULLET::::- Priory of Sion, a fictitious secret society\nBULLET::::- Public open space, a planning term for an outdoor public forum\n\nBULLET::::- Post Office Square (disambiguation)"
+                },
+                {
+                    "doc_title": "Ozophore",
+                    "original_doc_length": 254,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "An ozophore is an elevated cone present in the harvestman (\"daddy long-legs\") suborder Cyphophthalmi."
+                }
+            ],
+            "mean_original_docs_length": 22467.75,
+            "mean_shortened_docs_length": 567.0
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs."
+                },
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs."
+                },
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs."
+                },
+                {
+                    "doc_title": "Risk factors for tuberculosis",
+                    "original_doc_length": 6871,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "There are a number risk factors for tuberculosis infection; worldwide the most important of these is HIV."
+                }
+            ],
+            "mean_original_docs_length": 3056.5,
+            "mean_shortened_docs_length": 101.25
+        },
+        "55": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Period pains",
+                    "original_doc_length": 138,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Period pains may refer to;\n\nBULLET::::- Dysmenorrhea, the pain associated with menstruation\nBULLET::::- Period Pains (band)"
+                },
+                {
+                    "doc_title": "Paradmete longicauda",
+                    "original_doc_length": 125,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Paradmete longicauda is a species of sea snail, a marine gastropod mollusk in the family Volutomitridae"
+                },
+                {
+                    "doc_title": "Paradmete breidensis",
+                    "original_doc_length": 125,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Paradmete breidensis is a species of sea snail, a marine gastropod mollusk in the family Volutomitridae"
+                },
+                {
+                    "doc_title": "Lycus foliaceus",
+                    "original_doc_length": 276,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Lycus foliaceus is a species of beetle belonging to the Lycidae family."
+                }
+            ],
+            "mean_original_docs_length": 166.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ileitis",
+                    "original_doc_length": 210,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Ileitis is an inflammation of the ileum, a portion of the small intestine."
+                },
+                {
+                    "doc_title": "Histopathology of colorectal adenocarcinoma",
+                    "original_doc_length": 5340,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "The histopathology of colorectal cancer of the adenocarcinoma type involves analysis of tissue taken from a biopsy or surgery."
+                },
+                {
+                    "doc_title": "Volvulus",
+                    "original_doc_length": 8044,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "A volvulus is when a loop of intestine twists around itself and the mesentery that supports it, resulting in a bowel obstruction."
+                },
+                {
+                    "doc_title": "Neonatal bowel obstruction",
+                    "original_doc_length": 3791,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "Neonatal bowel obstruction (NBO) or neonatal intestinal obstruction is the most common surgical emergency in the neonatal period."
+                }
+            ],
+            "mean_original_docs_length": 4346.25,
+            "mean_shortened_docs_length": 114.5
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bivalirudin",
+                    "original_doc_length": 13543,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "Bivalirudin (Angiomax or Angiox, manufactured by The Medicines Company) is a direct thrombin inhibitor (DTI)."
+                },
+                {
+                    "doc_title": "Intravaginal administration",
+                    "original_doc_length": 915,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Intravaginal administration is a route of administration where the substance is applied inside the vagina."
+                },
+                {
+                    "doc_title": "Milbemycin oxime",
+                    "original_doc_length": 1307,
+                    "shortened_doc_length": 153,
+                    "shortened_doc_content": "Milbemycin oxime (trade name Interceptor, marketed by Elanco) is a veterinary drug from the group of milbemycins, used as a broad spectrum antiparasitic."
+                },
+                {
+                    "doc_title": "Amiodarone",
+                    "original_doc_length": 19390,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Amiodarone is an antiarrhythmic medication used to treat and prevent a number of types of irregular heartbeats."
+                }
+            ],
+            "mean_original_docs_length": 8788.75,
+            "mean_shortened_docs_length": 119.75
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hip",
+                    "original_doc_length": 15450,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "In vertebrate anatomy, hip (or \"coxa\" in medical terminology) refers to either an anatomical region or a joint."
+                },
+                {
+                    "doc_title": "Glycolysis",
+                    "original_doc_length": 35993,
+                    "shortened_doc_length": 191,
+                    "shortened_doc_content": "Glycolysis (from \"glycose\", an older term for glucose + \"-lysis\" degradation) is the metabolic pathway that converts glucose CHO, into pyruvate, CHCOCOO (pyruvic acid), and a hydrogen ion, H."
+                },
+                {
+                    "doc_title": "Pericardial effusion",
+                    "original_doc_length": 3422,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Pericardial effusion (\"fluid around the heart\") is an abnormal accumulation of fluid in the pericardial cavity."
+                },
+                {
+                    "doc_title": "Pulmocutaneous circulation",
+                    "original_doc_length": 443,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Pulmocutaneous circulation is part of the amphibian circulatory system."
+                }
+            ],
+            "mean_original_docs_length": 13827.0,
+            "mean_shortened_docs_length": 121.0
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cupio dissolvi",
+                    "original_doc_length": 3640,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "Cupio dissolvi is a Latin locution used in the Vulgate translation of the Paul's epistle to Philippians ."
+                },
+                {
+                    "doc_title": "Dengue fever outbreaks",
+                    "original_doc_length": 13036,
+                    "shortened_doc_length": 133,
+                    "shortened_doc_content": "As of 2010 dengue fever is believed to infect 50 to 100\u00a0million people worldwide a year with 1/2 million life-threatening infections."
+                },
+                {
+                    "doc_title": "List of medical abbreviations",
+                    "original_doc_length": 3631,
+                    "shortened_doc_length": 51,
+                    "shortened_doc_content": "Abbreviations are used very frequently in medicine."
+                },
+                {
+                    "doc_title": "Lisbon massacre",
+                    "original_doc_length": 5175,
+                    "shortened_doc_length": 376,
+                    "shortened_doc_content": "The Lisbon massacre, alternatively known as the Lisbon pogrom or the 1506 Easter Slaughter was an incident in April, 1506, in Lisbon, Portugal in which a crowd of Catholics, as well as foreign sailors who were anchored in the Tagus, persecuted, tortured, killed, and burnt at the stake hundreds of people who were accused of being Jews and, thus, guilty of deicide and heresy."
+                }
+            ],
+            "mean_original_docs_length": 6370.5,
+            "mean_shortened_docs_length": 166.25
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "RF (disambiguation)",
+                    "original_doc_length": 1174,
+                    "shortened_doc_length": 42,
+                    "shortened_doc_content": "RF is an abbreviation for radio frequency."
+                },
+                {
+                    "doc_title": "Triangular fibrocartilage",
+                    "original_doc_length": 8886,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "The Triangular fibrocartilage complex (TFCC) is formed by the triangular fibrocartilage discus (TFC), the radioulnar ligaments (RULs) and the ulnocarpal ligaments (UCLs)."
+                },
+                {
+                    "doc_title": "Radiation therapy",
+                    "original_doc_length": 43884,
+                    "shortened_doc_length": 229,
+                    "shortened_doc_content": "Radiation therapy or radiotherapy, often abbreviated RT, RTx, or XRT, is a therapy using ionizing radiation, generally as part of cancer treatment to control or kill malignant cells and normally delivered by a linear accelerator."
+                },
+                {
+                    "doc_title": "Triangular fibrocartilage",
+                    "original_doc_length": 8886,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "The Triangular fibrocartilage complex (TFCC) is formed by the triangular fibrocartilage discus (TFC), the radioulnar ligaments (RULs) and the ulnocarpal ligaments (UCLs)."
+                }
+            ],
+            "mean_original_docs_length": 15707.5,
+            "mean_shortened_docs_length": 152.75
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obesogen",
+                    "original_doc_length": 24739,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "Obesogens are foreign chemical compounds that disrupt normal development and balance of lipid metabolism, which in some cases, can lead to obesity."
+                },
+                {
+                    "doc_title": "Sobralia",
+                    "original_doc_length": 7663,
+                    "shortened_doc_length": 75,
+                    "shortened_doc_content": "Sobralia is a genus of orchids native to Mexico, Central and South America."
+                },
+                {
+                    "doc_title": "Obesogen",
+                    "original_doc_length": 24739,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "Obesogens are foreign chemical compounds that disrupt normal development and balance of lipid metabolism, which in some cases, can lead to obesity."
+                },
+                {
+                    "doc_title": "Risoba rothei",
+                    "original_doc_length": 110,
+                    "shortened_doc_length": 57,
+                    "shortened_doc_content": "Risoba rothei is a species of moth of the family Nolidae."
+                }
+            ],
+            "mean_original_docs_length": 14312.75,
+            "mean_shortened_docs_length": 106.5
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ataraxia (disambiguation)",
+                    "original_doc_length": 844,
+                    "shortened_doc_length": 69,
+                    "shortened_doc_content": "Ataraxia is a Greek philosophical term for freedom from perturbation."
+                },
+                {
+                    "doc_title": "Embolectomy",
+                    "original_doc_length": 3572,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Embolectomy is the emergency surgical removal of emboli which are blocking blood circulation."
+                },
+                {
+                    "doc_title": "Embolectomy",
+                    "original_doc_length": 3572,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Embolectomy is the emergency surgical removal of emboli which are blocking blood circulation."
+                },
+                {
+                    "doc_title": "Prasugrel",
+                    "original_doc_length": 5242,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Prasugrel (trade name Effient in the US, Australia and India, and Efient in the EU) is a drug used to prevent formation of blood clots."
+                }
+            ],
+            "mean_original_docs_length": 3307.5,
+            "mean_shortened_docs_length": 97.5
+        },
+        "63": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Racing Extinction",
+                    "original_doc_length": 6372,
+                    "shortened_doc_length": 262,
+                    "shortened_doc_content": "Racing Extinction is a 2015 documentary about the ongoing Anthropogenic mass extinction of species and the efforts from scientists, activists and journalists to document it by Oscar-winning director Louie Psihoyos, who directed the documentary \"The Cove\" (2009)."
+                },
+                {
+                    "doc_title": "Multiple abnormalities",
+                    "original_doc_length": 287,
+                    "shortened_doc_length": 213,
+                    "shortened_doc_content": "When a patient has multiple abnormalities (multiple anomaly, multiple deformity), they have a congenital abnormality that can not be primarily identified with a single system of the body or single disease process."
+                },
+                {
+                    "doc_title": "Mortality in the early modern age",
+                    "original_doc_length": 5369,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "The early modern age saw various economic changes as well as several significant diseases that have affected the mortality rates."
+                },
+                {
+                    "doc_title": "Acacia solenota",
+                    "original_doc_length": 1454,
+                    "shortened_doc_length": 132,
+                    "shortened_doc_content": "Acacia solenota is a shrub belonging to the genus \"Acacia\" and the subgenus \"Juliflorae\" that is endemic to north eastern Australia."
+                }
+            ],
+            "mean_original_docs_length": 3370.5,
+            "mean_shortened_docs_length": 184.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                },
+                {
+                    "doc_title": "National Health Laboratory Service",
+                    "original_doc_length": 3838,
+                    "shortened_doc_length": 117,
+                    "shortened_doc_content": "The National Health Laboratory Service (NHLS) is a South African national government institution established in 2001."
+                },
+                {
+                    "doc_title": "Hepatic artery embolization",
+                    "original_doc_length": 3557,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "Hepatic artery embolization , also known as trans-arterial embolization (TAE), is one of the several therapeutic methods to treat primary liver tumors or metastases to the liver."
+                },
+                {
+                    "doc_title": "Pringle manoeuvre",
+                    "original_doc_length": 996,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "The Pringle maneuver is a surgical maneuver used in some abdominal operations."
+                }
+            ],
+            "mean_original_docs_length": 3359.75,
+            "mean_shortened_docs_length": 120.25
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epiglottis",
+                    "original_doc_length": 6717,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "The epiglottis is a leaf-shaped flap in the throat that prevents food from entering the windpipe and the lungs."
+                },
+                {
+                    "doc_title": "Hemerythrin",
+                    "original_doc_length": 4396,
+                    "shortened_doc_length": 227,
+                    "shortened_doc_content": "Hemerythrin (also spelled haemerythrin; , ) is an oligomeric protein responsible for oxygen (O) transport in the marine invertebrate phyla of sipunculids, priapulids, brachiopods, and in a single annelid worm genus, \"Magelona\"."
+                },
+                {
+                    "doc_title": "Hemopneumothorax",
+                    "original_doc_length": 2243,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Hemopneumothorax, or haemopneumothorax is the condition of having air in the chest cavity (pneumothorax) and blood in the chest cavity (hemothorax)."
+                },
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                }
+            ],
+            "mean_original_docs_length": 4601.0,
+            "mean_shortened_docs_length": 148.5
+        },
+        "66": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Recurvaria thomeriella",
+                    "original_doc_length": 161,
+                    "shortened_doc_length": 59,
+                    "shortened_doc_content": "Recurvaria thomeriella is a moth of the family Gelechiidae."
+                },
+                {
+                    "doc_title": "Epiploic appendagitis",
+                    "original_doc_length": 7310,
+                    "shortened_doc_length": 113,
+                    "shortened_doc_content": "Epiploic appendagitis (EA) is an uncommon, benign, self-limiting inflammatory process of the epiploic appendices."
+                },
+                {
+                    "doc_title": "Estrous cycle",
+                    "original_doc_length": 13062,
+                    "shortened_doc_length": 247,
+                    "shortened_doc_content": "The estrous cycle or oestrus cycle (derived from Latin \"oestrus\" \"frenzy\", originally from Greek \u03bf\u1f36\u03c3\u03c4\u03c1\u03bf\u03c2 \"o\u00eestros\" \"gadfly\") is the set of recurring physiological changes that are induced by reproductive hormones in most mammalian therian females."
+                },
+                {
+                    "doc_title": "Ovarian serous cystadenoma",
+                    "original_doc_length": 1990,
+                    "shortened_doc_length": 269,
+                    "shortened_doc_content": "Ovarian serous cystadenoma, also (less precisely) known as serous cystadenoma, is the most common ovarian neoplasm, representing 20% of ovarian neoplasms, and is benign.<ref name=\"http://library.med.utah.edu/kw/human_reprod/seminars/seminar4B2.html\">Human Reproduction."
+                }
+            ],
+            "mean_original_docs_length": 5630.75,
+            "mean_shortened_docs_length": 172.0
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Immunoscintigraphy",
+                    "original_doc_length": 675,
+                    "shortened_doc_length": 240,
+                    "shortened_doc_content": "Immunoscintigraphy is a nuclear medicine procedure used to find cancer cells in the body by injecting a radioactively labeled antibody, which binds predominantly to cancer cells and then scanning for concentrations of radioactive emissions."
+                },
+                {
+                    "doc_title": "Infectious disease (medical specialty)",
+                    "original_doc_length": 2741,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Infectious diseases, also known as infectology, is a medical specialty dealing with the diagnosis, control and treatment of infections."
+                },
+                {
+                    "doc_title": "Total mesorectal excision",
+                    "original_doc_length": 2676,
+                    "shortened_doc_length": 187,
+                    "shortened_doc_content": "Total mesorectal excision (TME) is a standard surgical technique for treatment of rectal cancer, first described in 1982 by Professor Bill Heald at the UK's Basingstoke District Hospital."
+                },
+                {
+                    "doc_title": "Cervicectomy",
+                    "original_doc_length": 2394,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "In gynecologic oncology, trachelectomy, also cervicectomy, is a surgical removal of the uterine cervix."
+                }
+            ],
+            "mean_original_docs_length": 2121.5,
+            "mean_shortened_docs_length": 166.25
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatology",
+                    "original_doc_length": 5564,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Hepatology is the branch of medicine that incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management of their disorders."
+                },
+                {
+                    "doc_title": "Peginterferon alfa-2a",
+                    "original_doc_length": 3128,
+                    "shortened_doc_length": 134,
+                    "shortened_doc_content": "Pegylated interferon alfa-2a, sold under the brand name Pegasys among others, is medication used to treat hepatitis C and hepatitis B."
+                },
+                {
+                    "doc_title": "Curandero",
+                    "original_doc_length": 8276,
+                    "shortened_doc_length": 173,
+                    "shortened_doc_content": "A curandero (, healer; f. \"curandera\") or curandeiro (, f. \"curandeira\") is a traditional native healer/shaman found in Latin America, the United States and Southern Europe."
+                },
+                {
+                    "doc_title": "Hepatoblastoma",
+                    "original_doc_length": 2735,
+                    "shortened_doc_length": 179,
+                    "shortened_doc_content": "Hepatoblastoma is an uncommon malignant liver cancer occurring in infants and children and composed of tissue resembling fetal liver cells, mature liver cells, or bile duct cells."
+                }
+            ],
+            "mean_original_docs_length": 4925.75,
+            "mean_shortened_docs_length": 160.5
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Age of Aquarius",
+                    "original_doc_length": 8151,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "The Age of Aquarius, in astrology, is either the current or forthcoming astrological age, depending on the method of calculation."
+                },
+                {
+                    "doc_title": "Fanconi anemia",
+                    "original_doc_length": 13915,
+                    "shortened_doc_length": 92,
+                    "shortened_doc_content": "Fanconi anaemia (FA) is a rare genetic disease resulting in impaired response to DNA damage."
+                },
+                {
+                    "doc_title": "Functional residual capacity",
+                    "original_doc_length": 2351,
+                    "shortened_doc_length": 110,
+                    "shortened_doc_content": "Functional Residual Capacity (FRC) is the volume of air present in the lungs at the end of passive expiration."
+                },
+                {
+                    "doc_title": "Packed red blood cells",
+                    "original_doc_length": 13811,
+                    "shortened_doc_length": 119,
+                    "shortened_doc_content": "Packed red blood cells, also known as packed cells, are red blood cells that have been separated for blood transfusion."
+                }
+            ],
+            "mean_original_docs_length": 9557.0,
+            "mean_shortened_docs_length": 112.5
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Venetoclax",
+                    "original_doc_length": 4089,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "Venetoclax, sold under the trade name Venclexta and Venclyxto, is a medication used to treat chronic lymphocytic leukemia (CLL)."
+                },
+                {
+                    "doc_title": "Elephantiasis nostras",
+                    "original_doc_length": 1059,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Elephantiasis nostras is a cutaneous condition, a final hypertrophic fibrosis following longstanding chronic lymphangitis."
+                },
+                {
+                    "doc_title": "Intravascular large B-cell lymphoma",
+                    "original_doc_length": 1660,
+                    "shortened_doc_length": 268,
+                    "shortened_doc_content": "Intravascular large B-cell lymphoma (ILBCL), also referred to as angiotropic large-cell lymphoma, intralymphatic lymphomatosis, intravascular lymphomatosis, and, less specifically, intravascular lymphoma and malignant angioendotheliomatosis is a rare form of lymphoma."
+                },
+                {
+                    "doc_title": "Lupus miliaris disseminatus faciei",
+                    "original_doc_length": 1199,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Lupus miliaris disseminatus faciei , also known as acne agminata, is a disease with a similar appearance to acne vulgaris."
+                }
+            ],
+            "mean_original_docs_length": 2001.75,
+            "mean_shortened_docs_length": 160.0
+        },
+        "71": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Left ventricular thrombus",
+                    "original_doc_length": 2745,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Left ventricular thrombus is a blood clot (thrombus) in the left ventricle of the heart."
+                },
+                {
+                    "doc_title": "Mir-210 microRNA",
+                    "original_doc_length": 2465,
+                    "shortened_doc_length": 62,
+                    "shortened_doc_content": "In molecular biology mir-210 microRNA is a short RNA molecule."
+                },
+                {
+                    "doc_title": "Aortic dissection",
+                    "original_doc_length": 30332,
+                    "shortened_doc_length": 166,
+                    "shortened_doc_content": "Aortic dissection (AD) occurs when an injury to the innermost layer of the aorta allows blood to flow between the layers of the aortic wall, forcing the layers apart."
+                },
+                {
+                    "doc_title": "Pericardium",
+                    "original_doc_length": 5017,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "The pericardium is a double-walled sac containing the heart and the roots of the great vessels."
+                }
+            ],
+            "mean_original_docs_length": 10139.75,
+            "mean_shortened_docs_length": 102.75
+        },
+        "72": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence."
+                },
+                {
+                    "doc_title": "Pertusariales",
+                    "original_doc_length": 124,
+                    "shortened_doc_length": 69,
+                    "shortened_doc_content": "The Pertusariales are an order of fungi in the class Lecanoromycetes."
+                },
+                {
+                    "doc_title": "Pertusariales",
+                    "original_doc_length": 124,
+                    "shortened_doc_length": 69,
+                    "shortened_doc_content": "The Pertusariales are an order of fungi in the class Lecanoromycetes."
+                },
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence."
+                }
+            ],
+            "mean_original_docs_length": 8177.5,
+            "mean_shortened_docs_length": 117.0
+        },
+        "73": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiooncology",
+                    "original_doc_length": 809,
+                    "shortened_doc_length": 282,
+                    "shortened_doc_content": "Cardiooncology or Cardiovascular Oncology (also \"Cardioncology\") is an interdisciplinary field of medicine by which are studied the molecular and clinical alterations in cardiovascular system during the different methods of treatment of cancer specially chemo- and targeted therapy."
+                },
+                {
+                    "doc_title": "Chromis limbata",
+                    "original_doc_length": 1846,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "The Azores chromis or Atlantic chromis (\"Chromis limbata\") is a species of damselfish from the family Pomacentridae which is found in the Macaronesian Islands of the temperate eastern Atlantic Ocean and has been reported from coastal regions of western Africa."
+                },
+                {
+                    "doc_title": "San Marco 1",
+                    "original_doc_length": 2353,
+                    "shortened_doc_length": 72,
+                    "shortened_doc_content": "San Marco 1, also known as San Marco A, was the first Italian satellite."
+                },
+                {
+                    "doc_title": "Plumbago pulchella",
+                    "original_doc_length": 428,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Plumbago pulchella, with the common name Cola de iguana, is a plant species in the genus \"Plumbago\"."
+                }
+            ],
+            "mean_original_docs_length": 1359.0,
+            "mean_shortened_docs_length": 178.5
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pouchoscopy",
+                    "original_doc_length": 907,
+                    "shortened_doc_length": 426,
+                    "shortened_doc_content": "Pouchoscopy is a minimally invasive endoscopic procedure to examine an ileo-anal pouch, a replacement for the colon / rectum which is surgically created from the small intestine (ileum) as Treatment for ulcerative colitis and as a treatment for other inflammatory bowel diseases such as Crohn's disease, a preventive measure in certain genetic illnesses such as FAP or HNPCC or as a procedure in the treatment of colon cancer."
+                },
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                },
+                {
+                    "doc_title": "Challacombe scale",
+                    "original_doc_length": 2690,
+                    "shortened_doc_length": 280,
+                    "shortened_doc_content": "The Challacombe scale is a widely used diagnostic medical tool designed to produce a clinical oral dryness score (CODS) which quantifies the extent of dryness of the mouth, with the aim of making a decision of whether to treat or not, and to monitor its progression or regression."
+                },
+                {
+                    "doc_title": "Colectomy",
+                    "original_doc_length": 5491,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Colectomy (\"col-\" + \"-ectomy\") is bowel resection of the large bowel (colon)."
+                }
+            ],
+            "mean_original_docs_length": 3534.0,
+            "mean_shortened_docs_length": 222.75
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adenoviridae",
+                    "original_doc_length": 16518,
+                    "shortened_doc_length": 207,
+                    "shortened_doc_content": "Adenoviruses (members of the family Adenoviridae) are medium-sized (90\u2013100 nm), nonenveloped (without an outer lipid bilayer) viruses with an icosahedral nucleocapsid containing a double stranded DNA genome."
+                },
+                {
+                    "doc_title": "Herpes simplex",
+                    "original_doc_length": 27993,
+                    "shortened_doc_length": 71,
+                    "shortened_doc_content": "Herpes simplex is a viral infection caused by the herpes simplex virus."
+                },
+                {
+                    "doc_title": "Staphylococcus aureus",
+                    "original_doc_length": 36848,
+                    "shortened_doc_length": 221,
+                    "shortened_doc_content": "Staphylococcus aureus is a Gram-positive, round-shaped bacterium that is a member of the Firmicutes, and it is a usual member of the microbiota of the body, frequently found in the upper respiratory tract and on the skin."
+                },
+                {
+                    "doc_title": "Chlamydia trachomatis",
+                    "original_doc_length": 17224,
+                    "shortened_doc_length": 255,
+                    "shortened_doc_content": "Chlamydia trachomatis (), commonly known as chlamydia, is a bacterium that causes chlamydia, which can manifest in various ways, including: trachoma, lymphogranuloma venereum, nongonococcal urethritis, cervicitis, salpingitis, pelvic inflammatory disease."
+                }
+            ],
+            "mean_original_docs_length": 24645.75,
+            "mean_shortened_docs_length": 188.5
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Solar deity",
+                    "original_doc_length": 32490,
+                    "shortened_doc_length": 147,
+                    "shortened_doc_content": "A solar deity (also sun god or sun goddess) is a sky deity who represents the Sun, or an aspect of it, usually by its perceived power and strength."
+                },
+                {
+                    "doc_title": "Procrastination",
+                    "original_doc_length": 26383,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Procrastination is the avoidance of doing a task that needs to be accomplished by a certain deadline."
+                },
+                {
+                    "doc_title": "Afro-Brazilians",
+                    "original_doc_length": 58339,
+                    "shortened_doc_length": 87,
+                    "shortened_doc_content": "Afro-Brazilians (; ) are Brazilians who have partial or predominantly African ancestry."
+                },
+                {
+                    "doc_title": "Parikrama",
+                    "original_doc_length": 14731,
+                    "shortened_doc_length": 177,
+                    "shortened_doc_content": "Parikrama or Pradakshina refers to circumambulation of sacred places to imbibe their energy in Sikh, Hindu, Jain or Buddhist context, and the path along which this is performed."
+                }
+            ],
+            "mean_original_docs_length": 32985.75,
+            "mean_shortened_docs_length": 128.0
+        },
+        "77": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dolichocolon",
+                    "original_doc_length": 717,
+                    "shortened_doc_length": 51,
+                    "shortened_doc_content": "Dolichocolon is an abnormally long large intestine."
+                },
+                {
+                    "doc_title": "AR",
+                    "original_doc_length": 2228,
+                    "shortened_doc_length": 620,
+                    "shortened_doc_content": "AR, Ar, or A&R may refer to:\n\nBULLET::::- Artists and repertoire\n\nBULLET::::- \"Absolute Return + Alpha\", a hedge fund publication\nBULLET::::- \"American Renaissance\" (magazine), a white nationalist magazine and website\nBULLET::::- \"Armeerundschau\", a magazine of the East German army\nBULLET::::- \"Architectural Review\"\n\nBULLET::::- Ar, city on the fictional planet Gor\nBULLET::::- \"a.r.\" group of Polish artists and poets, including Katarzyna Kobro\nBULLET::::- Alternate reality (disambiguation), various fictional concepts\n\nBULLET::::- Acoustic Research, an American audio electronics manufacturer\nBULLET::::- Aerol\u00edneas"
+                },
+                {
+                    "doc_title": "Ileocolic",
+                    "original_doc_length": 694,
+                    "shortened_doc_length": 166,
+                    "shortened_doc_content": "In many Animalia, including humans, an ileocolic structure or problem is something that concerns the region of the gastrointestinal tract from the ileum to the colon."
+                },
+                {
+                    "doc_title": "Defecation",
+                    "original_doc_length": 5917,
+                    "shortened_doc_length": 152,
+                    "shortened_doc_content": "Defecation is the final act of digestion, by which organisms eliminate solid, semisolid, or liquid waste material from the digestive tract via the anus."
+                }
+            ],
+            "mean_original_docs_length": 2389.0,
+            "mean_shortened_docs_length": 247.25
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "DENR (gene)",
+                    "original_doc_length": 752,
+                    "shortened_doc_length": 114,
+                    "shortened_doc_content": "Density regulated re-initiation and release factor (DENR) is a protein that in humans is encoded by the DENR gene."
+                },
+                {
+                    "doc_title": "DENR (gene)",
+                    "original_doc_length": 752,
+                    "shortened_doc_length": 114,
+                    "shortened_doc_content": "Density regulated re-initiation and release factor (DENR) is a protein that in humans is encoded by the DENR gene."
+                },
+                {
+                    "doc_title": "Glabella",
+                    "original_doc_length": 587,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "The glabella, in humans, is the skin between the eyebrows and above the nose."
+                },
+                {
+                    "doc_title": "Synodontis ocellifer",
+                    "original_doc_length": 3130,
+                    "shortened_doc_length": 145,
+                    "shortened_doc_content": "Synodontis ocellifer, known as the ocellated synodontis, is a species of upside-down catfish native to the rivers of northern and western Africa."
+                }
+            ],
+            "mean_original_docs_length": 1305.25,
+            "mean_shortened_docs_length": 112.5
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pseudoperitheca",
+                    "original_doc_length": 408,
+                    "shortened_doc_length": 61,
+                    "shortened_doc_content": "Pseudoperitheca is a genus of fungi in the Ascomycota phylum."
+                },
+                {
+                    "doc_title": "Haematomyxa",
+                    "original_doc_length": 316,
+                    "shortened_doc_length": 57,
+                    "shortened_doc_content": "Haematomyxa is a genus of fungi in the Ascomycota phylum."
+                },
+                {
+                    "doc_title": "Precordium",
+                    "original_doc_length": 921,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "In anatomy, the precordium or praecordium is the portion of the body over the heart and lower chest."
+                },
+                {
+                    "doc_title": "Extrapyramidal system",
+                    "original_doc_length": 1739,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "In anatomy, the extrapyramidal system is a part of the motor system network causing involuntary actions."
+                }
+            ],
+            "mean_original_docs_length": 846.0,
+            "mean_shortened_docs_length": 80.5
+        },
+        "80": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pied avocet",
+                    "original_doc_length": 2769,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "The pied avocet (\"Recurvirostra avosetta\") is a large black and white wader in the avocet and stilt family, Recurvirostridae."
+                },
+                {
+                    "doc_title": "Cividade de Terroso",
+                    "original_doc_length": 24368,
+                    "shortened_doc_length": 215,
+                    "shortened_doc_content": "Cividade de Terroso was an ancient city of the Castro culture in North-western coast of the Iberian Peninsula, situated near the present bed of the Ave river, in the suburbs of present-day P\u00f3voa de Varzim, Portugal."
+                },
+                {
+                    "doc_title": "Adipose tissue",
+                    "original_doc_length": 26480,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "In biology, adipose tissue, body fat, or simply fat is a loose connective tissue composed mostly of adipocytes."
+                },
+                {
+                    "doc_title": "Disorders of sex development",
+                    "original_doc_length": 25299,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Disorders of sex development (DSDs) are medical conditions involving the reproductive system."
+                }
+            ],
+            "mean_original_docs_length": 19729.0,
+            "mean_shortened_docs_length": 136.0
+        },
+        "81": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fungistatics",
+                    "original_doc_length": 1478,
+                    "shortened_doc_length": 99,
+                    "shortened_doc_content": "Fungistatics are anti-fungal agents that inhibit the growth of fungus (without killing the fungus)."
+                },
+                {
+                    "doc_title": "Lymphoepithelioma-like carcinoma",
+                    "original_doc_length": 988,
+                    "shortened_doc_length": 341,
+                    "shortened_doc_content": "Lymphoepithelioma-like carcinoma (LELC) is a medical term referring to a histological variant of malignant tumor arising from the uncontrolled mitosis of transformed cells originating in epithelial tissue (or in cells that display epithelial characteristics) that bear microscopic resemblance to lymphoepithelioma (nasopharyngeal carcinoma)."
+                },
+                {
+                    "doc_title": "Ethambutol/isoniazid/pyrazinamide/rifampicin",
+                    "original_doc_length": 814,
+                    "shortened_doc_length": 142,
+                    "shortened_doc_content": "Ethambutol/isoniazid/pyrazinamide/rifampicin, also known as ethambutol/isoniazid/pyrazinamide/rifampin, is a medication used for tuberculosis."
+                },
+                {
+                    "doc_title": "Meglumine antimoniate",
+                    "original_doc_length": 1027,
+                    "shortened_doc_length": 64,
+                    "shortened_doc_content": "Meglumine antimoniate is a medicine used to treat leishmaniasis."
+                }
+            ],
+            "mean_original_docs_length": 1076.75,
+            "mean_shortened_docs_length": 161.5
+        },
+        "82": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Melanoma",
+                    "original_doc_length": 50276,
+                    "shortened_doc_length": 133,
+                    "shortened_doc_content": "Melanoma, also known as malignant melanoma, is a type of cancer that develops from the pigment-containing cells known as melanocytes."
+                },
+                {
+                    "doc_title": "Nevus",
+                    "original_doc_length": 5862,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Nevus (or nevi if multiple) is a nonspecific medical term for a visible, circumscribed, chronic lesion of the skin or mucosa."
+                },
+                {
+                    "doc_title": "Ceratoserolis meridionalis",
+                    "original_doc_length": 167,
+                    "shortened_doc_length": 139,
+                    "shortened_doc_content": "Ceratoserolis meridionalis is a species of serolid isopod found in Antarctica, including the Antarctic Peninsula and South Shetland Islands"
+                },
+                {
+                    "doc_title": "Epithelial-myoepithelial carcinoma",
+                    "original_doc_length": 952,
+                    "shortened_doc_length": 174,
+                    "shortened_doc_content": "Epithelial-myoepithelial carcinoma (EMCa) is a rare malignant tumour that typically arises in a salivary gland and consists of both an epithelial and myoepithelial component."
+                }
+            ],
+            "mean_original_docs_length": 14314.25,
+            "mean_shortened_docs_length": 142.75
+        },
+        "83": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Oppositus",
+                    "original_doc_length": 476,
+                    "shortened_doc_length": 45,
+                    "shortened_doc_content": "Oppositus is a Latin term meaning \"opposite\"."
+                },
+                {
+                    "doc_title": "Extensions to the International Phonetic Alphabet",
+                    "original_doc_length": 7685,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "The extensions to the International Phonetic Alphabet, also extIPA symbols for disordered speech or simply extIPA (), are a set of letters and diacritics devised by the International Clinical Phonetics and Linguistics Association to augment the International Phonetic Alphabet for the phonetic transcription of disordered speech."
+                },
+                {
+                    "doc_title": "Reflux (disambiguation)",
+                    "original_doc_length": 767,
+                    "shortened_doc_length": 145,
+                    "shortened_doc_content": "Reflux is a distillation technique involving the condensation of vapors and the return of this condensate to the system from which it originated."
+                },
+                {
+                    "doc_title": "Extensions to the International Phonetic Alphabet",
+                    "original_doc_length": 7685,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "The extensions to the International Phonetic Alphabet, also extIPA symbols for disordered speech or simply extIPA (), are a set of letters and diacritics devised by the International Clinical Phonetics and Linguistics Association to augment the International Phonetic Alphabet for the phonetic transcription of disordered speech."
+                }
+            ],
+            "mean_original_docs_length": 4153.25,
+            "mean_shortened_docs_length": 212.0
+        },
+        "84": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Zalmoxianism",
+                    "original_doc_length": 2333,
+                    "shortened_doc_length": 226,
+                    "shortened_doc_content": "Zalmoxianism or Zamolxianism is a Neopagan movement in Romania which promotes the rebuilding of an ethnic religion and spirituality of the Romanians through a process of reconnection to their ancient Dacian and Thracian roots."
+                },
+                {
+                    "doc_title": "Extensions to the International Phonetic Alphabet",
+                    "original_doc_length": 7685,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "The extensions to the International Phonetic Alphabet, also extIPA symbols for disordered speech or simply extIPA (), are a set of letters and diacritics devised by the International Clinical Phonetics and Linguistics Association to augment the International Phonetic Alphabet for the phonetic transcription of disordered speech."
+                },
+                {
+                    "doc_title": "Fides (deity)",
+                    "original_doc_length": 2031,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Fides (Latin: \"Fid\u0113s\") was the goddess of trust and \"bona fides\" (good faith) in Roman paganism."
+                },
+                {
+                    "doc_title": "Universidad San Francisco de Quito",
+                    "original_doc_length": 14176,
+                    "shortened_doc_length": 171,
+                    "shortened_doc_content": "Universidad San Francisco de Quito USFQ (informally Universidad San Francisco, or simply USFQ) is a liberal-arts, non-profit, private university located in Quito, Ecuador."
+                }
+            ],
+            "mean_original_docs_length": 6556.25,
+            "mean_shortened_docs_length": 205.5
+        },
+        "85": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pneumonia (non-human)",
+                    "original_doc_length": 891,
+                    "shortened_doc_length": 131,
+                    "shortened_doc_content": "Pneumonia is an illness which can result from a variety of causes, including infection with bacteria, viruses, fungi, or parasites."
+                },
+                {
+                    "doc_title": "Scadoxus membranaceus",
+                    "original_doc_length": 3551,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Scadoxus membranaceus is a bulbous plant from South Africa (east Cape Province, KwaZulu-Natal)."
+                },
+                {
+                    "doc_title": "Meconium aspiration syndrome",
+                    "original_doc_length": 22112,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Meconium aspiration syndrome (MAS) also known as neonatal aspiration of meconium is a medical condition affecting newborn infants."
+                },
+                {
+                    "doc_title": "Taquara Municipal Nature Park",
+                    "original_doc_length": 1659,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "The Taquara Municipal Nature Park () is a municipal nature park in the state of Rio de Janeiro, Brazil."
+                }
+            ],
+            "mean_original_docs_length": 7053.25,
+            "mean_shortened_docs_length": 114.75
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Reseda viridis",
+                    "original_doc_length": 124,
+                    "shortened_doc_length": 62,
+                    "shortened_doc_content": "Reseda viridis is a species of plant in the family Resedaceae."
+                },
+                {
+                    "doc_title": "Cardiac nursing",
+                    "original_doc_length": 1983,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "Cardiac nursing is a nursing specialty that works with patients who suffer from various conditions of the cardiovascular system."
+                },
+                {
+                    "doc_title": "Metoprolol",
+                    "original_doc_length": 10310,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Metoprolol, marketed under the tradename Lopressor among others, is a medication of the selective \u03b2 receptor blocker type."
+                },
+                {
+                    "doc_title": "Belnacasan",
+                    "original_doc_length": 620,
+                    "shortened_doc_length": 137,
+                    "shortened_doc_content": "Belnacasan (VX-765) is a drug developed by Vertex Pharmaceuticals which acts as a potent and selective inhibitor of the enzyme Caspase 1."
+                }
+            ],
+            "mean_original_docs_length": 3259.25,
+            "mean_shortened_docs_length": 112.25
+        },
+        "87": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Sigmoidoscopy",
+                    "original_doc_length": 6096,
+                    "shortened_doc_length": 262,
+                    "shortened_doc_content": "Sigmoidoscopy (from the Greek term for letter \"s/\u03c2\" + \"eidos\" + \"scopy\": namely, to look inside an \"s\"/\"\u03c2\"-like object) is the minimally invasive medical examination of the large intestine from the rectum through the nearest part of the colon, the sigmoid colon."
+                },
+                {
+                    "doc_title": "Defecography",
+                    "original_doc_length": 6487,
+                    "shortened_doc_length": 283,
+                    "shortened_doc_content": "Defecography (also known as proctography, defecating/defecation proctography, evacuating/evacuation proctography or dynamic rectal examination) is a type of medical radiological imaging in which the mechanics of a patient's defecation are visualized in real time using a fluoroscope."
+                },
+                {
+                    "doc_title": "Abdominal ultrasonography",
+                    "original_doc_length": 5826,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Abdominal ultrasonography (also called abdominal ultrasound imaging or abdominal sonography) is a form of medical ultrasonography (medical application of ultrasound technology) to visualise abdominal anatomical structures."
+                },
+                {
+                    "doc_title": "Baritosis",
+                    "original_doc_length": 799,
+                    "shortened_doc_length": 99,
+                    "shortened_doc_content": "Baritosis is a benign type of pneumoconiosis, which is caused by long-term exposure to barium dust."
+                }
+            ],
+            "mean_original_docs_length": 4802.0,
+            "mean_shortened_docs_length": 216.5
+        },
+        "88": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pessary",
+                    "original_doc_length": 2917,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "A pessary is a prosthetic device inserted into the vagina to reduce the protrusion of pelvic structures into the vagina."
+                },
+                {
+                    "doc_title": "Dilation and curettage",
+                    "original_doc_length": 6270,
+                    "shortened_doc_length": 225,
+                    "shortened_doc_content": "Dilation (or dilatation) and curettage (D&C) refers to the dilation (widening/opening) of the cervix and surgical removal of part of the lining of the uterus and/or contents of the uterus by scraping and scooping (curettage)."
+                },
+                {
+                    "doc_title": "Dilation and curettage",
+                    "original_doc_length": 6270,
+                    "shortened_doc_length": 225,
+                    "shortened_doc_content": "Dilation (or dilatation) and curettage (D&C) refers to the dilation (widening/opening) of the cervix and surgical removal of part of the lining of the uterus and/or contents of the uterus by scraping and scooping (curettage)."
+                },
+                {
+                    "doc_title": "Pessary",
+                    "original_doc_length": 2917,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "A pessary is a prosthetic device inserted into the vagina to reduce the protrusion of pelvic structures into the vagina."
+                }
+            ],
+            "mean_original_docs_length": 4593.5,
+            "mean_shortened_docs_length": 172.5
+        },
+        "89": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Embolism",
+                    "original_doc_length": 4835,
+                    "shortened_doc_length": 102,
+                    "shortened_doc_content": "An embolism is the lodging of an embolus, a blockage-causing piece of material, inside a blood vessel."
+                },
+                {
+                    "doc_title": "Piperacillin",
+                    "original_doc_length": 2278,
+                    "shortened_doc_length": 83,
+                    "shortened_doc_content": "Piperacillin is a broad-spectrum \u03b2-lactam antibiotic of the ureidopenicillin class."
+                },
+                {
+                    "doc_title": "Tracheobronchopathia osteochondroplastica",
+                    "original_doc_length": 1285,
+                    "shortened_doc_length": 195,
+                    "shortened_doc_content": "Tracheobronchopathia osteochondroplastica (TO) is a rare benign disease of unknown cause, in which multiple cartilaginous or bony submucosal nodules project into the trachea and proximal bronchi."
+                },
+                {
+                    "doc_title": "Tuberculoma",
+                    "original_doc_length": 910,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "A tuberculoma is a clinical manifestation of tuberculosis which conglomerates tubercles into a firm lump, and so can mimic cancer tumors of many types in medical imaging studies."
+                }
+            ],
+            "mean_original_docs_length": 2327.0,
+            "mean_shortened_docs_length": 139.5
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Stercoral ulcer",
+                    "original_doc_length": 210,
+                    "shortened_doc_length": 151,
+                    "shortened_doc_content": "Stercoral ulcer is an ulcer of the colon due to pressure and irritation resulting from severe, prolonged constipation due to a large bowel obstruction."
+                },
+                {
+                    "doc_title": "Colostomy",
+                    "original_doc_length": 6361,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "A colostomy is an opening (stoma) in the large intestine (colon), or the surgical procedure that creates one."
+                },
+                {
+                    "doc_title": "Colostomy",
+                    "original_doc_length": 6361,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "A colostomy is an opening (stoma) in the large intestine (colon), or the surgical procedure that creates one."
+                },
+                {
+                    "doc_title": "Colectomy",
+                    "original_doc_length": 5491,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Colectomy (\"col-\" + \"-ectomy\") is bowel resection of the large bowel (colon)."
+                }
+            ],
+            "mean_original_docs_length": 4605.75,
+            "mean_shortened_docs_length": 111.5
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatogram",
+                    "original_doc_length": 658,
+                    "shortened_doc_length": 57,
+                    "shortened_doc_content": "A hepatogram is a medical imaging examation of the liver."
+                },
+                {
+                    "doc_title": "Lepiota cristata",
+                    "original_doc_length": 6664,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Lepiota cristata, commonly known as the stinking dapperling or the stinking parasol, is an agaric and possibly poisonous mushroom in the family Agaricaceae."
+                },
+                {
+                    "doc_title": "SRY (disambiguation)",
+                    "original_doc_length": 447,
+                    "shortened_doc_length": 110,
+                    "shortened_doc_content": "SRY is the HUGO Gene Nomenclature Committee assigned symbol for the mammalian gene \"sex determining region Y\"."
+                },
+                {
+                    "doc_title": "Thyroid function tests",
+                    "original_doc_length": 8693,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "Thyroid function tests (TFTs) is a collective term for blood tests used to check the function of the thyroid."
+                }
+            ],
+            "mean_original_docs_length": 4115.5,
+            "mean_shortened_docs_length": 108.0
+        },
+        "92": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trocar",
+                    "original_doc_length": 4704,
+                    "shortened_doc_length": 201,
+                    "shortened_doc_content": "A trocar (or trochar) is a medical or veterinary device that is made up of an obturator (which may be a metal or plastic sharpened or non-bladed tip), a cannula (essentially a hollow tube), and a seal."
+                },
+                {
+                    "doc_title": "Extrapulmonary tuberculosis",
+                    "original_doc_length": 1785,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Extrapulmonary tuberculosis is tuberculosis (TB) within a location in the body other than the lungs."
+                },
+                {
+                    "doc_title": "Pyrazinamide",
+                    "original_doc_length": 7541,
+                    "shortened_doc_length": 56,
+                    "shortened_doc_content": "Pyrazinamide is a medication used to treat tuberculosis."
+                },
+                {
+                    "doc_title": "Temocillin",
+                    "original_doc_length": 2808,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Temocillin is a \u03b2-lactamase-resistant penicillin introduced by Beecham, marketed by Eumedica Pharmaceuticals as Negaban."
+                }
+            ],
+            "mean_original_docs_length": 4209.5,
+            "mean_shortened_docs_length": 119.25
+        },
+        "93": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Echinodorus uruguayensis",
+                    "original_doc_length": 911,
+                    "shortened_doc_length": 86,
+                    "shortened_doc_content": "Echinodorus uruguayensis or Echinodorus osiris is a plant species in the Alismataceae."
+                },
+                {
+                    "doc_title": "Echinodorus uruguayensis",
+                    "original_doc_length": 911,
+                    "shortened_doc_length": 86,
+                    "shortened_doc_content": "Echinodorus uruguayensis or Echinodorus osiris is a plant species in the Alismataceae."
+                },
+                {
+                    "doc_title": "Echinodorus grandiflorus",
+                    "original_doc_length": 1835,
+                    "shortened_doc_length": 64,
+                    "shortened_doc_content": "Echinodorus grandiflorus is a plant species in the Alismataceae."
+                },
+                {
+                    "doc_title": "Eudrilus eugeniae",
+                    "original_doc_length": 847,
+                    "shortened_doc_length": 245,
+                    "shortened_doc_content": "Eudrilus eugeniae, also called the \"African Nightcrawler\", is an earthworm species native to tropical west Africa and now widespread in warm regions under vermicompost; it is an excellent source of protein and has great pharmaceutical potential."
+                }
+            ],
+            "mean_original_docs_length": 1126.0,
+            "mean_shortened_docs_length": 120.25
+        }
+    }
+}
