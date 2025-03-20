@@ -366,6 +366,9 @@ def display_evaluation_results_summary(
         highlighted_rows = []
 
     results_df = pd.concat(evaluation_results_list, ignore_index=True)
+    results_df[['country', 'file_type']] = results_df[['country', 'file_type']].apply(
+        lambda row: row.str.capitalize()
+    )
     results_df['vqa_strategy_type'] = results_df.apply(
         lambda row: _get_pretty_strategy_representation(
             row['vqa_strategy_type'], row['should_apply_rag_to_question']
@@ -390,8 +393,8 @@ def display_evaluation_results_summary(
     header_style = {
         'selector': 'thead th', 
         'props': [
-            ('background-color', '#007BFF'),
-            ('color', 'white'),
+            ('background-color', '#0056A6'),
+            ('color', '#FFFFFF'),
             ('font-weight', 'bold'),
             ('padding', '12px'),
             ('text-align', 'center')
@@ -400,15 +403,15 @@ def display_evaluation_results_summary(
     odd_row_style = {
         'selector': 'tbody tr:nth-child(odd)',
         'props': [
-            ('background-color', '#f2f2f2'),
-            ('color', 'black')
+            ('background-color', '#e0e0e0'),
+            ('color', '#000000')
         ]
     }
     even_row_style = {
         'selector': 'tbody tr:nth-child(even)',
         'props': [
-            ('background-color', '#ffffff'),
-            ('color', 'black')
+            ('background-color', '#FFFFFF'),
+            ('color', '#000000')
         ]
     }
     padding_and_text_alignment = {
@@ -428,22 +431,32 @@ def display_evaluation_results_summary(
     }
     border_style = {
         'selector': 'th, td', 
-        'props': [('border', '1px solid #ddd')]
+        'props': [('border', '1px solid #BBBBBB')]
     }
     separator_styles = [
         {
             "selector": f"tbody tr:nth-child({i})",
-            "props": [("border-bottom", "3px solid black")]
+            "props": [("border-bottom", "3px solid #444444")]
         }
         for i in separator_rows
     ]
     highlight_styles = [
         {
             "selector": f"tbody tr:nth-child({i})",
-            "props": [('background-color', 'yellow')]
+            "props": [
+                ('background-color', '#FFD700'),
+                ('color', '#000000'),
+            ]
         }
         for i in highlighted_rows
     ]
+    world_med_qa_v_highlight_style = {
+        "selector": f"tbody tr:nth-child({len(results_df)})",
+        "props": [
+            ('background-color', '#006400'),
+            ('color', '#FFFFFF')
+        ]
+    }
 
 
     table_styles = [
@@ -452,7 +465,8 @@ def display_evaluation_results_summary(
         even_row_style,
         padding_and_text_alignment,
         table_style,
-        border_style
+        border_style,
+        world_med_qa_v_highlight_style
     ] + separator_styles + highlight_styles
 
     styled_results_df = results_df.style.set_table_styles(table_styles).format({
