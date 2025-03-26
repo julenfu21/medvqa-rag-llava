@@ -102,6 +102,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--results_dir",
                         type=Path, default=Path("evaluation_results"),
                         help="Directory that contains the evaluation results")
+    parser.add_argument("--no_image",
+                        action='store_true',
+                        help=(
+                            "Disable the context image in the question. By default, an image is "
+                            "included."
+                        ))
     parser.add_argument("--vqa_strategy",
                         type=VQAStrategyType, required=True,
                         choices=list(VQAStrategyType),
@@ -403,8 +409,9 @@ def main() -> None:
         file_type=args.file_type
     )
     llava_model.evaluate(
-        dataset=world_med_qa_v_dataset,
+        dataset=world_med_qa_v_dataset.take(2),
         results_path=args.results_dir,
+        use_image=not args.no_image,
         doc_splitter=get_document_splitter(arguments=args),
         should_apply_rag_to_question=args.should_apply_rag_to_question
     )
