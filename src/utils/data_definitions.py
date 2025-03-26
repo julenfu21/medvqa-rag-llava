@@ -331,7 +331,7 @@ class GeneralVQAStrategiesDetails:
                         add_title=combination[7][2],
                         chunk_size=combination[7][3],
                         chunk_overlap=combination[7][4]
-                    ) if combination[6] else None,
+                    ) if combination[7] else None,
                     should_apply_rag_to_question=combination[6]
                 )
                 possible_combinations.append(vqa_strategy_detail)
