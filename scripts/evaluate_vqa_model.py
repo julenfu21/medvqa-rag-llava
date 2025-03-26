@@ -352,8 +352,6 @@ def get_strategy(
                 embedding_model_name=arguments.embedding_model_name,
                 relevant_docs_count=arguments.relevant_docs_count
             )
-        # case VQAStrategyType.RAG_Q_AS:
-        #     return RagQAsVQAStrategy(prompt_type=None)
         # case VQAStrategyType.RAG_IMG:
         #     return RagImgVQAStrategy(prompt_type=None)
         # case VQAStrategyType.RAG_DB_RERANKER:
@@ -409,7 +407,7 @@ def main() -> None:
         file_type=args.file_type
     )
     llava_model.evaluate(
-        dataset=world_med_qa_v_dataset.take(2),
+        dataset=world_med_qa_v_dataset,
         results_path=args.results_dir,
         use_image=not args.no_image,
         doc_splitter=get_document_splitter(arguments=args),
