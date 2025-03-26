@@ -58,6 +58,7 @@ class VisualQAModel:
         row: dict,
         possible_options: list[str],
         verbose: bool = False,
+        use_image: bool = True,
         logger_manager: Optional[LoggerManager] = None,
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:
@@ -68,7 +69,7 @@ class VisualQAModel:
             model=self.__model,
             question=row['question'],
             possible_answers={option: row[option] for option in possible_options},
-            base64_image=row['image'],
+            base64_image=row['image'] if use_image else None,
             logger_manager=logger_manager,
             **kwargs
         )
@@ -182,12 +183,14 @@ class VisualQAModel:
         self,
         data: dict,
         results_path: Path,
+        use_image: bool,
         doc_splitter: Optional[BaseSplitter],
         should_apply_rag_to_question: Optional[bool]
     ) -> None:
         vqa_strategy_detail = VQAStrategyDetail(
             country=self.__country,
             file_type=self.__file_type,
+            use_image=use_image,
             vqa_strategy_type=self.__visual_qa_strategy.strategy_type,
             prompt_type=self.__visual_qa_strategy.prompt_type,
             relevant_docs_count=(
@@ -225,6 +228,7 @@ class VisualQAModel:
         self,
         dataset: Dataset,
         results_path: Path,
+        use_image: bool,
         **kwargs: dict[str, Any]
     ) -> None:
         possible_options = ["A", "B", "C", "D"]
@@ -241,7 +245,9 @@ class VisualQAModel:
         ):
             row_index = row["index"]
             gold_options[row_index] = row["correct_option"]
-            model_answer_result = self.generate_answer_from_row(row, possible_options, **kwargs)
+            model_answer_result = self.generate_answer_from_row(
+                row, possible_options, use_image, **kwargs
+            )
             predicted_options[row_index] = model_answer_result.answer
 
             current_relevant_documents = []
@@ -277,6 +283,7 @@ class VisualQAModel:
         self.__save_evaluation_results(
             data=evaluation_metrics,
             results_path=results_path,
+            use_image=use_image,
             doc_splitter=doc_splitter,
             should_apply_rag_to_question=should_apply_rag_to_question
         )

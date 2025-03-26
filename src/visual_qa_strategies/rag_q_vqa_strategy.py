@@ -22,7 +22,7 @@ class RagQVQAStrategy(BaseRagVQAStrategy):
         model: BaseChatModel,
         question: str,
         possible_answers: dict[str, str],
-        base64_image: str,
+        base64_image: Optional[str],
         logger_manager: Optional[LoggerManager],
         **kwargs: dict[str, Any]
     ) -> ModelAnswerResult:

@@ -106,6 +106,7 @@ class InvalidVQAStrategyDetailError(Exception):
 class VQAStrategyDetail:
     country: str
     file_type: str
+    use_image: bool
     vqa_strategy_type: VQAStrategyType
     prompt_type: PromptType
     relevant_docs_count: Optional[int] = None
@@ -212,6 +213,7 @@ class VQAStrategyDetail:
             evaluation_results_folder,
             self.country,
             self.file_type,
+            'with_image' if self.use_image else 'no_image',
             self.vqa_strategy_type.value
         )
         evaluation_results_filename = (
@@ -269,6 +271,7 @@ class GeneralDocSplitterOptions:
 class GeneralVQAStrategiesDetails:
     countries: list[str]
     file_types: list[str]
+    use_images: list[bool]
     vqa_strategy_types: list[VQAStrategyType]
     prompt_types: list[PromptType]
     relevant_docs_count: list[Optional[int]] = field(default_factory=list)
@@ -318,17 +321,18 @@ class GeneralVQAStrategiesDetails:
                 vqa_strategy_detail = VQAStrategyDetail(
                     country=combination[0],
                     file_type=combination[1],
-                    vqa_strategy_type=combination[2],
-                    prompt_type=combination[3],
-                    relevant_docs_count=combination[4],
+                    use_image=combination[2],
+                    vqa_strategy_type=combination[3],
+                    prompt_type=combination[4],
+                    relevant_docs_count=combination[5],
                     doc_splitter_options=DocSplitterOptions(
-                        doc_splitter_type=combination[6][0],
-                        token_count=combination[6][1],
-                        add_title=combination[6][2],
-                        chunk_size=combination[6][3],
-                        chunk_overlap=combination[6][4]
+                        doc_splitter_type=combination[7][0],
+                        token_count=combination[7][1],
+                        add_title=combination[7][2],
+                        chunk_size=combination[7][3],
+                        chunk_overlap=combination[7][4]
                     ) if combination[6] else None,
-                    should_apply_rag_to_question=combination[5]
+                    should_apply_rag_to_question=combination[6]
                 )
                 possible_combinations.append(vqa_strategy_detail)
             except InvalidVQAStrategyDetailError as e:
