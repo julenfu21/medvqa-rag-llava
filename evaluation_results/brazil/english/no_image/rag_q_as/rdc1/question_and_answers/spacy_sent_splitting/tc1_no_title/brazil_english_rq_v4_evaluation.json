@@ -1,0 +1,2946 @@
+{
+    "accuracy": 0.33707865168539325,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 4.0,
+    "mean_original_docs_length": 14112.516853932584,
+    "mean_shortened_docs_length": 145.2191011235955,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ventricular tachycardia",
+                    "original_doc_length": 12079,
+                    "shortened_doc_length": 154,
+                    "shortened_doc_content": "Ventricular tachycardia (V-tach or VT) is a type of regular, fast heart rate that arises from improper electrical activity in the ventricles of the heart."
+                },
+                {
+                    "doc_title": "Defibrillation",
+                    "original_doc_length": 25752,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Defibrillation is a treatment for life-threatening cardiac dysrhythmias, specifically ventricular fibrillation (VF) and non-perfusing ventricular tachycardia (VT)."
+                },
+                {
+                    "doc_title": "Defibrillation",
+                    "original_doc_length": 25752,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Defibrillation is a treatment for life-threatening cardiac dysrhythmias, specifically ventricular fibrillation (VF) and non-perfusing ventricular tachycardia (VT)."
+                },
+                {
+                    "doc_title": "Defibrillation",
+                    "original_doc_length": 25752,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Defibrillation is a treatment for life-threatening cardiac dysrhythmias, specifically ventricular fibrillation (VF) and non-perfusing ventricular tachycardia (VT)."
+                }
+            ],
+            "mean_original_docs_length": 22333.75,
+            "mean_shortened_docs_length": 160.75
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Itraconazole",
+                    "original_doc_length": 7478,
+                    "shortened_doc_length": 85,
+                    "shortened_doc_content": "Itraconazole is an antifungal medication used to treat a number of fungal infections."
+                },
+                {
+                    "doc_title": "Potassium iodide",
+                    "original_doc_length": 25046,
+                    "shortened_doc_length": 76,
+                    "shortened_doc_content": "Potassium iodide is a chemical compound, medication, and dietary supplement."
+                },
+                {
+                    "doc_title": "Squamous cell carcinoma",
+                    "original_doc_length": 4427,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Squamous cell carcinomas (SCCs), also known as epidermoid carcinomas, comprise a number of different types of cancer that result from squamous cells."
+                },
+                {
+                    "doc_title": "Ethambutol/isoniazid/pyrazinamide/rifampicin",
+                    "original_doc_length": 814,
+                    "shortened_doc_length": 142,
+                    "shortened_doc_content": "Ethambutol/isoniazid/pyrazinamide/rifampicin, also known as ethambutol/isoniazid/pyrazinamide/rifampin, is a medication used for tuberculosis."
+                }
+            ],
+            "mean_original_docs_length": 9441.25,
+            "mean_shortened_docs_length": 113.0
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Amiodarone",
+                    "original_doc_length": 19390,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Amiodarone is an antiarrhythmic medication used to treat and prevent a number of types of irregular heartbeats."
+                },
+                {
+                    "doc_title": "Procainamide",
+                    "original_doc_length": 7963,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Procainamide is a medication of the antiarrhythmic class used for the treatment of cardiac arrhythmias."
+                },
+                {
+                    "doc_title": "Wolff\u2013Parkinson\u2013White syndrome",
+                    "original_doc_length": 13839,
+                    "shortened_doc_length": 157,
+                    "shortened_doc_content": "Wolff\u2013Parkinson\u2013White syndrome (WPWS) is a disorder due to a specific type of problem with the electrical system of the heart which has resulted in symptoms."
+                },
+                {
+                    "doc_title": "Multifocal atrial tachycardia",
+                    "original_doc_length": 2964,
+                    "shortened_doc_length": 262,
+                    "shortened_doc_content": "Multifocal (or multiform) atrial tachycardia (MAT) is an abnormal heart rhythm, specifically a type of supraventricular tachycardia, that is particularly common in older people and is associated with exacerbations of chronic obstructive pulmonary disease (COPD)."
+                }
+            ],
+            "mean_original_docs_length": 11039.0,
+            "mean_shortened_docs_length": 158.25
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Psoriasis",
+                    "original_doc_length": 43300,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "Psoriasis is a long-lasting autoimmune disease characterized by patches of abnormal skin."
+                },
+                {
+                    "doc_title": "Primary cutaneous coccidioidomycosis",
+                    "original_doc_length": 292,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "Primary cutaneous coccidioidomycosis is a skin condition caused by Coccidioides immitis following a definite history of inoculation or a colonized splinter found in the skin lesion."
+                },
+                {
+                    "doc_title": "Chromoblastomycosis",
+                    "original_doc_length": 4512,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "Chromoblastomycosis is a long-term fungal infection of the skin and subcutaneous tissue (a chronic subcutaneous mycosis)."
+                },
+                {
+                    "doc_title": "Fernandez reaction",
+                    "original_doc_length": 937,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "The Fernandez reaction is a reaction that occurs to signal a positive result in the lepromin skin test for leprosy."
+                }
+            ],
+            "mean_original_docs_length": 12260.25,
+            "mean_shortened_docs_length": 126.5
+        },
+        "5": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Glomerular basement membrane",
+                    "original_doc_length": 1808,
+                    "shortened_doc_length": 97,
+                    "shortened_doc_content": "The glomerular basement membrane (GBM) of the kidney is the basal lamina layer of the glomerulus."
+                },
+                {
+                    "doc_title": "Glomerular basement membrane",
+                    "original_doc_length": 1808,
+                    "shortened_doc_length": 97,
+                    "shortened_doc_content": "The glomerular basement membrane (GBM) of the kidney is the basal lamina layer of the glomerulus."
+                },
+                {
+                    "doc_title": "Immune response",
+                    "original_doc_length": 9767,
+                    "shortened_doc_length": 99,
+                    "shortened_doc_content": "The Immune response is the body's response caused by its immune system being activated by antigens."
+                },
+                {
+                    "doc_title": "C-ANCA",
+                    "original_doc_length": 767,
+                    "shortened_doc_length": 179,
+                    "shortened_doc_content": "c-ANCAs, or PR3-ANCA, or Cytoplasmic antineutrophil cytoplasmic antibodies, are a type of autoantibody, an antibody produced by the body that acts against one of its own proteins."
+                }
+            ],
+            "mean_original_docs_length": 3537.5,
+            "mean_shortened_docs_length": 118.0
+        },
+        "6": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Suspensory muscle of duodenum",
+                    "original_doc_length": 5531,
+                    "shortened_doc_length": 216,
+                    "shortened_doc_content": "The suspensory muscle of duodenum is a thin muscle connecting the junction between the duodenum, jejunum, and duodenojejunal flexure to connective tissue surrounding the superior mesenteric artery and coeliac artery."
+                },
+                {
+                    "doc_title": "Oxytocin (medication)",
+                    "original_doc_length": 7389,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Oxytocin, sold under the brand name Pitocin among others, is a medication made from the peptide \"oxytocin\"."
+                },
+                {
+                    "doc_title": "Cervical dilation",
+                    "original_doc_length": 4629,
+                    "shortened_doc_length": 176,
+                    "shortened_doc_content": "Cervical dilation (or cervical dilatation) is the opening of the cervix, the entrance to the uterus, during childbirth, miscarriage, induced abortion, or gynecological surgery."
+                },
+                {
+                    "doc_title": "Umbilical cord prolapse",
+                    "original_doc_length": 7074,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Umbilical cord prolapse is when the umbilical cord comes out of the uterus with or before the presenting part of the baby."
+                }
+            ],
+            "mean_original_docs_length": 6155.75,
+            "mean_shortened_docs_length": 155.25
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dilation",
+                    "original_doc_length": 1837,
+                    "shortened_doc_length": 1827,
+                    "shortened_doc_content": "Dilation (or dilatation) may refer to:\n\nBULLET::::- Cervical dilation, the widening of the cervix in childbirth, miscarriage etc.\nBULLET::::- Coronary dilation, or coronary reflex\nBULLET::::- Dilation and curettage, the opening of the cervix and surgical removal of the contents of the uterus\nBULLET::::- Dilation and evacuation, the dilation of the cervix and evacuation of the contents of the uterus\nBULLET::::- Esophageal dilatation, a procedure for widening a narrowed esophagus\nBULLET::::- Pupillary dilation, dilation of the pupil of the eye\nBULLET::::- Vasodilation, the widening of luminal diameter in blood vessels\n\nBULLET::::- Dilation (affine geometry), an affine transformation\nBULLET::::- Dilation (metric space), a function from a metric space into itself\nBULLET::::- Dilation (operator theory), a dilation of an operator on a Hilbert space\nBULLET::::- Dilation (morphology), an operation in mathematical morphology\nBULLET::::- Scaling (geometry), including:\nBULLET::::- Homogeneous dilation (homothety), the scalar multiplication operator on a vector space or affine space\nBULLET::::- Inhomogeneous dilation, where scale factors may differ in different directions\n\nBULLET::::- Thermal expansion of crystalline triglycerides is referred to as dilation\nBULLET::::- Scale invariance, a feature of objects or laws that do not change if length scales (or energy scales) are multiplied by a common factor\nBULLET::::- Time dilation, the observation that another's clock is ticking at a slower rate as measured by one's own clock\n\nBULLET::::- \"Dilate\" (Bardo Pond album)\nBULLET::::- \"Dilate\" (Ani DiFranco album)\nBULLET::::- Dilate (musical project), ambient solo project of Vampire Rodents keyboardist Victor Wulf\nBULLET::::- \"Dilation\" (album), 2011 album by comedian Rory Scovel\n\nBULLET::::- Dilution (disambiguation)"
+                },
+                {
+                    "doc_title": "Pulmonary embolism",
+                    "original_doc_length": 29390,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Pulmonary embolism (PE) is a blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream (embolism)."
+                },
+                {
+                    "doc_title": "Bilateral hilar lymphadenopathy",
+                    "original_doc_length": 950,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Bilateral hilar lymphadenopathy is a bilateral enlargement of the lymph nodes of pulmonary hila."
+                },
+                {
+                    "doc_title": "Left ventricular hypertrophy",
+                    "original_doc_length": 3302,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Left ventricular hypertrophy (LVH) is thickening of the heart muscle of the left ventricle of the heart, that is, left-sided ventricular hypertrophy."
+                }
+            ],
+            "mean_original_docs_length": 8869.75,
+            "mean_shortened_docs_length": 557.0
+        },
+        "8": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Factitious disorder imposed on self",
+                    "original_doc_length": 9848,
+                    "shortened_doc_length": 226,
+                    "shortened_doc_content": "Factitious disorder imposed on self, also known as Munchausen syndrome, is a factitious disorder wherein those affected feign disease, illness, or psychological trauma to draw attention, sympathy, or reassurance to themselves."
+                },
+                {
+                    "doc_title": "Legg\u2013Calv\u00e9\u2013Perthes disease",
+                    "original_doc_length": 15248,
+                    "shortened_doc_length": 128,
+                    "shortened_doc_content": "Legg\u2013Calv\u00e9\u2013Perthes disease (LCPD), is a childhood hip disorder initiated by a disruption of blood flow to the head of the femur."
+                },
+                {
+                    "doc_title": "Osteogenesis imperfecta",
+                    "original_doc_length": 22673,
+                    "shortened_doc_length": 127,
+                    "shortened_doc_content": "Osteogenesis imperfecta (OI), also known as brittle bone disease, is a group of genetic disorders that mainly affect the bones."
+                },
+                {
+                    "doc_title": "Hyperostosis",
+                    "original_doc_length": 330,
+                    "shortened_doc_length": 44,
+                    "shortened_doc_content": "Hyperostosis is an excessive growth of bone."
+                }
+            ],
+            "mean_original_docs_length": 12024.75,
+            "mean_shortened_docs_length": 131.25
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chronic pulmonary aspergillosis",
+                    "original_doc_length": 10654,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Chronic pulmonary aspergillosis is a long-term fungal infection caused by members of the genus \"Aspergillus\"\u2014most commonly \"Aspergillus\" \"fumigatus\"."
+                },
+                {
+                    "doc_title": "Lung cancer",
+                    "original_doc_length": 40419,
+                    "shortened_doc_length": 134,
+                    "shortened_doc_content": "Lung cancer, also known as lung carcinoma, is a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung."
+                },
+                {
+                    "doc_title": "Miliary tuberculosis",
+                    "original_doc_length": 6778,
+                    "shortened_doc_length": 158,
+                    "shortened_doc_content": "Miliary tuberculosis is a form of tuberculosis that is characterized by a wide dissemination into the human body and by the tiny size of the lesions (1\u20135\u00a0mm)."
+                },
+                {
+                    "doc_title": "Bronchiectasis",
+                    "original_doc_length": 18114,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung."
+                }
+            ],
+            "mean_original_docs_length": 18991.25,
+            "mean_shortened_docs_length": 136.25
+        },
+        "10": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Antithrombotic",
+                    "original_doc_length": 815,
+                    "shortened_doc_length": 86,
+                    "shortened_doc_content": "An antithrombotic agent is a drug that reduces the formation of blood clots (thrombi)."
+                },
+                {
+                    "doc_title": "Cardiac catheterization",
+                    "original_doc_length": 5220,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Cardiac catheterization (heart cath) is the insertion of a catheter into a chamber or vessel of the heart."
+                },
+                {
+                    "doc_title": "Cardiac stress test",
+                    "original_doc_length": 14644,
+                    "shortened_doc_length": 251,
+                    "shortened_doc_content": "A cardiac stress test (also referred to as a cardiac diagnostic test, cardiopulmonary exercise test, or abbreviated CPX test) is a cardiological test that measures the heart's ability to respond to external stress in a controlled clinical environment."
+                },
+                {
+                    "doc_title": "Electrocardiography in myocardial infarction",
+                    "original_doc_length": 4985,
+                    "shortened_doc_length": 209,
+                    "shortened_doc_content": "Electrocardiography in suspected myocardial infarction has the main purpose of detecting ischemia or acute coronary injury in emergency department populations coming for symptoms of myocardial infarction (MI)."
+                }
+            ],
+            "mean_original_docs_length": 6416.0,
+            "mean_shortened_docs_length": 163.0
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Caesarean section",
+                    "original_doc_length": 44996,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Caesarean section, also known as C-section, or caesarean delivery, is the use of surgery to deliver babies."
+                },
+                {
+                    "doc_title": "Misoprostol",
+                    "original_doc_length": 13098,
+                    "shortened_doc_length": 218,
+                    "shortened_doc_content": "Misoprostol, sold under the brandname Cytotec among others, is a medication used to prevent and treat stomach ulcers, start labor, cause an abortion, and treat postpartum bleeding due to poor contraction of the uterus."
+                },
+                {
+                    "doc_title": "Labor induction",
+                    "original_doc_length": 10422,
+                    "shortened_doc_length": 84,
+                    "shortened_doc_content": "Labor induction is the process or treatment that stimulates childbirth and delivery."
+                },
+                {
+                    "doc_title": "Amniotic sac",
+                    "original_doc_length": 3661,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "The amniotic sac, commonly called the bag of waters, sometimes the membranes, is the sac in which the fetus develops in amniotes."
+                }
+            ],
+            "mean_original_docs_length": 18044.25,
+            "mean_shortened_docs_length": 134.5
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shoulder dystocia",
+                    "original_doc_length": 6180,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "Shoulder dystocia is when, after delivery of the head, the baby's anterior shoulder gets caught above the mother's pubic bone."
+                },
+                {
+                    "doc_title": "Terbutaline",
+                    "original_doc_length": 2652,
+                    "shortened_doc_length": 255,
+                    "shortened_doc_content": "Terbutaline, sold under the brand name Bricanyl among others, is a \u03b2 adrenergic receptor agonist, used as a \"reliever\" inhaler in the management of asthma symptoms and as a tocolytic (anti-contraction medication) to delay preterm labor for up to 48 hours."
+                },
+                {
+                    "doc_title": "Symphysiotomy",
+                    "original_doc_length": 10131,
+                    "shortened_doc_length": 170,
+                    "shortened_doc_content": "Symphysiotomy is a surgical procedure in which the cartilage of the pubic symphysis is divided to widen the pelvis allowing childbirth when there is a mechanical problem."
+                },
+                {
+                    "doc_title": "Oxytocin",
+                    "original_doc_length": 29508,
+                    "shortened_doc_length": 53,
+                    "shortened_doc_content": "Oxytocin (Oxt) is a peptide hormone and neuropeptide."
+                }
+            ],
+            "mean_original_docs_length": 12117.75,
+            "mean_shortened_docs_length": 151.0
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Venous thrombosis",
+                    "original_doc_length": 14718,
+                    "shortened_doc_length": 70,
+                    "shortened_doc_content": "A venous thrombus is a blood clot (thrombus) that forms within a vein."
+                },
+                {
+                    "doc_title": "Pulmonary embolism",
+                    "original_doc_length": 29390,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Pulmonary embolism (PE) is a blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream (embolism)."
+                },
+                {
+                    "doc_title": "Venous thrombosis",
+                    "original_doc_length": 14718,
+                    "shortened_doc_length": 70,
+                    "shortened_doc_content": "A venous thrombus is a blood clot (thrombus) that forms within a vein."
+                },
+                {
+                    "doc_title": "Pulmonary embolism",
+                    "original_doc_length": 29390,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Pulmonary embolism (PE) is a blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream (embolism)."
+                }
+            ],
+            "mean_original_docs_length": 22054.0,
+            "mean_shortened_docs_length": 113.0
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Osteopenia",
+                    "original_doc_length": 8115,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Osteopenia, preferably known as \"low bone mass\" or \"low bone density\", is a condition in which bone mineral density is low."
+                },
+                {
+                    "doc_title": "Endocrine bone disease",
+                    "original_doc_length": 3726,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "An endocrine bone disease is a bone disease associated with a disorder of the endocrine system."
+                },
+                {
+                    "doc_title": "Osteomalacia",
+                    "original_doc_length": 5428,
+                    "shortened_doc_length": 224,
+                    "shortened_doc_content": "Osteomalacia is a disease characterized by the softening of the bones caused by impaired bone metabolism primarily due to inadequate levels of available phosphate, calcium, and vitamin D, or because of resorption of calcium."
+                },
+                {
+                    "doc_title": "Metaphyseal dysplasia",
+                    "original_doc_length": 4227,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Metaphyseal dysplasia, or Pyle disease, is a disorder of the bones."
+                }
+            ],
+            "mean_original_docs_length": 5374.0,
+            "mean_shortened_docs_length": 127.25
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "ST depression",
+                    "original_doc_length": 3263,
+                    "shortened_doc_length": 132,
+                    "shortened_doc_content": "ST depression refers to a finding on an electrocardiogram, wherein the trace in the ST segment is abnormally low below the baseline."
+                },
+                {
+                    "doc_title": "ST depression",
+                    "original_doc_length": 3263,
+                    "shortened_doc_length": 132,
+                    "shortened_doc_content": "ST depression refers to a finding on an electrocardiogram, wherein the trace in the ST segment is abnormally low below the baseline."
+                },
+                {
+                    "doc_title": "ST depression",
+                    "original_doc_length": 3263,
+                    "shortened_doc_length": 132,
+                    "shortened_doc_content": "ST depression refers to a finding on an electrocardiogram, wherein the trace in the ST segment is abnormally low below the baseline."
+                },
+                {
+                    "doc_title": "Myocardial rupture",
+                    "original_doc_length": 5158,
+                    "shortened_doc_length": 151,
+                    "shortened_doc_content": "Myocardial rupture is a laceration of the ventricles or atria of the heart, of the interatrial or interventricular septum, or of the papillary muscles."
+                }
+            ],
+            "mean_original_docs_length": 3736.75,
+            "mean_shortened_docs_length": 136.75
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute decompensated heart failure",
+                    "original_doc_length": 3310,
+                    "shortened_doc_length": 198,
+                    "shortened_doc_content": "Acute decompensated heart failure (ADHF) is a sudden worsening of the signs and symptoms of heart failure, which typically includes difficulty breathing (dyspnea), leg or feet swelling, and fatigue."
+                },
+                {
+                    "doc_title": "Defibrillation",
+                    "original_doc_length": 25752,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Defibrillation is a treatment for life-threatening cardiac dysrhythmias, specifically ventricular fibrillation (VF) and non-perfusing ventricular tachycardia (VT)."
+                },
+                {
+                    "doc_title": "Procainamide",
+                    "original_doc_length": 7963,
+                    "shortened_doc_length": 103,
+                    "shortened_doc_content": "Procainamide is a medication of the antiarrhythmic class used for the treatment of cardiac arrhythmias."
+                },
+                {
+                    "doc_title": "Digoxin",
+                    "original_doc_length": 12008,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "Digoxin, sold under the brand name Lanoxin among others, is a medication used to treat various heart conditions."
+                }
+            ],
+            "mean_original_docs_length": 12258.25,
+            "mean_shortened_docs_length": 144.0
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Computed tomography of the head",
+                    "original_doc_length": 4828,
+                    "shortened_doc_length": 223,
+                    "shortened_doc_content": "Computed tomography of the head uses a series of X-rays in a CT scan of the head taken from many different directions; the resulting data is transformed into a series of cross sections of the brain using a computer program."
+                },
+                {
+                    "doc_title": "Smoking cessation",
+                    "original_doc_length": 47480,
+                    "shortened_doc_length": 118,
+                    "shortened_doc_content": "Smoking cessation (also known as quitting smoking or simply quitting) is the process of discontinuing tobacco smoking."
+                },
+                {
+                    "doc_title": "Chest radiograph",
+                    "original_doc_length": 13560,
+                    "shortened_doc_length": 188,
+                    "shortened_doc_content": "A chest radiograph, called a chest X-ray (CXR), or chest film, is a projection radiograph of the chest used to diagnose conditions affecting the chest, its contents, and nearby structures."
+                }
+            ],
+            "mean_original_docs_length": 34513.0,
+            "mean_shortened_docs_length": 157.25
+        },
+        "19": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Physician",
+                    "original_doc_length": 17744,
+                    "shortened_doc_length": 337,
+                    "shortened_doc_content": "A physician (American English), medical practitioner (Commonwealth English), medical doctor, or simply doctor, is a professional who practises medicine, which is concerned with promoting, maintaining, or restoring health through the study, diagnosis, prognosis and treatment of disease, injury, and other physical and mental impairments."
+                },
+                {
+                    "doc_title": "Nursing",
+                    "original_doc_length": 54208,
+                    "shortened_doc_length": 192,
+                    "shortened_doc_content": "Nursing is a profession within the health care sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life."
+                },
+                {
+                    "doc_title": "Community counseling",
+                    "original_doc_length": 2627,
+                    "shortened_doc_length": 141,
+                    "shortened_doc_content": "Community counseling is a generic term for any of professional counseling that treats dysfunction occurring within a group of related people."
+                },
+                {
+                    "doc_title": "Nursing",
+                    "original_doc_length": 54208,
+                    "shortened_doc_length": 192,
+                    "shortened_doc_content": "Nursing is a profession within the health care sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life."
+                }
+            ],
+            "mean_original_docs_length": 32196.75,
+            "mean_shortened_docs_length": 215.5
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                },
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 313,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas."
+                }
+            ],
+            "mean_original_docs_length": 1316.0,
+            "mean_shortened_docs_length": 313.0
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Prolonged labor",
+                    "original_doc_length": 9771,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Prolonged labor is the inability of a woman to proceed with childbirth upon going into labor."
+                },
+                {
+                    "doc_title": "Caesarean section",
+                    "original_doc_length": 44996,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Caesarean section, also known as C-section, or caesarean delivery, is the use of surgery to deliver babies."
+                },
+                {
+                    "doc_title": "Cervical dilation",
+                    "original_doc_length": 4629,
+                    "shortened_doc_length": 176,
+                    "shortened_doc_content": "Cervical dilation (or cervical dilatation) is the opening of the cervix, the entrance to the uterus, during childbirth, miscarriage, induced abortion, or gynecological surgery."
+                },
+                {
+                    "doc_title": "Oxytocin (medication)",
+                    "original_doc_length": 7389,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "Oxytocin, sold under the brand name Pitocin among others, is a medication made from the peptide \"oxytocin\"."
+                }
+            ],
+            "mean_original_docs_length": 16696.25,
+            "mean_shortened_docs_length": 120.75
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lidocaine",
+                    "original_doc_length": 14170,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Lidocaine, also known as lignocaine, is a medication used to numb tissue in a specific area (local anesthetic)."
+                },
+                {
+                    "doc_title": "Idoxuridine",
+                    "original_doc_length": 1530,
+                    "shortened_doc_length": 50,
+                    "shortened_doc_content": "Idoxuridine is an anti-herpesvirus antiviral drug."
+                },
+                {
+                    "doc_title": "Etacrynic acid",
+                    "original_doc_length": 2105,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Etacrynic acid (INN) or ethacrynic acid (USAN), trade name Edecrin, is a loop diuretic used to treat high blood pressure and the swelling caused by diseases like congestive heart failure, liver failure, and kidney failure."
+                },
+                {
+                    "doc_title": "VZV immune globulin",
+                    "original_doc_length": 1621,
+                    "shortened_doc_length": 199,
+                    "shortened_doc_content": "VZV (varicella zoster virus) globulin or VZV antibodies is an immune system medication that is used mostly for immunosuppressed patients who have been or may be exposed to the varicella zoster virus."
+                }
+            ],
+            "mean_original_docs_length": 4856.5,
+            "mean_shortened_docs_length": 145.5
+        },
+        "23": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Warfarin",
+                    "original_doc_length": 36161,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "Warfarin, sold under the brand name Coumadin among others, is a medication that is used as an anticoagulant (blood thinner)."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Thienopyridine",
+                    "original_doc_length": 497,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Thienopyridines are a class of selective, irreversible ADP receptor/P2Y12 inhibitors used for their anti-platelet activity."
+                },
+                {
+                    "doc_title": "Atorvastatin",
+                    "original_doc_length": 18874,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "Atorvastatin, sold under the brand name Lipitor among others, is a statin medication used to prevent cardiovascular disease in those at high risk and treat abnormal lipid levels."
+                }
+            ],
+            "mean_original_docs_length": 17738.75,
+            "mean_shortened_docs_length": 147.25
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hormonal contraception",
+                    "original_doc_length": 23202,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Hormonal contraception refers to birth control methods that act on the endocrine system."
+                },
+                {
+                    "doc_title": "Cervicitis",
+                    "original_doc_length": 473,
+                    "shortened_doc_length": 49,
+                    "shortened_doc_content": "Cervicitis is inflammation of the uterine cervix."
+                },
+                {
+                    "doc_title": "Hypoestrogenism",
+                    "original_doc_length": 2384,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Hypoestrogenism, or estrogen deficiency, refers to a lower than normal level of estrogen, the primary sex hormone in women."
+                },
+                {
+                    "doc_title": "Ovulation",
+                    "original_doc_length": 9382,
+                    "shortened_doc_length": 50,
+                    "shortened_doc_content": "Ovulation is the release of eggs from the ovaries."
+                }
+            ],
+            "mean_original_docs_length": 8860.25,
+            "mean_shortened_docs_length": 77.5
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Prenatal testing",
+                    "original_doc_length": 29982,
+                    "shortened_doc_length": 180,
+                    "shortened_doc_content": "Prenatal testing consists of prenatal screening and prenatal diagnosis, which are aspects of prenatal care that focus on detecting problems with the pregnancy as early as possible."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                },
+                {
+                    "doc_title": "Prenatal testing",
+                    "original_doc_length": 29982,
+                    "shortened_doc_length": 180,
+                    "shortened_doc_content": "Prenatal testing consists of prenatal screening and prenatal diagnosis, which are aspects of prenatal care that focus on detecting problems with the pregnancy as early as possible."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                }
+            ],
+            "mean_original_docs_length": 22714.0,
+            "mean_shortened_docs_length": 129.5
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cefalexin",
+                    "original_doc_length": 5606,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Cefalexin, also spelled cephalexin, is an antibiotic that can treat a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Azithromycin",
+                    "original_doc_length": 14053,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "Azithromycin is an antibiotic used for the treatment of a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Levofloxacin",
+                    "original_doc_length": 20760,
+                    "shortened_doc_length": 81,
+                    "shortened_doc_content": "Levofloxacin, sold under the trade names Levaquin among others, is an antibiotic."
+                },
+                {
+                    "doc_title": "Ceftriaxone",
+                    "original_doc_length": 10116,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Ceftriaxone, sold under the brand name Rocephin, is an antibiotic used for the treatment of a number of bacterial infections."
+                }
+            ],
+            "mean_original_docs_length": 12633.75,
+            "mean_shortened_docs_length": 99.0
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks."
+                },
+                {
+                    "doc_title": "Postpartum infections",
+                    "original_doc_length": 17950,
+                    "shortened_doc_length": 171,
+                    "shortened_doc_content": "Postpartum infections, also known as childbed fever and puerperal fever, are any bacterial infections of the female reproductive tract following childbirth or miscarriage."
+                },
+                {
+                    "doc_title": "Immunization during pregnancy",
+                    "original_doc_length": 5128,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Immunization during pregnancy, that is the administration of a vaccine to a pregnant woman, is not a routine event as it is generally preferred to administer vaccines either prior to conception or in the postpartum period."
+                },
+                {
+                    "doc_title": "Fetal distress",
+                    "original_doc_length": 2191,
+                    "shortened_doc_length": 139,
+                    "shortened_doc_content": "Fetal distress refers to the presence of signs in a pregnant woman\u2014before or during childbirth\u2014that suggest that the fetus may not be well."
+                }
+            ],
+            "mean_original_docs_length": 17728.0,
+            "mean_shortened_docs_length": 170.25
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Left bundle branch block",
+                    "original_doc_length": 2237,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Left bundle branch block (LBBB) is a cardiac conduction abnormality seen on the electrocardiogram (ECG)."
+                },
+                {
+                    "doc_title": "Left bundle branch block",
+                    "original_doc_length": 2237,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Left bundle branch block (LBBB) is a cardiac conduction abnormality seen on the electrocardiogram (ECG)."
+                },
+                {
+                    "doc_title": "Right heart strain",
+                    "original_doc_length": 1912,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "Right heart strain (also right ventricular strain or RV strain) is a medical finding of right ventricular dysfunction where the heart muscle of the right ventricle (RV) is deformed."
+                },
+                {
+                    "doc_title": "Right heart strain",
+                    "original_doc_length": 1912,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "Right heart strain (also right ventricular strain or RV strain) is a medical finding of right ventricular dysfunction where the heart muscle of the right ventricle (RV) is deformed."
+                }
+            ],
+            "mean_original_docs_length": 2074.5,
+            "mean_shortened_docs_length": 142.5
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trichomoniasis",
+                    "original_doc_length": 7587,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Trichomoniasis (trich) is an infectious disease caused by the parasite \"Trichomonas vaginalis\"."
+                },
+                {
+                    "doc_title": "Chlamydia trachomatis",
+                    "original_doc_length": 17224,
+                    "shortened_doc_length": 255,
+                    "shortened_doc_content": "Chlamydia trachomatis (), commonly known as chlamydia, is a bacterium that causes chlamydia, which can manifest in various ways, including: trachoma, lymphogranuloma venereum, nongonococcal urethritis, cervicitis, salpingitis, pelvic inflammatory disease."
+                },
+                {
+                    "doc_title": "Neisseria gonorrhoeae",
+                    "original_doc_length": 19357,
+                    "shortened_doc_length": 167,
+                    "shortened_doc_content": "Neisseria gonorrhoeae, also known as gonococcus (singular), or gonococci (plural) is a species of Gram-negative diplococci bacteria isolated by Albert Neisser in 1879."
+                },
+                {
+                    "doc_title": "Candida albicans",
+                    "original_doc_length": 27574,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "Candida albicans is an opportunistic pathogenic yeast that is a common member of the human gut flora."
+                }
+            ],
+            "mean_original_docs_length": 17935.5,
+            "mean_shortened_docs_length": 154.5
+        },
+        "30": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatology",
+                    "original_doc_length": 5564,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Hepatology is the branch of medicine that incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management of their disorders."
+                },
+                {
+                    "doc_title": "Hepatoportoenterostomy",
+                    "original_doc_length": 1547,
+                    "shortened_doc_length": 174,
+                    "shortened_doc_content": "A hepatoportoenterostomy or Kasai portoenterostomy is a surgical treatment performed on infants with Type IVb choledochal cyst and biliary atresia to allow for bile drainage."
+                },
+                {
+                    "doc_title": "Alcohol detoxification",
+                    "original_doc_length": 4658,
+                    "shortened_doc_length": 140,
+                    "shortened_doc_content": "Alcohol detoxification (also known as \"detox\") is the abrupt cessation of alcohol intake in individuals that suffer from alcohol dependence."
+                },
+                {
+                    "doc_title": "Incision and drainage",
+                    "original_doc_length": 1591,
+                    "shortened_doc_length": 184,
+                    "shortened_doc_content": "Incision and drainage and clinical lancing are minor surgical procedures to release pus or pressure built up under the skin, such as from an abscess, boil, or infected paranasal sinus."
+                }
+            ],
+            "mean_original_docs_length": 3340.0,
+            "mean_shortened_docs_length": 163.5
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Gram stain",
+                    "original_doc_length": 9817,
+                    "shortened_doc_length": 187,
+                    "shortened_doc_content": "Gram stain or Gram staining, also called Gram's method, is a method of staining used to distinguish and classify bacterial species into two large groups (gram-positive and gram-negative)."
+                },
+                {
+                    "doc_title": "Cause (medicine)",
+                    "original_doc_length": 4346,
+                    "shortened_doc_length": 90,
+                    "shortened_doc_content": "Cause, also known as etiology () and aetiology, is the reason or origination of something."
+                },
+                {
+                    "doc_title": "Bacteriology",
+                    "original_doc_length": 2605,
+                    "shortened_doc_length": 174,
+                    "shortened_doc_content": "Bacteriology is the branch and specialty of biology that studies the morphology, ecology, genetics and biochemistry of bacteria as well as many other aspects related to them."
+                },
+                {
+                    "doc_title": "Sputum culture",
+                    "original_doc_length": 2367,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "A sputum culture is a test to detect and identify bacteria or fungi that infect the lungs or breathing passages."
+                }
+            ],
+            "mean_original_docs_length": 4783.75,
+            "mean_shortened_docs_length": 140.75
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Broad-spectrum antibiotic",
+                    "original_doc_length": 8205,
+                    "shortened_doc_length": 200,
+                    "shortened_doc_content": "A broad-spectrum antibiotic is an antibiotic that acts on the two major bacterial groups, gram-positive and gram-negative, or any antibiotic that acts against a wide range of disease-causing bacteria."
+                },
+                {
+                    "doc_title": "Povidone-iodine",
+                    "original_doc_length": 7339,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Povidone-iodine (PVP-I), also known as iodopovidone, is an antiseptic used for skin disinfection before and after surgery."
+                },
+                {
+                    "doc_title": "Skin grafting",
+                    "original_doc_length": 8553,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Skin grafting is a type of graft surgery involving the transplantation of skin."
+                },
+                {
+                    "doc_title": "Nerve block",
+                    "original_doc_length": 4824,
+                    "shortened_doc_length": 143,
+                    "shortened_doc_content": "Nerve block or regional nerve blockade is any deliberate interruption of signals traveling along a nerve, often for the purpose of pain relief."
+                }
+            ],
+            "mean_original_docs_length": 7230.25,
+            "mean_shortened_docs_length": 136.0
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Haemophilus",
+                    "original_doc_length": 2235,
+                    "shortened_doc_length": 116,
+                    "shortened_doc_content": "Haemophilus is a genus of Gram-negative, pleomorphic, coccobacilli bacteria belonging to the family Pasteurellaceae."
+                },
+                {
+                    "doc_title": "Procaine benzylpenicillin",
+                    "original_doc_length": 2673,
+                    "shortened_doc_length": 141,
+                    "shortened_doc_content": "Procaine benzylpenicillin also known as penicillin G procaine, is an antibiotic useful for the treatment of a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Oxacillin",
+                    "original_doc_length": 5388,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Oxacillin (trade name Bactocill) is a narrow-spectrum beta-lactam antibiotic of the penicillin class developed by Beecham."
+                },
+                {
+                    "doc_title": "Macrolide",
+                    "original_doc_length": 7683,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "The macrolides are a class of natural products that consist of a large macrocyclic lactone ring to which one or more deoxy sugars, usually cladinose and desosamine, may be attached."
+                }
+            ],
+            "mean_original_docs_length": 4494.75,
+            "mean_shortened_docs_length": 140.0
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory failure",
+                    "original_doc_length": 5515,
+                    "shortened_doc_length": 173,
+                    "shortened_doc_content": "Respiratory failure results from inadequate gas exchange by the respiratory system, meaning that the arterial oxygen, carbon dioxide or both cannot be kept at normal levels."
+                },
+                {
+                    "doc_title": "Bronchopneumonia",
+                    "original_doc_length": 1684,
+                    "shortened_doc_length": 43,
+                    "shortened_doc_content": "Bronchopneumonia is a subtype of pneumonia."
+                },
+                {
+                    "doc_title": "Tuberculosis",
+                    "original_doc_length": 38322,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "Tuberculosis (TB) is an infectious disease usually caused by \"Mycobacterium tuberculosis\" (MTB) bacteria."
+                },
+                {
+                    "doc_title": "AIDS (disambiguation)",
+                    "original_doc_length": 854,
+                    "shortened_doc_length": 101,
+                    "shortened_doc_content": "HIV/AIDS is a spectrum of conditions caused by infection with the human immunodeficiency virus (HIV)."
+                }
+            ],
+            "mean_original_docs_length": 11593.75,
+            "mean_shortened_docs_length": 105.5
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cervical dilation",
+                    "original_doc_length": 4629,
+                    "shortened_doc_length": 176,
+                    "shortened_doc_content": "Cervical dilation (or cervical dilatation) is the opening of the cervix, the entrance to the uterus, during childbirth, miscarriage, induced abortion, or gynecological surgery."
+                },
+                {
+                    "doc_title": "Nonsense word",
+                    "original_doc_length": 1005,
+                    "shortened_doc_length": 57,
+                    "shortened_doc_content": "A nonsense word, unlike a sememe, may have no definition."
+                },
+                {
+                    "doc_title": "Obstetrical forceps",
+                    "original_doc_length": 19666,
+                    "shortened_doc_length": 152,
+                    "shortened_doc_content": "Obstetrical forceps are an instrument that can be used to assist in the delivery of a baby as an alternative to the ventouse (vacuum extraction) method."
+                },
+                {
+                    "doc_title": "Prolonged labor",
+                    "original_doc_length": 9771,
+                    "shortened_doc_length": 93,
+                    "shortened_doc_content": "Prolonged labor is the inability of a woman to proceed with childbirth upon going into labor."
+                }
+            ],
+            "mean_original_docs_length": 8767.75,
+            "mean_shortened_docs_length": 119.5
+        },
+        "37": {
+            "predicted_answer": "C",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Toxic heavy metal",
+                    "original_doc_length": 13201,
+                    "shortened_doc_length": 142,
+                    "shortened_doc_content": "A toxic heavy metal is any relatively dense metal or metalloid that is noted for its potential toxicity, especially in environmental contexts."
+                },
+                {
+                    "doc_title": "Explosive",
+                    "original_doc_length": 43919,
+                    "shortened_doc_length": 236,
+                    "shortened_doc_content": "An explosive (or explosive material) is a reactive substance that contains a great amount of potential energy that can produce an explosion if released suddenly, usually accompanied by the production of light, heat, sound, and pressure."
+                },
+                {
+                    "doc_title": "Epidemic",
+                    "original_doc_length": 8392,
+                    "shortened_doc_length": 227,
+                    "shortened_doc_content": "An epidemic (from Greek \u1f10\u03c0\u03af \"epi\" \"upon or above\" and \u03b4\u1fc6\u03bc\u03bf\u03c2 \"demos\" \"people\") is the rapid spread of infectious disease to a large number of people in a given population within a short period of time, usually two weeks or less."
+                },
+                {
+                    "doc_title": "Secondary malignant neoplasm",
+                    "original_doc_length": 219,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Secondary malignant neoplasm is a malignant tumor whose cause is the treatment (usually radiation or chemotherapy) which was used for a prior tumor."
+                }
+            ],
+            "mean_original_docs_length": 16432.75,
+            "mean_shortened_docs_length": 188.25
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Oxygen therapy",
+                    "original_doc_length": 20495,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Oxygen therapy, also known as supplemental oxygen, is the use of oxygen as a medical treatment."
+                },
+                {
+                    "doc_title": "Broad-spectrum antibiotic",
+                    "original_doc_length": 8205,
+                    "shortened_doc_length": 200,
+                    "shortened_doc_content": "A broad-spectrum antibiotic is an antibiotic that acts on the two major bacterial groups, gram-positive and gram-negative, or any antibiotic that acts against a wide range of disease-causing bacteria."
+                },
+                {
+                    "doc_title": "Bronchodilator",
+                    "original_doc_length": 6462,
+                    "shortened_doc_length": 247,
+                    "shortened_doc_content": "A bronchodilator or broncholytic (although the latter occasionally includes secretory inhibition as well) is a substance that dilates the bronchi and bronchioles, decreasing resistance in the respiratory airway and increasing airflow to the lungs."
+                },
+                {
+                    "doc_title": "Budesonide/formoterol",
+                    "original_doc_length": 4777,
+                    "shortened_doc_length": 182,
+                    "shortened_doc_content": "Budesonide/formoterol, sold under the brand name Symbicort among others, is a combination medication used in the management of asthma or chronic obstructive pulmonary disease (COPD)."
+                }
+            ],
+            "mean_original_docs_length": 9984.75,
+            "mean_shortened_docs_length": 181.0
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Infant mortality",
+                    "original_doc_length": 70193,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Infant mortality is the death of young children under the age of 1."
+                },
+                {
+                    "doc_title": "Neonatology",
+                    "original_doc_length": 6812,
+                    "shortened_doc_length": 138,
+                    "shortened_doc_content": "Neonatology is a subspecialty of pediatrics that consists of the medical care of newborn infants, especially the ill or premature newborn."
+                },
+                {
+                    "doc_title": "Infant mortality",
+                    "original_doc_length": 70193,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Infant mortality is the death of young children under the age of 1."
+                },
+                {
+                    "doc_title": "Infant mortality",
+                    "original_doc_length": 70193,
+                    "shortened_doc_length": 67,
+                    "shortened_doc_content": "Infant mortality is the death of young children under the age of 1."
+                }
+            ],
+            "mean_original_docs_length": 54347.75,
+            "mean_shortened_docs_length": 84.75
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                },
+                {
+                    "doc_title": "Tuberculosis management",
+                    "original_doc_length": 72184,
+                    "shortened_doc_length": 100,
+                    "shortened_doc_content": "Tuberculosis management refers to the medical treatment of the infectious disease tuberculosis (TB)."
+                }
+            ],
+            "mean_original_docs_length": 72184.0,
+            "mean_shortened_docs_length": 100.0
+        },
+        "41": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Nutritional neuroscience",
+                    "original_doc_length": 57831,
+                    "shortened_doc_length": 290,
+                    "shortened_doc_content": "Nutritional neuroscience is the scientific discipline that studies the effects various components of the diet such as minerals, vitamins, protein, carbohydrates, fats, dietary supplements, synthetic hormones, and food additives have on neurochemistry, neurobiology, behavior, and cognition."
+                },
+                {
+                    "doc_title": "Hormone",
+                    "original_doc_length": 19463,
+                    "shortened_doc_length": 264,
+                    "shortened_doc_content": "A hormone (from the Greek participle , \"setting in motion\") is any member of a class of signaling molecules, produced by glands in multicellular organisms, that are transported by the circulatory system to target distant organs to regulate physiology and behavior."
+                },
+                {
+                    "doc_title": "Constitutional symptoms",
+                    "original_doc_length": 553,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "Constitutional symptoms refers to a group of symptoms that can affect many different systems of the body."
+                },
+                {
+                    "doc_title": "Genetic disorder",
+                    "original_doc_length": 14533,
+                    "shortened_doc_length": 89,
+                    "shortened_doc_content": "A genetic disorder is a health problem caused by one or more abnormalities in the genome."
+                }
+            ],
+            "mean_original_docs_length": 23095.0,
+            "mean_shortened_docs_length": 187.0
+        },
+        "42": {
+            "predicted_answer": "B",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Shock (circulatory)",
+                    "original_doc_length": 21707,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Shock is the state of insufficient blood flow to the tissues of the body as a result of problems with the circulatory system."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                },
+                {
+                    "doc_title": "Shock (circulatory)",
+                    "original_doc_length": 21707,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Shock is the state of insufficient blood flow to the tissues of the body as a result of problems with the circulatory system."
+                },
+                {
+                    "doc_title": "Eclampsia",
+                    "original_doc_length": 15446,
+                    "shortened_doc_length": 79,
+                    "shortened_doc_content": "Eclampsia is the onset of seizures (convulsions) in a woman with pre-eclampsia."
+                }
+            ],
+            "mean_original_docs_length": 18576.5,
+            "mean_shortened_docs_length": 102.0
+        },
+        "43": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hip fracture",
+                    "original_doc_length": 20478,
+                    "shortened_doc_length": 82,
+                    "shortened_doc_content": "A hip fracture is a break that occurs in the upper part of the femur (thigh bone)."
+                },
+                {
+                    "doc_title": "Colles' fracture",
+                    "original_doc_length": 5608,
+                    "shortened_doc_length": 119,
+                    "shortened_doc_content": "A Colles' fracture is a type of fracture of the distal forearm in which the broken end of the radius is bent backwards."
+                },
+                {
+                    "doc_title": "Analgesic",
+                    "original_doc_length": 12901,
+                    "shortened_doc_length": 107,
+                    "shortened_doc_content": "An analgesic or painkiller is any member of the group of drugs used to achieve analgesia, relief from pain."
+                },
+                {
+                    "doc_title": "Ketorolac",
+                    "original_doc_length": 6833,
+                    "shortened_doc_length": 127,
+                    "shortened_doc_content": "Ketorolac, sold under the brand name Toradol among others, is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain."
+                }
+            ],
+            "mean_original_docs_length": 11455.0,
+            "mean_shortened_docs_length": 108.75
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Leptospirosis",
+                    "original_doc_length": 38394,
+                    "shortened_doc_length": 91,
+                    "shortened_doc_content": "Leptospirosis is a blood infection caused by corkscrew-shaped bacteria called \"Leptospira\"."
+                },
+                {
+                    "doc_title": "Sulfadiazine",
+                    "original_doc_length": 1835,
+                    "shortened_doc_length": 30,
+                    "shortened_doc_content": "Sulfadiazine is an antibiotic."
+                },
+                {
+                    "doc_title": "Ciprofloxacin",
+                    "original_doc_length": 24276,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "Ciprofloxacin is an antibiotic used to treat a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Cholangiography",
+                    "original_doc_length": 1112,
+                    "shortened_doc_length": 127,
+                    "shortened_doc_content": "Cholangiography is the imaging of the bile duct (also known as the biliary tree) by x-rays and an injection of contrast medium."
+                }
+            ],
+            "mean_original_docs_length": 16404.25,
+            "mean_shortened_docs_length": 81.5
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Felodipine",
+                    "original_doc_length": 4116,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Felodipine is a medication of the calcium channel blocker type which is used to treat high blood pressure."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Enoxaparin sodium",
+                    "original_doc_length": 6781,
+                    "shortened_doc_length": 65,
+                    "shortened_doc_content": "Enoxaparin sodium is an anticoagulant medication (blood thinner)."
+                },
+                {
+                    "doc_title": "Streptokinase",
+                    "original_doc_length": 6807,
+                    "shortened_doc_length": 59,
+                    "shortened_doc_content": "Streptokinase (SK) is a thrombolytic medication and enzyme."
+                }
+            ],
+            "mean_original_docs_length": 8281.75,
+            "mean_shortened_docs_length": 98.5
+        },
+        "47": {
+            "predicted_answer": "C",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Spinal epidural hematoma",
+                    "original_doc_length": 950,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Spinal epidural hematoma is bleeding into the epidural space in the spine."
+                },
+                {
+                    "doc_title": "Subdural hematoma",
+                    "original_doc_length": 11326,
+                    "shortened_doc_length": 240,
+                    "shortened_doc_content": "A subdural hematoma (SDH) is a type of bleeding in which a collection of blood\u2014usually associated with a traumatic brain injury\u2014gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain."
+                },
+                {
+                    "doc_title": "Intraparenchymal hemorrhage",
+                    "original_doc_length": 6273,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Intraparenchymal hemorrhage (IPH) is one form of intracerebral bleeding in which there is bleeding within brain parenchyma."
+                },
+                {
+                    "doc_title": "Disaster convergence",
+                    "original_doc_length": 354,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "Disaster convergence is the phenomenon of individuals or groups moving towards a disaster-stricken area."
+                }
+            ],
+            "mean_original_docs_length": 4725.75,
+            "mean_shortened_docs_length": 135.25
+        },
+        "48": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Losartan",
+                    "original_doc_length": 8458,
+                    "shortened_doc_length": 114,
+                    "shortened_doc_content": "Losartan, sold under the trade name Cozaar among others, is a medication mainly used to treat high blood pressure."
+                },
+                {
+                    "doc_title": "Clopidogrel",
+                    "original_doc_length": 15423,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Clopidogrel, sold under the trade name Plavix among others, is an antiplatelet medication used to reduce the risk of heart disease and stroke in those at high risk."
+                },
+                {
+                    "doc_title": "Metoprolol",
+                    "original_doc_length": 10310,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Metoprolol, marketed under the tradename Lopressor among others, is a medication of the selective \u03b2 receptor blocker type."
+                },
+                {
+                    "doc_title": "Nitrovasodilator",
+                    "original_doc_length": 6577,
+                    "shortened_doc_length": 203,
+                    "shortened_doc_content": "A nitrovasodilator is a pharmaceutical agent that causes vasodilation (widening of blood vessels) by donation of nitric oxide (NO), and is mostly used for the treatment and prevention of angina pectoris."
+                }
+            ],
+            "mean_original_docs_length": 10192.0,
+            "mean_shortened_docs_length": 150.75
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Biopsy",
+                    "original_doc_length": 9390,
+                    "shortened_doc_length": 235,
+                    "shortened_doc_content": "A biopsy is a medical test commonly performed by a surgeon, interventional radiologist, or an interventional cardiologist involving extraction of sample cells or tissues for examination to determine the presence or extent of a disease."
+                },
+                {
+                    "doc_title": "Melanoma",
+                    "original_doc_length": 50276,
+                    "shortened_doc_length": 133,
+                    "shortened_doc_content": "Melanoma, also known as malignant melanoma, is a type of cancer that develops from the pigment-containing cells known as melanocytes."
+                },
+                {
+                    "doc_title": "Surgical pathology",
+                    "original_doc_length": 5339,
+                    "shortened_doc_length": 112,
+                    "shortened_doc_content": "Surgical pathology is the most significant and time-consuming area of practice for most anatomical pathologists."
+                },
+                {
+                    "doc_title": "Dermatoscopy",
+                    "original_doc_length": 6147,
+                    "shortened_doc_length": 68,
+                    "shortened_doc_content": "Dermatoscopy is the examination of skin lesions with a dermatoscope."
+                }
+            ],
+            "mean_original_docs_length": 17788.0,
+            "mean_shortened_docs_length": 137.0
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Susceptibility and severity of infections in pregnancy",
+                    "original_doc_length": 3101,
+                    "shortened_doc_length": 98,
+                    "shortened_doc_content": "In pregnancy, there is an increased susceptibility and/or severity of several infectious diseases."
+                },
+                {
+                    "doc_title": "HIV and pregnancy",
+                    "original_doc_length": 25746,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "HIV in pregnancy is the presence of HIV in a woman while she is pregnant."
+                },
+                {
+                    "doc_title": "HIV and pregnancy",
+                    "original_doc_length": 25746,
+                    "shortened_doc_length": 73,
+                    "shortened_doc_content": "HIV in pregnancy is the presence of HIV in a woman while she is pregnant."
+                },
+                {
+                    "doc_title": "Susceptibility and severity of infections in pregnancy",
+                    "original_doc_length": 3101,
+                    "shortened_doc_length": 98,
+                    "shortened_doc_content": "In pregnancy, there is an increased susceptibility and/or severity of several infectious diseases."
+                }
+            ],
+            "mean_original_docs_length": 14423.5,
+            "mean_shortened_docs_length": 85.5
+        },
+        "51": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Gallbladder cancer",
+                    "original_doc_length": 5221,
+                    "shortened_doc_length": 141,
+                    "shortened_doc_content": "Gallbladder cancer is a relatively uncommon cancer, with an incidence of fewer than 2 cases per 100,000 people per year in the United States."
+                },
+                {
+                    "doc_title": "Gallbladder polyp",
+                    "original_doc_length": 2142,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Gallbladder polyps are growths or lesions resembling growths (polypoid lesions) in the wall of the gallbladder."
+                },
+                {
+                    "doc_title": "Pancreaticoduodenectomy",
+                    "original_doc_length": 12593,
+                    "shortened_doc_length": 205,
+                    "shortened_doc_content": "A pancreaticoduodenectomy, pancreatoduodenectomy, Whipple procedure, or Kausch-Whipple procedure is a major surgical operation most often performed to remove cancerous tumours off the head of the pancreas."
+                },
+                {
+                    "doc_title": "Pancreaticoduodenectomy",
+                    "original_doc_length": 12593,
+                    "shortened_doc_length": 205,
+                    "shortened_doc_content": "A pancreaticoduodenectomy, pancreatoduodenectomy, Whipple procedure, or Kausch-Whipple procedure is a major surgical operation most often performed to remove cancerous tumours off the head of the pancreas."
+                }
+            ],
+            "mean_original_docs_length": 8137.25,
+            "mean_shortened_docs_length": 165.5
+        },
+        "53": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Quern-stone",
+                    "original_doc_length": 13916,
+                    "shortened_doc_length": 75,
+                    "shortened_doc_content": "Quern-stones are stone tools for hand-grinding a wide variety of materials."
+                },
+                {
+                    "doc_title": "Drain (surgery)",
+                    "original_doc_length": 2894,
+                    "shortened_doc_length": 82,
+                    "shortened_doc_content": "A surgical drain is a tube used to remove pus, blood or other fluids from a wound."
+                },
+                {
+                    "doc_title": "Quartile",
+                    "original_doc_length": 8958,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "A quartile is a type of quantile which divides the number of data points into four more or less equal parts, or quarters."
+                },
+                {
+                    "doc_title": "Ligature (medicine)",
+                    "original_doc_length": 949,
+                    "shortened_doc_length": 201,
+                    "shortened_doc_content": "In surgery or medical procedure, a ligature consists of a piece of thread (suture) tied around an anatomical structure, usually a blood vessel or another hollow structure (e.g. urethra) to shut it off."
+                }
+            ],
+            "mean_original_docs_length": 6679.25,
+            "mean_shortened_docs_length": 119.75
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis in China",
+                    "original_doc_length": 31394,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Tuberculosis is a major public health problem in China."
+                },
+                {
+                    "doc_title": "Tuberculosis in China",
+                    "original_doc_length": 31394,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Tuberculosis is a major public health problem in China."
+                },
+                {
+                    "doc_title": "Tuberculosis in China",
+                    "original_doc_length": 31394,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Tuberculosis is a major public health problem in China."
+                },
+                {
+                    "doc_title": "Tuberculosis in China",
+                    "original_doc_length": 31394,
+                    "shortened_doc_length": 55,
+                    "shortened_doc_content": "Tuberculosis is a major public health problem in China."
+                }
+            ],
+            "mean_original_docs_length": 31394.0,
+            "mean_shortened_docs_length": 55.0
+        },
+        "55": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pelvic pain",
+                    "original_doc_length": 7190,
+                    "shortened_doc_length": 46,
+                    "shortened_doc_content": "Pelvic pain is pain in the area of the pelvis."
+                },
+                {
+                    "doc_title": "Cervical dilation",
+                    "original_doc_length": 4629,
+                    "shortened_doc_length": 176,
+                    "shortened_doc_content": "Cervical dilation (or cervical dilatation) is the opening of the cervix, the entrance to the uterus, during childbirth, miscarriage, induced abortion, or gynecological surgery."
+                },
+                {
+                    "doc_title": "Ascending and descending (diving)",
+                    "original_doc_length": 9909,
+                    "shortened_doc_length": 210,
+                    "shortened_doc_content": "In underwater diving, ascending and descending is done using strict protocols to avoid problems caused by the changes in ambient pressure and the hazards of obstacles near the surface or collision with vessels."
+                },
+                {
+                    "doc_title": "Childbirth",
+                    "original_doc_length": 65274,
+                    "shortened_doc_length": 171,
+                    "shortened_doc_content": "Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies leaves the uterus by passing through the vagina or by Caesarean section."
+                }
+            ],
+            "mean_original_docs_length": 21750.5,
+            "mean_shortened_docs_length": 150.75
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ileitis",
+                    "original_doc_length": 210,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Ileitis is an inflammation of the ileum, a portion of the small intestine."
+                },
+                {
+                    "doc_title": "Intestinal neoplasms",
+                    "original_doc_length": 121,
+                    "shortened_doc_length": 99,
+                    "shortened_doc_content": "Intestinal neoplasms can refer to:\nBULLET::::- Small intestine cancer\nBULLET::::- Colorectal cancer"
+                },
+                {
+                    "doc_title": "Volvulus",
+                    "original_doc_length": 8044,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "A volvulus is when a loop of intestine twists around itself and the mesentery that supports it, resulting in a bowel obstruction."
+                },
+                {
+                    "doc_title": "Bowel obstruction",
+                    "original_doc_length": 9695,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "Bowel obstruction, also known as intestinal obstruction, is a mechanical or functional obstruction of the intestines which prevents the normal movement of the products of digestion."
+                }
+            ],
+            "mean_original_docs_length": 4517.5,
+            "mean_shortened_docs_length": 120.75
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Amiodarone",
+                    "original_doc_length": 19390,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Amiodarone is an antiarrhythmic medication used to treat and prevent a number of types of irregular heartbeats."
+                },
+                {
+                    "doc_title": "Anticoagulant",
+                    "original_doc_length": 24627,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Anticoagulants, commonly known as blood thinners, are chemical substances that prevent or reduce coagulation of blood, prolonging the clotting time."
+                },
+                {
+                    "doc_title": "Beta blocker",
+                    "original_doc_length": 8008,
+                    "shortened_doc_length": 263,
+                    "shortened_doc_content": "Beta blockers (beta-blockers, \u03b2-blockers, etc.) are a class of medications that are predominantly used to manage abnormal heart rhythms, and to protect the heart from a second heart attack (myocardial infarction) after a first heart attack (secondary prevention)."
+                },
+                {
+                    "doc_title": "Amiodarone",
+                    "original_doc_length": 19390,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Amiodarone is an antiarrhythmic medication used to treat and prevent a number of types of irregular heartbeats."
+                }
+            ],
+            "mean_original_docs_length": 17853.75,
+            "mean_shortened_docs_length": 158.25
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyperkalemia",
+                    "original_doc_length": 4189,
+                    "shortened_doc_length": 64,
+                    "shortened_doc_content": "Hyperkalemia is an elevated level of potassium (K) in the blood."
+                },
+                {
+                    "doc_title": "Metabolic acidosis",
+                    "original_doc_length": 13349,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "Metabolic acidosis is a serious electrolyte disorder characterized by an imbalance in the body\u2019s acid-base balance."
+                },
+                {
+                    "doc_title": "Cardiac tamponade",
+                    "original_doc_length": 7457,
+                    "shortened_doc_length": 165,
+                    "shortened_doc_content": "Cardiac tamponade, also known as pericardial tamponade, is when fluid in the pericardium (the sac around the heart) builds up, resulting in compression of the heart."
+                },
+                {
+                    "doc_title": "Volume overload",
+                    "original_doc_length": 2156,
+                    "shortened_doc_length": 157,
+                    "shortened_doc_content": "Volume overload refers to the state of one of the chambers of the heart in which too large a volume of blood exists within it for it to function efficiently."
+                }
+            ],
+            "mean_original_docs_length": 6787.75,
+            "mean_shortened_docs_length": 125.25
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Environmental impact of transport",
+                    "original_doc_length": 19519,
+                    "shortened_doc_length": 138,
+                    "shortened_doc_content": "The environmental impact of transport is significant because transport is a major user of energy, and burns most of the world's petroleum."
+                },
+                {
+                    "doc_title": "Dengue fever outbreaks",
+                    "original_doc_length": 13036,
+                    "shortened_doc_length": 133,
+                    "shortened_doc_content": "As of 2010 dengue fever is believed to infect 50 to 100\u00a0million people worldwide a year with 1/2 million life-threatening infections."
+                },
+                {
+                    "doc_title": "Cardiac arrest",
+                    "original_doc_length": 29257,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Cardiac arrest is a sudden loss of blood flow resulting from the failure of the heart to pump effectively."
+                },
+                {
+                    "doc_title": "Non-communicable disease",
+                    "original_doc_length": 8699,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "A non-communicable disease (NCD) is a disease that is not transmissible directly from one person to another."
+                }
+            ],
+            "mean_original_docs_length": 17627.75,
+            "mean_shortened_docs_length": 121.25
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Distal radius fracture",
+                    "original_doc_length": 26673,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "A distal radius fracture, also known as wrist fracture, is a break of the part of the radius bone which is close to the wrist."
+                },
+                {
+                    "doc_title": "Distal radius fracture",
+                    "original_doc_length": 26673,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "A distal radius fracture, also known as wrist fracture, is a break of the part of the radius bone which is close to the wrist."
+                },
+                {
+                    "doc_title": "Distal radius fracture",
+                    "original_doc_length": 26673,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "A distal radius fracture, also known as wrist fracture, is a break of the part of the radius bone which is close to the wrist."
+                },
+                {
+                    "doc_title": "Distal radius fracture",
+                    "original_doc_length": 26673,
+                    "shortened_doc_length": 126,
+                    "shortened_doc_content": "A distal radius fracture, also known as wrist fracture, is a break of the part of the radius bone which is close to the wrist."
+                }
+            ],
+            "mean_original_docs_length": 26673.0,
+            "mean_shortened_docs_length": 126.0
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obesity",
+                    "original_doc_length": 42462,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health."
+                },
+                {
+                    "doc_title": "Overweight",
+                    "original_doc_length": 6216,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Being overweight or fat is having more body fat than is optimally healthy."
+                },
+                {
+                    "doc_title": "Obesity",
+                    "original_doc_length": 42462,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health."
+                },
+                {
+                    "doc_title": "Overweight",
+                    "original_doc_length": 6216,
+                    "shortened_doc_length": 74,
+                    "shortened_doc_content": "Being overweight or fat is having more body fat than is optimally healthy."
+                }
+            ],
+            "mean_original_docs_length": 24339.0,
+            "mean_shortened_docs_length": 102.0
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thrombolysis",
+                    "original_doc_length": 8799,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Thrombolysis, also called fibrinolytic therapy, is the breakdown (lysis) of blood clots formed in blood vessels, using medication."
+                },
+                {
+                    "doc_title": "Tissue plasminogen activator",
+                    "original_doc_length": 9629,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "Tissue plasminogen activator (abbreviated tPA or PLAT) is a protein involved in the breakdown of blood clots."
+                },
+                {
+                    "doc_title": "Thrombolysis",
+                    "original_doc_length": 8799,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Thrombolysis, also called fibrinolytic therapy, is the breakdown (lysis) of blood clots formed in blood vessels, using medication."
+                },
+                {
+                    "doc_title": "Prasugrel",
+                    "original_doc_length": 5242,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Prasugrel (trade name Effient in the US, Australia and India, and Efient in the EU) is a drug used to prevent formation of blood clots."
+                }
+            ],
+            "mean_original_docs_length": 8117.25,
+            "mean_shortened_docs_length": 126.0
+        },
+        "63": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epidemiology of suicide",
+                    "original_doc_length": 11512,
+                    "shortened_doc_length": 66,
+                    "shortened_doc_content": "An estimated 1 million people worldwide die by suicide every year."
+                },
+                {
+                    "doc_title": "Epidemiology of suicide",
+                    "original_doc_length": 11512,
+                    "shortened_doc_length": 66,
+                    "shortened_doc_content": "An estimated 1 million people worldwide die by suicide every year."
+                },
+                {
+                    "doc_title": "Mortality in the early modern age",
+                    "original_doc_length": 5369,
+                    "shortened_doc_length": 129,
+                    "shortened_doc_content": "The early modern age saw various economic changes as well as several significant diseases that have affected the mortality rates."
+                },
+                {
+                    "doc_title": "Epidemiology of suicide",
+                    "original_doc_length": 11512,
+                    "shortened_doc_length": 66,
+                    "shortened_doc_content": "An estimated 1 million people worldwide die by suicide every year."
+                }
+            ],
+            "mean_original_docs_length": 9976.25,
+            "mean_shortened_docs_length": 81.75
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                },
+                {
+                    "doc_title": "Crossover study",
+                    "original_doc_length": 4323,
+                    "shortened_doc_length": 150,
+                    "shortened_doc_content": "In medicine, a crossover study or crossover trial is a longitudinal study in which subjects receive a sequence of different treatments (or exposures)."
+                },
+                {
+                    "doc_title": "Hepatic artery embolization",
+                    "original_doc_length": 3557,
+                    "shortened_doc_length": 178,
+                    "shortened_doc_content": "Hepatic artery embolization , also known as trans-arterial embolization (TAE), is one of the several therapeutic methods to treat primary liver tumors or metastases to the liver."
+                },
+                {
+                    "doc_title": "Pringle manoeuvre",
+                    "original_doc_length": 996,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "The Pringle maneuver is a surgical maneuver used in some abdominal operations."
+                }
+            ],
+            "mean_original_docs_length": 3481.0,
+            "mean_shortened_docs_length": 128.5
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hemopneumothorax",
+                    "original_doc_length": 2243,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Hemopneumothorax, or haemopneumothorax is the condition of having air in the chest cavity (pneumothorax) and blood in the chest cavity (hemothorax)."
+                },
+                {
+                    "doc_title": "Hemopneumothorax",
+                    "original_doc_length": 2243,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Hemopneumothorax, or haemopneumothorax is the condition of having air in the chest cavity (pneumothorax) and blood in the chest cavity (hemothorax)."
+                },
+                {
+                    "doc_title": "Hemopneumothorax",
+                    "original_doc_length": 2243,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "Hemopneumothorax, or haemopneumothorax is the condition of having air in the chest cavity (pneumothorax) and blood in the chest cavity (hemothorax)."
+                },
+                {
+                    "doc_title": "Diaphragmatic hernia",
+                    "original_doc_length": 654,
+                    "shortened_doc_length": 123,
+                    "shortened_doc_content": "Diaphragmatic hernia is a defect or hole in the diaphragm that allows the abdominal contents to move into the chest cavity."
+                }
+            ],
+            "mean_original_docs_length": 1845.75,
+            "mean_shortened_docs_length": 141.75
+        },
+        "66": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Magnetic resonance imaging",
+                    "original_doc_length": 24339,
+                    "shortened_doc_length": 158,
+                    "shortened_doc_content": "Magnetic resonance imaging (MRI) is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body."
+                },
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                },
+                {
+                    "doc_title": "Menstrual cycle",
+                    "original_doc_length": 36128,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "The menstrual cycle is the regular natural change that occurs in the female reproductive system (specifically the uterus and ovaries) that makes pregnancy possible."
+                },
+                {
+                    "doc_title": "Carcinoembryonic antigen",
+                    "original_doc_length": 4019,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "Carcinoembryonic antigen (CEA) describes a set of highly related glycoproteins involved in cell adhesion."
+                }
+            ],
+            "mean_original_docs_length": 17383.5,
+            "mean_shortened_docs_length": 133.75
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Jennifer Diamond Cancer Foundation",
+                    "original_doc_length": 998,
+                    "shortened_doc_length": 173,
+                    "shortened_doc_content": "The Jennifer Diamond Cancer Foundation is a 501(c)3 nonprofit organization which raises money to help people with cancer, and survivors of cancer, as well as their families."
+                },
+                {
+                    "doc_title": "Infectious disease (medical specialty)",
+                    "original_doc_length": 2741,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Infectious diseases, also known as infectology, is a medical specialty dealing with the diagnosis, control and treatment of infections."
+                },
+                {
+                    "doc_title": "Trauma surgery",
+                    "original_doc_length": 7647,
+                    "shortened_doc_length": 156,
+                    "shortened_doc_content": "Trauma surgery is a surgical specialty that utilizes both operative and non-operative management to treat traumatic injuries, typically in an acute setting."
+                },
+                {
+                    "doc_title": "Otorhinolaryngology",
+                    "original_doc_length": 9512,
+                    "shortened_doc_length": 219,
+                    "shortened_doc_content": "Otorhinolaryngology (also called otolaryngology or otolaryngology\u2013head and neck surgery) is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions in the head and neck."
+                }
+            ],
+            "mean_original_docs_length": 5224.5,
+            "mean_shortened_docs_length": 170.75
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatitis B vaccine",
+                    "original_doc_length": 12295,
+                    "shortened_doc_length": 59,
+                    "shortened_doc_content": "Hepatitis B vaccine is a vaccine that prevents hepatitis B."
+                },
+                {
+                    "doc_title": "Peginterferon alfa-2a",
+                    "original_doc_length": 3128,
+                    "shortened_doc_length": 134,
+                    "shortened_doc_content": "Pegylated interferon alfa-2a, sold under the brand name Pegasys among others, is medication used to treat hepatitis C and hepatitis B."
+                },
+                {
+                    "doc_title": "Alcoholic hepatitis",
+                    "original_doc_length": 6698,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Alcoholic hepatitis is hepatitis (inflammation of the liver) due to excessive intake of alcohol."
+                },
+                {
+                    "doc_title": "Hepatitis",
+                    "original_doc_length": 68076,
+                    "shortened_doc_length": 46,
+                    "shortened_doc_content": "Hepatitis is inflammation of the liver tissue."
+                }
+            ],
+            "mean_original_docs_length": 22549.25,
+            "mean_shortened_docs_length": 83.75
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Teenage suicide in the United States",
+                    "original_doc_length": 12803,
+                    "shortened_doc_length": 202,
+                    "shortened_doc_content": "The suicide rate in the United States remains comparatively high for the 15 to 24 age group with 5,079 suicides in this age range in 2014, making it the second leading cause of death for that age range."
+                },
+                {
+                    "doc_title": "Sudden cardiac death of athletes",
+                    "original_doc_length": 12787,
+                    "shortened_doc_length": 261,
+                    "shortened_doc_content": "It remains a difficult medical challenge to prevent the sudden cardiac death of athletes, typically defined as natural, unexpected death from cardiac arrest within one hour of the onset of collapse symptoms, excluding additional time on mechanical life support."
+                },
+                {
+                    "doc_title": "Epidemiology of pneumonia",
+                    "original_doc_length": 5242,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Pneumonia is a common illness affecting approximately 450\u00a0million people a year and occurring in all parts of the world."
+                },
+                {
+                    "doc_title": "Legal drinking age controversy in the United States",
+                    "original_doc_length": 6639,
+                    "shortened_doc_length": 54,
+                    "shortened_doc_content": "The legal drinking age varies from country to country."
+                }
+            ],
+            "mean_original_docs_length": 9367.75,
+            "mean_shortened_docs_length": 159.25
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Blue stain fungi",
+                    "original_doc_length": 1324,
+                    "shortened_doc_length": 125,
+                    "shortened_doc_content": "Blue stain fungi (also known as sap stain fungi) is a vague term including various fungi that cause dark staining in sapwood."
+                },
+                {
+                    "doc_title": "Pulmonary fibrosis",
+                    "original_doc_length": 8225,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "Pulmonary fibrosis is a condition in which the lungs become scarred over time."
+                },
+                {
+                    "doc_title": "Angiolymphoid hyperplasia with eosinophilia",
+                    "original_doc_length": 682,
+                    "shortened_doc_length": 435,
+                    "shortened_doc_content": "Angiolymphoid hyperplasia with eosinophilia (also known as: \"Epithelioid hemangioma,\" \"Histiocytoid hemangioma,\" \"Inflammatory angiomatous nodule,\" \"Intravenous atypical vascular proliferation,\" \"Papular angioplasia,\" \"Inflammatory arteriovenous hemangioma,\" and \"Pseudopyogenic granuloma\") usually presents with pink to red-brown, dome-shaped, dermal papules or nodules of the head or neck, especially about the ears and on the scalp."
+                },
+                {
+                    "doc_title": "Granuloma",
+                    "original_doc_length": 11212,
+                    "shortened_doc_length": 85,
+                    "shortened_doc_content": "A granuloma is a structure formed during inflammation that is found in many diseases."
+                }
+            ],
+            "mean_original_docs_length": 5360.75,
+            "mean_shortened_docs_length": 180.75
+        },
+        "71": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thrombolysis",
+                    "original_doc_length": 8799,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Thrombolysis, also called fibrinolytic therapy, is the breakdown (lysis) of blood clots formed in blood vessels, using medication."
+                },
+                {
+                    "doc_title": "Cardiac catheterization",
+                    "original_doc_length": 5220,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Cardiac catheterization (heart cath) is the insertion of a catheter into a chamber or vessel of the heart."
+                },
+                {
+                    "doc_title": "Intra-aortic balloon pump",
+                    "original_doc_length": 5220,
+                    "shortened_doc_length": 171,
+                    "shortened_doc_content": "The intra-aortic balloon pump (IABP) is a mechanical device that increases myocardial oxygen perfusion and indirectly increases cardiac output through afterload reduction."
+                },
+                {
+                    "doc_title": "Pericarditis",
+                    "original_doc_length": 8732,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Pericarditis is inflammation of the pericardium (the fibrous sac surrounding the heart)."
+                }
+            ],
+            "mean_original_docs_length": 6992.75,
+            "mean_shortened_docs_length": 123.75
+        },
+        "72": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cephalic presentation",
+                    "original_doc_length": 6625,
+                    "shortened_doc_length": 336,
+                    "shortened_doc_content": "A cephalic presentation or head presentation or head-first presentation is a situation at childbirth where the fetus is in a longitudinal lie and the head enters the pelvis first; the most common form of cephalic presentation is the vertex presentation where the occiput is the leading part (the part that first enters the birth canal)."
+                },
+                {
+                    "doc_title": "Cephalic presentation",
+                    "original_doc_length": 6625,
+                    "shortened_doc_length": 336,
+                    "shortened_doc_content": "A cephalic presentation or head presentation or head-first presentation is a situation at childbirth where the fetus is in a longitudinal lie and the head enters the pelvis first; the most common form of cephalic presentation is the vertex presentation where the occiput is the leading part (the part that first enters the birth canal)."
+                },
+                {
+                    "doc_title": "Cephalic presentation",
+                    "original_doc_length": 6625,
+                    "shortened_doc_length": 336,
+                    "shortened_doc_content": "A cephalic presentation or head presentation or head-first presentation is a situation at childbirth where the fetus is in a longitudinal lie and the head enters the pelvis first; the most common form of cephalic presentation is the vertex presentation where the occiput is the leading part (the part that first enters the birth canal)."
+                },
+                {
+                    "doc_title": "Supine position",
+                    "original_doc_length": 1778,
+                    "shortened_doc_length": 140,
+                    "shortened_doc_content": "The supine position ( or ) means lying horizontally with the face and torso facing up, as opposed to the prone position, which is face down."
+                }
+            ],
+            "mean_original_docs_length": 5413.25,
+            "mean_shortened_docs_length": 287.0
+        },
+        "73": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardioversion",
+                    "original_doc_length": 6137,
+                    "shortened_doc_length": 177,
+                    "shortened_doc_content": "Cardioversion is a medical procedure by which an abnormally fast heart rate (tachycardia) or other cardiac arrhythmia is converted to a normal rhythm using electricity or drugs."
+                },
+                {
+                    "doc_title": "Accessory pathway",
+                    "original_doc_length": 2573,
+                    "shortened_doc_length": 91,
+                    "shortened_doc_content": "An accessory pathway is an additional electrical connection between two parts of the heart."
+                },
+                {
+                    "doc_title": "Artificial cardiac pacemaker",
+                    "original_doc_length": 37087,
+                    "shortened_doc_length": 431,
+                    "shortened_doc_content": "A cardiac pacemaker (or artificial pacemaker, so as not to be confused with the natural pacemaker of the heart), is a medical device that generates electrical impulses delivered by electrodes to cause the heart muscle chambers (the upper, or atria and/or the lower, or ventricles) to contract and therefore pump blood; by doing so this device replaces and/or regulates the function of the electrical conduction system of the heart."
+                },
+                {
+                    "doc_title": "Bundle branch block",
+                    "original_doc_length": 4702,
+                    "shortened_doc_length": 119,
+                    "shortened_doc_content": "A bundle branch block is a defect of the bundle branches or fascicles in the electrical conduction system of the heart."
+                }
+            ],
+            "mean_original_docs_length": 12624.75,
+            "mean_shortened_docs_length": 204.5
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pouchoscopy",
+                    "original_doc_length": 907,
+                    "shortened_doc_length": 426,
+                    "shortened_doc_content": "Pouchoscopy is a minimally invasive endoscopic procedure to examine an ileo-anal pouch, a replacement for the colon / rectum which is surgically created from the small intestine (ileum) as Treatment for ulcerative colitis and as a treatment for other inflammatory bowel diseases such as Crohn's disease, a preventive measure in certain genetic illnesses such as FAP or HNPCC or as a procedure in the treatment of colon cancer."
+                },
+                {
+                    "doc_title": "Abdominal surgery",
+                    "original_doc_length": 5048,
+                    "shortened_doc_length": 108,
+                    "shortened_doc_content": "The term abdominal surgery broadly covers surgical procedures that involve opening the abdomen (laparotomy)."
+                },
+                {
+                    "doc_title": "Nasogastric intubation",
+                    "original_doc_length": 8721,
+                    "shortened_doc_length": 177,
+                    "shortened_doc_content": "Nasogastric intubation is a medical process involving the insertion of a plastic tube (nasogastric tube or NG tube) through the nose, past the throat, and down into the stomach."
+                },
+                {
+                    "doc_title": "Colectomy",
+                    "original_doc_length": 5491,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Colectomy (\"col-\" + \"-ectomy\") is bowel resection of the large bowel (colon)."
+                }
+            ],
+            "mean_original_docs_length": 5041.75,
+            "mean_shortened_docs_length": 197.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adenoviridae",
+                    "original_doc_length": 16518,
+                    "shortened_doc_length": 207,
+                    "shortened_doc_content": "Adenoviruses (members of the family Adenoviridae) are medium-sized (90\u2013100 nm), nonenveloped (without an outer lipid bilayer) viruses with an icosahedral nucleocapsid containing a double stranded DNA genome."
+                },
+                {
+                    "doc_title": "Herpes simplex virus",
+                    "original_doc_length": 20768,
+                    "shortened_doc_length": 271,
+                    "shortened_doc_content": "Herpes simplex virus 1 and 2 (HSV-1 and HSV-2), also known by their taxonomical names \"Human alphaherpesvirus 1\" and \"Human alphaherpesvirus 2\", are two members of the human \"Herpesviridae\" family, a set of viruses that produce viral infections in the majority of humans."
+                },
+                {
+                    "doc_title": "Staphylococcus aureus",
+                    "original_doc_length": 36848,
+                    "shortened_doc_length": 221,
+                    "shortened_doc_content": "Staphylococcus aureus is a Gram-positive, round-shaped bacterium that is a member of the Firmicutes, and it is a usual member of the microbiota of the body, frequently found in the upper respiratory tract and on the skin."
+                },
+                {
+                    "doc_title": "Chlamydia trachomatis",
+                    "original_doc_length": 17224,
+                    "shortened_doc_length": 255,
+                    "shortened_doc_content": "Chlamydia trachomatis (), commonly known as chlamydia, is a bacterium that causes chlamydia, which can manifest in various ways, including: trachoma, lymphogranuloma venereum, nongonococcal urethritis, cervicitis, salpingitis, pelvic inflammatory disease."
+                }
+            ],
+            "mean_original_docs_length": 22839.5,
+            "mean_shortened_docs_length": 238.5
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Suicide among Native Americans in the United States",
+                    "original_doc_length": 15882,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Suicide among Native Americans in the United States, both attempted and completed, is more prevalent than in any other racial or ethnic group in the United States."
+                },
+                {
+                    "doc_title": "Race and health in the United States",
+                    "original_doc_length": 53467,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Research on race and health in the United States shows many health disparities between the different racial/ethnic groups."
+                },
+                {
+                    "doc_title": "Race and health in the United States",
+                    "original_doc_length": 53467,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Research on race and health in the United States shows many health disparities between the different racial/ethnic groups."
+                },
+                {
+                    "doc_title": "Race and health in the United States",
+                    "original_doc_length": 53467,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Research on race and health in the United States shows many health disparities between the different racial/ethnic groups."
+                }
+            ],
+            "mean_original_docs_length": 44070.75,
+            "mean_shortened_docs_length": 132.25
+        },
+        "77": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bowel obstruction",
+                    "original_doc_length": 9695,
+                    "shortened_doc_length": 181,
+                    "shortened_doc_content": "Bowel obstruction, also known as intestinal obstruction, is a mechanical or functional obstruction of the intestines which prevents the normal movement of the products of digestion."
+                },
+                {
+                    "doc_title": "Pneumoretroperitoneum",
+                    "original_doc_length": 324,
+                    "shortened_doc_length": 68,
+                    "shortened_doc_content": "Pneumoretroperitoneum is the presence of air in the retroperitoneum."
+                },
+                {
+                    "doc_title": "Ileocolic",
+                    "original_doc_length": 694,
+                    "shortened_doc_length": 166,
+                    "shortened_doc_content": "In many Animalia, including humans, an ileocolic structure or problem is something that concerns the region of the gastrointestinal tract from the ileum to the colon."
+                },
+                {
+                    "doc_title": "Obstructed defecation",
+                    "original_doc_length": 3857,
+                    "shortened_doc_length": 169,
+                    "shortened_doc_content": "Obstructed defecation, is \"difficulty in evacuation or emptying the rectum [which] may occur even with frequent visits to the toilet and even with passing soft motions\"."
+                }
+            ],
+            "mean_original_docs_length": 3642.5,
+            "mean_shortened_docs_length": 146.0
+        },
+        "78": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bregma",
+                    "original_doc_length": 797,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "The bregma is the anatomical point on the skull at which the coronal suture is intersected perpendicularly by the sagittal suture."
+                },
+                {
+                    "doc_title": "Molar distalization",
+                    "original_doc_length": 3632,
+                    "shortened_doc_length": 164,
+                    "shortened_doc_content": "Molar distalization is a process in the field of Orthodontics which is used to move molar teeth, especially permanent first molars, distally (backwards) in an arch."
+                },
+                {
+                    "doc_title": "Semicircular canals",
+                    "original_doc_length": 7976,
+                    "shortened_doc_length": 148,
+                    "shortened_doc_content": "The semicircular canals or semicircular ducts are three semicircular, interconnected tubes located in the innermost part of each ear, the inner ear."
+                },
+                {
+                    "doc_title": "Occipital bone",
+                    "original_doc_length": 9316,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "The occipital bone () is a cranial dermal bone and the main bone of the occiput (back and lower part of the skull)."
+                }
+            ],
+            "mean_original_docs_length": 5430.25,
+            "mean_shortened_docs_length": 139.25
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pneumothorax",
+                    "original_doc_length": 30918,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "A pneumothorax is an abnormal collection of air in the pleural space between the lung and the chest wall."
+                },
+                {
+                    "doc_title": "Hemothorax",
+                    "original_doc_length": 15786,
+                    "shortened_doc_length": 32,
+                    "shortened_doc_content": "A hemothorax (derived from hemo-"
+                },
+                {
+                    "doc_title": "Hydrothorax",
+                    "original_doc_length": 1298,
+                    "shortened_doc_length": 96,
+                    "shortened_doc_content": "Hydrothorax is a type of pleural effusion in which transudate accumulates in the pleural cavity."
+                },
+                {
+                    "doc_title": "Phrenic nerve",
+                    "original_doc_length": 5731,
+                    "shortened_doc_length": 131,
+                    "shortened_doc_content": "The phrenic nerve is a nerve that originates in the neck (C3\u2013C5) and passes down between the lung and heart to reach the diaphragm."
+                }
+            ],
+            "mean_original_docs_length": 13433.25,
+            "mean_shortened_docs_length": 91.0
+        },
+        "80": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Race and genetics",
+                    "original_doc_length": 35994,
+                    "shortened_doc_length": 105,
+                    "shortened_doc_content": "The relationship between race and genetics is relevant to the controversy concerning race classification."
+                },
+                {
+                    "doc_title": "Disability",
+                    "original_doc_length": 48041,
+                    "shortened_doc_length": 136,
+                    "shortened_doc_content": "A disability is any condition that makes it more difficult for a person to do certain activities or interact with the world around them."
+                },
+                {
+                    "doc_title": "Environmental factor",
+                    "original_doc_length": 7464,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "An environmental factor, ecological factor or eco factor is any factor, abiotic or biotic, that influences living organisms."
+                },
+                {
+                    "doc_title": "Adult development",
+                    "original_doc_length": 33211,
+                    "shortened_doc_length": 163,
+                    "shortened_doc_content": "Adult development encompasses the changes that occur in biological and psychological domains of human life from the end of adolescence until the end of one's life."
+                }
+            ],
+            "mean_original_docs_length": 31177.5,
+            "mean_shortened_docs_length": 132.0
+        },
+        "81": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Itraconazole",
+                    "original_doc_length": 7478,
+                    "shortened_doc_length": 85,
+                    "shortened_doc_content": "Itraconazole is an antifungal medication used to treat a number of fungal infections."
+                },
+                {
+                    "doc_title": "Squamous cell carcinoma",
+                    "original_doc_length": 4427,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Squamous cell carcinomas (SCCs), also known as epidermoid carcinomas, comprise a number of different types of cancer that result from squamous cells."
+                },
+                {
+                    "doc_title": "Clofazimine",
+                    "original_doc_length": 5567,
+                    "shortened_doc_length": 124,
+                    "shortened_doc_content": "Clofazimine, sold under the brand name Lamprene, is a medication used together with rifampicin and dapsone to treat leprosy."
+                },
+                {
+                    "doc_title": "Meglumine antimoniate",
+                    "original_doc_length": 1027,
+                    "shortened_doc_length": 64,
+                    "shortened_doc_content": "Meglumine antimoniate is a medicine used to treat leishmaniasis."
+                }
+            ],
+            "mean_original_docs_length": 4624.75,
+            "mean_shortened_docs_length": 105.5
+        },
+        "82": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Melanoma",
+                    "original_doc_length": 50276,
+                    "shortened_doc_length": 133,
+                    "shortened_doc_content": "Melanoma, also known as malignant melanoma, is a type of cancer that develops from the pigment-containing cells known as melanocytes."
+                },
+                {
+                    "doc_title": "Nevoid melanoma",
+                    "original_doc_length": 200,
+                    "shortened_doc_length": 120,
+                    "shortened_doc_content": "Nevoid melanoma is a cutaneous condition that may resemble a Spitz nevus or an acquired or congenital melanocytic nevus."
+                },
+                {
+                    "doc_title": "Seborrheic keratosis",
+                    "original_doc_length": 3080,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "A seborrheic keratosis is a non-cancerous (benign) skin tumour that originates from cells in the outer layer of the skin."
+                },
+                {
+                    "doc_title": "Squamous cell carcinoma",
+                    "original_doc_length": 4427,
+                    "shortened_doc_length": 149,
+                    "shortened_doc_content": "Squamous cell carcinomas (SCCs), also known as epidermoid carcinomas, comprise a number of different types of cancer that result from squamous cells."
+                }
+            ],
+            "mean_original_docs_length": 14495.75,
+            "mean_shortened_docs_length": 130.75
+        },
+        "83": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Palliative care",
+                    "original_doc_length": 33806,
+                    "shortened_doc_length": 235,
+                    "shortened_doc_content": "Palliative care (derived from the Latin root \"palliare, or\" \u201cto cloak\u201d) refers to an interdisciplinary medical caregiving approach aimed at optimizing quality of life and mitigating suffering among people with serious, complex illness."
+                },
+                {
+                    "doc_title": "Inpatient care",
+                    "original_doc_length": 4202,
+                    "shortened_doc_length": 88,
+                    "shortened_doc_content": "Inpatient care is the care of patients whose condition requires admission to a hospital."
+                },
+                {
+                    "doc_title": "Family therapy",
+                    "original_doc_length": 23808,
+                    "shortened_doc_length": 265,
+                    "shortened_doc_content": "Family therapy, also referred to as couple and family therapy, marriage and family therapy, family systems therapy, and family counseling, is a branch of psychotherapy that works with families and couples in intimate relationships to nurture change and development."
+                },
+                {
+                    "doc_title": "Palliative care",
+                    "original_doc_length": 33806,
+                    "shortened_doc_length": 235,
+                    "shortened_doc_content": "Palliative care (derived from the Latin root \"palliare, or\" \u201cto cloak\u201d) refers to an interdisciplinary medical caregiving approach aimed at optimizing quality of life and mitigating suffering among people with serious, complex illness."
+                }
+            ],
+            "mean_original_docs_length": 23905.5,
+            "mean_shortened_docs_length": 205.75
+        },
+        "84": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dominance hierarchy",
+                    "original_doc_length": 40183,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Dominance hierarchy is a type of social hierarchy that arises when members of a social group interact, to create a ranking system."
+                },
+                {
+                    "doc_title": "Issues relating to biofuels",
+                    "original_doc_length": 20940,
+                    "shortened_doc_length": 175,
+                    "shortened_doc_content": "There are various social, economic, environmental and technical issues with biofuel production and use, which have been discussed in the popular media and scientific journals."
+                },
+                {
+                    "doc_title": "Remission (medicine)",
+                    "original_doc_length": 854,
+                    "shortened_doc_length": 90,
+                    "shortened_doc_content": "Remission is either the reduction or disappearance of the signs and symptoms of a disease."
+                },
+                {
+                    "doc_title": "Universal health care",
+                    "original_doc_length": 17739,
+                    "shortened_doc_length": 215,
+                    "shortened_doc_content": "Universal healthcare (also called universal health coverage, universal coverage, or universal care) is a health care system in which all residents of a particular country or region are assured access to health care."
+                }
+            ],
+            "mean_original_docs_length": 19929.0,
+            "mean_shortened_docs_length": 152.5
+        },
+        "85": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Congenital heart defect",
+                    "original_doc_length": 18132,
+                    "shortened_doc_length": 188,
+                    "shortened_doc_content": "A congenital heart defect (CHD), also known as a congenital heart anomaly and congenital heart disease, is a defect in the structure of the heart or great vessels that is present at birth."
+                },
+                {
+                    "doc_title": "Hyaline",
+                    "original_doc_length": 1103,
+                    "shortened_doc_length": 52,
+                    "shortened_doc_content": "A hyaline substance is one with a glassy appearance."
+                },
+                {
+                    "doc_title": "Meconium aspiration syndrome",
+                    "original_doc_length": 22112,
+                    "shortened_doc_length": 130,
+                    "shortened_doc_content": "Meconium aspiration syndrome (MAS) also known as neonatal aspiration of meconium is a medical condition affecting newborn infants."
+                },
+                {
+                    "doc_title": "Transient tachypnea of the newborn",
+                    "original_doc_length": 2593,
+                    "shortened_doc_length": 115,
+                    "shortened_doc_content": "Transient tachypnea of the newborn is a respiratory problem that can be seen in the newborn shortly after delivery."
+                }
+            ],
+            "mean_original_docs_length": 10985.0,
+            "mean_shortened_docs_length": 121.25
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardioversion",
+                    "original_doc_length": 6137,
+                    "shortened_doc_length": 177,
+                    "shortened_doc_content": "Cardioversion is a medical procedure by which an abnormally fast heart rate (tachycardia) or other cardiac arrhythmia is converted to a normal rhythm using electricity or drugs."
+                },
+                {
+                    "doc_title": "Cardiac catheterization",
+                    "original_doc_length": 5220,
+                    "shortened_doc_length": 106,
+                    "shortened_doc_content": "Cardiac catheterization (heart cath) is the insertion of a catheter into a chamber or vessel of the heart."
+                },
+                {
+                    "doc_title": "Metoprolol",
+                    "original_doc_length": 10310,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Metoprolol, marketed under the tradename Lopressor among others, is a medication of the selective \u03b2 receptor blocker type."
+                },
+                {
+                    "doc_title": "Lidocaine",
+                    "original_doc_length": 14170,
+                    "shortened_doc_length": 111,
+                    "shortened_doc_content": "Lidocaine, also known as lignocaine, is a medication used to numb tissue in a specific area (local anesthetic)."
+                }
+            ],
+            "mean_original_docs_length": 8959.25,
+            "mean_shortened_docs_length": 129.0
+        },
+        "87": {
+            "predicted_answer": "B",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Colonoscopy",
+                    "original_doc_length": 26974,
+                    "shortened_doc_length": 204,
+                    "shortened_doc_content": "Colonoscopy () or coloscopy () is the endoscopic examination of the large bowel and the distal part of the small bowel with a CCD camera or a fiber optic camera on a flexible tube passed through the anus."
+                },
+                {
+                    "doc_title": "Double bubble (radiology)",
+                    "original_doc_length": 1968,
+                    "shortened_doc_length": 267,
+                    "shortened_doc_content": "In radiology, the double bubble sign is a feature of pediatric imaging seen on radiographs or prenatal ultrasound in which two air filled bubbles are seen in the abdomen, representing two discontiguous loops of bowel in a proximal, or 'high,' small bowel obstruction."
+                },
+                {
+                    "doc_title": "Abdominal ultrasonography",
+                    "original_doc_length": 5826,
+                    "shortened_doc_length": 222,
+                    "shortened_doc_content": "Abdominal ultrasonography (also called abdominal ultrasound imaging or abdominal sonography) is a form of medical ultrasonography (medical application of ultrasound technology) to visualise abdominal anatomical structures."
+                },
+                {
+                    "doc_title": "Lower gastrointestinal series",
+                    "original_doc_length": 3998,
+                    "shortened_doc_length": 132,
+                    "shortened_doc_content": "A lower gastrointestinal series is a medical procedure used to examine and diagnose problems with the human colon (large intestine)."
+                }
+            ],
+            "mean_original_docs_length": 9691.5,
+            "mean_shortened_docs_length": 206.25
+        },
+        "88": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fundal height",
+                    "original_doc_length": 1914,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Fundal height, or McDonald's rule, is a measure of the size of the uterus used to assess fetal growth and development during pregnancy."
+                },
+                {
+                    "doc_title": "Cor bovinum",
+                    "original_doc_length": 2391,
+                    "shortened_doc_length": 280,
+                    "shortened_doc_content": "Cor bovinum or cor bovis refers to a massive hypertrophy of the left ventricle of the heart due to volume overload, usually in earlier times in the context of tertiary syphilis but currently more often due to chronic aortic regurgitation, hypertensive and ischaemic heart disease."
+                },
+                {
+                    "doc_title": "Large for gestational age",
+                    "original_doc_length": 5318,
+                    "shortened_doc_length": 78,
+                    "shortened_doc_content": "Large for gestational age (LGA) is an indication of high prenatal growth rate."
+                },
+                {
+                    "doc_title": "Fundal height",
+                    "original_doc_length": 1914,
+                    "shortened_doc_length": 135,
+                    "shortened_doc_content": "Fundal height, or McDonald's rule, is a measure of the size of the uterus used to assess fetal growth and development during pregnancy."
+                }
+            ],
+            "mean_original_docs_length": 2884.25,
+            "mean_shortened_docs_length": 157.0
+        },
+        "89": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Venous thrombosis",
+                    "original_doc_length": 14718,
+                    "shortened_doc_length": 70,
+                    "shortened_doc_content": "A venous thrombus is a blood clot (thrombus) that forms within a vein."
+                },
+                {
+                    "doc_title": "Lung abscess",
+                    "original_doc_length": 4254,
+                    "shortened_doc_length": 176,
+                    "shortened_doc_content": "Lung abscess is a type of liquefactive necrosis of the lung tissue and formation of cavities (more than 2\u00a0cm) containing necrotic debris or fluid caused by microbial infection."
+                },
+                {
+                    "doc_title": "Lung cancer",
+                    "original_doc_length": 40419,
+                    "shortened_doc_length": 134,
+                    "shortened_doc_content": "Lung cancer, also known as lung carcinoma, is a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung."
+                },
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient."
+                }
+            ],
+            "mean_original_docs_length": 19603.5,
+            "mean_shortened_docs_length": 125.25
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Colectomy",
+                    "original_doc_length": 5491,
+                    "shortened_doc_length": 77,
+                    "shortened_doc_content": "Colectomy (\"col-\" + \"-ectomy\") is bowel resection of the large bowel (colon)."
+                },
+                {
+                    "doc_title": "Coloanal anastomosis",
+                    "original_doc_length": 213,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Coloanal anastomosis is a surgical procedure in which the colon is attached to the anus after the rectum has been removed."
+                },
+                {
+                    "doc_title": "Descending colon",
+                    "original_doc_length": 3377,
+                    "shortened_doc_length": 119,
+                    "shortened_doc_content": "The descending colon is the part of the large intestine from the splenic flexure to the beginning of the sigmoid colon."
+                },
+                {
+                    "doc_title": "Coloanal anastomosis",
+                    "original_doc_length": 213,
+                    "shortened_doc_length": 122,
+                    "shortened_doc_content": "Coloanal anastomosis is a surgical procedure in which the colon is attached to the anus after the rectum has been removed."
+                }
+            ],
+            "mean_original_docs_length": 2323.5,
+            "mean_shortened_docs_length": 110.0
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neonatal hepatitis",
+                    "original_doc_length": 1201,
+                    "shortened_doc_length": 95,
+                    "shortened_doc_content": "Neonatal hepatitis refers to many forms of liver dysfunction that affects fetuses and neonates."
+                },
+                {
+                    "doc_title": "Procaine benzylpenicillin",
+                    "original_doc_length": 2673,
+                    "shortened_doc_length": 141,
+                    "shortened_doc_content": "Procaine benzylpenicillin also known as penicillin G procaine, is an antibiotic useful for the treatment of a number of bacterial infections."
+                },
+                {
+                    "doc_title": "Abusive head trauma",
+                    "original_doc_length": 13192,
+                    "shortened_doc_length": 127,
+                    "shortened_doc_content": "Abusive head trauma (AHT), commonly known as shaken baby syndrome (SBS), is an injury to a child's head caused by someone else."
+                },
+                {
+                    "doc_title": "Thyroid function tests",
+                    "original_doc_length": 8693,
+                    "shortened_doc_length": 109,
+                    "shortened_doc_content": "Thyroid function tests (TFTs) is a collective term for blood tests used to check the function of the thyroid."
+                }
+            ],
+            "mean_original_docs_length": 6439.75,
+            "mean_shortened_docs_length": 118.0
+        },
+        "92": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "List of antibiotics",
+                    "original_doc_length": 1797,
+                    "shortened_doc_length": 39,
+                    "shortened_doc_content": "The following is a list of antibiotics."
+                },
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 121,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient."
+                },
+                {
+                    "doc_title": "Treatment of lung cancer",
+                    "original_doc_length": 10968,
+                    "shortened_doc_length": 292,
+                    "shortened_doc_content": "Treatment of lung cancer refers to the use of medical therapies, such as surgery, radiation, chemotherapy, immunotherapy, percutaneous ablation, and palliative care, alone or in combination, in an attempt to cure or lessen the adverse impact of malignant neoplasms originating in lung tissue."
+                },
+                {
+                    "doc_title": "Broad-spectrum antibiotic",
+                    "original_doc_length": 8205,
+                    "shortened_doc_length": 200,
+                    "shortened_doc_content": "A broad-spectrum antibiotic is an antibiotic that acts on the two major bacterial groups, gram-positive and gram-negative, or any antibiotic that acts against a wide range of disease-causing bacteria."
+                }
+            ],
+            "mean_original_docs_length": 9998.25,
+            "mean_shortened_docs_length": 163.0
+        },
+        "93": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adaptation to extrauterine life",
+                    "original_doc_length": 8176,
+                    "shortened_doc_length": 104,
+                    "shortened_doc_content": "At the end of pregnancy, the fetus must take the journey of childbirth to leave the reproductive mother."
+                },
+                {
+                    "doc_title": "Heart rate",
+                    "original_doc_length": 37839,
+                    "shortened_doc_length": 118,
+                    "shortened_doc_content": "Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm)."
+                },
+                {
+                    "doc_title": "Heart rate",
+                    "original_doc_length": 37839,
+                    "shortened_doc_length": 118,
+                    "shortened_doc_content": "Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm)."
+                },
+                {
+                    "doc_title": "Heart rate",
+                    "original_doc_length": 37839,
+                    "shortened_doc_length": 118,
+                    "shortened_doc_content": "Heart rate is the speed of the heartbeat measured by the number of contractions (beats) of the heart per minute (bpm)."
+                }
+            ],
+            "mean_original_docs_length": 30423.25,
+            "mean_shortened_docs_length": 114.5
+        }
+    }
+}

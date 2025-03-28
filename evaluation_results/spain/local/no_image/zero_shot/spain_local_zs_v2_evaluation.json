@@ -1,0 +1,631 @@
+{
+    "accuracy": 0.272,
+    "percentage_well_formatted": 1.0,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "5": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "6": {
+            "predicted_answer": "C",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "8": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "11": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "16": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "18": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "23": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "26": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "27": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "30": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "32": {
+            "predicted_answer": "C",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "36": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "39": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "41": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "42": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "43": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "46": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "47": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "48": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "49": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "50": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "51": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "52": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "53": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "55": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "58": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "60": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "63": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "66": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "70": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "71": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "72": {
+            "predicted_answer": "B",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "73": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "77": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "80": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "81": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "82": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "83": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "84": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "85": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "87": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "88": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "89": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "93": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "94": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "95": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "96": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "97": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "98": {
+            "predicted_answer": "C",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "99": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "100": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "101": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "102": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "103": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "104": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "105": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "106": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "107": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "108": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "109": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "110": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "111": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "112": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "113": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "114": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "115": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "116": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "117": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "118": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "119": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "120": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "121": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "122": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        },
+        "123": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true
+        },
+        "124": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true
+        },
+        "125": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "126": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true
+        },
+        "127": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true
+        }
+    }
+}

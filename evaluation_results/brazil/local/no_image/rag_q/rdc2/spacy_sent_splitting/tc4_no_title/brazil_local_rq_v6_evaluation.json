@@ -1,0 +1,1878 @@
+{
+    "accuracy": 0.29213483146067415,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 2.0,
+    "mean_original_docs_length": 7366.078651685393,
+    "mean_shortened_docs_length": 634.3202247191011,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Monitoring (medicine)",
+                    "original_doc_length": 11830,
+                    "shortened_doc_length": 753,
+                    "shortened_doc_content": "In medicine, monitoring is the observation of a disease, condition or one or several medical parameters over time. It can be performed by continuously measuring certain parameters by using a medical monitor (for example, by continuously measuring vital signs by a bedside monitor), and/or by repeatedly performing medical tests (such as blood glucose monitoring with a glucose meter in people with diabetes mellitus). Transmitting data from a monitor to a distant monitoring station is known as telemetry or biotelemetry. Monitoring can be classified by the target of interest, including:\nBULLET::::- Cardiac monitoring, which generally refers to continuous electrocardiography with assessment of the patients condition relative to their cardiac rhythm."
+                },
+                {
+                    "doc_title": "Risperidone",
+                    "original_doc_length": 13184,
+                    "shortened_doc_length": 314,
+                    "shortened_doc_content": "Risperidone, sold under the brand name Risperdal among others, is an atypical antipsychotic. It is used to treat schizophrenia, bipolar disorder, and irritability associated with autism. It is taken either by mouth or by injection into a muscle. The injectable version is long-acting and lasts for about two weeks."
+                }
+            ],
+            "mean_original_docs_length": 12507.0,
+            "mean_shortened_docs_length": 533.5
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mimosa verrucosa",
+                    "original_doc_length": 1066,
+                    "shortened_doc_length": 535,
+                    "shortened_doc_content": "Mimosa verrucosa, jurema-branca (\"white jurema\") or jurema-de-oeiras is a species of legume in the common bean family, Fabaceae, and in the subfamily and genus of \"Mimosa pudica\", the touch me not. It is a shrub or small tree native to Brazil (Bahia, Cear\u00e1, Para\u00edba, Pernambuco and Rio Grande do Norte). It has \"near threatened\" conservation status as a result of human induced deforestation in arid to semi-arid regions of Northeastern Brazil. The tree grows to about 2.5 to 5\u00a0m tall and has blossoms that are pink cylindrical spikes."
+                },
+                {
+                    "doc_title": "Lansium parasiticum",
+                    "original_doc_length": 8248,
+                    "shortened_doc_length": 393,
+                    "shortened_doc_content": "Lansium parasiticum, commonly known in English as langsat () or lanzones in Filipino (), is a species of tree in the Mahogany family with commercially cultivated edible fruits. The species is native to Southeast Asia. The tree is average sized, reaching in height and in diameter. Seedling trees 30 years old planted at 8 x 8 meter spacing can have a height of 10 meters and diameter of 25\u00a0cm."
+                }
+            ],
+            "mean_original_docs_length": 4657.0,
+            "mean_shortened_docs_length": 464.0
+        },
+        "3": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulse",
+                    "original_doc_length": 11116,
+                    "shortened_doc_length": 664,
+                    "shortened_doc_content": "In medicine, a pulse represents the tactile arterial palpation of the heartbeat by trained fingertips. The pulse may be palpated in any place that allows an artery to be compressed near the surface of the body, such as at the neck (carotid artery), wrist (radial artery), at the groin (femoral artery), behind the knee (popliteal artery), near the ankle joint (posterior tibial artery), and on foot (dorsalis pedis artery). Pulse (or the count of arterial pulse per minute) is equivalent to measuring the heart rate. The heart rate can also be measured by listening to the heart beat by auscultation, traditionally using a stethoscope and counting it for a minute."
+                },
+                {
+                    "doc_title": "Pulse pressure",
+                    "original_doc_length": 7255,
+                    "shortened_doc_length": 319,
+                    "shortened_doc_content": "Pulse pressure is the difference between systolic and diastolic blood pressure. It is measured in millimeters of mercury (mmHg). It represents the force that the heart generates each time it contracts. Resting blood pressure is normally approximately 120/80 mmHg, which yields a pulse pressure of approximately 40 mmHg."
+                }
+            ],
+            "mean_original_docs_length": 9185.5,
+            "mean_shortened_docs_length": 491.5
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trius Therapeutics",
+                    "original_doc_length": 2100,
+                    "shortened_doc_length": 748,
+                    "shortened_doc_content": "Trius Therapeutics () was a biopharma company based in San Diego, CA that focused on the development of antibiotics. The lead compound from Trius, tedizolid phosphate (formerly torezolid phosphate, TR-701), successfully completed its first Phase 3 clinical trial (ESTABLISH 1) in acute skin and skin structure infections (ABSSSI). It is a once daily, IV and oral, oxazolidinone being developed for the treatment of serious grampositive infections, including those caused by methicillin-resistant Staphylococcus aureus (MRSA). The Phase 3 trials are being conducted under a Special Protocol Agreement with the US Food and Drug Administration and are using the draft FDA guidance of cessations of lesion spread at 48\u201372 hours as the primary endpoint."
+                },
+                {
+                    "doc_title": "Diclazepam",
+                    "original_doc_length": 1359,
+                    "shortened_doc_length": 365,
+                    "shortened_doc_content": "Diclazepam (Ro5-3448), also known as chlorodiazepam and 2'-chloro-diazepam, is a benzodiazepine and functional analog of diazepam. It was first synthesized by Leo Sternbach and his team at Hoffman-La Roche in 1960. It is not currently approved for use as a medication, but rather sold as an unscheduled substance. Efficacy and safety have not been tested in humans."
+                }
+            ],
+            "mean_original_docs_length": 1729.5,
+            "mean_shortened_docs_length": 556.5
+        },
+        "5": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hematuria",
+                    "original_doc_length": 8775,
+                    "shortened_doc_length": 354,
+                    "shortened_doc_content": "Hematuria (American English) or haematuria (British English), also called erythrocyturia, is a clinical sign. It is defined by the presence of blood or red blood cells in the urine. An anatomical framework is helpful in developing a comprehensive differential diagnosis. Blood or red blood cells can enter and mix with urine at multiple anatomical sites."
+                },
+                {
+                    "doc_title": "Microhematuria",
+                    "original_doc_length": 992,
+                    "shortened_doc_length": 840,
+                    "shortened_doc_content": "Microhematuria, also called microscopic hematuria (both usually abbreviated as MH), is a medical condition in which urine contains small amounts of blood; the blood quantity is too low to change the color of the urine (otherwise, it is known as gross hematuria). While not dangerous in itself, it may be a symptom of kidney disease, such as IgA nephropathy or Sickle cell trait, which should be monitored by a doctor. The American Urological Association (AUA) recommends a definition of microscopic hematuria as three or more red blood cells per high-power microscopic field in urinary sediment from two of three properly collected urinalysis specimens. Microhematuria is usually asymptomatic, and there are medical guidelines on how to handle asymptomatic microhematuria (AMH) so as to avoid problems such as overtreatment or misdiagnosis."
+                }
+            ],
+            "mean_original_docs_length": 4883.5,
+            "mean_shortened_docs_length": 597.0
+        },
+        "6": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Anomaly scan",
+                    "original_doc_length": 2332,
+                    "shortened_doc_length": 754,
+                    "shortened_doc_content": "The anomaly scan, also sometimes called the anatomy scan, 20 week ultrasound, or level 2 ultrasound, is a pregnancy ultrasound performed between 18\u201322 weeks of gestational age. The International Society of Ultrasound in Obstetrics and Gynecology (ISUOG) recommends that this ultrasound is performed as a matter of routine prenatal care. The function of the ultrasound is to measure the fetus so that growth abnormalities can be recognized quickly later in pregnancy, and to assess for congenital malformations and multiple pregnancies (i.e. twins). The anomaly scan allows the developing fetus to be observed in terms of morphology, bone shape, skeletal features, fetal heart function, volume evaluation, fetal lung maturity and general fetal well being."
+                }
+            ],
+            "mean_original_docs_length": 2610.5,
+            "mean_shortened_docs_length": 675.0
+        },
+        "7": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Jugular venous pressure",
+                    "original_doc_length": 8821,
+                    "shortened_doc_length": 372,
+                    "shortened_doc_content": "The jugular venous pressure (JVP, sometimes referred to as jugular venous pulse) is the indirectly observed pressure over the venous system via visualization of the internal jugular vein. It can be useful in the differentiation of different forms of heart and lung disease. Classically three upward deflections and two downward deflections have been described. BULLET::::-"
+                },
+                {
+                    "doc_title": "Cardiac examination",
+                    "original_doc_length": 5351,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "In medicine, the cardiac examination, also precordial exam, is performed as part of a physical examination, or when a patient presents with chest pain suggestive of a cardiovascular pathology. It would typically be modified depending on the indication and integrated with other examinations especially the respiratory examination. Like all medical examinations, the cardiac examination follows the standard structure of inspection, palpation and auscultation. The patient is positioned in the supine position tilted up at 45 degrees if the patient can tolerate this."
+                }
+            ],
+            "mean_original_docs_length": 7086.0,
+            "mean_shortened_docs_length": 469.0
+        },
+        "8": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 1136,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence. Most commonly, it refers to the interchange of two or more contiguous sounds, known as adjacent metathesis or local metathesis:\n\nBULLET::::- \"foliage\" > \"**foilage\"\nBULLET::::- \"cavalry\" > \"**calvary\"\n\nMetathesis may also involve interchanging non-contiguous sounds, known as nonadjacent metathesis, long-distance metathesis, or hyperthesis, as shown in these examples of metathesis sound change from Latin to Spanish:\n\nBULLET::::- Latin > Spanish 'word'\nBULLET::::- Latin > Spanish 'miracle'\nBULLET::::- Latin > Spanish 'danger, peril'\nBULLET::::- Latin > Spanish 'crocodile'\n\nMany languages have words that show this phenomenon, and some even use it as a regular part of their grammar, such as Hebrew and Fur. The process of metathesis has altered the shape of many familiar words in English as well. The original form before metathesis may be deduced from older forms of words in the language's lexicon or, if no forms are preserved, from phonological reconstruction."
+                },
+                {
+                    "doc_title": "Primary mediastinal B-cell lymphoma",
+                    "original_doc_length": 1822,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "Primary mediastinal B-cell lymphoma, abbreviated PMBL, is a rare type of lymphoma that forms in the mediastinum (the space in between the lungs) and predominantly affects young adults. It is a subtype of diffuse large B-cell lymphoma; however, it generally has a significantly better prognosis. Diagnosis requires a biopsy, so that the exact type of tissue can be determined by examination under a microscope. PMBL is generally considered a sub-type of diffuse large B-cell lymphoma, although it is also closely related to nodular sclerosing Hodgkin lymphoma (NSHL)."
+                }
+            ],
+            "mean_original_docs_length": 9026.5,
+            "mean_shortened_docs_length": 851.0
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Post-coital tristesse",
+                    "original_doc_length": 2009,
+                    "shortened_doc_length": 486,
+                    "shortened_doc_content": "Post-coital tristesse (PCT) is the feeling of sadness, anxiety, agitation or aggression after sexual intercourse, mostly in males. Its name comes from New Latin \"postcoitalis\" and French \"tristesse\", literally \"sadness\". Many people with PCT may exhibit strong feelings of anxiety lasting from five minutes to two hours after coitus. The phenomenon was first mentioned by the Greek doctor Galen, who wrote that \"Every animal is sad after coitus except the human female and the rooster.\""
+                },
+                {
+                    "doc_title": "SAD",
+                    "original_doc_length": 1687,
+                    "shortened_doc_length": 1682,
+                    "shortened_doc_content": "The initialism SAD may refer to:\n\nBULLET::::- Sagittal abdominal diameter, body diameter at the waistline\nBULLET::::- Schizoaffective disorder, a psychiatric diagnosis\nBULLET::::- Seasonal affective disorder, typically winter depression\nBULLET::::- Separation anxiety disorder in children\nBULLET::::- Social anxiety disorder, in social situations\nBULLET::::- Specific antibody deficiency, a kind of primary immunodeficiency\nBULLET::::- Standard American diet or Western pattern diet\nBULLET::::- Syncope, angina, and dyspnea, classic symptoms of severe aortic stenosis\n\nBULLET::::- Shiromani Akali Dal, a political party in India\nBULLET::::- \", a type of incorporated sports club in Spain\nBULLET::::- \", a type of incorporated sports club in Portugal\nBULLET::::- Special Activities Division, of the US CIA\n\nBULLET::::- Selected area diffraction, a crystallographic experimental technique\nBULLET::::- Single-wavelength anomalous dispersion, in X-ray crystallography\nBULLET::::- Source axis distance in external beam radiotherapy, the distance from the source of photons to the isocentre\nBULLET::::- Sum of absolute deviations (or least absolute deviations), a mathematical optimization technique\nBULLET::::- Sum of absolute differences, a simple metric for motion estimation in video compression\nBULLET::::- Systems analysis and design, in science\n\nBULLET::::- Single Administrative Document, for customs declarations in the European Union Customs Union\nBULLET::::- Singles Awareness Day, a humorous holiday every February 14\nBULLET::::- Suicide Attack Database, for 1982-2013\nBULLET::::- \"S.A.D.\", a song by Man Overboard on the album \"Heart Attack\"\n\nBULLET::::- Sad (disambiguation)"
+                }
+            ],
+            "mean_original_docs_length": 1848.0,
+            "mean_shortened_docs_length": 1084.0
+        },
+        "10": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adaptation to extrauterine life",
+                    "original_doc_length": 8176,
+                    "shortened_doc_length": 407,
+                    "shortened_doc_content": "At the end of pregnancy, the fetus must take the journey of childbirth to leave the reproductive mother. Upon its entry to the air-breathing world, the newborn must begin to adjust to life outside the uterus. The outside environment is a drastic change for the neonate, therefore the neonate must be assessed frequently and thoroughly. The apgar scale is an assessment performed immediately following birth."
+                },
+                {
+                    "doc_title": "Hypercalcaemia",
+                    "original_doc_length": 13447,
+                    "shortened_doc_length": 497,
+                    "shortened_doc_content": "Hypercalcaemia, also spelled hypercalcemia, is a high calcium (Ca) level in the blood serum. The normal range is 2.1\u20132.6\u00a0mmol/L (8.8\u201310.7\u00a0mg/dL, 4.3\u20135.2 mEq/L), with levels greater than 2.6\u00a0mmol/L defined as hypercalcemia. Those with a mild increase that has developed slowly typically have no symptoms. In those with greater levels or rapid onset, symptoms may include abdominal pain, bone pain, confusion, depression, weakness, kidney stones or an abnormal heart rhythm including cardiac arrest."
+                }
+            ],
+            "mean_original_docs_length": 10811.5,
+            "mean_shortened_docs_length": 452.0
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obstetrics",
+                    "original_doc_length": 23271,
+                    "shortened_doc_length": 646,
+                    "shortened_doc_content": "Obstetrics is the field of study concentrated on pregnancy, childbirth, and the postpartum period. As a medical specialty, obstetrics is combined with gynaecology under the discipline known as obstetrics and gynecology (OB/GYN), which is a surgical field. Prenatal care is important in screening for various complications of pregnancy. This includes routine office visits with physical exams and routine lab tests:\n\nBULLET::::- Complete blood count (CBC)\nBULLET::::- Blood type\nBULLET::::- General antibody screen (indirect Coombs test) for HDN\nBULLET::::- Rh D negative antenatal patients should receive RhoGam at 28 weeks to prevent Rh disease."
+                },
+                {
+                    "doc_title": "Postterm pregnancy",
+                    "original_doc_length": 9580,
+                    "shortened_doc_length": 498,
+                    "shortened_doc_content": "Postterm pregnancy is when a woman has not yet delivered her baby after 42 weeks of gestation, two weeks beyond the typical 40 week duration of pregnancy. Post-mature births carry risks for both the mother and the baby, including fetal malnutrition, meconium aspiration syndrome, and stillbirths. After the 42nd week of gestation, the placenta, which supplies the baby with nutrients and oxygen from the mother, starts aging and will eventually fail. Postterm pregnancy is a reason to induce labor."
+                }
+            ],
+            "mean_original_docs_length": 16425.5,
+            "mean_shortened_docs_length": 572.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Postpartum period",
+                    "original_doc_length": 9957,
+                    "shortened_doc_length": 705,
+                    "shortened_doc_content": "A postpartum (or postnatal) period begins immediately after the birth of a child as the mother's body, including hormone levels and uterus size, returns to a non-pregnant state. The terms puerperium or puerperal period, or immediate postpartum period are commonly used to refer to the first six weeks following childbirth. The World Health Organization (WHO) describes the postnatal period as the most critical and yet the most neglected phase in the lives of mothers and babies; most maternal and newborn deaths occur during the postnatal period. In scientific literature, the term is commonly abbreviated to P\"x, where x\" is a number; for example, \"day P5\" should be read as \"the fifth day after birth\"."
+                }
+            ],
+            "mean_original_docs_length": 6423.0,
+            "mean_shortened_docs_length": 650.5
+        },
+        "13": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hospital de Base",
+                    "original_doc_length": 1032,
+                    "shortened_doc_length": 505,
+                    "shortened_doc_content": "The Base Hospital of the Federal District () is a hospital in Bras\u00edlia, and is part of the Unified Health System. It is the second largest hospital in numbers of hospital beds in the Center-West Region, Brazil. The hospital opened on September 12, 1960, anniversary date of the President Juscelino Kubitschek. Currently HB's staff of over 3,500 provides the largest number of inpatient treatments in the city and conducts over 600,000 visits to the emergency department and the outpatient clinic annually."
+                },
+                {
+                    "doc_title": "S\u00e3o Jo\u00e3o da Ponte",
+                    "original_doc_length": 1752,
+                    "shortened_doc_length": 230,
+                    "shortened_doc_content": "S\u00e3o Jo\u00e3o da Ponte is a municipality in the north of the Brazilian state of Minas Gerais. As of 2007, the population numbered 26,091 within the total area of 1,849\u00a0km\u00b2. The elevation is 561 meters. It became a municipality in 1943."
+                }
+            ],
+            "mean_original_docs_length": 1392.0,
+            "mean_shortened_docs_length": 367.5
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Anomaly",
+                    "original_doc_length": 5221,
+                    "shortened_doc_length": 5212,
+                    "shortened_doc_content": "Anomaly may refer to:\n\nBULLET::::- Anomaly (natural sciences)\nBULLET::::- Atmospheric anomaly\nBULLET::::- Geophysical anomaly\n\nBULLET::::- Congenital anomaly (birth defect), a disorder present at birth\nBULLET::::- Physical anomaly, a deformation of an anatomical structure\nBULLET::::- Congenital vertebral anomaly, any of several malformations of the spine\nBULLET::::- Collie eye anomaly, eye disease of dogs\nBULLET::::- Coronary artery anomaly, a congenital abnormality in the heart\nBULLET::::- Ebstein's anomaly, a congenital heart defect in which the opening of the tricuspid valve is displaced\nBULLET::::- Uhl anomaly, a congenital heart disease affecting the myocardial muscle\nBULLET::::- Vaginal anomalies\n\nBULLET::::- Anomalous, a species of moth in the Noctuid family\nBULLET::::- Chromosome anomaly, a disorder caused by a structural error in a chromosome or an atypical number of chromosomes\nBULLET::::- Genetic anomaly, a disorder caused by mutation\nBULLET::::- Teratology, the study of developmental anomalies\n\nBULLET::::- Anomalous dispersion (optics), when the speed of an electromagnetic wave increases with increasing frequency\nBULLET::::- Anomalon, a hypothetical type of nuclear matter that shows an anomalously large reactive cross section\nBULLET::::- Anomaly (physics), a failure of a symmetry of a theory's classical action\nBULLET::::- Conformal anomaly, a quantum phenomenon that breaks the conformal symmetry of the classical theory\nBULLET::::- Chiral anomaly, an anomalous nonconservation of a chiral current\nBULLET::::- Gauge anomaly, the effect of quantum mechanics that invalidates the gauge symmetry of a quantum field theory\nBULLET::::- Global anomaly, an anomaly in quantum physics\nBULLET::::- Gravitational anomaly, an effect in quantum mechanics that invalidates the general covariance of some theories of general relativity\nBULLET::::- Konishi anomaly, the violation of the conservation of the Noether current associated with certain transformations\nBULLET::::- Mixed anomaly, an effect in quantum mechanics\nBULLET::::- Parity anomaly, an anomaly associated with parity\n\nBULLET::::- In astronomy, an anomaly of an elliptical orbit, generally measured with respect to an apsis, usually the periapsis\nBULLET::::- Anomalous precession, another term for \"apsidal precession\"\nBULLET::::- Eccentric anomaly, an intermediate value used to compute the position of a celestial object as a function of time\nBULLET::::- Flyby anomaly, an unexpected energy increase during the flybys of the Earth by various satellites\nBULLET::::- Mean anomaly, a measure of time in the study of orbital dynamics\nBULLET::::- Pioneer anomaly, the observed deviation of the trajectories of some unmanned space probes, and especially Pioneer 10 and Pioneer 11\nBULLET::::- South Atlantic Anomaly, an area where the Earth's inner Van Allen radiation belt comes closest to the Earth's surface\nBULLET::::- True anomaly, the angle between the direction of periapsis and the current position of an object on its orbit\n\nBULLET::::- Anomaly, a rift in the space-time continuum in the television series \"Futurama\"\nBULLET::::- Anomaly, any shortcut to hyperspace travel in Robert Heinlein's novels of the 1950s, today called wormholes\nBULLET::::- , a 2003 episode of \"Star Trek: Enterprise\"\nBULLET::::- \"The Anomaly\", a 2014 film\nBULLET::::- Anomaly (comics), a villain in DC Comics\nBULLET::::- Anomaly (Primeval), a time portal in the TV series \"Primeval\"\nBULLET::::- Spatial anomaly, an extraordinary disruption in the space-time continuum in the \"Star Trek\" universe\nBULLET::::- The Fortean anomaly, in the work of Charles Fort\nBULLET::::- The Tycho Magnetic Anomaly (TMA) on the Moon in the novel and in the film \"2001: A Space Odyssey\" by Sir Arthur C. Clarke and Stanley Kubrick\n\nBULLET::::- \"\", a real time strategy video game\nBULLET::::- \"Anomaly Korea\"\nBULLET::::- \"Anomaly 2\"\n\nBULLET::::- \"The Anomalies\", a 2003 novel by Joey Goebel\nBULLET::::- Anomaly (series), a 2013 trilogy by Krista McGee\nBULLET::::- \"Anomaly\" (graphic novel), a graphic novel by Brian Haberlin\n\nBULLET::::- \"Anomaly\" (Ace Frehley album) (2009)\nBULLET::::- \"Anomalies\" (album) (2005), by Cephalic Carnage\nBULLET::::- \"Anomaly\" (The Hiatus album) (2010)\nBULLET::::- \"Anomaly\" (Lecrae album) (2014) BULLET::::- \"Anomalies, Vol. 1\" (2010), by Cave In\n\nBULLET::::- \"Anna Molly\" (a word play on the word \"anomaly\"), by Incubus\nBULLET::::- \"An Anomaly\", a 2007 song by It Prevails from the album \"The Inspiration\"\nBULLET::::- \"The Anomaly\", a 2011 song by Scar Symmetry from the album \"The Unseen Empire\"\nBULLET::::- \"Anomaly\", a 2012 song by KB from the album \"Weight & Glory\"\n\nBULLET::::- Anomaly detection, the process of detecting anomalies from the other, relevant data\nBULLET::::- Anomaly in software, any condition that deviates from expectation\n\nBULLET::::- Market anomaly, a distortion in prices in a financial market\nBULLET::::- Anomaly (advertising agency), a marketing communications agency based in New York\n\nBULLET::::- Anomalistics, the study of scientific anomalies\nBULLET::::- Ararat anomaly, an object on Mount Ararat in Turkey claimed to be the remains of Noah's Ark\n\nBULLET::::- Irregular (disambiguation)\nBULLET::::- Outlier"
+                },
+                {
+                    "doc_title": "SAD",
+                    "original_doc_length": 1687,
+                    "shortened_doc_length": 1682,
+                    "shortened_doc_content": "The initialism SAD may refer to:\n\nBULLET::::- Sagittal abdominal diameter, body diameter at the waistline\nBULLET::::- Schizoaffective disorder, a psychiatric diagnosis\nBULLET::::- Seasonal affective disorder, typically winter depression\nBULLET::::- Separation anxiety disorder in children\nBULLET::::- Social anxiety disorder, in social situations\nBULLET::::- Specific antibody deficiency, a kind of primary immunodeficiency\nBULLET::::- Standard American diet or Western pattern diet\nBULLET::::- Syncope, angina, and dyspnea, classic symptoms of severe aortic stenosis\n\nBULLET::::- Shiromani Akali Dal, a political party in India\nBULLET::::- \", a type of incorporated sports club in Spain\nBULLET::::- \", a type of incorporated sports club in Portugal\nBULLET::::- Special Activities Division, of the US CIA\n\nBULLET::::- Selected area diffraction, a crystallographic experimental technique\nBULLET::::- Single-wavelength anomalous dispersion, in X-ray crystallography\nBULLET::::- Source axis distance in external beam radiotherapy, the distance from the source of photons to the isocentre\nBULLET::::- Sum of absolute deviations (or least absolute deviations), a mathematical optimization technique\nBULLET::::- Sum of absolute differences, a simple metric for motion estimation in video compression\nBULLET::::- Systems analysis and design, in science\n\nBULLET::::- Single Administrative Document, for customs declarations in the European Union Customs Union\nBULLET::::- Singles Awareness Day, a humorous holiday every February 14\nBULLET::::- Suicide Attack Database, for 1982-2013\nBULLET::::- \"S.A.D.\", a song by Man Overboard on the album \"Heart Attack\"\n\nBULLET::::- Sad (disambiguation)"
+                }
+            ],
+            "mean_original_docs_length": 3454.0,
+            "mean_shortened_docs_length": 3447.0
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Roemheld syndrome",
+                    "original_doc_length": 6278,
+                    "shortened_doc_length": 531,
+                    "shortened_doc_content": "Roemheld syndrome (RS), or gastrocardiac syndrome, or gastric cardiac syndrome or Roemheld-Techlenburg-Ceconi-Syndrome or gastric-cardia, is a complex of gastrocardiac symptoms first described by Ludwig von Roemheld (1871\u20131938). It is a syndrome where maladies in the gastrointestinal tract or abdomen are found to be associated with cardiac symptoms like arrhythmias and benign palpitations. There is rarely a traceable cardiac source to the symptoms which may lead to a lengthy period of misdiagnosis. Symptoms can be as follows."
+                },
+                {
+                    "doc_title": "Athletic heart syndrome",
+                    "original_doc_length": 11386,
+                    "shortened_doc_length": 616,
+                    "shortened_doc_content": "Athletic heart syndrome (AHS) is a non-pathological condition commonly seen in sports medicine in which the human heart is enlarged, and the resting heart rate is lower than normal. The athlete's heart is associated with physiological remodeling as a consequence of repetitive cardiac loading. Athlete's heart is common in athletes who routinely exercise more than an hour a day, and occurs primarily in endurance athletes, though it can occasionally arise in heavy weight trainers. The condition is generally considered benign, but may occasionally hide a serious medical condition, or may even be mistaken for one."
+                }
+            ],
+            "mean_original_docs_length": 8832.0,
+            "mean_shortened_docs_length": 573.5
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulmonary hypertension",
+                    "original_doc_length": 29177,
+                    "shortened_doc_length": 303,
+                    "shortened_doc_content": "Pulmonary hypertension (PH or PHTN) is a condition of increased blood pressure within the arteries of the lungs. Symptoms include shortness of breath, syncope, tiredness, chest pain, swelling of the legs, and a fast heartbeat. The condition may make it difficult to exercise. Onset is typically gradual."
+                },
+                {
+                    "doc_title": "Portopulmonary hypertension",
+                    "original_doc_length": 8889,
+                    "shortened_doc_length": 424,
+                    "shortened_doc_content": "Portopulmonary hypertension (PPH) is defined by the coexistence of portal and pulmonary hypertension. PPH is a serious complication of liver disease, present in 0.25 to 4% of all patients suffering from cirrhosis. Once an absolute contraindication to liver transplantation, it is no longer, thanks to rapid advances in the treatment of this condition. Today, PPH is comorbid in 4-6% of those referred for a liver transplant."
+                }
+            ],
+            "mean_original_docs_length": 19033.0,
+            "mean_shortened_docs_length": 363.5
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "SAD",
+                    "original_doc_length": 1687,
+                    "shortened_doc_length": 1682,
+                    "shortened_doc_content": "The initialism SAD may refer to:\n\nBULLET::::- Sagittal abdominal diameter, body diameter at the waistline\nBULLET::::- Schizoaffective disorder, a psychiatric diagnosis\nBULLET::::- Seasonal affective disorder, typically winter depression\nBULLET::::- Separation anxiety disorder in children\nBULLET::::- Social anxiety disorder, in social situations\nBULLET::::- Specific antibody deficiency, a kind of primary immunodeficiency\nBULLET::::- Standard American diet or Western pattern diet\nBULLET::::- Syncope, angina, and dyspnea, classic symptoms of severe aortic stenosis\n\nBULLET::::- Shiromani Akali Dal, a political party in India\nBULLET::::- \", a type of incorporated sports club in Spain\nBULLET::::- \", a type of incorporated sports club in Portugal\nBULLET::::- Special Activities Division, of the US CIA\n\nBULLET::::- Selected area diffraction, a crystallographic experimental technique\nBULLET::::- Single-wavelength anomalous dispersion, in X-ray crystallography\nBULLET::::- Source axis distance in external beam radiotherapy, the distance from the source of photons to the isocentre\nBULLET::::- Sum of absolute deviations (or least absolute deviations), a mathematical optimization technique\nBULLET::::- Sum of absolute differences, a simple metric for motion estimation in video compression\nBULLET::::- Systems analysis and design, in science\n\nBULLET::::- Single Administrative Document, for customs declarations in the European Union Customs Union\nBULLET::::- Singles Awareness Day, a humorous holiday every February 14\nBULLET::::- Suicide Attack Database, for 1982-2013\nBULLET::::- \"S.A.D.\", a song by Man Overboard on the album \"Heart Attack\"\n\nBULLET::::- Sad (disambiguation)"
+                },
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                }
+            ],
+            "mean_original_docs_length": 10355.0,
+            "mean_shortened_docs_length": 1095.5
+        },
+        "19": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Felgueiras (Resende)",
+                    "original_doc_length": 4010,
+                    "shortened_doc_length": 402,
+                    "shortened_doc_content": "Felgueiras ( ) is a former civil parish in the municipality of Resende, Viseu District, Portugal. In 2013, the parish merged into the new parish Felgueiras e Feir\u00e3o. In 2001, the population was 315 inhabitants occupying an area of 8.4\u00a0km\u00b2 (approximately 37.5 inhabitants per km\u00b2). The toponymy of the region comes from the Latin term \"filicarias\", who means land of the \"fetos\", Portuguese for \"ferns\"."
+                },
+                {
+                    "doc_title": "Acre (state)",
+                    "original_doc_length": 25258,
+                    "shortened_doc_length": 484,
+                    "shortened_doc_content": "Acre () is a state located in the northern region of Brazil. Located in the westernmost part of the country with a two hour time difference from Bras\u00edlia, Acre is bordered clockwise by the Brazilian states of Amazonas to the north and northeast, Rond\u00f4nia to the east, the Bolivian department of Pando to the southeast, and the Peruvian regions of Madre de Dios, Ucayali and Loreto to the south and west. It occupies an area of 152,581.4\u00a0km. Its capital and largest city is Rio Branco."
+                }
+            ],
+            "mean_original_docs_length": 14634.0,
+            "mean_shortened_docs_length": 443.0
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "Respiratory rate",
+                    "original_doc_length": 3725,
+                    "shortened_doc_length": 412,
+                    "shortened_doc_content": "The respiratory rate is the rate at which breathing occurs. This is usually measured in breaths per minute and is set, and controlled by the respiratory centre. The respiratory rate in humans is measured by counting the number of breaths for one minute through counting how many times the chest rises. A fibre-optic breath rate sensor can be used for monitoring patients during a magnetic resonance imaging scan."
+                }
+            ],
+            "mean_original_docs_length": 6206.5,
+            "mean_shortened_docs_length": 578.5
+        },
+        "21": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Obstructed labour",
+                    "original_doc_length": 7556,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Obstructed labour, also known as labour dystocia, is when the baby does not exit the pelvis during childbirth due to being physically blocked, despite the uterus contracting normally. Complications for the baby include not getting enough oxygen which may result in death. It increases the risk of the mother getting an infection, having uterine rupture, or having post-partum bleeding. Long term complications for the mother include obstetrical fistula."
+                }
+            ],
+            "mean_original_docs_length": 5222.5,
+            "mean_shortened_docs_length": 524.5
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "La Fiebre del Loco",
+                    "original_doc_length": 1554,
+                    "shortened_doc_length": 503,
+                    "shortened_doc_content": "La Fiebre del Loco (The \"Abalone\" Fever in Spanish) is a 2001 Chilean comedy directed by Andres Wood. The film is about infighting between visiting prostitutes and fishermen's wives in a small fishing village in rural Southern Chile that has become greedy and crazy for Chilean abalone. In Spanish the word \"loco\" has the dual meaning of Chilean abalone and crazy. The film's tagline was \"\"Amor y avaricia en un mundo de buzos y moluscos\"\" (Spanish for: Love and greed in a world of scuba and mollusks)."
+                },
+                {
+                    "doc_title": "Licancabur",
+                    "original_doc_length": 16647,
+                    "shortened_doc_length": 417,
+                    "shortened_doc_content": "Licancabur () is a stratovolcano on the border between Bolivia and Chile, south of the Sairecabur volcano and west of Juriques. Part of the Andean Central Volcanic Zone, it has a prominent, -high cone. A summit crater containing Licancabur Lake, a crater lake which is among the highest lakes in the world, caps the volcano. Three stages of lava flow emanate from the volcano, which formed on Pleistocene ignimbrites."
+                }
+            ],
+            "mean_original_docs_length": 9100.5,
+            "mean_shortened_docs_length": 460.0
+        },
+        "23": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "List of reflexes",
+                    "original_doc_length": 5855,
+                    "shortened_doc_length": 423,
+                    "shortened_doc_content": "A list of reflexes in humans. BULLET::::- Abdominal reflex\nBULLET::::- Accommodation reflex \u2014 coordinated changes in the vergence, lens near object. BULLET::::- Acoustic reflex or attenuation reflex \u2014 contraction of the stapedius and tensor tympani muscles in the middle ear in response to high sound intensities. BULLET::::- Anal wink - contraction of the external anal sphincter upon stroking of the skin around the anus."
+                },
+                {
+                    "doc_title": "QT interval",
+                    "original_doc_length": 10823,
+                    "shortened_doc_length": 768,
+                    "shortened_doc_content": "The QT interval is a measurement made on an electrocardiogram used to assess some of the electrical properties of the heart. It is calculated as the time from the start of the Q wave to the end of the T wave, and approximates to the time taken from when the cardiac ventricles start to contract to when they finish relaxing. An abnormally long or abnormally short QT interval is associated with an increased risk of developing abnormal heart rhythms and sudden cardiac death. Abnormalities in the QT interval can be caused by genetic conditions such as Long QT syndrome, by certain medications such as sotalol or pitolisant, by disturbances in the concentrations of certain salts within the blood such as hypokalaemia, or by hormonal imbalances such as hypothyroidism."
+                }
+            ],
+            "mean_original_docs_length": 8339.0,
+            "mean_shortened_docs_length": 595.5
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Menstruation",
+                    "original_doc_length": 26537,
+                    "shortened_doc_length": 499,
+                    "shortened_doc_content": "Menstruation, also known as a period or monthly, is the regular discharge of blood and mucosal tissue (known as menses) from the inner lining of the uterus through the vagina. The first period usually begins between twelve and fifteen years of age, a point in time known as menarche. However, periods may occasionally start as young as eight years old and still be considered normal. The average age of the first period is generally later in the developing world, and earlier in the developed world."
+                },
+                {
+                    "doc_title": "Irregular menstruation",
+                    "original_doc_length": 1590,
+                    "shortened_doc_length": 467,
+                    "shortened_doc_content": "Irregular menstruation is a menstrual disorder whose manifestations include irregular cycle lengths as well as metrorrhagia (vaginal bleeding between expected periods). Irregular cycles or irregular periods is an abnormal variation in length of menstrual cycles. An individual usually experiences cycle length variations of up to eight days between the shortest and longest cycle lengths. Lengths ranging between eight and 20 days are considered moderately irregular."
+                }
+            ],
+            "mean_original_docs_length": 14063.5,
+            "mean_shortened_docs_length": 483.0
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cullen's sign",
+                    "original_doc_length": 829,
+                    "shortened_doc_length": 520,
+                    "shortened_doc_content": "Cullen's sign is superficial edema and bruising in the subcutaneous fatty tissue around the umbilicus. It is named for gynecologist Thomas Stephen Cullen (1869\u20131953), who first described the sign in ruptured ectopic pregnancy in 1916. This sign takes 24\u201348 hours to appear and can predict acute pancreatitis, with mortality rising from 8\u201310% to 40%. It may be accompanied by Grey Turner's sign (bruising of the flank), which may then be indicative of pancreatic necrosis with retroperitoneal or intra-abdominal bleeding."
+                },
+                {
+                    "doc_title": "Subinvolution",
+                    "original_doc_length": 1321,
+                    "shortened_doc_length": 505,
+                    "shortened_doc_content": "Subinvolution is a medical condition in which after childbirth, the uterus does not return to its normal size. The condition may be asymptomatic. The predominant symptoms are: \nBULLET::::- Abnormal lochial discharge either excessive or prolonged\nBULLET::::- Irregular or at times excessive uterine bleeding\nBULLET::::- Irregular cramp like pain is cases of retained products or rise of temperature in sepsis\n\nBULLET::::1. The uterine height is greater than the normal for the particular day of puerperium."
+                }
+            ],
+            "mean_original_docs_length": 1075.0,
+            "mean_shortened_docs_length": 512.5
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "Pulse",
+                    "original_doc_length": 11116,
+                    "shortened_doc_length": 664,
+                    "shortened_doc_content": "In medicine, a pulse represents the tactile arterial palpation of the heartbeat by trained fingertips. The pulse may be palpated in any place that allows an artery to be compressed near the surface of the body, such as at the neck (carotid artery), wrist (radial artery), at the groin (femoral artery), behind the knee (popliteal artery), near the ankle joint (posterior tibial artery), and on foot (dorsalis pedis artery). Pulse (or the count of arterial pulse per minute) is equivalent to measuring the heart rate. The heart rate can also be measured by listening to the heart beat by auscultation, traditionally using a stethoscope and counting it for a minute."
+                }
+            ],
+            "mean_original_docs_length": 9902.0,
+            "mean_shortened_docs_length": 704.5
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obstructed labour",
+                    "original_doc_length": 7556,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Obstructed labour, also known as labour dystocia, is when the baby does not exit the pelvis during childbirth due to being physically blocked, despite the uterus contracting normally. Complications for the baby include not getting enough oxygen which may result in death. It increases the risk of the mother getting an infection, having uterine rupture, or having post-partum bleeding. Long term complications for the mother include obstetrical fistula."
+                },
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                }
+            ],
+            "mean_original_docs_length": 5222.5,
+            "mean_shortened_docs_length": 524.5
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "original_doc_length": 7128,
+                    "shortened_doc_length": 1394,
+                    "shortened_doc_content": "Esophagogastroduodenoscopy (EGD; ), also called by various other names, is a diagnostic endoscopic procedure that visualizes the upper part of the gastrointestinal tract down to the duodenum. It is considered a minimally invasive procedure since it does not require an incision into one of the major body cavities and does not require any significant recovery after the procedure (unless sedation or anesthesia has been used). However, a sore throat is common. BULLET::::- Unexplained anemia (usually along with a colonoscopy)\nBULLET::::- Upper gastrointestinal bleeding as evidenced by hematemesis or melena\nBULLET::::- Persistent dyspepsia in patients over the age of 45 years\nBULLET::::- Heartburn and chronic acid reflux \u2013 this can lead to a precancerous lesion called Barrett's esophagus\nBULLET::::- Persistent emesis\nBULLET::::- Dysphagia \u2013 difficulty in swallowing\nBULLET::::- Odynophagia \u2013 painful swallowing\nBULLET::::- Persistent nausea\nBULLET::::- IBD (inflammatory bowel diseases)\n\nBULLET::::- Surveillance of Barrett's esophagus\nBULLET::::- Surveillance of gastric ulcer or duodenal ulcer\nBULLET::::- Occasionally after gastric surgery\n\nBULLET::::- Abnormal barium swallow or barium meal\nBULLET::::- Confirmation of celiac disease (via biopsy)\n\nBULLET::::- Treatment (banding/sclerotherapy) of esophageal varices\nBULLET::::- Injection therapy (e.g. epinephrine in bleeding lesions)"
+                },
+                {
+                    "doc_title": "Pulmonary heart disease",
+                    "original_doc_length": 5200,
+                    "shortened_doc_length": 625,
+                    "shortened_doc_content": "Pulmonary heart disease, also known as cor pulmonale, is the enlargement and failure of the right ventricle of the heart as a response to increased vascular resistance (such as from pulmonic stenosis) or high blood pressure in the lungs. Chronic pulmonary heart disease usually results in right ventricular hypertrophy (RVH), whereas acute pulmonary heart disease usually results in dilatation. Hypertrophy is an adaptive response to a long-term increase in pressure. Individual muscle cells grow larger (in thickness) and change to drive the increased contractile force required to move the blood against greater resistance."
+                }
+            ],
+            "mean_original_docs_length": 6164.0,
+            "mean_shortened_docs_length": 1009.5
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tretinoin",
+                    "original_doc_length": 6411,
+                    "shortened_doc_length": 436,
+                    "shortened_doc_content": "Tretinoin, also known as all-\"trans\" retinoic acid (ATRA), is medication used for the treatment of acne and acute promyelocytic leukemia. For acne, it is applied to the skin as a cream or ointment. For leukemia, it is taken by mouth for up to three months. Common side effects when used by mouth include shortness of breath, headache, numbness, depression, skin dryness, itchiness, hair loss, vomiting, muscle pains, and vision changes."
+                },
+                {
+                    "doc_title": "Hyophorbe amaricaulis",
+                    "original_doc_length": 1581,
+                    "shortened_doc_length": 492,
+                    "shortened_doc_content": "Hyophorbe amaricaulis (also known as the \"loneliest palm\") is a species of palm tree of the order \"Arecales\", family Arecaceae, subfamily Arecoideae, tribe Chamaedoreeae. It is found exclusively on the island of Mauritius, and only a single surviving specimen has been documented in the Curepipe Botanic Gardens in Curepipe. Thus, it is classified as an endling. This species is one of nine species of palm which are indigenous to Mauritius, and one of the seven palms which are also endemic."
+                }
+            ],
+            "mean_original_docs_length": 3996.0,
+            "mean_shortened_docs_length": 464.0
+        },
+        "30": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dysoptus chiquitus",
+                    "original_doc_length": 473,
+                    "shortened_doc_length": 358,
+                    "shortened_doc_content": "Dysoptus anachoreta is a species of moth in the family Arrhenophanidae. It is widespread in a large part of the Neotropical lowland wet forests, from Costa Rica south to Mato Grosso in southern Brazil. The length of the forewings is 4.6-6.5\u00a0mm for males and 7-7.2 for females. Adults are probably active during most months of the year throughout their range."
+                },
+                {
+                    "doc_title": "Hypochrosis hyadaria",
+                    "original_doc_length": 1323,
+                    "shortened_doc_length": 309,
+                    "shortened_doc_content": "Hypochrosis hyadaria is a geometer moth in the subfamily Ennominae described by Achille Guen\u00e9e in 1857. The species has a wide range from India, Sri Lanka through Southeast Asia. The wingspan of the male is 52\u00a0mm and the female's is 64\u00a0mm. Palpi porrect (extending forward), and do not reach beyond the frons."
+                }
+            ],
+            "mean_original_docs_length": 898.0,
+            "mean_shortened_docs_length": 333.5
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Diastasis symphysis pubis",
+                    "original_doc_length": 1827,
+                    "shortened_doc_length": 673,
+                    "shortened_doc_content": "Diastasis symphysis pubis is the separation of normally joined pubic bones, as in the dislocation of the bones, without a fracture. Separation of the symphysis pubis can occur spontaneously in at least 1 in 800 vaginal deliveries. It is usually noticed after delivery and has been associated with forceps delivery, rapid second stage of labour or severe abduction of the thighs during delivery. Common signs and symptoms include symphyseal pain aggravated by weight bearing and walking, a waddling gait, pubic tenderness, and a palpable interpubic gap\n\nExternal forces such as falling from a horse or a car accident can result in this type of injury to the symphysis pubis."
+                },
+                {
+                    "doc_title": "Contagious equine metritis",
+                    "original_doc_length": 3310,
+                    "shortened_doc_length": 471,
+                    "shortened_doc_content": "Contagious equine metritis (CEM) is a type of metritis (uterine inflammation) in horses that is caused by a sexually transmitted infection. It is thus an equine venereal disease of the genital tract of horses, brought on by the \"Taylorella equigenitalis\" bacteria and spread through sexual contact. The disease was first reported in 1977, and has since been reported worldwide. Signs in mares appear ten to fourteen days after breeding to an infected or carrier stallion."
+                }
+            ],
+            "mean_original_docs_length": 2568.5,
+            "mean_shortened_docs_length": 572.0
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lotus birth",
+                    "original_doc_length": 5717,
+                    "shortened_doc_length": 510,
+                    "shortened_doc_content": "Lotus birth (or umbilical cord nonseverance - UCNS) is the practice of leaving the umbilical cord uncut after childbirth so that the baby is left attached to the placenta until the cord naturally separates at the umbilicus. This usually occurs within 3\u201310 days after birth. The practice is performed mainly for spiritual purposes of the parents, including for the perceived spiritual connection between placenta and newborn. As of December 2008, no evidence exists to support any medical benefits for the baby."
+                },
+                {
+                    "doc_title": "South African mullet",
+                    "original_doc_length": 894,
+                    "shortened_doc_length": 537,
+                    "shortened_doc_content": "The South African mullet (\"Chelon richardsonii\"), also called a harder mullet or simply harder, is a species of mullet. It is found in South African coastal waters from Walvis Bay (Namibia) to KwaZulu-Natal, and grows to a maximum length of 40.5\u00a0cm. The person the specific name honours was not recorded by Andrew Smith when he described this species but it is most likely to be John Richardson (1787-1865), the Scottish naturalist, surgeon and Arctic explorer. It is also found inland in the waters of the Olifants River (Western Cape)."
+                }
+            ],
+            "mean_original_docs_length": 3305.5,
+            "mean_shortened_docs_length": 523.5
+        },
+        "33": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "Cough",
+                    "original_doc_length": 13411,
+                    "shortened_doc_length": 642,
+                    "shortened_doc_content": "A cough is a sudden expulsion of air through the large breathing passages that can help clear them of fluids, irritants, foreign particles and microbes. As a protective reflex, coughing can be repetitive with the cough reflex following three phases: an inhalation, a forced exhalation against a closed glottis, and a violent release of air from the lungs following opening of the glottis, usually accompanied by a distinctive sound. Frequent coughing usually indicates the presence of a disease. Many viruses and bacteria benefit, from an evolutionary perspective, by causing the host to cough, which helps to spread the disease to new hosts."
+                }
+            ],
+            "mean_original_docs_length": 11049.5,
+            "mean_shortened_docs_length": 693.5
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Tuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it. A complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                },
+                {
+                    "doc_title": "Mycobacterium tuberculosis",
+                    "original_doc_length": 22246,
+                    "shortened_doc_length": 585,
+                    "shortened_doc_content": "Mycobacterium tuberculosis (M. tb) is a species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of tuberculosis. First discovered in 1882 by Robert Koch, \"M. tuberculosis\" has an unusual, waxy coating on its cell surface primarily due to the presence of mycolic acid. This coating makes the cells impervious to Gram staining, and as a result, \"M. tuberculosis\" can appear either Gram-negative or Gram-positive. Acid-fast stains such as Ziehl-Neelsen, or fluorescent stains such as auramine are used instead to identify \"M. tuberculosis\" with a microscope."
+                }
+            ],
+            "mean_original_docs_length": 20634.5,
+            "mean_shortened_docs_length": 547.0
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Gestation",
+                    "original_doc_length": 3816,
+                    "shortened_doc_length": 366,
+                    "shortened_doc_content": "Gestation is the period of development during the carrying of an embryo, fetus, or reptilian embryo inside viviparous animals. It is typical for mammals, but also occurs for some non-mammals. Mammals during pregnancy can have one or more gestations at the same time, for example in a multiple birth. The time interval of a gestation is called the \"gestation period\"."
+                }
+            ],
+            "mean_original_docs_length": 3352.5,
+            "mean_shortened_docs_length": 481.0
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Control of Communicable Diseases Manual",
+                    "original_doc_length": 5650,
+                    "shortened_doc_length": 534,
+                    "shortened_doc_content": "The Control of Communicable Diseases Manual (CCDM) is one of the most widely recognized reference volumes on the topic of infectious diseases. It is useful for physicians, epidemiologists, global travelers, emergency volunteers and all who have dealt with or might have to deal with public health issues. The title of the book, as registered in the Library of Congress, is \"Control of Communicable Diseases Manual 20th edition, An Official Report of the American Public Health Association.\" The editor of CCDM is David L. Heymann, MD."
+                },
+                {
+                    "doc_title": "UK statutory notification system",
+                    "original_doc_length": 3654,
+                    "shortened_doc_length": 697,
+                    "shortened_doc_content": "The UK statutory notification system for infectious diseases (also called Notifications of Infectious Diseases or NOIDS) is a system whereby doctors are required to notify a \"Proper Officer\" of the local authority (such as a Consultant in Communicable Disease Control) if they are presented with a case of a serious infectious disease such as diphtheria or measles. The Proper Officer then sends a report to the Centre for Infections of the Health Protection Agency (HPA) in Colindale, north London. The main purpose of the system is the detection and intervention in possible epidemics. It also enables surveillance data to be collected that can help in planning ways to prevent future outbreaks."
+                }
+            ],
+            "mean_original_docs_length": 4652.0,
+            "mean_shortened_docs_length": 615.5
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "A respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination. The four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest. After positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. In order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields."
+                },
+                {
+                    "doc_title": "List of terms of lung size and activity",
+                    "original_doc_length": 1169,
+                    "shortened_doc_length": 1128,
+                    "shortened_doc_content": "Following are terms that specify a type of lung size and/or activity. More specific definitions may be found in individual articles. BULLET::::- Eupnea - normal breathing\nBULLET::::- Apnea - absence of breathing\nBULLET::::- Bradypnea - decreased breathing rate\nBULLET::::- Dyspnea or \"shortness of breath\" - sensation of respiratory distress\nBULLET::::- Hyperaeration/Hyperinflation - increased lung volume\nBULLET::::- Hyperpnea - fast and deep breathing\nBULLET::::- Hyperventilation - increased breathing that causes CO loss\nBULLET::::- Hypopnea - slow and shallow breathing\nBULLET::::- Hypoventilation - decreased breathing that causes CO gain\nBULLET::::- Labored breathing - physical presentation of respiratory distress\nBULLET::::- Tachypnea - increased breathing rate\nBULLET::::- Orthopnea - Breathlessness in lying down position relieved by sitting up or standing\nBULLET::::- Platypnea - Breathlessness when seated or standing, relieved by lying flat\nBULLET::::- Trepopnea - Breathlessness when lying flat relieved by lying in a lateral position\nBULLET::::- Ponopnea - Painful breathing\n\nBULLET::::- Control of respiration"
+                }
+            ],
+            "mean_original_docs_length": 4928.5,
+            "mean_shortened_docs_length": 936.5
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Infanticide",
+                    "original_doc_length": 56123,
+                    "shortened_doc_length": 539,
+                    "shortened_doc_content": "Infanticide (or infant homicide) is the intentional killing of infants. Parental infanticide researchers have found that mothers are far more likely than fathers to be the perpetrators of neonaticide and slightly more likely to commit infanticide in general. Anthropologist Laila Williamson notes that \"Infanticide has been practiced on every continent and by people on every level of cultural complexity, from hunter gatherers to high civilizations, including our own ancestors. Rather than being an exception, then, it has been the rule."
+                },
+                {
+                    "doc_title": "Italian Renaissance",
+                    "original_doc_length": 45219,
+                    "shortened_doc_length": 860,
+                    "shortened_doc_content": "The Italian Renaissance ( ) was a period in Italian history that covered the 15th (Quattrocento) and 16th (Cinquecento) centuries, spreading across Europe and marking the transition from the Middle Ages to Modernity. Proponents of a \"long Renaissance\" argue that it began in the 14th century (Trecento) and lasted until the 17th century (Seicento). The French word \"renaissance\" (\"rinascimento\" in Italian) means \"rebirth\" and defines the period as one of cultural revival and renewed interest in classical antiquity after the centuries labeled the Dark Ages by Renaissance humanists. The Renaissance author Giorgio Vasari used the term \"Rebirth\" in his \"Lives of the Most Excellent Painters, Sculptors, and Architects\" in 1550 but the concept became widespread only in the 19th century, after the works of scholars such as Jules Michelet and Jacob Burckhardt."
+                }
+            ],
+            "mean_original_docs_length": 50671.0,
+            "mean_shortened_docs_length": 699.5
+        },
+        "40": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiac examination",
+                    "original_doc_length": 5351,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "In medicine, the cardiac examination, also precordial exam, is performed as part of a physical examination, or when a patient presents with chest pain suggestive of a cardiovascular pathology. It would typically be modified depending on the indication and integrated with other examinations especially the respiratory examination. Like all medical examinations, the cardiac examination follows the standard structure of inspection, palpation and auscultation. The patient is positioned in the supine position tilted up at 45 degrees if the patient can tolerate this."
+                },
+                {
+                    "doc_title": "Diastole",
+                    "original_doc_length": 6725,
+                    "shortened_doc_length": 561,
+                    "shortened_doc_content": "Diastole is the part of the cardiac cycle during which the heart refills with blood after the emptying done during systole (contraction). Ventricular diastole is the period during which the two ventricles are relaxing from the contortions/wringing of contraction, then dilating and filling; atrial diastole is the period during which the two atria likewise are relaxing under suction, dilating, and filling. The term \"diastole\" originates from the Greek word \u03b4\u03b9\u03b1\u03c3\u03c4\u03bf\u03bb\u03ae (\"diastol\u00e8\"), meaning dilation. Evidence thus provided shows Diastole is not a passive phase."
+                }
+            ],
+            "mean_original_docs_length": 6038.0,
+            "mean_shortened_docs_length": 563.5
+        },
+        "41": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mauritiella",
+                    "original_doc_length": 2187,
+                    "shortened_doc_length": 888,
+                    "shortened_doc_content": "Mauritiella is a dioecious genus of flowering plant in the palm family found in South America where it is commonly called buriti. It is named after the similar and closely related genus \"Mauritia\". Four species are recognized:\nBULLET::::- \"Mauritiella aculeata\" - Venezuela, southeastern Colombia, northwestern Brazil\nBULLET::::- \"Mauritiella armata\" - Brazil, Bolivia, Peru, Ecuador, Colombia, Venezuela, Guyana, Suriname\nBULLET::::- \"Mauritiella macroclada\" - western Ecuador, western Colombia\nBULLET::::- \"Mauritiella pumila\" - southwestern Venezuela, southeastern Colombia\n\nFrom 7.5 to 18 m tall, the trunks are clustering and armed with small spines, usually with stilt roots at the base. \"A. aculeata\" tends to be smaller, with trunk diameters around 10\u00a0cm, \"M. armata\" and \"M. macroclada\" trunks reach 25 \u2013 30\u00a0cm; all three retain persistent leaf bases towards the top of the stem."
+                },
+                {
+                    "doc_title": "Boaco",
+                    "original_doc_length": 7571,
+                    "shortened_doc_length": 374,
+                    "shortened_doc_content": "Boaco () is the capital city and municipality of the Boaco Department of Nicaragua. The municipality of Boaco has a population of 56,985 (2015 est.) and an area of 1,086.81\u00a0km (26% of the Boaco Department) while the department (state) is 4,177 km2. The city of Boaco, with a population of approximately 19,000 (2006 est.), is located in the mountains 88\u00a0km. east of Managua."
+                }
+            ],
+            "mean_original_docs_length": 4879.0,
+            "mean_shortened_docs_length": 631.0
+        },
+        "42": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obstructed labour",
+                    "original_doc_length": 7556,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Obstructed labour, also known as labour dystocia, is when the baby does not exit the pelvis during childbirth due to being physically blocked, despite the uterus contracting normally. Complications for the baby include not getting enough oxygen which may result in death. It increases the risk of the mother getting an infection, having uterine rupture, or having post-partum bleeding. Long term complications for the mother include obstetrical fistula."
+                },
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                }
+            ],
+            "mean_original_docs_length": 5222.5,
+            "mean_shortened_docs_length": 524.5
+        },
+        "43": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Undifferentiated pleomorphic sarcoma",
+                    "original_doc_length": 2562,
+                    "shortened_doc_length": 500,
+                    "shortened_doc_content": "Undifferentiated pleomorphic sarcoma, previously malignant fibrous histiocytoma, is a type of cancer, namely a soft-tissue sarcoma. It is considered a diagnosis of exclusion for sarcomas that cannot be more precisely categorized. Other sarcomas are cancers that form in bone and soft tissues, including muscle, fat, blood vessels, lymph vessels, and fibrous tissue (such as tendons and ligaments). UPS occurs most commonly in the extremities and retroperitoneum, but has been reported in other sites."
+                },
+                {
+                    "doc_title": "Subinvolution",
+                    "original_doc_length": 1321,
+                    "shortened_doc_length": 505,
+                    "shortened_doc_content": "Subinvolution is a medical condition in which after childbirth, the uterus does not return to its normal size. The condition may be asymptomatic. The predominant symptoms are: \nBULLET::::- Abnormal lochial discharge either excessive or prolonged\nBULLET::::- Irregular or at times excessive uterine bleeding\nBULLET::::- Irregular cramp like pain is cases of retained products or rise of temperature in sepsis\n\nBULLET::::1. The uterine height is greater than the normal for the particular day of puerperium."
+                }
+            ],
+            "mean_original_docs_length": 1941.5,
+            "mean_shortened_docs_length": 502.5
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hyperdynamic circulation",
+                    "original_doc_length": 1141,
+                    "shortened_doc_length": 580,
+                    "shortened_doc_content": "Hyperdynamic circulation is abnormally increased circulatory volume. Systemic vasodilation and the associated decrease in peripheral vascular resistance results in decreased pulmonary capillary wedge pressure and decreased blood pressure, presenting usually with a collapsing pulse, but sometimes a bounding pulse. In effort to compensate the heart will increase cardiac output and heart rate, which accounts for the increased pulse pressure and sinus tachycardia. The condition sometimes accompanies septic shock, preeclampsia, and other physiological and psychiatric conditions."
+                },
+                {
+                    "doc_title": "Oliguria",
+                    "original_doc_length": 2257,
+                    "shortened_doc_length": 571,
+                    "shortened_doc_content": "Oliguria or hypouresis is the low output of urine specifically more than 80 ml/day but less than 400ml/day. The decreased output of urine may be a sign of dehydration, kidney failure, hypovolemic shock, HHNS hyperosmolar Hyperglycemic Nonketotic Syndrome, multiple organ dysfunction syndrome, urinary obstruction/urinary retention, DKA, pre-eclampsia, and urinary tract infections, among other conditions. Beyond oliguria is anuria, which represents an absence of urine, clinically classified as below 80 or 100 ml/day. The term is from roots meaning \"not enough urine\")."
+                }
+            ],
+            "mean_original_docs_length": 1699.0,
+            "mean_shortened_docs_length": 575.5
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "P wave (electrocardiography)",
+                    "original_doc_length": 2904,
+                    "shortened_doc_length": 577,
+                    "shortened_doc_content": "The P wave on the ECG represents atrial depolarization, which results in atrial contraction, or atrial systole. The P wave is a summation wave generated by the depolarization front as it transits the atria. Normally the right atrium depolarizes slightly earlier than left atrium since the depolarization wave originates in the sinoatrial node, in the high right atrium and then travels to and through the left atrium. The depolarization front is carried through the atria along semi-specialized conduction pathways including Bachmann's bundle resulting in uniform shaped waves."
+                },
+                {
+                    "doc_title": "Cardiac examination",
+                    "original_doc_length": 5351,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "In medicine, the cardiac examination, also precordial exam, is performed as part of a physical examination, or when a patient presents with chest pain suggestive of a cardiovascular pathology. It would typically be modified depending on the indication and integrated with other examinations especially the respiratory examination. Like all medical examinations, the cardiac examination follows the standard structure of inspection, palpation and auscultation. The patient is positioned in the supine position tilted up at 45 degrees if the patient can tolerate this."
+                }
+            ],
+            "mean_original_docs_length": 4127.5,
+            "mean_shortened_docs_length": 571.5
+        },
+        "47": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Microlechia chretieni",
+                    "original_doc_length": 1580,
+                    "shortened_doc_length": 340,
+                    "shortened_doc_content": "Microlechia chretieni is a moth in the family Gelechiidae. It was described by Turati in 1924. It is found on the Canary Islands, Madeira, Crete and Sardinia, as well as in North Africa, France, Portugal, Spain, Greece and Palestine. It is also present in Saudi Arabia, southern Iran, western Pakistan, Mozambique, Namibia and South Africa."
+                },
+                {
+                    "doc_title": "Dysoptus chiquitus",
+                    "original_doc_length": 473,
+                    "shortened_doc_length": 358,
+                    "shortened_doc_content": "Dysoptus anachoreta is a species of moth in the family Arrhenophanidae. It is widespread in a large part of the Neotropical lowland wet forests, from Costa Rica south to Mato Grosso in southern Brazil. The length of the forewings is 4.6-6.5\u00a0mm for males and 7-7.2 for females. Adults are probably active during most months of the year throughout their range."
+                }
+            ],
+            "mean_original_docs_length": 1026.5,
+            "mean_shortened_docs_length": 349.0
+        },
+        "48": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pulse pressure",
+                    "original_doc_length": 7255,
+                    "shortened_doc_length": 319,
+                    "shortened_doc_content": "Pulse pressure is the difference between systolic and diastolic blood pressure. It is measured in millimeters of mercury (mmHg). It represents the force that the heart generates each time it contracts. Resting blood pressure is normally approximately 120/80 mmHg, which yields a pulse pressure of approximately 40 mmHg."
+                },
+                {
+                    "doc_title": "Pulse",
+                    "original_doc_length": 11116,
+                    "shortened_doc_length": 664,
+                    "shortened_doc_content": "In medicine, a pulse represents the tactile arterial palpation of the heartbeat by trained fingertips. The pulse may be palpated in any place that allows an artery to be compressed near the surface of the body, such as at the neck (carotid artery), wrist (radial artery), at the groin (femoral artery), behind the knee (popliteal artery), near the ankle joint (posterior tibial artery), and on foot (dorsalis pedis artery). Pulse (or the count of arterial pulse per minute) is equivalent to measuring the heart rate. The heart rate can also be measured by listening to the heart beat by auscultation, traditionally using a stethoscope and counting it for a minute."
+                }
+            ],
+            "mean_original_docs_length": 9185.5,
+            "mean_shortened_docs_length": 491.5
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mimosa verrucosa",
+                    "original_doc_length": 1066,
+                    "shortened_doc_length": 535,
+                    "shortened_doc_content": "Mimosa verrucosa, jurema-branca (\"white jurema\") or jurema-de-oeiras is a species of legume in the common bean family, Fabaceae, and in the subfamily and genus of \"Mimosa pudica\", the touch me not. It is a shrub or small tree native to Brazil (Bahia, Cear\u00e1, Para\u00edba, Pernambuco and Rio Grande do Norte). It has \"near threatened\" conservation status as a result of human induced deforestation in arid to semi-arid regions of Northeastern Brazil. The tree grows to about 2.5 to 5\u00a0m tall and has blossoms that are pink cylindrical spikes."
+                },
+                {
+                    "doc_title": "Mimosa tenuiflora",
+                    "original_doc_length": 7027,
+                    "shortened_doc_length": 626,
+                    "shortened_doc_content": "Mimosa tenuiflora, syn. Mimosa hostilis, also known as jurema preta, calumbi (Brazil), tepezcohuite (M\u00e9xico), carbonal, cabrera, jurema, black jurema, and binho de jurema, is a perennial tree or shrub native to the northeastern region of Brazil (Para\u00edba, Rio Grande do Norte, Cear\u00e1, Pernambuco, Bahia) and found as far north as southern Mexico (Oaxaca and coast of Chiapas), and the following countries: El Salvador, Honduras, Panama, Colombia and Venezuela. It is most often found in lower altitudes, but it can be found as high as . The fern-like branches have leaves that are \"Mimosa\" like, finely pinnate, growing to long."
+                }
+            ],
+            "mean_original_docs_length": 4046.5,
+            "mean_shortened_docs_length": 580.5
+        },
+        "50": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Filadelfia de Guanacaste",
+                    "original_doc_length": 6393,
+                    "shortened_doc_length": 316,
+                    "shortened_doc_content": "Filadelfia is the first district and main city of Carrillo in Guanacaste, Costa Rica. This district has 8,141 inhabitants and 125.01\u00a0km\u00b2. It was declared an archaeological city because of all the indigenous cemeteries found near the Tempisque River. The town was formerly known as Siete Cueros (seven leather trees)."
+                },
+                {
+                    "doc_title": "Niceforonia aderca",
+                    "original_doc_length": 1088,
+                    "shortened_doc_length": 320,
+                    "shortened_doc_content": "Niceforonia adercus is a species of frog in the family Craugastoridae. It is endemic to Colombia and only known from its type locality, Betulia, Santander, on the western flank of the Cordillera Oriental. It is only known from the holotype collected in 2001. The holotype is an adult male measuring in snout\u2013vent length."
+                }
+            ],
+            "mean_original_docs_length": 3740.5,
+            "mean_shortened_docs_length": 318.0
+        },
+        "51": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypouricemia",
+                    "original_doc_length": 3553,
+                    "shortened_doc_length": 498,
+                    "shortened_doc_content": "Hypouricemia is a level of uric acid in blood serum that is below normal. In humans, the normal range of this blood component has a lower threshold set variously in the range of 2\u00a0mg/dL to 4\u00a0mg/dL, while the upper threshold is 530 micromol/L (6\u00a0mg/dL) for women and 619 micromol/L (7\u00a0mg/dL) for men. Hypouricemia usually is benign and sometimes is a sign of a medical condition. Although normally benign, idiopathic renal hypouricemia may increase the risk of exercise-induced acute kidney failure."
+                },
+                {
+                    "doc_title": "Hyperuricemia",
+                    "original_doc_length": 8542,
+                    "shortened_doc_length": 536,
+                    "shortened_doc_content": "Hyperuricemia is an abnormally high level of uric acid in the blood. In the pH conditions of body fluid, uric acid exists largely as urate, the ion form. The amount of urate in the body depends on the balance between the amount of purines eaten in food, the amount of urate synthesised within the body (e.g., through cell turnover), and the amount of urate that is excreted in urine or through the gastrointestinal tract. In humans, the upper end of the normal range is 360\u00a0\u00b5mol/L (6\u00a0mg/dL) for women and 400\u00a0\u00b5mol/L (6.8\u00a0mg/dL) for men."
+                }
+            ],
+            "mean_original_docs_length": 6047.5,
+            "mean_shortened_docs_length": 517.0
+        },
+        "53": {
+            "predicted_answer": "C",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pelargonium \u00d7 hortorum",
+                    "original_doc_length": 9124,
+                    "shortened_doc_length": 541,
+                    "shortened_doc_content": "Pelargonium\" \u00d7 \"hortorum, (also called zonal geranium, garden geranium), is a nothospecies of \"Pelargonium\" most commonly used as an ornamental plant. It is a hybrid between \"Pelargonium zonale\" and \"Pelargonium inquinans\". They are the group of Pelargonium cultivars, with leaves marked with a brown annular zone and inflorescence in the form of large balls of tight flowers, usually red, pink or white. These are the most common geraniums of garden centers and florists, sold in pots for windowsills and balconies or planted in flowerbeds."
+                },
+                {
+                    "doc_title": "Globisporangium sylvaticum",
+                    "original_doc_length": 4078,
+                    "shortened_doc_length": 460,
+                    "shortened_doc_content": "Globisporangium sylvaticum is a plant pathogen, an oomycete known to cause root rot and damping off in a multitude of species. These species include Apples, Carrot, Cherry Laurel, Cress, Cucumber, Garlic, Lettuce, Pea, Rhododendron, and Spinach. Symptoms of infection include stunting, wilt, chlorosis, and browning and eventual necrosis of roots. The pathogen can by identified by the presence of thick, microscopic, round spores within the cells of the root."
+                }
+            ],
+            "mean_original_docs_length": 6601.0,
+            "mean_shortened_docs_length": 500.5
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mycobacterium tuberculosis",
+                    "original_doc_length": 22246,
+                    "shortened_doc_length": 585,
+                    "shortened_doc_content": "Mycobacterium tuberculosis (M. tb) is a species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of tuberculosis. First discovered in 1882 by Robert Koch, \"M. tuberculosis\" has an unusual, waxy coating on its cell surface primarily due to the presence of mycolic acid. This coating makes the cells impervious to Gram staining, and as a result, \"M. tuberculosis\" can appear either Gram-negative or Gram-positive. Acid-fast stains such as Ziehl-Neelsen, or fluorescent stains such as auramine are used instead to identify \"M. tuberculosis\" with a microscope."
+                },
+                {
+                    "doc_title": "World Tuberculosis Day",
+                    "original_doc_length": 8155,
+                    "shortened_doc_length": 836,
+                    "shortened_doc_content": "World Tuberculosis Day, observed on 24 March each year, is designed to build public awareness about the global epidemic of tuberculosis (TB) and efforts to eliminate the disease. In 2012, 8.6\u00a0million people fell ill with TB, and 1.3\u00a0million died from the disease, mostly in low and middle-income countries. World TB Day is one of eight official global public health campaigns marked by the World Health Organization (WHO), along with World Health Day, World Blood Donor Day, World Immunization Week, World Malaria Day, World No Tobacco Day, World Hepatitis Day and World AIDS Day. 24 March commemorates the day in 1882 when Dr Robert Koch astounded the scientific community by announcing to a small group of scientists at the University of Berlin's Institute of Hygiene that he had discovered the cause of tuberculosis, the TB bacillus."
+                }
+            ],
+            "mean_original_docs_length": 15200.5,
+            "mean_shortened_docs_length": 710.5
+        },
+        "55": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Obstructed labour",
+                    "original_doc_length": 7556,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Obstructed labour, also known as labour dystocia, is when the baby does not exit the pelvis during childbirth due to being physically blocked, despite the uterus contracting normally. Complications for the baby include not getting enough oxygen which may result in death. It increases the risk of the mother getting an infection, having uterine rupture, or having post-partum bleeding. Long term complications for the mother include obstetrical fistula."
+                }
+            ],
+            "mean_original_docs_length": 5222.5,
+            "mean_shortened_docs_length": 524.5
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dordura",
+                    "original_doc_length": 1402,
+                    "shortened_doc_length": 322,
+                    "shortened_doc_content": "Dordura is a monotypic moth genus of the family Noctuidae erected by Frederic Moore in 1882. Its only species, Dordura aliena, was first described by Francis Walker in 1865. It is found in the Indian subregion, Sri Lanka, Myanmar, Thailand, Peninsular Malaysia, Sumatra, Borneo and New Guinea. Its wingspan is about 40\u00a0mm."
+                },
+                {
+                    "doc_title": "Defecography",
+                    "original_doc_length": 6487,
+                    "shortened_doc_length": 601,
+                    "shortened_doc_content": "Defecography (also known as proctography, defecating/defecation proctography, evacuating/evacuation proctography or dynamic rectal examination) is a type of medical radiological imaging in which the mechanics of a patient's defecation are visualized in real time using a fluoroscope. The anatomy and function of the anorectum and pelvic floor can be dynamically studied at various stages during defecation. Defecating proctography was pioneered in 1945, during World War II. The procedure gained popularity at this time in the midst of an outbreak of whipworm, which is known to cause rectal prolapse."
+                }
+            ],
+            "mean_original_docs_length": 3944.5,
+            "mean_shortened_docs_length": 461.5
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiac examination",
+                    "original_doc_length": 5351,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "In medicine, the cardiac examination, also precordial exam, is performed as part of a physical examination, or when a patient presents with chest pain suggestive of a cardiovascular pathology. It would typically be modified depending on the indication and integrated with other examinations especially the respiratory examination. Like all medical examinations, the cardiac examination follows the standard structure of inspection, palpation and auscultation. The patient is positioned in the supine position tilted up at 45 degrees if the patient can tolerate this."
+                },
+                {
+                    "doc_title": "Functional murmur",
+                    "original_doc_length": 2079,
+                    "shortened_doc_length": 501,
+                    "shortened_doc_content": "A functional murmur (innocent murmur, physiologic murmur) is a heart murmur that is primarily due to physiologic conditions outside the heart, as opposed to structural defects in the heart itself. Serious conditions can arise even in the absence of a primary heart defect, and it is possible for peripheral conditions to generate abnormalities in the heart. Therefore, caution should be applied to use of the terms \"innocent\" or \"benign\" in this context. Use of the term dates to the mid 19th century."
+                }
+            ],
+            "mean_original_docs_length": 3715.0,
+            "mean_shortened_docs_length": 533.5
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Levofloxacin",
+                    "original_doc_length": 20760,
+                    "shortened_doc_length": 498,
+                    "shortened_doc_content": "Levofloxacin, sold under the trade names Levaquin among others, is an antibiotic. It is used to treat a number of bacterial infections including acute bacterial sinusitis, pneumonia, H. pylori (in combination with other medications), urinary tract infections, chronic prostatitis, and some types of gastroenteritis. Along with other antibiotics it may be used to treat tuberculosis, meningitis, or pelvic inflammatory disease. Use is generally recommended only when other options are not available."
+                },
+                {
+                    "doc_title": "Quinapril",
+                    "original_doc_length": 2058,
+                    "shortened_doc_length": 314,
+                    "shortened_doc_content": "Quinapril, sold under the brand name Accupril among others, is a medication used to treat high blood pressure, heart failure, and diabetic kidney disease. It is a reasonable initial treatment for high blood pressure. It is taken by mouth. Common side effects include headaches, dizziness, feeling tired, and cough."
+                }
+            ],
+            "mean_original_docs_length": 11409.0,
+            "mean_shortened_docs_length": 406.0
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Festival Imperial",
+                    "original_doc_length": 4758,
+                    "shortened_doc_length": 390,
+                    "shortened_doc_content": "Festival Imperial is a major Costa Rican music festival organized by Cerveceria Costa Rica and their flagship beer: Imperial. The first festival took place in April 2006 and brought world-known performers such as Sting, Jamiroquai, Diego Torres, and The Rasmus. The second edition of the festival was held on April 2008 and featured: Duran Duran, Incubus and Smashing Pumpkins among others."
+                },
+                {
+                    "doc_title": "Segue",
+                    "original_doc_length": 3208,
+                    "shortened_doc_length": 232,
+                    "shortened_doc_content": "A segue () is a smooth transition from one topic or section to the next. The term is derived from Italian \"segue\", \"follows\". In music, \"segue\" is a direction to the performer. It means \"continue (the next section) without a pause\"."
+                }
+            ],
+            "mean_original_docs_length": 3983.0,
+            "mean_shortened_docs_length": 311.0
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Punta del Este",
+                    "original_doc_length": 10283,
+                    "shortened_doc_length": 503,
+                    "shortened_doc_content": "Punta del Este () is a city and resort on the Atlantic Coast in the Maldonado Department of southeastern Uruguay. Punta del Este is also the name of the municipality to which the city belongs. Although the city has a year-round population of about 9,280, the summer season greatly adds to this number. The city has been referred to as \"the Monaco of the South\", \"The Pearl of the Atlantic\", \"the Hamptons of South America\", and \"the St. Tropez of South America\", being also compared to Miami and Cannes."
+                },
+                {
+                    "doc_title": "Culoepuya",
+                    "original_doc_length": 4271,
+                    "shortened_doc_length": 623,
+                    "shortened_doc_content": "The culo'e puya drums, also known as culoepuya, culo e puya, or culepuya, are a battery of small drums originally from Venezuela, with a Kongo lineage. They are used in an ensemble also known as \"redondo\" drums, after the dance motion and the circle which forms around the dancers during performance. The \"culo'e puya\" battery comprises three drums made of lightweight wood from the tree known locally as \"lano\" or \"ceiba de lana\" (\"Ceiba pentandra\", a member of the Bombacaceae family, to which Balsa also belongs). Both ends have skin heads, which are joined with tensors made of rope (nylon rope is commonly used today)."
+                }
+            ],
+            "mean_original_docs_length": 7277.0,
+            "mean_shortened_docs_length": 563.0
+        },
+        "61": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "SMA",
+                    "original_doc_length": 3319,
+                    "shortened_doc_length": 3314,
+                    "shortened_doc_content": "SMA or S.M.A. may refer to:\nBULLET::::- Separately managed account, an individual investment account with an asset-based fee structure\nBULLET::::- Simple moving average, the unweighted mean of the previous \"n\" data\nBULLET::::- Special memorandum account, a margin credit account used for calculating US Regulation T requirements on brokerage accounts\n\nBULLET::::- Scouts Musulmans Alg\u00e9riens, the Algerian Muslim Scouts\nBULLET::::- SMA Engines, a diesel aircraft engine manufacturer\nBULLET::::- SMA Solar Technology, a manufacturer of solar inverters\nBULLET::::- Society of African Missions, a Catholic missionary organization\nBULLET::::- Society of Makeup Artists, a professional organization\n\nBULLET::::- Saint Mary's Academy, a school in Dominica\nBULLET::::- \"Sekolah Menengah Atas\", Indonesian for \"senior secondary school\"\n\nBULLET::::- San Marcos Baptist Academy, a school in Texas\nBULLET::::- Sarasota Military Academy, a school in Sarasota, Florida\nBULLET::::- Science and Mathematics Academy, a magnet program at Aberdeen High School, Aberdeen, Maryland\nBULLET::::- Staunton Military Academy, a former academy in Charles Town, Virginia\n\nBULLET::::- San Miguel de Allende, a city in Guanajuato, Mexico\n\nBULLET::::- Semi-major and semi-minor axes, geometrical properties of ellipses\nBULLET::::- Shape-memory alloy, a metal that \"remembers\" its geometry\nBULLET::::- Shared memory architecture, a computer architecture\nBULLET::::- Signal magnitude area, a measure of the magnitude of a varying quantity\nBULLET::::- SMA* (Simplified Memory-bounded Algorithm), an algorithm for computer search\nBULLET::::- SMA connector (SubMiniature version A), a type of coaxial radio-frequency connector, as well as a superficially similar optical fiber connector. BULLET::::- SMA or DO-214AC, a variant of the DO-214 diode package\nBULLET::::- Smooth muscle actin, a protein in humans encoded by the ACTA2 gene. BULLET::::- Stone mastic asphalt, a type of road surface\nBULLET::::- Styrene maleic anhydride, a copolymer with high heat properties\nBULLET::::- Submillimeter Array, radio telescopes in Mauna Kea, Hawaii\nBULLET::::- Surface-mount assembly, an electronic assembly with components mounted on the surface of a circuit board\nBULLET::::- Standard methods agar, also known as plate count agar\n\nBULLET::::- Spinal muscular atrophy, a severe neuromuscular disorder, the most common one of the spinal muscular atrophies group\nBULLET::::- Spinal muscular atrophies, a genetically and clinically heterogeneous group of rare disorders\nBULLET::::- Superior mesenteric artery, a blood vessel supplying the pancreas and part of the intestine\nBULLET::::- Supplementary motor area, a part of the sensorimotor cortex\n\nBULLET::::- Santa Maria Airport, Azores (IATA code)\nBULLET::::- Seoul Music Awards\nBULLET::::- Sergeant Major of the Army, the senior enlisted member of the U.S. Army\nBULLET::::- Sexiest Man Alive, an annual feature of male celebrities by \"People\" magazine\nBULLET::::- Simple moving average, in statistics\nBULLET::::- Simulated milk adapted, an infant formula and follow-on milk\nBULLET::::- \"Sma\", a 1999 song from the \"Point No. 1\" album by hard rock band Chevelle\nBULLET::::- Southern Sami language (ISO 639-2 language code)\n\nBULLET::::- Sima (Chinese surname), a Chinese surname\nBULLET::::- SMAS (disambiguation)"
+                },
+                {
+                    "doc_title": "International Mathematical Olympiad",
+                    "original_doc_length": 13401,
+                    "shortened_doc_length": 412,
+                    "shortened_doc_content": "The International Mathematical Olympiad (IMO) is a mathematical olympiad for pre-college students, and is the oldest of the International Science Olympiads. The first IMO was held in Romania in 1959. It has since been held annually, except in 1980. More than 100 countries, representing over 90% of the world's population, send teams of up to six students, plus one team leader, one deputy leader, and observers."
+                }
+            ],
+            "mean_original_docs_length": 8360.0,
+            "mean_shortened_docs_length": 1863.0
+        },
+        "62": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dapagliflozin",
+                    "original_doc_length": 3048,
+                    "shortened_doc_length": 372,
+                    "shortened_doc_content": "Dapagliflozin, sold under the brand name Farxiga among others, is a medication used to treat type 2 diabetes and, with certain restrictions, type 1 diabetes. It is of the gliflozin class. It was developed by Bristol-Myers Squibb in partnership with AstraZeneca. Dapagliflozin is used along with diet and exercise to improve glycemic control in adults with type 2 diabetes."
+                },
+                {
+                    "doc_title": "Glimepiride",
+                    "original_doc_length": 3162,
+                    "shortened_doc_length": 226,
+                    "shortened_doc_content": "Glimepiride, sold under the trade name Amaryl among others, is a medication used to treat diabetes mellitus type 2. It is less preferred than metformin. Use is recommended together with diet and exercise. It is taken by mouth."
+                }
+            ],
+            "mean_original_docs_length": 3105.0,
+            "mean_shortened_docs_length": 299.0
+        },
+        "63": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cubat\u00e3o",
+                    "original_doc_length": 1838,
+                    "shortened_doc_length": 309,
+                    "shortened_doc_content": "Cubat\u00e3o is a city in the state of S\u00e3o Paulo, Brazil, 12 kilometers away from Santos seaport, the largest in Latin America. It is part of the Metropolitan Region of Baixada Santista. The population is 127,006 (2015 est.) in an area of 142.88\u00a0km\u00b2. It hosts industries, refining oil, steel mills and fertilizers."
+                },
+                {
+                    "doc_title": "Santa Cruz, Cape Verde",
+                    "original_doc_length": 3624,
+                    "shortened_doc_length": 225,
+                    "shortened_doc_content": "Santa Cruz is a \"concelho\" (municipality) of Cape Verde. It is situated in the eastern part of the island of Santiago. Its seat is the city Pedra Badejo. Its population was 26,617 at the 2010 census, and its area is 112.2 km."
+                }
+            ],
+            "mean_original_docs_length": 2731.0,
+            "mean_shortened_docs_length": 267.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "PCO2",
+                    "original_doc_length": 1316,
+                    "shortened_doc_length": 753,
+                    "shortened_doc_content": "The pCO, PCO, formula_1or formula_2 is the partial pressure of carbon dioxide (CO), often used in reference to blood but also used in oceanography to describe the partial pressure of CO in the ocean and in life support systems engineering and underwater diving to describe the partial pressure in a breathing gas. Usually, the arterial blood is the relevant context; the symbol for formula_2 in arterial blood is formula_4. Measurement of formula_4 in the systemic circulation indicates the effectiveness of ventilation at the lungs' alveoli, given the diffusing capacity of the gas. It is a good indicator of respiratory function and the closely related factor of acid\u2013base homeostasis, reflecting the amount of acid in the blood (without lactic acid)."
+                },
+                {
+                    "doc_title": "Rothwell scale",
+                    "original_doc_length": 936,
+                    "shortened_doc_length": 618,
+                    "shortened_doc_content": "The Rothwell scale, or Rothwell system, or Rothwell method, applied to incontinence care products, is a scale that shows how absorbent a particular incontinence pad or adult diaper is, and how much liquid it can hold before it is likely to leak. The system provides a quick reference for assessing how much liquid can be held by a sheet, pad or diaper, and therefore how appropriate it will be for a particular individual in any given circumstance. The scale is based on the total absorbency test ISO 11948-1. The scale runs from 1 to 22, with 1 being able to hold the least liquid, measured in grams, and 22 the most."
+                }
+            ],
+            "mean_original_docs_length": 1126.0,
+            "mean_shortened_docs_length": 685.5
+        },
+        "65": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epidendrum hemiscleria",
+                    "original_doc_length": 1530,
+                    "shortened_doc_length": 471,
+                    "shortened_doc_content": "Epidendrum hemiscleria is a sympodial epiphytic orchid native to the tropical cloud forest of Ecuador (Loja in particular) and Peru, at altitudes near 3.3\u00a0km. \"E.\u00a0hemiscleria\" stems grow to 1\u00a0m long, and sometimes branch in the middle The erect to nodding stems do not swell like pseudobulbs and are covered by imbricating sheathes which bear narrow elliptic leathery alternate leaves, 1\u00a0dm long, except near the stem bottom. Like other members of the subgenus \"E.\"\u00a0subg."
+                },
+                {
+                    "doc_title": "Hypochrosis hyadaria",
+                    "original_doc_length": 1323,
+                    "shortened_doc_length": 309,
+                    "shortened_doc_content": "Hypochrosis hyadaria is a geometer moth in the subfamily Ennominae described by Achille Guen\u00e9e in 1857. The species has a wide range from India, Sri Lanka through Southeast Asia. The wingspan of the male is 52\u00a0mm and the female's is 64\u00a0mm. Palpi porrect (extending forward), and do not reach beyond the frons."
+                }
+            ],
+            "mean_original_docs_length": 1426.5,
+            "mean_shortened_docs_length": 390.0
+        },
+        "66": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cullen's sign",
+                    "original_doc_length": 829,
+                    "shortened_doc_length": 520,
+                    "shortened_doc_content": "Cullen's sign is superficial edema and bruising in the subcutaneous fatty tissue around the umbilicus. It is named for gynecologist Thomas Stephen Cullen (1869\u20131953), who first described the sign in ruptured ectopic pregnancy in 1916. This sign takes 24\u201348 hours to appear and can predict acute pancreatitis, with mortality rising from 8\u201310% to 40%. It may be accompanied by Grey Turner's sign (bruising of the flank), which may then be indicative of pancreatic necrosis with retroperitoneal or intra-abdominal bleeding."
+                },
+                {
+                    "doc_title": "Uterine contraction",
+                    "original_doc_length": 2945,
+                    "shortened_doc_length": 457,
+                    "shortened_doc_content": "A uterine contraction is a muscle contraction of the uterine smooth muscle. The uterus frequently contracts throughout the entire menstrual cycle, and these contractions have been termed \"endometrial waves\" or \"contractile waves\". These appear to involve only the sub-endometrial layer of the myometrium. In the early follicular phase, these contractions occur once or twice per minute and last 10\u201315 seconds with a low amplitude of usually 30 mmHg or less."
+                }
+            ],
+            "mean_original_docs_length": 1887.0,
+            "mean_shortened_docs_length": 488.5
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cervical lymphadenopathy",
+                    "original_doc_length": 4353,
+                    "shortened_doc_length": 455,
+                    "shortened_doc_content": "Cervical lymphadenopathy refers to lymphadenopathy of the cervical lymph nodes (the glands in the neck). The term \"lymphadenopathy\" strictly speaking refers to disease of the lymph nodes, though it is often used to describe the enlargement of the lymph nodes. Similarly, the term \"lymphadenitis\" refers to inflammation of a lymph node, but often it is used as a synonym of lymphadenopathy. Cervical lymphadenopathy is a sign or a symptom, not a diagnosis."
+                },
+                {
+                    "doc_title": "Generalized lymphadenopathy",
+                    "original_doc_length": 1073,
+                    "shortened_doc_length": 598,
+                    "shortened_doc_content": "Generalized lymphadenopathy is swollen lymph glands in many areas of the body. Usually this is in response to a body-wide infectious disease such as influenza and will go away once the person has recovered, but sometimes it can persist long-term, even when there is no obvious cause of disease. This is then called \"persistent generalized lymphadenopathy\" (PGL). BULLET::::- Infection :\nBULLET::::- Viral : Infectious mononucleosis, Infective hepatitis, AIDS\nBULLET::::- Bacterial : Tuberculosis, Brucellosis, secondary syphilis, Tularemia\nBULLET::::- Protozoal : Toxoplasmosis\nBULLET::::- Fungal :"
+                }
+            ],
+            "mean_original_docs_length": 2713.0,
+            "mean_shortened_docs_length": 526.5
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Elevated transaminases",
+                    "original_doc_length": 3130,
+                    "shortened_doc_length": 799,
+                    "shortened_doc_content": "In medicine, the presence of elevated transaminases, commonly the transaminases alanine transaminase (ALT) and aspartate transaminase (AST), may be an indicator of liver damage. Other terms employed include transaminasemia, transaminitis (which some sources consider pathologically meaningless) and elevated liver enzymes (though they are not the only enzymes in the liver). Normal ranges for both ALT and AST are 8-40 U/L with mild transaminesemia noted to the upward numerical limit of 250 U/L. Drug-induced increases such as that found with the use of anti-tuberculosis agents such as isoniazid are limited typically to below 100 U/L for either ALT or AST. Cirrhosis of the liver or fulminant liver failure secondary to hepatitis commonly reach values for both ALT and AST in the >1000 U/L range."
+                },
+                {
+                    "doc_title": "Alanine transaminase",
+                    "original_doc_length": 4158,
+                    "shortened_doc_length": 431,
+                    "shortened_doc_content": "Alanine transaminase (ALT) is a transaminase enzyme (). It is also called alanine aminotransferase (ALAT) and was formerly called serum glutamate-pyruvate transaminase (SGPT) or serum glutamic-pyruvic transaminase (SGPT) and was first characterized in the mid-1950s by Arthur Karmen and colleagues. ALT is found in plasma and in various body tissues but is most common in the liver. It catalyzes the two parts of the alanine cycle."
+                }
+            ],
+            "mean_original_docs_length": 3644.0,
+            "mean_shortened_docs_length": 615.0
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Segue",
+                    "original_doc_length": 3208,
+                    "shortened_doc_length": 232,
+                    "shortened_doc_content": "A segue () is a smooth transition from one topic or section to the next. The term is derived from Italian \"segue\", \"follows\". In music, \"segue\" is a direction to the performer. It means \"continue (the next section) without a pause\"."
+                },
+                {
+                    "doc_title": "Women in Peru",
+                    "original_doc_length": 15836,
+                    "shortened_doc_length": 380,
+                    "shortened_doc_content": "Women in Peru represent a minority in both numbers and legal rights. Although historically somewhat equal to men, after the Spanish conquest the culture in what is now Peru became increasingly patriarchal. The patriarchal culture is still noticeable. Women receive less pay than men, have fewer employment and political opportunities, and are at times abused without repercussion."
+                }
+            ],
+            "mean_original_docs_length": 9522.0,
+            "mean_shortened_docs_length": 306.0
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trypanosoma antiquus",
+                    "original_doc_length": 2066,
+                    "shortened_doc_length": 706,
+                    "shortened_doc_content": "Trypanosoma antiquus is an extinct species of kinetoplastid (class Kinetoplastida), a monophyletic group of unicellular parasitic flagellate protozoa. The genus name is derived from the Greek \"trypano\" (borer) and \"soma\" (body) because of their corkscrew-like motion, and the species name from \"antiquua\" (old) reflecting the age of the specimen. All trypanosomes are heteroxenous (requiring more than one obligatory host in order to complete life cycle) or are transmitted through some variation of a vector. The species was described in 2005 by George Poinar Jr. in the journal Vector-Borne & Zoonotic Diseases from metatrypanosomes preserved in several fecal pellets encased in \"Hymenaea protera\" amber."
+                },
+                {
+                    "doc_title": "El Fresno, Michoac\u00e1n",
+                    "original_doc_length": 3204,
+                    "shortened_doc_length": 372,
+                    "shortened_doc_content": "The small town of El Fresno is located in the North West of Jiquilpan, Mexican State of Michoac\u00e1n de Ocampo and South West of Sahuayo, De Morelos, Michoac\u00e1n. The small Town has over 207 inhabitants. It is over 1960 meters above sea level. The small town is noticeable because of the Milk and Cheese, they also provide a Gas station Pemex, also some Abarrotes small stores."
+                }
+            ],
+            "mean_original_docs_length": 2635.0,
+            "mean_shortened_docs_length": 539.0
+        },
+        "71": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Perindopril/indapamide",
+                    "original_doc_length": 2501,
+                    "shortened_doc_length": 479,
+                    "shortened_doc_content": "Perindopril/indapamide (marketed as Preterax, Coversyl Plus and Noliprel) is a combination medication which contains perindopril (an ACE inhibitor) and indapamide (a thiazide-like diuretic) both of which are used for the treatment of essential hypertension (high blood pressure). High blood pressure\n\nOne tablet daily, preferably to be taken in the morning and before a meal. Elderly: Normal dosage. Kidney failure: Creatinine clearance (CrCl) >30 mL/min: no dosage modification."
+                },
+                {
+                    "doc_title": "ACE inhibitor and thiazide combination",
+                    "original_doc_length": 1123,
+                    "shortened_doc_length": 429,
+                    "shortened_doc_content": "An ACE inhibitor and thiazide combination is a drug combination used to treat hypertension. They are given by mouth. BULLET::::- Enalapril/hydrochlorothiazide (trade name Enalapril comp), wherein enalapril is the ACE inhibitor and hydrochlorothiazide is the thiazide. BULLET::::- Quinapril/hydrochlorothiazide (trade name Accuretic)\nBULLET::::- Lisinopril/hydrochlorothiazide is marketed as Prinzide, Zestoretic, and many others."
+                }
+            ],
+            "mean_original_docs_length": 1812.0,
+            "mean_shortened_docs_length": 454.0
+        },
+        "72": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obstructed labour",
+                    "original_doc_length": 7556,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Obstructed labour, also known as labour dystocia, is when the baby does not exit the pelvis during childbirth due to being physically blocked, despite the uterus contracting normally. Complications for the baby include not getting enough oxygen which may result in death. It increases the risk of the mother getting an infection, having uterine rupture, or having post-partum bleeding. Long term complications for the mother include obstetrical fistula."
+                },
+                {
+                    "doc_title": "Obstetrics",
+                    "original_doc_length": 23271,
+                    "shortened_doc_length": 646,
+                    "shortened_doc_content": "Obstetrics is the field of study concentrated on pregnancy, childbirth, and the postpartum period. As a medical specialty, obstetrics is combined with gynaecology under the discipline known as obstetrics and gynecology (OB/GYN), which is a surgical field. Prenatal care is important in screening for various complications of pregnancy. This includes routine office visits with physical exams and routine lab tests:\n\nBULLET::::- Complete blood count (CBC)\nBULLET::::- Blood type\nBULLET::::- General antibody screen (indirect Coombs test) for HDN\nBULLET::::- Rh D negative antenatal patients should receive RhoGam at 28 weeks to prevent Rh disease."
+                }
+            ],
+            "mean_original_docs_length": 15413.5,
+            "mean_shortened_docs_length": 549.5
+        },
+        "73": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Princes in Exile",
+                    "original_doc_length": 1069,
+                    "shortened_doc_length": 699,
+                    "shortened_doc_content": "Princes in Exile is a 1990 Canadian feature-length coming of age drama about a group of young people at a summer camp for kids with cancer, directed by Giles Walker, written by Joe Wiesenfeld, based on a novel of the same name by Mark Schreiber. The film follows a 17-year-old protagonist, Ryan, played by Zachary Ansley, and the friends he makes over the summer. The film title is derived from the joking term the film characters adopt to describe themselves. Other characters in the film include Robert (Nicholas Shields), the camp's daredevil, who suffers from Lymphoid leukemia, as well as Holly (Stacie Mistysyn), a girl who has lost part of her leg, who becomes emotionally involved with Ryan."
+                },
+                {
+                    "doc_title": "Terminologia Embryologica",
+                    "original_doc_length": 2170,
+                    "shortened_doc_length": 637,
+                    "shortened_doc_content": "The Terminologia Embryologica (TE) is a standardized list of words used in the description of human embryologic and fetal structures. It was produced by the Federative International Committee on Anatomical Terminology on behalf of the International Federation of Associations of Anatomists and posted on the Internet since 2010. It has been approved by the General Assembly of the IFAA during the seventeenth International Congress of Anatomy in Cape Town (August 2009). It is analogous to the \"Terminologia Anatomica\" (\"TA\"), which standardizes terminology for adult human anatomy and which deals primarily with naked-eye adult anatomy."
+                }
+            ],
+            "mean_original_docs_length": 1619.5,
+            "mean_shortened_docs_length": 668.0
+        },
+        "74": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "original_doc_length": 7128,
+                    "shortened_doc_length": 1394,
+                    "shortened_doc_content": "Esophagogastroduodenoscopy (EGD; ), also called by various other names, is a diagnostic endoscopic procedure that visualizes the upper part of the gastrointestinal tract down to the duodenum. It is considered a minimally invasive procedure since it does not require an incision into one of the major body cavities and does not require any significant recovery after the procedure (unless sedation or anesthesia has been used). However, a sore throat is common. BULLET::::- Unexplained anemia (usually along with a colonoscopy)\nBULLET::::- Upper gastrointestinal bleeding as evidenced by hematemesis or melena\nBULLET::::- Persistent dyspepsia in patients over the age of 45 years\nBULLET::::- Heartburn and chronic acid reflux \u2013 this can lead to a precancerous lesion called Barrett's esophagus\nBULLET::::- Persistent emesis\nBULLET::::- Dysphagia \u2013 difficulty in swallowing\nBULLET::::- Odynophagia \u2013 painful swallowing\nBULLET::::- Persistent nausea\nBULLET::::- IBD (inflammatory bowel diseases)\n\nBULLET::::- Surveillance of Barrett's esophagus\nBULLET::::- Surveillance of gastric ulcer or duodenal ulcer\nBULLET::::- Occasionally after gastric surgery\n\nBULLET::::- Abnormal barium swallow or barium meal\nBULLET::::- Confirmation of celiac disease (via biopsy)\n\nBULLET::::- Treatment (banding/sclerotherapy) of esophageal varices\nBULLET::::- Injection therapy (e.g. epinephrine in bleeding lesions)"
+                },
+                {
+                    "doc_title": "Esophagus",
+                    "original_doc_length": 23830,
+                    "shortened_doc_length": 636,
+                    "shortened_doc_content": "The esophagus (American English) or oesophagus (British English; see spelling differences) (), commonly known as the food pipe or gullet, is an organ in vertebrates through which food passes, aided by peristaltic contractions, from the pharynx to the stomach. The esophagus is a fibromuscular tube, about 25\u00a0centimeters long in adults, which travels behind the trachea and heart, passes through the diaphragm and empties into the uppermost region of the stomach. During swallowing, the epiglottis tilts backwards to prevent food from going down the larynx and lungs. The word \"oesophagus\" is the Greek word \u03bf\u1f30\u03c3\u03bf\u03c6\u03ac\u03b3\u03bf\u03c2 , meaning \"gullet\"."
+                }
+            ],
+            "mean_original_docs_length": 15479.0,
+            "mean_shortened_docs_length": 1015.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "List of systemic diseases with ocular manifestations",
+                    "original_doc_length": 7519,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "An ocular manifestation of a systemic disease is an eye condition that directly or indirectly results from a disease process in another part of the body. There are many diseases known to cause ocular or visual changes. Diabetes, for example, is the leading cause of new cases of blindness in those aged 20\u201374, with ocular manifestations such as diabetic retinopathy and macular edema affecting up to 80% of those who have had the disease for 15 years or more. Other diseases such as acquired immunodeficiency syndrome (AIDS) and hypertension are commonly found to have associated ocular symptoms."
+                },
+                {
+                    "doc_title": "Melasma",
+                    "original_doc_length": 6567,
+                    "shortened_doc_length": 541,
+                    "shortened_doc_content": "Melasma (also known as chloasma faciei, or the mask of pregnancy when present in pregnant women) is a tan or dark skin discoloration. Melasma is thought to be caused by sun exposure, genetic predisposition, hormone changes, and skin irritation. Although it can affect anyone, melasma is particularly common in women, especially pregnant women and those who are taking oral or patch contraceptives or hormone replacement therapy (HRT) medications. The symptoms of melasma are dark, irregular well demarcated hyperpigmented macules to patches."
+                }
+            ],
+            "mean_original_docs_length": 7043.0,
+            "mean_shortened_docs_length": 568.5
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pandemia",
+                    "original_doc_length": 1166,
+                    "shortened_doc_length": 553,
+                    "shortened_doc_content": "Pandemia is a 2006 post-apocalyptic teen novel written by American author Johnathan Rand (a pseudonym of Christopher Knight). The novel depicts a scenario in which bird flu mutates and becomes a global epidemic because of modern transportation methods, eventually causing a universal state of emergency. The disease that causes a world-wide catastrophe in the novel is H5N1, a strain of bird flu that was in the news at the time of publication. Its mutation and rapid spread eventually causes the collapse of society and many economies across the world."
+                },
+                {
+                    "doc_title": "Group B (disambiguation)",
+                    "original_doc_length": 1112,
+                    "shortened_doc_length": 1084,
+                    "shortened_doc_content": "Group B was a set of regulations introduced in 1982 for competition vehicles in sportscar racing. Group B may also refer to:\nBULLET::::- Group B streptococcal infection or strep B, infection with bacteria of the genus \"Streptococcus\" that fall into group B of the Lancefield classification\nBULLET::::- the group of industrialized countries (\"The West\") in UNCTAD and other international fora In the FIFA World Cup\nBULLET::::- 2018 FIFA World Cup Group B, Iran, Morocco, Portugal, Spain\nBULLET::::- 2014 FIFA World Cup Group B, Australia, Chile, the Netherlands, Spain\nBULLET::::- 2010 FIFA World Cup Group B, Argentina, Nigeria, South Korea, Greece\nBULLET::::- 2006 FIFA World Cup Group B, England, Sweden, Paraguay, Trinidad & Tobago\nBULLET::::- 2002 FIFA World Cup Group B, Spain, Paraguay, South Africa, Slovenia\nBULLET::::- 1998 FIFA World Cup Group B, Italy, Chile, Austria, Cameroon\nBULLET::::- 1994 FIFA World Cup Group B, Brazil, Russia, Cameroon, Sweden\nBULLET::::- 1990 FIFA World Cup Group B, Cameroon, Romania, Argentina, Soviet Union\n\nBULLET::::- Group A (disambiguation)"
+                }
+            ],
+            "mean_original_docs_length": 1139.0,
+            "mean_shortened_docs_length": 818.5
+        },
+        "77": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Four sons of Horus",
+                    "original_doc_length": 9746,
+                    "shortened_doc_length": 525,
+                    "shortened_doc_content": "The four sons of Horus were a group of four gods in Egyptian religion, who were essentially the personifications of the four canopic jars, which accompanied mummified bodies. Since the heart was thought to embody the soul, it was left inside the body. The brain was thought only to be the origin of mucus, so it was reduced to liquid, removed with metal hooks, and discarded. This left the stomach (and small intestines), liver, large intestines, and lungs, which were removed, embalmed and stored, each organ in its own jar."
+                },
+                {
+                    "doc_title": "Hyperemesis gravidarum",
+                    "original_doc_length": 11398,
+                    "shortened_doc_length": 329,
+                    "shortened_doc_content": "Hyperemesis gravidarum (HG) is a pregnancy complication that is characterized by severe nausea, vomiting, weight loss, and possibly dehydration. Feeling faint may also occur. It is considered more severe than morning sickness. Symptoms often get better after the 20th week of pregnancy but may last the entire pregnancy duration."
+                }
+            ],
+            "mean_original_docs_length": 10572.0,
+            "mean_shortened_docs_length": 427.0
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Puerperal disorder",
+                    "original_doc_length": 4733,
+                    "shortened_doc_length": 564,
+                    "shortened_doc_content": "A puerperal disorder or postpartum disorder is a disorder which presents primarily during the puerperium, or postpartum period. The postpartum period can be divided into three distinct stages; the initial or acute phase, 6\u201312 hours after childbirth; subacute postpartum period, which lasts 2\u20136 weeks, and the delayed postpartum period, which can last up to six months. In the subacute postpartum period, 87% to 94% of women report at least one health problem. Long term health problems (persisting after the delayed postpartum period) are reported by 31% of women."
+                },
+                {
+                    "doc_title": "Postpartum period",
+                    "original_doc_length": 9957,
+                    "shortened_doc_length": 705,
+                    "shortened_doc_content": "A postpartum (or postnatal) period begins immediately after the birth of a child as the mother's body, including hormone levels and uterus size, returns to a non-pregnant state. The terms puerperium or puerperal period, or immediate postpartum period are commonly used to refer to the first six weeks following childbirth. The World Health Organization (WHO) describes the postnatal period as the most critical and yet the most neglected phase in the lives of mothers and babies; most maternal and newborn deaths occur during the postnatal period. In scientific literature, the term is commonly abbreviated to P\"x, where x\" is a number; for example, \"day P5\" should be read as \"the fifth day after birth\"."
+                }
+            ],
+            "mean_original_docs_length": 7345.0,
+            "mean_shortened_docs_length": 634.5
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bruit",
+                    "original_doc_length": 1715,
+                    "shortened_doc_length": 618,
+                    "shortened_doc_content": "Bruit, also called vascular murmur, is the abnormal sound generated by turbulent flow of blood in an artery due to either an area of partial obstruction or a localized high rate of blood flow through an unobstructed artery. The bruit may be heard (\"auscultated\") by securely placing the head of a stethoscope to the skin over the turbulent flow, and listening. Most bruits occur only in systole, so the bruit is intermittent and its frequency dependent on the heart rate. Anything increasing the blood flow velocity such as fever, anemia, hyperthyroidism, or physical exertion, can increase the amplitude of the bruit."
+                },
+                {
+                    "doc_title": "Lazarus syndrome",
+                    "original_doc_length": 5711,
+                    "shortened_doc_length": 482,
+                    "shortened_doc_content": "Lazarus syndrome, (the Lazarus heart) also known as autoresuscitation after failed cardiopulmonary resuscitation, is the spontaneous return of a normal cardiac rhythm after failed attempts at resuscitation. Its occurrence has been noted in medical literature at least 38 times since 1982. It takes its name from Lazarus who, as described in the New Testament, was raised from the dead by Jesus. Occurrences of the syndrome are extremely rare, and the causes are not well understood."
+                }
+            ],
+            "mean_original_docs_length": 3713.0,
+            "mean_shortened_docs_length": 550.0
+        },
+        "80": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Emergency Medicine Society of South Africa",
+                    "original_doc_length": 2322,
+                    "shortened_doc_length": 578,
+                    "shortened_doc_content": "Emergency Medicine Society of South Africa or EMSSA is a professional organisation of emergency physicians that was formed in 2007. Emergency medicine only became recognised as an independent speciality in South Africa as of 5 December 2005, when it was formally adopted by the Health Professions Council of South Africa (HPCSA). Although informally, the country always had a strong culture of emergency care rendered by other specialities. For the first time EMSSA brought pre-hospital emergency care, emergency nursing and emergency physicians under one umbrella organisation."
+                },
+                {
+                    "doc_title": "Sed (disambiguation)",
+                    "original_doc_length": 1732,
+                    "shortened_doc_length": 1709,
+                    "shortened_doc_content": "sed is a Unix utility for processing text. Sed or SED may also refer to:\n\nBULLET::::- Spectral energy distribution, a means of characterizing astronomical sources (also, spectral energy diagram)\nBULLET::::- Stochastic electrodynamics, in quantum mechanics\n\nBULLET::::- Selective eating disorder, former name of avoidant/restrictive food intake disorder\nBULLET::::- Emotional and behavioral disorders Serious Emotional Disturbance\nBULLET::::- Spondyloepiphyseal dysplasia congenita, an inherited genetic bone disorder\nBULLET::::- Erythrocyte sedimentation rate (sed rate), a haematology test\n\nBULLET::::- Surface-conduction electron-emitter display, a flat panel display technology for televisions and monitors\nBULLET::::- DEC SED (text editor), a text editor for the TOPS-10, TOPS-20, and VMS operating systems\nBULLET::::- Self-encrypting device, a hardware-based full disk encryption\nBULLET::::- Single error detection, see Error detection and correction\n\nBULLET::::- Socialist Unity Party of Germany (), the communist party of the former German Democratic Republic (East Germany)\nBULLET::::- Swiss Seismological Service ()\n\nBULLET::::- Society for Economic Dynamics, an academic association in economics\nBULLET::::- New York State Education Department\nBULLET::::- Scottish Education Department\n\nBULLET::::- SED Systems, a Canadian satellite systems integrator and developer (Space Engineering Division)\nBULLET::::- Tata Power SED, Tata Power Strategic Electronics Division\n\nBULLET::::- Survey of English Dialects\nBULLET::::- Strategic Economic Dialogue\nBULLET::::- Sed card, a \"portfolio-on-a-card\" used by models and actors\nBULLET::::- Sed festival, in Ancient Egypt\nBULLET::::- Shippers Export Declaration"
+                }
+            ],
+            "mean_original_docs_length": 2027.0,
+            "mean_shortened_docs_length": 1143.5
+        },
+        "81": {
+            "predicted_answer": "B",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "O Tempo N\u00e3o Para",
+                    "original_doc_length": 4656,
+                    "shortened_doc_length": 419,
+                    "shortened_doc_content": "O Tempo N\u00e3o Para (English: Crashing Into the Future) is a Brazilian telenovela produced and broadcast by Rede Globo. It premiered on 31 July 2018, replacing \"Deus Salve o Rei\", and ended on 28 January 2019, replaced by \"Ver\u00e3o 90\". It was created by Mario Teixeira in collaboration with B\u00edbi Da Pieve, Tarc\u00edsio Lara Puiati, Marcos Lazarini, Marcelo Travesso, and Adriano Melo. The artistic director is Leonardo Nogueira."
+                },
+                {
+                    "doc_title": "Gone (novel series)",
+                    "original_doc_length": 44057,
+                    "shortened_doc_length": 706,
+                    "shortened_doc_content": "Gone is a bestselling book series written by Michael Grant. The series is centered on the fictional Southern Californian town of Perdido Beach, in which every human aged 15 and older vanishes. The town and surrounding areas become encased within an impenetrable barrier that burns to the touch, with many of its inhabitants developing supernatural powers. The books follow the exploits of the protagonist, Sam Temple, as he battles antagonists Caine Soren, Drake Merwin, and Diana Ladris as well as a mysterious, malevolent creature, known as the Darkness or the Gaiaphage (gai-uh-fage) (derived from Gaia, a Greek personification of the Earth, and \"phage\", from the Greek \u03c6\u03b1\u03b3\u03b5\u1fd6\u03bd \"\" \"to devour\" or \"worm\")."
+                }
+            ],
+            "mean_original_docs_length": 24356.5,
+            "mean_shortened_docs_length": 562.5
+        },
+        "82": {
+            "predicted_answer": "B",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Felgueiras (Resende)",
+                    "original_doc_length": 4010,
+                    "shortened_doc_length": 402,
+                    "shortened_doc_content": "Felgueiras ( ) is a former civil parish in the municipality of Resende, Viseu District, Portugal. In 2013, the parish merged into the new parish Felgueiras e Feir\u00e3o. In 2001, the population was 315 inhabitants occupying an area of 8.4\u00a0km\u00b2 (approximately 37.5 inhabitants per km\u00b2). The toponymy of the region comes from the Latin term \"filicarias\", who means land of the \"fetos\", Portuguese for \"ferns\"."
+                },
+                {
+                    "doc_title": "Ixtlahuac\u00e1n de los Membrillos",
+                    "original_doc_length": 3065,
+                    "shortened_doc_length": 254,
+                    "shortened_doc_content": "Ixtlahuac\u00e1n de los Membrillos () is a town and municipality, in Jalisco in central-western Mexico. The municipality covers an area of 184.25\u00a0km\u00b2. It is located north of the Chapala municipality. In 2005, the municipality had a total population of 23,420."
+                }
+            ],
+            "mean_original_docs_length": 3537.5,
+            "mean_shortened_docs_length": 328.0
+        },
+        "83": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Campos do Jord\u00e3o",
+                    "original_doc_length": 9110,
+                    "shortened_doc_length": 286,
+                    "shortened_doc_content": "Campos do Jord\u00e3o () is a municipality in the state of S\u00e3o Paulo in southeastern Brazil. It is part of the Metropolitan Region of Vale do Para\u00edba e Litoral Norte. The population is 51,454 (2017 est.) in an area of . The city is situated above sea level and is the highest city in Brazil."
+                },
+                {
+                    "doc_title": "Hyophorbe amaricaulis",
+                    "original_doc_length": 1581,
+                    "shortened_doc_length": 492,
+                    "shortened_doc_content": "Hyophorbe amaricaulis (also known as the \"loneliest palm\") is a species of palm tree of the order \"Arecales\", family Arecaceae, subfamily Arecoideae, tribe Chamaedoreeae. It is found exclusively on the island of Mauritius, and only a single surviving specimen has been documented in the Curepipe Botanic Gardens in Curepipe. Thus, it is classified as an endling. This species is one of nine species of palm which are indigenous to Mauritius, and one of the seven palms which are also endemic."
+                }
+            ],
+            "mean_original_docs_length": 5345.5,
+            "mean_shortened_docs_length": 389.0
+        },
+        "84": {
+            "predicted_answer": "C",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pauperism",
+                    "original_doc_length": 1915,
+                    "shortened_doc_length": 599,
+                    "shortened_doc_content": "Pauperism (Lat. \"pauper\", poor) is a term meaning poverty or generally the state of being poor, but in English usage particularly the condition of being a \"pauper\", i.e. in receipt of relief administered under the English Poor Laws. From this springs a more general sense, referring to all those who are supported at public expense, whether within or outside of almshouses, and still more generally, to all whose existence is dependent for any considerable period upon charitable assistance, whether this assistance be public or private. In this sense the word is to be distinguished from \"poverty\"."
+                },
+                {
+                    "doc_title": "PSS",
+                    "original_doc_length": 5141,
+                    "shortened_doc_length": 5136,
+                    "shortened_doc_content": "PSS may refer to:\nBULLET::::- Parliament Security Services, in charge of providing security to the Parliament of India\nBULLET::::- Price Stern Sloan, publishing company owned by Penguin Group/Penguin Random House\nBULLET::::- Product Support Services, a Microsoft business unit\nBULLET::::- Strength of Serbia Movement (Serbian: \"Pokret Snaga Srbije\", PSS), a political party\nBULLET::::- PSS World Medical, an American distributor of medical products, equipment, billing services and pharmaceuticals\nBULLET::::- Pakistan Statistical Society, an academic and professional society of statisticians\nBULLET::::- Spo\u0142em or PSS Spo\u0142em, a Polish consumers' co-operative of local grocery stores\n\nBULLET::::- Sammarinese Socialist Party (Italian: \"Partito Socialista Sammarinese\"), a political party in San Marino\nBULLET::::- Senegalese Socialist Party (French: \"Parti Socialiste S\u00e9n\u00e9galais\"), a political party in Senegal\n\nBULLET::::- Perceived Stress Scale, a psychological instrument for measuring perceived stress in humans\nBULLET::::- Porcine stress syndrome, a condition in pigs\nBULLET::::- Portosystemic shunt, a disease found in humans, cats and dogs\nBULLET::::- Progressive systemic sclerosis, a rare chronic disease\nBULLET::::- Psychosocial short stature, a growth disorder that is caused by extreme stress\n\nBULLET::::- Periodic steady-state analysis, type of simulation\nBULLET::::- \"Physica Status Solidi\", a family of academic journals focused on solid state physics\nBULLET::::- Physical symbol system, a hypothesis concerning cognition, closely connected to AI research\nBULLET::::- Photostationary state, the equilibrium chemical composition under a specific kind of electromagnetic irradiation\nBULLET::::- Plasma sound source, a means of making sonar underwater\nBULLET::::- Polystyrene sulfonic acid, also known as sodium polystyrene sulfonate or poly(styrenesulfonate)\nBULLET::::- Power system simulator for engineering (PSS\u00aeE or PSS/E), a software tool used by power system engineers to simulate electrical power transmission networks\nBULLET::::- Practical Salinity Scale, the conductivity ratio of a sea water sample to a standard KCl solution\n\nBULLET::::- Packet Switch Stream, a British packet-switched network\nBULLET::::- Packet switching, a method of grouping data that is transmitted over a digital network into packets\nBULLET::::- Panorama Software Sys-On-Line\nBULLET::::- Probabilistic signature scheme, a secure way of creating signatures with RSA\nBULLET::::- Proportional set size, a measure of computer program memory use\n\nBULLET::::- Parkland Secondary School, North Saanich, a suburb of Victoria, British Columbia\nBULLET::::- Penetanguishene Secondary School, Simcoe County District School Board, Ontario\nBULLET::::- Penticton Secondary School, Penticton, British Columbia\nBULLET::::- Pinetree Secondary School, Coquitlam, British Columbia\nBULLET::::- Parkview Secondary School, Ham\n\nBULLET::::- PAREF Springdale School, Cebu City, Philippines\nBULLET::::- Pak Shama School, Doha, Qatar\nBULLET::::- Pakistan School Salalah, Salalah, Oman\nBULLET::::- Pakkred Secondary School, Amphoe Pak Kret, Nonthaburi Province, Thailand\nBULLET::::- Park Secondary School, Dudley, West Midlands\nBULLET::::- Popatlal Secondary School, Tanga, Tanzania\n\nBULLET::::- PSS Kedam, a patrol boat for Palau\nBULLET::::- PSS \"Wingfield Castle\", a former Humber Estuary ferry, now a museum ship in Hartlepool, County Durham, England\n\nBULLET::::- Paikiasothy Saravanamuttu Stadium, a sporting stadium in Colombo, Sri Lanka\nBULLET::::- Philippine Sports Stadium, a sporting stadium in Bocaue, Philippines\nBULLET::::- PFC Septemvri Sofia, a Bulgarian football club based in Sofia\nBULLET::::- Porvoon Salibandyseura, a Finnish sports club\nBULLET::::- PSS Sleman, a football club based in Sleman Regency, Special Region of Yogyakarta, Indonesia\n\nBULLET::::- PSS silent pistol, a Soviet-designed silent handgun\nBULLET::::- PSS-line, a fortified defense line in Finland during World War II; see Battle of Nietj\u00e4rvi\n\nBULLET::::- Kaulong language (ISO 639:pss), an Austronesian language\nBULLET::::- Libertador General Jos\u00e9 de San Mart\u00edn Airport (IATA code PSS), Posadas, Misiones, Argentina\nBULLET::::- Palestinian Security Services, the armed forces and intelligence agencies of the State of Palestine\nBULLET::::- Passenger service system, systems used by airlines to manage reservations, inventory and check-in\nBULLET::::- Performance supervision system, a software system used to improve the performance of a process plant\nBULLET::::- Player Search System, how \"Pok\u00e9mon X\" and \"Y\" players can connect to each other around the world\nBULLET::::- PortaSound PSS series, a series of portable Yamaha keyboards\nBULLET::::- Power scale soaring, a form of radio controlled model flying\nBULLET::::- Power system stabilizer, in power generation; see Wide-area damping control\nBULLET::::- Presidential Security Service, a South Korean close protection agency\nBULLET::::- Product-service system, a system of consumer access to products, as an alternative to personal product ownership\nBULLET::::- Psalms, a book of the Hebrew Bible\nBULLET::::- PSS Nkwen kidnapping"
+                }
+            ],
+            "mean_original_docs_length": 3528.0,
+            "mean_shortened_docs_length": 2867.5
+        },
+        "85": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adaptation to extrauterine life",
+                    "original_doc_length": 8176,
+                    "shortened_doc_length": 407,
+                    "shortened_doc_content": "At the end of pregnancy, the fetus must take the journey of childbirth to leave the reproductive mother. Upon its entry to the air-breathing world, the newborn must begin to adjust to life outside the uterus. The outside environment is a drastic change for the neonate, therefore the neonate must be assessed frequently and thoroughly. The apgar scale is an assessment performed immediately following birth."
+                },
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                }
+            ],
+            "mean_original_docs_length": 5532.5,
+            "mean_shortened_docs_length": 501.5
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Heart of the City (comic strip)",
+                    "original_doc_length": 7582,
+                    "shortened_doc_length": 379,
+                    "shortened_doc_content": "Heart of the City is a comic strip by Mark Tatulli. It began syndication by Universal Press Syndicate on November 23, 1998, and is still running. It is currently syndicated by the Newspaper Enterprise Association (a division of Andrews McMeel Syndication, parent company of Universal Press Syndicate). It centers on a young girl, named Heart, who lives somewhere in Philadelphia."
+                },
+                {
+                    "doc_title": "Lachesis stenophrys",
+                    "original_doc_length": 1800,
+                    "shortened_doc_length": 374,
+                    "shortened_doc_content": "Lachesis stenophrys is a venomous pit viper species endemic to Central America. The specific name, \"stenophrys\", is derived from the Greek words \"stenos\", meaning \"narrow\", and \"ophrys\", meaning \"brow\" or \"eyebrow\". No subspecies are currently recognized. Adults commonly grow to more than 200\u00a0cm (6 feet 6\u00be inches) and may exceed 330\u00a0cm (10 feet 10 inches) in total length."
+                }
+            ],
+            "mean_original_docs_length": 4691.0,
+            "mean_shortened_docs_length": 376.5
+        },
+        "87": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Defecography",
+                    "original_doc_length": 6487,
+                    "shortened_doc_length": 601,
+                    "shortened_doc_content": "Defecography (also known as proctography, defecating/defecation proctography, evacuating/evacuation proctography or dynamic rectal examination) is a type of medical radiological imaging in which the mechanics of a patient's defecation are visualized in real time using a fluoroscope. The anatomy and function of the anorectum and pelvic floor can be dynamically studied at various stages during defecation. Defecating proctography was pioneered in 1945, during World War II. The procedure gained popularity at this time in the midst of an outbreak of whipworm, which is known to cause rectal prolapse."
+                },
+                {
+                    "doc_title": "Pyelectasis",
+                    "original_doc_length": 1289,
+                    "shortened_doc_length": 287,
+                    "shortened_doc_content": "Pyelectasis is a dilation of the renal pelvis. It is a relatively common ultrasound finding in fetuses and is three times more common in male fetuses. In most cases pyelectasis resolves normally, having no ill effects on the baby. The significance of pyelectasis in fetuses is not clear."
+                }
+            ],
+            "mean_original_docs_length": 3888.0,
+            "mean_shortened_docs_length": 444.0
+        },
+        "88": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pregnancy",
+                    "original_doc_length": 46770,
+                    "shortened_doc_length": 377,
+                    "shortened_doc_content": "Pregnancy, also known as gestation, is the time during which one or more offspring develops inside a woman. A multiple pregnancy involves more than one offspring, such as with twins. Pregnancy can occur by sexual intercourse or assisted reproductive technology. A pregnancy may end in a live birth, abortion, or miscarriage, though access to safe abortion care varies globally."
+                },
+                {
+                    "doc_title": "Obstetric ultrasonography",
+                    "original_doc_length": 15225,
+                    "shortened_doc_length": 1119,
+                    "shortened_doc_content": "Obstetric ultrasonography, or prenatal ultrasound, is the use of medical ultrasonography in pregnancy, in which sound waves are used to create real-time visual images of the developing embryo or fetus in the uterus (womb). The procedure is a standard part of prenatal care in many countries, as it can provide a variety of information about the health of the mother, the timing and progress of the pregnancy, and the health and development of the embryo or fetus. The International Society of Ultrasound in Obstetrics and Gynecology (ISUOG) recommends that pregnant women have routine obstetric ultrasounds between 18 weeks' and 22 weeks' gestational age (the anatomy scan) in order to confirm pregnancy dating, to measure the fetus so that growth abnormalities can be recognized quickly later in pregnancy, and to assess for congenital malformations and multiple pregnancies (twins, etc). Additionally, the ISUOG recommends that pregnant patients who desire genetic testing have obstetric ultrasounds between 11 weeks' and 13 weeks 6 days' gestational age in countries with resources to perform them (the nuchal scan)."
+                }
+            ],
+            "mean_original_docs_length": 30997.5,
+            "mean_shortened_docs_length": 748.0
+        },
+        "89": {
+            "predicted_answer": "B",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lazarus syndrome",
+                    "original_doc_length": 5711,
+                    "shortened_doc_length": 482,
+                    "shortened_doc_content": "Lazarus syndrome, (the Lazarus heart) also known as autoresuscitation after failed cardiopulmonary resuscitation, is the spontaneous return of a normal cardiac rhythm after failed attempts at resuscitation. Its occurrence has been noted in medical literature at least 38 times since 1982. It takes its name from Lazarus who, as described in the New Testament, was raised from the dead by Jesus. Occurrences of the syndrome are extremely rare, and the causes are not well understood."
+                },
+                {
+                    "doc_title": "Cyclosorus interruptus",
+                    "original_doc_length": 1694,
+                    "shortened_doc_length": 409,
+                    "shortened_doc_content": "Cyclosorus interruptus, the swamp shield-fern, is a fern in the family Thelypteridaceae, that is native to the tropics and subtropics of all the continents. In the New World, it is found from Mexico to Argentina, and in the Antilles. In the Old World, it is found in India, China, Malaysia, Sri Lanka and South Africa. It is also found in Australia, New Zealand, Hawaii and other islands in the Pacific Ocean."
+                }
+            ],
+            "mean_original_docs_length": 3702.5,
+            "mean_shortened_docs_length": 445.5
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Megacolon",
+                    "original_doc_length": 6642,
+                    "shortened_doc_length": 566,
+                    "shortened_doc_content": "Megacolon is an abnormal dilation of the colon (also called the large intestine). The dilation is often accompanied by a paralysis of the peristaltic movements of the bowel. In more extreme cases, the feces consolidate into hard masses inside the colon, called fecalomas (literally, \"fecal tumor\"), which can require surgery to be removed. A human colon is considered abnormally enlarged if it has a diameter greater than 12\u00a0cm in the cecum (it is usually less than 9\u00a0cm), greater than 6.5\u00a0cm in the rectosigmoid region and greater than 8\u00a0cm for the ascending colon."
+                },
+                {
+                    "doc_title": "Diarrhea",
+                    "original_doc_length": 30351,
+                    "shortened_doc_length": 453,
+                    "shortened_doc_content": "Diarrhea, also spelled diarrhoea, is the condition of having at least three loose, liquid, or watery bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss. Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable behaviour. This can progress to decreased urination, loss of skin color, a fast heart rate, and a decrease in responsiveness as it becomes more severe."
+                }
+            ],
+            "mean_original_docs_length": 18496.5,
+            "mean_shortened_docs_length": 509.5
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Metathesis (linguistics)",
+                    "original_doc_length": 16231,
+                    "shortened_doc_length": 1136,
+                    "shortened_doc_content": "Metathesis (; from Greek , from \"I put in a different order\"; Latin: \"tr\u0101nspositi\u014d\") is the transposition of sounds or syllables in a word or of words in a sentence. Most commonly, it refers to the interchange of two or more contiguous sounds, known as adjacent metathesis or local metathesis:\n\nBULLET::::- \"foliage\" > \"**foilage\"\nBULLET::::- \"cavalry\" > \"**calvary\"\n\nMetathesis may also involve interchanging non-contiguous sounds, known as nonadjacent metathesis, long-distance metathesis, or hyperthesis, as shown in these examples of metathesis sound change from Latin to Spanish:\n\nBULLET::::- Latin > Spanish 'word'\nBULLET::::- Latin > Spanish 'miracle'\nBULLET::::- Latin > Spanish 'danger, peril'\nBULLET::::- Latin > Spanish 'crocodile'\n\nMany languages have words that show this phenomenon, and some even use it as a regular part of their grammar, such as Hebrew and Fur. The process of metathesis has altered the shape of many familiar words in English as well. The original form before metathesis may be deduced from older forms of words in the language's lexicon or, if no forms are preserved, from phonological reconstruction."
+                },
+                {
+                    "doc_title": "Lotus birth",
+                    "original_doc_length": 5717,
+                    "shortened_doc_length": 510,
+                    "shortened_doc_content": "Lotus birth (or umbilical cord nonseverance - UCNS) is the practice of leaving the umbilical cord uncut after childbirth so that the baby is left attached to the placenta until the cord naturally separates at the umbilicus. This usually occurs within 3\u201310 days after birth. The practice is performed mainly for spiritual purposes of the parents, including for the perceived spiritual connection between placenta and newborn. As of December 2008, no evidence exists to support any medical benefits for the baby."
+                }
+            ],
+            "mean_original_docs_length": 10974.0,
+            "mean_shortened_docs_length": 823.0
+        },
+        "92": {
+            "predicted_answer": "B",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mycobacterium tusciae",
+                    "original_doc_length": 3082,
+                    "shortened_doc_length": 552,
+                    "shortened_doc_content": "Mycobacterium tusciae is a slow-growing, scotochromogenic mycobacterium first isolated from a lymph node of an immunocompromised child and subsequently from tap water and from a respiratory specimen of a patient with chronic fibrosis. Etymology: tusciae referring to the Italian region of Tuscany, where the organisms were first isolated. Microscopy\nBULLET::::- Gram-positive, nonmotile and acid-fast rods. BULLET::::- Early microscopic morphology on Middlebrook 7H11 agar is characterized by a very elevated centre surrounded by an uneven flat fringe."
+                },
+                {
+                    "doc_title": "Mycobacterium tuberculosis",
+                    "original_doc_length": 22246,
+                    "shortened_doc_length": 585,
+                    "shortened_doc_content": "Mycobacterium tuberculosis (M. tb) is a species of pathogenic bacteria in the family Mycobacteriaceae and the causative agent of tuberculosis. First discovered in 1882 by Robert Koch, \"M. tuberculosis\" has an unusual, waxy coating on its cell surface primarily due to the presence of mycolic acid. This coating makes the cells impervious to Gram staining, and as a result, \"M. tuberculosis\" can appear either Gram-negative or Gram-positive. Acid-fast stains such as Ziehl-Neelsen, or fluorescent stains such as auramine are used instead to identify \"M. tuberculosis\" with a microscope."
+                }
+            ],
+            "mean_original_docs_length": 12664.0,
+            "mean_shortened_docs_length": 568.5
+        },
+        "93": {
+            "predicted_answer": "C",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Partogram",
+                    "original_doc_length": 2889,
+                    "shortened_doc_length": 596,
+                    "shortened_doc_content": "A partogram or partograph is a composite graphical record of key data (maternal and fetal) during labour entered against time on a single sheet of paper. Relevant measurements might include statistics such as cervical dilation, fetal heart rate, duration of labour and vital signs. It is intended to provide an accurate record of the progress in labour, so that any delay or deviation from normal may be detected quickly and treated accordingly. However, a Cochrane review came to the conclusion that there is insufficient evidence to recommend partographs in standard labour management and care."
+                },
+                {
+                    "doc_title": "Contraction stress test",
+                    "original_doc_length": 3118,
+                    "shortened_doc_length": 411,
+                    "shortened_doc_content": "A contraction stress test (CST) is performed near the end of pregnancy (34 weeks' gestation) to determine how well the fetus will cope with the contractions of childbirth. The aim is to induce contractions and monitor the fetus to check for heart rate abnormalities using a cardiotocograph. A CST is one type of antenatal fetal surveillance technique. During uterine contractions, fetal oxygenation is worsened."
+                }
+            ],
+            "mean_original_docs_length": 3003.5,
+            "mean_shortened_docs_length": 503.5
+        }
+    }
+}
