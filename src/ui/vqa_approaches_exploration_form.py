@@ -1,0 +1,513 @@
+from pathlib import Path
+from typing import Any, Optional
+
+import ipywidgets as widgets
+from datasets import Dataset
+from IPython.display import display
+
+import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
+from src.utils.enums import (
+    DocumentSplitterType,
+    RagQPromptType,
+    VQAStrategyType,
+    ZeroShotPromptType
+)
+from src.ui.output_widget_manager import OutputWidgetManager
+from src.utils.data_definitions import DocSplitterOptions, ModelAnswerResult, VQAStrategyDetail
+from src.utils.string_formatting_helpers import prettify_strategy_name
+from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+
+
+class VQAAproachesExplorationForm:
+
+    def __init__(
+        self,
+        dataset: dict[str, Dataset],
+        vqa_strategies: dict[VQAStrategyType, BaseVQAStrategy],
+        evaluation_results_folder: Path
+    ) -> None:
+        # Dataset and Strategies (TODO: Cambiar este comentario para que sea más general)
+        self.__world_med_qa_v_dataset = dataset
+        self.__vqa_strategies = vqa_strategies
+        self.__evaluation_results_folder = evaluation_results_folder
+
+        # Main Layout Elements
+        self.__options_layout = None
+        self.__options_accordion = None
+        self.__output_widget_manager = None
+
+        # General Options Widgets
+        self.__general_options_layout = None
+        self.__action_type_dropdown = None
+        self.__country_dropdown = None
+        self.__file_type_dropdown = None
+        self.__question_id_int_widget = None
+        self.__vqa_strategy_type_dropdown = None
+        self.__prompt_type_dropdown = None
+        self.__use_image_checkbox = None
+
+        # RAG Options Widgets
+        self.__rag_options_layout = None
+        self.__relevant_documents_count_int_widget = None
+        self.__apply_rag_to_question_checkbox = None
+
+        # Document Splitter Options Widgets
+        self.__document_splitter_options_layout = None
+        self.__document_splitter_type_dropdown = None
+        self.__token_count_int_widget = None
+        self.__chunk_size_int_widget = None
+        self.__chunk_overlap_int_widget = None
+        self.__add_title_checkbox = None
+
+        # Form Buttons
+        self.__buttons_layout = None
+        self.__run_button = None
+        self.__reset_button = None
+
+        # Create UI
+        self.__root_widget = None
+        self.__create_layout()
+        self.__add_callbacks()
+
+    def visualize(self) -> None:
+        display(self.__root_widget)
+
+
+    # ====================
+    # Private Functions
+    # ====================
+
+
+    def __create_layout(self) -> None:
+        self.__create_general_options_layout()
+        self.__create_rag_options_layout()
+        self.__create_buttons_layout()
+
+        self.__options_accordion = widgets.Accordion(
+            children=[
+                self.__general_options_layout,
+                self.__rag_options_layout
+            ],
+            titles=[
+                "General Options",
+                "RAG Options"
+            ],
+            layout=widgets.Layout(width="100%", overflow="visible")
+        )
+
+        self.__options_layout = widgets.VBox(
+            children=[
+                self.__options_accordion,
+                self.__buttons_layout
+            ],
+            layout=widgets.Layout(
+                width="50%",
+                overflow="visible",
+                display="flex",
+                flex_flow="column",
+                align_items="stretch"
+            )
+        )
+
+        self.__output_widget_manager = OutputWidgetManager(
+            initial_content="""
+            Description for the VQA Approaches Exploration Form:
+                - Feature 1: ...
+                - Feature 2: ...
+                ...
+                - Feature N: ...
+            """
+        )
+
+        self.__root_widget = widgets.HBox(
+            children=[
+                self.__output_widget_manager.output_widget,
+                self.__options_layout # self.__options_accordion
+            ],
+            layout=widgets.Layout(
+                width="100%",
+                align_items="stretch",
+                overflow="visible"
+            )
+        )
+
+
+    def __create_general_options_layout(self) -> None:
+        self.__action_type_dropdown = self.__create_dropdown(
+            description="Action Type:",
+            options={
+                'Execute Model': 'execute_model',
+                'Fetch Results from JSON': 'fetch_json'
+            }
+        )
+
+        self.__country_dropdown = self.__create_dropdown(
+            description='Country:',
+            options={
+                'Spain': 'spain',
+                'Brazil': 'brazil',
+                'Israel': 'israel',
+                'Japan': 'japan'
+            }
+        )
+
+        self.__file_type_dropdown = self.__create_dropdown(
+            description='File Type:',
+            options={
+                'English Translation': 'english',
+                'Original Language': 'local'
+            }
+        )
+
+        self.__question_id_int_widget = self.__create_int_widget(
+            description="Question ID:",
+            initial_value=1,
+            min_value=1,
+            max_value=100,
+            step=1
+        )
+
+        self.__vqa_strategy_type_dropdown = self.__create_dropdown(
+            description="VQA Strategy Type:",
+            options={
+                prettify_strategy_name(vqa_strategy_type.value): vqa_strategy_type
+                for vqa_strategy_type in VQAStrategyType
+            }
+        )
+
+        self.__prompt_type_dropdown = self.__create_dropdown(
+            description="Prompt Type:",
+            options={
+                prompt_type.value: prompt_type
+                for prompt_type in ZeroShotPromptType
+            }
+        )
+
+        self.__use_image_checkbox = self.__create_checkbox(
+            description="Use Image",
+            initial_value=True,
+        )
+
+        self.__general_options_layout = widgets.VBox(
+            children=[
+                self.__action_type_dropdown,
+                self.__country_dropdown,
+                self.__file_type_dropdown,
+                self.__question_id_int_widget,
+                self.__vqa_strategy_type_dropdown,
+                self.__prompt_type_dropdown,
+                self.__use_image_checkbox
+            ],
+            layout=widgets.Layout(width="100%", overflow="visible")
+        )
+
+    def __create_rag_options_layout(self) -> None:
+        self.__create_document_splitter_options_layout()
+
+        self.__relevant_documents_count_int_widget = self.__create_int_widget(
+            description="Relevant Documents Count:",
+            disabled=True,
+            initial_value=1,
+            min_value=1,
+            max_value=5,
+            step=1
+        )
+
+        self.__apply_rag_to_question_checkbox = self.__create_checkbox(
+            description="Apply RAG to Checkbox (only for RAQ Q+As)",
+            initial_value=False
+        )
+
+        self.__rag_options_layout = widgets.VBox(
+            children=[
+                self.__relevant_documents_count_int_widget,
+                self.__apply_rag_to_question_checkbox,
+                self.__document_splitter_options_layout
+            ],
+            layout=widgets.Layout(width="100%", overflow="visible")
+        )
+
+    def __create_document_splitter_options_layout(self) -> None:
+        self.__document_splitter_type_dropdown = self.__create_dropdown(
+            description="Document Splitter Type:",
+            options={
+                splitter_type.value: splitter_type
+                for splitter_type in DocumentSplitterType
+            }
+        )
+
+        self.__token_count_int_widget = self.__create_int_widget(
+            description="Token Count:", # IR VARIANDO EN FUNCIÓN DEL SPLITTER
+            disabled=True,
+            initial_value=1,
+            min_value=1,
+            max_value=4, # IR VARIANDO EN FUNCIÓN DEL SPLITTER
+            step=1
+        )
+
+        self.__chunk_size_int_widget = self.__create_int_widget(
+            description="Chunk Size:",
+            disabled=True,
+            initial_value=300,
+            min_value=300,
+            max_value=900,
+            step=300
+        )
+
+        self.__chunk_overlap_int_widget = self.__create_int_widget(
+            description="Chunk Overlap:",
+            disabled=True,
+            initial_value=50,
+            min_value=50,
+            max_value=200,
+            step=50
+        )
+
+        self.__add_title_checkbox = self.__create_checkbox(
+            description="Use RAG Document Title",
+            initial_value=False
+        )
+
+        self.__document_splitter_options_layout = widgets.Accordion(
+            children=[
+                widgets.VBox(
+                    children=[
+                        self.__document_splitter_type_dropdown,
+                        self.__token_count_int_widget,
+                        self.__chunk_size_int_widget,
+                        self.__chunk_overlap_int_widget,
+                        self.__add_title_checkbox
+                    ],
+                    layout=widgets.Layout(width="100%", overflow="visible")
+                )
+            ],
+            titles=["Document Splitter Options"],
+            layout=widgets.Layout(width="100%", overflow="visible")
+        )
+
+    def __create_buttons_layout(self) -> None:
+        self.__run_button = widgets.Button(description="Run")
+        self.__run_button.on_click(lambda _: self.__run_form())
+
+        self.__reset_button = widgets.Button(description="Reset")
+        self.__reset_button.on_click(lambda _: self.__reset_form())
+
+        self.__buttons_layout = widgets.HBox(
+            children=[
+                self.__run_button,
+                self.__reset_button
+            ],
+            layout=widgets.Layout(
+                width="100%",
+                overflow="visible",
+                display="flex",
+                justify_content="center",
+                margin="20px 0"
+            )
+        )
+
+
+    @staticmethod
+    def __create_dropdown(description: str, options: dict) -> widgets.Dropdown:
+        return widgets.Dropdown(
+            description=description,
+            options=options,
+            value=list(options.values())[0],
+            layout=widgets.Layout(width="100%"),
+            style={"description_width": "32%"}
+        )
+
+    @staticmethod
+    def __create_int_widget(
+        description: str,
+        disabled: bool = False,
+        initial_value: int = 0,
+        min_value: int = 0,
+        max_value: int = 100,
+        step: int = 1
+    ) -> widgets.BoundedIntText:
+        return widgets.BoundedIntText(
+            description=description,
+            value=initial_value,
+            min=min_value,
+            max=max_value,
+            step=step,
+            layout=widgets.Layout(width="100%"),
+            style={"description_width": "32%"},
+            disabled=disabled
+        )
+
+    @staticmethod
+    def __create_checkbox(description: str, initial_value: bool) -> widgets.Checkbox:
+        return widgets.Checkbox(
+            description=description,
+            value=initial_value,
+            indent=False,
+            layout=widgets.Layout(width="auto", margin="0 auto")
+        )
+
+
+    def __add_callbacks(self) -> None:
+        self.__vqa_strategy_type_dropdown.observe(
+            lambda change: self.__update_dependent_dropdown(
+                change=change,
+                dependent_dropdown=self.__prompt_type_dropdown,
+                possible_options={
+                    VQAStrategyType.ZERO_SHOT: list(ZeroShotPromptType),
+                    VQAStrategyType.RAG_Q: list(RagQPromptType),
+                    VQAStrategyType.RAG_Q_AS: list(RagQPromptType),
+                    VQAStrategyType.RAG_IMG: ['-'],
+                    VQAStrategyType.RAG_DB_RERANKER: ['-']
+                }
+            ),
+            names='value'
+        )
+
+    @staticmethod
+    def __update_dependent_dropdown(
+        change: dict[str, Any],
+        dependent_dropdown: widgets.Dropdown,
+        possible_options: dict[Any, list[Any]]
+    ) -> None:
+        main_dropdown_selected_value = change['new']
+        dependent_dropdown.options = possible_options[main_dropdown_selected_value]
+        dependent_dropdown.value = dependent_dropdown.options[0]
+
+
+    def __run_form(self) -> None:
+        self.__output_widget_manager.clear_content()
+
+        dataset_name = f"{self.__country_dropdown.value}_{self.__file_type_dropdown.value}"
+        row = world_med_qa_v_dataset_management.get_dataset_row_by_id(
+            dataset=self.__world_med_qa_v_dataset[dataset_name],
+            question_id=self.__question_id_int_widget.value
+        )
+
+        model_answer_result = self.__get_model_answer_result(row)
+        self.__visualize_qa_pair_row(row, model_answer_result)
+
+    def __get_model_answer_result(self, row: dict) -> ModelAnswerResult:
+        if self.__action_type_dropdown.value == "execute_model":
+            return ModelAnswerResult(
+                answer='HAMILTON'
+            )
+        elif self.__action_type_dropdown.value == "fetch_json":
+            return world_med_qa_v_dataset_management.fetch_model_answer_from_json(
+                evaluation_results_folder=self.__evaluation_results_folder,
+                vqa_strategy_detail=VQAStrategyDetail(
+                    country=self.__country_dropdown.value,
+                    file_type=self.__file_type_dropdown.value,
+                    use_image=self.__use_image_checkbox.value,
+                    vqa_strategy_type=self.__vqa_strategy_type_dropdown.value,
+                    prompt_type=self.__prompt_type_dropdown.value,
+                    relevant_docs_count=None, # self.__relevant_documents_count_int_widget.value,
+                    doc_splitter_options=None, # DocSplitterOptions(
+                    #     doc_splitter_type=self.__document_splitter_type_dropdown.value,
+                    #     token_count=self.__token_count_int_widget.value,
+                    #     add_title=self.__add_title_checkbox.value,
+                    #     chunk_size=self.__chunk_size_int_widget,
+                    #     chunk_overlap=self.__chunk_overlap_int_widget
+                    # ),
+                    should_apply_rag_to_question=None # self.__apply_rag_to_question_checkbox.value
+                ),
+                question_id=self.__question_id_int_widget.value
+            )
+
+    def __visualize_qa_pair_row(
+        self,
+        row: dict,
+        model_answer_result: Optional[ModelAnswerResult] = None
+    ) -> None:
+        # Display row id
+        self.__output_widget_manager.display_text_content(
+            content=str(row['index']),
+            extra_css_style="margin: 20px 0;",
+            title="ID"
+        )
+
+        # Display question
+        self.__output_widget_manager.display_text_content(
+            content=row['question'],
+            extra_css_style="margin-bottom: 20px;",
+            title="Question"
+        )
+
+        # Display context image
+        self.__output_widget_manager.display_text_content(
+            content="",
+            title="Context Image"
+        )
+        self.__output_widget_manager.display_base64_image(base64_image=row['image'])
+
+        # Display possible options and model answer
+        self.__display_possible_options(
+            row=row,
+            model_answer=model_answer_result.answer if model_answer_result else None
+        )
+        if model_answer_result:
+            self.__output_widget_manager.display_text_content(
+                content=model_answer_result.answer,
+                extra_css_style="margin-bottom: 20px 0;",
+                title="Model Answer"
+            )
+
+    def __display_possible_options(
+        self,
+        row: dict,
+        model_answer: Optional[str] = None
+    ) -> None:
+        formatted_options = []
+        possible_options = ['A', 'B', 'C', 'D']
+
+        def format_option(
+            option_letter: str,
+            option_sentence: str,
+            color: str = "rgb(0, 0, 0)",
+            bold: bool = False
+        ) -> str:
+            style = f"color: {color}; margin: 0px; padding: 0px;"
+            bold_tag = "<b>" if bold else ""
+            bold_end_tag = "</b>" if bold else ""
+
+            return (
+                f"<p style='{style}'>"
+                f"{bold_tag}{option_letter}) {option_sentence}{bold_end_tag}"
+                "</p>"
+            )
+
+        for option in possible_options:
+            if option == row['correct_option']:
+                formatted_options.append(
+                    format_option(
+                        option_letter=option,
+                        option_sentence=row[option],
+                        color='rgb(0, 255, 0)',
+                        bold=True
+                    )
+                )
+            elif option == model_answer:
+                formatted_options.append(
+                    format_option(
+                        option_letter=option,
+                        option_sentence=row[option],
+                        color='rgb(255, 0, 0)',
+                        bold=True
+                    )
+                )
+            else:
+                formatted_options.append(
+                    format_option(
+                        option_letter=option,
+                        option_sentence=row[option]
+                    )
+                )
+        formatted_options_html = "".join(formatted_options)
+
+        self.__output_widget_manager.display_text_content(
+            content=formatted_options_html,
+            extra_css_style="margin-bottom: 20px;",
+            title="Possible Answers"
+        )
+
+    def __reset_form(self) -> None:
+        self.__output_widget_manager.reset_content()
