@@ -3,6 +3,7 @@ from itertools import product
 from pathlib import Path
 from typing import Any, Optional, Type
 
+import ipywidgets as widgets
 from langchain_core.documents import Document
 
 from src.utils.enums import (
@@ -58,6 +59,12 @@ class DocumentRetrievalResult:
     relevant_documents: list[Document]
     formatted_docs: str
     split_documents: list[Document] = field(default_factory=list)
+
+
+@dataclass
+class DependentWidgetsConfig:
+    widgets: list[widgets.Widget]
+    enable_condition: bool
 
 
 class InvalidDocSplitterOptions(Exception):

@@ -13,9 +13,17 @@ from src.utils.enums import (
     ZeroShotPromptType
 )
 from src.ui.output_widget_manager import OutputWidgetManager
-from src.utils.data_definitions import DocSplitterOptions, ModelAnswerResult, VQAStrategyDetail
-from src.utils.string_formatting_helpers import prettify_strategy_name
+from src.utils.data_definitions import (
+    DependentWidgetsConfig,
+    DocSplitterOptions,
+    ModelAnswerResult,
+    VQAStrategyDetail
+)
+from src.utils.string_formatting_helpers import (
+    prettify_document_splitter_name, prettify_strategy_name
+)
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
+from src.visual_qa_model import VisualQAModel
 
 
 class VQAAproachesExplorationForm:
@@ -23,11 +31,13 @@ class VQAAproachesExplorationForm:
     def __init__(
         self,
         dataset: dict[str, Dataset],
+        model_name: str,
         vqa_strategies: dict[VQAStrategyType, BaseVQAStrategy],
         evaluation_results_folder: Path
     ) -> None:
-        # Dataset and Strategies (TODO: Cambiar este comentario para que sea más general)
+        # Dataset and Model Configurations
         self.__world_med_qa_v_dataset = dataset
+        self.__model_name = model_name
         self.__vqa_strategies = vqa_strategies
         self.__evaluation_results_folder = evaluation_results_folder
 
@@ -185,7 +195,7 @@ class VQAAproachesExplorationForm:
 
         self.__use_image_checkbox = self.__create_checkbox(
             description="Use Image",
-            initial_value=True,
+            initial_value=True
         )
 
         self.__general_options_layout = widgets.VBox(
@@ -214,8 +224,9 @@ class VQAAproachesExplorationForm:
         )
 
         self.__apply_rag_to_question_checkbox = self.__create_checkbox(
-            description="Apply RAG to Checkbox (only for RAQ Q+As)",
-            initial_value=False
+            description="Apply RAG to Question (only for RAQ Q+As)",
+            initial_value=False,
+            disabled=True
         )
 
         self.__rag_options_layout = widgets.VBox(
@@ -231,17 +242,21 @@ class VQAAproachesExplorationForm:
         self.__document_splitter_type_dropdown = self.__create_dropdown(
             description="Document Splitter Type:",
             options={
-                splitter_type.value: splitter_type
-                for splitter_type in DocumentSplitterType
-            }
+                "-": "None",
+                **{
+                    prettify_document_splitter_name(splitter_type.value): splitter_type
+                    for splitter_type in DocumentSplitterType
+                }
+            },
+            disabled=True
         )
 
         self.__token_count_int_widget = self.__create_int_widget(
-            description="Token Count:", # IR VARIANDO EN FUNCIÓN DEL SPLITTER
+            description="Token Count:",
             disabled=True,
             initial_value=1,
             min_value=1,
-            max_value=4, # IR VARIANDO EN FUNCIÓN DEL SPLITTER
+            max_value=5,
             step=1
         )
 
@@ -257,15 +272,16 @@ class VQAAproachesExplorationForm:
         self.__chunk_overlap_int_widget = self.__create_int_widget(
             description="Chunk Overlap:",
             disabled=True,
-            initial_value=50,
-            min_value=50,
+            initial_value=0,
+            min_value=0,
             max_value=200,
             step=50
         )
 
         self.__add_title_checkbox = self.__create_checkbox(
             description="Use RAG Document Title",
-            initial_value=False
+            initial_value=False,
+            disabled=True
         )
 
         self.__document_splitter_options_layout = widgets.Accordion(
@@ -308,13 +324,18 @@ class VQAAproachesExplorationForm:
 
 
     @staticmethod
-    def __create_dropdown(description: str, options: dict) -> widgets.Dropdown:
+    def __create_dropdown(
+        description: str,
+        options: dict,
+        disabled: bool = False,
+    ) -> widgets.Dropdown:
         return widgets.Dropdown(
             description=description,
             options=options,
             value=list(options.values())[0],
             layout=widgets.Layout(width="100%"),
-            style={"description_width": "32%"}
+            style={"description_width": "32%"},
+            disabled=disabled
         )
 
     @staticmethod
@@ -338,18 +359,23 @@ class VQAAproachesExplorationForm:
         )
 
     @staticmethod
-    def __create_checkbox(description: str, initial_value: bool) -> widgets.Checkbox:
+    def __create_checkbox(
+        description: str,
+        initial_value: bool,
+        disabled: bool = False
+    ) -> widgets.Checkbox:
         return widgets.Checkbox(
             description=description,
             value=initial_value,
             indent=False,
-            layout=widgets.Layout(width="auto", margin="0 auto")
+            layout=widgets.Layout(width="auto", margin="0 auto"),
+            disabled=disabled
         )
 
 
     def __add_callbacks(self) -> None:
         self.__vqa_strategy_type_dropdown.observe(
-            lambda change: self.__update_dependent_dropdown(
+            lambda change: self.__update_dependent_dropdown_values(
                 change=change,
                 dependent_dropdown=self.__prompt_type_dropdown,
                 possible_options={
@@ -362,9 +388,82 @@ class VQAAproachesExplorationForm:
             ),
             names='value'
         )
+        self.__vqa_strategy_type_dropdown.observe(
+            lambda change: self.__update_dependent_widgets_state(
+                dependent_widgets_config=[
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__relevant_documents_count_int_widget,
+                            self.__document_splitter_type_dropdown
+                        ],
+                        enable_condition=change['new'] != VQAStrategyType.ZERO_SHOT
+                    ),
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__apply_rag_to_question_checkbox
+                        ],
+                        enable_condition=change['new'] == VQAStrategyType.RAG_Q_AS
+                    ),
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__token_count_int_widget,
+                            self.__add_title_checkbox
+                        ],
+                        enable_condition=(
+                            change['new'] != VQAStrategyType.ZERO_SHOT and
+                            isinstance(self.__document_splitter_type_dropdown.value, DocumentSplitterType)
+                        )
+                    ),
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__chunk_size_int_widget,
+                            self.__chunk_overlap_int_widget
+                        ],
+                        enable_condition=(
+                            change['new'] != VQAStrategyType.ZERO_SHOT and
+                            self.__document_splitter_type_dropdown.value == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
+                        )
+                    )
+                ]
+            ),
+            names='value'
+        )
+
+        self.__document_splitter_type_dropdown.observe(
+            lambda change: self.__update_dependent_widgets_state(
+                dependent_widgets_config=[
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__token_count_int_widget,
+                            self.__add_title_checkbox
+                        ],
+                        enable_condition=isinstance(change['new'], DocumentSplitterType)
+                    ),
+                    DependentWidgetsConfig(
+                        widgets=[
+                            self.__chunk_size_int_widget,
+                            self.__chunk_overlap_int_widget
+                        ],
+                        enable_condition=change['new'] == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
+                    )
+                ]
+            ),
+            names='value'
+        )
+        self.__document_splitter_type_dropdown.observe(
+            lambda change: self.__update_dependent_int_widget_values(
+                change=change,
+                dependent_int_widget=self.__token_count_int_widget,
+                possible_values=dict(zip(
+                    list(self.__document_splitter_type_dropdown.options.values()),
+                    [1, 2, 5, 4]
+                ))
+            ),
+            names='value'
+        )
 
     @staticmethod
-    def __update_dependent_dropdown(
+    def __update_dependent_dropdown_values(
         change: dict[str, Any],
         dependent_dropdown: widgets.Dropdown,
         possible_options: dict[Any, list[Any]]
@@ -372,6 +471,33 @@ class VQAAproachesExplorationForm:
         main_dropdown_selected_value = change['new']
         dependent_dropdown.options = possible_options[main_dropdown_selected_value]
         dependent_dropdown.value = dependent_dropdown.options[0]
+
+    def __update_dependent_widgets_state(
+        self,
+        dependent_widgets_config: list[DependentWidgetsConfig]
+    ) -> None:
+        for config in dependent_widgets_config:
+            for widget in config.widgets:
+                self.__update_widget_state(widget, config.enable_condition)
+
+    @staticmethod
+    def __update_widget_state(
+        widget: widgets.Widget,
+        enable_widget_condition: bool
+    ) -> None:
+        if enable_widget_condition:
+            widget.disabled = False
+        else:
+            widget.disabled = True
+
+    @staticmethod
+    def __update_dependent_int_widget_values(
+        change: dict[str, Any],
+        dependent_int_widget: widgets.BoundedIntText,
+        possible_values: dict[Any, int]
+    ) -> None:
+        main_dropdown_selected_value = change['new']
+        dependent_int_widget.max = possible_values[main_dropdown_selected_value]
 
 
     def __run_form(self) -> None:
@@ -388,10 +514,26 @@ class VQAAproachesExplorationForm:
 
     def __get_model_answer_result(self, row: dict) -> ModelAnswerResult:
         if self.__action_type_dropdown.value == "execute_model":
-            return ModelAnswerResult(
-                answer='HAMILTON'
+            chosen_vqa_strategy = self.__vqa_strategy_type_dropdown.value
+            model=VisualQAModel(
+                visual_qa_strategy=self.__vqa_strategies[chosen_vqa_strategy],
+                model_name=self.__model_name,
+                country=self.__country_dropdown.value,
+                file_type=self.__file_type_dropdown.value
             )
-        elif self.__action_type_dropdown.value == "fetch_json":
+            self.__output_widget_manager.display_text_content(
+                content=f"- Generating Answer for Question (ID: {row['index']}) ..."
+            )
+            return model.generate_answer_from_row(
+                row=row,
+                possible_options=['A', 'B', 'C', 'D'],
+                verbose=True,
+                use_image=self.__use_image_checkbox.value,
+                # logger_manager=logger_manager,
+                # should_apply_rag_to_question=True
+            )
+
+        if self.__action_type_dropdown.value == "fetch_json":
             return world_med_qa_v_dataset_management.fetch_model_answer_from_json(
                 evaluation_results_folder=self.__evaluation_results_folder,
                 vqa_strategy_detail=VQAStrategyDetail(
@@ -413,11 +555,15 @@ class VQAAproachesExplorationForm:
                 question_id=self.__question_id_int_widget.value
             )
 
+        raise ValueError(f"Unexpected action type: {self.__action_type_dropdown.value}")
+
     def __visualize_qa_pair_row(
         self,
         row: dict,
         model_answer_result: Optional[ModelAnswerResult] = None
     ) -> None:
+        self.__output_widget_manager.clear_content()
+
         # Display row id
         self.__output_widget_manager.display_text_content(
             content=str(row['index']),
@@ -511,3 +657,39 @@ class VQAAproachesExplorationForm:
 
     def __reset_form(self) -> None:
         self.__output_widget_manager.reset_content()
+
+        self.__reset_widgets_values()
+
+    def __reset_widgets_values(self) -> None:
+        self.__reset_dropdowns_value(
+            dropdowns=[
+                self.__action_type_dropdown,
+                self.__country_dropdown,
+                self.__file_type_dropdown,
+                self.__vqa_strategy_type_dropdown,
+                self.__document_splitter_type_dropdown
+            ]
+        )
+        self.__reset_checkboxes_value()
+        self.__reset_int_widgets_value()
+
+    @staticmethod
+    def __reset_dropdowns_value(dropdowns: list[widgets.Dropdown]) -> None:
+        for dropdown in dropdowns:
+            dropdown.value = list(dropdown.options.values())[0]
+
+    def __reset_checkboxes_value(self) -> None:
+        self.__use_image_checkbox.value = True
+        self.__apply_rag_to_question_checkbox.value = False
+        self.__add_title_checkbox.value = False
+
+    def __reset_int_widgets_value(self) -> None:
+        self.__question_id_int_widget.value = 1
+        # AJUSTAR MAX
+
+        self.__relevant_documents_count_int_widget.value = 1
+
+        self.__token_count_int_widget.value = 1
+
+        self.__chunk_size_int_widget.value = 300
+        self.__chunk_overlap_int_widget.value = 0

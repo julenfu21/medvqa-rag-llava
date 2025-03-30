@@ -1,3 +1,6 @@
+from typing import Optional
+
+
 def to_snake_case_strategy_name(strategy_name: str) -> str:
     return (
         strategy_name.
@@ -18,3 +21,13 @@ def prettify_strategy_name(strategy_name: str) -> str:
     }
 
     return snake_case_to_pretty_name[strategy_name]
+
+
+def prettify_document_splitter_name(document_splitter_name: Optional[str]) -> str:
+    snake_case_to_pretty_name = {
+        'recursive_character_splitter': 'Recursive Character Splitter',
+        'spacy_sentence_splitter': 'spaCy Sentence Splitter',
+        'paragraph_splitter': 'Paragraph Splitter'
+    }
+
+    return snake_case_to_pretty_name[document_splitter_name]
