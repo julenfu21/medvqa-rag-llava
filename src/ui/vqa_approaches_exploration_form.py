@@ -680,14 +680,16 @@ class VQAAproachesExplorationForm:
     def __visualize_qa_pair_row(
         self,
         row: dict,
-        model_answer_result: Optional[ModelAnswerResult] = None
+        model_answer_result: Optional[ModelAnswerResult] = None,
+        possible_options: Optional[list[str]] = None
     ) -> None:
         self.__output_widget_manager.clear_content()
+        if possible_options is None:
+            possible_options = ['A', 'B', 'C', 'D']
 
         # Display row id
         self.__output_widget_manager.display_text_content(
             content=str(row['index']),
-            extra_css_style="margin: 20px 0;",
             title="Question ID"
         )
 
@@ -699,31 +701,40 @@ class VQAAproachesExplorationForm:
         )
 
         # Display context image
-        self.__output_widget_manager.display_text_content(
-            content="",
-            title="Context Image"
-        )
-        self.__output_widget_manager.display_base64_image(base64_image=row['image'])
+        if self.__use_image_checkbox.value:
+            self.__output_widget_manager.display_text_content(
+                content="",
+                title="Context Image"
+            )
+            self.__output_widget_manager.display_base64_image(base64_image=row['image'])
 
-        # Display possible options and model answer
+        # Display possible options and model answer (if provided)
         self.__display_possible_options(
             row=row,
+            possible_options=possible_options,
             model_answer=model_answer_result.answer if model_answer_result else None
         )
         if model_answer_result:
+            model_answer = model_answer_result.answer
+            css_style = "margin-bottom: 20px 0;"
+
+            if model_answer not in possible_options:
+                model_answer = f"{model_answer} (Invalid model answer)"
+                css_style = f"{css_style} color: rgb(184, 134, 11)"
+
             self.__output_widget_manager.display_text_content(
-                content=model_answer_result.answer,
-                extra_css_style="margin-bottom: 20px 0;",
+                content=model_answer,
+                extra_css_style=css_style,
                 title="Model Answer"
             )
 
     def __display_possible_options(
         self,
         row: dict,
+        possible_options: list[str],
         model_answer: Optional[str] = None
     ) -> None:
         formatted_options = []
-        possible_options = ['A', 'B', 'C', 'D']
 
         def format_option(
             option_letter: str,
@@ -742,31 +753,29 @@ class VQAAproachesExplorationForm:
             )
 
         for option in possible_options:
+            color = None
+            bold = False
+
             if option == row['correct_option']:
-                formatted_options.append(
-                    format_option(
-                        option_letter=option,
-                        option_sentence=row[option],
-                        color='rgb(0, 255, 0)',
-                        bold=True
-                    )
+                color = (
+                    'rgb(0, 0, 255)'
+                    if model_answer and model_answer not in possible_options
+                    else 'rgb(0, 255, 0)'
                 )
+                bold = True
             elif option == model_answer:
-                formatted_options.append(
-                    format_option(
-                        option_letter=option,
-                        option_sentence=row[option],
-                        color='rgb(255, 0, 0)',
-                        bold=True
-                    )
+                color = 'rgb(255, 0, 0)'
+                bold = True
+
+            formatted_options.append(
+                format_option(
+                    option_letter=option,
+                    option_sentence=row[option],
+                    color=color,
+                    bold=bold
                 )
-            else:
-                formatted_options.append(
-                    format_option(
-                        option_letter=option,
-                        option_sentence=row[option]
-                    )
-                )
+            )
+
         formatted_options_html = "".join(formatted_options)
 
         self.__output_widget_manager.display_text_content(
