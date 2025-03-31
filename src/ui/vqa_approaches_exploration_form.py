@@ -42,6 +42,7 @@ class VQAAproachesExplorationForm:
         self.__evaluation_results_folder = evaluation_results_folder
 
         # Main Layout Elements
+        self.__title_widget = None
         self.__options_layout = None
         self.__options_accordion = None
         self.__output_widget_manager = None
@@ -140,26 +141,47 @@ class VQAAproachesExplorationForm:
 
         self.__output_widget_manager = OutputWidgetManager(
             initial_content="""
-            Description for the VQA Approaches Exploration Form:
-                - Feature 1: ...
-                - Feature 2: ...
-                ...
-                - Feature N: ...
+            This interactive form lets you configure and explore different <b>Visual Question Answering (VQA) strategies</b> by adjusting various options. You can:
+
+            <span style='margin-left: 30px;'>- Set <b>key inputs</b>, like country, file type, question ID, and VQA strategy.</span>
+
+            <span style='margin-left: 30px;'>- <b>Customize document processing</b>, leveraging different splitting techniques.</span>
+
+            <span style='margin-left: 30px;'>- <b>Compare model answers</b> with expected correct answers.</span>
+
+            <span style='margin-left: 30px;'>- <b>View structured outputs</b> for a clear breakdown of inputs and responses.</span>
+
+            Selected options and results are displayed in an organized format, making it easy to experiment and assess different configurations.
+            
+            <i>Note: You can revisit this information anytime by clicking the reset button.</i>
             """,
             width="50%"
         )
 
-        self.__root_widget = widgets.HBox(
-            children=[
-                self.__output_widget_manager.output_widget,
-                self.__options_layout
-            ],
-            layout=widgets.Layout(
-                width="100%",
-                align_items="stretch",
-                overflow="visible",
-                padding="20px"
+        self.__title_widget = widgets.HTML(
+            value=(
+                "<h1 style='text-align: center; margin-bottom: 15px;'>"
+                "VQA Approaches Exploration Form"
+                "</h2>"
             )
+        )
+
+        self.__root_widget = widgets.VBox(
+            children=[
+                self.__title_widget,
+                widgets.HBox(
+                    children=[
+                        self.__output_widget_manager.output_widget,
+                        self.__options_layout
+                    ],
+                    layout=widgets.Layout(
+                        width="100%",
+                        align_items="stretch",
+                        overflow="visible",
+                        padding="20px"
+                    )
+                )
+            ]
         )
 
 
