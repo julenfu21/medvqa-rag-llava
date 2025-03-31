@@ -6,11 +6,11 @@ from IPython.display import display
 
 class OutputWidgetManager:
 
-    def __init__(self, initial_content: str) -> None:
+    def __init__(self, initial_content: str, width: str) -> None:
         self.__initial_content = initial_content
         self.__output_widget = widgets.Output(
             layout=widgets.Layout(
-                width="50%",
+                width=width,
                 overflow="hidden",
                 margin="0px 20px 0px 0px"
             )

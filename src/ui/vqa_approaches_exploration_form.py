@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Optional, Union
 
 import ipywidgets as widgets
 from datasets import Dataset
@@ -45,6 +45,7 @@ class VQAAproachesExplorationForm:
         self.__options_layout = None
         self.__options_accordion = None
         self.__output_widget_manager = None
+        self.__options_output_widget_manager = None
 
         # General Options Widgets
         self.__general_options_layout = None
@@ -105,10 +106,28 @@ class VQAAproachesExplorationForm:
             layout=widgets.Layout(width="100%", overflow="visible")
         )
 
+        self.__options_output_widget_manager = OutputWidgetManager(
+            initial_content="""
+            Here the options that have been selected will appear.
+
+            These options include general settings, RAG-specific parameters, and other relevant selections. An example of the default selected options is shown below:
+
+            <b>Specified Options:</b>
+                <b style='margin-left: 30px;'>+ General Options:</b>
+                    <span style='margin-left: 60px;'>- Country: Spain 🇪🇸</span>
+                    <span style='margin-left: 60px;'>- File Type: English Translation</span>
+                    <span style='margin-left: 60px;'>- Question ID: 1</span>
+                    <span style='margin-left: 60px;'>- VQA Strategy Type: Zero-Shot</span>
+                    <span style='margin-left: 60px;'>- Prompt Type: zs_v1</span>
+                    <span style='margin-left: 60px;'>- Use Image: ✅</span>
+            """,
+            width="100%"
+        )
         self.__options_layout = widgets.VBox(
             children=[
                 self.__options_accordion,
-                self.__buttons_layout
+                self.__buttons_layout,
+                self.__options_output_widget_manager.output_widget
             ],
             layout=widgets.Layout(
                 width="50%",
@@ -126,18 +145,20 @@ class VQAAproachesExplorationForm:
                 - Feature 2: ...
                 ...
                 - Feature N: ...
-            """
+            """,
+            width="50%"
         )
 
         self.__root_widget = widgets.HBox(
             children=[
                 self.__output_widget_manager.output_widget,
-                self.__options_layout # self.__options_accordion
+                self.__options_layout
             ],
             layout=widgets.Layout(
                 width="100%",
                 align_items="stretch",
-                overflow="visible"
+                overflow="visible",
+                padding="20px"
             )
         )
 
@@ -154,10 +175,10 @@ class VQAAproachesExplorationForm:
         self.__country_dropdown = self.__create_dropdown(
             description='Country:',
             options={
-                'Spain': 'spain',
-                'Brazil': 'brazil',
-                'Israel': 'israel',
-                'Japan': 'japan'
+                'Spain 🇪🇸': 'spain',
+                'Brazil 🇧🇷': 'brazil',
+                'Israel 🇮🇱': 'israel',
+                'Japan 🇯🇵': 'japan'
             }
         )
 
@@ -318,7 +339,7 @@ class VQAAproachesExplorationForm:
                 overflow="visible",
                 display="flex",
                 justify_content="center",
-                margin="20px 0"
+                margin="30px 0 30px 0"
             )
         )
 
@@ -379,11 +400,20 @@ class VQAAproachesExplorationForm:
                 change=change,
                 dependent_dropdown=self.__prompt_type_dropdown,
                 possible_options={
-                    VQAStrategyType.ZERO_SHOT: list(ZeroShotPromptType),
-                    VQAStrategyType.RAG_Q: list(RagQPromptType),
-                    VQAStrategyType.RAG_Q_AS: list(RagQPromptType),
-                    VQAStrategyType.RAG_IMG: ['-'],
-                    VQAStrategyType.RAG_DB_RERANKER: ['-']
+                    VQAStrategyType.ZERO_SHOT: {
+                        prompt_type.value: prompt_type
+                        for prompt_type in ZeroShotPromptType
+                    },
+                    VQAStrategyType.RAG_Q: {
+                        prompt_type.value: prompt_type
+                        for prompt_type in RagQPromptType
+                    },
+                    VQAStrategyType.RAG_Q_AS: {
+                        prompt_type.value: prompt_type
+                        for prompt_type in RagQPromptType
+                    },
+                    VQAStrategyType.RAG_IMG: {'-': '-'},
+                    VQAStrategyType.RAG_DB_RERANKER: {'-': '-'}
                 }
             ),
             names='value'
@@ -470,7 +500,7 @@ class VQAAproachesExplorationForm:
     ) -> None:
         main_dropdown_selected_value = change['new']
         dependent_dropdown.options = possible_options[main_dropdown_selected_value]
-        dependent_dropdown.value = dependent_dropdown.options[0]
+        dependent_dropdown.value = list(dependent_dropdown.options.values())[0]
 
     def __update_dependent_widgets_state(
         self,
@@ -502,6 +532,7 @@ class VQAAproachesExplorationForm:
 
     def __run_form(self) -> None:
         self.__output_widget_manager.clear_content()
+        self.__options_output_widget_manager.reset_content()
 
         dataset_name = f"{self.__country_dropdown.value}_{self.__file_type_dropdown.value}"
         row = world_med_qa_v_dataset_management.get_dataset_row_by_id(
@@ -511,6 +542,10 @@ class VQAAproachesExplorationForm:
 
         model_answer_result = self.__get_model_answer_result(row)
         self.__visualize_qa_pair_row(row, model_answer_result)
+        self.__visualize_specified_options(
+            output_widget_manager=self.__options_output_widget_manager,
+            clear_output_content=True
+        )
 
     def __get_model_answer_result(self, row: dict) -> ModelAnswerResult:
         if self.__action_type_dropdown.value == "execute_model":
@@ -524,6 +559,9 @@ class VQAAproachesExplorationForm:
             self.__output_widget_manager.display_text_content(
                 content=f"- Generating Answer for Question (ID: {row['index']}) ..."
             )
+            self.__visualize_specified_options(
+                output_widget_manager=self.__output_widget_manager
+            )
             return model.generate_answer_from_row(
                 row=row,
                 possible_options=['A', 'B', 'C', 'D'],
@@ -531,6 +569,26 @@ class VQAAproachesExplorationForm:
                 use_image=self.__use_image_checkbox.value,
                 # logger_manager=logger_manager,
                 # should_apply_rag_to_question=True
+            )
+
+        def get_widget_value(widget: widgets.Widget) -> Union[int, str]:
+            if widget.disabled:
+                return None
+            return widget.value
+
+        def get_doc_splitter_options() -> Optional[DocSplitterOptions]:
+            if self.__document_splitter_type_dropdown.disabled:
+                return None
+
+            if self.__document_splitter_type_dropdown.value == 'None':
+                return None
+
+            return DocSplitterOptions(
+                doc_splitter_type=self.__document_splitter_type_dropdown.value,
+                token_count=get_widget_value(self.__token_count_int_widget),
+                add_title=get_widget_value(self.__add_title_checkbox),
+                chunk_size=get_widget_value(self.__chunk_size_int_widget),
+                chunk_overlap=get_widget_value(self.__chunk_overlap_int_widget)
             )
 
         if self.__action_type_dropdown.value == "fetch_json":
@@ -542,20 +600,82 @@ class VQAAproachesExplorationForm:
                     use_image=self.__use_image_checkbox.value,
                     vqa_strategy_type=self.__vqa_strategy_type_dropdown.value,
                     prompt_type=self.__prompt_type_dropdown.value,
-                    relevant_docs_count=None, # self.__relevant_documents_count_int_widget.value,
-                    doc_splitter_options=None, # DocSplitterOptions(
-                    #     doc_splitter_type=self.__document_splitter_type_dropdown.value,
-                    #     token_count=self.__token_count_int_widget.value,
-                    #     add_title=self.__add_title_checkbox.value,
-                    #     chunk_size=self.__chunk_size_int_widget,
-                    #     chunk_overlap=self.__chunk_overlap_int_widget
-                    # ),
-                    should_apply_rag_to_question=None # self.__apply_rag_to_question_checkbox.value
+                    relevant_docs_count=get_widget_value(
+                        self.__relevant_documents_count_int_widget
+                    ),
+                    doc_splitter_options=get_doc_splitter_options(),
+                    should_apply_rag_to_question=get_widget_value(
+                        self.__apply_rag_to_question_checkbox
+                    )
                 ),
                 question_id=self.__question_id_int_widget.value
             )
 
         raise ValueError(f"Unexpected action type: {self.__action_type_dropdown.value}")
+
+    def __visualize_specified_options(
+        self,
+        output_widget_manager: OutputWidgetManager,
+        clear_output_content: bool = False
+    ) -> None:
+        if clear_output_content:
+            output_widget_manager.clear_content()
+
+        output_widget_manager.display_text_content(
+            content="",
+            title="Specified Options"
+        )
+
+        output_widget_manager.display_text_content(
+            content="",
+            extra_css_style="margin-left: 30px;",
+            title="+ General Options"
+        )
+        self.__visualize_options_subset(
+            output_widget_manager=output_widget_manager,
+            options_widgets=self.__general_options_layout.children[1:]
+        )
+
+        if self.__vqa_strategy_type_dropdown.value != VQAStrategyType.ZERO_SHOT:
+            output_widget_manager.display_text_content(
+                content="",
+                extra_css_style="margin-left: 30px;",
+                title="+ RAG Options"
+            )
+            self.__visualize_options_subset(
+                output_widget_manager=output_widget_manager,
+                options_widgets=[
+                    *self.__rag_options_layout.children[:-1],
+                    *self.__document_splitter_options_layout.children[0].children
+                ]
+            )
+
+    def __visualize_options_subset(
+        self,
+        output_widget_manager: OutputWidgetManager,
+        options_widgets: list[widgets.Widget]
+    ) -> None:
+        widget_types_map = {
+            widgets.Checkbox: lambda w: f"- {w.description}: {'✅' if w.value else '❌'}",
+            widgets.Dropdown: lambda w: f"- {w.description} {w.label}",
+            widgets.BoundedIntText: lambda w: f"- {w.description} {w.value}"
+        }
+        option_subset_rows = []
+
+        for widget in options_widgets:
+            if widget.disabled:
+                continue
+
+            widget_type = type(widget)
+            if widget_type in widget_types_map:
+                option_subset_rows.append(widget_types_map[widget_type](widget))
+            else:
+                raise ValueError(f"Unexpected widget type: {widget}")
+
+        output_widget_manager.display_text_content(
+            content="\n".join(option_subset_rows),
+            extra_css_style="margin-left: 60px;"
+        )
 
     def __visualize_qa_pair_row(
         self,
@@ -568,7 +688,7 @@ class VQAAproachesExplorationForm:
         self.__output_widget_manager.display_text_content(
             content=str(row['index']),
             extra_css_style="margin: 20px 0;",
-            title="ID"
+            title="Question ID"
         )
 
         # Display question
@@ -657,6 +777,7 @@ class VQAAproachesExplorationForm:
 
     def __reset_form(self) -> None:
         self.__output_widget_manager.reset_content()
+        self.__options_output_widget_manager.reset_content()
 
         self.__reset_widgets_values()
 
@@ -667,6 +788,7 @@ class VQAAproachesExplorationForm:
                 self.__country_dropdown,
                 self.__file_type_dropdown,
                 self.__vqa_strategy_type_dropdown,
+                self.__prompt_type_dropdown,
                 self.__document_splitter_type_dropdown
             ]
         )
