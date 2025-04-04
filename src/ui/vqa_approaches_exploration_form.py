@@ -1,12 +1,17 @@
+import re
+import threading
+import time
 from pathlib import Path
 from typing import Any, Optional, Union
 
 import ipywidgets as widgets
-from datasets import Dataset
+import pyperclip
 from IPython.display import display
+from datasets import Dataset
 
 import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
 from src.utils.enums import (
+    CommandType,
     DocumentSplitterType,
     RagQPromptType,
     VQAStrategyType,
@@ -20,8 +25,10 @@ from src.utils.data_definitions import (
     VQAStrategyDetail
 )
 from src.utils.string_formatting_helpers import (
-    prettify_document_splitter_name, prettify_strategy_name
+    prettify_document_splitter_name,
+    prettify_strategy_name
 )
+from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 from src.visual_qa_model import VisualQAModel
 
@@ -162,7 +169,7 @@ class VQAAproachesExplorationForm:
             value=(
                 "<h1 style='text-align: center; margin-bottom: 15px;'>"
                 "VQA Approaches Exploration Form"
-                "</h2>"
+                "</h1>"
             )
         )
 
@@ -415,7 +422,6 @@ class VQAAproachesExplorationForm:
             disabled=disabled
         )
 
-
     def __add_callbacks(self) -> None:
         self.__vqa_strategy_type_dropdown.observe(
             lambda change: self.__update_dependent_dropdown_values(
@@ -562,7 +568,12 @@ class VQAAproachesExplorationForm:
             question_id=self.__question_id_int_widget.value
         )
 
-        model_answer_result = self.__get_model_answer_result(row)
+        try:
+            model_answer_result = self.__get_model_answer_result(row)
+        except FileNotFoundError:
+            self.__visualize_evaluation_commands()
+            return
+
         self.__visualize_qa_pair_row(row, model_answer_result)
         self.__visualize_specified_options(
             output_widget_manager=self.__options_output_widget_manager,
@@ -589,28 +600,9 @@ class VQAAproachesExplorationForm:
                 possible_options=['A', 'B', 'C', 'D'],
                 verbose=True,
                 use_image=self.__use_image_checkbox.value,
+                # FALTA EL DOC_SPLITTER TAMBIÉN
                 # logger_manager=logger_manager,
                 # should_apply_rag_to_question=True
-            )
-
-        def get_widget_value(widget: widgets.Widget) -> Union[int, str]:
-            if widget.disabled:
-                return None
-            return widget.value
-
-        def get_doc_splitter_options() -> Optional[DocSplitterOptions]:
-            if self.__document_splitter_type_dropdown.disabled:
-                return None
-
-            if self.__document_splitter_type_dropdown.value == 'None':
-                return None
-
-            return DocSplitterOptions(
-                doc_splitter_type=self.__document_splitter_type_dropdown.value,
-                token_count=get_widget_value(self.__token_count_int_widget),
-                add_title=get_widget_value(self.__add_title_checkbox),
-                chunk_size=get_widget_value(self.__chunk_size_int_widget),
-                chunk_overlap=get_widget_value(self.__chunk_overlap_int_widget)
             )
 
         if self.__action_type_dropdown.value == "fetch_json":
@@ -622,11 +614,11 @@ class VQAAproachesExplorationForm:
                     use_image=self.__use_image_checkbox.value,
                     vqa_strategy_type=self.__vqa_strategy_type_dropdown.value,
                     prompt_type=self.__prompt_type_dropdown.value,
-                    relevant_docs_count=get_widget_value(
+                    relevant_docs_count=self.__get_widget_value(
                         self.__relevant_documents_count_int_widget
                     ),
-                    doc_splitter_options=get_doc_splitter_options(),
-                    should_apply_rag_to_question=get_widget_value(
+                    doc_splitter_options=self.__get_doc_splitter_options(),
+                    should_apply_rag_to_question=self.__get_widget_value(
                         self.__apply_rag_to_question_checkbox
                     )
                 ),
@@ -634,6 +626,372 @@ class VQAAproachesExplorationForm:
             )
 
         raise ValueError(f"Unexpected action type: {self.__action_type_dropdown.value}")
+
+    @staticmethod
+    def __get_widget_value(widget: widgets.Widget) -> Union[int, str]:
+        if widget.disabled:
+            return None
+        return widget.value
+
+    def __get_doc_splitter_options(self) -> Optional[DocSplitterOptions]:
+        if self.__document_splitter_type_dropdown.disabled:
+            return None
+
+        if self.__document_splitter_type_dropdown.value == 'None':
+            return None
+
+        return DocSplitterOptions(
+            doc_splitter_type=self.__document_splitter_type_dropdown.value,
+            token_count=self.__get_widget_value(self.__token_count_int_widget),
+            add_title=self.__get_widget_value(self.__add_title_checkbox),
+            chunk_size=self.__get_widget_value(self.__chunk_size_int_widget),
+            chunk_overlap=self.__get_widget_value(self.__chunk_overlap_int_widget)
+        )
+
+    def __visualize_evaluation_commands(self) -> None:
+        self.__output_widget_manager.display_text_content(
+            content=(
+                "You have not evaluated the LLaVA model with these options. This can be done "
+                "with one of the following commands:"
+            ),
+            extra_css_style="margin-bottom: 40px;"
+        )
+
+        document_splitter_options = self.__get_doc_splitter_options()
+
+        linux_command_copy_text_widget = self.__create_copy_text_widget(
+            header="Linux Command 🖥️🐧",
+            command_type=CommandType.LINUX_COMMAND,
+            text_content=f"""
+            python scripts/evaluate_vqa_model.py \\
+                --country={self.__country_dropdown.value} \\
+                --file_type={self.__file_type_dropdown.value} \\
+                {'--no_image \\\n' if not self.__use_image_checkbox.value else ''} \
+                --vqa_strategy={self.__vqa_strategy_type_dropdown.value} \\
+                --prompt_type={self.__prompt_type_dropdown.value} \\
+                {
+                    f'--relevant_docs_count={self.__relevant_documents_count_int_widget.value} \\\n'
+                    if self.__get_widget_value(self.__relevant_documents_count_int_widget) is not None
+                    else ''
+                } \
+                {
+                    f'--doc_splitter={document_splitter_options.doc_splitter_type} \\\n'
+                    if document_splitter_options is not None
+                    else ''
+                } \
+                {
+                    f'--token_count={document_splitter_options.token_count} \\\n'
+                    if document_splitter_options is not None
+                    else ''
+                } \
+                {
+                    '--add_title \\\n'
+                    if document_splitter_options is not None and document_splitter_options.add_title
+                    else ''
+                } \
+                {
+                    f'--chunk_size={
+                        document_splitter_options.chunk_size
+                    } \\\n'
+                    if document_splitter_options is not None and document_splitter_options.chunk_size is not None
+                    else ''
+                } \
+                {
+                    f'--chunk_overlap={
+                        document_splitter_options.chunk_overlap
+                    } \\\n'
+                    if document_splitter_options is not None and document_splitter_options.chunk_overlap is not None
+                    else ''
+                } \
+                {
+                    '--should_apply_rag_to_question \\\n'
+                    if self.__apply_rag_to_question_checkbox.value
+                    else ''
+                } \
+                -v
+            """
+        )
+
+        def get_vqa_strategy_class_name() -> str:
+            match self.__vqa_strategy_type_dropdown.value:
+                case VQAStrategyType.ZERO_SHOT:
+                    return 'ZeroShotVQAStrategy'
+                case VQAStrategyType.RAG_Q:
+                    return 'RagQVQAStrategy'
+                case VQAStrategyType.RAG_Q_AS:
+                    return 'RagQAsVQAStrategy'
+
+            raise TypeError("Unhandled VQA strategy type")
+
+        def get_prompt_type_class_name(prompt_type: PromptType) -> str:
+            short_vqa_strategy_type, sub_prompt_type = prompt_type.value.split('_')
+            short_vqa_strategy_to_enum_class_name = {
+                'zs': 'ZeroShotPromptType',
+                'rq': 'RagQPromptType'
+            }
+            prompt_type_enum_class = short_vqa_strategy_to_enum_class_name[short_vqa_strategy_type]
+
+            return f"{prompt_type_enum_class}.{sub_prompt_type.capitalize()}"
+
+        def get_document_splitter_class_name() -> str:
+            match self.__document_splitter_type_dropdown.value:
+                case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
+                    return 'RecursiveCharacterSplitter'
+                case DocumentSplitterType.SPACY_SENTENCE_SPLITTER:
+                    return 'SpacySentenceSplitter'
+                case DocumentSplitterType.PARAGRAPH_SPLITTER:
+                    return 'ParagraphSplitter'
+
+        def pascal_to_snake_case(name: str):
+            return ''.join(
+                char if char.islower() else f'_{char.lower()}' for char in name
+            ).lstrip('_').replace('v_q_a', 'vqa')
+
+
+        python_code_copy_text_widget = self.__create_copy_text_widget(
+            header="Python Code 🐍💻",
+            command_type=CommandType.PYTHON_CODE,
+            text_content=f"""
+            from pathlib import Path
+
+            from src.utils.dataset_helpers.world_med_qa_v.dataset_management import load_vqa_dataset
+            from src.utils.enums import {get_prompt_type_class_name(self.__prompt_type_dropdown.value).split('.', maxsplit=1)[0]}
+            {
+            f'from src.utils.text_splitters.{pascal_to_snake_case(get_document_splitter_class_name())} import {get_document_splitter_class_name()}\n'
+            if document_splitter_options is not None
+            else ''
+            } \
+            from src.visual_qa_model import VisualQAModel
+            from src.visual_qa_strategies.{pascal_to_snake_case(get_vqa_strategy_class_name())} import {get_vqa_strategy_class_name()}
+
+
+            DATASET_DIR = Path("data/WorldMedQA-V")
+            OLLAMA_MODEL_NAME = "llava"
+            RESULTS_DIR = Path("evaluation_results")
+            {'''
+            INDEX_DIR = Path("data/WikiMed/indexed_db")
+            INDEX_NAME = "Wikimed+S-PubMedBert-MS-MARCO-FullTexts"
+            EMBEDDING_MODEL_NAME = "pritamdeka/S-PubMedBert-MS-MARCO"
+            RELEVANT_DOCS_COUNT = 1
+            '''
+            if self.__vqa_strategy_type_dropdown.value != VQAStrategyType.ZERO_SHOT
+            else ''
+            }
+
+            world_med_qa_v_dataset = load_vqa_dataset(
+                <span style='margin-left: 30px;'>data_path=DATASET_DIR,</span>
+                <span style='margin-left: 30px;'>country='{self.__country_dropdown.value}',</span>
+                <span style='margin-left: 30px;'>file_type='{self.__file_type_dropdown.value}'</span>
+            )
+
+            llava_model = VisualQAModel(
+                <span style='margin-left: 30px;'>visual_qa_strategy={get_vqa_strategy_class_name()}(</span>
+                    <span style='margin-left: 60px;'>prompt_type={get_prompt_type_class_name(self.__prompt_type_dropdown.value)},</span> \
+                {
+                    '''\n<span style='margin-left: 60px;'>index_dir=INDEX_DIR,</span>
+                    <span style='margin-left: 60px;'>index_name=INDEX_NAME,</span>
+                    <span style='margin-left: 60px;'>embedding_model_name=EMBEDDING_MODEL_NAME,</span>
+                    <span style='margin-left: 60px;'>relevant_docs_count=RELEVANT_DOCS_COUNT</span>'''
+                    if self.__vqa_strategy_type_dropdown.value in (VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS)
+                    else ''
+                }
+                <span style='margin-left: 30px;'>),</span>
+                <span style='margin-left: 30px;'>model_name=OLLAMA_MODEL_NAME,</span>
+                <span style='margin-left: 30px;'>country='{self.__country_dropdown.value}',</span>
+                <span style='margin-left: 30px;'>file_type='{self.__file_type_dropdown.value}'</span>
+            )
+
+            llava_model.evaluate(
+                <span style='margin-left: 30px;'>dataset=world_med_qa_v_dataset,</span>
+                <span style='margin-left: 30px;'>results_path=RESULTS_DIR,</span>
+                <span style='margin-left: 30px;'>use_image={self.__use_image_checkbox.value},</span>
+            {
+                f'''<span style="margin-left: 30px;">doc_splitter={get_document_splitter_class_name()}(</span>
+                        <span style="margin-left: 60px;">token_count={document_splitter_options.token_count},</span>
+                    {
+                        f'''<span style="margin-left: 60px;">chunk_size={document_splitter_options.chunk_size},</span>
+                        <span style="margin-left: 60px;">chunk_overlap={document_splitter_options.chunk_overlap},</span>\n'''
+                        if document_splitter_options.doc_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
+                        else ''
+                    } \
+                        <span style="margin-left: 60px;">add_title={document_splitter_options.add_title}</span>
+                    <span style="margin-left: 30px;">),</span>
+                '''
+                if document_splitter_options is not None
+                else ''
+            } \
+            {
+                f'<span style="margin-left: 30px;">should_apply_rag_to_question={self.__apply_rag_to_question_checkbox.value}</span>\n'
+                if self.__vqa_strategy_type_dropdown.value == VQAStrategyType.RAG_Q_AS
+                else ''
+            } \
+            )
+            """
+            
+            # text_content=f"""
+            # DATASET_DIR = Path("data/WorldMedQA-V")
+            # OLLAMA_MODEL_NAME = "llava"
+            # RESULTS_DIR = Path("evaluation_results")
+            # {
+            #     '''
+            #     INDEX_DIR = Path("data/WikiMed/indexed_db")
+            #     INDEX_NAME = "Wikimed+S-PubMedBert-MS-MARCO-FullTexts"
+            #     EMBEDDING_MODEL_NAME = "pritamdeka/S-PubMedBert-MS-MARCO"
+            #     RELEVANT_DOCS_COUNT = 1 \n
+            #     '''
+            #     if self.__vqa_strategy_type_dropdown.value != VQAStrategyType.ZERO_SHOT
+            #     else ''
+            # } \
+
+            # world_med_qa_v_dataset = load_vqa_dataset(
+            #     <span style='margin-left: 30px;'>data_path=DATASET_DIR,</span>
+            #     <span style='margin-left: 30px;'>country={self.__country_dropdown.value},</span>
+            #     <span style='margin-left: 30px;'>file_type={self.__file_type_dropdown.value}</span>
+            # )
+
+            # llava_model = VisualQAModel(
+            #     <span style='margin-left: 30px;'>visual_qa_strategy={get_vqa_strategy_class_name()}(</span>
+            #         <span style='margin-left: 60px'>prompt_type={self.__prompt_type_dropdown.value},</span> \
+            #     {
+            #         '''\n<span style='margin-left: 60px'>index_dir=INDEX_DIR,</span>
+            #         <span style='margin-left: 60px'>index_name=INDEX_NAME,</span>
+            #         <span style='margin-left: 60px'>embedding_model_name=EMBEDDING_MODEL_NAME,</span>
+            #         <span style='margin-left: 60px'>relevant_docs_count=RELEVANT_DOCS_COUNT</span>'''
+            #         if self.__vqa_strategy_type_dropdown.value in (VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS)
+            #         else ''
+            #     }
+            #     <span style='margin-left: 30px;'>),</span>
+            #     <span style='margin-left: 30px;'>model_name=OLLAMA_MODEL_NAME,</span>
+            #     <span style='margin-left: 30px;'>country={self.__country_dropdown.value},</span>
+            #     <span style='margin-left: 30px;'>file_type={self.__file_type_dropdown.value}</span>
+            # )
+
+            # llava_model.evaluate(
+            #     <span style='margin-left: 30px;'>dataset=world_med_qa_v_dataset,</span>
+            #     <span style='margin-left: 30px;'>results_path=RESULTS_DIR,</span>
+            #     <span style='margin-left: 30px;'>use_image={self.__use_image_checkbox.value},</span>
+            # {
+            #     f'''<span style="margin-left: 30px;">doc_splitter={get_document_splitter_class_name()}(</span>
+            #             <span style="margin-left: 60px;">token_count={document_splitter_options.token_count},</span>
+            #         {
+            #             f'''<span style="margin-left: 60px;">chunk_size={document_splitter_options.chunk_size},</span>
+            #             <span style="margin-left: 60px;">chunk_overlap={document_splitter_options.chunk_overlap},</span>\n'''
+            #             if document_splitter_options.doc_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
+            #             else ''
+            #         } \
+            #             <span style="margin-left: 60px;">add_title={document_splitter_options.add_title}</span>
+            #     <span style="margin-left: 30px;">),</span>
+            #     '''
+            #     if document_splitter_options is not None
+            #     else ''
+            # } \
+            # {
+            #     f'<span style="margin-left: 30px;">should_apply_rag_to_question={self.__apply_rag_to_question_checkbox.value}</span>\n'
+            #     if self.__vqa_strategy_type_dropdown.value == VQAStrategyType.RAG_Q_AS
+            #     else ''
+            # } \
+            # )
+            # """
+        )
+
+        self.__output_widget_manager.display_widget(
+            widget=linux_command_copy_text_widget
+        )
+        self.__output_widget_manager.display_widget(
+            widget=python_code_copy_text_widget
+        )
+
+    @staticmethod
+    def __create_copy_text_widget(
+        header: str,
+        command_type: CommandType,
+        text_content: str
+    ) -> widgets.HBox:
+        formatted_content = text_content.strip().replace("\n", "<br>")
+        inline_css_style = (
+            "'white-space: normal; "
+            "overflow-wrap: break-word; "
+            "font-family: monospace; "
+            "font-size: 14px;'"
+        )
+        html_widget = widgets.HTML(
+            value=f"""
+            <div style={inline_css_style}>
+                {formatted_content}
+            </div>""",
+            layout=widgets.Layout(width="80%")
+        )
+
+        def copy_text_from_html_widget() -> None:
+
+            def replace_span(match: re.Match) -> str:
+                margin = match.group(1)
+                content = match.group(2)
+                tabs = '\t' * (int(margin) // 30)
+                return tabs + content
+
+            if command_type == CommandType.LINUX_COMMAND:
+                raw_text = html_widget.value.strip().split('\n')[1].strip().replace('<br>', '\n')
+                formatted_raw_text = " ".join(line.strip() for line in raw_text.split('\\\n'))
+                pyperclip.copy(formatted_raw_text)
+            elif command_type == CommandType.PYTHON_CODE:
+                raw_text = html_widget.value.strip().split('\n')[1]
+                formatted_raw_text = "\n".join(line.strip() for line in raw_text.split('<br>'))
+                no_span_tags_text = re.sub(
+                    pattern=r'<span style=["\']margin-left:\s(\d+)px;["\']>(.*?)</span>',
+                    repl=replace_span,
+                    string=formatted_raw_text
+                )
+                pyperclip.copy(no_span_tags_text + '\n')
+
+            copy_button.icon = "check"
+            copy_button.description = "Copied!"
+            copy_button.disabled = True
+            copy_button.style.button_color = 'lightgreen'
+            threading.Thread(target=reset_button, daemon=True).start()
+
+        def reset_button():
+            time.sleep(2)
+            copy_button.icon = "copy"
+            copy_button.description = "Copy"
+            copy_button.disabled = False
+            copy_button.style.button_color = 'lightgray'
+
+        copy_button = widgets.Button(
+            description="Copy",
+            icon="copy",
+            tooltip="Click to copy",
+            layout=widgets.Layout(width="20%")
+        )
+        copy_button.on_click(lambda _: copy_text_from_html_widget())
+
+        header_widget = widgets.HTML(
+            value=(
+                "<h1 style='text-align: center; margin-bottom: 15px;'>"
+                f"{header}"
+                "</h1>"
+            )
+        )
+
+        return widgets.VBox(
+            children=[
+                header_widget,
+                widgets.HBox(
+                    children=[html_widget, copy_button],
+                    layout=widgets.Layout(
+                        width="100%",
+                        align_items="stretch",
+                        overflow="visible",
+                        margin="30px 0"
+                    )
+                )
+            ],
+            layout=widgets.Layout(
+                width="100%",
+                align_items="stretch",
+                overflow="visible"
+            )
+        )
 
     def __visualize_specified_options(
         self,

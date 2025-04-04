@@ -55,3 +55,8 @@ class LogLevel(Enum):
     INFO = logging.INFO
     DEBUG = logging.DEBUG
     NOTSET = logging.NOTSET
+
+
+class CommandType(Enum):
+    LINUX_COMMAND = "linux_command"
+    PYTHON_CODE = "python_code"

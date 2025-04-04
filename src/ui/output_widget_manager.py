@@ -70,3 +70,10 @@ class OutputWidgetManager:
 
         with self.__output_widget:
             display(widgets.HTML(value=html_content))
+
+    def display_widget(
+        self,
+        widget: widgets.Widget
+    ) -> None:
+        with self.__output_widget:
+            display(widget)
