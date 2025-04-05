@@ -352,10 +352,22 @@ class VQAAproachesExplorationForm:
         )
 
     def __create_buttons_layout(self) -> None:
-        self.__run_button = widgets.Button(description="Run")
+        self.__run_button = self.__create_button(
+            description="Run",
+            icon="play",
+            tooltip="Run the form with the selected options",
+            button_style="success"
+        )
+        self.__run_button.layout.margin = "0 30px"
         self.__run_button.on_click(lambda _: self.__run_form())
 
-        self.__reset_button = widgets.Button(description="Reset")
+        self.__reset_button = self.__create_button(
+            description="Reset",
+            icon="undo",
+            tooltip="Reset all form inputs to default",
+            button_style="warning"
+        )
+        self.__reset_button.layout.margin = "0 30px"
         self.__reset_button.on_click(lambda _: self.__reset_form())
 
         self.__buttons_layout = widgets.HBox(
@@ -420,6 +432,27 @@ class VQAAproachesExplorationForm:
             indent=False,
             layout=widgets.Layout(width="auto", margin="0 auto"),
             disabled=disabled
+        )
+
+    @staticmethod
+    def __create_button(
+        description: str,
+        icon: str,
+        tooltip: str,
+        button_style: str,
+        width: str = "120px",
+        height: str = "36px"
+    ) -> widgets.Button:
+        return widgets.Button(
+            description=description,
+            icon=icon,
+            tooltip=tooltip,
+            button_style=button_style,
+            layout=widgets.Layout(width=width, height=height),
+            style={
+                "font_weight": "bold",
+                "font_size": "14px"
+            }
         )
 
     def __add_callbacks(self) -> None:
@@ -827,71 +860,6 @@ class VQAAproachesExplorationForm:
             } \
             )
             """
-            
-            # text_content=f"""
-            # DATASET_DIR = Path("data/WorldMedQA-V")
-            # OLLAMA_MODEL_NAME = "llava"
-            # RESULTS_DIR = Path("evaluation_results")
-            # {
-            #     '''
-            #     INDEX_DIR = Path("data/WikiMed/indexed_db")
-            #     INDEX_NAME = "Wikimed+S-PubMedBert-MS-MARCO-FullTexts"
-            #     EMBEDDING_MODEL_NAME = "pritamdeka/S-PubMedBert-MS-MARCO"
-            #     RELEVANT_DOCS_COUNT = 1 \n
-            #     '''
-            #     if self.__vqa_strategy_type_dropdown.value != VQAStrategyType.ZERO_SHOT
-            #     else ''
-            # } \
-
-            # world_med_qa_v_dataset = load_vqa_dataset(
-            #     <span style='margin-left: 30px;'>data_path=DATASET_DIR,</span>
-            #     <span style='margin-left: 30px;'>country={self.__country_dropdown.value},</span>
-            #     <span style='margin-left: 30px;'>file_type={self.__file_type_dropdown.value}</span>
-            # )
-
-            # llava_model = VisualQAModel(
-            #     <span style='margin-left: 30px;'>visual_qa_strategy={get_vqa_strategy_class_name()}(</span>
-            #         <span style='margin-left: 60px'>prompt_type={self.__prompt_type_dropdown.value},</span> \
-            #     {
-            #         '''\n<span style='margin-left: 60px'>index_dir=INDEX_DIR,</span>
-            #         <span style='margin-left: 60px'>index_name=INDEX_NAME,</span>
-            #         <span style='margin-left: 60px'>embedding_model_name=EMBEDDING_MODEL_NAME,</span>
-            #         <span style='margin-left: 60px'>relevant_docs_count=RELEVANT_DOCS_COUNT</span>'''
-            #         if self.__vqa_strategy_type_dropdown.value in (VQAStrategyType.RAG_Q, VQAStrategyType.RAG_Q_AS)
-            #         else ''
-            #     }
-            #     <span style='margin-left: 30px;'>),</span>
-            #     <span style='margin-left: 30px;'>model_name=OLLAMA_MODEL_NAME,</span>
-            #     <span style='margin-left: 30px;'>country={self.__country_dropdown.value},</span>
-            #     <span style='margin-left: 30px;'>file_type={self.__file_type_dropdown.value}</span>
-            # )
-
-            # llava_model.evaluate(
-            #     <span style='margin-left: 30px;'>dataset=world_med_qa_v_dataset,</span>
-            #     <span style='margin-left: 30px;'>results_path=RESULTS_DIR,</span>
-            #     <span style='margin-left: 30px;'>use_image={self.__use_image_checkbox.value},</span>
-            # {
-            #     f'''<span style="margin-left: 30px;">doc_splitter={get_document_splitter_class_name()}(</span>
-            #             <span style="margin-left: 60px;">token_count={document_splitter_options.token_count},</span>
-            #         {
-            #             f'''<span style="margin-left: 60px;">chunk_size={document_splitter_options.chunk_size},</span>
-            #             <span style="margin-left: 60px;">chunk_overlap={document_splitter_options.chunk_overlap},</span>\n'''
-            #             if document_splitter_options.doc_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER
-            #             else ''
-            #         } \
-            #             <span style="margin-left: 60px;">add_title={document_splitter_options.add_title}</span>
-            #     <span style="margin-left: 30px;">),</span>
-            #     '''
-            #     if document_splitter_options is not None
-            #     else ''
-            # } \
-            # {
-            #     f'<span style="margin-left: 30px;">should_apply_rag_to_question={self.__apply_rag_to_question_checkbox.value}</span>\n'
-            #     if self.__vqa_strategy_type_dropdown.value == VQAStrategyType.RAG_Q_AS
-            #     else ''
-            # } \
-            # )
-            # """
         )
 
         self.__output_widget_manager.display_widget(
@@ -901,8 +869,8 @@ class VQAAproachesExplorationForm:
             widget=python_code_copy_text_widget
         )
 
-    @staticmethod
     def __create_copy_text_widget(
+        self,
         header: str,
         command_type: CommandType,
         text_content: str
@@ -947,21 +915,26 @@ class VQAAproachesExplorationForm:
             copy_button.icon = "check"
             copy_button.description = "Copied!"
             copy_button.disabled = True
-            copy_button.style.button_color = 'lightgreen'
-            threading.Thread(target=reset_button, daemon=True).start()
+            copy_button.button_style = "success"
+            threading.Thread(target=reset_button).start()
 
         def reset_button():
             time.sleep(2)
             copy_button.icon = "copy"
             copy_button.description = "Copy"
             copy_button.disabled = False
-            copy_button.style.button_color = 'lightgray'
+            copy_button.button_style = ""
 
-        copy_button = widgets.Button(
+        command_type_to_tooltip_message = {
+            CommandType.LINUX_COMMAND: "Copy this Linux command to your clipboard",
+            CommandType.PYTHON_CODE: "Copy this Python code snippet to your clipboard"
+        }
+        copy_button = self.__create_button(
             description="Copy",
             icon="copy",
-            tooltip="Click to copy",
-            layout=widgets.Layout(width="20%")
+            tooltip=command_type_to_tooltip_message[command_type],
+            button_style="",
+            width="100px"
         )
         copy_button.on_click(lambda _: copy_text_from_html_widget())
 
