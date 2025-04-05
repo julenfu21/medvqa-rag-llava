@@ -697,51 +697,51 @@ class VQAAproachesExplorationForm:
             command_type=CommandType.LINUX_COMMAND,
             text_content=f"""
             python scripts/evaluate_vqa_model.py \\
-                --country={self.__country_dropdown.value} \\
-                --file_type={self.__file_type_dropdown.value} \\
-                {'--no_image \\\n' if not self.__use_image_checkbox.value else ''} \
-                --vqa_strategy={self.__vqa_strategy_type_dropdown.value} \\
-                --prompt_type={self.__prompt_type_dropdown.value} \\
+                > --country={self.__country_dropdown.value} \\
+                > --file_type={self.__file_type_dropdown.value} \\
+                {'> --no_image \\\n' if not self.__use_image_checkbox.value else ''} \
+                > --vqa_strategy={self.__vqa_strategy_type_dropdown.value} \\
+                > --prompt_type={self.__prompt_type_dropdown.value} \\
                 {
-                    f'--relevant_docs_count={self.__relevant_documents_count_int_widget.value} \\\n'
+                    f'> --relevant_docs_count={self.__relevant_documents_count_int_widget.value} \\\n'
                     if self.__get_widget_value(self.__relevant_documents_count_int_widget) is not None
                     else ''
                 } \
                 {
-                    f'--doc_splitter={document_splitter_options.doc_splitter_type} \\\n'
+                    f'> --doc_splitter={document_splitter_options.doc_splitter_type} \\\n'
                     if document_splitter_options is not None
                     else ''
                 } \
                 {
-                    f'--token_count={document_splitter_options.token_count} \\\n'
+                    f'> --token_count={document_splitter_options.token_count} \\\n'
                     if document_splitter_options is not None
                     else ''
                 } \
                 {
-                    '--add_title \\\n'
+                    '> --add_title \\\n'
                     if document_splitter_options is not None and document_splitter_options.add_title
                     else ''
                 } \
                 {
-                    f'--chunk_size={
+                    f'> --chunk_size={
                         document_splitter_options.chunk_size
                     } \\\n'
                     if document_splitter_options is not None and document_splitter_options.chunk_size is not None
                     else ''
                 } \
                 {
-                    f'--chunk_overlap={
+                    f'> --chunk_overlap={
                         document_splitter_options.chunk_overlap
                     } \\\n'
                     if document_splitter_options is not None and document_splitter_options.chunk_overlap is not None
                     else ''
                 } \
                 {
-                    '--should_apply_rag_to_question \\\n'
+                    '> --should_apply_rag_to_question \\\n'
                     if self.__apply_rag_to_question_checkbox.value
                     else ''
                 } \
-                -v
+                > -v
             """
         )
 
@@ -900,7 +900,10 @@ class VQAAproachesExplorationForm:
 
             if command_type == CommandType.LINUX_COMMAND:
                 raw_text = html_widget.value.strip().split('\n')[1].strip().replace('<br>', '\n')
-                formatted_raw_text = " ".join(line.strip() for line in raw_text.split('\\\n'))
+                formatted_raw_text = " ".join(
+                    line.lstrip('> ').strip()
+                    for line in raw_text.split('\\\n')
+                )
                 pyperclip.copy(formatted_raw_text)
             elif command_type == CommandType.PYTHON_CODE:
                 raw_text = html_widget.value.strip().split('\n')[1]
