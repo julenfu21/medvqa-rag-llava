@@ -39,7 +39,7 @@ from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 from src.visual_qa_model import VisualQAModel
 
 
-class VQAAproachesExplorationForm:
+class VQAApproachesExplorationForm:
 
     def __init__(
         self,
