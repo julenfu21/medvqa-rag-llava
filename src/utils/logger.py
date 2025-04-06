@@ -28,6 +28,10 @@ class LoggerManager:
         self.__logger = logging.getLogger(self.__logger_name)
         self.__setup_logger()
 
+    @property
+    def log_filename(self) -> str:
+        return self.__log_filename
+
     def __setup_logger(self) -> None:
         self.__logger.setLevel(logging.DEBUG)
 
@@ -51,10 +55,10 @@ class LoggerManager:
             print("File handler is disabled. Log files cannot be created!")
             return
 
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         if log_filename:
-            self.__log_filename = log_filename
+            self.__log_filename = f"{timestamp}_{log_filename}"
         else:
-            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
             self.__log_filename = f"visual-qa_{timestamp}.log"
 
         old_handler = None

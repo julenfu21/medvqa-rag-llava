@@ -40,6 +40,11 @@ class BaseRagVQAStrategy(BaseVQAStrategy, ABC):
     def relevant_docs_count(self) -> int:
         return self.__relevant_docs_count
 
+    @relevant_docs_count.setter
+    def relevant_docs_count(self, relevant_docs_count: int) -> None:
+        self.__relevant_docs_count = relevant_docs_count
+        self._retriever.set_relevant_docs_count(self.__relevant_docs_count)
+
     def _set_prompt_template(self):
         super()._validate_arguments(
             required_arguments=[

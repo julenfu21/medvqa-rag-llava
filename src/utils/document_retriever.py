@@ -20,6 +20,8 @@ class DocumentRetriever(metaclass=SingletonMeta):
         embedding_model_name: str,
         relevant_docs_count: int
     ) -> None:
+        self.__index = None
+
         print("\t- Loading Document Retriever ...")
         self.__retriever = self.__load_wikimed_retriever(
             index_dir, index_name, embedding_model_name, relevant_docs_count
@@ -44,7 +46,7 @@ class DocumentRetriever(metaclass=SingletonMeta):
 
         # Load FAISS index
         print("\t\t- Loading Index ...")
-        index = FAISS.load_local(
+        self.__index = FAISS.load_local(
             folder_path=index_dir,
             index_name=index_name,
             embeddings=embeddings,
@@ -54,12 +56,18 @@ class DocumentRetriever(metaclass=SingletonMeta):
 
         # Load retriever from index
         print("\t\t- Loading Retriever ...")
-        retriever = index.as_retriever(
+        retriever = self.__index.as_retriever(
             search_type="similarity",
             search_kwargs={"k": relevant_docs_count}
         )
         print("\t\t+ Retriever Loaded.")
         return retriever
+
+    def set_relevant_docs_count(self, relevant_docs_count: int) -> None:
+        self.__retriever = self.__index.as_retriever(
+            search_type="similarity",
+            search_kwargs={"k": relevant_docs_count}
+        )
 
     def get_formatted_relevant_documents(
         self,

@@ -24,10 +24,16 @@ from src.utils.data_definitions import (
     ModelAnswerResult,
     VQAStrategyDetail
 )
+from src.utils.logger import LoggerManager
 from src.utils.string_formatting_helpers import (
     prettify_document_splitter_name,
     prettify_strategy_name
 )
+from src.visual_qa_strategies.base_rag_strategy import BaseRagVQAStrategy
+from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
+from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
+from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
 from src.utils.types_aliases import PromptType
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
 from src.visual_qa_model import VisualQAModel
@@ -40,13 +46,15 @@ class VQAAproachesExplorationForm:
         dataset: dict[str, Dataset],
         model_name: str,
         vqa_strategies: dict[VQAStrategyType, BaseVQAStrategy],
-        evaluation_results_folder: Path
+        evaluation_results_folder: Path,
+        logger_manager: LoggerManager
     ) -> None:
-        # Dataset and Model Configurations
+        # Dataset, Model Configurations and Logging
         self.__world_med_qa_v_dataset = dataset
         self.__model_name = model_name
         self.__vqa_strategies = vqa_strategies
         self.__evaluation_results_folder = evaluation_results_folder
+        self.__logger_manager = logger_manager
 
         # Main Layout Elements
         self.__title_widget = None
@@ -64,6 +72,7 @@ class VQAAproachesExplorationForm:
         self.__vqa_strategy_type_dropdown = None
         self.__prompt_type_dropdown = None
         self.__use_image_checkbox = None
+        self.__create_log_file_checkbox = None
 
         # RAG Options Widgets
         self.__rag_options_layout = None
@@ -158,6 +167,8 @@ class VQAAproachesExplorationForm:
 
             <span style='margin-left: 30px;'>- <b>View structured outputs</b> for a clear breakdown of inputs and responses.</span>
 
+            <span style='margin-left: 30px;'>- <b>Explore message logs</b> to inspect the messages exchanged during processing.</span>
+
             Selected options and results are displayed in an organized format, making it easy to experiment and assess different configurations.
             
             <i>Note: You can revisit this information anytime by clicking the reset button.</i>
@@ -248,6 +259,11 @@ class VQAAproachesExplorationForm:
             initial_value=True
         )
 
+        self.__create_log_file_checkbox = self.__create_checkbox(
+            description="Create Log File",
+            initial_value=False
+        )
+
         self.__general_options_layout = widgets.VBox(
             children=[
                 self.__action_type_dropdown,
@@ -256,7 +272,19 @@ class VQAAproachesExplorationForm:
                 self.__question_id_int_widget,
                 self.__vqa_strategy_type_dropdown,
                 self.__prompt_type_dropdown,
-                self.__use_image_checkbox
+                widgets.HBox(
+                    children=[
+                        self.__use_image_checkbox,
+                        self.__create_log_file_checkbox
+                    ],
+                    layout=widgets.Layout(
+                        width="100%",
+                        overflow="visible",
+                        display="flex",
+                        justify_content="center",
+                        # margin="20px 0 0px 0"
+                    )
+                )
             ],
             layout=widgets.Layout(width="100%", overflow="visible")
         )
@@ -396,7 +424,7 @@ class VQAAproachesExplorationForm:
             options=options,
             value=list(options.values())[0],
             layout=widgets.Layout(width="100%"),
-            style={"description_width": "32%"},
+            style={"description_width": "33%"},
             disabled=disabled
         )
 
@@ -416,7 +444,7 @@ class VQAAproachesExplorationForm:
             max=max_value,
             step=step,
             layout=widgets.Layout(width="100%"),
-            style={"description_width": "32%"},
+            style={"description_width": "33%"},
             disabled=disabled
         )
 
@@ -430,7 +458,7 @@ class VQAAproachesExplorationForm:
             description=description,
             value=initial_value,
             indent=False,
-            layout=widgets.Layout(width="auto", margin="0 auto"),
+            layout=widgets.Layout(width="auto", margin="8px auto"),
             disabled=disabled
         )
 
@@ -456,6 +484,18 @@ class VQAAproachesExplorationForm:
         )
 
     def __add_callbacks(self) -> None:
+        self.__action_type_dropdown.observe(
+            lambda change: self.__update_dependent_widgets_state(
+                dependent_widgets_config=[
+                    DependentWidgetsConfig(
+                        widgets=[self.__create_log_file_checkbox],
+                        enable_condition=change['new'] == 'execute_model'
+                    )
+                ]
+            ),
+            names='value'
+        )
+
         self.__vqa_strategy_type_dropdown.observe(
             lambda change: self.__update_dependent_dropdown_values(
                 change=change,
@@ -615,9 +655,28 @@ class VQAAproachesExplorationForm:
 
     def __get_model_answer_result(self, row: dict) -> ModelAnswerResult:
         if self.__action_type_dropdown.value == "execute_model":
-            chosen_vqa_strategy = self.__vqa_strategy_type_dropdown.value
+
+            if self.__create_log_file_checkbox.value:
+                log_filename=(
+                    f"q{self.__question_id_int_widget.value}-"
+                    f"{self.__country_dropdown.value}-"
+                    f"{self.__file_type_dropdown.value}-"
+                    f"{self.__vqa_strategy_type_dropdown.value}-"
+                    f"{self.__prompt_type_dropdown.value}.log"
+                )
+                self.__logger_manager.create_new_log_file(
+                    log_filename=log_filename
+                )
+                self.__output_widget_manager.display_text_content(
+                    content=f"- New Message Log Created: {self.__logger_manager.log_filename}"
+                )
+
+            chosen_vqa_strategy_type = self.__vqa_strategy_type_dropdown.value
+            vqa_strategy = self.__vqa_strategies[chosen_vqa_strategy_type]
+            if isinstance(vqa_strategy, BaseRagVQAStrategy):
+                vqa_strategy.relevant_docs_count = self.__relevant_documents_count_int_widget.value
             model=VisualQAModel(
-                visual_qa_strategy=self.__vqa_strategies[chosen_vqa_strategy],
+                visual_qa_strategy=vqa_strategy,
                 model_name=self.__model_name,
                 country=self.__country_dropdown.value,
                 file_type=self.__file_type_dropdown.value
@@ -628,14 +687,47 @@ class VQAAproachesExplorationForm:
             self.__visualize_specified_options(
                 output_widget_manager=self.__output_widget_manager
             )
+
+            def get_splitter_from_doc_splitter_options() -> BaseSplitter:
+                doc_splitter_options = self.__get_doc_splitter_options()
+
+                if not doc_splitter_options:
+                    return None
+
+                match doc_splitter_options.doc_splitter_type:
+                    case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
+                        return RecursiveCharacterSplitter(
+                            token_count=doc_splitter_options.token_count,
+                            chunk_size=doc_splitter_options.chunk_size,
+                            chunk_overlap=doc_splitter_options.chunk_overlap,
+                            add_title=doc_splitter_options.add_title
+                        )
+                    case DocumentSplitterType.SPACY_SENTENCE_SPLITTER:
+                        return SpacySentenceSplitter(
+                            token_count=doc_splitter_options.token_count,
+                            add_title=doc_splitter_options.add_title
+                        )
+                    case DocumentSplitterType.PARAGRAPH_SPLITTER:
+                        return ParagraphSplitter(
+                            token_count=doc_splitter_options.token_count,
+                            add_title=doc_splitter_options.add_title
+                        )
+
             return model.generate_answer_from_row(
                 row=row,
                 possible_options=['A', 'B', 'C', 'D'],
                 verbose=True,
                 use_image=self.__use_image_checkbox.value,
-                # FALTA EL DOC_SPLITTER TAMBIÉN
-                # logger_manager=logger_manager,
-                # should_apply_rag_to_question=True
+                logger_manager=(
+                    self.__logger_manager if self.__create_log_file_checkbox.value
+                    else None
+                ),
+                doc_splitter=get_splitter_from_doc_splitter_options(),
+                **(
+                    {"should_apply_rag_to_question": self.__apply_rag_to_question_checkbox.value}
+                    if self.__vqa_strategy_type_dropdown.value == VQAStrategyType.RAG_Q_AS
+                    else {}
+                )
             )
 
         if self.__action_type_dropdown.value == "fetch_json":
@@ -738,7 +830,7 @@ class VQAAproachesExplorationForm:
                 } \
                 {
                     '> --should_apply_rag_to_question \\\n'
-                    if self.__apply_rag_to_question_checkbox.value
+                    if self.__vqa_strategy_type_dropdown.value == VQAStrategyType.RAG_Q_AS and self.__apply_rag_to_question_checkbox.value
                     else ''
                 } \
                 > -v
@@ -989,7 +1081,14 @@ class VQAAproachesExplorationForm:
         )
         self.__visualize_options_subset(
             output_widget_manager=output_widget_manager,
-            options_widgets=self.__general_options_layout.children[1:]
+            options_widgets=[
+                self.__country_dropdown,
+                self.__file_type_dropdown,
+                self.__question_id_int_widget,
+                self.__vqa_strategy_type_dropdown,
+                self.__prompt_type_dropdown,
+                self.__use_image_checkbox
+            ]
         )
 
         if self.__vqa_strategy_type_dropdown.value != VQAStrategyType.ZERO_SHOT:
@@ -1172,7 +1271,6 @@ class VQAAproachesExplorationForm:
 
     def __reset_int_widgets_value(self) -> None:
         self.__question_id_int_widget.value = 1
-        # AJUSTAR MAX
 
         self.__relevant_documents_count_int_widget.value = 1
 
