@@ -1,0 +1,17 @@
+2025-04-10 11:23:52,076 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C, or D. For each question, you should consider the provided options and the image, and answer with exactly one letter that best matches the correct choice. Answer with a single letter only, without any explanations or additional information.
+
+---- End of SYSTEM message ----
+2025-04-10 11:23:52,076 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAhcAAALKCAYAAACBeXO5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxj ...
+
+Pregunta vinculada a la imagen nº23 Un paciente presenta una fractura cerrada cuya radiografía en proyección ántero-posterior puede revisar en la imagen adjunta. ¿Cuál de las siguientes opciones de tratamiento le parece correcta?: A - Clavo intramedular acerrojado proximal y distal. B - Ortesis de tipo PTB (patellar tendon bearing) y deambulación desde el momento inicial. C - Fijador externo circular y deambulación precoz. D - Reducción abierta y placa y tornillos bloqueados.
+
+---- End of HUMAN message ----
+2025-04-10 11:25:17,757 [INFO] - ---- Start of AI message ----
+
+A
+
+---- End of AI message ----

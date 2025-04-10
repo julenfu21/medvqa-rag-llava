@@ -5,6 +5,7 @@ import pandas as pd
 from datasets import Dataset, load_dataset
 
 from src.utils.data_definitions import ModelAnswerResult, VQAStrategyDetail
+from src.utils.enums import OutputFileType
 
 
 def load_vqa_dataset(data_path: Path, country: str, file_type: str) -> Dataset:
@@ -36,8 +37,8 @@ def fetch_model_answer_from_json(
     vqa_strategy_detail: VQAStrategyDetail,
     question_id: int,
 ) -> ModelAnswerResult:
-    evaluation_results_filepath = vqa_strategy_detail.generate_evaluation_results_filepath(
-        evaluation_results_folder=evaluation_results_folder
+    evaluation_results_filepath = vqa_strategy_detail.generate_output_filepath(
+        root_folder=evaluation_results_folder, output_file_type=OutputFileType.JSON_FILE
     )
 
     with open(evaluation_results_filepath, mode='r', encoding='utf-8') as evaluation_file:
@@ -55,8 +56,8 @@ def load_evaluation_results(
     evaluation_results = []
 
     for detail in vqa_strategy_details:
-        evaluation_results_filepath = detail.generate_evaluation_results_filepath(
-            evaluation_results_folder=evaluation_results_folder
+        evaluation_results_filepath = detail.generate_output_filepath(
+            root_folder=evaluation_results_folder, output_file_type=OutputFileType.JSON_FILE
         )
         evaluation_metrics = __load_evaluation_result_from_filepath(evaluation_results_filepath)
         evaluation_results.append({

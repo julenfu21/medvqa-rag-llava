@@ -19,7 +19,7 @@ class LoggerManager:
         )
     ) -> None:
         self.__log_save_directory = log_save_directory
-        self.__log_filename = None
+        self.__log_filepath = None
         self.__logger_name = logger_name
         self.__logger_config = logger_config
         self.__logger_formatter = logging.Formatter(
@@ -29,8 +29,12 @@ class LoggerManager:
         self.__setup_logger()
 
     @property
-    def log_filename(self) -> str:
-        return self.__log_filename
+    def log_save_directory(self) -> Path:
+        return self.__log_save_directory
+
+    @property
+    def log_filepath(self) -> str:
+        return self.__log_filepath
 
     def __setup_logger(self) -> None:
         self.__logger.setLevel(logging.DEBUG)
@@ -50,16 +54,17 @@ class LoggerManager:
             print(f"Logger '{self.__logger_name}' already exists. Reusing existing logger.")
             self.__print_logger_info()
 
-    def create_new_log_file(self, log_filename: Optional[str] = None) -> None:
+    def create_new_log_file(self, log_filepath: Optional[Path] = None) -> None:
         if not self.__logger_config.file_handler_enabled:
             print("File handler is disabled. Log files cannot be created!")
             return
 
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        if log_filename:
-            self.__log_filename = f"{timestamp}_{log_filename}"
+        if log_filepath:
+            self.__log_filepath = log_filepath
+            self.__log_filepath.parent.mkdir(parents=True, exist_ok=True)
         else:
-            self.__log_filename = f"visual-qa_{timestamp}.log"
+            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            self.__log_filepath = self.__log_save_directory / f"visual-qa_{timestamp}.log"
 
         old_handler = None
         for handler in self.__logger.handlers:
@@ -70,7 +75,7 @@ class LoggerManager:
             self.__logger.removeHandler(old_handler)
             old_handler.close()
 
-        file_handler = logging.FileHandler(self.__log_save_directory / self.__log_filename)
+        file_handler = logging.FileHandler(self.__log_filepath)
         file_handler.setFormatter(self.__logger_formatter)
         self.__logger.addHandler(file_handler)
 
@@ -78,7 +83,7 @@ class LoggerManager:
         self.__print_logger_info()
 
     def log(self, level: LogLevel, message: str) -> None:
-        log_filepath = Path(self.__log_save_directory / self.__log_filename)
+        log_filepath = self.__log_filepath
         if not log_filepath.exists():
             print("The log file might have been accidentally deleted or not created!")
             self.create_new_log_file()
@@ -93,8 +98,8 @@ class LoggerManager:
             return "Disabled"
 
         print((
-            f"\t- Log Directory: {self.__log_save_directory}\n"
-            f"\t- Log Filename: {self.__log_filename}\n"
+            f"\t- Root Log Directory: {self.__log_save_directory}\n"
+            f"\t- Full Log Filepath: {self.__log_filepath}\n"
             "\t- Handlers:\n"
             "\t\t* Console Handler: "
             f"{handler_status(self.__logger_config.console_handler_enabled)}\n"

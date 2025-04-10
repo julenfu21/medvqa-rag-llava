@@ -3,11 +3,11 @@ from itertools import product
 from pathlib import Path
 from typing import Any, Optional, Type
 
-import ipywidgets as widgets
 from langchain_core.documents import Document
 
 from src.utils.enums import (
     DocumentSplitterType,
+    OutputFileType,
     RagQPromptType,
     VQAStrategyType,
     ZeroShotPromptType
@@ -59,12 +59,6 @@ class DocumentRetrievalResult:
     relevant_documents: list[Document]
     formatted_docs: str
     split_documents: list[Document] = field(default_factory=list)
-
-
-@dataclass
-class DependentWidgetsConfig:
-    widgets: list[widgets.Widget]
-    enable_condition: bool
 
 
 class InvalidDocSplitterOptions(Exception):
@@ -187,7 +181,7 @@ class VQAStrategyDetail:
             f"'{field_name}' cannot be None"
         )
 
-    def generate_evaluation_results_filepath(self, evaluation_results_folder: Path) -> Path:
+    def generate_output_filepath(self, root_folder: Path, output_file_type: OutputFileType) -> Path:
 
         def doc_splitter_attribute_to_path_elements(
             attribute_name: str,
@@ -216,15 +210,16 @@ class VQAStrategyDetail:
 
             raise ValueError(f"Attribute '{attribute_name}' not recognized")
 
-        evaluation_results_filepath = Path(
-            evaluation_results_folder,
+        output_filepath = Path(
+            root_folder,
             self.country,
             self.file_type,
             'with_image' if self.use_image else 'no_image',
             self.vqa_strategy_type.value
         )
-        evaluation_results_filename = (
-            f"{self.country}_{self.file_type}_{self.prompt_type.value}_evaluation.json"
+        output_filename = (
+            f"{self.country}_{self.file_type}_{self.prompt_type.value}"
+            f"_evaluation.{output_file_type.value}"
         )
 
         relevant_docs_count_filepath = ""
@@ -257,11 +252,11 @@ class VQAStrategyDetail:
             )
 
         return Path(
-            evaluation_results_filepath,
+            output_filepath,
             relevant_docs_count_filepath,
             rag_q_as_details_filepath,
             doc_splitter_filepath,
-            evaluation_results_filename
+            output_filename
         )
 
 

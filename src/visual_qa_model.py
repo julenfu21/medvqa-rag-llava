@@ -7,7 +7,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
 from src.utils.data_definitions import DocSplitterOptions, ModelAnswerResult, VQAStrategyDetail
-from src.utils.enums import DocumentSplitterType, VQAStrategyType
+from src.utils.enums import DocumentSplitterType, OutputFileType, VQAStrategyType
 from src.utils.logger import LoggerManager
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -215,8 +215,8 @@ class VisualQAModel:
                 if self.__visual_qa_strategy.strategy_type == VQAStrategyType.RAG_Q_AS else None
             )
         )
-        full_results_filepath = vqa_strategy_detail.generate_evaluation_results_filepath(
-            evaluation_results_folder=results_path
+        full_results_filepath = vqa_strategy_detail.generate_output_filepath(
+            root_folder=results_path, output_file_type=OutputFileType.JSON_FILE
         )
 
         full_results_filepath.parent.mkdir(parents=True, exist_ok=True)

@@ -60,3 +60,8 @@ class LogLevel(Enum):
 class CommandType(Enum):
     LINUX_COMMAND = "linux_command"
     PYTHON_CODE = "python_code"
+
+
+class OutputFileType(Enum):
+    JSON_FILE = "json"
+    LOG_FILE = "log"
