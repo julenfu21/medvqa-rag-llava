@@ -31,7 +31,6 @@ from src.utils.data_definitions import (
 from src.utils.enums import (
     CommandType,
     DocumentSplitterType,
-    OutputFileType,
     RagQPromptType,
     VQAStrategyType,
     ZeroShotPromptType
@@ -537,18 +536,66 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         )
 
     def __create_log_file(self, vqa_strategy_detail: VQAStrategyDetail) -> None:
-        log_filepath = vqa_strategy_detail.generate_output_filepath(
-            root_folder=self.__logger_manager.log_save_directory,
-            output_file_type=OutputFileType.LOG_FILE
+        self.__logger_manager.create_new_log_file(
+            vqa_strategy_detail=vqa_strategy_detail,
+            question_id=self.__question_id_int_widget.widget.value
         )
-        self.__logger_manager.create_new_log_file(log_filepath=log_filepath)
+
+        path_segments = self.__get_path_segments_from_log_filepath(
+            log_filepath = self.__logger_manager.log_filepath
+        )
+        formatted_path_segments = [
+            f"<span style='margin-left: 30px;'><b>+ {label}:</b> {value}</span>"
+            for label, value in path_segments.items()
+        ]
+
         self._output_widget_manager.display_text_content(
-            content=f"""
-            - New Message Log Created: 
-            <span style='margin-left: 30px;'>+ Path: {self.__logger_manager.log_filepath.parent}</span>
-            <span style='margin-left: 30px;'>+ Log Filename: {self.__logger_manager.log_filepath.name}</span>
-            """
+            content="- New Message Log Created:",
+            extra_css_style="margin-bottom: 10px;"
         )
+        self._output_widget_manager.display_text_content(
+            content='<br>'.join(formatted_path_segments),
+            extra_css_style="margin-bottom: 10px;"
+        )
+        self._output_widget_manager.display_text_content(
+            content="<i>Join the values above to reconstruct the full log file path.</i>",
+            extra_css_style="margin-bottom: 20px;"
+        )
+
+    @staticmethod  
+    def __get_path_segments_from_log_filepath(log_filepath: Path) -> dict[str, str]:
+        path_segments = log_filepath.parts
+
+        path_segments_with_names = {
+            "Root Folder": path_segments[0],
+            "Country": path_segments[1],
+            "Language": path_segments[2],
+            "Image usage": path_segments[3],
+            "VQA Strategy": path_segments[4]
+        }
+
+        strategy = path_segments[4]
+        if strategy in {'rag_q', 'rag_q_as'}:
+            path_segments_with_names["Relevant Docs. Count"] = path_segments[5]
+
+            index = 6
+            if strategy == 'rag_q_as':
+                path_segments_with_names["Rag Q+As (Sub-Type)"] = path_segments[index]
+                index += 1
+
+            splitter_type = path_segments[index]
+            path_segments_with_names["Document Splitter Type"] = splitter_type
+            index += 1
+
+            if splitter_type != 'no_doc_split':
+                path_segments_with_names["Document Splitter (Sub-Type)"] = path_segments[index]
+
+        path_segments_with_names.update({
+            "Experiment ID": path_segments[-2],
+            "Log file": path_segments[-1]
+        })
+
+        return path_segments_with_names
 
     @staticmethod
     def __get_doc_splitter_from_options(doc_splitter_options: DocSplitterOptions) -> None:

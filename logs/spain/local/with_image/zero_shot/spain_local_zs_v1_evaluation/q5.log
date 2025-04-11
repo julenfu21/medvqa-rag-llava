@@ -1,0 +1,37 @@
+2025-04-10 13:29:08,011 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "local",
+    "use_image": true,
+    "vqa_strategy_type": "zero_shot",
+    "prompt_type": "zs_v1"
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-04-10 13:29:08,391 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C, or D. For each question, you should consider the provided options and the image, and answer with exactly one letter that best matches the correct choice. Answer with a single letter only, without any explanations or additional information.
+
+---- End of SYSTEM message ----
+2025-04-10 13:29:08,392 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAA2gAAAKOCAYAAADTfDoWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxj ...
+
+Pregunta vinculada a la imagen nº5 Mujer de 50 años, sin antecedentes de interés, que presenta desde hace 3 meses unas lesiones dolorosas en la boca (lengua, paladar, mucosa oral) que no han mejorado a pesar de haber realizado múltiples tratamientos tópicos. Las lesiones le dificultan la ingesta y refiere haber perdido 7 kg de peso. En las últimas semanas le han aparecido unas lesiones en el tronco y en la exploración se observan varias erosiones y alguna costra. Al frotar alrededor de las erosiones la piel vecina se despega fácilmente. ¿Cuál de los siguientes hallazgos NO encontraríamos en esta paciente?: A - Depósitos de IgG y C3 en la membrana basal. B - Depósitos de IgG y C3 intercelulares. C - Anticuerpos frente a la desmogleína 1. D - Anticuerpos frente a la desmogleína 3.
+
+---- End of HUMAN message ----
+2025-04-10 13:30:28,571 [INFO] - ---- Start of AI message ----
+
+A
+
+---- End of AI message ----
+2025-04-10 13:30:28,571 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: A
+
+Model Answer: A
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

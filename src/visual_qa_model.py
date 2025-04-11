@@ -7,7 +7,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from tqdm import tqdm
 
 from src.utils.data_definitions import DocSplitterOptions, ModelAnswerResult, VQAStrategyDetail
-from src.utils.enums import DocumentSplitterType, OutputFileType, VQAStrategyType
+from src.utils.enums import DocumentSplitterType, LogLevel, OutputFileType, VQAStrategyType
 from src.utils.logger import LoggerManager
 from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.visual_qa_strategies.base_vqa_strategy import BaseVQAStrategy
@@ -73,6 +73,27 @@ class VisualQAModel:
             logger_manager=logger_manager,
             **kwargs
         )
+
+        if logger_manager:
+            if self.__is_answer_well_formatted(
+                answer=model_answer_result.answer,
+                possible_options=possible_options
+            ):
+                if model_answer_result.answer == row['correct_option']:
+                    answer_validation_message = "CORRECT"
+                else:
+                    answer_validation_message = "INCORRECT"
+            else:
+                answer_validation_message = "INVALID"
+
+            log_message_elements = [
+                "---- Start of ANSWER VALIDATION section ----",
+                f"Actual Answer: {row['correct_option']}",
+                f"Model Answer: {model_answer_result.answer}",
+                f"{answer_validation_message} ANSWER",
+                "---- End of ANSWER VALIDATION section ----"
+            ]
+            logger_manager.log(level=LogLevel.INFO, message="\n\n".join(log_message_elements))
 
         if verbose:
             print(f"+ Answer for Question (ID: {row['index']}) generated.")

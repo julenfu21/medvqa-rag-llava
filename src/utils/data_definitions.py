@@ -1,5 +1,6 @@
-from dataclasses import dataclass, field, fields
+from dataclasses import asdict, dataclass, field, fields
 from itertools import product
+import json
 from pathlib import Path
 from typing import Any, Optional, Type
 
@@ -181,7 +182,12 @@ class VQAStrategyDetail:
             f"'{field_name}' cannot be None"
         )
 
-    def generate_output_filepath(self, root_folder: Path, output_file_type: OutputFileType) -> Path:
+    def generate_output_filepath(
+        self,
+        root_folder: Path,
+        output_file_type: OutputFileType,
+        question_id: Optional[int] = None
+    ) -> Path:
 
         def doc_splitter_attribute_to_path_elements(
             attribute_name: str,
@@ -217,9 +223,13 @@ class VQAStrategyDetail:
             'with_image' if self.use_image else 'no_image',
             self.vqa_strategy_type.value
         )
+        output_filename_ending_map = {
+            OutputFileType.JSON_FILE: f"evaluation.{OutputFileType.JSON_FILE.value}",
+            OutputFileType.LOG_FILE: f"evaluation/q{question_id}.{OutputFileType.LOG_FILE.value}"
+        }
         output_filename = (
-            f"{self.country}_{self.file_type}_{self.prompt_type.value}"
-            f"_evaluation.{output_file_type.value}"
+            f"{self.country}_{self.file_type}_{self.prompt_type.value}_"
+            f"{output_filename_ending_map[output_file_type]}"
         )
 
         relevant_docs_count_filepath = ""
@@ -259,6 +269,9 @@ class VQAStrategyDetail:
             output_filename
         )
 
+    def to_json_string(self, indent: int = 4) -> str:
+        filtered_attributes = {k: v for k, v in asdict(self).items() if v is not None}
+        return json.dumps(filtered_attributes, indent=indent, default=str)
 
 @dataclass
 class GeneralDocSplitterOptions:

@@ -3,8 +3,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from src.utils.data_definitions import LoggerConfig
-from src.utils.enums import LogLevel
+from src.utils.data_definitions import LoggerConfig, VQAStrategyDetail
+from src.utils.enums import LogLevel, OutputFileType
 
 
 class LoggerManager:
@@ -33,7 +33,7 @@ class LoggerManager:
         return self.__log_save_directory
 
     @property
-    def log_filepath(self) -> str:
+    def log_filepath(self) -> Path:
         return self.__log_filepath
 
     def __setup_logger(self) -> None:
@@ -54,13 +54,21 @@ class LoggerManager:
             print(f"Logger '{self.__logger_name}' already exists. Reusing existing logger.")
             self.__print_logger_info()
 
-    def create_new_log_file(self, log_filepath: Optional[Path] = None) -> None:
+    def create_new_log_file(
+        self,
+        vqa_strategy_detail: Optional[VQAStrategyDetail] = None,
+        question_id: Optional[int] = None
+    ) -> None:
         if not self.__logger_config.file_handler_enabled:
             print("File handler is disabled. Log files cannot be created!")
             return
 
-        if log_filepath:
-            self.__log_filepath = log_filepath
+        if vqa_strategy_detail:
+            self.__log_filepath = vqa_strategy_detail.generate_output_filepath(
+                root_folder=self.__log_save_directory,
+                output_file_type=OutputFileType.LOG_FILE,
+                question_id=question_id
+            )
             self.__log_filepath.parent.mkdir(parents=True, exist_ok=True)
         else:
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -81,6 +89,13 @@ class LoggerManager:
 
         print(f"New log file created for the '{self.__logger_name}' logger!")
         self.__print_logger_info()
+
+        log_message_elements = [
+            "---- Start of SPECIFIED OPTIONS section ----",
+            vqa_strategy_detail.to_json_string(),
+            "---- End of SPECIFIED OPTIONS section ----"
+        ]
+        self.log(level=LogLevel.INFO, message="\n\n".join(log_message_elements))
 
     def log(self, level: LogLevel, message: str) -> None:
         log_filepath = self.__log_filepath
