@@ -83,7 +83,7 @@ class LoggerManager:
             self.__logger.removeHandler(old_handler)
             old_handler.close()
 
-        file_handler = logging.FileHandler(self.__log_filepath)
+        file_handler = logging.FileHandler(filename=self.__log_filepath, mode="w")
         file_handler.setFormatter(self.__logger_formatter)
         self.__logger.addHandler(file_handler)
 

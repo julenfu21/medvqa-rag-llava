@@ -474,6 +474,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
                 self.__create_log_file(vqa_strategy_detail=vqa_strategy_detail)
 
             vqa_strategy = self.__vqa_strategies[vqa_strategy_detail.vqa_strategy_type]
+            vqa_strategy.prompt_type = self.__prompt_type_dropdown.widget.value
             if isinstance(vqa_strategy, BaseRagVQAStrategy):
                 vqa_strategy.relevant_docs_count = (
                     self.__relevant_documents_count_int_widget.widget.value
