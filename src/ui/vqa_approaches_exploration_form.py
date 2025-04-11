@@ -428,10 +428,25 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             f"{self.__country_dropdown.widget.value}_"
             f"{self.__file_type_dropdown.widget.value}"
         )
-        row = world_med_qa_v_dataset_management.get_dataset_row_by_id(
-            dataset=self._dataset[dataset_name],
-            question_id=self.__question_id_int_widget.widget.value
-        )
+        try:
+            question_id = self.__question_id_int_widget.widget.value
+            row = world_med_qa_v_dataset_management.get_dataset_row_by_id(
+                dataset=self._dataset[dataset_name],
+                question_id=question_id
+            )
+        except ValueError:
+            self._output_widget_manager.display_text_content(
+                content=f"""
+                ⚠️ Unable to find a question with ID: {question_id} ⚠️
+                
+                Make sure the ID exists in the {dataset_name} dataset subset.
+                """,
+                extra_css_style="color: #b71c1c; font-weight: bold;"
+            )
+            self.__visualize_specified_options(
+                output_widget_manager=self._options_output_widget_manager
+            )
+            return
 
         try:
             model_answer_result = self.__get_model_answer_result(row)
@@ -562,7 +577,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             extra_css_style="margin-bottom: 20px;"
         )
 
-    @staticmethod  
+    @staticmethod
     def __get_path_segments_from_log_filepath(log_filepath: Path) -> dict[str, str]:
         path_segments = log_filepath.parts
 
@@ -624,8 +639,8 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
     def __visualize_evaluation_commands(self) -> None:
         self._output_widget_manager.display_text_content(
             content=(
-                "You have not evaluated the LLaVA model with these options. This can be done "
-                "with one of the following commands:"
+                "You have not evaluated the LLaVA model with the options selected. This can be "
+                "done via one of the following commands:"
             ),
             extra_css_style="margin-bottom: 40px;"
         )
