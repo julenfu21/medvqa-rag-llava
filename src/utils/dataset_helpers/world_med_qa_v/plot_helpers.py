@@ -1,17 +1,12 @@
-import base64
 from collections import Counter
-from io import BytesIO
 from typing import Optional, Union
 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from IPython.display import display
-from PIL import Image
 from plotly.subplots import make_subplots
 
-from src.utils.data_definitions import ModelAnswerResult
-from src.utils.dataset_helpers.shared_plot_helpers import _display_formatted_section
 from src.utils.enums import VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
 
@@ -73,68 +68,6 @@ def display_pie_chart_on_correct_answer_distribution(
     )
 
     display(correct_answer_distribution_pie_chart)
-
-
-def visualize_qa_pair_row(
-    row: dict,
-    image_width: Optional[int] = None,
-    image_height: Optional[int] = None,
-    model_answer: ModelAnswerResult = None
-) -> None:
-    # Display row id
-    _display_formatted_section(
-        section_name="ID",
-        section_style="margin: 20px 0;",
-        section_content=str(row['index'])
-    )
-
-    # Display question
-    _display_formatted_section(
-        section_name="Question",
-        section_style="margin-bottom: 20px;",
-        section_content=row['question']
-    )
-
-    # Display context image
-    _display_formatted_section(
-        section_name="Context Image",
-        section_style="margin-bottom: 20px;",
-        section_content=""
-    )
-    _display_base64_image(
-        base64_image=row['image'],
-        width=image_width,
-        height=image_height
-    )
-
-    # Display possible answers marking the gold (and the predicted) option
-    formatted_options = []
-    possible_options = ['A', 'B', 'C', 'D']
-    for option in possible_options:
-        if option == row['correct_option']:
-            formatted_options.append(
-                f"<p style='color: rgb(0, 255, 0);'><b>{option}) {row[option]}</b>"
-            )
-        elif model_answer and option == model_answer.answer:
-            formatted_options.append(
-                f"<p style='color: rgb(255, 0, 0);'><b>{option}) {row[option]}</b>"
-            )
-        else:
-            formatted_options.append(f"<p>{option}) {row[option]}")
-    answer = "<br><br>" + "<br>".join(formatted_options)
-
-    _display_formatted_section(
-        section_name="Possible Answers",
-        section_style="margin-top: 30px;",
-        section_content=answer
-    )
-
-    if model_answer:
-        _display_formatted_section(
-            section_name="Model Answer",
-            section_style="margin: 30px 0;",
-            section_content=model_answer.answer
-        )
 
 
 def display_bar_chart_on_evaluation_results(
@@ -480,35 +413,6 @@ def display_evaluation_results_summary(
 # ====================
 # Private Functions
 # ====================
-
-
-def _display_base64_image(
-    base64_image: str,
-    width: Optional[int] = None,
-    height: Optional[int] = None
-) -> None:
-    image_data = base64.b64decode(base64_image)
-    image = Image.open(BytesIO(image_data))
-    resized_image = _resize_image(image, width, height)
-    display(resized_image)
-
-
-def _resize_image(
-    image: Image.Image,
-    width: Optional[int],
-    height: Optional[int]
-) -> Image.Image:
-    if width or height:
-        original_width, original_height = image.size
-
-        if width and not height:
-            height = int((width / original_width) * original_height)
-        elif height and not width:
-            width = int((height / original_height) * original_width)
-
-        image = image.resize((width, height), Image.Resampling.LANCZOS)
-
-    return image
 
 
 def _get_pretty_strategy_representation(

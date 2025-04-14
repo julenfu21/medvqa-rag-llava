@@ -14,13 +14,19 @@ def update_dependent_dropdown_values(
     dependent_dropdown.options = possible_options[main_dropdown_selected_value]
     dependent_dropdown.value = list(dependent_dropdown.options.values())[0]
 
-def update_dependent_int_widget_values(
+def update_dependent_int_widget_values_from_change(
     change: dict[str, Any],
     dependent_int_widget: widgets.BoundedIntText,
     possible_values: dict[Any, int]
 ) -> None:
     main_dropdown_selected_value = change['new']
     dependent_int_widget.max = possible_values[main_dropdown_selected_value]
+
+def update_dependent_int_widget_values(
+    dependent_int_widget: widgets.BoundedIntText,
+    max_value: int
+) -> None:
+    dependent_int_widget.max = max_value
 
 def update_dependent_widgets_state(
     dependent_widgets_config: list[DependentWidgetsConfig]

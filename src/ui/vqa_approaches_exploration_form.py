@@ -13,6 +13,7 @@ from src.ui.utils.widget_utils import (
     get_widget_value,
     update_dependent_dropdown_values,
     update_dependent_int_widget_values,
+    update_dependent_int_widget_values_from_change,
     update_dependent_widgets_state
 )
 from src.ui.widgets.clipboard_copy_widget import ClipboardCopyWidget
@@ -174,7 +175,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             description="Question ID:",
             initial_value=1,
             min_value=1,
-            max_value=100,
+            max_value=self.__get_max_question_id_for_dataset_split(),
             step=1
         )
         self.__vqa_strategy_type_dropdown = create_dropdown(
@@ -223,6 +224,13 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             ],
             layout=widgets.Layout(width="100%", overflow="visible")
         )
+
+    def __get_max_question_id_for_dataset_split(self) -> int:
+        dataset_name = (
+            f"{self.__country_dropdown.widget.value}_"
+            f"{self.__file_type_dropdown.widget.value}"
+        )
+        return max(self._dataset[dataset_name]['index'])
 
     def __create_rag_options_layout(self) -> widgets.VBox:
         self.__relevant_documents_count_int_widget = create_int_widget(
@@ -322,6 +330,14 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             names='value'
         )
 
+        self.__country_dropdown.widget.observe(
+            lambda _: update_dependent_int_widget_values(
+                dependent_int_widget=self.__question_id_int_widget.widget,
+                max_value=self.__get_max_question_id_for_dataset_split()
+            ),
+            names='value'
+        )
+
         self.__vqa_strategy_type_dropdown.widget.observe(
             lambda change: update_dependent_dropdown_values(
                 change=change,
@@ -408,7 +424,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             names='value'
         )
         self.__document_splitter_type_dropdown.widget.observe(
-            lambda change: update_dependent_int_widget_values(
+            lambda change: update_dependent_int_widget_values_from_change(
                 change=change,
                 dependent_int_widget=self.__token_count_int_widget.widget,
                 possible_values=dict(zip(
