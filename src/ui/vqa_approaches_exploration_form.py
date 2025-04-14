@@ -424,6 +424,22 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         self._output_widget_manager.clear_content()
         self._options_output_widget_manager.clear_content()
 
+        vqa_strategy_type = self.__vqa_strategy_type_dropdown.widget.value
+        if vqa_strategy_type in (VQAStrategyType.RAG_IMG, VQAStrategyType.RAG_DB_RERANKER):
+            self._output_widget_manager.display_text_content(
+                content=f"""
+                ⚠️ VQA Strategy Not Implemented ⚠️
+                
+                The selected VQA strategy {prettify_strategy_name(vqa_strategy_type.value)} \
+                is not supported yet. Try with a different strategy.
+                """,
+                extra_css_style="color: #b71c1c; font-weight: bold;"
+            )
+            self.__visualize_specified_options(
+                output_widget_manager=self._options_output_widget_manager
+            )
+            return
+
         dataset_name = (
             f"{self.__country_dropdown.widget.value}_"
             f"{self.__file_type_dropdown.widget.value}"
