@@ -4,6 +4,7 @@ from typing import Optional, Union
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from datasets import Dataset
 from IPython.display import display
 from plotly.subplots import make_subplots
 
@@ -11,11 +12,11 @@ from src.utils.enums import VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
-def display_pie_chart_on_correct_answer_distribution(
-    data_frame: pd.DataFrame,
+def display_correct_answer_distribution_on_subset(
     title: str,
+    subset_data: Dataset
 ) -> None:
-    correct_answer_distribution = Counter(data_frame['correct_option'])
+    correct_answer_distribution = Counter(subset_data['correct_option'])
     correct_answer_distribution_df = pd.DataFrame({
         "correct_option": correct_answer_distribution.keys(),
         "count": correct_answer_distribution.values()
@@ -68,6 +69,91 @@ def display_pie_chart_on_correct_answer_distribution(
     )
 
     display(correct_answer_distribution_pie_chart)
+
+
+def display_correct_answer_distribution_on_full_dataset(
+    full_dataset: dict[str, Dataset],
+    title: str
+) -> None:
+    english_subset = {
+        subset_name: subset_data
+        for subset_name, subset_data in full_dataset.items() if subset_name.endswith("english")
+    }
+
+    rows = 1
+    columns = 4
+    correct_answer_distribution_figure = make_subplots(
+        rows=rows,
+        cols=columns,
+        specs=[[{'type': 'domain'} for _ in range(columns)] for _ in range(rows)],
+        subplot_titles=[f"<b>{subset_name}</b> Subset" for subset_name in english_subset.keys()]
+    )
+
+    for index, subset_data in enumerate(english_subset.values()):
+        answer_distribution_pie_chart = _create_pie_chart_for_subset(subset_data=subset_data)
+
+        row = 1
+        column = index + 1
+        correct_answer_distribution_figure.add_trace(
+            trace=answer_distribution_pie_chart.data[0], row=row, col=column
+        )
+
+    correct_answer_distribution_figure.update_layout(
+        legend={
+            'title': 'Possible Answers',
+            'orientation': 'h',
+            'yanchor': 'bottom',
+            'y': -0.2,
+            'xanchor': 'center',
+            'x': 0.5,
+            'font': {'size': 14}
+        },
+        title={
+            'text': title,
+            'x': 0.5,
+            'font': {
+                'size': 24,
+                'color': "black"
+            }
+        },
+        margin={'l': 30, 'r': 30}
+    )
+
+    display(correct_answer_distribution_figure)
+
+
+def _create_pie_chart_for_subset(subset_data: Dataset) -> go.Figure:
+    correct_answer_distribution = Counter(subset_data['correct_option'])
+    correct_answer_distribution_df = pd.DataFrame({
+        "correct_option": correct_answer_distribution.keys(),
+        "count": correct_answer_distribution.values()
+    })
+    correct_answer_distribution_df = correct_answer_distribution_df.sort_values('correct_option')
+
+    pie_chart = px.pie(
+        data_frame=correct_answer_distribution_df,
+        names='correct_option',
+        values='count',
+        hole=0.20,
+        category_orders={
+            "correct_option": sorted(correct_answer_distribution.keys())
+        },
+        color='correct_option',
+        color_discrete_sequence=px.colors.qualitative.Pastel
+    )
+
+    pie_chart.update_traces(
+        textposition='inside',
+        textinfo='percent+label+value',
+        pull=[0.03] * len(correct_answer_distribution_df),
+        textfont={
+            "size": 14,
+            "color": 'black',
+            "weight": 'bold'
+        }
+    )
+
+    return pie_chart
 
 
 def display_bar_chart_on_evaluation_results(
