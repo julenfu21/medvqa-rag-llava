@@ -98,7 +98,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         return """
         This interactive form lets you configure and explore different <b>Visual Question Answering (VQA) strategies</b> by adjusting various options. You can:
 
-        <span style='margin-left: 30px;'>- Set <b>key inputs</b>, like country, file type, question ID, and VQA strategy.</span>
+        <span style='margin-left: 30px;'>- Set <b>key inputs</b>, such as country, file type, question ID, and VQA strategy.</span>
 
         <span style='margin-left: 30px;'>- <b>Customize document processing</b>, leveraging different splitting techniques.</span>
 

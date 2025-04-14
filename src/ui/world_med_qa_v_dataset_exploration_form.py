@@ -23,12 +23,20 @@ class WorldMedQAVDatasetExplorationForm(BaseInteractiveForm):
         self.__use_image_checkbox = None
 
         # Create Form
-        super().__init__(form_title="VQA Approaches Exploration Form", dataset=dataset)
+        super().__init__(form_title="WorldMedQA-V Dataset Exploration Form", dataset=dataset)
 
 
     def _get_initial_output_widget_text(self) -> str:
         return """
-        INITIAL OUTPUT WIDGET TEXT
+        This interactive form lets you explore the <b>WorldMedQA-V Dataset</b> by adjusting various options. You can:
+
+        <span style='margin-left: 30px;'>- Set <b>key inputs</b>, such as country, file type and question ID.</span>
+
+        <span style='margin-left: 30px;'>- <b>Toggle context image display</b> to view any associated visual information that might be provided to a model.</span>
+
+        Selected options are displayed in an organized format, making it easy to explore different dataset subsets.
+
+        <i>Note: You can revisit this information anytime by clicking the reset button.</i>
         """
 
 
