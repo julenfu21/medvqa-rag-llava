@@ -31,8 +31,13 @@ def get_qa_pair_in_json(dataset: Dataset, question_id: int) -> None:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Script to visualize a QA pair in JSON format given a question ID."
+            "Script to visualize a QA pair from the WorldMedQA-V Dataset in JSON format given a "
+            "question ID."
         ))
+
+    parser.add_argument("-v", "--verbose", action="store_true",
+                        help="Display argument values before execution")
+
     parser.add_argument("--dataset_dir",
                         type=Path, default=Path("data/WorldMedQA-V"),
                         help="Directory containing the dataset")
@@ -53,6 +58,13 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     disable_progress_bars()
     args = parse_args()
+
+    if args.verbose:
+        print("\nArguments received:")
+        for arg_name, arg_value in vars(args).items():
+            if arg_value is not None:
+                print(f"\t--{arg_name} ({type(arg_value).__name__}): {arg_value}")
+        print()
 
     world_med_qa_v_dataset = world_med_qa_v_dataset_management.load_vqa_dataset(
         data_path=args.dataset_dir,
