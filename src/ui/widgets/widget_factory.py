@@ -83,3 +83,21 @@ def create_button(
             "font_size": "14px"
         }
     )
+
+def create_text_field(
+    description: str,
+    placeholder: str,
+    disabled: bool = False,
+    initial_value: str = ""
+) -> WidgetWrapper:
+    return WidgetWrapper(
+        widget=widgets.Text(
+            description=description,
+            value=initial_value,
+            placeholder=placeholder,
+            layout=widgets.Layout(width="100%"),
+            style={"description_width": "33%"},
+            disabled=disabled
+        ),
+        initial_value=initial_value
+    )

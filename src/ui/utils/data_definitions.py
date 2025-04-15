@@ -12,7 +12,7 @@ class DependentWidgetsConfig:
 
 @dataclass
 class WidgetWrapper:
-    widget: Union[widgets.Dropdown, widgets.BoundedIntText, widgets.Checkbox]
+    widget: Union[widgets.Dropdown, widgets.BoundedIntText, widgets.Checkbox, widgets.Text]
     initial_value: Any
 
     def reset_widget(self) -> None:

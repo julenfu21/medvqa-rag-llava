@@ -140,3 +140,30 @@ def visualize_options_subset(
         content="\n".join(option_subset_rows),
         extra_css_style="margin-left: 60px;"
     )
+
+
+def visualize_wikimed_document(
+    output_widget_manager: OutputWidgetManager,
+    row: dict,
+    document_text: str
+) -> None:
+    # Display row id
+    output_widget_manager.display_text_content(
+        content=row['_id'],
+        extra_css_style="margin-bottom: 20px",
+        title="Document ID"
+    )
+
+    # Display document title
+    output_widget_manager.display_text_content(
+        content=row['title'],
+        extra_css_style="margin-bottom: 20px",
+        title="Document Title"
+    )
+
+    # Display split text
+    output_widget_manager.display_text_content(
+        content=f"<p>{document_text}</p>",
+        extra_css_style="margin-bottom: 20px",
+        title="Text"
+    )

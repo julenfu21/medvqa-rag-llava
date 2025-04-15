@@ -4,7 +4,6 @@ import time
 
 import ipywidgets as widgets
 import pyperclip
-from IPython.display import display
 
 from src.utils.enums import CommandType
 from src.ui.widgets.widget_factory import create_button

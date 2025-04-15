@@ -12,9 +12,10 @@ from src.ui.widgets.widget_factory import create_button
 
 class BaseInteractiveForm(ABC):
 
-    def __init__(self, form_title: str, dataset: dict[str, Dataset]) -> None:
+    def __init__(self, form_title: str, dataset: dict[str, Dataset], options_layout_width: int = 50) -> None:
         self.__form_title = form_title
         self._dataset = dataset
+        self.__options_layout_width = options_layout_width
 
         # Main Layout Elements
         self.__root_widget = None
@@ -54,7 +55,7 @@ class BaseInteractiveForm(ABC):
         )
         self._output_widget_manager = OutputWidgetManager(
             initial_content=self._get_initial_output_widget_text(),
-            width="50%"
+            width=f"{100 - self.__options_layout_width}%"
         )
         self.__options_layout = self.__create_options_layout()
 
@@ -95,7 +96,7 @@ class BaseInteractiveForm(ABC):
                 self._options_output_widget_manager.output_widget
             ],
             layout=widgets.Layout(
-                width="50%",
+                width=f"{self.__options_layout_width}%",
                 overflow="visible",
                 display="flex",
                 flex_flow="column",

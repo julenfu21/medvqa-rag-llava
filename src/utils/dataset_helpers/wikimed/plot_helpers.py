@@ -1,13 +1,9 @@
-import random
-from typing import Any
-
 import pandas as pd
 import plotly.express as px
 from IPython.display import display
 
 from src.utils.enums import WikiMedRepresentationMode
 from src.utils.dataset_helpers.wikimed.dataset_management import calculate_summary_statistics
-from src.utils.dataset_helpers.shared_plot_helpers import _display_formatted_section
 
 
 def display_boxplot_on_column(data_frame: pd.DataFrame, title: str, x_column: str) -> None:
@@ -157,79 +153,3 @@ def display_bar_chart_on_documents_length(
     )
 
     display(bar_chart)
-
-
-def visualize_row(
-    row: dict[str, Any]
-) -> None:
-    _display_formatted_section(
-        section_name="ID",
-        section_style="margin: 20px 0;",
-        section_content=row['_id']
-    )
-
-    _display_formatted_section(
-        section_name="Title",
-        section_style="margin-bottom: 20px;",
-        section_content=row['title']
-    )
-
-    _display_formatted_section(
-        section_name="Split",
-        section_style="margin-bottom: 20px;",
-        section_content=row['split']
-    )
-
-    _display_text_with_mentions(
-        row_text=row['text'],
-        row_mentions=row['mentions']
-    )
-
-
-# ====================
-# Private Functions
-# ====================
-
-
-def _display_text_with_mentions(
-    row_text: str,
-    row_mentions: dict[str, Any]
-) -> None:
-
-    def generate_random_color() -> tuple[int, int, int]:
-        r, g, b = random.choices(population=range(256), k=3)
-        return r, g, b
-
-    def calculate_luminance(r: int, g: int, b: int) -> float:
-        return 0.2126 * r + 0.7152 * g + 0.0722 * b
-
-    highlighted_text = ""
-    current_index = 0
-
-    for row_mention in row_mentions:
-        link_id = row_mention['link_id']
-        start_offset = row_mention['start_offset']
-        end_offset = row_mention['end_offset']
-
-        r, g, b = generate_random_color()
-        background_color = f"rgb({r}, {g}, {b})"
-        background_luminance = calculate_luminance(r, g, b)
-        text_color = "white" if background_luminance < 128 else "black"
-
-        highlighted_text += row_text[current_index:start_offset]
-        highlighted_text += (
-            f"<span style='background-color: {background_color}; "
-            f"font-weight: bold; color: {text_color};' "
-            f"title='link_id: {link_id}'>"
-            f"{row_text[start_offset:end_offset]}"
-            "</span>"
-        )
-        current_index = end_offset
-
-    highlighted_text += row_text[current_index:]
-
-    _display_formatted_section(
-        section_name="Text",
-        section_style="margin-bottom: 20px;",
-        section_content=f"<br><br>{highlighted_text}"
-    )

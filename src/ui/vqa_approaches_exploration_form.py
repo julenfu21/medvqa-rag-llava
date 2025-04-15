@@ -41,6 +41,7 @@ from src.utils.string_formatting_helpers import (
     prettify_document_splitter_name,
     prettify_strategy_name
 )
+from src.utils.text_splitters.base_splitter import BaseSplitter
 from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
 from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
 from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
@@ -646,7 +647,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         return path_segments_with_names
 
     @staticmethod
-    def __get_doc_splitter_from_options(doc_splitter_options: DocSplitterOptions) -> None:
+    def __get_doc_splitter_from_options(doc_splitter_options: DocSplitterOptions) -> BaseSplitter:
         if not doc_splitter_options:
             return None
 
