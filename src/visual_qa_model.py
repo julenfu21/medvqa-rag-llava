@@ -267,7 +267,11 @@ class VisualQAModel:
             row_index = row["index"]
             gold_options[row_index] = row["correct_option"]
             model_answer_result = self.generate_answer_from_row(
-                row, possible_options, use_image, **kwargs
+                row=row,
+                possible_options=possible_options,
+                verbose=False,
+                use_image=use_image,
+                **kwargs
             )
             predicted_options[row_index] = model_answer_result.answer
 
