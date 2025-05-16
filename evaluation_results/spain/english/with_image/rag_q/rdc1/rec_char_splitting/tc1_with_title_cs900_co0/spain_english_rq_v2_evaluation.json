@@ -1,0 +1,1884 @@
+{
+    "accuracy": 0.28,
+    "percentage_well_formatted": 1.0,
+    "mean_relevant_docs_used": 1.0,
+    "mean_original_docs_length": 10825.552,
+    "mean_shortened_docs_length": 677.336,
+    "predictions": {
+        "1": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bariatric surgery",
+                    "original_doc_length": 22760,
+                    "shortened_doc_length": 592,
+                    "shortened_doc_content": "Bariatric surgery\n\nBariatric surgery (or weight loss surgery) includes a variety of procedures performed on people who are obese. Long term weight loss through Standard of Care procedures (Roux en Y Bypass, Sleeve Gastrectomy, and Biliopancreatic Diversion with Duodenal Switch) is largely achieved by altering gut hormone levels that are responsible for hunger and satiety, leading to a new hormonal weight set point . Bariatric surgery is a hormonal surgery in these procedures, for which the alteration in gut hormones develops as a result of the procedure's restriction and malabsorption."
+                }
+            ],
+            "mean_original_docs_length": 22760.0,
+            "mean_shortened_docs_length": 592.0
+        },
+        "2": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "original_doc_length": 7128,
+                    "shortened_doc_length": 488,
+                    "shortened_doc_content": "Esophagogastroduodenoscopy\n\nEsophagogastroduodenoscopy (EGD; ), also called by various other names, is a diagnostic endoscopic procedure that visualizes the upper part of the gastrointestinal tract down to the duodenum. It is considered a minimally invasive procedure since it does not require an incision into one of the major body cavities and does not require any significant recovery after the procedure (unless sedation or anesthesia has been used). However, a sore throat is common."
+                }
+            ],
+            "mean_original_docs_length": 7128.0,
+            "mean_shortened_docs_length": 488.0
+        },
+        "3": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypokalemic periodic paralysis",
+                    "original_doc_length": 10202,
+                    "shortened_doc_length": 930,
+                    "shortened_doc_content": "Hypokalemic periodic paralysis\n\nHypokalemic periodic paralysis (hypoKPP) is a rare, autosomal dominant channelopathy characterized by muscle weakness or paralysis when there is a fall in potassium levels in the blood. Not in all cases. Many levels stay the same and should not be used as a guideline for diagnosis of an episode. Individuals with this mutation, attacks sometimes begin in adolescence and most commonly occur with individual triggers such as rest after strenuous exercise (attacks during exercise are rare), high carbohydrate meals, meals with high sodium content, sudden changes in temperature, and even excitement, noise, flashing lights cold temperatures and stress. Weakness may be mild and limited to certain muscle groups, or more severe full-body paralysis. During an attack reflexes may be decreased or absent. Attacks may last for a few hours or persist for several days. Recovery is usually sudden when it"
+                }
+            ],
+            "mean_original_docs_length": 10202.0,
+            "mean_shortened_docs_length": 930.0
+        },
+        "4": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatectomy",
+                    "original_doc_length": 4076,
+                    "shortened_doc_length": 564,
+                    "shortened_doc_content": "Hepatectomy\n\nHepatectomy is the surgical resection (removal of all or part) of the liver. While the term is often employed for the removal of the liver from a liver transplant donor, this article will focus on partial resections of hepatic tissue and hepatoportoenterostomy.\n\nThe first hepatectomies were reported by Dr. Ichio Honjo (1913\u20131987) of (Kyoto University) in 1949, and Dr. Jean-Louis Lortat-Jacob (1908\u20131992) of France in 1952. In the latter case, the patient was a 58-year-old woman diagnosed with colorectal cancer which had metastasized to the liver."
+                }
+            ],
+            "mean_original_docs_length": 4076.0,
+            "mean_shortened_docs_length": 564.0
+        },
+        "5": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mouth assessment",
+                    "original_doc_length": 5140,
+                    "shortened_doc_length": 909,
+                    "shortened_doc_content": "Mouth assessment\n\nA mouth assessment is performed as part of a patient's health assessment. The mouth is the beginning of the digestive system and a substantial part of the respiratory tract. Before an assessment of the mouth, patient is sometimes advised to remove any dentures. The assessment begins with a dental-health questionnaire, including questions about toothache, hoarseness, dysphagia(difficulty swallowing), altered taste or a frequent sore throat, current and previous tobacco use and alcohol consumption and any sores, lesions or bleeding of the gums.\n\nThe lips are normally symmetrical, pink, smooth, and moist. There should be no growths, lumps, or discoloration of the tissue. Abnormal findings are asymmetricality, cyanosis, a cherry-red or pale color or dryness. Diseases include mucocele, aphthous ulcer, angular stomatitis, carcinoma, cleft lip, leukoplakia, herpes simplex and chelitis."
+                }
+            ],
+            "mean_original_docs_length": 5140.0,
+            "mean_shortened_docs_length": 909.0
+        },
+        "6": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lamotrigine",
+                    "original_doc_length": 18391,
+                    "shortened_doc_length": 408,
+                    "shortened_doc_content": "Lamotrigine\n\nLamotrigine, sold as the brand name Lamictal among others, is an anticonvulsant medication used to treat epilepsy and bipolar disorder. For epilepsy, this includes focal seizures, tonic-clonic seizures, and seizures in Lennox-Gastaut syndrome. In bipolar disorder, it is used to treat acute episodes of depression and rapid cycling in bipolar type II and to prevent recurrence in bipolar type I."
+                }
+            ],
+            "mean_original_docs_length": 18391.0,
+            "mean_shortened_docs_length": 408.0
+        },
+        "7": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Reflux nephropathy",
+                    "original_doc_length": 1754,
+                    "shortened_doc_length": 873,
+                    "shortened_doc_content": "Reflux nephropathy\n\nReflux nephropathy is kidney damage (nephropathy) due to urine flowing backward (reflux) from the bladder toward the kidneys; the latter is called vesicoureteral reflux (VUR). Longstanding VUR can result in small and scarred kidneys during the first five years of life in affected children. The end results of reflux nephropathy can include high blood pressure, excessive protein loss in the urine, and eventually kidney failure.\n\nWhen reflux nephropathy is suspected as a cause of kidney disease, other conditions to consider include chronic pyelonephritis, obstructive uropathy, and analgesic overuse.\n\nThe term \"reflux nephropathy\" was introduced in 1973.\n\nThe symptoms of reflux nephropathy are comparable to nephrotic syndrome and infection of the urinary tract, though some individuals may not exhibit any evidence (symptom) of reflux nephropathy."
+                }
+            ],
+            "mean_original_docs_length": 1754.0,
+            "mean_shortened_docs_length": 873.0
+        },
+        "8": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Non-Hodgkin lymphoma",
+                    "original_doc_length": 5311,
+                    "shortened_doc_length": 906,
+                    "shortened_doc_content": "Non-Hodgkin lymphoma\n\nNon-Hodgkin lymphoma (NHL) is a group of blood cancers that includes all types of lymphoma except Hodgkin lymphomas. Symptoms include enlarged lymph nodes, fever, night sweats, weight loss and tiredness. Other symptoms may include bone pain, chest pain or itchiness. Some forms are slow-growing, while others are fast-growing.\nLymphomas are types of cancer that develop from lymphocytes, a type of white blood cell. Risk factors include poor immune function, autoimmune diseases, \"Helicobacter pylori\" infection, hepatitis C, obesity and Epstein\u2013Barr virus infection. The World Health Organization (WHO) classifies lymphomas into five major groups, including one for Hodgkin's lymphoma. Within the four groups for NHL, there are over 60 specific types of lymphoma. Diagnosis is by examination of a bone marrow or lymph node biopsy. Medical imaging is done to help with cancer staging."
+                }
+            ],
+            "mean_original_docs_length": 5311.0,
+            "mean_shortened_docs_length": 906.0
+        },
+        "9": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Early pregnancy bleeding",
+                    "original_doc_length": 2418,
+                    "shortened_doc_length": 605,
+                    "shortened_doc_content": "Early pregnancy bleeding\n\nEarly pregnancy bleeding refers to bleeding before 24 weeks of gestational age. Complications may include hemorrhagic shock. Concerns are increased in those who have had a loss of consciousness, are short of breath, or have pain in their shoulder.\nCommon causes include ectopic pregnancy and threatened miscarriage. Most miscarriages occur before 12 weeks gestation age. Other causes include implantation bleeding, gestational trophoblastic disease, polyps, and cervical cancer. Tests to determine the underlying cause usually include a speculum examination, ultrasound, and hCG."
+                }
+            ],
+            "mean_original_docs_length": 2418.0,
+            "mean_shortened_docs_length": 605.0
+        },
+        "11": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adamantinoma",
+                    "original_doc_length": 1651,
+                    "shortened_doc_length": 892,
+                    "shortened_doc_content": "Adamantinoma\n\nAdamantinoma (from the Greek word \"adamantinos\", meaning \"very hard\") is a rare bone cancer, making up less than 1% of all bone cancers. It almost always occurs in the bones of the lower leg and involves both epithelial and osteofibrous tissue.\n\nThe condition was first described by Fischer in 1913.\n\nPatients typically present with swelling with or without pain. The slow-growing tumor predominantly arises in long bones in a subcortical location (95% in the tibia or fibula). Most commonly, patients are in their second or third decade, but adamantinoma can occur over a wide age range.\n\nBenign osteofibrous dysplasia may be a precursor of adamantinoma or a regressive phase of adamantinoma.\n\nHistologically, islands of epithelial cells are found in a fibrous stroma. The tumor is typically well-demarcated, osteolytic and eccentric, with cystic zones resembling soap bubbles."
+                }
+            ],
+            "mean_original_docs_length": 1651.0,
+            "mean_shortened_docs_length": 892.0
+        },
+        "12": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "Acute abdomen\n\nAn acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment.\n\nThe differential diagnoses of acute abdomen include:"
+                }
+            ],
+            "mean_original_docs_length": 4369.0,
+            "mean_shortened_docs_length": 260.0
+        },
+        "13": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Atrial fibrillation",
+                    "original_doc_length": 45002,
+                    "shortened_doc_length": 651,
+                    "shortened_doc_content": "Atrial fibrillation\n\nAtrial fibrillation (AF or A-fib) is an abnormal heart rhythm (arrhythmia) characterized by rapid and irregular beating of the atrial chambers of the heart. It often begins as short periods of abnormal beating which become longer or continuous over time. It may also start as other forms of arrhythmia such as atrial flutter that then transform into AF. Often episodes have no symptoms. Occasionally there may be heart palpitations, fainting, lightheadedness, shortness of breath, or chest pain. The disease is associated with an increased risk of heart failure, dementia, and stroke. It is a type of supraventricular tachycardia."
+                }
+            ],
+            "mean_original_docs_length": 45002.0,
+            "mean_shortened_docs_length": 651.0
+        },
+        "14": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 910,
+                    "shortened_doc_content": "Respiratory examination\n\nA respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination.\n\nThe four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest.\n\nAfter positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. \nIn order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields. These fields are intended to correlate with the lung lobes and are thus tested on the anterior (front) and posterior (back) chest walls."
+                }
+            ],
+            "mean_original_docs_length": 8688.0,
+            "mean_shortened_docs_length": 910.0
+        },
+        "15": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tuberculosis diagnosis",
+                    "original_doc_length": 19023,
+                    "shortened_doc_length": 534,
+                    "shortened_doc_content": "Tuberculosis diagnosis\n\nTuberculosis is diagnosed by finding \"Mycobacterium tuberculosis\" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it.\n\nA complete medical evaluation for tuberculosis (TB) must include a medical history, a physical examination, a chest X-ray and microbiological examination (of sputum or some other appropriate sample). It may also include a tuberculin skin test, other scans and X-rays, surgical biopsy."
+                }
+            ],
+            "mean_original_docs_length": 19023.0,
+            "mean_shortened_docs_length": 534.0
+        },
+        "16": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "Acute abdomen\n\nAn acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment.\n\nThe differential diagnoses of acute abdomen include:"
+                }
+            ],
+            "mean_original_docs_length": 4369.0,
+            "mean_shortened_docs_length": 260.0
+        },
+        "17": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rotator cuff tear",
+                    "original_doc_length": 40747,
+                    "shortened_doc_length": 720,
+                    "shortened_doc_content": "Rotator cuff tear\n\nA rotator cuff tear is an injury of one or more of the tendons or muscles of the rotator cuff of the shoulder. Symptoms may include shoulder pain, which is often worse with movement, or weakness. This may limit people\u2019s ability to brush their hair or put on clothing. Clicking may also occur with movement of the arm.\nTears may occur as the result of a sudden force or gradually over time. Risk factors include certain repetitive activities, smoking, and a family history of the condition. Diagnosis is based on symptoms, examination, and medical imaging. The rotator cuff is made up of the supraspinatus, infraspinatus, teres minor, and subscapularis. The supraspinatus is the most commonly affected."
+                }
+            ],
+            "mean_original_docs_length": 40747.0,
+            "mean_shortened_docs_length": 720.0
+        },
+        "18": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Coronary artery disease",
+                    "original_doc_length": 21318,
+                    "shortened_doc_length": 842,
+                    "shortened_doc_content": "Coronary artery disease\n\nCoronary artery disease (CAD), also known as coronary heart disease (CHD) or ischemic heart disease (IHD), involves the reduction of blood flow to the heart muscle due to build-up of plaque in the arteries of the heart. It is the most common of the cardiovascular diseases. Types include stable angina, unstable angina, myocardial infarction, and sudden cardiac death. A common symptom is chest pain or discomfort which may travel into the shoulder, arm, back, neck, or jaw. Occasionally it may feel like heartburn. Usually symptoms occur with exercise or emotional stress, last less than a few minutes, and improve with rest. Shortness of breath may also occur and sometimes no symptoms are present. In many cases, the first sign is a heart attack. Other complications include heart failure or an abnormal heartbeat."
+                }
+            ],
+            "mean_original_docs_length": 21318.0,
+            "mean_shortened_docs_length": 842.0
+        },
+        "19": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Polymyalgia rheumatica",
+                    "original_doc_length": 6990,
+                    "shortened_doc_length": 714,
+                    "shortened_doc_content": "Polymyalgia rheumatica\n\nPolymyalgia rheumatica (PMR) is a syndrome with pain or stiffness, usually in the neck, shoulders, upper arms, and hips, but which may occur all over the body. The pain can be very sudden, or can occur gradually over a period. Most people with PMR wake up in the morning with pain in their muscles; however, cases have occurred in which the person has developed the pain during the evenings or has pain and stiffness all day long.\nPeople who have polymyalgia rheumatica may also have temporal arteritis, an inflammation of blood vessels in the face which can cause blindness if not treated quickly. The pain and stiffness can result in a lowered quality of life, and can lead to depression."
+                }
+            ],
+            "mean_original_docs_length": 6990.0,
+            "mean_shortened_docs_length": 714.0
+        },
+        "20": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Angiomyolipoma",
+                    "original_doc_length": 8728,
+                    "shortened_doc_length": 818,
+                    "shortened_doc_content": "Angiomyolipoma\n\nAngiomyolipomas are the most common benign tumour of the kidney. Although regarded as benign, angiomyolipomas may grow such that kidney function is impaired or the blood vessels may dilate and burst, leading to bleeding.\nAngiomyolipomas are strongly associated with the genetic disease tuberous sclerosis, in which most individuals have several angiomyolipomas affecting both kidneys. They are also commonly found in women with the rare lung disease lymphangioleiomyomatosis. Angiomyolipomas are less commonly found in the liver and rarely in other organs. Whether associated with these diseases or sporadic, angiomyolipomas are caused by mutations in either the \"TSC1\" or \"TSC2 \"genes, which govern cell growth and proliferation. They are composed of blood vessels, smooth muscle cells, and fat cells."
+                }
+            ],
+            "mean_original_docs_length": 8728.0,
+            "mean_shortened_docs_length": 818.0
+        },
+        "21": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Low back pain",
+                    "original_doc_length": 34094,
+                    "shortened_doc_length": 590,
+                    "shortened_doc_content": "Low back pain\n\nLow back pain (LBP) is a common disorder involving the muscles, nerves, and bones of the back. Pain can vary from a dull constant ache to a sudden sharp feeling. Low back pain may be classified by duration as acute (pain lasting less than 6 weeks), sub-chronic (6 to 12 weeks), or chronic (more than 12 weeks). The condition may be further classified by the underlying cause as either mechanical, non-mechanical, or referred pain. The symptoms of low back pain usually improve within a few weeks from the time they start, with 40\u201390% of people completely better by six weeks."
+                }
+            ],
+            "mean_original_docs_length": 34094.0,
+            "mean_shortened_docs_length": 590.0
+        },
+        "22": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cholecystitis",
+                    "original_doc_length": 13634,
+                    "shortened_doc_length": 513,
+                    "shortened_doc_content": "Cholecystitis\n\nCholecystitis is inflammation of the gallbladder. Symptoms include right upper abdominal pain, nausea, vomiting, and occasionally fever. Often gallbladder attacks (biliary colic) precede acute cholecystitis. The pain lasts longer in cholecystitis than in a typical gallbladder attack. Without appropriate treatment, recurrent episodes of cholecystitis are common. Complications of acute cholecystitis include gallstone pancreatitis, common bile duct stones, or inflammation of the common bile duct."
+                }
+            ],
+            "mean_original_docs_length": 13634.0,
+            "mean_shortened_docs_length": 513.0
+        },
+        "23": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Open fracture",
+                    "original_doc_length": 11704,
+                    "shortened_doc_length": 883,
+                    "shortened_doc_content": "Open fracture\n\nOpen fracture is a type of bone fracture in orthopedics, frequently caused by high energy trauma. It is a bone fracture associated with a break in the skin continuity which can cause complications such as infection, malunion, and nonunion. Gustilo open fracture classification is the most commonly used method to classify open fractures, to guide treatment and to predict clinical outcomes. Advanced trauma life support is the first line of action in dealing with open fractures and to rule out other life-threatening condition in cases of trauma. Cephalosporins are generally the first line of antibiotics. The antibiotics are continued for 24 hours to minimize the risk of infections. Therapeutic irrigation, wound debridement, early wound closure and bone fixation are the main management of open fractures. All these actions aimed to reduce the risk of infections."
+                }
+            ],
+            "mean_original_docs_length": 11704.0,
+            "mean_shortened_docs_length": 883.0
+        },
+        "24": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Blood pressure measurement",
+                    "original_doc_length": 17017,
+                    "shortened_doc_length": 891,
+                    "shortened_doc_content": "Blood pressure measurement\n\nArterial blood pressure is most commonly measured via a sphygmomanometer, which historically used the height of a column of mercury to reflect the circulating pressure. Blood pressure values are generally reported in millimetres of mercury (mmHg), though aneroid and electronic devices do not contain mercury.\n\nFor each heartbeat, blood pressure varies between systolic and diastolic pressures. Systolic pressure is peak pressure in the arteries, which occurs near the end of the cardiac cycle when the ventricles are contracting. Diastolic pressure is minimum pressure in the arteries, which occurs near the beginning of the cardiac cycle when the ventricles are filled with blood. An example of normal measured values for a resting, healthy adult human is 120\u00a0mmHg systolic and 80\u00a0mmHg diastolic (written as 120/80\u00a0mmHg, and spoken as \"one-twenty over eighty\")."
+                }
+            ],
+            "mean_original_docs_length": 17017.0,
+            "mean_shortened_docs_length": 891.0
+        },
+        "25": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pleurisy",
+                    "original_doc_length": 15237,
+                    "shortened_doc_length": 901,
+                    "shortened_doc_content": "Pleurisy\n\nPleurisy, also known as pleuritis, is inflammation of the membranes that surround the lungs and line the chest cavity (pleurae). This can result in a sharp chest pain while breathing. Occasionally the pain may be a constant dull ache. Other symptoms may include shortness of breath, cough, fever or weight loss, depending on the underlying cause.\nThe most common cause is a viral infection. Other causes include pneumonia, pulmonary embolism, autoimmune disorders, lung cancer, following heart surgery, pancreatitis, chest trauma, and asbestosis. Occasionally the cause remains unknown. The underlying mechanism involves the rubbing together of the pleurae instead of smooth gliding. Other conditions that can produce similar symptoms include pericarditis, heart attack, cholecystitis, and pneumothorax. Diagnostic testing may include a chest X-ray, electrocardiogram (ECG), and blood tests."
+                }
+            ],
+            "mean_original_docs_length": 15237.0,
+            "mean_shortened_docs_length": 901.0
+        },
+        "26": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Alzheimer's disease",
+                    "original_doc_length": 52526,
+                    "shortened_doc_length": 768,
+                    "shortened_doc_content": "Alzheimer's disease\n\nAlzheimer's disease (AD), also referred to simply as Alzheimer's, is a chronic neurodegenerative disease that usually starts slowly and gradually worsens over time. It is the cause of 60\u201370% of cases of dementia. The most common early symptom is difficulty in remembering recent events. As the disease advances, symptoms can include problems with language, disorientation (including easily getting lost), mood swings, loss of motivation, not managing self-care, and behavioural issues. As a person's condition declines, they often withdraw from family and society. Gradually, bodily functions are lost, ultimately leading to death. Although the speed of progression can vary, the typical life expectancy following diagnosis is three to nine years."
+                }
+            ],
+            "mean_original_docs_length": 52526.0,
+            "mean_shortened_docs_length": 768.0
+        },
+        "27": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ascites",
+                    "original_doc_length": 10386,
+                    "shortened_doc_length": 753,
+                    "shortened_doc_content": "Ascites\n\nAscites is the abnormal buildup of fluid in the abdomen. Technically, it is more than 25 ml of fluid in the peritoneal cavity. Symptoms may include increased abdominal size, increased weight, abdominal discomfort, and shortness of breath. Complications can include spontaneous bacterial peritonitis.\nIn the developed world, the most common cause is liver cirrhosis. Other causes include cancer, heart failure, tuberculosis, pancreatitis, and blockage of the hepatic vein. In cirrhosis, the underlying mechanism involves high blood pressure in the portal system and dysfunction of blood vessels. Diagnosis is typically based on an examination together with ultrasound or a CT scan. Testing the fluid can help in determining the underlying cause."
+                }
+            ],
+            "mean_original_docs_length": 10386.0,
+            "mean_shortened_docs_length": 753.0
+        },
+        "28": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Eye examination",
+                    "original_doc_length": 12839,
+                    "shortened_doc_length": 867,
+                    "shortened_doc_content": "Eye examination\n\nAn eye examination is a series of tests performed by an ophthalmologist (medical doctor), optometrist, or orthoptist, optician, assessing vision and ability to focus on and discern objects, as well as other tests and examinations pertaining to the eyes.\nHealth care professionals often recommend that all people should have periodic and thorough eye examinations as part of routine primary care, especially since many eye diseases are asymptomatic.\n\nEye examinations may detect potentially treatable blinding eye diseases, ocular manifestations of systemic disease, or signs of tumours or other anomalies of the brain.\n\nA full eye examination consists of an external examination, followed by specific tests for visual acuity, pupil function, extraocular muscle motility, visual fields, intraocular pressure and ophthalmoscopy through a dilated pupil."
+                }
+            ],
+            "mean_original_docs_length": 12839.0,
+            "mean_shortened_docs_length": 867.0
+        },
+        "29": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Laryngitis",
+                    "original_doc_length": 11901,
+                    "shortened_doc_length": 677,
+                    "shortened_doc_content": "Laryngitis\n\nLaryngitis is inflammation of the larynx (voice box). Symptoms often include a hoarse voice and may include fever, cough, pain in the front of the neck, and trouble swallowing. Typically, these last under two weeks.\nLaryngitis is categorised as acute if it lasts less than three weeks and chronic if symptoms last more than three weeks. Acute cases usually occur as part of a viral upper respiratory tract infection. Other infections and trauma such as from coughing are other causes. Chronic cases may occur due to smoking, tuberculosis, allergies, acid reflux, rheumatoid arthritis, or sarcoidosis. The underlying mechanism involves irritation of the vocal cords."
+                }
+            ],
+            "mean_original_docs_length": 11901.0,
+            "mean_shortened_docs_length": 677.0
+        },
+        "30": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Gastric lymphoma",
+                    "original_doc_length": 3526,
+                    "shortened_doc_length": 903,
+                    "shortened_doc_content": "Gastric lymphoma\n\nPrimary gastric lymphoma (lymphoma that originates in the stomach itself) is an uncommon condition, accounting for less than 15% of gastric malignancies and about 2% of all lymphomas. However, the stomach is a very common extranodal site for lymphomas (lymphomas originate elsewhere and metastasise to the stomach). It is also the most common source of lymphomas in the gastrointestinal tract.\n\nSymptoms include epigastric pain, early satiety, fatigue and weight loss. Most people affected by primary gastric lymphoma are over 60 years old.\n\nRisk factors for gastric lymphoma include the following:\nBULLET::::- \"Helicobacter pylori\"\nBULLET::::- Long-term immunosuppressant drug therapy\nBULLET::::- HIV infection\n\nThese lymphomas are difficult to differentiate from gastric adenocarcinoma. The lesions are usually ulcers with a ragged, thickened mucosal pattern on contrast radiographs."
+                }
+            ],
+            "mean_original_docs_length": 3526.0,
+            "mean_shortened_docs_length": 903.0
+        },
+        "31": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pyoderma gangrenosum",
+                    "original_doc_length": 5207,
+                    "shortened_doc_length": 920,
+                    "shortened_doc_content": "Pyoderma gangrenosum\n\nPyoderma gangrenosum is a rare, inflammatory skin disease where painful pustules or nodules become ulcers that progressively grow. Pyoderma gangrenosum is not infectious.\nTreatments may include corticosteroids, ciclosporin, infliximab, or canakinumab.\nThe disease was identified in 1930. It affects approximately 1 person in 100,000 in the population. Though it can affect people of any age, it mostly affects people in their 40s and 50s.\n\nThere are two main types of pyoderma gangrenosum:\nBULLET::::- the 'typical' ulcerative form, which occurs in the legs\nBULLET::::- an 'atypical' form that is more superficial and occurs in the hands and other parts of the body\n\nOther variations are:\nBULLET::::- Peristomal pyoderma gangrenosum comprises 15% of all cases of pyoderma\nBULLET::::- Bullous pyoderma gangrenosum\nBULLET::::- Pustular pyoderma gangrenosum\nBULLET::::- Vegetative pyoderma gangrenosum"
+                }
+            ],
+            "mean_original_docs_length": 5207.0,
+            "mean_shortened_docs_length": 920.0
+        },
+        "32": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Gonimoblast",
+                    "original_doc_length": 478,
+                    "shortened_doc_length": 478,
+                    "shortened_doc_content": "Gonimoblast\n\nA gonimoblast is a type of cell produced by red algae upon the fertilization of a zygotic nucleus, and involved in the formation of carpospores. The cells subsequently divide and ultimately serve as storage or generative cells. Storage cells contain starch and are multinucleate; whereas generative cells are situated further from the auxiliary cell, are uninucleate, and form the terminal lobes in the ensuing carpospores. Gonimoblasts are connected by septal pore"
+                }
+            ],
+            "mean_original_docs_length": 478.0,
+            "mean_shortened_docs_length": 478.0
+        },
+        "33": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Elevated transaminases",
+                    "original_doc_length": 3130,
+                    "shortened_doc_length": 920,
+                    "shortened_doc_content": "Elevated transaminases\n\nIn medicine, the presence of elevated transaminases, commonly the transaminases alanine transaminase (ALT) and aspartate transaminase (AST), may be an indicator of liver damage. Other terms employed include transaminasemia, transaminitis (which some sources consider pathologically meaningless) and elevated liver enzymes (though they are not the only enzymes in the liver). Normal ranges for both ALT and AST are 8-40 U/L with mild transaminesemia noted to the upward numerical limit of 250 U/L. Drug-induced increases such as that found with the use of anti-tuberculosis agents such as isoniazid are limited typically to below 100 U/L for either ALT or AST. Cirrhosis of the liver or fulminant liver failure secondary to hepatitis commonly reach values for both ALT and AST in the >1000 U/L range. Elevated transaminases that persist less than six months are termed \"acute\" in nature, and those"
+                }
+            ],
+            "mean_original_docs_length": 3130.0,
+            "mean_shortened_docs_length": 920.0
+        },
+        "34": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mediastinal tumor",
+                    "original_doc_length": 3836,
+                    "shortened_doc_length": 858,
+                    "shortened_doc_content": "Mediastinal tumor\n\nA mediastinal tumor is a tumor in the mediastinum, the cavity that separates the lungs from the rest of the chest. It contains the heart, esophagus, trachea, thymus, and aorta. The most common mediastinal masses are neurogenic tumors (20% of mediastinal tumors), usually found in the posterior mediastinum, followed by thymoma (15\u201320%) located in the anterior mediastinum. Lung cancer typically spreads to the lymph nodes in the mediastinum.\n\nThe mediastinum has three main parts: the anterior mediastinum (front), the middle mediastinum, and the posterior mediastinum (back). Masses in the anterior portion of the mediastinum can include thymoma, lymphoma, pheochromocytoma, germ cell tumors including teratoma, thyroid tissue, and parathyroid lesions. Masses in this area are more likely to be malignant than those in other compartments."
+                }
+            ],
+            "mean_original_docs_length": 3836.0,
+            "mean_shortened_docs_length": 858.0
+        },
+        "35": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rhabdomyolysis",
+                    "original_doc_length": 23234,
+                    "shortened_doc_length": 356,
+                    "shortened_doc_content": "Rhabdomyolysis\n\nRhabdomyolysis is a condition in which damaged skeletal muscle breaks down rapidly. Symptoms may include muscle pains, weakness, vomiting, and confusion. There may be tea-colored urine or an irregular heartbeat. Some of the muscle breakdown products, such as the protein myoglobin, are harmful to the kidneys and may lead to kidney failure."
+                }
+            ],
+            "mean_original_docs_length": 23234.0,
+            "mean_shortened_docs_length": 356.0
+        },
+        "36": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dermatofibroma",
+                    "original_doc_length": 1517,
+                    "shortened_doc_length": 745,
+                    "shortened_doc_content": "Dermatofibroma\n\nA dermatofibroma, or benign fibrous histiocytomas, is a benign skin growth.\n\nDermatofibromas are hard solitary slow-growing papules (rounded bumps) that may appear in a variety of colours, usually brownish to tan; they are often elevated or pedunculated. A dermatofibroma is associated with the dimple sign; by applying lateral pressure, there is a central depression of the dermatofibroma. Although typical dermatofibromas cause little or no discomfort, itching and tenderness can occur. Dermatofibromas can be found anywhere on the body, but most often they are found on the legs and arms. They occur most often in women; the male to female ratio is about 1:4. The age group in which they most commonly occur is 20 to 45 years."
+                }
+            ],
+            "mean_original_docs_length": 1517.0,
+            "mean_shortened_docs_length": 745.0
+        },
+        "37": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Febrile neutrophilic dermatosis",
+                    "original_doc_length": 5811,
+                    "shortened_doc_length": 509,
+                    "shortened_doc_content": "Febrile neutrophilic dermatosis\n\nSweet's syndrome (SS), or acute febrile neutrophilic dermatosis is a skin disease characterized by the sudden onset of fever, an elevated white blood cell count, and tender, red, well-demarcated papules and plaques that show dense infiltrates by neutrophil granulocytes on histologic examination.\n\nThe syndrome was first described in 1964 by Robert Douglas Sweet. It was also known as Gomm\u2013Button disease in honour of the first two patients Sweet diagnosed with the condition."
+                }
+            ],
+            "mean_original_docs_length": 5811.0,
+            "mean_shortened_docs_length": 509.0
+        },
+        "38": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lung nodule",
+                    "original_doc_length": 8871,
+                    "shortened_doc_length": 888,
+                    "shortened_doc_content": "Lung nodule\n\nA lung nodule or pulmonary nodule is a relatively small focal density in the lung. A solitary pulmonary nodule (SPN) or coin lesion, is a mass in the lung smaller than 3 centimeters in diameter. There may also be multiple nodules.\n\nOne or more lung nodules can be an incidental finding found in up to 0.2% of chest X-rays and around 1% of CT scans.\n\nThe nodule most commonly represents a benign tumor such as a granuloma or hamartoma, but in around 20% of cases it represents a malignant cancer, especially in older adults and smokers. Conversely, 10 to 20% of patients with lung cancer are diagnosed in this way. If the patient has a history of smoking or the nodule is growing, the possibility of cancer may need to be excluded through further radiological studies and interventions, possibly including surgical resection. The prognosis depends on the underlying condition."
+                }
+            ],
+            "mean_original_docs_length": 8871.0,
+            "mean_shortened_docs_length": 888.0
+        },
+        "39": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Thyroid neoplasm",
+                    "original_doc_length": 4937,
+                    "shortened_doc_length": 586,
+                    "shortened_doc_content": "Thyroid neoplasm\n\nThyroid neoplasm is a neoplasm or tumor of the thyroid. It can be a benign tumor such as thyroid adenoma, or it can be a malignant neoplasm (thyroid cancer), such as papillary, follicular, medullary or anaplastic thyroid cancer. Most patients are 25 to 65 years of age when first diagnosed; women are more affected than men. The estimated number of new cases of thyroid cancer in the United States in 2010 is 44,670 compared to only 1,690 deaths. Of all thyroid nodules discovered, only about 5 percent are cancerous, and under 3 percent of those result in fatalities."
+                }
+            ],
+            "mean_original_docs_length": 4937.0,
+            "mean_shortened_docs_length": 586.0
+        },
+        "40": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive emergency",
+                    "original_doc_length": 13838,
+                    "shortened_doc_length": 581,
+                    "shortened_doc_content": "Hypertensive emergency\n\nA hypertensive emergency is high blood pressure with potentially life-threatening symptoms and signs indicative of acute impairment of one or more organ systems (brain, eyes, heart, aorta, or kidneys). Hypertensive urgency is defined as having a systolic blood pressure over 180 mmHg or a diastolic blood pressure over 110 mmHg. Hypertensive emergency is defined as elevated blood pressure consistent with hypertensive urgency, plus evidence of impending irreversible hypertension-mediated organ damage (HMOD). Signs of organ damage will be discussed below."
+                }
+            ],
+            "mean_original_docs_length": 13838.0,
+            "mean_shortened_docs_length": 581.0
+        },
+        "41": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Ovarian fibroma",
+                    "original_doc_length": 1367,
+                    "shortened_doc_length": 670,
+                    "shortened_doc_content": "Ovarian fibroma\n\nThe ovarian fibroma, also fibroma, is a benign sex cord-stromal tumour.\n\nOvarian fibromas represent 4% of all ovarian neoplasms. They tend to occur mostly during perimenopause and postmenopause, the median age having been reported to be about 52 years, and they are rare in children. Lesions tend to be asymptomatic. If symptoms are present, the most common one is abdominal pain.\n\nOn gross pathology, they are firm and white or tan. On microscopic examination, there are intersecting bundles of spindle cells producing collagen.\n\nThere may be thecomatous areas (fibrothecoma). The presence of an ovarian fibroma can cause ovarian torsion in some cases."
+                }
+            ],
+            "mean_original_docs_length": 1367.0,
+            "mean_shortened_docs_length": 670.0
+        },
+        "42": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epididymitis",
+                    "original_doc_length": 9244,
+                    "shortened_doc_length": 788,
+                    "shortened_doc_content": "Epididymitis\n\nEpididymitis is a medical condition characterized by inflammation of the epididymis, a curved structure at the back of the testicle. Onset of pain is typically over a day or two. The pain may improve with raising the testicle. Other symptoms may include swelling of the testicle, burning with urination, or frequent urination. Inflammation of the testicle is commonly also present.\nIn those who are young and sexually active gonorrhea and chlamydia are frequently the underlying cause. In older males and males who have sex with males enteric bacteria are common. Diagnosis is typically based on symptoms. Conditions that may result in similar symptoms include testicular torsion, inguinal hernia, and testicular cancer. Ultrasound can be useful if the diagnosis is unclear."
+                }
+            ],
+            "mean_original_docs_length": 9244.0,
+            "mean_shortened_docs_length": 788.0
+        },
+        "43": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute lymphoblastic leukemia",
+                    "original_doc_length": 29292,
+                    "shortened_doc_length": 420,
+                    "shortened_doc_content": "Acute lymphoblastic leukemia\n\nAcute lymphoblastic leukemia (ALL) is a cancer of the lymphoid line of blood cells characterized by the development of large numbers of immature lymphocytes. Symptoms may include feeling tired, pale skin color, fever, easy bleeding or bruising, enlarged lymph nodes, or bone pain. As an acute leukemia, ALL progresses rapidly and is typically fatal within weeks or months if left untreated."
+                }
+            ],
+            "mean_original_docs_length": 29292.0,
+            "mean_shortened_docs_length": 420.0
+        },
+        "44": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive emergency",
+                    "original_doc_length": 13838,
+                    "shortened_doc_length": 581,
+                    "shortened_doc_content": "Hypertensive emergency\n\nA hypertensive emergency is high blood pressure with potentially life-threatening symptoms and signs indicative of acute impairment of one or more organ systems (brain, eyes, heart, aorta, or kidneys). Hypertensive urgency is defined as having a systolic blood pressure over 180 mmHg or a diastolic blood pressure over 110 mmHg. Hypertensive emergency is defined as elevated blood pressure consistent with hypertensive urgency, plus evidence of impending irreversible hypertension-mediated organ damage (HMOD). Signs of organ damage will be discussed below."
+                }
+            ],
+            "mean_original_docs_length": 13838.0,
+            "mean_shortened_docs_length": 581.0
+        },
+        "45": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pleurisy",
+                    "original_doc_length": 15237,
+                    "shortened_doc_length": 901,
+                    "shortened_doc_content": "Pleurisy\n\nPleurisy, also known as pleuritis, is inflammation of the membranes that surround the lungs and line the chest cavity (pleurae). This can result in a sharp chest pain while breathing. Occasionally the pain may be a constant dull ache. Other symptoms may include shortness of breath, cough, fever or weight loss, depending on the underlying cause.\nThe most common cause is a viral infection. Other causes include pneumonia, pulmonary embolism, autoimmune disorders, lung cancer, following heart surgery, pancreatitis, chest trauma, and asbestosis. Occasionally the cause remains unknown. The underlying mechanism involves the rubbing together of the pleurae instead of smooth gliding. Other conditions that can produce similar symptoms include pericarditis, heart attack, cholecystitis, and pneumothorax. Diagnostic testing may include a chest X-ray, electrocardiogram (ECG), and blood tests."
+                }
+            ],
+            "mean_original_docs_length": 15237.0,
+            "mean_shortened_docs_length": 901.0
+        },
+        "46": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Limp",
+                    "original_doc_length": 3816,
+                    "shortened_doc_length": 641,
+                    "shortened_doc_content": "Limp\n\nA limp is a type of asymmetric abnormality of the gait. Limping may be caused by pain, weakness, neuromuscular imbalance, or a skeletal deformity. The most common underlying cause of a painful limp is physical trauma; however, in the absence of trauma, other serious causes, such as septic arthritis or slipped capital femoral epiphysis, may be present. The diagnostic approach involves ruling out potentially serious causes via the use of X-rays, blood tests, and sometimes joint aspiration. Initial treatment involves pain management. A limp is the presenting problem in about 4% of children who visit hospital emergency departments."
+                }
+            ],
+            "mean_original_docs_length": 3816.0,
+            "mean_shortened_docs_length": 641.0
+        },
+        "47": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hip fracture",
+                    "original_doc_length": 20478,
+                    "shortened_doc_length": 805,
+                    "shortened_doc_content": "Hip fracture\n\nA hip fracture is a break that occurs in the upper part of the femur (thigh bone). Symptoms may include pain around the hip, particularly with movement, and shortening of the leg. Usually the person cannot walk.\nThey most often occur as a result of a fall. Risk factors include osteoporosis, taking many medications, alcohol use, and metastatic cancer. Diagnosis is generally by X-rays. Magnetic resonance imaging, a CT scan, or a bone scan may occasionally be required to make the diagnosis.\nPain management may involve opioids or a nerve block. If the person's health allows, surgery is generally recommended within two days. Options for surgery may include a total hip replacement or stabilizing the fracture with screws. Treatment to prevent blood clots following surgery is recommended."
+                }
+            ],
+            "mean_original_docs_length": 20478.0,
+            "mean_shortened_docs_length": 805.0
+        },
+        "48": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Undifferentiated pleomorphic sarcoma",
+                    "original_doc_length": 2562,
+                    "shortened_doc_length": 622,
+                    "shortened_doc_content": "Undifferentiated pleomorphic sarcoma\n\nUndifferentiated pleomorphic sarcoma, previously malignant fibrous histiocytoma, is a type of cancer, namely a soft-tissue sarcoma.\n\nIt is considered a diagnosis of exclusion for sarcomas that cannot be more precisely categorized. Other sarcomas are cancers that form in bone and soft tissues, including muscle, fat, blood vessels, lymph vessels, and fibrous tissue (such as tendons and ligaments).\n\nUPS occurs most commonly in the extremities and retroperitoneum, but has been reported in other sites. Metastasis occurs most frequently in the lungs (90%), bones (8%), and liver (1%)."
+                }
+            ],
+            "mean_original_docs_length": 2562.0,
+            "mean_shortened_docs_length": 622.0
+        },
+        "49": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Postural orthostatic tachycardia syndrome",
+                    "original_doc_length": 15827,
+                    "shortened_doc_length": 502,
+                    "shortened_doc_content": "Postural orthostatic tachycardia syndrome\n\nPostural orthostatic tachycardia syndrome (POTS) is a condition in which a change from lying to standing causes an abnormally large increase in heart rate. This occurs with symptoms that may include lightheadedness, trouble thinking, blurred vision or weakness. Other commonly associated conditions include Ehlers\u2013Danlos syndrome, mast cell activation syndrome, irritable bowel syndrome, insomnia, chronic headaches, chronic fatigue syndrome and fibromyalgia."
+                }
+            ],
+            "mean_original_docs_length": 15827.0,
+            "mean_shortened_docs_length": 502.0
+        },
+        "50": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pericarditis",
+                    "original_doc_length": 8732,
+                    "shortened_doc_length": 904,
+                    "shortened_doc_content": "Pericarditis\n\nPericarditis is inflammation of the pericardium (the fibrous sac surrounding the heart). Symptoms typically include sudden onset of sharp chest pain. The pain may also be felt in the shoulders, neck, or back. It is typically better sitting up and worse when lying down or breathing deeply. Other symptoms may include fever, weakness, palpitations, and shortness of breath. Occasionally onset of symptoms is gradual.\nThe cause of pericarditis is believed to be most often due to a viral infection. Other causes include bacterial infections such as tuberculosis, uremic pericarditis, following a heart attack, cancer, autoimmune disorders, and chest trauma. The cause often remains unknown. Diagnosis is based on the chest pain, a pericardial rub, specific electrocardiogram (ECG) changes, and fluid around the heart. Other conditions that may produce similar symptoms include a heart attack."
+                }
+            ],
+            "mean_original_docs_length": 8732.0,
+            "mean_shortened_docs_length": 904.0
+        },
+        "51": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Obstetric ultrasonography",
+                    "original_doc_length": 15225,
+                    "shortened_doc_length": 490,
+                    "shortened_doc_content": "Obstetric ultrasonography\n\nObstetric ultrasonography, or prenatal ultrasound, is the use of medical ultrasonography in pregnancy, in which sound waves are used to create real-time visual images of the developing embryo or fetus in the uterus (womb). The procedure is a standard part of prenatal care in many countries, as it can provide a variety of information about the health of the mother, the timing and progress of the pregnancy, and the health and development of the embryo or fetus."
+                }
+            ],
+            "mean_original_docs_length": 15225.0,
+            "mean_shortened_docs_length": 490.0
+        },
+        "52": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive urgency",
+                    "original_doc_length": 2197,
+                    "shortened_doc_length": 354,
+                    "shortened_doc_content": "Hypertensive urgency\n\nA hypertensive urgency is a clinical situation in which blood pressure is very high (e.g., \u2265180/\u2265110 mmHg) with minimal or no symptoms, and \"no\" signs or symptoms indicating acute organ damage. This contrasts with a hypertensive emergency where severe blood pressure is accompanied by evidence of progressive organ or system damage."
+                }
+            ],
+            "mean_original_docs_length": 2197.0,
+            "mean_shortened_docs_length": 354.0
+        },
+        "53": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Malignant pleural effusion",
+                    "original_doc_length": 3003,
+                    "shortened_doc_length": 528,
+                    "shortened_doc_content": "Malignant pleural effusion\n\nMalignant pleural effusion is a condition in which cancer causes an abnormal amount of fluid to collect between the thin layers of tissue (pleura) lining the outside of the lung and the wall of the chest cavity. Lung cancer and breast cancer account for about 50-65% of malignant pleural effusions. Other common causes include pleural mesothelioma and lymphoma.\n\nClinical factors predicting the diagnosis of malignant pleural effusions are symptoms lasting more than 1 month and the absence of fever."
+                }
+            ],
+            "mean_original_docs_length": 3003.0,
+            "mean_shortened_docs_length": 528.0
+        },
+        "54": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Bradypnea",
+                    "original_doc_length": 2052,
+                    "shortened_doc_length": 646,
+                    "shortened_doc_content": "Bradypnea\n\nBradypnea is abnormally slow breathing. The respiratory rate at which bradypnea is diagnosed depends on the age of the person.\n\nBULLET::::- Age 0\u20131 year < 30 breaths per minute\nBULLET::::- Age 1\u20133 years < 25 breaths per minute\nBULLET::::- Age 3\u201312 years < 20 breaths per minute\nBULLET::::- Age 12\u201350 years < 12 breaths per minute\nBULLET::::- Age 50 and up < 13 breaths per minute\n\nBULLET::::- Dizziness\nBULLET::::- Near-fainting or fainting\nBULLET::::- Fatigue\nBULLET::::- Weakness\nBULLET::::- Chest pains\nBULLET::::- Shortness of breath\nBULLET::::- Memory impairment or confusion\nBULLET::::- Tiring easily during any physical activity"
+                }
+            ],
+            "mean_original_docs_length": 2052.0,
+            "mean_shortened_docs_length": 646.0
+        },
+        "55": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pancreatic pseudocyst",
+                    "original_doc_length": 3439,
+                    "shortened_doc_length": 910,
+                    "shortened_doc_content": "Pancreatic pseudocyst\n\nA pancreatic pseudocyst is a circumscribed collection of fluid rich in pancreatic enzymes, blood, and necrotic tissue, typically located in the lesser sac of the abdomen. Pancreatic pseudocysts are usually complications of pancreatitis, although in children they frequently occur following abdominal trauma. Pancreatic pseudocysts account for approximately 75% of all pancreatic masses.\n\nSigns and symptoms of pancreatic pseudocyst include abdominal discomfort and indigestion.\nComplications of pancreatic pseudocysts include infection, hemorrhage, obstruction and rupture. For obstruction, it can cause compression in the GI tract from the stomach to colon, compression in urinary system, biliary system, and arteriovenous system.\n\nThe cause of pancreatic pseudocyst can occur due to a variety of reasons, among them pancreatitis (chronic), pancreatic neoplasm and/or pancreatic trauma."
+                }
+            ],
+            "mean_original_docs_length": 3439.0,
+            "mean_shortened_docs_length": 910.0
+        },
+        "56": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Fatty liver disease",
+                    "original_doc_length": 9798,
+                    "shortened_doc_length": 889,
+                    "shortened_doc_content": "Fatty liver disease\n\nFatty liver disease (FLD), also known as hepatic steatosis, is a condition where excess fat builds up in the liver. Often there are no or few symptoms. Occasionally there may be tiredness or pain in the upper right side of the abdomen. Complications may include cirrhosis, liver cancer, and esophageal varices.\nThere are two types of fatty liver disease non-alcoholic fatty liver disease (NAFLD) and alcoholic liver disease. NAFLD is made up of simple fatty liver and non-alcoholic steatohepatitis (NASH). The primary risks include alcohol, type 2 diabetes, and obesity. Other risk factors include certain medications such as glucocorticoids, and hepatitis C. It is unclear why some people with NAFLD develop simple fatty liver and others develop NASH. Diagnosis is based on the medical history supported by blood tests, medical imaging, and occasionally liver biopsy."
+                }
+            ],
+            "mean_original_docs_length": 9798.0,
+            "mean_shortened_docs_length": 889.0
+        },
+        "57": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lipoma",
+                    "original_doc_length": 8271,
+                    "shortened_doc_length": 778,
+                    "shortened_doc_content": "Lipoma\n\nA lipoma is a benign tumor made of fat tissue. They are generally soft to the touch, movable, and painless. They usually occur just under the skin, but occasionally may be deeper. Most are less than 5\u00a0cm in size. Common locations include upper back, shoulders, and abdomen. A few people have a number of lipomas.\nThe cause is generally unclear. Risk factors include family history, obesity, and lack of exercise. Diagnosis is typically based on a physical exam. Occasionally medical imaging or tissue biopsy is used to confirm the diagnosis.\nTreatment is typically by observation or surgical removal. Rarely, the condition may recur following removal, but this can generally be managed with repeat surgery. They are not generally associated with a future risk of cancer."
+                }
+            ],
+            "mean_original_docs_length": 8271.0,
+            "mean_shortened_docs_length": 778.0
+        },
+        "58": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acral nevus",
+                    "original_doc_length": 1221,
+                    "shortened_doc_length": 804,
+                    "shortened_doc_content": "Acral nevus\n\nAn acral nevus is a cutaneous condition characterized by a skin lesion that is usually macular or only slightly elevated, and may display uniform brown or dark brown color, but often with linear striations.\n\nThey are nevi of palms and soles, which may occur in all ethnic groups but more common in dark skin people. Acral Nevus is a benign skin tumor that can occur at any age, but is generally noticed between 10\u201330 years of age. Both children and adults may be observed with this skin tumor. Prevalence of aural nevi increased directly with degree of skin pigmentation. In a study palmar or plantar nevi were detected in 42.0%of black (50 of 119) vs 23.0% of whites (79 0f 343). Palmar or plantar nevi of 6\u00a0mm diameter or larger were detected in 3.4% of blacks(4 of 119) vs 0.6% of whites."
+                }
+            ],
+            "mean_original_docs_length": 1221.0,
+            "mean_shortened_docs_length": 804.0
+        },
+        "59": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Early pregnancy bleeding",
+                    "original_doc_length": 2418,
+                    "shortened_doc_length": 605,
+                    "shortened_doc_content": "Early pregnancy bleeding\n\nEarly pregnancy bleeding refers to bleeding before 24 weeks of gestational age. Complications may include hemorrhagic shock. Concerns are increased in those who have had a loss of consciousness, are short of breath, or have pain in their shoulder.\nCommon causes include ectopic pregnancy and threatened miscarriage. Most miscarriages occur before 12 weeks gestation age. Other causes include implantation bleeding, gestational trophoblastic disease, polyps, and cervical cancer. Tests to determine the underlying cause usually include a speculum examination, ultrasound, and hCG."
+                }
+            ],
+            "mean_original_docs_length": 2418.0,
+            "mean_shortened_docs_length": 605.0
+        },
+        "60": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Benign prostatic hyperplasia",
+                    "original_doc_length": 21823,
+                    "shortened_doc_length": 853,
+                    "shortened_doc_content": "Benign prostatic hyperplasia\n\nBenign prostatic hyperplasia (BPH), also called prostate enlargement, is a noncancerous increase in size of the prostate gland. Symptoms may include frequent urination, trouble starting to urinate, weak stream, inability to urinate, or loss of bladder control. Complications can include urinary tract infections, bladder stones, and chronic kidney problems.\nThe cause is unclear. Risk factors include a family history, obesity, type 2 diabetes, not enough exercise, and erectile dysfunction. Medications like pseudoephedrine, anticholinergics, and calcium channel blockers may worsen symptoms. The underlying mechanism involves the prostate pressing on the urethra thereby making it difficult to pass urine out of the bladder. Diagnosis is typically based on symptoms and examination after ruling out other possible causes."
+                }
+            ],
+            "mean_original_docs_length": 21823.0,
+            "mean_shortened_docs_length": 853.0
+        },
+        "61": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Rosuvastatin",
+                    "original_doc_length": 10984,
+                    "shortened_doc_length": 639,
+                    "shortened_doc_content": "Rosuvastatin\n\nRosuvastatin, sold under the trade name Crestor among others, is a statin medication, used to prevent cardiovascular disease in those at high risk and treat abnormal lipids. It is recommended to be used together with dietary changes, exercise, and weight loss. It is taken by mouth.\nCommon side effects include abdominal pain, nausea, headaches, and muscle pains. Serious side effects may include rhabdomyolysis, liver problems, and diabetes. Use during pregnancy may harm the baby. Like all statins, rosuvastatin works by inhibiting HMG-CoA reductase, an enzyme found in the liver that plays a role in producing cholesterol."
+                }
+            ],
+            "mean_original_docs_length": 10984.0,
+            "mean_shortened_docs_length": 639.0
+        },
+        "62": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Menopause",
+                    "original_doc_length": 30493,
+                    "shortened_doc_length": 718,
+                    "shortened_doc_content": "Menopause\n\nMenopause, also known as the climacteric, is the time in most women's lives when menstrual periods stop permanently, and they are no longer able to bear children. Menopause typically occurs between 49 and 52 years of age. Medical professionals often define menopause as having occurred when a woman has not had any vaginal bleeding for a year. It may also be defined by a decrease in hormone production by the ovaries. In those who have had surgery to remove their uterus but still have ovaries, menopause may be considered to have occurred at the time of the surgery or when their hormone levels fell. Following the removal of the uterus, symptoms typically occur earlier, at an average of 45 years of age."
+                }
+            ],
+            "mean_original_docs_length": 30493.0,
+            "mean_shortened_docs_length": 718.0
+        },
+        "63": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vision disorder",
+                    "original_doc_length": 3161,
+                    "shortened_doc_length": 379,
+                    "shortened_doc_content": "Vision disorder\n\nA vision disorder is an impairment of the sense of vision.\n\nVision disorder is not the same as an eye disease. Although many vision disorders do have their immediate cause in the eye, there are many other causes that may occur at other locations in the optic pathway.\n\nThere are many eye conditions that can lead to vision disorder. Some of which are as follows:"
+                }
+            ],
+            "mean_original_docs_length": 3161.0,
+            "mean_shortened_docs_length": 379.0
+        },
+        "64": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cervical lymphadenopathy",
+                    "original_doc_length": 4353,
+                    "shortened_doc_length": 415,
+                    "shortened_doc_content": "Cervical lymphadenopathy\n\nCervical lymphadenopathy refers to lymphadenopathy of the cervical lymph nodes (the glands in the neck). The term \"lymphadenopathy\" strictly speaking refers to disease of the lymph nodes, though it is often used to describe the enlargement of the lymph nodes. Similarly, the term \"lymphadenitis\" refers to inflammation of a lymph node, but often it is used as a synonym of lymphadenopathy."
+                }
+            ],
+            "mean_original_docs_length": 4353.0,
+            "mean_shortened_docs_length": 415.0
+        },
+        "65": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 483,
+                    "shortened_doc_content": "Chest pain\n\nChest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain. Pain due to insufficient blood flow to the heart is also called angina pectoris. Those with diabetes or who are old may have less clear symptoms."
+                }
+            ],
+            "mean_original_docs_length": 19261.0,
+            "mean_shortened_docs_length": 483.0
+        },
+        "66": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pleurisy",
+                    "original_doc_length": 15237,
+                    "shortened_doc_length": 901,
+                    "shortened_doc_content": "Pleurisy\n\nPleurisy, also known as pleuritis, is inflammation of the membranes that surround the lungs and line the chest cavity (pleurae). This can result in a sharp chest pain while breathing. Occasionally the pain may be a constant dull ache. Other symptoms may include shortness of breath, cough, fever or weight loss, depending on the underlying cause.\nThe most common cause is a viral infection. Other causes include pneumonia, pulmonary embolism, autoimmune disorders, lung cancer, following heart surgery, pancreatitis, chest trauma, and asbestosis. Occasionally the cause remains unknown. The underlying mechanism involves the rubbing together of the pleurae instead of smooth gliding. Other conditions that can produce similar symptoms include pericarditis, heart attack, cholecystitis, and pneumothorax. Diagnostic testing may include a chest X-ray, electrocardiogram (ECG), and blood tests."
+                }
+            ],
+            "mean_original_docs_length": 15237.0,
+            "mean_shortened_docs_length": 901.0
+        },
+        "67": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Post viral cerebellar ataxia",
+                    "original_doc_length": 4465,
+                    "shortened_doc_length": 296,
+                    "shortened_doc_content": "Post viral cerebellar ataxia\n\nPost-viral cerebellar ataxia also known as acute cerebellitis and acute cerebellar ataxia (ACA) is a disease characterized by the sudden onset of ataxia following a viral infection. The disease affects the function or structure of the cerebellum region in the brain."
+                }
+            ],
+            "mean_original_docs_length": 4465.0,
+            "mean_shortened_docs_length": 296.0
+        },
+        "68": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "Acute abdomen\n\nAn acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment.\n\nThe differential diagnoses of acute abdomen include:"
+                }
+            ],
+            "mean_original_docs_length": 4369.0,
+            "mean_shortened_docs_length": 260.0
+        },
+        "69": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Peritoneal fluid",
+                    "original_doc_length": 1313,
+                    "shortened_doc_length": 801,
+                    "shortened_doc_content": "Peritoneal fluid\n\nPeritoneal fluid is a liquid made in the abdominal cavity which lubricates the surface of tissue that lines the abdominal wall and pelvic cavity. It covers most of the organs in the abdomen. An increased volume of peritoneal fluid is called ascites.\n\nSampling of peritoneal fluid is generally performed by paracentesis.\n\nThe serum-ascites albumin gradient (SAAG) is the most useful index for evaluating peritoneal fluid and can help distinguish ascites caused by portal hypertension (cirrhosis, portal vein thrombosis, Budd-Chiari syndrome, etc.) from other causes of ascites. SAAG is calculated by subtracting the albumin measure of ascitic fluid from the serum value. In portal hypertension, the SAAG is >1.1 g/dL while ascites from other causes shows a SAAG of less than 1.1 g/dL."
+                }
+            ],
+            "mean_original_docs_length": 1313.0,
+            "mean_shortened_docs_length": 801.0
+        },
+        "70": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Benzylpenicillin",
+                    "original_doc_length": 2256,
+                    "shortened_doc_length": 853,
+                    "shortened_doc_content": "Benzylpenicillin\n\nBenzylpenicillin, also known as penicillin G, is an antibiotic used to treat a number of bacterial infections. This includes pneumonia, strep throat, syphilis, necrotizing enterocolitis, diphtheria, gas gangrene, leptospirosis, cellulitis, and tetanus. It is not a first-line agent for pneumococcal meningitis. Benzylpenicillin is given by injection into a vein or muscle. Two long-acting forms benzathine benzylpenicillin and procaine benzylpenicillin are available for use by injection into a muscle.\nSide effects include diarrhea, seizures, and allergic reactions including anaphylaxis. When used to treat syphilis a reaction known as Jarisch\u2013Herxheimer may occur. It is not recommended in those with a history of penicillin allergy. Use during pregnancy is generally safe. It is in the penicillin and \u03b2-lactam class of medications."
+                }
+            ],
+            "mean_original_docs_length": 2256.0,
+            "mean_shortened_docs_length": 853.0
+        },
+        "71": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Signs and symptoms of HIV/AIDS",
+                    "original_doc_length": 12541,
+                    "shortened_doc_length": 863,
+                    "shortened_doc_content": "Signs and symptoms of HIV/AIDS\n\nThe stages of HIV infection are acute infection (also known as primary infection), latency and AIDS. Acute infection lasts for several weeks and may include symptoms such as fever, swollen lymph nodes, inflammation of the throat, rash, muscle pain, malaise, and mouth and esophageal sores. The latency stage involves few or no symptoms and can last anywhere from two weeks to twenty years or more, depending on the individual. AIDS, the final stage of HIV infection, is defined by low CD4+ T cell counts (fewer than 200 per microliter), various opportunistic infections, cancers and other conditions.\n\nAcute HIV infection, primary HIV infection or acute seroconversion syndrome is the second stage of HIV infection. It occurs after the incubation stage, before the latency stage and the potential AIDS succeeding the latency stage."
+                }
+            ],
+            "mean_original_docs_length": 12541.0,
+            "mean_shortened_docs_length": 863.0
+        },
+        "72": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Infective endocarditis",
+                    "original_doc_length": 27366,
+                    "shortened_doc_length": 810,
+                    "shortened_doc_content": "Infective endocarditis\n\nInfective endocarditis is an infection of the inner surface of the heart, usually the valves. Symptoms may include fever, small areas of bleeding into the skin, heart murmur, feeling tired, and low red blood cell count. Complications may include valvular insufficiency, heart failure, stroke, and kidney failure.\nThe cause is typically a bacterial infection and less commonly a fungal infection. Risk factors include valvular heart disease including rheumatic disease, congenital heart disease, artificial valves, hemodialysis, intravenous drug use, and electronic pacemakers. The bacteria most commonly involved are streptococci or staphylococci. Diagnosis is suspected based on symptoms and supported by blood cultures or ultrasound. There is also a noninfective form of endocarditis."
+                }
+            ],
+            "mean_original_docs_length": 27366.0,
+            "mean_shortened_docs_length": 810.0
+        },
+        "73": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Plantar wart",
+                    "original_doc_length": 5590,
+                    "shortened_doc_length": 531,
+                    "shortened_doc_content": "Plantar wart\n\nA plantar wart is a wart occurring on the bottom of the foot or toes. Their color is typically similar to that of the skin. Small black dots often occur on the surface. One or more may occur in an area. They may result in pain with pressure such that walking is difficult.\nThey are caused by the human papillomavirus (HPV). A break in the skin is required for infection to occur. Risk factors include use of communal showers, having had prior warts, and poor immune function. Diagnosis is typically based on symptoms."
+                }
+            ],
+            "mean_original_docs_length": 5590.0,
+            "mean_shortened_docs_length": 531.0
+        },
+        "74": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myocardial infarction",
+                    "original_doc_length": 42059,
+                    "shortened_doc_length": 870,
+                    "shortened_doc_content": "Myocardial infarction\n\nMyocardial infarction (MI), also known as a heart attack, occurs when blood flow decreases or stops to a part of the heart, causing damage to the heart muscle. The most common symptom is chest pain or discomfort which may travel into the shoulder, arm, back, neck or jaw. Often it occurs in the center or left side of the chest and lasts for more than a few minutes. The discomfort may occasionally feel like heartburn. Other symptoms may include shortness of breath, nausea, feeling faint, a cold sweat or feeling tired. About 30% of people have atypical symptoms. Women more often present without chest pain and instead have neck pain, arm pain or feel tired. Among those over 75 years old, about 5% have had an MI with little or no history of symptoms. An MI may cause heart failure, an irregular heartbeat, cardiogenic shock or cardiac arrest."
+                }
+            ],
+            "mean_original_docs_length": 42059.0,
+            "mean_shortened_docs_length": 870.0
+        },
+        "75": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertrophic cardiomyopathy",
+                    "original_doc_length": 27261,
+                    "shortened_doc_length": 897,
+                    "shortened_doc_content": "Hypertrophic cardiomyopathy\n\nHypertrophic cardiomyopathy (HCM) is a condition in which a portion of the heart becomes thickened without an obvious cause. This results in the heart being less able to pump blood effectively. Symptoms vary from none to feeling tired, leg swelling, and shortness of breath. It may also result in chest pain or fainting. Complications include heart failure, an irregular heartbeat, and sudden cardiac death.\nHCM is most commonly inherited from a person's parents. It is often due to mutations in certain genes involved with making heart muscle proteins. Other causes may include Fabry disease, Friedreich's ataxia, and certain medications such as tacrolimus. It is a type of cardiomyopathy, a group of diseases that primarily affects the heart muscle. Diagnosis often involves an electrocardiogram, echocardiogram, and stress testing. Genetic testing may also be done."
+                }
+            ],
+            "mean_original_docs_length": 27261.0,
+            "mean_shortened_docs_length": 897.0
+        },
+        "76": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Mendelian traits in humans",
+                    "original_doc_length": 2198,
+                    "shortened_doc_length": 880,
+                    "shortened_doc_content": "Mendelian traits in humans\n\nMendelian traits in humans concerns how, in Mendelian inheritance, a child receiving a dominant allele from either parent will have the dominant form of the phenotypic trait or characteristic. Only those that received the recessive allele from both parents, known as zygosity, will have the recessive phenotype. Those that receive a dominant allele from one parent and a recessive allele from the other parent will have the dominant form of the trait. Purely Mendelian traits are a tiny minority of all traits, since most phenotypic traits exhibit incomplete dominance, codominance, and contributions from many genes.\n\nThe recessive phenotype may theoretically skip any number of generations, lying dormant in heterozygous \"carrier\" individuals until they have children with someone who also has the recessive allele and both pass it on to their child."
+                }
+            ],
+            "mean_original_docs_length": 2198.0,
+            "mean_shortened_docs_length": 880.0
+        },
+        "77": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory rate",
+                    "original_doc_length": 3725,
+                    "shortened_doc_length": 512,
+                    "shortened_doc_content": "Respiratory rate\n\nThe respiratory rate is the rate at which breathing occurs. This is usually measured in breaths per minute and is set, and controlled by the respiratory centre.\n\nThe respiratory rate in humans is measured by counting the number of breaths for one minute through counting how many times the chest rises. A fibre-optic breath rate sensor can be used for monitoring patients during a magnetic resonance imaging scan. Respiration rates may increase with fever, illness, or other medical conditions."
+                }
+            ],
+            "mean_original_docs_length": 3725.0,
+            "mean_shortened_docs_length": 512.0
+        },
+        "78": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Otitis externa",
+                    "original_doc_length": 17693,
+                    "shortened_doc_length": 895,
+                    "shortened_doc_content": "Otitis externa\n\nOtitis externa, also called swimmer's ear, is inflammation of the ear canal. It often presents with ear pain, swelling of the ear canal, and occasionally decreased hearing. Typically there is pain with movement of the outer ear. A high fever is typically not present except in severe cases.\nOtitis externa may be acute (lasting less than six weeks) or chronic (lasting more than three months). Acute cases are typically due to bacterial infection, and chronic cases are often due to allergies and autoimmune disorders. Risk factors for acute cases include swimming, minor trauma from cleaning, using hearing aids and ear plugs, and other skin problems, such as psoriasis and dermatitis. People with diabetes are at risk of a severe form of \"malignant otitis externa\". Diagnosis is based on the signs and symptoms. Culturing the ear canal may be useful in chronic or severe cases."
+                }
+            ],
+            "mean_original_docs_length": 17693.0,
+            "mean_shortened_docs_length": 895.0
+        },
+        "79": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "CADASIL",
+                    "original_doc_length": 5610,
+                    "shortened_doc_length": 740,
+                    "shortened_doc_content": "CADASIL\n\nCADASIL or CADASIL syndrome, involving cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy, is the most common form of hereditary stroke disorder, and is thought to be caused by mutations of the \"Notch 3\" gene on chromosome 19. The disease belongs to a family of disorders called the leukodystrophies. The most common clinical manifestations are migraine headaches and transient ischemic attacks or strokes, which usually occur between 40 and 50 years of age, although MRI is able to detect signs of the disease years prior to clinical manifestation of disease.\n\nThe condition was identified and named by French researchers Marie-Germaine Bousser and Elisabeth Tournier-Lasserve in the 1990s."
+                }
+            ],
+            "mean_original_docs_length": 5610.0,
+            "mean_shortened_docs_length": 740.0
+        },
+        "80": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Proximal humerus fracture",
+                    "original_doc_length": 5704,
+                    "shortened_doc_length": 727,
+                    "shortened_doc_content": "Proximal humerus fracture\n\nA proximal humerus fracture is a break of the upper part of the bone of the arm (humerus). Symptoms include pain, swelling, and a decreased ability to move the shoulder. Complications may include axillary nerve or axillary artery injury.\nThe cause is generally a fall onto the arm or direct trauma to the arm. Risk factors include osteoporosis and diabetes. Diagnosis is generally based on X-rays or CT scan. It is a type of humerus fracture. A number of classification systems exist.\nTreatment is generally with an arm sling for a brief period of time followed by specific exercises. This appears appropriate in many cases even when the fragments are separated. Less commonly surgery is recommended."
+                }
+            ],
+            "mean_original_docs_length": 5704.0,
+            "mean_shortened_docs_length": 727.0
+        },
+        "81": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Coronary artery disease",
+                    "original_doc_length": 21318,
+                    "shortened_doc_length": 842,
+                    "shortened_doc_content": "Coronary artery disease\n\nCoronary artery disease (CAD), also known as coronary heart disease (CHD) or ischemic heart disease (IHD), involves the reduction of blood flow to the heart muscle due to build-up of plaque in the arteries of the heart. It is the most common of the cardiovascular diseases. Types include stable angina, unstable angina, myocardial infarction, and sudden cardiac death. A common symptom is chest pain or discomfort which may travel into the shoulder, arm, back, neck, or jaw. Occasionally it may feel like heartburn. Usually symptoms occur with exercise or emotional stress, last less than a few minutes, and improve with rest. Shortness of breath may also occur and sometimes no symptoms are present. In many cases, the first sign is a heart attack. Other complications include heart failure or an abnormal heartbeat."
+                }
+            ],
+            "mean_original_docs_length": 21318.0,
+            "mean_shortened_docs_length": 842.0
+        },
+        "82": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Cardiology diagnostic tests and procedures",
+                    "original_doc_length": 5044,
+                    "shortened_doc_length": 873,
+                    "shortened_doc_content": "Cardiology diagnostic tests and procedures\n\nThe diagnostic tests in cardiology are methods of identifying heart conditions associated with healthy vs. unhealthy, pathologic heart function.\n\nObtaining a medical history is always the first \"test\", part of understanding the likelihood of significant disease, as detectable within the current limitations of clinical medicine. Yet heart problems often produce no symptoms until very advanced, and many symptoms, such as palpitations and sensations of extra or missing heart beats correlate poorly with relative heart health \"vs\" disease. Hence, a history alone is rarely sufficient to diagnose a heart condition.\n\n\"Auscultation\" employs a stethoscope to more easily hear various normal and abnormal sounds, such as normal heart beat sounds and the usual heart beat sound changes associated with breathing versus heart murmurs."
+                }
+            ],
+            "mean_original_docs_length": 5044.0,
+            "mean_shortened_docs_length": 873.0
+        },
+        "83": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Atorvastatin",
+                    "original_doc_length": 18874,
+                    "shortened_doc_length": 645,
+                    "shortened_doc_content": "Atorvastatin\n\nAtorvastatin, sold under the brand name Lipitor among others, is a statin medication used to prevent cardiovascular disease in those at high risk and treat abnormal lipid levels. For the prevention of cardiovascular disease, statins are a first-line treatment. It is taken by mouth.\nCommon side effects include joint pain, diarrhea, heartburn, nausea, and muscle pains. Serious side effects may include rhabdomyolysis, liver problems, and diabetes. Use during pregnancy may harm the baby. Like all statins, atorvastatin works by inhibiting HMG-CoA reductase, an enzyme found in the liver that plays a role in producing cholesterol."
+                }
+            ],
+            "mean_original_docs_length": 18874.0,
+            "mean_shortened_docs_length": 645.0
+        },
+        "84": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hemoptysis",
+                    "original_doc_length": 4308,
+                    "shortened_doc_length": 442,
+                    "shortened_doc_content": "Hemoptysis\n\nHemoptysis is the coughing up of blood or blood-stained mucus from the bronchi, larynx, trachea, or lungs. In other words, it is the airway bleeding. This can occur with lung cancer, infections such as tuberculosis, bronchitis, or pneumonia, and certain cardiovascular conditions. Hemoptysis is considered massive at . In such cases, there are always severe injuries. The primary danger comes from choking, rather than blood loss."
+                }
+            ],
+            "mean_original_docs_length": 4308.0,
+            "mean_shortened_docs_length": 442.0
+        },
+        "85": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "Acute abdomen\n\nAn acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment.\n\nThe differential diagnoses of acute abdomen include:"
+                }
+            ],
+            "mean_original_docs_length": 4369.0,
+            "mean_shortened_docs_length": 260.0
+        },
+        "86": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Trisomy 9",
+                    "original_doc_length": 1767,
+                    "shortened_doc_length": 401,
+                    "shortened_doc_content": "Trisomy 9\n\nFull trisomy 9 is a lethal chromosomal disorder caused by having three copies (trisomy) of chromosome number 9. It can be a viable condition if trisomy affects only part of the cells of the body (mosaicism) or in cases of partial trisomy (trisomy 9p) in which cells have a normal set of two entire chromosomes 9 plus part of a third copy, usually of the short arm of the chromosome (arm p)."
+                }
+            ],
+            "mean_original_docs_length": 1767.0,
+            "mean_shortened_docs_length": 401.0
+        },
+        "87": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Health in the Central African Republic",
+                    "original_doc_length": 2202,
+                    "shortened_doc_length": 653,
+                    "shortened_doc_content": "Health in the Central African Republic\n\nIn the Central African Republic, mobile crews treat local epidemic diseases, conduct vaccination and inoculation campaigns, and enforce local health regulations.\nThey conduct research on sleeping sickness, malaria, and other tropical diseases and devise prophylactic methods best suited to the rural population.\n\nIn 2004, it was estimated that there were fewer than 3 physicians and 9 nurses per 100,000 people. In 2000, 60 percent of the population had access to safe drinking water and 31% had adequate sanitation.\n\nThe 2014 CIA estimated average life expectancy in the Central African Republic was 51.81 years."
+                }
+            ],
+            "mean_original_docs_length": 2202.0,
+            "mean_shortened_docs_length": 653.0
+        },
+        "88": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Signs and symptoms of HIV/AIDS",
+                    "original_doc_length": 12541,
+                    "shortened_doc_length": 863,
+                    "shortened_doc_content": "Signs and symptoms of HIV/AIDS\n\nThe stages of HIV infection are acute infection (also known as primary infection), latency and AIDS. Acute infection lasts for several weeks and may include symptoms such as fever, swollen lymph nodes, inflammation of the throat, rash, muscle pain, malaise, and mouth and esophageal sores. The latency stage involves few or no symptoms and can last anywhere from two weeks to twenty years or more, depending on the individual. AIDS, the final stage of HIV infection, is defined by low CD4+ T cell counts (fewer than 200 per microliter), various opportunistic infections, cancers and other conditions.\n\nAcute HIV infection, primary HIV infection or acute seroconversion syndrome is the second stage of HIV infection. It occurs after the incubation stage, before the latency stage and the potential AIDS succeeding the latency stage."
+                }
+            ],
+            "mean_original_docs_length": 12541.0,
+            "mean_shortened_docs_length": 863.0
+        },
+        "89": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hepatomegaly",
+                    "original_doc_length": 2988,
+                    "shortened_doc_length": 825,
+                    "shortened_doc_content": "Hepatomegaly\n\nHepatomegaly is the condition of having an enlarged liver. It is a non-specific medical sign having many causes, which can broadly be broken down into infection, hepatic tumours, or metabolic disorder. Often, hepatomegaly will present as an abdominal mass. Depending on the cause, it may sometimes present along with jaundice.\n\nThe individual may experience many symptoms, including weight loss, poor appetite and lethargy (jaundice and bruising may also be present).\n\nAmong the causes of hepatomegaly are the following:\n\nThe mechanism of hepatomegaly consists of vascular swelling, inflammation (due to the various causes that are infectious in origin) and deposition of (1) non-hepatic cells or (2) increased cell contents (such due to iron in hemochromatosis or hemosiderosis and fat in fatty liver disease)."
+                }
+            ],
+            "mean_original_docs_length": 2988.0,
+            "mean_shortened_docs_length": 825.0
+        },
+        "90": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Preterm birth",
+                    "original_doc_length": 45643,
+                    "shortened_doc_length": 533,
+                    "shortened_doc_content": "Preterm birth\n\nPreterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks' gestational age, as opposed to the usual about 40 weeks. These babies are known as preemies or premmies. Symptoms of preterm labor include uterine contractions which occur more often than every ten minutes or the leaking of fluid from the vagina. Premature infants are at greater risk for cerebral palsy, delays in development, hearing problems and sight problems. The earlier a baby is born, the greater these risks will be."
+                }
+            ],
+            "mean_original_docs_length": 45643.0,
+            "mean_shortened_docs_length": 533.0
+        },
+        "91": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Polyp (medicine)",
+                    "original_doc_length": 11521,
+                    "shortened_doc_length": 709,
+                    "shortened_doc_content": "Polyp (medicine)\n\nIn anatomy, a polyp is an abnormal growth of tissue projecting from a mucous membrane. If it is attached to the surface by a narrow elongated stalk, it is said to be \"pedunculated\"; if it is attached without a stalk, it is said to be \"sessile\". Polyps are commonly found in the colon, stomach, nose, ear, sinus(es), urinary bladder, and uterus. They may also occur elsewhere in the body where there are mucous membranes, including the cervix, vocal folds, and small intestine. Some polyps are tumors (neoplasms) and others are non-neoplastic, for example hyperplastic or dysplastic. The neoplastic ones are usually benign, although some can be pre-malignant, or concurrent with a malignancy."
+                }
+            ],
+            "mean_original_docs_length": 11521.0,
+            "mean_shortened_docs_length": 709.0
+        },
+        "93": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Dyshidrosis",
+                    "original_doc_length": 4442,
+                    "shortened_doc_length": 681,
+                    "shortened_doc_content": "Dyshidrosis\n\nDyshidrosis, is a type of dermatitis, that is characterized by itchy blisters on the palms of the hands and bottoms of the feet. Blisters are generally one to two millimeters in size and heal over three weeks. However, they often recur. Redness is not usually present. Repeated attacks may result in fissures and skin thickening.\nThe cause is unknown. Triggers may include allergens, physical or mental stress, frequent hand washing, or metals. Diagnosis is typically based on what it looks like and the symptoms. Allergy testing and culture may be done to rule out other problems. Other conditions that produce similar symptoms include pustular psoriasis and scabies."
+                }
+            ],
+            "mean_original_docs_length": 4442.0,
+            "mean_shortened_docs_length": 681.0
+        },
+        "94": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Adenoma sebaceum",
+                    "original_doc_length": 638,
+                    "shortened_doc_length": 638,
+                    "shortened_doc_content": "Adenoma sebaceum\n\nAdenoma sebaceum is a misnamed cutaneous disorder consisting of angiofibromas that begin in childhood (generally present between 2\u20135 years of age) and appear clinically as red papules on the face especially on the nasolabial folds, cheek and chin mostly thought to be acne not responding to treatment. Adenoma sebaceum may at times be associated with tuberous sclerosis. Gradually the papules become more prominent with time and persist throughout life. Cosmetic removal by argon or pulse dye laser or scalpel is indicated.\n\nBULLET::::- List of cutaneous conditions\nBULLET::::- Skin lesion\nBULLET::::- Tuberous sclerosis"
+                }
+            ],
+            "mean_original_docs_length": 638.0,
+            "mean_shortened_docs_length": 638.0
+        },
+        "95": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lung nodule",
+                    "original_doc_length": 8871,
+                    "shortened_doc_length": 888,
+                    "shortened_doc_content": "Lung nodule\n\nA lung nodule or pulmonary nodule is a relatively small focal density in the lung. A solitary pulmonary nodule (SPN) or coin lesion, is a mass in the lung smaller than 3 centimeters in diameter. There may also be multiple nodules.\n\nOne or more lung nodules can be an incidental finding found in up to 0.2% of chest X-rays and around 1% of CT scans.\n\nThe nodule most commonly represents a benign tumor such as a granuloma or hamartoma, but in around 20% of cases it represents a malignant cancer, especially in older adults and smokers. Conversely, 10 to 20% of patients with lung cancer are diagnosed in this way. If the patient has a history of smoking or the nodule is growing, the possibility of cancer may need to be excluded through further radiological studies and interventions, possibly including surgical resection. The prognosis depends on the underlying condition."
+                }
+            ],
+            "mean_original_docs_length": 8871.0,
+            "mean_shortened_docs_length": 888.0
+        },
+        "96": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Undifferentiated pleomorphic sarcoma",
+                    "original_doc_length": 2562,
+                    "shortened_doc_length": 622,
+                    "shortened_doc_content": "Undifferentiated pleomorphic sarcoma\n\nUndifferentiated pleomorphic sarcoma, previously malignant fibrous histiocytoma, is a type of cancer, namely a soft-tissue sarcoma.\n\nIt is considered a diagnosis of exclusion for sarcomas that cannot be more precisely categorized. Other sarcomas are cancers that form in bone and soft tissues, including muscle, fat, blood vessels, lymph vessels, and fibrous tissue (such as tendons and ligaments).\n\nUPS occurs most commonly in the extremities and retroperitoneum, but has been reported in other sites. Metastasis occurs most frequently in the lungs (90%), bones (8%), and liver (1%)."
+                }
+            ],
+            "mean_original_docs_length": 2562.0,
+            "mean_shortened_docs_length": 622.0
+        },
+        "97": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Migraine",
+                    "original_doc_length": 16196,
+                    "shortened_doc_length": 598,
+                    "shortened_doc_content": "Migraine\n\nA migraine is a primary headache disorder characterized by recurrent headaches that are moderate to severe. Typically, the headaches affect one half of the head, are pulsating in nature, and last from a few hours to 3 days. Associated symptoms may include nausea, vomiting, and sensitivity to light, sound, or smell. The pain is generally made worse by physical activity. Up to one-third of people affected have an aura: typically a short period of visual disturbance that signals that the headache will soon occur. Occasionally, an aura can occur with little or no headache following it."
+                }
+            ],
+            "mean_original_docs_length": 16196.0,
+            "mean_shortened_docs_length": 598.0
+        },
+        "98": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Epididymitis",
+                    "original_doc_length": 9244,
+                    "shortened_doc_length": 788,
+                    "shortened_doc_content": "Epididymitis\n\nEpididymitis is a medical condition characterized by inflammation of the epididymis, a curved structure at the back of the testicle. Onset of pain is typically over a day or two. The pain may improve with raising the testicle. Other symptoms may include swelling of the testicle, burning with urination, or frequent urination. Inflammation of the testicle is commonly also present.\nIn those who are young and sexually active gonorrhea and chlamydia are frequently the underlying cause. In older males and males who have sex with males enteric bacteria are common. Diagnosis is typically based on symptoms. Conditions that may result in similar symptoms include testicular torsion, inguinal hernia, and testicular cancer. Ultrasound can be useful if the diagnosis is unclear."
+                }
+            ],
+            "mean_original_docs_length": 9244.0,
+            "mean_shortened_docs_length": 788.0
+        },
+        "99": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acute abdomen",
+                    "original_doc_length": 4369,
+                    "shortened_doc_length": 260,
+                    "shortened_doc_content": "Acute abdomen\n\nAn acute abdomen refers to a sudden, severe abdominal pain. It is in many cases a medical emergency, requiring urgent and specific diagnosis. Several causes need immediate surgical treatment.\n\nThe differential diagnoses of acute abdomen include:"
+                }
+            ],
+            "mean_original_docs_length": 4369.0,
+            "mean_shortened_docs_length": 260.0
+        },
+        "100": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Neck pain",
+                    "original_doc_length": 5554,
+                    "shortened_doc_length": 469,
+                    "shortened_doc_content": "Neck pain\n\nNeck pain, also known as cervicalgia, is a common problem, with two-thirds of the population having neck pain at some point in their lives.\n\nNeck pain, although felt in the neck, can be caused by numerous other spinal problems. Neck pain may arise due to muscular tightness in both the neck and upper back, or pinching of the nerves emanating from the cervical vertebrae. Joint disruption in the neck creates pain, as does joint disruption in the upper back."
+                }
+            ],
+            "mean_original_docs_length": 5554.0,
+            "mean_shortened_docs_length": 469.0
+        },
+        "101": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Globus pharyngis",
+                    "original_doc_length": 2753,
+                    "shortened_doc_length": 397,
+                    "shortened_doc_content": "Globus pharyngis\n\nGlobus pharyngis or globus sensation is the persistent but painless sensation of having a pill, food bolus, or some other sort of obstruction in the throat when there is none. Swallowing is typically performed normally, so it is not a true case of dysphagia, but it can become quite irritating. It is common, with 22-45% of people experiencing it at least once in their lifetime."
+                }
+            ],
+            "mean_original_docs_length": 2753.0,
+            "mean_shortened_docs_length": 397.0
+        },
+        "102": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hemoptysis",
+                    "original_doc_length": 4308,
+                    "shortened_doc_length": 442,
+                    "shortened_doc_content": "Hemoptysis\n\nHemoptysis is the coughing up of blood or blood-stained mucus from the bronchi, larynx, trachea, or lungs. In other words, it is the airway bleeding. This can occur with lung cancer, infections such as tuberculosis, bronchitis, or pneumonia, and certain cardiovascular conditions. Hemoptysis is considered massive at . In such cases, there are always severe injuries. The primary danger comes from choking, rather than blood loss."
+                }
+            ],
+            "mean_original_docs_length": 4308.0,
+            "mean_shortened_docs_length": 442.0
+        },
+        "103": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Salivary gland tumour",
+                    "original_doc_length": 8452,
+                    "shortened_doc_length": 382,
+                    "shortened_doc_content": "Salivary gland tumour\n\nSalivary gland tumours or neoplasms are tumours that form in the tissues of salivary glands. The salivary glands are classified as major or minor. The major salivary glands consist of the parotid, submandibular, and sublingual glands. The minor salivary glands consist of 800-1000 small mucus-secreting glands located throughout the lining of the oral cavity."
+                }
+            ],
+            "mean_original_docs_length": 8452.0,
+            "mean_shortened_docs_length": 382.0
+        },
+        "104": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Facial trauma",
+                    "original_doc_length": 14437,
+                    "shortened_doc_length": 469,
+                    "shortened_doc_content": "Facial trauma\n\nFacial trauma, also called maxillofacial trauma, is any physical trauma to the face. Facial trauma can involve soft tissue injuries such as burns, lacerations and bruises, or fractures of the facial bones such as nasal fractures and fractures of the jaw, as well as trauma such as eye injuries. Symptoms are specific to the type of injury; for example, fractures may involve pain, swelling, loss of function, or changes in the shape of facial structures."
+                }
+            ],
+            "mean_original_docs_length": 14437.0,
+            "mean_shortened_docs_length": 469.0
+        },
+        "105": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Transient acantholytic dermatosis",
+                    "original_doc_length": 2577,
+                    "shortened_doc_length": 871,
+                    "shortened_doc_content": "Transient acantholytic dermatosis\n\nGrover's disease (GD) is a polymorphic, pruritic, papulovesicular dermatosis characterized histologically by acantholysis with or without dyskeratosis. Once confirmed, most cases of Grover's disease last six to twelve months, which is why it was originally called \"transient\". However it may last much longer. Nevertheless, it is not to be confused with relapsing linear acantholytic dermatosis.\n\nGrover's disease often starts quite suddenly. There are intensely itchy spots on the central back, mid chest and occasionally elsewhere. Frequently, it follows sweating or some unexpected heat stress.\n\nThe itchy eruption lasts an average of 10\u201312 months. It is characterized by papules and papulovesicles with excoriations occurring on the chest, back, lower sternum, arms, and thighs. The papules are most commonly found on the mid chest."
+                }
+            ],
+            "mean_original_docs_length": 2577.0,
+            "mean_shortened_docs_length": 871.0
+        },
+        "106": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Vulvar disease",
+                    "original_doc_length": 3261,
+                    "shortened_doc_length": 692,
+                    "shortened_doc_content": "Vulvar disease\n\nA vulvar disease is a particular abnormal, pathological condition that affects part or all of the vulva. Several pathologies are defined. Some can be prevented by vulvovaginal health maintenance.\n\n\"Vulvar cancer\" accounts for about 5% of all gynecological cancers and typically affects women in later life. Five year survival rates in the United States are around 70%.\n\nSymptoms of vulvar cancer include itching, a lump or sore on the vulva which does not heal and/or grows larger, and sometimes discomfort/pain/swelling in the vulval area. Treatments include vulvectomy \u2013 removal of all or part of the vulva.\n\nSystemic disorders may be localized in the vulvo-perineal region."
+                }
+            ],
+            "mean_original_docs_length": 3261.0,
+            "mean_shortened_docs_length": 692.0
+        },
+        "107": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Acinar cell carcinoma of the pancreas",
+                    "original_doc_length": 1465,
+                    "shortened_doc_length": 807,
+                    "shortened_doc_content": "Acinar cell carcinoma of the pancreas\n\nAcinar cell carcinoma of the pancreas, also acinar cell carcinoma, is a rare malignant exocrine tumour of the pancreas. It represents 5% of all exocrine tumours of the pancreas, making it the second most common type of pancreatic cancer. It is abbreviated ACC. It typically has a guarded prognosis.\n\nThe disease is more common in men than women and the average age at diagnosis is about 60. \nSymptoms are often non-specific and include weight loss. A classic presentation, found in around 15% of cases includes subcutaneous nodules (due to fat necrosis) and arthralgias, caused by release of lipase.\n\nACC are associated with increased serum lipase and manifest in the classic presentation as the \"Schmid triad\" (subcutaneous fat necrosis, polyarthritis, eosinophilia)."
+                }
+            ],
+            "mean_original_docs_length": 1465.0,
+            "mean_shortened_docs_length": 807.0
+        },
+        "108": {
+            "predicted_answer": "D",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Posterior reversible encephalopathy syndrome",
+                    "original_doc_length": 2644,
+                    "shortened_doc_length": 732,
+                    "shortened_doc_content": "Posterior reversible encephalopathy syndrome\n\nPosterior reversible encephalopathy syndrome (PRES) is a syndrome characterized by headache, confusion, seizures and visual loss. It may occur due to a number of causes, predominantly malignant hypertension, eclampsia and some medical treatments. On magnetic resonance imaging (MRI) of the brain, areas of edema (swelling) are seen. The symptoms tend to resolve after a period of time, although visual changes sometimes remain. It was first described in 1996.\n\nTypical symptoms of PRES, listed according to prevalence, include: altered mental status (encephalopathy), seizure, and headache. Less commonly there may be visual disturbances, focal neurologic signs, and status epilepticus."
+                }
+            ],
+            "mean_original_docs_length": 2644.0,
+            "mean_shortened_docs_length": 732.0
+        },
+        "109": {
+            "predicted_answer": "C",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Tinnitus",
+                    "original_doc_length": 20913,
+                    "shortened_doc_length": 906,
+                    "shortened_doc_content": "Tinnitus\n\nTinnitus is the perception of sound when no corresponding external sound is present. While often described as a ringing, it may also sound like a clicking, buzzing, hiss, or roaring. Rarely, unclear voices or music are heard. The sound may be soft or loud, low or high pitched, and appear to be coming from one or both ears. Most of the time, it comes on gradually. In some people, the sound may interfere with concentration or cause anxiety or depression. Tinnitus may be associated with some degree of hearing loss.\nRather than a disease, tinnitus is a symptom that may result from various underlying causes. A common cause is noise-induced hearing loss. Other causes include ear infections, disease of the heart or blood vessels, M\u00e9ni\u00e8re's disease, brain tumors, exposure to certain medications, a previous head injury, earwax, and emotional stress. It is more common in those with depression."
+                }
+            ],
+            "mean_original_docs_length": 20913.0,
+            "mean_shortened_docs_length": 906.0
+        },
+        "110": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "CADASIL",
+                    "original_doc_length": 5610,
+                    "shortened_doc_length": 740,
+                    "shortened_doc_content": "CADASIL\n\nCADASIL or CADASIL syndrome, involving cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy, is the most common form of hereditary stroke disorder, and is thought to be caused by mutations of the \"Notch 3\" gene on chromosome 19. The disease belongs to a family of disorders called the leukodystrophies. The most common clinical manifestations are migraine headaches and transient ischemic attacks or strokes, which usually occur between 40 and 50 years of age, although MRI is able to detect signs of the disease years prior to clinical manifestation of disease.\n\nThe condition was identified and named by French researchers Marie-Germaine Bousser and Elisabeth Tournier-Lasserve in the 1990s."
+                }
+            ],
+            "mean_original_docs_length": 5610.0,
+            "mean_shortened_docs_length": 740.0
+        },
+        "111": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Esophagogastroduodenoscopy",
+                    "original_doc_length": 7128,
+                    "shortened_doc_length": 488,
+                    "shortened_doc_content": "Esophagogastroduodenoscopy\n\nEsophagogastroduodenoscopy (EGD; ), also called by various other names, is a diagnostic endoscopic procedure that visualizes the upper part of the gastrointestinal tract down to the duodenum. It is considered a minimally invasive procedure since it does not require an incision into one of the major body cavities and does not require any significant recovery after the procedure (unless sedation or anesthesia has been used). However, a sore throat is common."
+                }
+            ],
+            "mean_original_docs_length": 7128.0,
+            "mean_shortened_docs_length": 488.0
+        },
+        "112": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Transfusion-associated graft-versus-host disease",
+                    "original_doc_length": 2546,
+                    "shortened_doc_length": 841,
+                    "shortened_doc_content": "Transfusion-associated graft-versus-host disease\n\nTransfusion-associated graft-versus-host disease (TA-GvHD) is a rare complication of blood transfusion, in which the immunologically competent donor T lymphocytes mount an immune response against the recipient's lymphoid tissue. These donor lymphocytes engraft, recognize recipient cells as foreign and mount an immune response against recipient tissues. Donor lymphocytes are usually identified as foreign and destroyed by the recipient's immune system. However, in situations where the recipient is severely immunocompromised, or when the donor and recipient HLA type is similar (as can occur in directed donations from first-degree relatives), the recipient's immune system is not able to destroy the donor lymphocytes. This can result in transfusion associated graft-versus-host disease."
+                }
+            ],
+            "mean_original_docs_length": 2546.0,
+            "mean_shortened_docs_length": 841.0
+        },
+        "113": {
+            "predicted_answer": "D",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Chest pain",
+                    "original_doc_length": 19261,
+                    "shortened_doc_length": 483,
+                    "shortened_doc_content": "Chest pain\n\nChest pain is discomfort, typically in the front of the chest. It may be described as sharp, dull, pressure, heaviness, or squeezing. Associated symptoms may include pain in the shoulder, arm, upper abdomen, or jaw, or nausea, sweating, or shortness of breath. It can be divided into heart-related and non heart related pain. Pain due to insufficient blood flow to the heart is also called angina pectoris. Those with diabetes or who are old may have less clear symptoms."
+                }
+            ],
+            "mean_original_docs_length": 19261.0,
+            "mean_shortened_docs_length": 483.0
+        },
+        "114": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Diastolic heart murmur",
+                    "original_doc_length": 972,
+                    "shortened_doc_length": 239,
+                    "shortened_doc_content": "Diastolic heart murmur\n\nDiastolic heart murmurs are heart murmurs heard during diastole, i.e. they start at or after S2 and end before or at S1. Many involve stenosis of the atrioventricular valves or regurgitation of the semilunar valves."
+                }
+            ],
+            "mean_original_docs_length": 972.0,
+            "mean_shortened_docs_length": 239.0
+        },
+        "115": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Electrocardiography in myocardial infarction",
+                    "original_doc_length": 4985,
+                    "shortened_doc_length": 333,
+                    "shortened_doc_content": "Electrocardiography in myocardial infarction\n\nElectrocardiography in suspected myocardial infarction has the main purpose of detecting ischemia or acute coronary injury in emergency department populations coming for symptoms of myocardial infarction (MI). Also, it can distinguish clinically different types of myocardial infarction."
+                }
+            ],
+            "mean_original_docs_length": 4985.0,
+            "mean_shortened_docs_length": 333.0
+        },
+        "116": {
+            "predicted_answer": "C",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Abdominal ultrasonography",
+                    "original_doc_length": 5826,
+                    "shortened_doc_length": 828,
+                    "shortened_doc_content": "Abdominal ultrasonography\n\nAbdominal ultrasonography (also called abdominal ultrasound imaging or abdominal sonography) is a form of medical ultrasonography (medical application of ultrasound technology) to visualise abdominal anatomical structures. It uses transmission and reflection of ultrasound waves to visualise internal organs through the abdominal wall (with the help of gel, which helps transmission of the sound waves). For this reason, the procedure is also called a transabdominal ultrasound, in contrast to endoscopic ultrasound, the latter combining ultrasound with endoscopy through visualize internal structures from within hollow organs.\n\nAbdominal ultrasound examinations are performed by gastroenterologists or other specialists in internal medicine, radiologists, or sonographers trained for this procedure."
+                }
+            ],
+            "mean_original_docs_length": 5826.0,
+            "mean_shortened_docs_length": 828.0
+        },
+        "117": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pancreatic cancer",
+                    "original_doc_length": 46319,
+                    "shortened_doc_length": 870,
+                    "shortened_doc_content": "Pancreatic cancer\n\nPancreatic cancer arises when cells in the pancreas, a glandular organ behind the stomach, begin to multiply out of control and form a mass. These cancerous cells have the ability to invade other parts of the body. There are a number of types of pancreatic cancer. The most common, pancreatic adenocarcinoma, accounts for about 85% of cases, and the term \"pancreatic cancer\" is sometimes used to refer only to that type. These adenocarcinomas start within the part of the pancreas which makes digestive enzymes. Several other types of cancer, which collectively represent the majority of the non-adenocarcinomas, can also arise from these cells. One to two percent of cases of pancreatic cancer are neuroendocrine tumors, which arise from the hormone-producing cells of the pancreas. These are generally less aggressive than pancreatic adenocarcinoma."
+                }
+            ],
+            "mean_original_docs_length": 46319.0,
+            "mean_shortened_docs_length": 870.0
+        },
+        "118": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Myelofibrosis",
+                    "original_doc_length": 11328,
+                    "shortened_doc_length": 327,
+                    "shortened_doc_content": "Myelofibrosis\n\nPrimary myelofibrosis is a relatively rare bone marrow/blood cancer. It is currently classified as a myeloproliferative neoplasm, in which the proliferation of an abnormal clone of hematopoietic stem cells in the bone marrow and other sites results in fibrosis, or the replacement of the marrow with scar tissue."
+                }
+            ],
+            "mean_original_docs_length": 11328.0,
+            "mean_shortened_docs_length": 327.0
+        },
+        "119": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hypertensive encephalopathy",
+                    "original_doc_length": 8304,
+                    "shortened_doc_length": 799,
+                    "shortened_doc_content": "Hypertensive encephalopathy\n\nHypertensive encephalopathy (HE) is general brain dysfunction due to significantly high blood pressure. Symptoms may include headache, vomiting, trouble with balance, and confusion. Onset is generally sudden. Complications can include seizures, posterior reversible encephalopathy syndrome, and bleeding in the back of the eye.\nIn hypertensive encephalopathy, generally the blood pressure is greater than 200/130 mmHg. Occasionally it can occur at a BP as low as 160/100 mmHg. This can occur in kidney failure, those who rapidly stop blood pressure medication, pheochromocytoma, and people on a monoamine oxidase inhibitor (MAOI) who eats foods with tyramine. When it occurs in pregnancy it is known as eclampsia. The diagnosis requires ruling out other possible causes."
+                }
+            ],
+            "mean_original_docs_length": 8304.0,
+            "mean_shortened_docs_length": 799.0
+        },
+        "120": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Proctitis",
+                    "original_doc_length": 3230,
+                    "shortened_doc_length": 908,
+                    "shortened_doc_content": "Proctitis\n\nProctitis is an inflammation of the anus and the lining of the rectum, affecting only the last 6\u00a0inches of the rectum.\n\nA common symptom is a continual urge to have a bowel movement\u2014the rectum could feel full or have constipation. Another is tenderness and mild irritation in the rectum and anal region. A serious symptom is pus and blood in the discharge, accompanied by cramps and pain during the bowel movement. If there is severe bleeding, anemia can result, showing symptoms such as pale skin, irritability, weakness, dizziness, brittle nails, and shortness of breath.\n\nSymptoms are ineffectual straining to empty the bowels, diarrhea, rectal bleeding and possible discharge, a feeling of not having adequately emptied the bowels, involuntary spasms and cramping during bowel movements, left-sided abdominal pain, passage of mucus through the rectum, and anorectal pain.\n\nGonorrhea\n\nChlamydia"
+                }
+            ],
+            "mean_original_docs_length": 3230.0,
+            "mean_shortened_docs_length": 908.0
+        },
+        "121": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Pyelonephritis",
+                    "original_doc_length": 12591,
+                    "shortened_doc_length": 810,
+                    "shortened_doc_content": "Pyelonephritis\n\nPyelonephritis is inflammation of the kidney, typically due to a bacterial infection. Symptoms most often include fever and flank tenderness. Other symptoms may include nausea, burning with urination, and frequent urination. Complications may include pus around the kidney, sepsis, or kidney failure.\nIt is typically due to a bacterial infection, most commonly \"Escherichia coli\". Risk factors include sexual intercourse, prior urinary tract infections, diabetes, structural problems of the urinary tract, and spermicide use. The mechanism of infection is usually spread up the urinary tract. Less often infection occurs through the bloodstream. Diagnosis is typically based on symptoms and supported by urinalysis. If there is no improvement with treatment, medical imaging may be recommended."
+                }
+            ],
+            "mean_original_docs_length": 12591.0,
+            "mean_shortened_docs_length": 810.0
+        },
+        "122": {
+            "predicted_answer": "D",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Lower motor neuron lesion",
+                    "original_doc_length": 2288,
+                    "shortened_doc_length": 552,
+                    "shortened_doc_content": "Lower motor neuron lesion\n\nA lower motor neuron lesion is a lesion which affects nerve fibers traveling from the lower motor neuron(s) in the anterior horn/anterior grey column of the spinal cord, or in the motor nuclei of the cranial nerves, to the relevant muscle(s).\n\nOne major characteristic used to identify a lower motor neuron lesion is flaccid paralysis \u2013 paralysis accompanied by loss of muscle tone. This is in contrast to an upper motor neuron lesion, which often presents with spastic paralysis \u2013 paralysis accompanied by severe hypertonia."
+                }
+            ],
+            "mean_original_docs_length": 2288.0,
+            "mean_shortened_docs_length": 552.0
+        },
+        "123": {
+            "predicted_answer": "A",
+            "gold_answer": "D",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hip dislocation",
+                    "original_doc_length": 8991,
+                    "shortened_doc_length": 691,
+                    "shortened_doc_content": "Hip dislocation\n\nA hip dislocation is a disruption of the joint between the femur and pelvis. Specifically it is when the ball\u2013shaped head of the femur comes out of the cup\u2013shaped acetabulum of the pelvis. Symptoms typically include pain and an inability move the hip. Complications may include avascular necrosis of the hip, injury to the sciatic nerve, or arthritis.\nDislocations are typically due to significant trauma such as a motor vehicle collision or fall from height. Often there are also other associated injuries. Diagnosis is generally confirmed by plain X-rays. Hip dislocations can also occur follow a hip replacement or from a developmental abnormality known as hip dysplasia."
+                }
+            ],
+            "mean_original_docs_length": 8991.0,
+            "mean_shortened_docs_length": 691.0
+        },
+        "124": {
+            "predicted_answer": "A",
+            "gold_answer": "B",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Hip fracture",
+                    "original_doc_length": 20478,
+                    "shortened_doc_length": 805,
+                    "shortened_doc_content": "Hip fracture\n\nA hip fracture is a break that occurs in the upper part of the femur (thigh bone). Symptoms may include pain around the hip, particularly with movement, and shortening of the leg. Usually the person cannot walk.\nThey most often occur as a result of a fall. Risk factors include osteoporosis, taking many medications, alcohol use, and metastatic cancer. Diagnosis is generally by X-rays. Magnetic resonance imaging, a CT scan, or a bone scan may occasionally be required to make the diagnosis.\nPain management may involve opioids or a nerve block. If the person's health allows, surgery is generally recommended within two days. Options for surgery may include a total hip replacement or stabilizing the fracture with screws. Treatment to prevent blood clots following surgery is recommended."
+                }
+            ],
+            "mean_original_docs_length": 20478.0,
+            "mean_shortened_docs_length": 805.0
+        },
+        "125": {
+            "predicted_answer": "A",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Benign lymphoepithelial lesion",
+                    "original_doc_length": 2892,
+                    "shortened_doc_length": 918,
+                    "shortened_doc_content": "Benign lymphoepithelial lesion\n\nBenign lymphoepithelial lesion is a type of benign enlargement of the parotid and/or lacrimal glands. This pathologic state is sometimes, but not always, associated with Sj\u00f6gren's syndrome.\n\nBenign lymphoepithelial lesion is most likely to occur in adults around 50 years of age. There is a predilection for gender with 60\u201380% being female. The gland affected has a diffuse swelling. The swelling can be asymptomatic, but mild pain can also be associated. There is a preponderance of this disease in those who suffer from HIV infection.\n\nMost cases of benign lymphoepithelial lesions appear in conjunction with Sj\u00f6gren's syndrome. When Sj\u00f6gren's syndrome is present, the swelling is usually bilateral. Otherwise, the affected glands are usually only on one side of the body.\n\nIn many cases, a biopsy is needed to distinguish benign lymphoepithelial lesions from sialadenosis (sialosis)."
+                }
+            ],
+            "mean_original_docs_length": 2892.0,
+            "mean_shortened_docs_length": 918.0
+        },
+        "126": {
+            "predicted_answer": "D",
+            "gold_answer": "A",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Oropharyngeal dysphagia",
+                    "original_doc_length": 11229,
+                    "shortened_doc_length": 813,
+                    "shortened_doc_content": "Oropharyngeal dysphagia\n\nOropharyngeal dysphagia arises from abnormalities of muscles, nerves or structures of the oral cavity, pharynx, and upper esophageal sphincter.\n\nSome signs and symptoms of swallowing difficulties include difficulty controlling food in the mouth, inability to control food or saliva in the mouth, difficulty initiating a swallow, coughing, choking, frequent pneumonia, unexplained weight loss, gurgly or wet voice after swallowing, nasal regurgitation, and dysphagia (patient complaint of swallowing difficulty). Other symptoms include drooling, dysarthria, dysphonia, aspiration pneumonia, depression, or nasopharyngeal regurgitation as associated symptoms. When asked where the food is getting stuck patients will often point to the cervical (neck) region as the site of the obstruction."
+                }
+            ],
+            "mean_original_docs_length": 11229.0,
+            "mean_shortened_docs_length": 813.0
+        },
+        "127": {
+            "predicted_answer": "A",
+            "gold_answer": "C",
+            "is_well_formatted": true,
+            "relevant_docs": [
+                {
+                    "doc_title": "Respiratory examination",
+                    "original_doc_length": 8688,
+                    "shortened_doc_length": 910,
+                    "shortened_doc_content": "Respiratory examination\n\nA respiratory examination, or lung examination, is performed as part of a physical examination, in response to respiratory symptoms such as shortness of breath, cough, or chest pain, and is often carried out with a cardiac examination.\n\nThe four steps of the respiratory exam are inspection, palpation, percussion, and auscultation of the lungs, normally first carried out from the back of the chest.\n\nAfter positioning in which the patient sits upright with their arms at the side, with the chest clear of clothing, the four stages of the examination can be carried out. \nIn order to listen to the lungs from the back the patient is asked to move their arms forward to prevent the scapulae (shoulder blades) from obstructing the upper lung fields. These fields are intended to correlate with the lung lobes and are thus tested on the anterior (front) and posterior (back) chest walls."
+                }
+            ],
+            "mean_original_docs_length": 8688.0,
+            "mean_shortened_docs_length": 910.0
+        }
+    }
+}
