@@ -8,7 +8,7 @@ from datasets import Dataset
 from IPython.display import display
 from plotly.subplots import make_subplots
 
-from src.utils.enums import VQAStrategyType
+from src.utils.enums import DocumentSplitterType, VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
@@ -257,6 +257,118 @@ def display_bar_chart_on_evaluation_results(
     )
 
     display(bar_chart)
+
+
+def display_bar_chart_on_splitter_evaluation_results(
+    splitter_evaluation_results: pd.DataFrame,
+    document_splitter_type: DocumentSplitterType,
+    title: str
+) -> None:
+    mean_accuracy = splitter_evaluation_results['accuracy'].mean()
+
+    x_column = _get_splitter_results_column_names(
+        splitter_evaluation_results, document_splitter_type
+    )
+
+    figure = go.Figure()
+
+    figure.add_trace(
+        go.Bar(
+            x=x_column,
+            y=splitter_evaluation_results['accuracy'],
+            text=splitter_evaluation_results['accuracy'].round(4),
+            textposition='inside',
+            insidetextanchor='start',
+            hovertemplate=(
+                '<b>Splitter Configuration:</b> %{x}<br>'
+                '<b>Accuracy:</b> %{y:.2%}<extra></extra>'
+            )
+        )
+    )
+
+    figure.add_hline(
+        y=mean_accuracy,
+        line_dash="dash",
+        line_color="red",
+    )
+
+    figure.add_annotation(
+        xref='paper',
+        x=1,
+        y=mean_accuracy,
+        text=f"Mean: {mean_accuracy:.2%}",
+        showarrow=False,
+        font={'size': 12, 'color': 'red'},
+        bgcolor='white',
+        bordercolor='red',
+        borderwidth=1,
+        borderpad=4,
+        yshift=12,
+        opacity=0.6
+    )
+    figure.update_traces(
+        textposition='inside',
+        insidetextanchor='start',
+        textfont={'size': 14, 'color': 'white'}
+    )
+    figure.update_layout(
+        title=title,
+        title_x=0.5,
+        title_font_size=24,
+        xaxis_title='Splitter Configuration',
+        yaxis_title='Accuracy',
+        xaxis_title_font_size=18,
+        yaxis_title_font_size=18,
+        barcornerradius=15
+    )
+
+    display(figure)
+
+
+def display_bar_chart_on_best_mean_accuracy_results(
+    mean_accuracy_values: dict[str, float],
+    title: str
+) -> None:
+    data_frame = pd.DataFrame({
+        "Splitter": list(mean_accuracy_values.keys()),
+        "Accuracy": list(mean_accuracy_values.values())
+    })
+
+    figure = px.bar(
+        data_frame=data_frame,
+        x="Splitter",
+        y="Accuracy",
+        text=data_frame["Accuracy"].round(4),
+        color="Splitter"
+    )
+
+    figure.update_traces(
+        textposition="inside",
+        insidetextanchor="start",
+        textfont={"size": 14, "color": "white"},
+        hovertemplate=(
+            '<b>Splitter:</b> %{x}<br>'
+            '<b>Accuracy:</b> %{y:.2%}<extra></extra>'
+        )
+    )
+
+    figure.update_layout(
+        title=title,
+        title_x=0.5,
+        title_font_size=24,
+        xaxis_title="Document Splitter Type",
+        yaxis_title="Mean Accuracy",
+        xaxis_title_font_size=18,
+        xaxis={'tickfont': {'size': 16}},
+        yaxis_title_font_size=18,
+        yaxis={'tickfont': {'size': 16}},
+        barcornerradius=15,
+        showlegend=False,
+        bargap=0.2,
+        margin={"t": 100}
+    )
+
+    display(figure)
 
 
 def plot_rag_q_evaluation_results_by_groups(
@@ -520,3 +632,27 @@ def _transform_add_title(add_title: Union[bool, str]) -> str:
     if add_title == '-':
         return add_title
     return "Yes" if add_title else "No"
+
+
+def _get_splitter_results_column_names(
+    splitter_evaluation_results: pd.DataFrame,
+    document_splitter_type: DocumentSplitterType
+) -> list:
+    column_names = []
+
+    for _, row in splitter_evaluation_results.iterrows():
+        column_name_elements = []
+
+        if row['add_title']:
+            column_name_elements.append("with_title")
+        else:
+            column_name_elements.append("no_title")
+
+        column_name_elements.append(f"tc{row['token_count']}")
+
+        if document_splitter_type == DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
+            column_name_elements.append(f"cs{row['chunk_size']}")
+
+        column_names.append("_".join(column_name_elements))
+
+    return column_names
