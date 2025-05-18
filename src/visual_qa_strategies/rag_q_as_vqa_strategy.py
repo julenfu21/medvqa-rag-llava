@@ -30,8 +30,7 @@ class RagQAsVQAStrategy(BaseRagVQAStrategy):
             required_arguments=[
                 ArgumentSpec(
                     name="doc_splitter",
-                    expected_type=BaseSplitter,
-                    is_optional=True
+                    expected_type=BaseSplitter
                 ),
                 ArgumentSpec(
                     name="should_apply_rag_to_question",

@@ -44,20 +44,18 @@ def parse_args() -> argparse.Namespace:
                             "the limit)."
                         ))
     parser.add_argument("--doc_splitter",
-                        type=DocumentSplitterType, default=None,
+                        type=DocumentSplitterType, required=True,
                         choices=list(DocumentSplitterType),
                         help=(
                             "Document splitter used to split the documents used for RAG into "
                             "smaller chunks\n"
-                            "    * If not provided, the default value will be 'None'"
                         ))
 
-    # Arguments used when '--doc_splitter' != None
     parser.add_argument("--token_count",
                         type=int, default=None,
                         help=(
                             "Number of chunks to extract from split documents\n"
-                            "    * It can only be used if --doc_splitter is not 'None'\n"
+                            "    * It can only be used if --doc_splitter is not 'no_splitter'\n"
                             "    * If not provided, the default value will be determined by "
                             "--doc_splitter:\n"
                             "        - 'recursive_character_splitter': "
@@ -68,10 +66,9 @@ def parse_args() -> argparse.Namespace:
                             f"{DEFAULT_TOKEN_COUNT[DocumentSplitterType.PARAGRAPH_SPLITTER]}"
                         ))
     parser.add_argument("--add_title",
-                        action='store_true', default=None,
+                        action='store_true', default=DEFAULT_ADD_TITLE,
                         help=(
                             "Include the document title in RAG inputs.\n"
-                            "    * It can only be used if --doc_splitter is not 'None'\n"
                             "    * If not provided, the default value will be "
                             f"'{DEFAULT_ADD_TITLE}'"
                         ))
@@ -105,17 +102,8 @@ def parse_args() -> argparse.Namespace:
             default_value=DEFAULT_TOKEN_COUNT,
             dependency_name="doc_splitter",
             dependency_value=args.doc_splitter,
-            valid_arg_condition=args.doc_splitter is not None,
-            error_condition_message="--doc_splitter is None"
-        ),
-        ScriptArgument(
-            name="add_title",
-            value=args.add_title,
-            default_value=DEFAULT_ADD_TITLE,
-            dependency_name="doc_splitter",
-            dependency_value=args.doc_splitter,
-            valid_arg_condition=args.doc_splitter is not None,
-            error_condition_message="--doc_splitter is None"
+            valid_arg_condition=args.doc_splitter != DocumentSplitterType.NO_SPLITTER,
+            error_condition_message="--doc_splitter is 'no_splitter'"
         ),
         ScriptArgument(
             name="chunk_size",

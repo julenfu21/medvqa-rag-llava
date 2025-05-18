@@ -30,8 +30,7 @@ class RagQVQAStrategy(BaseRagVQAStrategy):
             required_arguments=[
                 ArgumentSpec(
                     name="doc_splitter",
-                    expected_type=BaseSplitter,
-                    is_optional=True
+                    expected_type=BaseSplitter
                 )
             ],
             **kwargs

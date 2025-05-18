@@ -72,13 +72,10 @@ class DocumentRetriever(metaclass=SingletonMeta):
     def get_formatted_relevant_documents(
         self,
         query: str,
-        doc_splitter: BaseSplitter = None
+        doc_splitter: BaseSplitter
     ) -> DocumentRetrievalResult:
         relevant_documents = self.__retriever.invoke(query)
-        split_documents = (
-            doc_splitter.split_documents(documents=relevant_documents)
-            if doc_splitter else []
-        )
+        split_documents = doc_splitter.split_documents(documents=relevant_documents)
         documents_to_format = split_documents or relevant_documents
         formatted_docs = self.__format_docs(docs=documents_to_format)
 

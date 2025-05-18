@@ -3,6 +3,7 @@ import argparse
 from src.utils.data_definitions import ScriptArgument
 from src.utils.enums import DocumentSplitterType
 from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.text_splitters.no_splitter import NoSplitter
 from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
 from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
 from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
@@ -40,6 +41,11 @@ def get_document_splitter(
     arguments: argparse.Namespace
 ) -> BaseSplitter:
     match arguments.doc_splitter:
+        case DocumentSplitterType.NO_SPLITTER:
+            return NoSplitter(
+                token_count=-1,
+                add_title=arguments.add_title
+            )
         case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
             return RecursiveCharacterSplitter(
                 token_count=arguments.token_count,

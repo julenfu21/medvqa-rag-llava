@@ -146,13 +146,17 @@ class VQAStrategyDetail:
                     self.__missing_field_message(field_name="relevant_docs_count")
                 )
 
-            if self.doc_splitter_options:
-                try:
-                    self.doc_splitter_options.validate()
-                except InvalidDocSplitterOptions as e:
-                    raise InvalidVQAStrategyDetailError(
-                        f"'doc_splitter_type' has not been set up correctly. {e}"
-                    ) from e
+            if not self.doc_splitter_options:
+                raise InvalidVQAStrategyDetailError(
+                    self.__missing_field_message(field_name="doc_splitter_options")
+                )
+
+            try:
+                self.doc_splitter_options.validate()
+            except InvalidDocSplitterOptions as e:
+                raise InvalidVQAStrategyDetailError(
+                    f"'doc_splitter_type' has not been set up correctly. {e}"
+                ) from e
 
         if self.vqa_strategy_type in (VQAStrategyType.ZERO_SHOT, VQAStrategyType.RAG_Q):
             if self.should_apply_rag_to_question is not None:
@@ -195,6 +199,7 @@ class VQAStrategyDetail:
         ) -> str:
             attribute_maps = {
                 "doc_splitter_type": {
+                    DocumentSplitterType.NO_SPLITTER: "no_doc_split",
                     DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER: "rec_char_splitting",
                     DocumentSplitterType.PARAGRAPH_SPLITTER: "par_splitting",
                     DocumentSplitterType.SPACY_SENTENCE_SPLITTER: "spacy_sent_splitting"
@@ -248,10 +253,18 @@ class VQAStrategyDetail:
             doc_splitter_filepath = "no_doc_split"
 
         if self.doc_splitter_options:
-            doc_splitter_attributes = {
-                attribute.name: getattr(self.doc_splitter_options, attribute.name)
-                for attribute in fields(self.doc_splitter_options)
-            }
+            if self.doc_splitter_options.doc_splitter_type == DocumentSplitterType.NO_SPLITTER:
+                doc_splitter_attributes = {
+                    attribute.name: getattr(self.doc_splitter_options, attribute.name)
+                    for attribute in fields(self.doc_splitter_options)
+                    if attribute.name == "add_title"
+                }
+            else:
+                doc_splitter_attributes = {
+                    attribute.name: getattr(self.doc_splitter_options, attribute.name)
+                    for attribute in fields(self.doc_splitter_options)
+                }
+
             doc_splitter_path_elements = [
                 doc_splitter_attribute_to_path_elements(attribute_name, attribute_value)
                 for attribute_name, attribute_value in doc_splitter_attributes.items()

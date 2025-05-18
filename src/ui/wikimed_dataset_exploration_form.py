@@ -25,6 +25,7 @@ from src.utils.data_definitions import DocSplitterOptions
 from src.utils.enums import DocumentSplitterType
 from src.utils.string_formatting_helpers import prettify_document_splitter_name
 from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.text_splitters.no_splitter import NoSplitter
 from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
 from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
 from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
@@ -93,11 +94,8 @@ class WikimedDatasetExplorationForm(BaseInteractiveForm):
         self.__document_splitter_type_dropdown = create_dropdown(
             description="Doc. Splitter Type:",
             options={
-                "-": "None",
-                **{
-                    prettify_document_splitter_name(splitter_type.value): splitter_type
-                    for splitter_type in DocumentSplitterType
-                }
+                prettify_document_splitter_name(splitter_type.value): splitter_type
+                for splitter_type in DocumentSplitterType
             },
             disabled=False
         )
@@ -128,7 +126,7 @@ class WikimedDatasetExplorationForm(BaseInteractiveForm):
         self.__add_title_checkbox = create_checkbox(
             description="Use RAG Document Title",
             initial_value=True,
-            disabled=True
+            disabled=False
         )
 
         return widgets.VBox(
@@ -153,10 +151,9 @@ class WikimedDatasetExplorationForm(BaseInteractiveForm):
                 dependent_widgets_config=[
                     DependentWidgetsConfig(
                         widgets=[
-                            self.__token_count_int_widget.widget,
-                            self.__add_title_checkbox.widget
+                            self.__token_count_int_widget.widget
                         ],
-                        enable_condition=isinstance(change['new'], DocumentSplitterType)
+                        enable_condition=change['new'] != DocumentSplitterType.NO_SPLITTER
                     ),
                     DependentWidgetsConfig(
                         widgets=[
@@ -217,13 +214,7 @@ class WikimedDatasetExplorationForm(BaseInteractiveForm):
                 document_text=document_text
             )
 
-    def __get_doc_splitter_options(self) -> Optional[DocSplitterOptions]:
-        if self.__document_splitter_type_dropdown.widget.disabled:
-            return None
-
-        if self.__document_splitter_type_dropdown.widget.value == 'None':
-            return None
-
+    def __get_doc_splitter_options(self) -> DocSplitterOptions:
         return DocSplitterOptions(
             doc_splitter_type=self.__document_splitter_type_dropdown.widget.value,
             token_count=get_widget_value(self.__token_count_int_widget.widget),
@@ -234,10 +225,12 @@ class WikimedDatasetExplorationForm(BaseInteractiveForm):
 
     @staticmethod
     def __get_doc_splitter_from_options(doc_splitter_options: DocSplitterOptions) -> BaseSplitter:
-        if not doc_splitter_options:
-            return None
-
         match doc_splitter_options.doc_splitter_type:
+            case DocumentSplitterType.NO_SPLITTER:
+                return NoSplitter(
+                    token_count=doc_splitter_options.token_count,
+                    add_title=doc_splitter_options.add_title
+                )
             case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
                 return RecursiveCharacterSplitter(
                     token_count=doc_splitter_options.token_count,

@@ -40,6 +40,7 @@ class RagQPromptType(Enum):
 
 
 class DocumentSplitterType(Enum):
+    NO_SPLITTER = "no_splitter"
     RECURSIVE_CHARACTER_SPLITTER = "recursive_character_splitter"
     SPACY_SENTENCE_SPLITTER = "spacy_sentence_splitter"
     PARAGRAPH_SPLITTER = "paragraph_splitter"
