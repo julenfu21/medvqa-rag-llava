@@ -257,7 +257,7 @@ class VQAStrategyDetail:
                 doc_splitter_attributes = {
                     attribute.name: getattr(self.doc_splitter_options, attribute.name)
                     for attribute in fields(self.doc_splitter_options)
-                    if attribute.name == "add_title"
+                    if attribute.name != "token_count"
                 }
             else:
                 doc_splitter_attributes = {

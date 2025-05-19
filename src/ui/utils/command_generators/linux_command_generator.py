@@ -1,4 +1,5 @@
 from src.utils.data_definitions import VQAStrategyDetail
+from src.utils.enums import DocumentSplitterType
 
 
 def build_evaluate_vqa_model_linux_command(
@@ -25,7 +26,10 @@ def build_evaluate_vqa_model_linux_command(
     doc_splitter_options = vqa_strategy_detail.doc_splitter_options
     if doc_splitter_options:
         command_elements.append(f"> --doc_splitter={doc_splitter_options.doc_splitter_type} \\")
-        if doc_splitter_options.token_count:
+        if (
+            doc_splitter_options.doc_splitter_type != DocumentSplitterType.NO_SPLITTER and
+            doc_splitter_options.token_count
+        ):
             command_elements.append(f"> --token_count={doc_splitter_options.token_count} \\")
         if doc_splitter_options.add_title:
             command_elements.append("> --add_title \\")

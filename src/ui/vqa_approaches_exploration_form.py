@@ -42,6 +42,7 @@ from src.utils.string_formatting_helpers import (
     prettify_strategy_name
 )
 from src.utils.text_splitters.base_splitter import BaseSplitter
+from src.utils.text_splitters.no_splitter import NoSplitter
 from src.utils.text_splitters.paragraph_splitter import ParagraphSplitter
 from src.utils.text_splitters.recursive_character_splitter import RecursiveCharacterSplitter
 from src.utils.text_splitters.spacy_sentence_splitter import SpacySentenceSplitter
@@ -262,11 +263,8 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         self.__document_splitter_type_dropdown = create_dropdown(
             description="Document Splitter Type:",
             options={
-                "-": "None",
-                **{
-                    prettify_document_splitter_name(splitter_type.value): splitter_type
-                    for splitter_type in DocumentSplitterType
-                }
+                prettify_document_splitter_name(splitter_type.value): splitter_type
+                for splitter_type in DocumentSplitterType
             },
             disabled=True
         )
@@ -368,7 +366,8 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
                     DependentWidgetsConfig(
                         widgets=[
                             self.__relevant_documents_count_int_widget.widget,
-                            self.__document_splitter_type_dropdown.widget
+                            self.__document_splitter_type_dropdown.widget,
+                            self.__add_title_checkbox.widget
                         ],
                         enable_condition=change['new'] != VQAStrategyType.ZERO_SHOT
                     ),
@@ -380,12 +379,11 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
                     ),
                     DependentWidgetsConfig(
                         widgets=[
-                            self.__token_count_int_widget.widget,
-                            self.__add_title_checkbox.widget
+                            self.__token_count_int_widget.widget
                         ],
                         enable_condition=(
                             change['new'] != VQAStrategyType.ZERO_SHOT and
-                            isinstance(self.__document_splitter_type_dropdown.widget.value, DocumentSplitterType)
+                            self.__document_splitter_type_dropdown.widget.value != DocumentSplitterType.NO_SPLITTER
                         )
                     ),
                     DependentWidgetsConfig(
@@ -408,10 +406,9 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
                 dependent_widgets_config=[
                     DependentWidgetsConfig(
                         widgets=[
-                            self.__token_count_int_widget.widget,
-                            self.__add_title_checkbox.widget
+                            self.__token_count_int_widget.widget
                         ],
-                        enable_condition=isinstance(change['new'], DocumentSplitterType)
+                        enable_condition=change['new'] != DocumentSplitterType.NO_SPLITTER
                     ),
                     DependentWidgetsConfig(
                         widgets=[
@@ -573,12 +570,14 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
         if self.__document_splitter_type_dropdown.widget.disabled:
             return None
 
-        if self.__document_splitter_type_dropdown.widget.value == 'None':
-            return None
-
+        doc_splitter_type = self.__document_splitter_type_dropdown.widget.value
         return DocSplitterOptions(
-            doc_splitter_type=self.__document_splitter_type_dropdown.widget.value,
-            token_count=get_widget_value(self.__token_count_int_widget.widget),
+            doc_splitter_type=doc_splitter_type,
+            token_count=(
+                get_widget_value(self.__token_count_int_widget.widget)
+                if doc_splitter_type != DocumentSplitterType.NO_SPLITTER
+                else self.__token_count_int_widget.widget.value
+            ),
             add_title=get_widget_value(self.__add_title_checkbox.widget),
             chunk_size=get_widget_value(self.__chunk_size_int_widget.widget),
             chunk_overlap=get_widget_value(self.__chunk_overlap_int_widget.widget)
@@ -635,9 +634,7 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             splitter_type = path_segments[index]
             path_segments_with_names["Document Splitter Type"] = splitter_type
             index += 1
-
-            if splitter_type != 'no_doc_split':
-                path_segments_with_names["Document Splitter (Sub-Type)"] = path_segments[index]
+            path_segments_with_names["Document Splitter (Sub-Type)"] = path_segments[index]
 
         path_segments_with_names.update({
             "Experiment ID": path_segments[-2],
@@ -652,6 +649,11 @@ class VQAApproachesExplorationForm(BaseInteractiveForm):
             return None
 
         match doc_splitter_options.doc_splitter_type:
+            case DocumentSplitterType.NO_SPLITTER:
+                return NoSplitter(
+                    token_count=doc_splitter_options.token_count,
+                    add_title=doc_splitter_options.add_title
+                )
             case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
                 return RecursiveCharacterSplitter(
                     token_count=doc_splitter_options.token_count,

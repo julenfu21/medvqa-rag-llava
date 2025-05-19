@@ -181,6 +181,8 @@ def _pascal_to_snake_case(name: str):
 
 def _get_document_splitter_class_name(document_splitter_type: DocumentSplitterType) -> str:
     match document_splitter_type:
+        case DocumentSplitterType.NO_SPLITTER:
+            return 'NoSplitter'
         case DocumentSplitterType.RECURSIVE_CHARACTER_SPLITTER:
             return 'RecursiveCharacterSplitter'
         case DocumentSplitterType.SPACY_SENTENCE_SPLITTER:

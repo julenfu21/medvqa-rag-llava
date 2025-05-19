@@ -30,6 +30,7 @@ DEFAULT_INDEX_DIR = Path("data/WikiMed/indexed_db")
 DEFAULT_INDEX_NAME = "Wikimed+S-PubMedBert-MS-MARCO-FullTexts"
 DEFAULT_EMBEDDING_MODEL_NAME = "pritamdeka/S-PubMedBert-MS-MARCO"
 DEFAULT_RELEVANT_DOCS_COUNT = 1
+DEFAULT_DOC_SPLITTER = DocumentSplitterType.NO_SPLITTER
 
 
 def vqa_strategy_type_to_prompt_type(vqa_strategy: VQAStrategyType, prompt_name: str) -> PromptType:
@@ -136,15 +137,14 @@ def parse_args() -> argparse.Namespace:
                             "Document splitter used to split the documents used for RAG into "
                             "smaller chunks\n"
                             "    * It can only be used if --vqa_strategy is not 'zero_shot'\n"
-                            "    * If not provided, the default value will be 'None'"
+                            "    * If not provided, the default value will be 'no_splitter'"
                         ))
 
-    # Arguments used when '--doc_splitter' != None
     parser.add_argument("--token_count",
                         type=int, default=None,
                         help=(
                             "Number of chunks to extract from split documents\n"
-                            "    * It can only be used if --doc_splitter is not 'None'\n"
+                            "    * It can only be used if --doc_splitter is not 'no_splitter'\n"
                             "    * If not provided, the default value will be determined by "
                             "--doc_splitter:\n"
                             "        - 'recursive_character_splitter': "
@@ -230,7 +230,7 @@ def parse_args() -> argparse.Namespace:
         ScriptArgument(
             name="doc_splitter",
             value=args.doc_splitter,
-            default_value=None,
+            default_value=DEFAULT_DOC_SPLITTER,
             dependency_name="vqa_strategy",
             dependency_value=args.vqa_strategy,
             valid_arg_condition=args.vqa_strategy != VQAStrategyType.ZERO_SHOT,
