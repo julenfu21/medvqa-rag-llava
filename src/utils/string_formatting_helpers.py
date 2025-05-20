@@ -17,7 +17,7 @@ def prettify_strategy_name(strategy_name: str) -> str:
         'rag_db_reranker': 'RAG DB-Reranker'
     }
 
-    return snake_case_to_pretty_name[strategy_name]
+    return snake_case_to_pretty_name.get(strategy_name, strategy_name)
 
 
 def prettify_document_splitter_name(document_splitter_name: str) -> str:

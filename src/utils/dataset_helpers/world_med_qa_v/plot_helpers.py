@@ -159,104 +159,46 @@ def _create_pie_chart_for_subset(subset_data: Dataset) -> go.Figure:
 def display_bar_chart_on_evaluation_results(
     evaluation_results: pd.DataFrame,
     title: str,
-    column_names: list[str] = None
+    x_axis_title: str,
+    y_axis_title: str,
+    x_dataframe_column_name: str,
+    y_dataframe_column_name: str
 ) -> None:
-    columns_metadata = [
-        {
-            'name': 'Accuracy',
-            'data_column': 'accuracy',
-            'color': 'royalblue'
-        },
-        {
-            'name': 'Well-Formatted Answers',
-            'data_column': 'well_formatted_answers', 
-            'color': 'darkorange'
-        }
-    ]
-
-    if column_names:
-        if len(column_names) == len(evaluation_results):
-            x_labels = column_names
-        else:
-            raise ValueError(
-                f"'column_names' (len: {len(column_names)}) must have the same length as "
-                f"'evaluation_results' (len: {len(evaluation_results)})"
-            )
-    else:
-        x_labels = evaluation_results.index
-    bar_chart = go.Figure(
-        data=[
-            go.Bar(
-                name=column['name'],
-                x=x_labels,
-                y=evaluation_results[column['data_column']],
-                marker={
-                    'color': column['color'],
-                    'opacity': 0.8
-                },
-                width=0.4,
-                text=evaluation_results[column['data_column']],
-                texttemplate="%{y:.1%}",
-                textposition="outside",
-                cliponaxis=False
-            )
-            for column in columns_metadata
-        ]
+    figure = px.bar(
+        data_frame=evaluation_results,
+        x=x_dataframe_column_name,
+        y=y_dataframe_column_name,
+        text=evaluation_results["accuracy"].round(4),
+        color=evaluation_results[x_dataframe_column_name].astype(str)
     )
 
-    bar_chart.update_layout(
-        barmode='group',
-        title={
-            'text': title,
-            'x': 0.5,
-            'xanchor': 'center',
-            'font': {
-                'size': 22,
-                'color': 'black',
-                'family': 'Arial, sans-serif'
-            }
-        },
-        xaxis_title="Model Evaluations",
-        yaxis={
-            'title': 'Accuracy',
-            'tickvals': [i / 100 for i in range(0, 110, 10)],
-            'ticktext': [f"{i}%" for i in range(0, 110, 10)],
-            'range': [0, 1.1],
-        },
-        font={
-            'family': "Arial, sans-serif",
-            'size': 14,
-            'color': "black"
-        },
-        barcornerradius=15,
-        height=500
-    )
-
-    hover_columns = [
-        "vqa_strategy_type",
-        "prompt_type",
-        "relevant_docs_count",
-        "doc_splitter",
-        "add_title",
-        "token_count",
-        "chunk_size",
-        "chunk_overlap"
-    ]
-    bar_chart.update_traces(
-        customdata=evaluation_results[hover_columns].values,
+    figure.update_traces(
+        textposition="inside",
+        insidetextanchor="start",
+        textfont={"size": 14, "color": "white"},
         hovertemplate=(
-            "VQA Strategy Type: %{customdata[0]}<br>"
-            "Prompt Type: %{customdata[1]}<br>"
-            "Relevant Documents Count: %{customdata[2]}<br>"
-            "Document Splitter: %{customdata[3]}<br>"
-            "Add Title: %{customdata[4]}<br>"
-            "Token Count: %{customdata[5]}<br>"
-            "Chunk Size: %{customdata[6]}<br>"
-            "Chunk Overlap: %{customdata[7]}<br>"
+            f'<b>{x_axis_title}: </b>' + '%{x}<br>'
+            f'<b>{y_axis_title}: </b>' + '%{y:.2%}<extra></extra>'
         )
     )
 
-    display(bar_chart)
+    figure.update_layout(
+        title=title,
+        title_x=0.5,
+        title_font_size=20,
+        xaxis_title="Prompt Type",
+        yaxis_title="Accuracy",
+        xaxis_title_font_size=16,
+        xaxis={'tickfont': {'size': 12}},
+        yaxis_title_font_size=16,
+        yaxis={'tickfont': {'size': 12}},
+        barcornerradius=15,
+        showlegend=False,
+        bargap=0.2,
+        margin={"t": 100}
+    )
+
+    display(figure)
 
 
 def display_bar_chart_on_splitter_evaluation_results(
@@ -314,11 +256,11 @@ def display_bar_chart_on_splitter_evaluation_results(
     figure.update_layout(
         title=title,
         title_x=0.5,
-        title_font_size=24,
+        title_font_size=20,
         xaxis_title='Splitter Configuration',
         yaxis_title='Accuracy',
-        xaxis_title_font_size=18,
-        yaxis_title_font_size=18,
+        xaxis_title_font_size=16,
+        yaxis_title_font_size=16,
         barcornerradius=15
     )
 
@@ -355,13 +297,13 @@ def display_bar_chart_on_best_mean_accuracy_results(
     figure.update_layout(
         title=title,
         title_x=0.5,
-        title_font_size=24,
+        title_font_size=20,
         xaxis_title="Document Splitter Type",
         yaxis_title="Mean Accuracy",
-        xaxis_title_font_size=18,
-        xaxis={'tickfont': {'size': 16}},
-        yaxis_title_font_size=18,
-        yaxis={'tickfont': {'size': 16}},
+        xaxis_title_font_size=16,
+        xaxis={'tickfont': {'size': 12}},
+        yaxis_title_font_size=16,
+        yaxis={'tickfont': {'size': 12}},
         barcornerradius=15,
         showlegend=False,
         bargap=0.2,
@@ -385,10 +327,12 @@ def plot_rag_q_evaluation_results_by_groups(
     column_name_to_short_str = {
         "relevant_docs_count": "rdc",
         "token_count": "tc",
-        "prompt_type": "pt"
+        "prompt_type": "pt",
+        "chunk_size": "cs"
     }
     row_names = evaluation_results[row_variable].unique()
     column_names = evaluation_results[column_variable].unique()
+    bar_graph_names = evaluation_results[bar_graph_variable].unique()
     subplot_titles = [
         (
             f"{column_name_to_short_str[row_variable]}{row_name}_"
@@ -399,50 +343,38 @@ def plot_rag_q_evaluation_results_by_groups(
     ]
     rows = len(row_names)
     columns = len(column_names)
+    small_bar_chart_columns = len(bar_graph_names)
     evaluation_metrics_figure = make_subplots(
         rows=rows,
         cols=columns,
         subplot_titles=subplot_titles,
-        vertical_spacing=0.1,
+        vertical_spacing=0.2,
         horizontal_spacing=0.1
     )
     for annotation in evaluation_metrics_figure.layout.annotations:
         annotation['yshift'] = 10
 
-    columns_metadata = [
-        {'name': 'Accuracy', 'data_column': 'accuracy'},
-        {'name': 'Well-Formatted Answers', 'data_column': 'well_formatted_answers'}
-    ]
+    colors = px.colors.qualitative.Pastel
+    color_list = [colors[i] for i in range(small_bar_chart_columns)]
     grouped_evaluation_results = evaluation_results.groupby([row_variable, column_variable])
     for row_index, row_name in enumerate(row_names):
         for column_index, column_name in enumerate(column_names):
             bar_graph_data = grouped_evaluation_results.get_group((row_name, column_name))
-            for column in columns_metadata:
-                evaluation_metrics_figure.add_trace(
-                    trace=go.Bar(
-                        x=bar_graph_data[bar_graph_variable],
-                        y=bar_graph_data[column['data_column']],
-                        name=subplot_titles[row_index * columns + column_index],
-                        hovertemplate=(
-                            column['name'] + ": %{y:.1%}<br>" +
-                            prettify_variable_name(bar_graph_variable) + ": %{x}"
-                        ),
-                        marker={
-                            'color': bar_graph_data[column['data_column']],
-                            'colorscale': "Thermal",
-                            'cmin': 0,
-                            'cmax': 1,
-                            'colorbar': {
-                                'title': "Accuracy",
-                                'tickvals': [i / 5 for i in range(6)],
-                                'tickformat': ".0%",
-                                'thickness': 20
-                            }
-                        }
+            evaluation_metrics_figure.add_trace(
+                trace=go.Bar(
+                    x=bar_graph_data[bar_graph_variable],
+                    y=bar_graph_data['accuracy'],
+                    name=subplot_titles[row_index * columns + column_index],
+                    hovertemplate=(
+                        "<b>Accuracy:</b> %{y:.1%}<br>" +
+                        f"<b>{prettify_variable_name(bar_graph_variable)}: </b>" + "%{x}" +
+                        "<extra></extra>"
                     ),
-                    row=row_index + 1,
-                    col=column_index + 1
-                )
+                    marker={'color': color_list}
+                ),
+                row=row_index + 1,
+                col=column_index + 1
+            )
 
             evaluation_metrics_figure.update_xaxes(
                 title_text=prettify_variable_name(bar_graph_variable),
@@ -488,13 +420,11 @@ def plot_rag_q_evaluation_results_by_groups(
 
 def display_evaluation_results_summary(
     evaluation_results_list: list[pd.DataFrame],
-    separator_rows: Optional[list[int]] = None,
-    highlighted_rows: Optional[list[int]] = None
+    excluded_indexes: Optional[list] = None,
+    include_green_highlight: bool = False
 ) -> None:
-    if separator_rows is None:
-        separator_rows = []
-    if highlighted_rows is None:
-        highlighted_rows = []
+    if excluded_indexes is None:
+        excluded_indexes = []
 
     results_df = pd.concat(evaluation_results_list, ignore_index=True)
     results_df[['country', 'file_type']] = results_df[['country', 'file_type']].apply(
@@ -507,17 +437,20 @@ def display_evaluation_results_summary(
         axis=1
     )
     results_df['add_title'] = results_df['add_title'].apply(_transform_add_title)
+    results_df.drop(columns=['doc_splitter', 'well_formatted_answers'], inplace=True)
+    filtered_results_df = results_df.drop(index=excluded_indexes)
+    max_accuracy_value = filtered_results_df['accuracy'].max()
+    max_accuracy_rows = results_df[results_df['accuracy'] == max_accuracy_value].index
     column_mapping = {
         'country': 'Country',
         'file_type': 'File Type',
         'vqa_strategy_type': 'VQA Strategy',
-        'prompt_type': 'Prompt',
-        'relevant_docs_count': 'Relevant Docs. Count',
-        'doc_splitter': 'Doc. Splitter',
+        'prompt_type': 'Prompt Type',
+        'relevant_docs_count': 'Relevant Document Count',
         'add_title': 'Title',
         'token_count': 'Token Count',
-        'accuracy': 'Accuracy',
-        'well_formatted_answers': 'Well Formatted Answers'
+        'chunk_size': 'Chunk Size',
+        'accuracy': 'Accuracy'
     }
     results_df = results_df.rename(columns=column_mapping)[column_mapping.values()]
 
@@ -564,25 +497,18 @@ def display_evaluation_results_summary(
         'selector': 'th, td', 
         'props': [('border', '1px solid #BBBBBB')]
     }
-    separator_styles = [
-        {
-            "selector": f"tbody tr:nth-child({i})",
-            "props": [("border-bottom", "3px solid #444444")]
-        }
-        for i in separator_rows
-    ]
     highlight_styles = [
         {
-            "selector": f"tbody tr:nth-child({i})",
+            "selector": f"tbody tr:nth-child({i + 1})",
             "props": [
                 ('background-color', '#FFD700'),
                 ('color', '#000000'),
             ]
         }
-        for i in highlighted_rows
+        for i in max_accuracy_rows
     ]
     world_med_qa_v_highlight_style = {
-        "selector": f"tbody tr:nth-child({len(results_df)})",
+        "selector": f"tbody tr:nth-child({1})",
         "props": [
             ('background-color', '#006400'),
             ('color', '#FFFFFF')
@@ -597,15 +523,153 @@ def display_evaluation_results_summary(
         padding_and_text_alignment,
         table_style,
         border_style,
-        world_med_qa_v_highlight_style
-    ] + separator_styles + highlight_styles
+    ] + highlight_styles
+    if include_green_highlight:
+        table_styles.append(world_med_qa_v_highlight_style)
 
     styled_results_df = results_df.style.set_table_styles(table_styles).format({
         'Accuracy': '{:.4f}',
-        'Well Formatted Answers': '{:.4f}'
     }).hide(axis='index')
 
     display(styled_results_df)
+
+
+def display_test_results_summary(
+    evaluation_results_list: list[pd.DataFrame]
+) -> None:
+    test_results_df = pd.concat(evaluation_results_list, ignore_index=True)
+
+    # Fill the results dataframe
+    test_results_summary_df = pd.DataFrame({
+        '': test_results_df['country'].unique(),
+        'Zero-Shot': test_results_df[
+            test_results_df['vqa_strategy_type'] == VQAStrategyType.ZERO_SHOT.value
+        ]['accuracy'].tolist(),
+        'RAG (Question Only)': test_results_df[
+            test_results_df['vqa_strategy_type'] == VQAStrategyType.RAG_Q.value
+        ]['accuracy'].tolist(),
+        'RAG (Answers Only)': test_results_df[
+            (test_results_df['vqa_strategy_type'] == VQAStrategyType.RAG_Q_AS.value) &
+            (test_results_df['should_apply_rag_to_question'].eq(False))
+        ]['accuracy'].tolist(),
+        'RAG (Question and Answers)': test_results_df[
+            (test_results_df['vqa_strategy_type'] == VQAStrategyType.RAG_Q_AS.value) &
+            (test_results_df['should_apply_rag_to_question'].eq(True))
+        ]['accuracy'].tolist()
+    })
+    test_results_summary_df.loc[len(test_results_summary_df)] = {
+        '': 'Mean Accuracy',
+        'Zero-Shot': test_results_summary_df['Zero-Shot'].mean(),
+        'RAG (Question Only)': test_results_summary_df['RAG (Question Only)'].mean(),
+        'RAG (Answers Only)': test_results_summary_df['RAG (Answers Only)'].mean(),
+        'RAG (Question and Answers)': test_results_summary_df['RAG (Question and Answers)'].mean()
+    }
+
+    # Format the content of the dataframe
+    test_results_summary_df[''] = test_results_summary_df[''].str.title()
+
+    best_accuracy_scores, second_best_accuracy_scores = [], []
+    numeric_test_results_df = test_results_summary_df.iloc[:, 1:]
+    for index, row in numeric_test_results_df.iterrows():
+        highest_indices, second_highest_indices = _get_top2_accuracy_column_indices(row)
+        best_accuracy_scores += [
+            (index, highest_index)
+            for highest_index in highest_indices
+        ]
+        second_best_accuracy_scores += [
+            (index, second_highest_index)
+            for second_highest_index in second_highest_indices
+        ]
+
+    header_style = {
+        'selector': 'thead th', 
+        'props': [
+            ('background-color', '#0056A6'),
+            ('color', '#FFFFFF'),
+            ('font-weight', 'bold'),
+            ('padding', '12px'),
+            ('text-align', 'center')
+        ]
+    }
+    odd_row_style = {
+        'selector': 'tbody tr:nth-child(odd)',
+        'props': [
+            ('background-color', '#e0e0e0'),
+            ('color', '#000000')
+        ]
+    }
+    even_row_style = {
+        'selector': 'tbody tr:nth-child(even)',
+        'props': [
+            ('background-color', '#FFFFFF'),
+            ('color', '#000000')
+        ]
+    }
+    padding_and_text_alignment = {
+        'selector': 'tbody td', 
+        'props': [
+            ('padding', '10px'),
+            ('text-align', 'center')
+        ]
+    }
+    table_style = {
+        'selector': 'table', 
+        'props': [
+            ('border-collapse', 'collapse'),
+            ('width', '100%'),
+            ('margin', '0 auto')
+        ]
+    }
+    border_style = {
+        'selector': 'th, td', 
+        'props': [('border', '1px solid #BBBBBB')]
+    }
+    separator_style = {
+        "selector": f"tbody tr:nth-child({len(test_results_summary_df) - 1})",
+        "props": [("border-bottom", "3px solid #444444")]
+    }
+    highlight_best_styles = [
+        {
+            "selector": f"tbody tr:nth-child({row_idx + 1}) td:nth-child({col_idx + 2})",
+            "props": [
+                ('background-color', '#4CAF50'),
+                ('color', '#FFFFFF'),
+                ('font-weight', 'bold')
+            ]
+        }
+        for (row_idx, col_idx) in best_accuracy_scores
+    ]
+    highlight_second_best_styles = [
+        {
+            "selector": f"tbody tr:nth-child({row_idx + 1}) td:nth-child({col_idx + 2})",
+            "props": [
+                ('background-color', '#A5D6A7'),
+                ('font-weight', 'bold')
+            ]
+        }
+        for (row_idx, col_idx) in second_best_accuracy_scores
+    ]
+    table_styles = [
+        header_style,
+        odd_row_style,
+        even_row_style,
+        padding_and_text_alignment,
+        table_style,
+        border_style,
+        separator_style,
+        *highlight_best_styles,
+        *highlight_second_best_styles
+    ]
+    styled_test_results_summary_df = (
+        test_results_summary_df.style.set_table_styles(table_styles).format({
+            'Zero-Shot': '{:.4f}',
+            'RAG (Question Only)': '{:.4f}',
+            'RAG (Answers Only)': '{:.4f}',
+            'RAG (Question and Answers)': '{:.4f}'
+        }).hide(axis='index')
+    )
+
+    display(styled_test_results_summary_df)
 
 
 # ====================
@@ -656,3 +720,20 @@ def _get_splitter_results_column_names(
         column_names.append("_".join(column_name_elements))
 
     return column_names
+
+
+def _get_top2_accuracy_column_indices(row: pd.Series) -> tuple[list[int], list[int]]:
+    unique_top_values = row.sort_values(ascending=False).unique()
+    highest_value = unique_top_values[0]
+    second_highest_value = unique_top_values[1] if len(unique_top_values) > 1 else None
+
+    highest_indices = [row.index.get_loc(col) for col, val in row.items() if val == highest_value]
+    if second_highest_value is not None:
+        second_highest_indices = [
+            row.index.get_loc(col)
+            for col, val in row.items() if val == second_highest_value
+        ]
+    else:
+        second_highest_indices = []
+
+    return highest_indices, second_highest_indices
