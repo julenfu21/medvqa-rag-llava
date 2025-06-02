@@ -1,0 +1,84 @@
+2025-06-02 18:59:51,027 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 1,
+        "add_title": false,
+        "chunk_size": 300,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": true
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 18:59:51,810 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 18:59:51,810 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for QUESTION:
+
+Facial trauma, also called maxillofacial trauma, is any physical trauma to the face. Facial trauma can involve soft tissue injuries such as burns, lacerations and bruises, or fractures of the facial bones such as nasal fractures and fractures of the jaw, as well as trauma such as eye injuries.
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Le Fort III may refer to:
+BULLET::::- Le Fort fracture of skull, type III
+BULLET::::- Le Fort III osteotomy
+
+B answer context:
+
+Le Fort III may refer to:
+BULLET::::- Le Fort fracture of skull, type III
+BULLET::::- Le Fort III osteotomy
+
+C answer context:
+
+Mandibular fracture, also known as fracture of the jaw, is a break through the mandibular bone. In about 60% of cases the break occurs in two places. It may result in a decreased ability to fully open the mouth. Often the teeth will not feel properly aligned or there may be bleeding of the gums.
+
+D answer context:
+
+Mandibular fracture, also known as fracture of the jaw, is a break through the mandibular bone. In about 60% of cases the break occurs in two places. It may result in a decreased ability to fully open the mouth. Often the teeth will not feel properly aligned or there may be bleeding of the gums.
+
+---- End of HUMAN message ----
+2025-06-02 18:59:51,810 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 18:59:51,810 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAnUAAAHuCAYAAAD5vvpJAAAYemlDQ1BJQ0MgUHJvZmlsZQAAWIWVe ...
+
+Question:
+
+Question associated with image 2. Patient who has suffered a bicycle accident with direct facial trauma to the anterior region of the jaw. The computed tomography (CT) scan of the image confirms a: A - Le Fort I type panfacial fracture B - Le Fort II type panfacial fracture C - Unstable bicondylar mandibular fracture D - Bilateral mandibular fracture in unstable horizontal branches
+
+---- End of HUMAN message ----
+2025-06-02 19:01:36,180 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 19:01:36,180 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

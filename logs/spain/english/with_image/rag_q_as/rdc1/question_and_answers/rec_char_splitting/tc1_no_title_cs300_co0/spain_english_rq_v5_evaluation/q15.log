@@ -1,0 +1,80 @@
+2025-06-02 18:25:41,727 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 1,
+        "add_title": false,
+        "chunk_size": 300,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": true
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 18:25:42,585 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 18:25:42,585 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for QUESTION:
+
+Tuberculosis is diagnosed by finding "Mycobacterium tuberculosis" bacteria in a clinical specimen taken from the patient. While other investigations may strongly suggest tuberculosis as the diagnosis, they cannot confirm it.
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Tuberculosis (TB) is an infectious disease usually caused by "Mycobacterium tuberculosis" (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections do not have symptoms, in which case it is known as latent tuberculosis. About 10% of latent
+
+B answer context:
+
+Rheumatoid arthritis (RA) is a long-term autoimmune disorder that primarily affects joints. It typically results in warm, swollen, and painful joints. Pain and stiffness often worsen following rest. Most commonly, the wrist and hands are involved, with the same joints typically involved on both
+
+C answer context:
+
+Pulmonary hypertension (PH or PHTN) is a condition of increased blood pressure within the arteries of the lungs. Symptoms include shortness of breath, syncope, tiredness, chest pain, swelling of the legs, and a fast heartbeat. The condition may make it difficult to exercise. Onset is typically
+
+D answer context:
+
+Sarcoidosis is a disease involving abnormal collections of inflammatory cells that form lumps known as granulomas. The disease usually begins in the lungs, skin, or lymph nodes. Less commonly affected are the eyes, liver, heart, and brain. Any organ, however, can be affected. The signs and symptoms
+
+---- End of HUMAN message ----
+2025-06-02 18:25:42,585 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 18:25:42,585 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAlcAAALhCAYAAAByqIHsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxj ...
+
+Question:
+
+Question related to image no. 15: A 37-year-old non-smoking man with no relevant medical history presents with a more than three-week history of persistent dry cough, low-grade fever, and erratic joint pain. Among the tests requested by his doctor is a chest X-ray. Which of the following diagnoses is suspected first?: A - Tuberculosis B - Rheumatoid arthritis C - Pulmonary arterial hypertension secondary to left heart failure D - Sarcoidosis
+
+---- End of HUMAN message ----
+2025-06-02 18:27:41,546 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 18:27:41,546 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

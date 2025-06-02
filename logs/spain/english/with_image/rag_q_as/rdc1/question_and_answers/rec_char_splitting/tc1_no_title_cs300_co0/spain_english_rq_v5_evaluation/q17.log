@@ -1,0 +1,80 @@
+2025-06-02 18:28:47,785 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 1,
+        "add_title": false,
+        "chunk_size": 300,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": true
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 18:28:48,697 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 18:28:48,697 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for QUESTION:
+
+A rotator cuff tear is an injury of one or more of the tendons or muscles of the rotator cuff of the shoulder. Symptoms may include shoulder pain, which is often worse with movement, or weakness. This may limit people’s ability to brush their hair or put on clothing. Clicking may also occur with
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Adhesive capsulitis, also known as frozen shoulder, is a condition associated with shoulder joint pain and stiffness. There is loss of both passive and active range of motion and shoulder movement is extremely painful. The pain and stiffness can impact daily life activities but tend to improve over
+
+B answer context:
+
+The glenoid labrum (glenoid ligament) is a fibrocartilaginous structure (not a fibrocartilage as previously thought) rim attached around the margin of the glenoid cavity in the shoulder blade. The shoulder joint is considered a ball and socket joint. However, in bony terms the 'socket' (the glenoid
+
+C answer context:
+
+Subacromial bursitis is a condition caused by inflammation of the bursa that separates the superior surface of the supraspinatus tendon (one of the four tendons of the rotator cuff) from the overlying coraco-acromial ligament, acromion, and coracoid (the acromial arch) and from the deep surface of
+
+D answer context:
+
+Calcific tendinitis is a form of tendinitis, a disorder characterized by deposits of hydroxyapatite (a crystalline calcium phosphate) in any tendon of the body, but most commonly in the tendons of the rotator cuff (shoulder), causing pain and inflammation. The condition is related to and may cause
+
+---- End of HUMAN message ----
+2025-06-02 18:28:48,697 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 18:28:48,697 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAnoAAAKQCAYAAAAIddfoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxj ...
+
+Question:
+
+Question related to image no. 17: 42-year-old woman, hairdresser by profession, who reports shoulder pain when raising her arm. After a week of evolution, the pain is also present at rest and at night. What is the most likely diagnosis according to the shoulder X-ray? A - Adhesive capsulitis B - Labrum injury C - Subacromial bursitis D - Calcific tendinitis
+
+---- End of HUMAN message ----
+2025-06-02 18:30:56,619 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 18:30:56,620 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

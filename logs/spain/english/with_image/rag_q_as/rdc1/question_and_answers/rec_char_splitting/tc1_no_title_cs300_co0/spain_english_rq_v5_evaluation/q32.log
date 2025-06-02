@@ -1,0 +1,80 @@
+2025-06-02 18:22:12,838 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 1,
+        "add_title": false,
+        "chunk_size": 300,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": true
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 18:22:13,626 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 18:22:13,626 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for QUESTION:
+
+A gonimoblast is a type of cell produced by red algae upon the fertilization of a zygotic nucleus, and involved in the formation of carpospores. The cells subsequently divide and ultimately serve as storage or generative cells. Storage cells contain starch and are multinucleate; whereas generative
+
+RAG block for ANSWERS:
+
+A answer context:
+
+A myeloma protein is an abnormal immunoglobulin fragment, such as an immunoglobulin light chain, that is produced in excess by an abnormal monoclonal proliferation of plasma cells, typically in multiple myeloma. Other terms for such a protein are M protein, M component, M spike, spike protein, or
+
+B answer context:
+
+Follicular lymphoma (FL) is a cancer that involves certain types of white blood cells known as lymphocytes. The cancer originates from the uncontrolled division of specific types of B-cells known as centrocytes and centroblasts. These cells normally occupy the follicles (nodular swirls of various
+
+C answer context:
+
+Acute myeloid leukemia (AML) is a cancer of the myeloid line of blood cells, characterized by the rapid growth of abnormal cells that build up in the bone marrow and blood and interfere with normal blood cells. Symptoms may include feeling tired, shortness of breath, easy bruising and bleeding, and
+
+D answer context:
+
+Lymphoid leukemias are a group of leukemias affecting circulating lymphocytes, a type of white blood cells. The lymphocytic leukemias are closely related to lymphomas of the lymphocytes, to the point that some of them are unitary disease entities that can be called by either name (for example, adult
+
+---- End of HUMAN message ----
+2025-06-02 18:22:13,626 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 18:22:13,627 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAArUAAAIRCAYAAABULUW5AAAYemlDQ1BJQ0MgUHJvZmlsZQAAWIWVe ...
+
+Question:
+
+Question associated with image 5. The undifferentiated cells (blasts) in the image are typical, due to their elongated rod-shaped granules, of: A - Leukemized IgA-secreting myeloma B - Leukemic follicular lymphoma C - Acute myeloid leukemia D - Acute lymphoid leukemia
+
+---- End of HUMAN message ----
+2025-06-02 18:24:04,280 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 18:24:04,280 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: A
+
+Model Answer: D
+
+INCORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

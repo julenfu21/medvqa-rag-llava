@@ -1,0 +1,78 @@
+2025-06-02 19:18:47,807 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 2,
+        "add_title": false,
+        "chunk_size": 600,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": false
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 19:18:48,415 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 19:18:48,415 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Subarachnoid hemorrhage (SAH) is bleeding into the subarachnoid space—the area between the arachnoid membrane and the pia mater surrounding the brain. Symptoms may include a severe headache of rapid onset, vomiting, decreased level of consciousness, fever, and sometimes seizures. Neck stiffness or neck pain are also relatively common. In about a quarter of people a small bleed with resolving symptoms occurs within a month of a larger bleed. SAH may occur as a result of a head injury or spontaneously, usually from a ruptured cerebral aneurysm. Risk factors for spontaneous cases included high blood pressure, smoking, family history, alcoholism, and cocaine use. Generally, the diagnosis can be determined by a CT scan of the head if done within six hours of symptom onset. Occasionally a lumbar puncture is also required. After confirmation further tests are usually performed to determine the underlying cause.
+
+B answer context:
+
+Intraparenchymal hemorrhage (IPH) is one form of intracerebral bleeding in which there is bleeding within brain parenchyma. The other form is intraventricular hemorrhage (IVH). Intraparenchymal hemorrhage accounts for approx. 8-13% of all strokes and results from a wide spectrum of disorders. It is more likely to result in death or major disability than ischemic stroke or subarachnoid hemorrhage, and therefore constitutes an immediate medical emergency. Intracerebral hemorrhages and accompanying edema may disrupt or compress adjacent brain tissue, leading to neurological dysfunction. Substantial displacement of brain parenchyma may cause elevation of intracranial pressure (ICP) and potentially fatal herniation syndromes.
+
+C answer context:
+
+Spinal epidural hematoma is bleeding into the epidural space in the spine. These may arise spontaneously (e.g. during childbirth), or as a rare complication of epiduralanaesthesia or of surgery (such as laminectomy). Symptoms usually include back pain which radiates to the arms or the legs. They may cause pressure on the spinal cord or cauda equina, which may present as pain, muscle weakness, or dysfunction of the bladder and bowel. The anatomy of the epidural space is such that spinal epidural hematoma has a different presentation from intracranial epidural hematoma. In the spine, the epidural space contains loose fatty tissue and a network of large, thin-walled veins, referred to as the epidural venous plexus. The source of bleeding in spinal epidural hematoma is likely to be this venous plexus.
+
+D answer context:
+
+A subdural hematoma (SDH) is a type of bleeding in which a collection of blood—usually associated with a traumatic brain injury—gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain. It usually results from tears in bridging veins that cross the subdural space.
+
+Subdural hematomas may cause an increase in the pressure inside the skull, which in turn can cause compression of and damage to delicate brain tissue. Acute subdural hematomas are often life-threatening. Chronic subdural hematomas have a better prognosis if properly managed. In contrast, epidural hematomas are usually caused by tears in arteries, resulting in a build-up of blood between the dura mater and the skull. The third type of brain hemorrhage, known as a subarachnoid hemorrhage, causes bleeding into the subarachnoid space between the arachnoid mater and the pia mater.
+
+---- End of HUMAN message ----
+2025-06-02 19:18:48,415 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 19:18:48,415 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJxCAYAAAAdAfUZAAAYemlDQ1BJQ0MgUHJvZmlsZQAAWIWVe ...
+
+Question:
+
+Question associated with image 15. In an anticoagulated and antiplatelet patient who presents with incoherent speech without other associated clinical manifestations, with a cranial CT image like the one shown, what is the most probable diagnosis? A - Subarachnoid hemorrhage B - Intraparenchymal hematoma C - Epidural hematoma D - Subdural hematoma
+
+---- End of HUMAN message ----
+2025-06-02 19:21:44,371 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 19:21:44,371 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

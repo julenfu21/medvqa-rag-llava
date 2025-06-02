@@ -1,0 +1,89 @@
+2025-06-02 19:23:29,715 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 2,
+        "add_title": false,
+        "chunk_size": 600,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": false
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 19:23:30,395 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 19:23:30,395 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Cystadenocarcinoma is a malignant form of a cystadenoma and is a cancer derived from glandular epithelium, in which cystic accumulations of retained secretions are formed. The neoplastic cells manifest varying degrees of anaplasia and invasiveness, and local extension and metastases occur. Cystadenocarcinomas develop frequently in the ovaries, where pseudomucinous and serous types are recognized. Similar tumor histology has also been reported in the pancreas, although it is a considerably rarer entity representing 1 - 1.5% of all Pancreatic cancer. A cystadenocarcinoma contains complex multi-loculated cyst but with exuberant solid areas in places. It usually presents with omental metastases which cause fluid accumulation in the peritoneal cavity (ascites).
+
+Cystadenocarcinomas can be classified into serous Cystadenocarcinomas, mucinous cystadenomcarcinoma.
+
+Among the ovarian tumours, serous tumours are most common, having a variegated appearance. Bilateral presentation is common with serous cystadenocarcinoma.
+
+BULLET::::- Papillary serous cystadenocarcinoma
+BULLET::::- Ovarian serous cystadenoma
+
+B answer context:
+
+Pneumatosis, also known as emphysema, is the abnormal presence of air or other gas within tissues.
+
+In the lungs, emphysema involves enlargement of the distal airspaces, and is a major feature of chronic obstructive pulmonary disease (COPD).
+
+Pneumoperitoneum (or peritoneal emphysema) is air or gas in the abdominal cavity, and is most commonly caused by a perforated abdominal organ. Pneumatosis is also a frequent result of surgery. The term is from "pneumat-" + "-osis".
+
+Pneumarthrosis is the presence of air in a joint, and is rarely a serious sign. Pulmonary emphysema, more usually called emphysema, is characterised by air-filled cavities or spaces, (pneumatoses) in the lung, that can vary in size and may be very large. The spaces are caused by the breakdown of the walls of the alveoli and they replace the spongy lung parenchyma. This reduces the total alveolar surface available for gas exchange leading to a reduction in oxygen supply for the blood. Emphysema usually affects the middle aged or older population. This is because the disease takes time to develop with the effects of smoking, and other risk factors. Alpha-1 antitrypsin
+
+C answer context:
+
+Miliary tuberculosis is a form of tuberculosis that is characterized by a wide dissemination into the human body and by the tiny size of the lesions (1–5 mm). Its name comes from a distinctive pattern seen on a chest radiograph of many tiny spots distributed throughout the lung fields with the appearance similar to millet seeds—thus the term "miliary" tuberculosis. Miliary TB may infect any number of organs, including the lungs, liver, and spleen. Miliary tuberculosis is present in about 2% of all reported cases of tuberculosis and accounts for up to 20% of all extra-pulmonary tuberculosis cases.
+
+D answer context:
+
+Bronchiectasis is a disease in which there is permanent enlargement of parts of the airways of the lung. Symptoms typically include a chronic cough with mucus production. Other symptoms include shortness of breath, coughing up blood, and chest pain. Wheezing and nail clubbing may also occur. Those with the disease often get frequent lung infections. Bronchiectasis may result from a number of infectious and acquired causes, including pneumonia, tuberculosis, immune system problems, as well as the genetic disorder cystic fibrosis. Cystic fibrosis eventually results in severe bronchiectasis in nearly all cases. The cause in 10–50% of those without cystic fibrosis is unknown. The mechanism of disease is breakdown of the airways due to an excessive inflammatory response. Involved airways (bronchi) become enlarged and thus less able to clear secretions. These secretions increase the amount of bacteria in the lungs, resulting in airway blockage
+
+---- End of HUMAN message ----
+2025-06-02 19:23:30,395 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 19:23:30,395 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAiwAAAHaCAYAAAAjVBJwAAAYemlDQ1BJQ0MgUHJvZmlsZQAAWIWVe ...
+
+Question:
+
+Associated question with image 7. A 60-year-old male, active smoker, who presents with a cough and daily expectoration of several years' evolution, occasionally hemoptoic. In recent months, progressive dyspnea has been added. He presents with clubbing and on pulmonary auscultation, ronchi and late inspiratory wheezes are noted in the left lung. The high-resolution pulmonary CT is shown in the attached image. What is the most probable diagnosis? A - Cystic carcinoma B - Pulmonary emphysema C - Cavitary tuberculosis D - Bronchiectasis
+
+---- End of HUMAN message ----
+2025-06-02 19:24:42,823 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 19:24:42,823 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

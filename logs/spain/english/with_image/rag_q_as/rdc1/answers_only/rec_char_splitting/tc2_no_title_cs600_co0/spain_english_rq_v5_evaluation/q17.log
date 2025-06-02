@@ -1,0 +1,80 @@
+2025-06-02 19:10:28,394 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 2,
+        "add_title": false,
+        "chunk_size": 600,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": false
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 19:10:29,031 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 19:10:29,031 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Adhesive capsulitis, also known as frozen shoulder, is a condition associated with shoulder joint pain and stiffness. There is loss of both passive and active range of motion and shoulder movement is extremely painful. The pain and stiffness can impact daily life activities but tend to improve over time. It can be diagnosed by history and physical exam. The cause of frozen shoulder is not completely understood. The condition can occur after injury or surgery to the shoulder (secondary) or may develop with no trigger (primary or idiopathic). Risk factors for frozen shoulder include diabetes mellitus, stroke, lung disease, connective tissue diseases, thyroid disease, and heart disease. It is more common in people 40–65 years of age and in women.
+
+B answer context:
+
+The glenoid labrum (glenoid ligament) is a fibrocartilaginous structure (not a fibrocartilage as previously thought) rim attached around the margin of the glenoid cavity in the shoulder blade. The shoulder joint is considered a ball and socket joint. However, in bony terms the 'socket' (the glenoid fossa of the scapula) is quite shallow and small, covering at most only a third of the 'ball' (the head of the humerus). The socket is deepened by the glenoid labrum.
+
+The labrum is triangular in section; the base is fixed to the circumference of the cavity, while the free edge is thin and sharp. It is continuous above with the tendon of the long head of the biceps brachii, which gives off two fascicles to blend with the fibrous tissue of the labrum.
+
+C answer context:
+
+Subacromial bursitis is a condition caused by inflammation of the bursa that separates the superior surface of the supraspinatus tendon (one of the four tendons of the rotator cuff) from the overlying coraco-acromial ligament, acromion, and coracoid (the acromial arch) and from the deep surface of the deltoid muscle. The subacromial bursa helps the motion of the supraspinatus tendon of the rotator cuff in activities such as overhead work. Musculoskeletal complaints are one of the most common reasons for primary care office visits, and rotator cuff disorders are the most common source of shoulder pain.
+
+D answer context:
+
+Calcific tendinitis is a form of tendinitis, a disorder characterized by deposits of hydroxyapatite (a crystalline calcium phosphate) in any tendon of the body, but most commonly in the tendons of the rotator cuff (shoulder), causing pain and inflammation. The condition is related to and may cause adhesive capsulitis ("frozen shoulder"). It most often occurs in females aged 30 to 60 years. Calcifications are usually located within the supraspinatus tendon (80% of cases), followed by the infraspinatus (15% of cases) and subscapularis (5% of cases) tendons; and are present in 5% or more of asymptomatic shoulders in healthy adults.
+
+Pain is often aggravated by elevation of the arm above shoulder level or by lying on the shoulder. Pain may awaken the patient from sleep. Other complaints may be stiffness, snapping, catching, or weakness of the shoulder.
+
+---- End of HUMAN message ----
+2025-06-02 19:10:29,031 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 19:10:29,031 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAnoAAAKQCAYAAAAIddfoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxj ...
+
+Question:
+
+Question related to image no. 17: 42-year-old woman, hairdresser by profession, who reports shoulder pain when raising her arm. After a week of evolution, the pain is also present at rest and at night. What is the most likely diagnosis according to the shoulder X-ray? A - Adhesive capsulitis B - Labrum injury C - Subacromial bursitis D - Calcific tendinitis
+
+---- End of HUMAN message ----
+2025-06-02 19:13:03,251 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 19:13:03,251 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----

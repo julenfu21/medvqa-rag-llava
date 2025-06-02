@@ -1,0 +1,80 @@
+2025-06-02 18:48:50,415 [INFO] - ---- Start of SPECIFIED OPTIONS section ----
+
+{
+    "country": "spain",
+    "file_type": "english",
+    "use_image": true,
+    "vqa_strategy_type": "rag_q_as",
+    "prompt_type": "rq_v5",
+    "relevant_docs_count": 1,
+    "doc_splitter_options": {
+        "doc_splitter_type": "recursive_character_splitter",
+        "token_count": 1,
+        "add_title": false,
+        "chunk_size": 300,
+        "chunk_overlap": 0
+    },
+    "should_apply_rag_to_question": true
+}
+
+---- End of SPECIFIED OPTIONS section ----
+2025-06-02 18:48:51,191 [INFO] - ---- Start of SYSTEM message ----
+
+You are an assistant that only responds with a single letter: A, B, C or D. For each question, you must consider the image and the possible options provided and answer with exactly one letter corresponding to the option that best matches the correct choice. Additionally, you must also leverage the context below to provide a suitable answer.
+
+---- End of SYSTEM message ----
+2025-06-02 18:48:51,191 [INFO] - ---- Start of HUMAN message ----
+
+Context:
+
+RAG block for QUESTION:
+
+Post-viral cerebellar ataxia also known as acute cerebellitis and acute cerebellar ataxia (ACA) is a disease characterized by the sudden onset of ataxia following a viral infection. The disease affects the function or structure of the cerebellum region in the brain.
+
+RAG block for ANSWERS:
+
+A answer context:
+
+Subarachnoid hemorrhage (SAH) is bleeding into the subarachnoid space—the area between the arachnoid membrane and the pia mater surrounding the brain. Symptoms may include a severe headache of rapid onset, vomiting, decreased level of consciousness, fever, and sometimes seizures. Neck stiffness or
+
+B answer context:
+
+Intraparenchymal hemorrhage (IPH) is one form of intracerebral bleeding in which there is bleeding within brain parenchyma. The other form is intraventricular hemorrhage (IVH).
+
+C answer context:
+
+Spinal epidural hematoma is bleeding into the epidural space in the spine. These may arise spontaneously (e.g. during childbirth), or as a rare complication of epiduralanaesthesia or of surgery (such as laminectomy). Symptoms usually include back pain which radiates to the arms or the legs. They may
+
+D answer context:
+
+A subdural hematoma (SDH) is a type of bleeding in which a collection of blood—usually associated with a traumatic brain injury—gathers between the inner layer of the dura mater and the arachnoid mater of the meninges surrounding the brain. It usually results from tears in bridging veins that cross
+
+---- End of HUMAN message ----
+2025-06-02 18:48:51,191 [INFO] - ---- Start of SYSTEM message ----
+
+Remember that your answer must be just a single letter: A, B, C, or D. Do not provide any explanations, nor include any additional text.
+
+---- End of SYSTEM message ----
+2025-06-02 18:48:51,191 [INFO] - ---- Start of HUMAN message ----
+
+Base64 Image: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAJxCAYAAAAdAfUZAAAYemlDQ1BJQ0MgUHJvZmlsZQAAWIWVe ...
+
+Question:
+
+Question associated with image 15. In an anticoagulated and antiplatelet patient who presents with incoherent speech without other associated clinical manifestations, with a cranial CT image like the one shown, what is the most probable diagnosis? A - Subarachnoid hemorrhage B - Intraparenchymal hematoma C - Epidural hematoma D - Subdural hematoma
+
+---- End of HUMAN message ----
+2025-06-02 18:50:53,235 [INFO] - ---- Start of AI message ----
+
+D
+
+---- End of AI message ----
+2025-06-02 18:50:53,235 [INFO] - ---- Start of ANSWER VALIDATION section ----
+
+Actual Answer: D
+
+Model Answer: D
+
+CORRECT ANSWER
+
+---- End of ANSWER VALIDATION section ----
