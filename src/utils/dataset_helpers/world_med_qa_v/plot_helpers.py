@@ -1,4 +1,5 @@
 from collections import Counter
+from itertools import combinations
 from typing import Optional, Union
 
 import pandas as pd
@@ -15,7 +16,10 @@ from src.utils.string_formatting_helpers import prettify_strategy_name
 def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) -> None:
     english_subsets = _get_english_subsets(dataset)
     languages_sample_distribution_df = pd.DataFrame({
-        "split": [subset_name.split('_')[0].capitalize() for subset_name in english_subsets.keys()],
+        "split": [
+            _get_formatted_subset_prefix(subset_name)
+            for subset_name in english_subsets.keys()
+        ],
         "instances": [subset.num_rows for subset in english_subsets.values()]
     })
 
@@ -167,6 +171,84 @@ def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> Non
     grouped_bar_chart.update_yaxes(range=[0, 40], ticksuffix="%")
 
     display(grouped_bar_chart)
+
+
+def display_image_overlap_across_languages(dataset: dict[str, Dataset]) -> None:
+    english_subsets = _get_english_subsets(dataset)
+    image_overlap_values = []
+    for (split_name1, split_data1), (split_name2, split_data2) in list(
+        combinations(iterable=english_subsets.items(), r=2)
+    ):
+        formatted_split1_prefix = _get_formatted_subset_prefix(split_name1)
+        formatted_split2_prefix = _get_formatted_subset_prefix(split_name2)
+        image_overlap = len(list(set(split_data1['image']) & set(split_data2['image'])))
+        image_overlap_values.append([
+            formatted_split1_prefix, formatted_split2_prefix, image_overlap
+        ])
+
+    image_overlap_df = pd.DataFrame(
+        image_overlap_values,
+        columns=['split_1', 'split_2', 'shared_images']
+    )
+    mirrored_image_overlap_df = pd.concat([
+        image_overlap_df,
+        image_overlap_df.rename(columns={'split_1': 'split_2', 'split_2': 'split_1'})
+    ])
+    heatmap_data = mirrored_image_overlap_df.pivot(
+        index='split_1', columns='split_2', values='shared_images'
+    ).fillna(0).astype(int)
+
+    custom_colorscale = [
+        [0.0, '#c6dbef'],
+        [0.2, '#9ecae1'],
+        [0.4, '#6baed6'],
+        [0.6, '#4292c6'],
+        [0.8, '#2171b5'],
+        [1.0, '#084594']
+    ]
+    heatmap = px.imshow(
+        heatmap_data,
+        text_auto=True,
+        color_continuous_scale=custom_colorscale,
+        labels={
+            'x': 'Split 1',
+            'y': 'Split 2',
+            'color': 'Shared Images'
+        },
+        zmin=0,
+        zmax=50,
+        title="Image Overlap Across Languages (WorldMedQA-V Dataset)"
+    )
+    heatmap.update_traces(
+        textfont={'size': 24},
+        zmin=0.01,
+        zmax=50
+    )
+    heatmap.update_layout(
+        xaxis_title=None,
+        yaxis_title=None,
+        width=850,
+        height=650,
+        title={
+            'x': 0.5,
+            'font': {'size': 24, 'color': "black"}
+        },
+        xaxis={
+            'tickfont': {'size': 18},
+            'side': 'top',
+            'automargin': True
+        },
+        yaxis={
+            'tickfont': {'size': 18},
+            'automargin': True
+        },
+        coloraxis_colorbar={
+            'tickformat': 'd',
+            'dtick': 5
+        }
+    )
+
+    display(heatmap)
 
 
 def display_bar_chart_on_evaluation_results(
@@ -692,6 +774,10 @@ def display_test_results_summary(
 
 def _get_english_subsets(dataset: dict[str, Dataset]) -> dict[str, Dataset]:
     return dict(filter(lambda subset: subset[0].endswith("english"), dataset.items()))
+
+
+def _get_formatted_subset_prefix(subset_name: str) -> str:
+    return subset_name.split('_')[0].capitalize()
 
 
 def _get_pretty_strategy_representation(
