@@ -12,44 +12,36 @@ from src.utils.enums import DocumentSplitterType, VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
-def display_correct_answer_distribution_on_subset(
-    title: str,
-    subset_data: Dataset
-) -> None:
-    correct_answer_distribution = Counter(subset_data['correct_option'])
-    correct_answer_distribution_df = pd.DataFrame({
-        "correct_option": correct_answer_distribution.keys(),
-        "count": correct_answer_distribution.values()
+def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) -> None:
+    english_subsets = _get_english_subsets(dataset)
+    languages_sample_distribution_df = pd.DataFrame({
+        "split": [subset_name.split('_')[0].capitalize() for subset_name in english_subsets.keys()],
+        "instances": [subset.num_rows for subset in english_subsets.values()]
     })
-    correct_answer_distribution_df = correct_answer_distribution_df.sort_values('correct_option')
 
-    correct_answer_distribution_pie_chart = px.pie(
-        data_frame=correct_answer_distribution_df,
-        names='correct_option',
-        values="count",
-        title=title,
-        hole=0.45,
-        category_orders={
-            "correct_option": sorted(correct_answer_distribution.keys())
-        },
-        color='correct_option',
+    pie_chart = px.pie(
+        data_frame=languages_sample_distribution_df,
+        names='split',
+        values='instances',
+        title="Sample Distribution Across Languages (WorldMedQA-V Dataset)",
+        hole=0.20,
+        category_orders={"split": ["Brazil", "Israel", "Japan", "Spain"]},
+        color='split',
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
-
-    correct_answer_distribution_pie_chart.update_traces(
+    pie_chart.update_traces(
         textposition='inside',
         textinfo='percent+label+value',
-        pull=[0.05] * len(correct_answer_distribution_df),
+        pull=[0.03] * len(languages_sample_distribution_df),
         textfont={
             "size": 18,
             "color": 'black',
             "weight": 'bold'
         }
     )
-
-    correct_answer_distribution_pie_chart.update_layout(
+    pie_chart.update_layout(
         legend={
-            'title': 'Possible Answers',
+            'title': 'Splits',
             'orientation': 'h',
             'yanchor': 'bottom',
             'y': -0.2,
@@ -65,95 +57,116 @@ def display_correct_answer_distribution_on_subset(
                 'size': 24,
                 'color': "black"
             }
-        },
+        }
     )
 
-    display(correct_answer_distribution_pie_chart)
+    display(pie_chart)
 
 
-def display_correct_answer_distribution_on_full_dataset(
-    full_dataset: dict[str, Dataset],
-    title: str
-) -> None:
-    english_subset = {
-        subset_name: subset_data
-        for subset_name, subset_data in full_dataset.items() if subset_name.endswith("english")
-    }
+def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> None:
+    english_subsets = _get_english_subsets(dataset)
+    split_names = ["Brazil", "Israel", "Japan", "Spain"]
+    ground_truth_answer_distribution = []
 
-    rows = 1
-    columns = 4
-    correct_answer_distribution_figure = make_subplots(
-        rows=rows,
-        cols=columns,
-        specs=[[{'type': 'domain'} for _ in range(columns)] for _ in range(rows)],
-        subplot_titles=[f"<b>{subset_name}</b> Subset" for subset_name in english_subset.keys()]
+    for split_name in split_names:
+        formatted_split_name = split_name.lower() + "_english"
+        correct_options = english_subsets[formatted_split_name]['correct_option']
+        subset_answer_distribution = Counter(correct_options)
+        subset_answer_distribution_percentage = {
+            key: value * 100 / sum(subset_answer_distribution.values())
+            for key, value in subset_answer_distribution.items()
+        }
+        ground_truth_answer_distribution.append(subset_answer_distribution_percentage)
+
+    bar_colors = px.colors.qualitative.Pastel
+    grouped_bar_chart = go.Figure(
+        data=[
+            go.Bar(
+                name=split_name,
+                x=sorted(answer_distribution.keys()),
+                y=list(dict(sorted(answer_distribution.items())).values()),
+                marker_color=color,
+                hovertemplate=(
+                    '<b>Answer:</b> %{x}<br>'
+                    '<b>Percentage:</b> %{y:.2f}%'
+                )
+            )
+            for color, split_name, answer_distribution in zip(
+                bar_colors, split_names, ground_truth_answer_distribution
+            )
+        ]
     )
-
-    for index, subset_data in enumerate(english_subset.values()):
-        answer_distribution_pie_chart = _create_pie_chart_for_subset(subset_data=subset_data)
-
-        row = 1
-        column = index + 1
-        correct_answer_distribution_figure.add_trace(
-            trace=answer_distribution_pie_chart.data[0], row=row, col=column
-        )
-
-    correct_answer_distribution_figure.update_layout(
+    grouped_bar_chart.update_layout(
+        barmode='group',
         legend={
-            'title': 'Possible Answers',
+            'title': 'Splits',
             'orientation': 'h',
             'yanchor': 'bottom',
-            'y': -0.2,
+            'y': -0.3,
             'xanchor': 'center',
             'x': 0.5,
             'font': {'size': 14}
         },
+        width=850,
+        height=650,
         title={
-            'text': title,
             'x': 0.5,
             'font': {
                 'size': 24,
                 'color': "black"
+            },
+            'text': "Ground-Truth Answer Distribution (WorldMedQA-V Dataset)"
+        },
+        xaxis={
+            'title': 'Possible Answer',
+            'showline': True,
+            'linewidth': 1.5,
+            'linecolor': 'black',
+            'mirror': True,
+            'ticks': 'outside',
+            'tickfont': {'size': 14},
+            'titlefont': {'size': 16},
+        },
+        yaxis={
+            'title': 'Percentage',
+            'showline': True,
+            'linewidth': 1.5,
+            'linecolor': 'black',
+            'mirror': True,
+            'ticks': 'outside',
+            'tickfont': {'size': 14},
+            'titlefont': {'size': 16},
+            'gridcolor': 'lightgray',
+            'zeroline': False
+        },
+        shapes=[
+            {
+                'type': 'rect',
+                'xref': 'paper',
+                'x0': 0,
+                'x1': 1,
+                'yref': 'y',
+                'y0': 20,
+                'y1': 30,
+                'fillcolor': 'rgba(255, 0, 0, 0.15)',
+                'line': {'width': 0},
+                'layer': 'below'
+            },
+            {
+                'type': 'line',
+                'xref': 'paper',
+                'x0': 0,
+                'x1': 1,
+                'yref': 'y',
+                'y0': 25,
+                'y1': 25,
+                'line': {'color': 'red', 'width': 2, 'dash': 'dash'}
             }
-        },
-        margin={'l': 30, 'r': 30}
+        ]
     )
+    grouped_bar_chart.update_yaxes(range=[0, 40], ticksuffix="%")
 
-    display(correct_answer_distribution_figure)
-
-
-def _create_pie_chart_for_subset(subset_data: Dataset) -> go.Figure:
-    correct_answer_distribution = Counter(subset_data['correct_option'])
-    correct_answer_distribution_df = pd.DataFrame({
-        "correct_option": correct_answer_distribution.keys(),
-        "count": correct_answer_distribution.values()
-    })
-    correct_answer_distribution_df = correct_answer_distribution_df.sort_values('correct_option')
-
-    pie_chart = px.pie(
-        data_frame=correct_answer_distribution_df,
-        names='correct_option',
-        values='count',
-        hole=0.20,
-        category_orders={
-            "correct_option": sorted(correct_answer_distribution.keys())
-        },
-        color='correct_option',
-        color_discrete_sequence=px.colors.qualitative.Pastel
-    )
-
-    pie_chart.update_traces(
-        textposition='inside',
-        textinfo='percent+label+value',
-        pull=[0.03] * len(correct_answer_distribution_df),
-        textfont={
-            "size": 14,
-            "color": 'black',
-            "weight": 'bold'
-        }
-    )
-
-    return pie_chart
+    display(grouped_bar_chart)
 
 
 def display_bar_chart_on_evaluation_results(
@@ -675,6 +688,10 @@ def display_test_results_summary(
 # ====================
 # Private Functions
 # ====================
+
+
+def _get_english_subsets(dataset: dict[str, Dataset]) -> dict[str, Dataset]:
+    return dict(filter(lambda subset: subset[0].endswith("english"), dataset.items()))
 
 
 def _get_pretty_strategy_representation(
