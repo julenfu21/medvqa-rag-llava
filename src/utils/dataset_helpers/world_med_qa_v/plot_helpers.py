@@ -1,12 +1,13 @@
-from collections import Counter
+from collections import Counter, defaultdict
 from itertools import combinations
-from typing import Optional, Union
+from typing import Any, Optional, Union
 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datasets import Dataset
 from IPython.display import display
+from langchain_ollama import ChatOllama
 from plotly.subplots import make_subplots
 
 from src.utils.enums import DocumentSplitterType, VQAStrategyType
@@ -14,7 +15,7 @@ from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
 def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_english_subsets(dataset)
+    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
     languages_sample_distribution_df = pd.DataFrame({
         "split": [
             _get_formatted_subset_prefix(subset_name)
@@ -68,7 +69,7 @@ def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) ->
 
 
 def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_english_subsets(dataset)
+    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
     split_names = ["Brazil", "Israel", "Japan", "Spain"]
     ground_truth_answer_distribution = []
 
@@ -174,7 +175,7 @@ def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> Non
 
 
 def display_image_overlap_across_languages(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_english_subsets(dataset)
+    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
     image_overlap_values = []
     for (split_name1, split_data1), (split_name2, split_data2) in list(
         combinations(iterable=english_subsets.items(), r=2)
@@ -249,6 +250,111 @@ def display_image_overlap_across_languages(dataset: dict[str, Dataset]) -> None:
     )
 
     display(heatmap)
+
+
+def display_average_question_length_across_languages(dataset: dict[str, Dataset]) -> None:
+    llava_model = ChatOllama(model="llava", temperature=0, num_predict=1)
+    average_question_lengths = defaultdict(float)
+    for split_name, split_data in dataset.items():
+        for question in split_data['question']:
+            average_question_lengths[split_name] += llava_model.get_num_tokens(question)
+        average_question_lengths[split_name] /= len(split_data['question'])
+
+    english_splits_lengths = _get_subsets_data_by_split_type(
+        splits_data=average_question_lengths,
+        split_type='english'
+    )
+    formatted_english_split_lengths = {
+        _get_formatted_subset_prefix(split_name).lower(): average_length
+        for split_name, average_length in english_splits_lengths.items()
+    }
+    local_language_split_lengths = _get_subsets_data_by_split_type(
+        splits_data=average_question_lengths,
+        split_type='local'
+    )
+    formatted_local_language_split_lengths = {
+        _get_formatted_subset_prefix(split_name).lower(): average_length
+        for split_name, average_length in local_language_split_lengths.items()
+    }
+
+    bar_colors = px.colors.qualitative.Antique
+    split_names = ["brazil", "israel", "japan", "spain"]
+    grouped_bar_chart = go.Figure(
+        data=[
+            go.Bar(
+                name='Original Language',
+                x=[split_name.capitalize() for split_name in split_names],
+                y=[
+                    formatted_local_language_split_lengths[split_name]
+                    for split_name in split_names
+                ],
+                marker_color=bar_colors[0],
+                hovertemplate=(
+                    '<b>Split Name:</b> %{x}<br>'
+                    '<b>Avg. Question Length:</b> %{y:.2f}'
+                )
+            ),
+            go.Bar(
+                name='English Translation',
+                x=[split_name.capitalize() for split_name in split_names],
+                y=[
+                    formatted_english_split_lengths[split_name]
+                    for split_name in split_names
+                ],
+                marker_color=bar_colors[1],
+                hovertemplate=(
+                    '<b>Split Name:</b> %{x}<br>'
+                    '<b>Avg. Question Length:</b> %{y:.2f}'
+                )
+            )
+        ]
+    )
+    grouped_bar_chart.update_layout(
+        barmode='group',
+        legend={
+            'title': 'Subset Type',
+            'orientation': 'h',
+            'yanchor': 'bottom',
+            'y': -0.3,
+            'xanchor': 'center',
+            'x': 0.5,
+            'font': {'size': 14}
+        },
+        width=850,
+        height=650,
+        title={
+            'x': 0.5,
+            'font': {
+                'size': 24,
+                'color': "black"
+            },
+            'text': "Average Question Length Across Languages (WorldMedQA-V Dataset)"
+        },
+        xaxis={
+            'title': 'Splits',
+            'showline': True,
+            'linewidth': 1.5,
+            'linecolor': 'black',
+            'mirror': True,
+            'ticks': 'outside',
+            'tickfont': {'size': 14},
+            'titlefont': {'size': 16},
+        },
+        yaxis={
+            'title': 'Average Question Length (in Tokens)',
+            'showline': True,
+            'linewidth': 1.5,
+            'linecolor': 'black',
+            'mirror': True,
+            'ticks': 'outside',
+            'tickfont': {'size': 14},
+            'titlefont': {'size': 16},
+            'gridcolor': 'lightgray',
+            'zeroline': False
+        }
+    )
+
+    display(grouped_bar_chart)
 
 
 def display_bar_chart_on_evaluation_results(
@@ -772,8 +878,11 @@ def display_test_results_summary(
 # ====================
 
 
-def _get_english_subsets(dataset: dict[str, Dataset]) -> dict[str, Dataset]:
-    return dict(filter(lambda subset: subset[0].endswith("english"), dataset.items()))
+def _get_subsets_data_by_split_type(
+    splits_data: dict[str, Dataset],
+    split_type: str
+) -> dict[str, Any]:
+    return dict(filter(lambda subset: subset[0].endswith(split_type), splits_data.items()))
 
 
 def _get_formatted_subset_prefix(subset_name: str) -> str:
