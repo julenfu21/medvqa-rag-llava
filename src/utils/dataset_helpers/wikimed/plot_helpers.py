@@ -6,6 +6,67 @@ from src.utils.enums import WikiMedRepresentationMode
 from src.utils.dataset_helpers.wikimed.dataset_management import calculate_summary_statistics
 
 
+def display_token_overhead_per_document(dataset_metadata: pd.DataFrame) -> None:
+    boxplot = px.box(
+        data_frame=dataset_metadata,
+        x="model_token_count",
+        points='suspectedoutliers',
+        boxmode='overlay'
+    )
+
+    boxplot.update_traces(
+        boxmean=True,
+        boxpoints='suspectedoutliers',
+        marker={
+            'color': 'rgba(255, 99, 71, 0.6)',
+            'size': 6,
+            'line': {
+                'width': 1, 
+                'color': 'DarkSlateGrey'
+            }
+        },
+        line={
+            'color': 'rgba(72, 61, 139, 0.6)',
+            'width': 2
+        },
+        selector={'type': 'box'}
+    )
+
+    boxplot.update_layout(
+        title={
+            'text': "Token Overhead per Document",
+            'x': 0.5,
+            'xanchor': 'center',
+            'font': {
+                'size': 24,
+                'color': 'black',
+                'family': 'Arial, sans-serif'
+            }
+        },
+        xaxis={
+            'title': 'Token count (log base 10)',
+            'type': 'log',
+            'showgrid': True,
+            'zeroline': False
+        },
+        yaxis={
+            'title': '',
+            'showticklabels': False
+        },
+        plot_bgcolor='white',
+        width=850,
+        height=650,
+        margin={'l': 60, 'r': 60, 't': 80, 'b': 80},
+        font={
+            'family': 'Arial, sans-serif',
+            'size': 14,
+            'color': 'black'
+        }
+    )
+
+    display(boxplot)
+
+
 def display_boxplot_on_column(data_frame: pd.DataFrame, title: str, x_column: str) -> None:
     boxplot = px.box(data_frame, x=x_column)
 

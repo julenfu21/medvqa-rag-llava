@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from typing import Any
 
 import pandas as pd
 from datasets import Dataset, load_dataset
@@ -98,6 +99,17 @@ def get_max_accuracy_rows(evaluation_results: pd.DataFrame) -> pd.DataFrame:
 
 def get_mean_accuracy(evaluation_results: pd.DataFrame) -> float:
     return evaluation_results['accuracy'].mean()
+
+
+def get_subsets_data_by_split_type(
+    splits_data: dict[str, Dataset],
+    split_type: str
+) -> dict[str, Any]:
+    return dict(filter(lambda subset: subset[0].endswith(split_type), splits_data.items()))
+
+
+def get_formatted_subset_prefix(subset_name: str) -> str:
+    return subset_name.split('_')[0].capitalize()
 
 
 # ====================

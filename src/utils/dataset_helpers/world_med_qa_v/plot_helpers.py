@@ -1,6 +1,6 @@
 from collections import Counter, defaultdict
 from itertools import combinations
-from typing import Any, Optional, Union
+from typing import Optional, Union
 
 import pandas as pd
 import plotly.express as px
@@ -10,15 +10,19 @@ from IPython.display import display
 from langchain_ollama import ChatOllama
 from plotly.subplots import make_subplots
 
+import src.utils.dataset_helpers.world_med_qa_v.dataset_management as world_med_qa_v_dataset_management
 from src.utils.enums import DocumentSplitterType, VQAStrategyType
 from src.utils.string_formatting_helpers import prettify_strategy_name
 
 
 def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
+    english_subsets = world_med_qa_v_dataset_management.get_subsets_data_by_split_type(
+        splits_data=dataset,
+        split_type='english'
+    )
     languages_sample_distribution_df = pd.DataFrame({
         "split": [
-            _get_formatted_subset_prefix(subset_name)
+            world_med_qa_v_dataset_management.get_formatted_subset_prefix(subset_name)
             for subset_name in english_subsets.keys()
         ],
         "instances": [subset.num_rows for subset in english_subsets.values()]
@@ -69,7 +73,10 @@ def display_sample_distribution_across_languages(dataset: dict[str, Dataset]) ->
 
 
 def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
+    english_subsets = world_med_qa_v_dataset_management.get_subsets_data_by_split_type(
+        splits_data=dataset,
+        split_type='english'
+    )
     split_names = ["Brazil", "Israel", "Japan", "Spain"]
     ground_truth_answer_distribution = []
 
@@ -120,27 +127,31 @@ def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> Non
                 'size': 24,
                 'color': "black"
             },
-            'text': "Ground-Truth Answer Distribution (WorldMedQA-V Dataset)"
+            'text': "Ground-Truth Answer Distribution (WorldMedQA-V Dataset)",
         },
         xaxis={
-            'title': 'Possible Answer',
+            'title': {
+                'text': 'Possible Answer',
+                'font': {'size': 16}
+            },
             'showline': True,
             'linewidth': 1.5,
             'linecolor': 'black',
             'mirror': True,
             'ticks': 'outside',
-            'tickfont': {'size': 14},
-            'titlefont': {'size': 16},
+            'tickfont': {'size': 14}
         },
         yaxis={
-            'title': 'Percentage',
+            'title': {
+                'text': 'Percentage',
+                'font': {'size': 16}
+            },
             'showline': True,
             'linewidth': 1.5,
             'linecolor': 'black',
             'mirror': True,
             'ticks': 'outside',
             'tickfont': {'size': 14},
-            'titlefont': {'size': 16},
             'gridcolor': 'lightgray',
             'zeroline': False
         },
@@ -175,13 +186,16 @@ def display_ground_truth_answer_distribution(dataset: dict[str, Dataset]) -> Non
 
 
 def display_image_overlap_across_languages(dataset: dict[str, Dataset]) -> None:
-    english_subsets = _get_subsets_data_by_split_type(splits_data=dataset, split_type='english')
+    english_subsets = world_med_qa_v_dataset_management.get_subsets_data_by_split_type(
+        splits_data=dataset,
+        split_type='english'
+    )
     image_overlap_values = []
     for (split_name1, split_data1), (split_name2, split_data2) in list(
         combinations(iterable=english_subsets.items(), r=2)
     ):
-        formatted_split1_prefix = _get_formatted_subset_prefix(split_name1)
-        formatted_split2_prefix = _get_formatted_subset_prefix(split_name2)
+        formatted_split1_prefix = world_med_qa_v_dataset_management.get_formatted_subset_prefix(split_name1)
+        formatted_split2_prefix = world_med_qa_v_dataset_management.get_formatted_subset_prefix(split_name2)
         image_overlap = len(list(set(split_data1['image']) & set(split_data2['image'])))
         image_overlap_values.append([
             formatted_split1_prefix, formatted_split2_prefix, image_overlap
@@ -260,20 +274,20 @@ def display_average_question_length_across_languages(dataset: dict[str, Dataset]
             average_question_lengths[split_name] += llava_model.get_num_tokens(question)
         average_question_lengths[split_name] /= len(split_data['question'])
 
-    english_splits_lengths = _get_subsets_data_by_split_type(
+    english_splits_lengths = world_med_qa_v_dataset_management.get_subsets_data_by_split_type(
         splits_data=average_question_lengths,
         split_type='english'
     )
     formatted_english_split_lengths = {
-        _get_formatted_subset_prefix(split_name).lower(): average_length
+        world_med_qa_v_dataset_management.get_formatted_subset_prefix(split_name).lower(): average_length
         for split_name, average_length in english_splits_lengths.items()
     }
-    local_language_split_lengths = _get_subsets_data_by_split_type(
+    local_language_split_lengths = world_med_qa_v_dataset_management.get_subsets_data_by_split_type(
         splits_data=average_question_lengths,
         split_type='local'
     )
     formatted_local_language_split_lengths = {
-        _get_formatted_subset_prefix(split_name).lower(): average_length
+        world_med_qa_v_dataset_management.get_formatted_subset_prefix(split_name).lower(): average_length
         for split_name, average_length in local_language_split_lengths.items()
     }
 
@@ -331,24 +345,28 @@ def display_average_question_length_across_languages(dataset: dict[str, Dataset]
             'text': "Average Question Length Across Languages (WorldMedQA-V Dataset)"
         },
         xaxis={
-            'title': 'Splits',
+            'title': {
+                'text': 'Splits',
+                'font': {'size': 16}
+            },
             'showline': True,
             'linewidth': 1.5,
             'linecolor': 'black',
             'mirror': True,
             'ticks': 'outside',
-            'tickfont': {'size': 14},
-            'titlefont': {'size': 16},
+            'tickfont': {'size': 14}
         },
         yaxis={
-            'title': 'Average Question Length (in Tokens)',
+            'title': {
+                'text': 'Average Question Length (in Tokens)',
+                'font': {'size': 16}
+            },
             'showline': True,
             'linewidth': 1.5,
             'linecolor': 'black',
             'mirror': True,
             'ticks': 'outside',
             'tickfont': {'size': 14},
-            'titlefont': {'size': 16},
             'gridcolor': 'lightgray',
             'zeroline': False
         }
@@ -876,17 +894,6 @@ def display_test_results_summary(
 # ====================
 # Private Functions
 # ====================
-
-
-def _get_subsets_data_by_split_type(
-    splits_data: dict[str, Dataset],
-    split_type: str
-) -> dict[str, Any]:
-    return dict(filter(lambda subset: subset[0].endswith(split_type), splits_data.items()))
-
-
-def _get_formatted_subset_prefix(subset_name: str) -> str:
-    return subset_name.split('_')[0].capitalize()
 
 
 def _get_pretty_strategy_representation(

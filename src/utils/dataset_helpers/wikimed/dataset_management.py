@@ -4,11 +4,13 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
+from langchain_ollama import ChatOllama
 from tqdm import tqdm
 
 
 def load_wikimed_dataset_metadata(data_path: Path) -> pd.DataFrame:
     wikimed_dataset_metadata = []
+    llava_model = ChatOllama(model="llava", temperature=0, num_predict=1)
 
     with open(file=data_path, mode="r", encoding="utf-8") as wikimed_file:
         wikimed_file.seek(0, 2)
@@ -26,19 +28,18 @@ def load_wikimed_dataset_metadata(data_path: Path) -> pd.DataFrame:
                 line_id = line_content['_id']
                 line_title = line_content['title']
                 line_text = line_content['text']
+                model_token_count = llava_model.get_num_tokens(line_text)
 
                 wikimed_dataset_metadata.append({
                     "id": int(line_id),
                     "title": line_title,
                     "word_count": len(line_text),
-                    "sentence_count": len(line_text.split('.'))
+                    "sentence_count": len(line_text.split('.')),
+                    "model_token_count": model_token_count
                 })
                 progress_bar.update(len(line.encode('utf-8')))
 
-    wikimed_dataset_metadata_df = _add_quartile_intervals(
-        data_frame=pd.DataFrame(wikimed_dataset_metadata),
-        column_names=['word_count', 'sentence_count']
-    )
+    wikimed_dataset_metadata_df = pd.DataFrame(wikimed_dataset_metadata)
     print("+ WikiMed dataset metadata loaded.")
     return wikimed_dataset_metadata_df
 
@@ -65,34 +66,3 @@ def get_dataset_row_by_doc_title(
 
     row = json.loads(linecache.getline(filename=str(dataset_path), lineno=row_index + 1))
     return row
-
-
-# ====================
-# Private Functions
-# ====================
-
-
-def _add_quartile_intervals(data_frame: pd.DataFrame, column_names: list[str]) -> None:
-    for column_name in column_names:
-        summary_stats = calculate_summary_statistics(
-            column=data_frame[column_name]
-        )
-        new_column_name = f"{column_name.split('_')[0]}_quartile_interval"
-        data_frame[new_column_name] = data_frame[column_name].apply(
-            lambda x: _classify_quartile_interval(x, summary_stats)
-        )
-    return data_frame
-
-
-def _classify_quartile_interval(value: float, quartiles: dict[str, float]) -> str:
-    iqr = quartiles['Q3'] - quartiles['Q1']
-
-    if value < quartiles['Q1']:
-        return "[Min., Q1)"
-    if value < quartiles['Median']:
-        return "[Q1, Q2)"
-    if value < quartiles['Q3']:
-        return "[Q2, Q3)"
-    if value < quartiles['Q3'] + 1.5 * iqr:
-        return "[Q3, Max.)"
-    return "Outlier"

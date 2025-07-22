@@ -10,6 +10,6 @@ nbformat
 ollama
 pandas
 pillow
-plotly
+plotly>=6.0.0
 pyperclip
 spacy
