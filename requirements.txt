@@ -1,5 +1,6 @@
 datasets
 faiss-cpu
+gdown
 ipyform
 ipykernel
 langchain
@@ -13,3 +14,4 @@ pillow
 plotly>=6.0.0
 pyperclip
 spacy
+transformers
