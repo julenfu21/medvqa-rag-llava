@@ -1,6 +1,6 @@
 <div align="center">
     <h1 style="margin-bottom: 0;">Enhancing Visual Medical QA with RAG and LLaVA:</h1>
-    <p style="font-size: 28px; margin-top: 4px; margin-bottom: 30px"><em>A Case Study on WorldMedQA-V</em></p>
+    <p style="font-size: 32px; margin-top: 4px; margin-bottom: 30px"><em>A Case Study on WorldMedQA-V</em></p>
 </div>
 
 >This repository contains the source code employed for dataset analysis and model evaluation throughout my **Master's Thesis**.
@@ -14,10 +14,10 @@
 - [2. 🛠️ System Design](#2-️-system-design)
 - [3. 📂 Repository Structure](#3--repository-structure)
 - [4. ⚙️ Installation](#4-️-installation)
-- [5. ▶️ Usage](#5-️-usage)
+- [5. ⏯️ Usage](#5-️-usage)
 - [6. 📊 Results](#6--results)
 - [7. ✅ Conclusions](#7--conclusions)
-- [8. ⚠️ Limitations](#8-️-limitations)
+- [8. 🚫 Limitations](#8-️-limitations)
 - [9. 🔮 Future Work](#9--future-work)
 - [10. 📖 Citation](#10--citation)
 
@@ -170,7 +170,22 @@ gdown --folder https://drive.google.com/drive/folders/1qIhnPssIp5_kPQg1A0Af_w_Fj
 ```
 
 
-## 5. ▶️ Usage
+## 5. ⏯️ Usage
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 ### 5.1. Datasets Exploration
 
@@ -302,10 +317,10 @@ This section provides a brief overview of results. For a detailed analysis, refe
 | VQA Strategy | Prompt Type | Relevant Document Count | Title | Chunk Count | Chunk Size | Accuracy
 |-|:-:|:-:|:-:|:-:|:-:|:-:|
 | [Matos et al. (2024)](https://arxiv.org/abs/2410.12722) | - | - | - | - | - | **0.4500** |
-| Zero-Shot | [`zs_v2`](src/utils/prompts/zero_shot_prompts.py#L57) | - | - | - | - | 0.3040 |
-| RAG (Question Only) | [`rq_v6`](src/utils/prompts/rag_q_prompts.py#L314) | 3 | No | 2 | 300 | 0.3120 |
-| RAG (Answers Only) | [`rq_v5`](src/utils/prompts/rag_q_prompts.py#L250) | 1 | No | 2 | 600 | <u>0.3200</u> |
-| RAG (Question and Answers) | [`rq_v5`](src/utils/prompts/rag_q_prompts.py#L250) | 1 | No | 1 | 300 | <u>0.3200</u> |
+| Zero-Shot | [`zs_v2`](src/utils/prompts/zero_shot_prompts.py#L57-L102) | - | - | - | - | 0.3040 |
+| RAG (Question Only) | [`rq_v6`](src/utils/prompts/rag_q_prompts.py#L314-L380) | 3 | No | 2 | 300 | 0.3120 |
+| RAG (Answers Only) | [`rq_v5`](src/utils/prompts/rag_q_prompts.py#L250-L311) | 1 | No | 2 | 600 | <u>0.3200</u> |
+| RAG (Question and Answers) | [`rq_v5`](src/utils/prompts/rag_q_prompts.py#L250-L311) | 1 | No | 1 | 300 | <u>0.3200</u> |
 
 All RAG implementations slightly outperform the *Zero-Shot* baseline, indicating a modest performance gain. However, *Matos et al. (2024)* clearly outperforms the approaches implemented in this work, suggesting there is ample room for improvement.
 
@@ -371,7 +386,7 @@ Upon completion of this work, the following conclusions can be drawn:
 - Applying RAG has shown to be effective against the absence of visual modality.
 
 
-## 8. ⚠️ Limitations
+## 8. 🚫 Limitations
 
 Results obtained also uncover some limitations that might be addressed in future iterations of this work:
 
