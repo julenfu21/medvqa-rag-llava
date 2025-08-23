@@ -177,10 +177,10 @@ gdown --folder https://drive.google.com/drive/folders/1qIhnPssIp5_kPQg1A0Af_w_Fj
 
 You can explore the datasets in two ways:
 
-- **Via scripts:**
+- **Via scripts**:
 
-> [!TIP]
-> The commands below are just examples. You can check all the parameters available using the `-h` flag.
+    💡 *the commands below are just examples. You can check all the parameters available using the `-h` flag.*
+
 
     - **WorldMedQA-V** dataset:
 
@@ -203,8 +203,8 @@ You can explore the datasets in two ways:
 
 - **Via notebooks:**  
 
-> [!NOTE]
-> Open the [`notebooks/dataset_exploration.ipynb`](notebooks/dataset_exploration.ipynb) file and move to the section containing the dataset desired to be explored.
+    > Note:
+    > Open the [`notebooks/dataset_exploration.ipynb`](notebooks/dataset_exploration.ipynb) file and move to the section containing the dataset desired to be explored.
 
     - **WorldMedQA-V** dataset:
     
@@ -219,8 +219,8 @@ You can explore the datasets in two ways:
 
 - **Via Scripts:**
 
-> [!TIP]
-> The commands below are just examples. You can check all the parameters available using the `-h` flag.
+    > Tip:
+    > The commands below are just examples. You can check all the parameters available using the `-h` flag.
 
     - Best configuration for **Zero-Shot**:
 
@@ -286,9 +286,9 @@ You can explore the datasets in two ways:
 
         ![VQA Approaches Demo](./videos/vqa_approaches_demo.gif)
 
-
-> [!TIP]
-> In case thers is an attempt to fetch evaluation results from settings in which the model has not been evaluated yet, code to perform such evaluation is provided.
+        > 💡 **TIP**:
+        > In case thers is an attempt to fetch evaluation results from settings in which the model has not been evaluated yet, code to perform such evaluation is provided.
+        
         ![VQA Approaches Missing Settings Demo](./videos/vqa_approaches_missing_settings_demo.gif) 
 
 
