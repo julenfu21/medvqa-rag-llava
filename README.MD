@@ -9,7 +9,7 @@
 
 ---
 
-## 📑 Table of Contents
+## 📖 Table of Contents
 - [1. 🚀 Motivation](#1--motivation)
 - [2. 🛠️ System Design](#2-️-system-design)
 - [3. 📂 Repository Structure](#3--repository-structure)
@@ -105,7 +105,7 @@ Next, a shortened overview of the project is shown, highlighting the purpose of 
 ├── logs/                                   # Log files with configuration parameters, model instructions, conversation history and answer validation 
 ├── notebooks/                              
 │   ├── dataset_exploration.ipynb           # Analysis and exploration of WorldMedQA-V and WikiMed datasets
-│   └── vqa_model_result_analysis.ipynb     # Model evaluation, VQA strategies exploration and result analysis
+│   └── vqa_model_result_analysis.ipynb     # Model evaluation, VQA strate> [!NOTE]gies exploration and result analysis
 ├── scripts                                  
 │   ├── utils/                              
 │   ├── evaluate_vqa_model.py               # Model evaluation
@@ -162,7 +162,7 @@ pip install -r requirements.txt
 
 ### 4.4. Download the Datasets
 
-> [!NOTE]
+> 📝 **NOTE**:
 > Total download size is ~5.5 GB. This may take a while depending on your internet connection. The datasets will be stored in `./data/`.
 
 ```
@@ -179,7 +179,8 @@ You can explore the datasets in two ways:
 
 - **Via scripts**:
 
-    💡 *the commands below are just examples. You can check all the parameters available using the `-h` flag.*
+    > 💡 **TIP**:
+    > The commands below are just examples. You can check all the parameters available using the `-h` flag.
 
 
     - **WorldMedQA-V** dataset:
@@ -203,7 +204,7 @@ You can explore the datasets in two ways:
 
 - **Via notebooks:**  
 
-    > Note:
+    > 📝 **NOTE**:
     > Open the [`notebooks/dataset_exploration.ipynb`](notebooks/dataset_exploration.ipynb) file and move to the section containing the dataset desired to be explored.
 
     - **WorldMedQA-V** dataset:
@@ -219,7 +220,7 @@ You can explore the datasets in two ways:
 
 - **Via Scripts:**
 
-    > Tip:
+    > 💡 **TIP**:
     > The commands below are just examples. You can check all the parameters available using the `-h` flag.
 
     - Best configuration for **Zero-Shot**:
@@ -286,8 +287,12 @@ You can explore the datasets in two ways:
 
         ![VQA Approaches Demo](./videos/vqa_approaches_demo.gif)
 
+        <br>
+
         > 💡 **TIP**:
         > In case thers is an attempt to fetch evaluation results from settings in which the model has not been evaluated yet, code to perform such evaluation is provided.
+
+        <br>
         
         ![VQA Approaches Missing Settings Demo](./videos/vqa_approaches_missing_settings_demo.gif) 
 
