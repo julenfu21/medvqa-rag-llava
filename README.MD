@@ -193,8 +193,8 @@ You can explore the datasets in two ways:
 
 - **Via scripts:**
 
-    > [!TIP]
-    > Helpful advice for doing things better or more easily.
+  > [!TIP]
+  > Helpful advice for doing things better or more easily.
 
     > [!TIP]
     > The commands below are just examples. You can check all the parameters available using the `-h` flag.
