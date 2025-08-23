@@ -287,12 +287,8 @@ You can explore the datasets in two ways:
 
         ![VQA Approaches Demo](./videos/vqa_approaches_demo.gif)
 
-        <br>
-
         > 💡 **TIP**:
         > In case thers is an attempt to fetch evaluation results from settings in which the model has not been evaluated yet, code to perform such evaluation is provided.
-
-        <br>
         
         ![VQA Approaches Missing Settings Demo](./videos/vqa_approaches_missing_settings_demo.gif) 
 
