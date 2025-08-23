@@ -194,6 +194,9 @@ You can explore the datasets in two ways:
 - **Via scripts:**
 
     > [!TIP]
+    > Helpful advice for doing things better or more easily.
+
+    > [!TIP]
     > The commands below are just examples. You can check all the parameters available using the `-h` flag.
 
     - **WorldMedQA-V** dataset:
@@ -216,6 +219,9 @@ You can explore the datasets in two ways:
         ```
 
 - **Via notebooks:**  
+
+    > [!NOTE]
+    > Useful information that users should know, even when skimming content.
 
     > [!NOTE]
     > Open the [`notebooks/dataset_exploration.ipynb`](notebooks/dataset_exploration.ipynb) file and move to the section containing the dataset desired to be explored.
