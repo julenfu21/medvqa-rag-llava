@@ -13,5 +13,6 @@ pandas
 pillow
 plotly>=6.0.0
 pyperclip
+sentence-transformers
 spacy
 transformers
