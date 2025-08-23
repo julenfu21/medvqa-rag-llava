@@ -70,9 +70,9 @@ This section provides more specific details of the elements comprising the RAG p
 
 Enriches the model's knowledge by varying how the retriever is queried:
 
-- **RAG (Question Only)**: The retriever is queried using only the full question of the original instance. [📑 Example Log](https://github.com/julenfu21/world-med-visual-qa/blob/main/logs/spain/english/with_image/rag_q/rdc3/rec_char_splitting/tc2_no_title_cs300_co0/spain_english_rq_v6_evaluation/q15.log)
-- **RAG (Answers Only)**: Four independent queries are performed, each providing a single candidate answer. [📑 Example Log](https://github.com/julenfu21/world-med-visual-qa/blob/main/logs/spain/english/with_image/rag_q_as/rdc1/answers_only/rec_char_splitting/tc2_no_title_cs600_co0/spain_english_rq_v5_evaluation/q15.log)
-- **RAG (Question and Answers)**: It combines the previous two strategies, therefore querying the retriever five times (one for the question and another four for the candidate answers). [📑 Example Log](https://github.com/julenfu21/world-med-visual-qa/blob/main/logs/spain/english/with_image/rag_q_as/rdc1/question_and_answers/rec_char_splitting/tc1_no_title_cs300_co0/spain_english_rq_v5_evaluation/q15.log)
+- **RAG (Question Only)**: The retriever is queried using only the full question of the original instance. [📑 Example Log](https://github.com/julenfu21/medvqa-rag-llava/blob/main/logs/spain/english/with_image/rag_q/rdc3/rec_char_splitting/tc2_no_title_cs300_co0/spain_english_rq_v6_evaluation/q15.log)
+- **RAG (Answers Only)**: Four independent queries are performed, each providing a single candidate answer. [📑 Example Log](https://github.com/julenfu21/medvqa-rag-llava/blob/main/logs/spain/english/with_image/rag_q_as/rdc1/answers_only/rec_char_splitting/tc2_no_title_cs600_co0/spain_english_rq_v5_evaluation/q15.log)
+- **RAG (Question and Answers)**: It combines the previous two strategies, therefore querying the retriever five times (one for the question and another four for the candidate answers). [📑 Example Log](https://github.com/julenfu21/medvqa-rag-llava/blob/main/logs/spain/english/with_image/rag_q_as/rdc1/question_and_answers/rec_char_splitting/tc1_no_title_cs300_co0/spain_english_rq_v5_evaluation/q15.log)
 
 
 #### 2.4.2. Post-Retrieval Processing 
@@ -131,8 +131,8 @@ Next, a shortened overview of the project is shown, highlighting the purpose of 
 ### 4.1. Clone the Repository:
 
 ```shell
-git clone https://github.com/julenfu21/world-med-visual-qa.git
-cd world-med-visual-qa
+git clone https://github.com/julenfu21/medvqa-rag-llava.git
+cd medvqa-rag-llava
 ```
 
 ### 4.2. Create and activate a Virtual Environment
