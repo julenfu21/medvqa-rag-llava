@@ -160,7 +160,43 @@ pip install -r requirements.txt
 ```
 
 
-### 4.4. Download the Datasets
+### 4.4. Install Ollama and Download the LLaVA Model.
+
+1. Install Ollama:
+
+```shell
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+2. Download the LLaVA model:
+
+> 📝 **NOTE**:
+> The LLaVA model is several GB in size. Make sure you have sufficient disk space and a stable internet connection.
+
+```shell
+ollama pull llava
+```
+
+3. Verify installation and confirm the model is available: 
+
+```shell
+ollama list
+```
+
+![Ollama models list](images/show_ollama_models.png)
+
+
+4. (Optional) Test that the model runs correctly:
+
+> 📝 **NOTE**:
+> You can press `Ctrl+D` to stop the interactive session.
+
+```shell
+ollama run llava
+```
+
+
+### 4.5. Download the Datasets
 
 > 📝 **NOTE**:
 > Total download size is ~5.5 GB. This may take a while depending on your internet connection. The datasets will be stored in `./data/`.
