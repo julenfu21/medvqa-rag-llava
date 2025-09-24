@@ -25,7 +25,7 @@
 ## 1. 🚀 Motivation
 The application of VLMs is quite unusual on medical Visual Question Answering (VQA) tasks and most existing approaches rely on English-only resources. Therefore, this work aims to contribute to this research field by assessing how RAG can enhance a LLaVA model with external medical knowledge, which could serve as a starting point for the development of more universal solutions. 
 
-An in-depth explanation of the approach proposed can be found in the [Master's Thesis Documentation](https://drive.google.com/file/d/15721HNWndR_aQKTT2j0EbApmBcSNzICV/view?usp=sharing).
+An in-depth explanation of the approach proposed can be found in the [Master's Thesis Documentation](https://drive.google.com/file/d/1ruDjh9RaUT6ayrjxU9ccpOCY8MiQh_o9/view?usp=drive_link).
 
 
 ## 2. 🛠️ System Design
